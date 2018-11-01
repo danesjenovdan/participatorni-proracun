@@ -11,5 +11,11 @@ html,
 body {
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
+  color: #27223a;
+}
+
+::selection {
+  background-color: #5f235b;
+  color: #fff;
 }
 </style>
