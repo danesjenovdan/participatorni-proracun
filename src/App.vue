@@ -18,4 +18,16 @@ body {
   background-color: #5f235b;
   color: #fff;
 }
+
+a,
+a:visited,
+a:focus,
+a:active {
+  color: #5f235b;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 </style>

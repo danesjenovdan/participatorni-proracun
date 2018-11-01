@@ -105,6 +105,7 @@ export default {};
         &:focus {
           outline: 0;
           box-shadow: none;
+          background-color: #fcf5de;
         }
       }
 
@@ -148,18 +149,6 @@ export default {};
       text-align: center;
       font-size: 0.75rem;
       margin-top: 0.5rem;
-
-      a,
-      a:visited,
-      a:focus,
-      a:active {
-        color: #5f235b;
-        text-decoration: underline;
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
     }
   }
 }
