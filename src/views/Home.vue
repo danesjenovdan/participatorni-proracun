@@ -14,6 +14,12 @@
       <hr class="separator">
       <subscribe-for-updates class="py-5" />
       <hr class="separator">
+      <questions class="py-5" />
+    </div>
+    <div class="footer-container">
+      <div class="container">
+        <site-footer />
+      </div>
     </div>
   </div>
 </template>
@@ -22,6 +28,8 @@
 import BigVideo from '@/components/BigVideo.vue';
 import FindCandidates from '@/components/FindCandidates.vue';
 import SubscribeForUpdates from '@/components/SubscribeForUpdates.vue';
+import Questions from '@/components/Questions.vue';
+import SiteFooter from '@/components/SiteFooter.vue';
 
 export default {
   name: 'App',
@@ -29,6 +37,8 @@ export default {
     BigVideo,
     FindCandidates,
     SubscribeForUpdates,
+    Questions,
+    SiteFooter,
   },
 };
 </script>
@@ -47,5 +57,9 @@ export default {
   border-top-width: 4px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.footer-container {
+  background-color: #27223a;
 }
 </style>

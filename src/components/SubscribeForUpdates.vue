@@ -65,10 +65,9 @@ export default {};
 
       &.lead {
         color: #27223a;
-        font-size: 50px;
+        font-size: 2.75rem;
         font-weight: 500;
-        line-height: 54px;
-        text-transform: uppercase;
+        line-height: 1.1;
 
         strong {
           color: #e26e53;
