@@ -1,6 +1,6 @@
 <template>
   <div class="row find-candidates-row mx-0">
-    <div class="col-md-5 col--search px-0">
+    <div class="col-lg-5 col--search px-0">
       <div class="col__content">
         <h2>
           Kdo v tvoji
@@ -27,7 +27,7 @@
         </form>
       </div>
     </div>
-    <div class="col-md-7 col--results px-0">
+    <div class="col-lg-7 col--results px-0">
       <div class="col__content">
         <div class="empty-state">
           <svg
@@ -67,11 +67,21 @@ export default {};
     margin-right: -2rem;
     margin-bottom: 4rem;
 
+    @media (max-width: 991.98px) {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
     h2 {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 2.75rem;
       line-height: 1.1;
+
+      @media (max-width: 1199.98px) {
+        font-size: 2rem;
+      }
 
       strong {
         color: #5f235b;
@@ -133,7 +143,7 @@ export default {};
       .empty-state {
         border: 6px solid #5f235b;
         border-radius: 50%;
-        $size: 50%;
+        $size: 15rem;
         width: $size;
         height: $size;
         padding: 2.5rem;

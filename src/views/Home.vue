@@ -62,4 +62,11 @@ export default {
 .footer-container {
   background-color: #27223a;
 }
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 </style>

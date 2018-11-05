@@ -12,6 +12,15 @@ body {
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
   color: #27223a;
+  overflow-x: hidden;
+
+  @media (max-width: 991.98px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 575.98px) {
+    // font-size: 14px;
+  }
 }
 
 ::selection {

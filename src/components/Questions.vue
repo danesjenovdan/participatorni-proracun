@@ -47,6 +47,10 @@ export default {};
     line-height: 1.1;
     text-align: center;
 
+    @media (max-width: 1199.98px) {
+      font-size: 2.5rem;
+    }
+
     span {
       color: #f2cc59;
     }

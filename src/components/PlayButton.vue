@@ -16,14 +16,24 @@
   justify-content: center;
   cursor: pointer;
 
+  @media (max-width: 575.98px) {
+    width: $size / 2;
+    height: $size / 2;
+  }
+
   .triangle {
     width: 0;
     height: 0;
     border-style: solid;
     border-color: transparent;
     border-left-color: #f2cc59;
-    border-width: 1.5rem 0 1.5rem 2.4rem;
+    border-width: ($size / 4) 0 ($size / 4) ($size / 2.5);
     margin-left: 0.5rem;
+
+    @media (max-width: 575.98px) {
+      border-width: ($size / 4 / 2) 0 ($size / 4 / 2) ($size / 2.5 / 2);
+      margin-left: 0.25rem;
+    }
   }
 }
 </style>

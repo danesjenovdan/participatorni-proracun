@@ -84,6 +84,7 @@ export default {};
       font-weight: 900;
       box-shadow: 6px 6px #5f235b;
       transition: all 0.15s ease-in-out;
+      margin-bottom: 2rem;
 
       &:hover {
         background-color: #fcf5de;
@@ -113,7 +114,6 @@ export default {};
   }
 
   .credits {
-    margin: 2rem 0;
     text-align: center;
 
     .credit {

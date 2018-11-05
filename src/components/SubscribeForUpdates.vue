@@ -1,6 +1,6 @@
 <template>
   <div class="row subscribe-for-updates-row mx-0">
-    <div class="col-md-7 px-0 d-flex align-items-center">
+    <div class="col-lg-7 px-0 d-flex align-items-center">
       <div class="cta w-100">
         <p class="lead">
           ZMAGOVALCE VOLITEV BOMO NA OBLJUBO OPOMINJALI <strong>TUDI PO VOLITVAH</strong>.
@@ -10,7 +10,7 @@
         </p>
       </div>
     </div>
-    <div class="col-md-5 px-0 d-flex">
+    <div class="col-lg-5 px-0 d-flex">
       <div class="subscribe w-100">
         <form action="javascript:;">
           <div class="form-group">
@@ -57,7 +57,11 @@ export default {};
 <style lang="scss" scoped>
 .subscribe-for-updates-row {
   .cta {
-    padding: 0 2.75rem;
+    margin: 0 2.75rem;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 2rem;
+    }
 
     p {
       font-size: 1.3rem;
@@ -69,6 +73,10 @@ export default {};
         font-weight: 500;
         line-height: 1.1;
 
+        @media (max-width: 1199.98px) {
+          font-size: 2rem;
+        }
+
         strong {
           color: #e26e53;
           font-weight: 900;
@@ -79,7 +87,7 @@ export default {};
 
   .subscribe {
     background-color: #e26e53;
-    padding: 2.75rem;
+    padding: 2rem 2.75rem 2.75rem 2.75rem;
 
     form {
       .form-group {

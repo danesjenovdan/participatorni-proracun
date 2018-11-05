@@ -57,6 +57,10 @@ export default {
       align-items: center;
       padding: 4.5rem;
 
+      @media (max-width: 575.98px) {
+        padding: 2rem;
+      }
+
       .overlay-content {
         color: #27223a;
         font-size: 3.5rem;
@@ -64,6 +68,10 @@ export default {
         text-transform: uppercase;
         max-width: 700px;
         font-weight: 500;
+
+        @media (max-width: 575.98px) {
+          font-size: 2rem;
+        }
 
         strong {
           color: #5f235b;
