@@ -1,10 +1,30 @@
 import Vue from 'vue';
-import router from './router';
+import { createRouter } from './router';
 import App from './App.vue';
 
 Vue.config.productionTip = false;
 
-new Vue({
-  router,
-  render: h => h(App),
-}).$mount('#app');
+export async function createApp({
+  beforeApp = () => {},
+  afterApp = () => {},
+} = {}) {
+  const router = createRouter();
+
+  await beforeApp({
+    router,
+  });
+
+  const app = new Vue({
+    router,
+    render: h => h(App),
+  });
+
+  const result = {
+    app,
+    router,
+  };
+
+  await afterApp(result);
+
+  return result;
+}

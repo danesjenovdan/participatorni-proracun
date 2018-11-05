@@ -5,13 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "ssr:serve": "vue-cli-service ssr:serve",
+    "ssr:build": "vue-cli-service ssr:build",
+    "ssr:start": "cross-env NODE_ENV=production vue-cli-service ssr:serve --mode production"
   },
   "dependencies": {
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16"
   },
   "devDependencies": {
+    "@akryum/vue-cli-plugin-ssr": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
