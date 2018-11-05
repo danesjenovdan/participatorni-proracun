@@ -4,25 +4,27 @@
       <iframe
         v-if="!showOverlay"
         class="embed-responsive-item"
-        src="https://www.youtube.com/embed/Zj2cK8wymIA?autoplay=1"
+        src="https://www.youtube.com/embed/yilFJTdo8u0?autoplay=1"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
       <img
         v-else
-        src="https://placekitten.com/800/600"
+        src="@/assets/video-cover.jpg"
         class="embed-responsive-item blurred"
       >
       <div
         v-if="showOverlay"
         class="overlay"
+        @click="onPlayClick"
       >
-        <div class="overlay-content">
-          Čas je, da občinski denar postane tudi <strong>tvoja stvar</strong>!
-          <br>
+        <div class="overlay-content text-center">
+          <div class="mb-lg-5">
+            Čas je, da občinski denar postane tudi <strong>tvoja stvar</strong>!
+          </div>
           <play-button
-            class="mt-3"
+            class="mt-3 mx-auto"
             @click.native="onPlayClick"
           />
         </div>
@@ -57,7 +59,7 @@ export default {
 .big-video {
   .embed-responsive {
     .blurred {
-      filter: blur(4px);
+      // filter: blur(4px);
     }
 
     video,
@@ -72,13 +74,14 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(#fff, 0.5);
+      // background-color: rgba(#fff, 0.5);
       display: flex;
       align-items: center;
       padding: 4.5rem;
+      cursor: pointer;
 
       @media (max-width: 575.98px) {
-        padding: 2rem;
+        padding: 2rem 1rem;
       }
 
       .overlay-content {
@@ -86,11 +89,15 @@ export default {
         font-size: 3.5rem;
         line-height: 1;
         text-transform: uppercase;
-        max-width: 700px;
+        // max-width: 700px;
         font-weight: 500;
 
         @media (max-width: 575.98px) {
           font-size: 2rem;
+        }
+
+        @media (max-width: 320.98px) {
+          font-size: 1.5rem;
         }
 
         strong {

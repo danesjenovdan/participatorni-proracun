@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .circle {
-  $size: 6rem;
+  $size: 8rem;
   width: $size;
   height: $size;
   background-color: #e26e53;
@@ -33,6 +33,14 @@
     @media (max-width: 575.98px) {
       border-width: ($size / 4 / 2) 0 ($size / 4 / 2) ($size / 2.5 / 2);
       margin-left: 0.25rem;
+    }
+  }
+
+  &:hover {
+    background-color: #5f235b;
+
+    .triangle {
+      border-left-color: #fcf5de;
     }
   }
 }
