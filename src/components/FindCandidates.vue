@@ -17,7 +17,7 @@
         >
           <input
             ref="locationInput"
-            v-model="query"
+            v-model="inputValue"
             type="text"
             class="form-control"
             placeholder="vpiši občino"
@@ -70,6 +70,7 @@ export default {
   data() {
     const { query } = this.$route.params;
     return {
+      inputValue: query || '',
       query: query || '',
       loading: false,
     };
@@ -77,8 +78,8 @@ export default {
   methods: {
     onSubmitLocation() {
       this.loading = true;
-      const loc = (this.$refs.locationInput && this.$refs.locationInput.value) || '';
-      this.query = loc.trim().toLowerCase();
+      this.query = (this.inputValue || '').trim().toLowerCase();
+      this.inputValue = this.query;
       this.$router.push(`/${this.query}`);
       this.loading = false;
     },
