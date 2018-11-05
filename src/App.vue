@@ -36,6 +36,7 @@ a:active {
   text-decoration: underline;
 
   &:hover {
+    color: #5f235b;
     text-decoration: none;
   }
 }

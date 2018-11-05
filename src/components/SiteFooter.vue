@@ -51,6 +51,14 @@
             DANES JE NOV DAN
           </a>
         </div>
+        <p class="disclaimer small">
+          Pošljite nam mejl na
+          <a
+            href="mailto:maja@danesjenovdan.si?subject=Participatorni%20proračun"
+            target="_blank"
+          >maja@danesjenovdan.si</a>
+          če so narobe podatki etc. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
       </div>
     </div>
   </div>
@@ -133,6 +141,11 @@ export default {};
       &:visited {
         text-decoration: underline;
       }
+    }
+
+    .disclaimer {
+      margin-top: 1rem;
+      font-size: 0.75rem;
     }
   }
 }

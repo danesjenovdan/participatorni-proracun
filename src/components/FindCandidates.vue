@@ -41,7 +41,7 @@
       </div>
       <div class="notify-us">
         <a
-          href="mailto:vsi@danesjenovdan.si?subject=Participatorni%20proračun"
+          href="mailto:maja@danesjenovdan.si?subject=Participatorni%20proračun"
           target="_blank"
         >
           Si kandidat/-ka in nas želiš obvestiti o svoji nameri?
