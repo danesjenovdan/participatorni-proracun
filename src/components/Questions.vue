@@ -7,17 +7,25 @@
       </h2>
     </div>
     <div class="col-md-6 mt-5 px-0">
-      <div
-        v-for="(qa, i) in stuff"
-        :key="qa.q"
-        :class="['faq-q-box', { active: i === selected }]"
-        @click="selectAnswer(i)"
-      >
-        {{ qa.q }}
-      </div>
+      <template v-for="(qa, i) in stuff">
+        <div
+          :key="qa.q"
+          :class="['faq-q-box', { active: i === selected }]"
+          @click="selectAnswer(i)"
+        >
+          {{ qa.q }}
+        </div>
+        <div
+          v-if="i === selected"
+          :key="qa.a"
+          class="faq-a-content accordion-answer"
+        >
+          {{ qa.a }}
+        </div>
+      </template>
     </div>
     <div class="col-md-6 mt-5 px-0">
-      <div class="faq-a-content">
+      <div class="faq-a-content column-answer">
         {{ stuff[selected].a }}
       </div>
     </div>
@@ -77,7 +85,7 @@ export default {
     background-color: #f2cc59;
     padding: 0.75rem 7rem 0.75rem 2.5rem;
     font-weight: 500;
-    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
     min-height: 4.5rem;
     display: flex;
     align-items: center;
@@ -114,6 +122,22 @@ export default {
 
   .faq-a-content {
     padding: 1.75rem 2.5rem;
+  }
+
+  .accordion-answer {
+    display: none;
+
+    @media (max-width: 575.98px) {
+      display: block;
+    }
+  }
+
+  .column-answer {
+    display: block;
+
+    @media (max-width: 575.98px) {
+      display: none;
+    }
   }
 }
 </style>
