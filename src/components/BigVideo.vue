@@ -2,8 +2,8 @@
   <div class="big-video">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe
-        class="embed-responsive-item blurred"
-        src="https://player.vimeo.com/video/292283117?portrait=0&amp;title=0&amp;byline=0"
+        :class="['embed-responsive-item', { 'blurred': showOverlay }]"
+        src="https://player.vimeo.com/video/292283117?portrait=0&amp;title=0&amp;byline=0&amp;autoplay=1"
         width="640"
         height="360"
         frameborder="0"
@@ -11,11 +11,17 @@
         mozallowfullscreen
         allowfullscreen
       />
-      <div class="overlay">
+      <div
+        v-if="showOverlay"
+        class="overlay"
+      >
         <div class="overlay-content">
           Čas je, da občinski denar postane tudi <strong>tvoja stvar</strong>!
           <br>
-          <play-button class="mt-3" />
+          <play-button
+            class="mt-3"
+            @click.native="onPlayClick"
+          />
         </div>
       </div>
     </div>
@@ -29,6 +35,17 @@ export default {
   name: 'BigVideo',
   components: {
     PlayButton,
+  },
+  data() {
+    return {
+      showOverlay: true,
+    };
+  },
+  methods: {
+    onPlayClick() {
+      console.log('play');
+      this.showOverlay = false;
+    },
   },
 };
 </script>
