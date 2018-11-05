@@ -25,10 +25,22 @@
     </div>
     <div class="col-md-6 mt-5 px-0">
       <div class="faq-a-content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolore dicta impedit obcaecati, corporis, facilis fuga nihil illo blanditiis sint reprehenderit distinctio laborum porro, dignissimos minus culpa voluptate earum hic?
-        Qui asperiores recusandae nihil, rem possimus ipsam repellendus dignissimos provident excepturi quisquam aliquam sunt accusantium, mollitia soluta eaque ab numquam deleniti dolores. Numquam unde cumque rerum a, dolor aliquam! Et.
-        Facere perspiciatis aut, delectus, temporibus officia corrupti sequi iusto doloribus suscipit, repellat illum minima commodi quo natus veritatis animi praesentium. Optio iste debitis quasi ut repellendus autem accusantium pariatur qui.
-        Omnis at accusantium fugiat! Consequuntur doloribus sint fuga voluptatibus, dolorem nemo asperiores. Natus ea culpa tempore magni unde eligendi numquam, incidunt iure vel! Explicabo exercitationem similique perferendis suscipit nesciunt molestias?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolore
+        dicta impedit obcaecati, corporis, facilis fuga nihil illo blanditiis
+        sint reprehenderit distinctio laborum porro, dignissimos minus culpa
+        voluptate earum hic?
+        Qui asperiores recusandae nihil, rem possimus ipsam repellendus
+        dignissimos provident excepturi quisquam aliquam sunt accusantium,
+        mollitia soluta eaque ab numquam deleniti dolores. Numquam unde cumque
+        rerum a, dolor aliquam! Et.
+        Facere perspiciatis aut, delectus, temporibus officia corrupti sequi
+        iusto doloribus suscipit, repellat illum minima commodi quo natus
+        veritatis animi praesentium. Optio iste debitis quasi ut repellendus
+        autem accusantium pariatur qui.
+        Omnis at accusantium fugiat! Consequuntur doloribus sint fuga
+        voluptatibus, dolorem nemo asperiores. Natus ea culpa tempore magni unde
+        eligendi numquam, incidunt iure vel! Explicabo exercitationem similique
+        perferendis suscipit nesciunt molestias?
         Aspernatur repellendus, exceptu
       </div>
     </div>
