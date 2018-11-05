@@ -7,7 +7,8 @@ export default context =>
     router.push(context.url);
 
     router.onReady(() => {
-      const matchedComponents = router.getMatchedComponents();
+      // this is used if you want to do data prefetching on server render
+      // const matchedComponents = router.getMatchedComponents();
 
       Promise.all([]).then(() => {
         resolve(app);

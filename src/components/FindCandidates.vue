@@ -11,8 +11,13 @@
           Vpiši ime svoje občine in poglej katere kandidatke in kandidati so se
           zavezali, da participatorni proračun pripeljejo tudi v tvoj kraj!
         </p>
-        <form action="javascript:;">
+        <form
+          action="javascript:;"
+          @submit="onSubmitLocation"
+        >
           <input
+            ref="locationInput"
+            :value="query"
             type="text"
             class="form-control"
             placeholder="vpiši občino"
@@ -20,6 +25,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
+            @click="onSubmitLocation"
           >
             <!-- eslint-disable-next-line max-len -->
             <path d="M511.987 454.086L375.65 317.748c21.452-32.404 33.936-71.186 33.936-112.934C409.586 91.693 317.903.009 204.8.009 91.695.009.013 91.693.013 204.814c0 113.09 91.683 204.805 204.787 204.805 41.731 0 80.559-12.529 112.932-33.967L454.068 511.99l57.919-57.904zM58.042 204.845c0-81.06 65.715-146.745 146.758-146.745 81.059 0 146.773 65.685 146.773 146.745 0 81.061-65.715 146.776-146.773 146.776-81.043 0-146.758-65.715-146.758-146.776z" />
@@ -52,7 +58,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'FindCandidates',
+  data() {
+    const { query } = this.$route.params;
+    return {
+      query: query || '',
+    };
+  },
+  methods: {
+    onSubmitLocation() {
+      const loc = (this.$refs.locationInput && this.$refs.locationInput.value) || '';
+      const query = loc.trim().toLowerCase();
+      if (query) {
+        this.$router.push(`/${query}`);
+      } else {
+        this.$router.push('/');
+      }
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

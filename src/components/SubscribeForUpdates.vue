@@ -61,11 +61,13 @@ export default {
             btn.textContent = 'HVALA';
           } else {
             btn.textContent = 'Napaka :(';
+            // eslint-disable-next-line no-console
             console.error('Error: res.data:', res.data);
           }
         })
         .catch((error) => {
           btn.textContent = 'Napaka :(';
+          // eslint-disable-next-line no-console
           console.error('Error:', error);
         });
     },

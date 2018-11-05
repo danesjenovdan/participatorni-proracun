@@ -14,6 +14,11 @@ export function createRouter() {
         name: 'home',
         component: Home,
       },
+      {
+        path: '/:query',
+        name: 'query',
+        component: Home,
+      },
     ],
   });
 }
