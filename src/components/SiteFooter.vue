@@ -5,7 +5,10 @@
     </div>
     <div class="col-md-12">
       <div class="social-buttons">
-        <button class="btn">
+        <button
+          class="btn"
+          @click="onShareClick($event, 'fb')"
+        >
           <svg
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +19,10 @@
           </svg>
           DELI NA FB
         </button>
-        <button class="btn">
+        <button
+          class="btn"
+          @click="onShareClick($event, 'tw')"
+        >
           <svg
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +33,10 @@
           </svg>
           DELI NA TW
         </button>
-        <button class="btn">
+        <button
+          class="btn"
+          @click="onShareClick($event, 'mail')"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 64 64"
@@ -65,7 +74,46 @@
 </template>
 
 <script>
-export default {};
+import axios from 'axios';
+
+export default {
+  name: 'SiteFooter',
+  data() {
+    return {
+      shareLink: typeof document !== 'undefined' ? document.location.href : '',
+      shareText: 'TODO: default share text',
+      shareTitle: 'TODO: default share title',
+      shareHashtag: '#TODO',
+    };
+  },
+  created() {
+    if (this.shareLink) {
+      axios
+        .post('https://djnd.si/yomamasofat/', `fatmama=${encodeURIComponent(this.shareLink)}`)
+        .then((res) => {
+          this.shareLink = res.data;
+        })
+        .catch(error => console.error(error));
+    }
+  },
+  methods: {
+    onShareClick(event, type) {
+      let url = '';
+      const title = encodeURIComponent(this.shareTitle);
+      if (type === 'fb') {
+        const link = encodeURIComponent(this.shareLink);
+        url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
+      } else if (type === 'tw') {
+        const text = encodeURIComponent(`${this.shareText} ${this.shareHashtag} ${this.shareLink}`);
+        url = `https://twitter.com/intent/tweet?text=${text}`;
+      } else if (type === 'mail') {
+        const text = `${this.shareText} ${this.shareLink}`;
+        url = `mailto:?subject=${title}&body=${text}`;
+      }
+      window.open(url, '_blank');
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
