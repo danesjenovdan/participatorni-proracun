@@ -83,6 +83,44 @@ export default {
       this.loading = false;
     },
   },
+  metaInfo() {
+    return {
+      titleTemplate: `${this.query ? `${this.query} - ` : ''}%s`,
+      meta: [
+        // url
+        {
+          vmid: 'og:url',
+          property: 'og:url',
+          content: this.query, // added to template from Home.vue
+        },
+        // title
+        {
+          vmid: 'og:title',
+          property: 'og:title',
+          content: `TODO: ${this.query} og title`,
+        },
+        {
+          vmid: 'twitter:title',
+          name: 'twitter:title',
+          content: `TODO: ${this.query} og title`,
+        },
+        // description
+        {
+          vmid: 'og:description',
+          property: 'og:description',
+          content: `TODO: ${this.query} og desc`,
+        },
+        {
+          vmid: 'twitter:description',
+          name: 'twitter:description',
+          content: `TODO: ${this.query} og desc`,
+        },
+        // image
+        // { property: 'og:image', content: `${domain}${baseUrl}og-image.png` },
+        // { name: 'twitter:image', content: `${domain}${baseUrl}og-image.png` },
+      ],
+    };
+  },
 };
 </script>
 

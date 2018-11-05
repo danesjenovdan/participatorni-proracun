@@ -53,16 +53,45 @@ export default {
       { property: 'og:type', content: 'article' },
       { name: 'twitter:card', content: 'summary_large_image' },
       // url
-      { property: 'og:url', content: `${domain}${baseUrl}` },
-      // image
-      { property: 'og:image', content: `${domain}${baseUrl}og-image.png` },
-      { name: 'twitter:image', content: `${domain}${baseUrl}og-image.png` },
+      {
+        vmid: 'og:url',
+        property: 'og:url',
+        content: '',
+        template: `${domain}${baseUrl}%s`,
+      },
       // title
-      { property: 'og:title', content: 'TODO: default og title' },
-      { name: 'twitter:title', content: 'TODO: default og title' },
+      {
+        vmid: 'og:title',
+        property: 'og:title',
+        content: 'TODO: default og title',
+      },
+      {
+        vmid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'TODO: default og title',
+      },
       // description
-      { property: 'og:description', content: 'TODO: default og desc' },
-      { name: 'twitter:description', content: 'TODO: default og desc' },
+      {
+        vmid: 'og:description',
+        property: 'og:description',
+        content: 'TODO: default og desc',
+      },
+      {
+        vmid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'TODO: default og desc',
+      },
+      // image
+      {
+        vmid: 'og:image',
+        property: 'og:image',
+        content: `${domain}${baseUrl}og-image.png`,
+      },
+      {
+        vmid: 'twitter:image',
+        name: 'twitter:image',
+        content: `${domain}${baseUrl}og-image.png`,
+      },
     ],
   },
 };
