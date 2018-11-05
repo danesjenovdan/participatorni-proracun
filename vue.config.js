@@ -3,7 +3,6 @@ module.exports = {
   pluginOptions: {
     ssr: {
       port: 8801,
-      defaultTitle: 'Participatorni proračun',
     },
   },
 };

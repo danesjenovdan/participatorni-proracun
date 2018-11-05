@@ -31,6 +31,9 @@ import SubscribeForUpdates from '@/components/SubscribeForUpdates.vue';
 import Questions from '@/components/Questions.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
 
+const domain = 'http://danesjenovdan.si';
+const baseUrl = process.env.BASE_URL;
+
 export default {
   name: 'App',
   components: {
@@ -39,6 +42,28 @@ export default {
     SubscribeForUpdates,
     Questions,
     SiteFooter,
+  },
+  metaInfo: {
+    title: 'Participatorni proračun',
+    meta: [
+      // owner
+      { property: 'fb:app_id', content: '301375193309601' },
+      { name: 'twitter:creator', content: '@danesjenovdan' },
+      // type
+      { property: 'og:type', content: 'article' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      // url
+      { property: 'og:url', content: `${domain}${baseUrl}` },
+      // image
+      { property: 'og:image', content: `${domain}${baseUrl}og-image.png` },
+      { name: 'twitter:image', content: `${domain}${baseUrl}og-image.png` },
+      // title
+      { property: 'og:title', content: 'TODO: default og title' },
+      { name: 'twitter:title', content: 'TODO: default og title' },
+      // description
+      { property: 'og:description', content: 'TODO: default og desc' },
+      { name: 'twitter:description', content: 'TODO: default og desc' },
+    ],
   },
 };
 </script>
