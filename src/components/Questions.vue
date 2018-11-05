@@ -7,48 +7,53 @@
       </h2>
     </div>
     <div class="col-md-6 mt-5 px-0">
-      <div class="faq-q-box">
-        Lorem ipsum dolor sit amet, consectetur adipisicing?
-      </div>
-      <div class="faq-q-box">
-        Lorem ipsum dolor sit amet, adipisicing?
-      </div>
-      <div class="faq-q-box">
-        Lorem ipsum dolor sit amet?
-      </div>
-      <div class="faq-q-box">
-        Lorem ipsum dolor sit amet?
-      </div>
-      <div class="faq-q-box">
-        Lorem ipsum dolor sit amet?
+      <div
+        v-for="(qa, i) in stuff"
+        :key="qa.q"
+        :class="['faq-q-box', { active: i === selected }]"
+        @click="selectAnswer(i)"
+      >
+        {{ qa.q }}
       </div>
     </div>
     <div class="col-md-6 mt-5 px-0">
       <div class="faq-a-content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolore
-        dicta impedit obcaecati, corporis, facilis fuga nihil illo blanditiis
-        sint reprehenderit distinctio laborum porro, dignissimos minus culpa
-        voluptate earum hic?
-        Qui asperiores recusandae nihil, rem possimus ipsam repellendus
-        dignissimos provident excepturi quisquam aliquam sunt accusantium,
-        mollitia soluta eaque ab numquam deleniti dolores. Numquam unde cumque
-        rerum a, dolor aliquam! Et.
-        Facere perspiciatis aut, delectus, temporibus officia corrupti sequi
-        iusto doloribus suscipit, repellat illum minima commodi quo natus
-        veritatis animi praesentium. Optio iste debitis quasi ut repellendus
-        autem accusantium pariatur qui.
-        Omnis at accusantium fugiat! Consequuntur doloribus sint fuga
-        voluptatibus, dolorem nemo asperiores. Natus ea culpa tempore magni unde
-        eligendi numquam, incidunt iure vel! Explicabo exercitationem similique
-        perferendis suscipit nesciunt molestias?
-        Aspernatur repellendus, exceptu
+        {{ stuff[selected].a }}
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+const stuff = [
+  {
+    q: 'q',
+    a: 'a',
+  },
+  {
+    q: 'q1',
+    a: 'a1',
+  },
+  {
+    q: 'q2',
+    a: 'a2',
+  },
+];
+
+export default {
+  name: 'Questions',
+  data() {
+    return {
+      stuff,
+      selected: 0,
+    };
+  },
+  methods: {
+    selectAnswer(i) {
+      this.selected = i;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -80,6 +85,8 @@ export default {};
     cursor: pointer;
 
     &.active {
+      background-color: #5f235b;
+      color: #fff;
       cursor: auto;
     }
 
