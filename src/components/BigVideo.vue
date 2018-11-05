@@ -2,15 +2,18 @@
   <div class="big-video">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe
-        :class="['embed-responsive-item', { 'blurred': showOverlay }]"
-        src="https://player.vimeo.com/video/292283117?portrait=0&amp;title=0&amp;byline=0&amp;autoplay=1"
-        width="640"
-        height="360"
+        v-if="!showOverlay"
+        class="embed-responsive-item"
+        src="https://www.youtube.com/embed/Zj2cK8wymIA?autoplay=1"
         frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
+      <img
+        v-else
+        src="https://placekitten.com/800/600"
+        class="embed-responsive-item blurred"
+      >
       <div
         v-if="showOverlay"
         class="overlay"
