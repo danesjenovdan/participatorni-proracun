@@ -17,7 +17,7 @@
         >
           <input
             ref="locationInput"
-            :value="query"
+            v-model="query"
             type="text"
             class="form-control"
             placeholder="vpiši občino"
@@ -36,7 +36,9 @@
     <div class="col-lg-7 col--results px-0">
       <div class="col__content">
         <div class="empty-state">
+          <loader v-if="loading" />
           <svg
+            v-else
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 60 60"
           >
@@ -58,23 +60,27 @@
 </template>
 
 <script>
+import Loader from './Loader.vue';
+
 export default {
   name: 'FindCandidates',
+  components: {
+    Loader,
+  },
   data() {
     const { query } = this.$route.params;
     return {
       query: query || '',
+      loading: false,
     };
   },
   methods: {
     onSubmitLocation() {
+      this.loading = true;
       const loc = (this.$refs.locationInput && this.$refs.locationInput.value) || '';
-      const query = loc.trim().toLowerCase();
-      if (query) {
-        this.$router.push(`/${query}`);
-      } else {
-        this.$router.push('/');
-      }
+      this.query = loc.trim().toLowerCase();
+      this.$router.push(`/${this.query}`);
+      this.loading = false;
     },
   },
 };
@@ -172,10 +178,14 @@ export default {
         width: $size;
         height: $size;
         padding: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         svg {
           margin-top: -0.5rem;
           fill: #5f235b;
+          height: 100%;
         }
       }
     }
