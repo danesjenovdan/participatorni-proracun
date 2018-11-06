@@ -6,7 +6,7 @@
           ZMAGOVALCE VOLITEV BOMO NA OBLJUBO OPOMINJALI <strong>TUDI PO VOLITVAH</strong>.
         </p>
         <p>
-          Pusti svoj email naslov, da ti javimo, kaj je novega!
+          Pusti svoj e-naslov, da ti javimo, ko bo kaj novega!
         </p>
       </div>
     </div>
@@ -18,7 +18,7 @@
               ref="emailInput"
               type="text"
               class="form-control"
-              placeholder="email"
+              placeholder="E-naslov"
             >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@
             class="btn btn-block"
             @click="onSubscribeClick"
           >
-            NAROČI ME
+            Naroči me!
           </button>
         </form>
       </div>

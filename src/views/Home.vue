@@ -63,23 +63,25 @@ export default {
       {
         vmid: 'og:title',
         property: 'og:title',
-        content: 'TODO: default og title',
+        content: 'Čas je, da občinski denar postane tudi tvoja stvar!',
       },
       {
         vmid: 'twitter:title',
         name: 'twitter:title',
-        content: 'TODO: default og title',
+        content: 'Čas je, da občinski denar postane tudi tvoja stvar!',
       },
       // description
       {
         vmid: 'og:description',
         property: 'og:description',
-        content: 'TODO: default og desc',
+        content:
+          'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.',
       },
       {
         vmid: 'twitter:description',
         name: 'twitter:description',
-        content: 'TODO: default og desc',
+        content:
+          'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.',
       },
       // image
       {

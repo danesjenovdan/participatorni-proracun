@@ -17,7 +17,7 @@
             <!-- eslint-disable-next-line max-len -->
             <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
           </svg>
-          DELI NA FB
+          Deli na FB
         </button>
         <button
           class="btn"
@@ -31,7 +31,7 @@
             <!-- eslint-disable-next-line max-len -->
             <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
           </svg>
-          DELI NA TW
+          Deli na TW
         </button>
         <button
           class="btn"
@@ -46,7 +46,7 @@
             <!-- eslint-disable-next-line max-len -->
             <path d="M59.24 30.3L23.78 14.18a1.87 1.87 0 0 0-2.49 2.43L27.86 32l-6.57 15.39a1.87 1.87 0 0 0 2.49 2.43L59.24 33.7a1.87 1.87 0 0 0 0-3.4zM26.61 44.43l4.51-10.56h9.61a1.87 1.87 0 1 0 0-3.73h-9.61l-4.51-10.57L54 32zM8.07 25.78a1.87 1.87 0 0 1 1.87-1.87h11.51a1.87 1.87 0 0 1 0 3.73H9.94a1.87 1.87 0 0 1-1.87-1.86zm6.84 4.36h9a1.87 1.87 0 1 1 0 3.73h-9a1.87 1.87 0 0 1 0-3.73zm-5 3.73H5.53a1.87 1.87 0 1 1 0-3.73h4.41a1.87 1.87 0 0 1 0 3.73zm10.89 4.36a1.87 1.87 0 0 1-1.8 1.86h-9a1.87 1.87 0 1 1 0-3.73h9a1.87 1.87 0 0 1 1.83 1.86z" />
           </svg>
-          POŠLJI
+          Pošlji na mejl
         </button>
       </div>
     </div>
@@ -61,12 +61,12 @@
           </a>
         </div>
         <p class="disclaimer small">
-          Pošljite nam mejl na
+          Opravičujemo se za morebitne napake. Za popravke, dodatne informacije in medijska
+          vprašanja smo dosegljivi na na
           <a
-            href="mailto:maja@danesjenovdan.si?subject=Participatorni%20proračun"
+            href="mailto:maja@djnd.si"
             target="_blank"
-          >maja@danesjenovdan.si</a>
-          če so narobe podatki etc. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          >maja@djnd.si</a>.
         </p>
       </div>
     </div>
@@ -81,9 +81,9 @@ export default {
   data() {
     return {
       shareLink: typeof document !== 'undefined' ? document.location.href : '',
-      shareText: 'TODO: default share text',
-      shareTitle: 'TODO: default share title',
-      shareHashtag: '#TODO',
+      shareText: 'Čas je, da občinski denar postane tudi tvoja stvar!',
+      shareTitle: 'Čas je, da občinski denar postane tudi tvoja stvar!',
+      shareHashtag: '#TvojaStvar',
     };
   },
   created() {

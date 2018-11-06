@@ -5,11 +5,11 @@
         <h2>
           Kdo v tvoji
           občini <strong>obljublja</strong>
-          participatorni proračun?
+          participativni proračun?
         </h2>
         <p>
-          Vpiši ime svoje občine in poglej katere kandidatke in kandidati so se
-          zavezali, da participatorni proračun pripeljejo tudi v tvoj kraj!
+          Vpiši ime svoje občine in poglej, katere kandidatke in kandidati so se zavezali, da
+          uvedejo participativni proračun!
         </p>
         <form
           action="javascript:;"
@@ -85,9 +85,15 @@
                         />
                       </div>
                       <div class="promise-text">
-                        <span v-if="row['OBLJUBA'] == 2">že izvaja</span>
-                        <span v-else-if="row['OBLJUBA'] == 1">se je zaobljubil</span>
-                        <span v-else-if="row['OBLJUBA'] <= 0">se ni zaobljubil</span>
+                        <span v-if="row['OBLJUBA'] == 2">
+                          {{ row['SPOL'] == 'm' ? 'Že izvaja' : 'Že izvaja' }}
+                        </span>
+                        <span v-else-if="row['OBLJUBA'] == 1">
+                          {{ row['SPOL'] == 'm' ? 'Se je zaobljubil' : 'Se je zaobljubila' }}
+                        </span>
+                        <span v-else-if="row['OBLJUBA'] <= 0">
+                          {{ row['SPOL'] == 'm' ? 'Se ni zaobljubil' : 'Se ni zaobljubila' }}
+                        </span>
                       </div>
                     </div>
                   </td>
@@ -163,10 +169,11 @@
       </div>
       <div class="notify-us">
         <a
-          href="mailto:maja@danesjenovdan.si?subject=Participatorni%20proračun"
+          :href="`mailto:maja@danesjenovdan.si?subject=${notifyUsMailSubject}`"
           target="_blank"
         >
-          Si kandidat/-ka in nas želiš obvestiti o svoji nameri?
+          Si kandidat/-ka in nas želiš obvestiti o svoji nameri ali nam javiti popravek morebitne
+          napake na spletni strani?
         </a>
       </div>
     </div>
@@ -186,6 +193,8 @@ function groupBy(arr, key) {
   }, {});
 }
 
+const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
+
 export default {
   name: 'FindCandidates',
   components: {
@@ -199,6 +208,7 @@ export default {
       loading: false,
       data: null,
       hoveredSocial: null,
+      notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
     };
   },
   computed: {
@@ -252,9 +262,9 @@ export default {
       console.log(this.resultsByMunicipality[municipality][i]);
 
       const shareLink = typeof document !== 'undefined' ? document.location.href : '';
-      const shareTitle = 'TODO: default share title';
-      const shareText = 'TODO: default share text';
-      const shareHashtag = '#TODO';
+      const shareTitle = 'Čas je, da občinski denar postane tudi tvoja stvar!';
+      const shareText = 'Čas je, da občinski denar postane tudi tvoja stvar!';
+      const shareHashtag = '#TvojaStvar';
 
       let url = '';
       const title = encodeURIComponent(shareTitle);
@@ -272,6 +282,8 @@ export default {
     },
   },
   metaInfo() {
+    const text = `Preveri, kdo od županskih kandidatk in kandidatov v občini ${this.query} \
+obljublja uvedbo participativnega proračuna!`;
     return {
       titleTemplate: `${this.query ? `${this.query} - ` : ''}%s`,
       meta: [
@@ -281,27 +293,16 @@ export default {
           property: 'og:url',
           content: this.query, // this is added to the template from Home.vue
         },
-        // title
-        {
-          vmid: 'og:title',
-          property: 'og:title',
-          content: `TODO: ${this.query} og title`,
-        },
-        {
-          vmid: 'twitter:title',
-          name: 'twitter:title',
-          content: `TODO: ${this.query} og title`,
-        },
         // description
         {
           vmid: 'og:description',
           property: 'og:description',
-          content: `TODO: ${this.query} og desc`,
+          content: text,
         },
         {
           vmid: 'twitter:description',
           name: 'twitter:description',
-          content: `TODO: ${this.query} og desc`,
+          content: text,
         },
       ],
     };
@@ -615,6 +616,7 @@ export default {
       text-align: center;
       font-size: 0.75rem;
       margin-top: 0.5rem;
+      padding: 0 2rem;
     }
   }
 }
