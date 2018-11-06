@@ -324,7 +324,6 @@ export default {
   },
   metaInfo() {
     const overrideTags = {
-      titleTemplate: `${this.query ? `${this.query} - ` : ''}%s`,
       meta: [
         // url
         {
