@@ -31,7 +31,7 @@ import SubscribeForUpdates from '@/components/SubscribeForUpdates.vue';
 import Questions from '@/components/Questions.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
 
-const domain = 'http://danesjenovdan.si';
+const domain = 'https://danesjenovdan.si';
 const baseUrl = process.env.BASE_URL;
 
 export default {
