@@ -40,4 +40,29 @@ a:active {
     text-decoration: none;
   }
 }
+
+.btn {
+  border-radius: 0;
+  background-color: #f2cc59;
+  color: #5f235b;
+  font-size: 1.75rem;
+  font-weight: 900;
+  box-shadow: 6px 6px #5f235b;
+  transition: all 0.15s ease-in-out;
+
+  &.disabled,
+  &[disabled] {
+    filter: grayscale(1);
+  }
+
+  &:not(.disabled):not([disabled]):hover {
+    background-color: #fcf5de;
+    color: rgba(#5f235b, 0.75);
+  }
+
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px #5f235b;
+  }
+}
 </style>

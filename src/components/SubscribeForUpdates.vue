@@ -143,68 +143,6 @@ export default {
             box-shadow: none;
           }
         }
-
-        // .form-check-input {
-        //   opacity: 0;
-        //   visibility: hidden;
-        // }
-
-        // .form-check-label {
-        //   color: #5f235b;
-        //   margin-left: 0.75em;
-        //   cursor: pointer;
-
-        //   &::before {
-        //     content: '';
-        //     display: block;
-        //     border: 4px solid #5f235b;
-        //     position: absolute;
-        //     left: 0;
-        //     top: 0;
-        //     width: 1.5em;
-        //     height: 1.5em;
-        //   }
-        // }
-
-        // .form-check-input:checked + .form-check-label {
-        //   &::after {
-        //     content: '';
-        //     display: block;
-        //     border: 4px solid #5f235b;
-        //     border-width: 0 4px 4px 0;
-        //     position: absolute;
-        //     left: 0.52em;
-        //     top: 0.25em;
-        //     width: 0.45em;
-        //     height: 0.85em;
-        //     transform: rotate(45deg);
-        //   }
-        // }
-      }
-
-      .btn {
-        border-radius: 0;
-        background-color: #f2cc59;
-        color: #5f235b;
-        font-size: 1.75rem;
-        font-weight: 900;
-        box-shadow: 6px 6px #5f235b;
-        transition: all 0.15s ease-in-out;
-
-        &.disabled,
-        &[disabled] {
-          filter: grayscale(1);
-        }
-
-        &:not(.disabled):not([disabled]):hover {
-          background-color: #fcf5de;
-          color: rgba(#5f235b, 0.75);
-        }
-
-        &:active {
-          transform: translate(4px, 4px);
-          box-shadow: 2px 2px #5f235b;
-        }
       }
     }
   }

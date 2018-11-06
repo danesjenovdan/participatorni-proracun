@@ -133,28 +133,10 @@ export default {
     margin-top: 1rem;
 
     .btn {
-      border-radius: 0;
-      background-color: #f2cc59;
-      color: #5f235b;
       font-size: 1rem;
-      font-weight: 900;
-      box-shadow: 6px 6px #5f235b;
-      transition: all 0.15s ease-in-out;
       margin-bottom: 2rem;
-
-      &:hover {
-        background-color: #fcf5de;
-        color: rgba(#5f235b, 0.75);
-      }
-
-      &:active {
-        transform: translate(4px, 4px);
-        box-shadow: 2px 2px #5f235b;
-      }
-
-      & + .btn {
-        margin-left: 2rem;
-      }
+      margin-left: 1rem;
+      margin-right: 1rem;
 
       svg {
         width: 1.25rem;
