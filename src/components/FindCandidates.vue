@@ -35,7 +35,10 @@
     </div>
     <div class="col-lg-7 col--results px-0">
       <div class="col__content">
-        <div class="empty-state">
+        <div
+          v-if="!results || !results.length"
+          class="empty-state"
+        >
           <loader v-if="loading" />
           <svg
             v-else
@@ -45,6 +48,9 @@
             <!-- eslint-disable-next-line max-len -->
             <path d="M43 14H17c-.379 0-.725-.214-.895-.553l-2-4A1 1 0 0 1 15 8h30a1 1 0 0 1 .895 1.447l-2 4c-.17.339-.516.553-.895.553zm-25.382-2h24.764l1-2H16.618l1 2zM59 60H1a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h58a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM2 58h56v-2H2v2z" /><path d="M43 56H17a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1h26a1 1 0 0 1 1 1v42a1 1 0 0 1-1 1zm-25-2h24V14H18v40z" /><path d="M17 56H3a1 1 0 0 1-1-1V27a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1zM4 54h12V28H4v26zM57 56H43a1 1 0 0 1-1-1V27a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1zm-13-2h12V28H44v26zM30 33c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-14c-3.308 0-6 2.691-6 6s2.692 6 6 6 6-2.691 6-6-2.692-6-6-6z" /><path d="M30 26a1 1 0 0 1-1-1v-3a1 1 0 0 1 2 0v3a1 1 0 0 1-1 1z" /><path d="M32 26h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM30 10a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1zM34 10a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zM26 10a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zM17 28H3c-.379 0-.725-.214-.895-.553l-2-4A1 1 0 0 1 1 22h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM3.618 26H16v-2H2.618l1 2zM57 28H43a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 .895 1.447l-2 4c-.17.339-.516.553-.895.553zm-13-2h12.382l1-2H44v2zM36 56H24a1 1 0 0 1-1-1V43a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1zm-11-2h10V44H25v10z" /><path d="M38 44H22a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm-15-2h14v-1H23v1z" /><path d="M35 41H25a1 1 0 0 1-1-1c0-2.757 2.692-5 6-5s6 2.243 6 5a1 1 0 0 1-1 1zm-8.771-2h7.543c-.55-1.164-2.033-2-3.771-2s-3.222.836-3.772 2zM32 50h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM13 52H7a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1zm-5-2h4V32H8v18z" /><path d="M13 37H7a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM13 47H7a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM13 42H7a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM53 52h-6a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1zm-5-2h4V32h-4v18z" /><path d="M53 37h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM53 47h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM53 42h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z" />
           </svg>
+        </div>
+        <div v-else>
+          {{ results }}
         </div>
       </div>
       <div class="notify-us">
@@ -60,6 +66,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+import Papa from 'papaparse';
 import Loader from './Loader.vue';
 
 export default {
@@ -70,16 +78,45 @@ export default {
   data() {
     const { query } = this.$route.params;
     return {
-      inputValue: query || '',
-      query: query || '',
+      inputValue: (query || '').toUpperCase(),
+      query: (query || '').toLowerCase(),
       loading: false,
+      data: null,
     };
+  },
+  computed: {
+    results() {
+      if (!this.data || !this.data.length || !this.query) {
+        return [];
+      }
+      const upperQuery = this.query.toUpperCase();
+      return this.data.filter(row => row[0].indexOf(upperQuery) !== -1);
+    },
+  },
+  mounted() {
+    this.loading = true;
+    const baseUrl = process.env.BASE_URL;
+    axios
+      .get(`${baseUrl}kandidati_names.csv`)
+      .then((res) => {
+        const data = Papa.parse(res.data);
+        if (data.errors.length) {
+          // eslint-disable-next-line no-console
+          console.error('CSV Parse Errors:', data.errors);
+        }
+        this.data = data.data;
+        this.loading = false;
+      })
+      .catch((error) => {
+        // eslint-disable-next-line no-console
+        console.error('CSV Fetch Error:', error);
+      });
   },
   methods: {
     onSubmitLocation() {
       this.loading = true;
       this.query = (this.inputValue || '').trim().toLowerCase();
-      this.inputValue = this.query;
+      this.inputValue = this.query.toUpperCase();
       this.$router.push(`/${this.query}`);
       this.loading = false;
     },
@@ -92,7 +129,7 @@ export default {
         {
           vmid: 'og:url',
           property: 'og:url',
-          content: this.query, // added to template from Home.vue
+          content: this.query, // this is added to the template from Home.vue
         },
         // title
         {
@@ -116,9 +153,6 @@ export default {
           name: 'twitter:description',
           content: `TODO: ${this.query} og desc`,
         },
-        // image
-        // { property: 'og:image', content: `${domain}${baseUrl}og-image.png` },
-        // { name: 'twitter:image', content: `${domain}${baseUrl}og-image.png` },
       ],
     };
   },
