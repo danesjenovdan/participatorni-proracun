@@ -218,10 +218,11 @@
 </template>
 
 <script>
-import axios from 'axios';
 import Papa from 'papaparse';
 import Loader from './Loader.vue';
 import { openSocialShareLink } from '../helpers/social';
+// eslint-disable-next-line
+import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
 
 function groupBy(arr, key) {
   return arr.reduce((acc, cur) => {
@@ -234,6 +235,10 @@ function groupBy(arr, key) {
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
 const shareContent =
   'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!';
+const sharePersonM =
+  '{name} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.';
+const sharePersonF =
+  '{name} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.';
 
 export default {
   name: 'FindCandidates',
@@ -242,11 +247,20 @@ export default {
   },
   data() {
     const { query } = this.$route.params;
+    const { p } = this.$route.query;
+
+    const data = Papa.parse(csvData, { header: true });
+    if (data.errors.length) {
+      // eslint-disable-next-line no-console
+      console.error('CSV Parse Errors:', data.errors);
+    }
+
     return {
       inputValue: (query || '').toUpperCase(),
       query: (query || '').toLowerCase(),
+      person: p,
       loading: false,
-      data: null,
+      data: data.data,
       hoveredSocial: null,
       hoveredSocialMunicipality: false,
       notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
@@ -263,25 +277,6 @@ export default {
     resultsByMunicipality() {
       return groupBy(this.results, 'OBČINA');
     },
-  },
-  mounted() {
-    this.loading = true;
-    const baseUrl = process.env.BASE_URL;
-    axios
-      .get(`${baseUrl}seznam_kandidatov.csv`)
-      .then((res) => {
-        const data = Papa.parse(res.data, { header: true });
-        if (data.errors.length) {
-          // eslint-disable-next-line no-console
-          console.error('CSV Parse Errors:', data.errors);
-        }
-        this.data = data.data;
-        this.loading = false;
-      })
-      .catch((error) => {
-        // eslint-disable-next-line no-console
-        console.error('CSV Fetch Error:', error);
-      });
   },
   methods: {
     onSubmitLocation() {
@@ -313,8 +308,8 @@ export default {
 
       const shareText =
         row.SPOL === 'm'
-          ? `${ime} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.`
-          : `${ime} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.`;
+          ? sharePersonM.replace('{name}', ime)
+          : sharePersonF.replace('{name}', ime);
       const shareHashtag = '#TvojaStvar';
 
       openSocialShareLink(type, shareText, shareLink, shareHashtag);
@@ -340,9 +335,21 @@ export default {
       ],
     };
 
-    if (this.query) {
+    if (this.person || this.query) {
+      let content = shareContent.replace('{query}', this.query.toUpperCase());
+      let image = 'og-image-obcina.png';
+      if (this.person) {
+        const rows = this.data.filter(r => r.KANDIDAT === this.person);
+        if (rows && rows.length && rows[0].OBLJUBA > 0) {
+          content =
+            rows[0].SPOL === 'm'
+              ? sharePersonM.replace('{name}', this.person)
+              : sharePersonF.replace('{name}', this.person);
+          image = 'og-image-oseba.png';
+        }
+      }
+
       // description
-      const content = shareContent.replace('{query}', this.query.toUpperCase());
       overrideTags.meta.push({
         vmid: 'og:description',
         property: 'og:description',
@@ -357,12 +364,12 @@ export default {
       overrideTags.meta.push({
         vmid: 'og:image',
         property: 'og:image',
-        content: 'og-image-obcina.png', // this is added to the template from Home.vue
+        content: image, // this is added to the template from Home.vue
       });
       overrideTags.meta.push({
         vmid: 'twitter:image',
         name: 'twitter:image',
-        content: 'og-image-obcina.png', // this is added to the template from Home.vue
+        content: image, // this is added to the template from Home.vue
       });
     }
 
