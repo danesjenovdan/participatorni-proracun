@@ -93,7 +93,10 @@ export default {
         .then((res) => {
           this.shareLink = res.data;
         })
-        .catch(error => console.error(error));
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.error(error);
+        });
     }
   },
   methods: {

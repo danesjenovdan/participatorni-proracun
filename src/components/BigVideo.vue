@@ -48,7 +48,6 @@ export default {
   },
   methods: {
     onPlayClick() {
-      console.log('play');
       this.showOverlay = false;
     },
   },
