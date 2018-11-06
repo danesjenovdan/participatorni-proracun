@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: '/participatorni-proracun/',
+  baseUrl: '/participativni-proracun/',
   pluginOptions: {
     ssr: {
       port: 8801,
