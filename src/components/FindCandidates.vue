@@ -161,9 +161,46 @@
             </table>
           </template>
           <button
-            class="btn btn-block"
+            :class="[
+              'btn',
+              'btn-block',
+              'btn-municipality',
+              { 'btn-municipality--hover': hoveredSocialMunicipality },
+            ]"
+            @mouseenter="onMouseEnterMunicipality"
+            @mouseleave="onMouseLeaveMunicipality"
           >
-            DELI SVOJO OBČINO
+            <span v-if="!hoveredSocialMunicipality">DELI SVOJO OBČINO!</span>
+            <span v-else>
+              <svg
+                viewBox="0 0 1792 1792"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                @click="onShareClickMunicipality($event, 'fb')"
+              >
+                <!-- eslint-disable-next-line max-len -->
+                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+              </svg>
+              <svg
+                viewBox="0 0 1792 1792"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                @click="onShareClickMunicipality($event, 'tw')"
+              >
+                <!-- eslint-disable-next-line max-len -->
+                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                fill="currentColor"
+                class="send-icon"
+                @click="onShareClickMunicipality($event, 'mail')"
+              >
+                <!-- eslint-disable-next-line max-len -->
+                <path d="M59.24 30.3L23.78 14.18a1.87 1.87 0 0 0-2.49 2.43L27.86 32l-6.57 15.39a1.87 1.87 0 0 0 2.49 2.43L59.24 33.7a1.87 1.87 0 0 0 0-3.4zM26.61 44.43l4.51-10.56h9.61a1.87 1.87 0 1 0 0-3.73h-9.61l-4.51-10.57L54 32zM8.07 25.78a1.87 1.87 0 0 1 1.87-1.87h11.51a1.87 1.87 0 0 1 0 3.73H9.94a1.87 1.87 0 0 1-1.87-1.86zm6.84 4.36h9a1.87 1.87 0 1 1 0 3.73h-9a1.87 1.87 0 0 1 0-3.73zm-5 3.73H5.53a1.87 1.87 0 1 1 0-3.73h4.41a1.87 1.87 0 0 1 0 3.73zm10.89 4.36a1.87 1.87 0 0 1-1.8 1.86h-9a1.87 1.87 0 1 1 0-3.73h9a1.87 1.87 0 0 1 1.83 1.86z" />
+              </svg>
+            </span>
           </button>
         </div>
       </div>
@@ -208,6 +245,7 @@ export default {
       loading: false,
       data: null,
       hoveredSocial: null,
+      hoveredSocialMunicipality: false,
       notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
     };
   },
@@ -257,6 +295,12 @@ export default {
     onMouseLeave() {
       this.hoveredSocial = null;
     },
+    onMouseEnterMunicipality() {
+      this.hoveredSocialMunicipality = true;
+    },
+    onMouseLeaveMunicipality() {
+      this.hoveredSocialMunicipality = false;
+    },
     onShareClick($event, type, municipality, i) {
       const row = this.resultsByMunicipality[municipality][i];
       const ime = row.KANDIDAT;
@@ -284,13 +328,12 @@ export default {
       }
       window.open(url, '_blank');
     },
+    onShareClickMunicipality($event, type) {
+      console.log(type);
+    },
   },
   metaInfo() {
-    const text = this.query
-      ? 'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!'
-      : 'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.';
-    const content = text.replace('{query}', this.query.toUpperCase());
-    return {
+    const overrideTags = {
       titleTemplate: `${this.query ? `${this.query} - ` : ''}%s`,
       meta: [
         // url
@@ -299,19 +342,36 @@ export default {
           property: 'og:url',
           content: this.query, // this is added to the template from Home.vue
         },
-        // description
-        {
-          vmid: 'og:description',
-          property: 'og:description',
-          content,
-        },
-        {
-          vmid: 'twitter:description',
-          name: 'twitter:description',
-          content,
-        },
       ],
     };
+
+    if (this.query) {
+      // description
+      const content = `Preveri, kdo od županskih kandidatk in kandidatov v občini ${this.query.toUpperCase()} obljublja uvedbo participativnega proračuna!`;
+      overrideTags.meta.push({
+        vmid: 'og:description',
+        property: 'og:description',
+        content,
+      });
+      overrideTags.meta.push({
+        vmid: 'twitter:description',
+        name: 'twitter:description',
+        content,
+      });
+      // image
+      overrideTags.meta.push({
+        vmid: 'og:image',
+        property: 'og:image',
+        content: 'og-image-obcina.png', // this is added to the template from Home.vue
+      });
+      overrideTags.meta.push({
+        vmid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'og-image-obcina.png', // this is added to the template from Home.vue
+      });
+    }
+
+    return overrideTags;
   },
 };
 </script>
@@ -605,14 +665,24 @@ export default {
           color: #f2cc59;
           box-shadow: 6px 6px rgba(#5f235b, 0.75);
 
-          &:not(.disabled):not([disabled]):hover {
-            background-color: rgba(#5f235b, 0.9);
-            color: #fff;
+          &:active {
+            transform: translate(0);
+            box-shadow: 6px 6px rgba(#5f235b, 0.75);
           }
 
-          &:active {
-            transform: translate(4px, 4px);
-            box-shadow: 2px 2px rgba(#5f235b, 0.75);
+          svg {
+            height: 2rem;
+            cursor: pointer;
+
+            &:not(:last-of-type) {
+              margin-right: 2rem;
+              padding-right: 2rem;
+              border-right: 2px solid #f2cc59;
+            }
+
+            &:hover {
+              color: #fcf5de;
+            }
           }
         }
       }
