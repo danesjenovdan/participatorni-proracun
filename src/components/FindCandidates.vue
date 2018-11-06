@@ -53,48 +53,107 @@
           v-else
           class="results"
         >
-          <table class="w-100">
-            <tbody>
-              <tr
-                v-for="(row, i) in results"
-                :key="row[1]"
-              >
-                <td>
-                  <div class="name">{{ row[1] }}</div>
-                  <div class="proposer">
-                    <small>({{ row[2] }})</small>
-                  </div>
-                </td>
-                <td>
-                  <div class="response">
-                    <div class="promise-icon-wrapper">
-                      <span
+          <template v-for="(results, municipality) in resultsByMunicipality">
+            <h5 :key="`heading-${municipality}`">{{ municipality }}</h5>
+            <table
+              :key="`table-${municipality}`"
+              class="w-100"
+            >
+              <tbody>
+                <tr
+                  v-for="(row, i) in results"
+                  :key="row['KANDIDAT']"
+                >
+                  <td>
+                    <div class="name">{{ row['KANDIDAT'] }}</div>
+                    <div class="proposer">
+                      <small>({{ row['PREDLAGATELJ'] }})</small>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="response">
+                      <div class="promise-icon-wrapper">
+                        <span
+                          :class="[
+                            'promise-icon',
+                            {
+                              star: row['OBLJUBA'] == 2,
+                              check: row['OBLJUBA'] == 1,
+                              cross: row['OBLJUBA'] <= 0,
+                            }
+                          ]"
+                        />
+                      </div>
+                      <div class="promise-text">
+                        <span v-if="row['OBLJUBA'] == 2">že izvaja</span>
+                        <span v-else-if="row['OBLJUBA'] == 1">se je zaobljubil</span>
+                        <span v-else-if="row['OBLJUBA'] <= 0">se ni zaobljubil</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <div
+                        v-if="row['OBLJUBA'] > 0"
                         :class="[
-                          'promise-icon',
-                          { check: i % 3 === 0, cross: i % 3 === 1, star: i % 3 === 2 }
+                          'social',
+                          { 'social--hover': hoveredSocial === `${municipality}-${i}` },
                         ]"
-                      />
+                        @mouseenter="onMouseEnter(`${municipality}-${i}`)"
+                        @mouseleave="onMouseLeave"
+                      >
+                        <span v-if="hoveredSocial !== `${municipality}-${i}`">POVEJ NAPREJ!</span>
+                        <span v-else>
+                          <svg
+                            viewBox="0 0 1792 1792"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            @click="onShareClick($event, 'fb', municipality, i)"
+                          >
+                            <!-- eslint-disable-next-line max-len -->
+                            <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+                          </svg>
+                          <svg
+                            viewBox="0 0 1792 1792"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            @click="onShareClick($event, 'tw', municipality, i)"
+                          >
+                            <!-- eslint-disable-next-line max-len -->
+                            <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 64 64"
+                            fill="currentColor"
+                            class="send-icon"
+                            @click="onShareClick($event, 'mail', municipality, i)"
+                          >
+                            <!-- eslint-disable-next-line max-len -->
+                            <path d="M59.24 30.3L23.78 14.18a1.87 1.87 0 0 0-2.49 2.43L27.86 32l-6.57 15.39a1.87 1.87 0 0 0 2.49 2.43L59.24 33.7a1.87 1.87 0 0 0 0-3.4zM26.61 44.43l4.51-10.56h9.61a1.87 1.87 0 1 0 0-3.73h-9.61l-4.51-10.57L54 32zM8.07 25.78a1.87 1.87 0 0 1 1.87-1.87h11.51a1.87 1.87 0 0 1 0 3.73H9.94a1.87 1.87 0 0 1-1.87-1.86zm6.84 4.36h9a1.87 1.87 0 1 1 0 3.73h-9a1.87 1.87 0 0 1 0-3.73zm-5 3.73H5.53a1.87 1.87 0 1 1 0-3.73h4.41a1.87 1.87 0 0 1 0 3.73zm10.89 4.36a1.87 1.87 0 0 1-1.8 1.86h-9a1.87 1.87 0 1 1 0-3.73h9a1.87 1.87 0 0 1 1.83 1.86z" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div
+                        v-else
+                        class="sad-face-wrapper"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 100 100"
+                          fill="currentColor"
+                          class="sad-face"
+                        >
+                          <!-- eslint-disable-next-line max-len -->
+                          <path d="M35.95 33c-2.648 0-4.85 2.202-4.85 4.85 0 2.648 2.202 4.85 4.85 4.85 2.648 0 4.85-2.202 4.85-4.85 0-2.648-2.202-4.85-4.85-4.85zm28.1 0c-2.648 0-4.85 2.202-4.85 4.85 0 2.648 2.202 4.85 4.85 4.85 2.648 0 4.85-2.202 4.85-4.85 0-2.648-2.202-4.85-4.85-4.85z" /><path d="M50 5C25.177 5 5 25.177 5 50s20.177 45 45 45 45-20.177 45-45S74.823 5 50 5zm0 5.46c21.868 0 39.54 17.672 39.54 39.54S71.868 89.54 50 89.54 10.46 71.868 10.46 50 28.132 10.46 50 10.46z" /><path d="M50 56.716c-8.291.016-16.617 3.8-21.531 11.436-.961 1.493-.798 3.395.562 4.17 1.44.822 3.083.238 3.969-1.123 3.833-5.888 10.418-8.821 17-8.837 6.582-.017 13.167 2.917 17 8.805.886 1.361 2.528 1.977 3.969 1.155 1.36-.775 1.523-2.71.562-4.202C66.617 60.484 58.291 56.7 50 56.716z" />
+                        </svg>
+                      </div>
                     </div>
-                    <div
-                      class="promise-text"
-                      v-text="i % 3 === 0
-                        ? 'se je zaobljubil'
-                        : i % 3 === 1
-                          ? 'se ni zaobljubil'
-                      : 'že izvaja'"
-                    />
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <div class="social">
-                      POVEJ NAPREJ!
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </template>
           <button
             class="btn btn-block"
           >
@@ -119,6 +178,14 @@ import axios from 'axios';
 import Papa from 'papaparse';
 import Loader from './Loader.vue';
 
+function groupBy(arr, key) {
+  return arr.reduce((acc, cur) => {
+    acc[cur[key]] = acc[cur[key]] || [];
+    acc[cur[key]].push(cur);
+    return acc;
+  }, {});
+}
+
 export default {
   name: 'FindCandidates',
   components: {
@@ -131,6 +198,7 @@ export default {
       query: (query || '').toLowerCase(),
       loading: false,
       data: null,
+      hoveredSocial: null,
     };
   },
   computed: {
@@ -139,16 +207,19 @@ export default {
         return [];
       }
       const upperQuery = this.query.toUpperCase();
-      return this.data.filter(row => row[0].indexOf(upperQuery) !== -1);
+      return this.data.filter(row => row['OBČINA'].indexOf(upperQuery) !== -1);
+    },
+    resultsByMunicipality() {
+      return groupBy(this.results, 'OBČINA');
     },
   },
   mounted() {
     this.loading = true;
     const baseUrl = process.env.BASE_URL;
     axios
-      .get(`${baseUrl}kandidati_names.csv`)
+      .get(`${baseUrl}seznam_kandidatov.csv`)
       .then((res) => {
-        const data = Papa.parse(res.data);
+        const data = Papa.parse(res.data, { header: true });
         if (data.errors.length) {
           // eslint-disable-next-line no-console
           console.error('CSV Parse Errors:', data.errors);
@@ -167,7 +238,37 @@ export default {
       this.query = (this.inputValue || '').trim().toLowerCase();
       this.inputValue = this.query.toUpperCase();
       this.$router.push(`/${this.query}`);
+      this.hoveredSocial = null;
       this.loading = false;
+    },
+    onMouseEnter(i) {
+      this.hoveredSocial = i;
+    },
+    onMouseLeave() {
+      this.hoveredSocial = null;
+    },
+    onShareClick($event, type, municipality, i) {
+      console.log(type, municipality, i);
+      console.log(this.resultsByMunicipality[municipality][i]);
+
+      const shareLink = typeof document !== 'undefined' ? document.location.href : '';
+      const shareTitle = 'TODO: default share title';
+      const shareText = 'TODO: default share text';
+      const shareHashtag = '#TODO';
+
+      let url = '';
+      const title = encodeURIComponent(shareTitle);
+      if (type === 'fb') {
+        const link = encodeURIComponent(shareLink);
+        url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
+      } else if (type === 'tw') {
+        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
+        url = `https://twitter.com/intent/tweet?text=${text}`;
+      } else if (type === 'mail') {
+        const text = `${shareText} ${shareLink}`;
+        url = `mailto:?subject=${title}&body=${text}`;
+      }
+      window.open(url, '_blank');
     },
   },
   metaInfo() {
@@ -319,6 +420,18 @@ export default {
         width: 100%;
         height: 100%;
 
+        h5 {
+          font-size: 1.25rem;
+          margin-top: 3rem;
+          margin-bottom: 0;
+          border-bottom: 1px solid #e26e53;
+          font-weight: 700;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
         table {
           table-layout: fixed;
 
@@ -352,6 +465,7 @@ export default {
                 font-size: 0.7rem;
                 line-height: 1.2;
                 margin-left: 1px;
+                text-transform: uppercase;
               }
 
               .response {
@@ -426,6 +540,32 @@ export default {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+
+                svg {
+                  width: 25%;
+                  cursor: pointer;
+
+                  &:not(:last-of-type) {
+                    margin-right: 5px;
+                    padding-right: 5px;
+                    border-right: 1px solid #f2cc59;
+                  }
+
+                  &:hover {
+                    color: #fcf5de;
+                  }
+                }
+              }
+
+              .sad-face-wrapper {
+                margin-left: 1rem;
+                text-align: center;
+
+                .sad-face {
+                  width: 2.5rem;
+                  height: 2.5rem;
+                  color: #e26e53;
+                }
               }
             }
           }
