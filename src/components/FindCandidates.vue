@@ -231,6 +231,8 @@ function groupBy(arr, key) {
 }
 
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
+const shareContent =
+  'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!';
 
 export default {
   name: 'FindCandidates',
@@ -308,28 +310,44 @@ export default {
       const docHref = typeof document !== 'undefined' ? document.location.href : '';
       const shareLink = `${docHref}?p=${encodeURIComponent(ime)}`;
 
-      const shareTitle =
+      const shareText =
         row.SPOL === 'm'
           ? `${ime} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.`
           : `${ime} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.`;
       const shareHashtag = '#TvojaStvar';
 
       let url = '';
-      const title = encodeURIComponent(shareTitle);
+      const title = encodeURIComponent(shareText);
       if (type === 'fb') {
         const link = encodeURIComponent(shareLink);
         url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
       } else if (type === 'tw') {
-        const text = encodeURIComponent(`${shareTitle} ${shareHashtag} ${shareLink}`);
+        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
         url = `https://twitter.com/intent/tweet?text=${text}`;
       } else if (type === 'mail') {
-        const text = `${shareTitle} ${shareLink}`;
+        const text = `${shareText} ${shareLink}`;
         url = `mailto:?subject=${title}&body=${text}`;
       }
       window.open(url, '_blank');
     },
     onShareClickMunicipality($event, type) {
-      console.log(type);
+      const shareLink = typeof document !== 'undefined' ? document.location.href : '';
+      const shareText = shareContent.replace('{query}', this.query.toUpperCase());
+      const shareHashtag = '#TvojaStvar';
+
+      let url = '';
+      const title = encodeURIComponent(shareText);
+      if (type === 'fb') {
+        const link = encodeURIComponent(shareLink);
+        url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
+      } else if (type === 'tw') {
+        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
+        url = `https://twitter.com/intent/tweet?text=${text}`;
+      } else if (type === 'mail') {
+        const text = `${shareText} ${shareLink}`;
+        url = `mailto:?subject=${title}&body=${text}`;
+      }
+      window.open(url, '_blank');
     },
   },
   metaInfo() {
@@ -347,7 +365,7 @@ export default {
 
     if (this.query) {
       // description
-      const content = `Preveri, kdo od županskih kandidatk in kandidatov v občini ${this.query.toUpperCase()} obljublja uvedbo participativnega proračuna!`;
+      const content = shareContent.replace('{query}', this.query.toUpperCase());
       overrideTags.meta.push({
         vmid: 'og:description',
         property: 'og:description',

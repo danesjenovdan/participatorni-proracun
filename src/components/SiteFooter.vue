@@ -78,14 +78,6 @@ import axios from 'axios';
 
 export default {
   name: 'SiteFooter',
-  data() {
-    return {
-      shareLink: typeof document !== 'undefined' ? document.location.href : '',
-      shareText: 'Čas je, da občinski denar postane tudi tvoja stvar!',
-      shareTitle: 'Čas je, da občinski denar postane tudi tvoja stvar!',
-      shareHashtag: '#TvojaStvar',
-    };
-  },
   created() {
     if (this.shareLink) {
       axios
@@ -101,16 +93,20 @@ export default {
   },
   methods: {
     onShareClick(event, type) {
+      const shareLink = typeof document !== 'undefined' ? document.location.href : '';
+      const shareText = 'Čas je, da občinski denar postane tudi tvoja stvar!';
+      const shareHashtag = '#TvojaStvar';
+
       let url = '';
-      const title = encodeURIComponent(this.shareTitle);
+      const title = encodeURIComponent(shareText);
       if (type === 'fb') {
-        const link = encodeURIComponent(this.shareLink);
+        const link = encodeURIComponent(shareLink);
         url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
       } else if (type === 'tw') {
-        const text = encodeURIComponent(`${this.shareText} ${this.shareHashtag} ${this.shareLink}`);
+        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
         url = `https://twitter.com/intent/tweet?text=${text}`;
       } else if (type === 'mail') {
-        const text = `${this.shareText} ${this.shareLink}`;
+        const text = `${shareText} ${shareLink}`;
         url = `mailto:?subject=${title}&body=${text}`;
       }
       window.open(url, '_blank');
