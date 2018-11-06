@@ -75,6 +75,7 @@
 
 <script>
 import axios from 'axios';
+import { openSocialShareLink } from '../helpers/social';
 
 export default {
   name: 'SiteFooter',
@@ -97,19 +98,7 @@ export default {
       const shareText = 'Čas je, da občinski denar postane tudi tvoja stvar!';
       const shareHashtag = '#TvojaStvar';
 
-      let url = '';
-      const title = encodeURIComponent(shareText);
-      if (type === 'fb') {
-        const link = encodeURIComponent(shareLink);
-        url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
-      } else if (type === 'tw') {
-        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
-        url = `https://twitter.com/intent/tweet?text=${text}`;
-      } else if (type === 'mail') {
-        const text = `${shareText} ${shareLink}`;
-        url = `mailto:?subject=${title}&body=${text}`;
-      }
-      window.open(url, '_blank');
+      openSocialShareLink(type, shareText, shareLink, shareHashtag);
     },
   },
 };

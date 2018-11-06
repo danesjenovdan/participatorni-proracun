@@ -221,6 +221,7 @@
 import axios from 'axios';
 import Papa from 'papaparse';
 import Loader from './Loader.vue';
+import { openSocialShareLink } from '../helpers/social';
 
 function groupBy(arr, key) {
   return arr.reduce((acc, cur) => {
@@ -316,38 +317,14 @@ export default {
           : `${ime} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.`;
       const shareHashtag = '#TvojaStvar';
 
-      let url = '';
-      const title = encodeURIComponent(shareText);
-      if (type === 'fb') {
-        const link = encodeURIComponent(shareLink);
-        url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
-      } else if (type === 'tw') {
-        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
-        url = `https://twitter.com/intent/tweet?text=${text}`;
-      } else if (type === 'mail') {
-        const text = `${shareText} ${shareLink}`;
-        url = `mailto:?subject=${title}&body=${text}`;
-      }
-      window.open(url, '_blank');
+      openSocialShareLink(type, shareText, shareLink, shareHashtag);
     },
     onShareClickMunicipality($event, type) {
       const shareLink = typeof document !== 'undefined' ? document.location.href : '';
       const shareText = shareContent.replace('{query}', this.query.toUpperCase());
       const shareHashtag = '#TvojaStvar';
 
-      let url = '';
-      const title = encodeURIComponent(shareText);
-      if (type === 'fb') {
-        const link = encodeURIComponent(shareLink);
-        url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
-      } else if (type === 'tw') {
-        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
-        url = `https://twitter.com/intent/tweet?text=${text}`;
-      } else if (type === 'mail') {
-        const text = `${shareText} ${shareLink}`;
-        url = `mailto:?subject=${title}&body=${text}`;
-      }
-      window.open(url, '_blank');
+      openSocialShareLink(type, shareText, shareLink, shareHashtag);
     },
   },
   metaInfo() {
