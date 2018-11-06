@@ -44,7 +44,7 @@ export default {
     SiteFooter,
   },
   metaInfo: {
-    title: 'Participatorni proračun',
+    title: 'Participativni proračun',
     meta: [
       // owner
       { property: 'fb:app_id', content: '301375193309601' },
