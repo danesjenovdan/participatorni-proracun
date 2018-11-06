@@ -282,8 +282,9 @@ export default {
     },
   },
   metaInfo() {
-    const text = `Preveri, kdo od županskih kandidatk in kandidatov v občini ${this.query} \
-obljublja uvedbo participativnega proračuna!`;
+    const text = this.query
+      ? 'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!'
+      : 'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.';
     return {
       titleTemplate: `${this.query ? `${this.query} - ` : ''}%s`,
       meta: [
@@ -297,12 +298,12 @@ obljublja uvedbo participativnega proračuna!`;
         {
           vmid: 'og:description',
           property: 'og:description',
-          content: text,
+          content: text.replace('{query}', this.query.toUpperCase()),
         },
         {
           vmid: 'twitter:description',
           name: 'twitter:description',
-          content: text,
+          content: text.replace('{query}', this.query.toUpperCase()),
         },
       ],
     };
