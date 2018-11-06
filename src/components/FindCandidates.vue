@@ -258,12 +258,16 @@ export default {
       this.hoveredSocial = null;
     },
     onShareClick($event, type, municipality, i) {
-      console.log(type, municipality, i);
-      console.log(this.resultsByMunicipality[municipality][i]);
+      const row = this.resultsByMunicipality[municipality][i];
+      const ime = row.KANDIDAT;
 
-      const shareLink = typeof document !== 'undefined' ? document.location.href : '';
-      const shareTitle = 'Čas je, da občinski denar postane tudi tvoja stvar!';
-      const shareText = 'Čas je, da občinski denar postane tudi tvoja stvar!';
+      const docHref = typeof document !== 'undefined' ? document.location.href : '';
+      const shareLink = `${docHref}?p=${encodeURIComponent(ime)}`;
+
+      const shareTitle =
+        row.SPOL === 'm'
+          ? `${ime} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.`
+          : `${ime} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.`;
       const shareHashtag = '#TvojaStvar';
 
       let url = '';
@@ -272,10 +276,10 @@ export default {
         const link = encodeURIComponent(shareLink);
         url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
       } else if (type === 'tw') {
-        const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
+        const text = encodeURIComponent(`${shareTitle} ${shareHashtag} ${shareLink}`);
         url = `https://twitter.com/intent/tweet?text=${text}`;
       } else if (type === 'mail') {
-        const text = `${shareText} ${shareLink}`;
+        const text = `${shareTitle} ${shareLink}`;
         url = `mailto:?subject=${title}&body=${text}`;
       }
       window.open(url, '_blank');
@@ -285,6 +289,7 @@ export default {
     const text = this.query
       ? 'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!'
       : 'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.';
+    const content = text.replace('{query}', this.query.toUpperCase());
     return {
       titleTemplate: `${this.query ? `${this.query} - ` : ''}%s`,
       meta: [
@@ -298,12 +303,12 @@ export default {
         {
           vmid: 'og:description',
           property: 'og:description',
-          content: text.replace('{query}', this.query.toUpperCase()),
+          content,
         },
         {
           vmid: 'twitter:description',
           name: 'twitter:description',
-          content: text.replace('{query}', this.query.toUpperCase()),
+          content,
         },
       ],
     };
@@ -467,7 +472,7 @@ export default {
                 font-size: 0.7rem;
                 line-height: 1.2;
                 margin-left: 1px;
-                text-transform: uppercase;
+                // text-transform: uppercase;
               }
 
               .response {
