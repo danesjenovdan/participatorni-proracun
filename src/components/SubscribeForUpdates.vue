@@ -55,7 +55,7 @@ export default {
 
       btn.disabled = true;
       axios
-        .get(`https://spam.djnd.si/deliver-email/?email=${this.$refs.emailInput.value}`)
+        .get(`https://spam.djnd.si/deliver-email-pp/?email=${this.$refs.emailInput.value}`)
         .then((res) => {
           if (String(res.data) === '1') {
             btn.textContent = 'HVALA';
