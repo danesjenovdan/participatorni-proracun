@@ -56,8 +56,7 @@ export default {
       {
         vmid: 'og:url',
         property: 'og:url',
-        content: '',
-        template: `${domain}${baseUrl}%s`,
+        content: `${domain}${baseUrl}`,
       },
       // title
       {
@@ -87,14 +86,12 @@ export default {
       {
         vmid: 'og:image',
         property: 'og:image',
-        content: 'og-image.png',
-        template: `${domain}${baseUrl}%s`,
+        content: `${domain}${baseUrl}og-image.png`,
       },
       {
         vmid: 'twitter:image',
         name: 'twitter:image',
-        content: 'og-image.png',
-        template: `${domain}${baseUrl}%s`,
+        content: `${domain}${baseUrl}og-image.png`,
       },
     ],
   },

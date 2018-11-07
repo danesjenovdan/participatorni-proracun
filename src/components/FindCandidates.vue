@@ -232,6 +232,9 @@ function groupBy(arr, key) {
   }, {});
 }
 
+const domain = 'https://danesjenovdan.si';
+const baseUrl = process.env.BASE_URL;
+
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
 const shareContent =
   'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!';
@@ -329,7 +332,7 @@ export default {
         {
           vmid: 'og:url',
           property: 'og:url',
-          content: this.query, // this is added to the template from Home.vue
+          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
         },
       ],
     };
@@ -363,12 +366,12 @@ export default {
       overrideTags.meta.push({
         vmid: 'og:image',
         property: 'og:image',
-        content: image, // this is added to the template from Home.vue
+        content: `${domain}${baseUrl}${image}`,
       });
       overrideTags.meta.push({
         vmid: 'twitter:image',
         name: 'twitter:image',
-        content: image, // this is added to the template from Home.vue
+        content: `${domain}${baseUrl}${image}`,
       });
     }
 
