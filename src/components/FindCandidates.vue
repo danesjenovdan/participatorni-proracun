@@ -249,6 +249,63 @@ export default {
   components: {
     Loader,
   },
+  metaInfo() {
+    const overrideTags = {
+      meta: [],
+    };
+
+    if (this.person || this.query) {
+      let content = shareContent.replace('{query}', this.query.toUpperCase());
+      let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
+      if (this.person) {
+        const rows = this.data.filter(r => r.KANDIDAT === this.person);
+        if (rows && rows.length && rows[0].OBLJUBA > 0) {
+          content =
+            rows[0].SPOL === 'm'
+              ? sharePersonM.replace('{name}', this.person)
+              : sharePersonF.replace('{name}', this.person);
+          image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
+        }
+
+        overrideTags.meta.push({
+          vmid: 'og:url',
+          property: 'og:url',
+          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}?p=${encodeURIComponent(this.person)}`,
+        });
+      } else {
+        overrideTags.meta.push({
+          vmid: 'og:url',
+          property: 'og:url',
+          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
+        });
+      }
+
+      // description
+      overrideTags.meta.push({
+        vmid: 'og:description',
+        property: 'og:description',
+        content,
+      });
+      overrideTags.meta.push({
+        vmid: 'twitter:description',
+        name: 'twitter:description',
+        content,
+      });
+      // image
+      overrideTags.meta.push({
+        vmid: 'og:image',
+        property: 'og:image',
+        content: `${domain}${baseUrl}${image}`,
+      });
+      overrideTags.meta.push({
+        vmid: 'twitter:image',
+        name: 'twitter:image',
+        content: `${domain}${baseUrl}${image}`,
+      });
+    }
+
+    return overrideTags;
+  },
   data() {
     const { query } = this.$route.params;
     const { p } = this.$route.query;
@@ -326,58 +383,6 @@ export default {
 
       openSocialShareLink(type, shareText, shareLink, shareHashtag);
     },
-  },
-  metaInfo() {
-    const overrideTags = {
-      meta: [
-        // url
-        {
-          vmid: 'og:url',
-          property: 'og:url',
-          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
-        },
-      ],
-    };
-
-    if (this.person || this.query) {
-      let content = shareContent.replace('{query}', this.query.toUpperCase());
-      let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
-      if (this.person) {
-        const rows = this.data.filter(r => r.KANDIDAT === this.person);
-        if (rows && rows.length && rows[0].OBLJUBA > 0) {
-          content =
-            rows[0].SPOL === 'm'
-              ? sharePersonM.replace('{name}', this.person)
-              : sharePersonF.replace('{name}', this.person);
-          image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
-        }
-      }
-
-      // description
-      overrideTags.meta.push({
-        vmid: 'og:description',
-        property: 'og:description',
-        content,
-      });
-      overrideTags.meta.push({
-        vmid: 'twitter:description',
-        name: 'twitter:description',
-        content,
-      });
-      // image
-      overrideTags.meta.push({
-        vmid: 'og:image',
-        property: 'og:image',
-        content: `${domain}${baseUrl}${image}`,
-      });
-      overrideTags.meta.push({
-        vmid: 'twitter:image',
-        name: 'twitter:image',
-        content: `${domain}${baseUrl}${image}`,
-      });
-    }
-
-    return overrideTags;
   },
 };
 </script>
