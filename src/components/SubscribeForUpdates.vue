@@ -35,6 +35,7 @@
           >
             Naroči me!
           </button>
+          <p :class="['email-confirm', {visible: emailSent}]">Na tvoj spletni naslov smo poslali navodila, kako potrdiš naročnino.</p>
         </form>
       </div>
     </div>
@@ -47,7 +48,9 @@ import axios from 'axios';
 export default {
   name: 'SubscribeForUpdates',
   data() {
-    return {};
+    return {
+      emailSent: false,
+    };
   },
   methods: {
     onSubscribeClick() {
@@ -59,6 +62,7 @@ export default {
         .then((res) => {
           if (String(res.data) === '1') {
             btn.textContent = 'HVALA';
+            this.emailSent = true;
           } else {
             btn.textContent = 'Napaka :(';
             // eslint-disable-next-line no-console
@@ -143,6 +147,17 @@ export default {
             box-shadow: none;
           }
         }
+      }
+    }
+
+    .email-confirm {
+      text-align: center;
+      position: relative;
+      top: 20px;
+      display: none;
+
+      &.visible {
+        display: block;
       }
     }
   }
