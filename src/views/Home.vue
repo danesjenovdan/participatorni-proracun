@@ -86,12 +86,12 @@ export default {
       {
         vmid: 'og:image',
         property: 'og:image',
-        content: `${domain}${baseUrl}og-image.png`,
+        content: `${domain}${baseUrl}og-image.png?v2`,
       },
       {
         vmid: 'twitter:image',
         name: 'twitter:image',
-        content: `${domain}${baseUrl}og-image.png`,
+        content: `${domain}${baseUrl}og-image.png?v2`,
       },
     ],
   },
