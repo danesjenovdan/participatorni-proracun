@@ -348,7 +348,16 @@ export default {
       }
       // search with transliteration
       const upperQuery = tr(this.query.toUpperCase());
-      return this.data.filter(row => tr(row['OBČINA']).indexOf(upperQuery) !== -1);
+      return this.data.filter((row) => {
+        const candidates = tr(row['OBČINA']).split(' ');
+        // console.log(candidates);
+        candidates.forEach((c) => {
+          if (c.indexOf(upperQuery) !== -1) {
+            console.log(c);
+          }
+        });
+        return candidates.indexOf(upperQuery) !== -1;
+      });
     },
     resultsByMunicipality() {
       return groupBy(this.results, 'OBČINA');
