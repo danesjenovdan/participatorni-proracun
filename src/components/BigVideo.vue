@@ -2,14 +2,14 @@
   <div class="big-video">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe
-        v-if="!showOverlay"
+        v-if="true || !showOverlay"
         class="embed-responsive-item"
-        src="https://www.youtube.com/embed/yilFJTdo8u0?autoplay=1"
+        src="https://www.youtube.com/embed/yilFJTdo8u0"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
-      <img
+      <!-- <img
         v-else
         src="@/assets/video-cover.jpg"
         class="embed-responsive-item blurred"
@@ -29,7 +29,7 @@
           />
           <div class="play-instruction">Predvajaj</div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

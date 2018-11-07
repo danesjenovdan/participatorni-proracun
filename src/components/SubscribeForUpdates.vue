@@ -35,7 +35,9 @@
           >
             Naroči me!
           </button>
-          <p :class="['email-confirm', {visible: emailSent}]">Na tvoj spletni naslov smo poslali navodila, kako potrdiš naročnino.</p>
+          <p :class="['email-confirm', {visible: emailSent}]">
+            Na tvoj spletni naslov smo poslali navodila, kako potrdiš naročnino.
+          </p>
         </form>
       </div>
     </div>
