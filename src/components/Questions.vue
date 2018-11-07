@@ -87,7 +87,7 @@ const stuff = [
     q: 'Kako smo zbirali odgovore kandidatk in kandidatov?',
     a: `
       <p>Kontaktirali smo vseh 688 kandidatk in kandidatov na letošnjih lokalnih volitvah in jih prosili za odgovor na vprašanje: &ldquo;Ali boste v primeru, da boste izvoljeni, v svoji občini izvajali participativni proračun?&rdquo; Kandidatke in kandidati, ki nam niso odgovorili, so navedeni kot &ldquo;se ni zaobljubila&rdquo; oziroma &ldquo;se ni zaobljubil&rdquo;.</p>
-      <p>Vse kandidatke in kandidate večjih političnih strank (DD, DeSUS, Levica, LMš, NSi, Oljka, SAB, SD, SDS, SLS, SMC, SNS, SSN idr.) smo kontaktirali preko njihovih strank. Nekatere kandidatke in kandidate smo kontaktirali preko zasebnih sporočil na njihovih družbenih omrežjih. Vsem ostalim smo poslali pošto na njihov domač naslov, naveden na spletni strani volitve.gov.si.</p>
+      <p>Vse kandidatke in kandidate večjih političnih strank (DD, DeSUS, Levica, LMŠ, NSi, Oljka, SAB, SD, SDS, SLS, SMC, SNS, SSN idr.) smo kontaktirali preko njihovih strank. Nekatere kandidatke in kandidate smo kontaktirali preko zasebnih sporočil na njihovih družbenih omrežjih. Vsem ostalim smo poslali pošto na njihov domač naslov, naveden na spletni strani volitve.gov.si.</p>
       <p>Za kakršne koli napake se kandidatkam in kandidatom opravičujemo, spremembe odgovorov pa nam lahko sporočite na <a href="mailto:maja@djnd.si" target="_blank">maja@djnd.si</a>.</p>
     `,
   },
