@@ -179,6 +179,18 @@ export default {
 
   .column-answer {
     display: block;
+    height: 465px;
+    overflow-y: auto;
+
+    @media (max-width: 992px) {
+      height: 420px;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 767px) {
+      height: auto;
+      overflow-y: none;
+    }
 
     @media (max-width: 575.98px) {
       display: none;
