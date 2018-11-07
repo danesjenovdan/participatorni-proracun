@@ -42,10 +42,10 @@ const stuff = [
       <ul>
         <li>vnaprej določen delež javnih sredstev, namenjen projektom, ki jih predlagajo in se do njih neposredno opredelijo <i>le</i> občani in občanke;</li>
         <li>do potankosti definiran postopek, v katerem ni diskrecije političnih predstavnikov/-ic oziroma krajevnih skupnosti (razen filtriranja predlogov glede na njihovo izvedljivost, pristojnosti občine in zakonitost), končna odločitev pa je na strani občanov in občank;</li>
-        <li>organizacija posvetovanja oz. razprave občanov in občank; </li>
-        <li>javna objava vseh korakov v postopku; </li>
-        <li>ponovljivost postopka (ne gre le za enkraten dogodek, ampak za redno obliko soodločanja); </li>
-        <li>vnaprej določeno in javno objavljeno časovno obdobje, v katerem bodo projekti izvedeni. </li>
+        <li>organizacija posvetovanja oz. razprave občanov in občank;</li>
+        <li>javna objava vseh korakov v postopku;</li>
+        <li>ponovljivost postopka (ne gre le za enkraten dogodek, ampak za redno obliko soodločanja);</li>
+        <li>vnaprej določeno in javno objavljeno časovno obdobje, v katerem bodo projekti izvedeni.</li>
       </ul>
     `,
   },
@@ -54,13 +54,13 @@ const stuff = [
     a: `
       <p>V skoraj 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša:</p>
       <ul>
-        <li>povečanje učinkovitosti porabe sredstev,</li>
-        <li>hitrejšo gospodarsko rast,</li>
-        <li>bolj enakomeren razvoj občin,</li>
-        <li>zmanjšanje socialnih razlik,</li>
-        <li>boljše ravnanje z infrastrukturo in večja identifikacija z njo,</li>
-        <li>povečanje zaupanja v demokratične postopke,</li>
-        <li>povečanje aktivacije prebivalcev in prebivalk,</li>
+        <li>povečanje učinkovitosti porabe sredstev;</li>
+        <li>hitrejšo gospodarsko rast;</li>
+        <li>bolj enakomeren razvoj občin;</li>
+        <li>zmanjšanje socialnih razlik;</li>
+        <li>boljše ravnanje z infrastrukturo in večja identifikacija z njo;</li>
+        <li>povečanje zaupanja v demokratične postopke;</li>
+        <li>povečanje aktivacije prebivalcev in prebivalk;</li>
         <li>pod določenimi pogoji celo več pobranih davkov.</li>
       </ul>
     `,
