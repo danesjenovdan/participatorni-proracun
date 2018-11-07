@@ -239,10 +239,12 @@ const baseUrl = process.env.BASE_URL;
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
 const shareContent =
   'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!';
-const sharePersonM =
-  '{name} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.';
-const sharePersonF =
-  '{name} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.';
+// const sharePersonM =
+//   '{name} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.';
+// const sharePersonF =
+//   '{name} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.';
+const sharePersonM = '{name} obljublja participativni proračun';
+const sharePersonF = '{name} obljublja participativni proračun';
 
 export default {
   name: 'FindCandidates',
@@ -255,22 +257,34 @@ export default {
     };
 
     if (this.person || this.query) {
+      let title = shareContent.replace('{query}', this.query.toUpperCase());
       let content = shareContent.replace('{query}', this.query.toUpperCase());
       let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
       if (this.person) {
         const rows = this.data.filter(r => r.KANDIDAT === this.person);
         if (rows && rows.length && rows[0].OBLJUBA > 0) {
-          content =
+          title =
             rows[0].SPOL === 'm'
               ? sharePersonM.replace('{name}', this.person)
               : sharePersonF.replace('{name}', this.person);
           image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
+          content = 'Čas je, da občinski denar postane tudi tvoja stvar!';
         }
 
         overrideTags.meta.push({
           vmid: 'og:url',
           property: 'og:url',
           content: `${domain}${baseUrl}${encodeURIComponent(this.query)}?p=${encodeURIComponent(this.person)}`,
+        });
+        overrideTags.meta.push({
+          vmid: 'og:title',
+          property: 'og:title',
+          content: title,
+        });
+        overrideTags.meta.push({
+          vmid: 'twitter:title',
+          property: 'twitter:title',
+          content: title,
         });
       } else {
         overrideTags.meta.push({
