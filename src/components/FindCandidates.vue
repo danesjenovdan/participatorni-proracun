@@ -219,6 +219,7 @@
 
 <script>
 import Papa from 'papaparse';
+import { transliterate as tr } from 'transliteration';
 import Loader from './Loader.vue';
 import { openSocialShareLink } from '../helpers/social';
 // eslint-disable-next-line
@@ -274,8 +275,9 @@ export default {
       if (!this.data || !this.data.length || !this.query) {
         return [];
       }
-      const upperQuery = this.query.toUpperCase();
-      return this.data.filter(row => row['OBČINA'].indexOf(upperQuery) !== -1);
+      // search with transliteration
+      const upperQuery = tr(this.query.toUpperCase());
+      return this.data.filter(row => tr(row['OBČINA']).indexOf(upperQuery) !== -1);
     },
     resultsByMunicipality() {
       return groupBy(this.results, 'OBČINA');
