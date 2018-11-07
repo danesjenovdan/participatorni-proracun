@@ -365,7 +365,7 @@ export default {
       const row = this.resultsByMunicipality[municipality][i];
       const ime = row.KANDIDAT;
 
-      const docHref = typeof document !== 'undefined' ? document.location.href : '';
+      const docHref = typeof document !== 'undefined' ? document.location.href.split('?')[0] : '';
       const shareLink = `${docHref}?p=${encodeURIComponent(ime)}`;
 
       const shareText =
