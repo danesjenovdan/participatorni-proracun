@@ -9,7 +9,7 @@
         </h2>
         <p>
           Vpiši ime svoje občine in poglej, katere kandidatke in kandidati so se zavezali, da
-          uvedejo participativni proračun!
+          bodo izvajali participativni proračun!
         </p>
         <form
           action="javascript:;"
