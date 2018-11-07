@@ -27,6 +27,7 @@
             class="mt-3 mx-auto"
             @click.native="onPlayClick"
           />
+          <div class="play-instruction">Predvajaj</div>
         </div>
       </div>
     </div>
@@ -102,6 +103,18 @@ export default {
         strong {
           color: #5f235b;
           font-weight: 900;
+        }
+
+        .play-instruction {
+          position: relative;
+          font-size: 2rem;
+          top: 16px;
+          font-weight: bold;
+
+          @media (max-width: 575.98px) {
+            font-size: 1.1rem;
+            top: 6px;
+          }
         }
       }
     }
