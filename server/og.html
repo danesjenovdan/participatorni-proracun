@@ -1,0 +1,34 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Barlow:500&subset=latin-ext');
+
+  #og-container {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    font-size: 48px;
+    color: #5f235b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Barlow;
+    padding: 0 1em;
+    box-sizing: border-box;
+    font-weight: 500;
+  }
+</style>
+<div id="og-container">
+  <img src="../dist/{image}">
+  <div class="text-container">
+    {text}
+  </div>
+</div>

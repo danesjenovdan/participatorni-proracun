@@ -336,7 +336,7 @@ export default {
 
     if (this.person || this.query) {
       let content = shareContent.replace('{query}', this.query.toUpperCase());
-      let image = 'og-image-obcina.png';
+      let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
       if (this.person) {
         const rows = this.data.filter(r => r.KANDIDAT === this.person);
         if (rows && rows.length && rows[0].OBLJUBA > 0) {
@@ -344,7 +344,7 @@ export default {
             rows[0].SPOL === 'm'
               ? sharePersonM.replace('{name}', this.person)
               : sharePersonF.replace('{name}', this.person);
-          image = 'og-image-oseba.png';
+          image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
         }
       }
 
