@@ -520,13 +520,35 @@ export default {
               &:nth-child(1) {
                 width: 50%;
               }
-
               &:nth-child(2) {
                 width: 25%;
               }
-
               &:nth-child(3) {
                 width: 25%;
+              }
+
+              @media (max-width: 1200px) {
+                &:nth-child(1) {
+                  width: 42%;
+                }
+                &:nth-child(2) {
+                  width: 33%;
+                }
+                &:nth-child(3) {
+                  width: 25%;
+                }
+              }
+
+              @media (max-width: 576px) {
+                &:nth-child(1) {
+                  width: 31%;
+                }
+                &:nth-child(2) {
+                  width: 38%;
+                }
+                &:nth-child(3) {
+                  width: 31%;
+                }
               }
 
               .name {
@@ -546,6 +568,7 @@ export default {
                 max-width: 100px;
                 align-items: flex-end;
                 height: 2.75rem;
+                font-size: 0.9rem;
 
                 .promise-icon-wrapper {
                   flex: 0 0 2.75rem;
@@ -597,6 +620,10 @@ export default {
                 .promise-text {
                   margin-left: 1rem;
                   line-height: 1.1;
+
+                  @media (max-width: 576px) {
+                    font-size: 0.7rem;
+                  }
                 }
               }
 
@@ -613,6 +640,10 @@ export default {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+
+                @media (max-width: 576px) {
+                  font-size: 0.8rem;
+                }
 
                 svg {
                   width: 25%;
