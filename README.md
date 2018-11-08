@@ -1,26 +1,31 @@
 # participatorni-proracun
 
 ## Project setup
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development with server side rendering
+
 ```
-npm run serve
+npm run ssr:serve
 ```
 
 ### Compiles and minifies for production
+
 ```
-npm run build
+npm run ssr:build
 ```
 
-### Run your tests
+### Run ssr enabled server for production
+
 ```
-npm run test
+npm run ssr:start
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
