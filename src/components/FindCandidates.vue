@@ -15,13 +15,15 @@
           action="javascript:;"
           @submit="onSubmitLocation"
         >
-          <input
-            ref="locationInput"
+          <suggestions
             v-model="inputValue"
-            type="text"
-            class="form-control"
-            placeholder="vpiši občino"
-          >
+            :options="{
+              placeholder: 'vpiši občino',
+              inputClass: 'form-control',
+            }"
+            :on-input-change="updateItems"
+            :on-item-selected="onSubmitLocation"
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
@@ -220,6 +222,8 @@
 <script>
 import Papa from 'papaparse';
 import { transliterate as tr } from 'transliteration';
+import Suggestions from 'v-suggestions';
+import 'v-suggestions/dist/v-suggestions.css';
 import Loader from './Loader.vue';
 import { openSocialShareLink } from '../helpers/social';
 // eslint-disable-next-line
@@ -250,6 +254,7 @@ export default {
   name: 'FindCandidates',
   components: {
     Loader,
+    Suggestions,
   },
   metaInfo() {
     const overrideTags = {
@@ -329,13 +334,19 @@ export default {
       // eslint-disable-next-line no-console
       console.error('CSV Parse Errors:', data.errors);
     }
+    const allData = data.data.map(row => ({
+      ...row,
+      SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
+    }));
+    const allMunicipalities = Object.keys(groupBy(allData, 'SIMPLE_OBCINA'));
 
     return {
       inputValue: (query || '').toUpperCase(),
       query: (query || '').toLowerCase(),
       person: p,
       loading: false,
-      data: data.data,
+      data: allData,
+      allMunicipalities,
       hoveredSocial: null,
       hoveredSocialMunicipality: false,
       notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
@@ -346,18 +357,26 @@ export default {
       if (!this.data || !this.data.length || !this.query) {
         return [];
       }
-      // search with transliteration
-      const upperQuery = tr(this.query.toUpperCase());
-      return this.data.filter(row => tr(row['OBČINA']).indexOf(upperQuery) !== -1);
+      const upperQuery = this.query.toUpperCase();
+      return this.data.filter(row => row.SIMPLE_OBCINA === upperQuery);
     },
     resultsByMunicipality() {
       return groupBy(this.results, 'OBČINA');
     },
   },
   methods: {
-    onSubmitLocation() {
+    updateItems(text) {
+      const upperInput = tr(text.toUpperCase());
+      const filteredItems = this.allMunicipalities.filter(m => tr(m).indexOf(upperInput) !== -1);
+      if (text.length > 2 || filteredItems.length < 5) {
+        return filteredItems;
+      }
+      return [];
+    },
+    onSubmitLocation(selected) {
+      const text = typeof selected === 'string' ? selected : this.inputValue || '';
       this.loading = true;
-      this.query = (this.inputValue || '').trim().toLowerCase();
+      this.query = text.trim().toLowerCase();
       this.inputValue = this.query.toUpperCase();
       this.$router.push(`/${this.query}`);
       this.hoveredSocial = null;
@@ -444,7 +463,7 @@ export default {
     form {
       position: relative;
 
-      input {
+      .v-suggestions /deep/ .form-control {
         border-radius: 0;
         border: 6px solid #5f235b;
         background: transparent;
@@ -462,6 +481,28 @@ export default {
           outline: 0;
           box-shadow: none;
           background-color: #fcf5de;
+        }
+      }
+
+      .v-suggestions /deep/ .suggestions {
+        top: 3.5rem;
+        background-color: #f2cc59;
+
+        .items {
+          border-color: #5f235b;
+          border-width: 4px 4px 0 4px;
+        }
+
+        .item {
+          border-bottom: 4px solid #5f235b;
+          color: #5f235b;
+          font-weight: 500;
+          padding: 0.35rem 0.8rem;
+
+          &.is-active,
+          &:hover {
+            background-color: #fcf5de;
+          }
         }
       }
 
