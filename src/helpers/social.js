@@ -1,3 +1,5 @@
+import swal from 'sweetalert2';
+
 function openSocialShareLink(type, shareText, shareLink, shareHashtag) {
   let url = '';
   const title = encodeURIComponent(shareText);
@@ -8,8 +10,16 @@ function openSocialShareLink(type, shareText, shareLink, shareHashtag) {
     const text = encodeURIComponent(`${shareText} ${shareHashtag} ${shareLink}`);
     url = `https://twitter.com/intent/tweet?text=${text}`;
   } else if (type === 'mail') {
-    const text = `${shareText} ${shareLink}`;
-    url = `mailto:?subject=${title}&body=${text}`;
+    // const text = `${shareText} ${shareLink}`;
+    // url = `mailto:?subject=${title}&body=${text}`;
+    swal({
+      title: 'Kopiraj povezavo:',
+      confirmButtonText: 'ZAPRI',
+      confirmButtonClass: 'btn',
+      buttonsStyling: false,
+      html: `<input value="${shareLink}" class="form-control" spellcheck="false" onclick="this.select()" />`,
+    });
+    return;
   }
   window.open(url, '_blank');
 }

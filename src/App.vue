@@ -41,7 +41,8 @@ a:active {
   }
 }
 
-.btn {
+.btn,
+.btn:focus {
   border-radius: 0;
   background-color: #f2cc59;
   color: #5f235b;
@@ -63,6 +64,47 @@ a:active {
   &:active {
     transform: translate(4px, 4px);
     box-shadow: 2px 2px #5f235b;
+  }
+}
+
+.swal2-popup {
+  border-radius: 0;
+  background-color: #f2cc59;
+
+  .swal2-title {
+    color: #5f235b;
+  }
+
+  .form-control {
+    border-radius: 0;
+    border: 6px solid #5f235b;
+    background: #f2cc59;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: auto;
+    color: #5f235b;
+
+    &::placeholder {
+      color: rgba(#5f235b, 0.75);
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      background-color: #fcf5de;
+    }
+  }
+
+  .btn {
+    background-color: #5f235b;
+    color: #f2cc59;
+    box-shadow: 6px 6px rgba(#5f235b, 0.75);
+    font-size: 1.25rem;
+
+    &:active {
+      transform: translate(0);
+      box-shadow: 6px 6px rgba(#5f235b, 0.75);
+    }
   }
 }
 </style>
