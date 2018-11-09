@@ -67,7 +67,7 @@ a:active {
   }
 }
 
-.swal2-popup {
+body .swal2-container .swal2-popup {
   border-radius: 0;
   background-color: #f2cc59;
 
