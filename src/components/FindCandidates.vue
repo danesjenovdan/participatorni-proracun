@@ -365,15 +365,13 @@ export default {
       const row = this.resultsByMunicipality[municipality][i];
       const ime = row.KANDIDAT;
 
-      const shareLink = this.getShareLink(municipality, i);
-
       const shareText =
         row.SPOL === 'm'
           ? sharePersonM.replace('{name}', ime)
           : sharePersonF.replace('{name}', ime);
       const shareHashtag = '#TvojaStvar';
 
-      openSocialShareLink(type, shareText, shareLink, shareHashtag);
+      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
     },
     onShareClickMunicipality($event, type) {
       if (!type) {
@@ -381,11 +379,10 @@ export default {
         return;
       }
 
-      const shareLink = this.getShareLink();
       const shareText = shareContent.replace('{query}', this.query.toUpperCase());
       const shareHashtag = '#TvojaStvar';
 
-      openSocialShareLink(type, shareText, shareLink, shareHashtag);
+      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
     },
   },
 };
