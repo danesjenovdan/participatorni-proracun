@@ -109,38 +109,9 @@
                         ]"
                         @mouseenter="onMouseEnter(`${municipality}-${i}`)"
                         @mouseleave="onMouseLeave"
+                        @click="onShareClick($event, null, municipality, i)"
                       >
-                        <span v-if="hoveredSocial !== `${municipality}-${i}`">POVEJ NAPREJ!</span>
-                        <span v-else>
-                          <svg
-                            viewBox="0 0 1792 1792"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            @click="onShareClick($event, 'fb', municipality, i)"
-                          >
-                            <!-- eslint-disable-next-line max-len -->
-                            <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
-                          </svg>
-                          <svg
-                            viewBox="0 0 1792 1792"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            @click="onShareClick($event, 'tw', municipality, i)"
-                          >
-                            <!-- eslint-disable-next-line max-len -->
-                            <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
-                          </svg>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 64 64"
-                            fill="currentColor"
-                            class="send-icon"
-                            @click="onShareClick($event, 'mail', municipality, i)"
-                          >
-                            <!-- eslint-disable-next-line max-len -->
-                            <path d="M59.24 30.3L23.78 14.18a1.87 1.87 0 0 0-2.49 2.43L27.86 32l-6.57 15.39a1.87 1.87 0 0 0 2.49 2.43L59.24 33.7a1.87 1.87 0 0 0 0-3.4zM26.61 44.43l4.51-10.56h9.61a1.87 1.87 0 1 0 0-3.73h-9.61l-4.51-10.57L54 32zM8.07 25.78a1.87 1.87 0 0 1 1.87-1.87h11.51a1.87 1.87 0 0 1 0 3.73H9.94a1.87 1.87 0 0 1-1.87-1.86zm6.84 4.36h9a1.87 1.87 0 1 1 0 3.73h-9a1.87 1.87 0 0 1 0-3.73zm-5 3.73H5.53a1.87 1.87 0 1 1 0-3.73h4.41a1.87 1.87 0 0 1 0 3.73zm10.89 4.36a1.87 1.87 0 0 1-1.8 1.86h-9a1.87 1.87 0 1 1 0-3.73h9a1.87 1.87 0 0 1 1.83 1.86z" />
-                          </svg>
-                        </span>
+                        <span>POVEJ NAPREJ!</span>
                       </div>
                       <div
                         v-else
@@ -171,38 +142,9 @@
             ]"
             @mouseenter="onMouseEnterMunicipality"
             @mouseleave="onMouseLeaveMunicipality"
+            @click="onShareClickMunicipality($event, null)"
           >
-            <span v-if="!hoveredSocialMunicipality">DELI SVOJO OBČINO!</span>
-            <span v-else>
-              <svg
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                @click="onShareClickMunicipality($event, 'fb')"
-              >
-                <!-- eslint-disable-next-line max-len -->
-                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
-              </svg>
-              <svg
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                @click="onShareClickMunicipality($event, 'tw')"
-              >
-                <!-- eslint-disable-next-line max-len -->
-                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 64 64"
-                fill="currentColor"
-                class="send-icon"
-                @click="onShareClickMunicipality($event, 'mail')"
-              >
-                <!-- eslint-disable-next-line max-len -->
-                <path d="M59.24 30.3L23.78 14.18a1.87 1.87 0 0 0-2.49 2.43L27.86 32l-6.57 15.39a1.87 1.87 0 0 0 2.49 2.43L59.24 33.7a1.87 1.87 0 0 0 0-3.4zM26.61 44.43l4.51-10.56h9.61a1.87 1.87 0 1 0 0-3.73h-9.61l-4.51-10.57L54 32zM8.07 25.78a1.87 1.87 0 0 1 1.87-1.87h11.51a1.87 1.87 0 0 1 0 3.73H9.94a1.87 1.87 0 0 1-1.87-1.86zm6.84 4.36h9a1.87 1.87 0 1 1 0 3.73h-9a1.87 1.87 0 0 1 0-3.73zm-5 3.73H5.53a1.87 1.87 0 1 1 0-3.73h4.41a1.87 1.87 0 0 1 0 3.73zm10.89 4.36a1.87 1.87 0 0 1-1.8 1.86h-9a1.87 1.87 0 1 1 0-3.73h9a1.87 1.87 0 0 1 1.83 1.86z" />
-              </svg>
-            </span>
+            <span>DELI SVOJO OBČINO!</span>
           </button>
         </div>
       </div>
@@ -215,6 +157,14 @@
           napake na spletni strani?
         </a>
       </div>
+      <modal
+        v-if="showModal"
+        :share-link="shareLink"
+        @close="showModal = false"
+        @twShare="onShareClickMunicipality($event, 'tw', showModal[0], showModal[1])"
+        @fbShare="onShareClickMunicipality($event, 'fb', showModal[0], showModal[1])"
+        @emailShare="onShareClickMunicipality($event, 'mail', showModal[0], showModal[1])"
+      />
     </div>
   </div>
 </template>
@@ -225,6 +175,7 @@ import { transliterate as tr } from 'transliteration';
 import Suggestions from 'v-suggestions';
 import 'v-suggestions/dist/v-suggestions.css';
 import Loader from './Loader.vue';
+import Modal from './Modal.vue';
 import { openSocialShareLink } from '../helpers/social';
 // eslint-disable-next-line
 import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
@@ -255,6 +206,7 @@ export default {
   components: {
     Loader,
     Suggestions,
+    Modal,
   },
   metaInfo() {
     const overrideTags = {
@@ -350,6 +302,7 @@ export default {
       hoveredSocial: null,
       hoveredSocialMunicipality: false,
       notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
+      showModal: false,
     };
   },
   computed: {
@@ -362,6 +315,15 @@ export default {
     },
     resultsByMunicipality() {
       return groupBy(this.results, 'OBČINA');
+    },
+    shareLink() {
+      if (this.showModal && this.showModal.length) {
+        const row = this.resultsByMunicipality[this.showModal[0]][this.showModal[1]];
+        const ime = row.KANDIDAT;
+        const docHref = typeof document !== 'undefined' ? document.location.href.split('?')[0] : '';
+        return `${docHref}?p=${encodeURIComponent(ime)}`;
+      }
+      return typeof document !== 'undefined' ? document.location.href : '';
     },
   },
   methods: {
@@ -395,11 +357,13 @@ export default {
       this.hoveredSocialMunicipality = false;
     },
     onShareClick($event, type, municipality, i) {
+      if (!type) {
+        this.showModal = [municipality, i];
+        return;
+      }
+
       const row = this.resultsByMunicipality[municipality][i];
       const ime = row.KANDIDAT;
-
-      const docHref = typeof document !== 'undefined' ? document.location.href.split('?')[0] : '';
-      const shareLink = `${docHref}?p=${encodeURIComponent(ime)}`;
 
       const shareText =
         row.SPOL === 'm'
@@ -407,14 +371,18 @@ export default {
           : sharePersonF.replace('{name}', ime);
       const shareHashtag = '#TvojaStvar';
 
-      openSocialShareLink(type, shareText, shareLink, shareHashtag);
+      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
     },
     onShareClickMunicipality($event, type) {
-      const shareLink = typeof document !== 'undefined' ? document.location.href : '';
+      if (!type) {
+        this.showModal = true;
+        return;
+      }
+
       const shareText = shareContent.replace('{query}', this.query.toUpperCase());
       const shareHashtag = '#TvojaStvar';
 
-      openSocialShareLink(type, shareText, shareLink, shareHashtag);
+      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
     },
   },
 };
@@ -700,24 +668,15 @@ export default {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                cursor: pointer;
+                transition: all 0.15s ease-in-out;
 
                 @media (max-width: 576px) {
                   font-size: 0.8rem;
                 }
 
-                svg {
-                  width: 25%;
-                  cursor: pointer;
-
-                  &:not(:last-of-type) {
-                    margin-right: 5px;
-                    padding-right: 5px;
-                    border-right: 1px solid #f2cc59;
-                  }
-
-                  &:hover {
-                    color: #fcf5de;
-                  }
+                &.social--hover {
+                  background-color: #864b82;
                 }
               }
 
@@ -733,27 +692,6 @@ export default {
               }
             }
           }
-
-          // @media (max-width: 991.98px) {
-          //   tbody,
-          //   tr,
-          //   tr td:nth-child(1) {
-          //     display: block;
-          //     width: 100%;
-          //   }
-
-          //   tr {
-          //     margin-bottom: 2rem;
-
-          //     td {
-          //       height: 2.75rem;
-
-          //       &:nth-child(1) {
-          //         height: auto;
-          //       }
-          //     }
-          //   }
-          // }
         }
 
         .btn {
@@ -762,24 +700,14 @@ export default {
           color: #f2cc59;
           box-shadow: 6px 6px rgba(#5f235b, 0.75);
 
+          &.btn-municipality--hover {
+            transition: all 0.15s ease-in-out;
+            background-color: #864b82;
+          }
+
           &:active {
             transform: translate(0);
             box-shadow: 6px 6px rgba(#5f235b, 0.75);
-          }
-
-          svg {
-            height: 2rem;
-            cursor: pointer;
-
-            &:not(:last-of-type) {
-              margin-right: 2rem;
-              padding-right: 2rem;
-              border-right: 2px solid #f2cc59;
-            }
-
-            &:hover {
-              color: #fcf5de;
-            }
           }
         }
       }
