@@ -3,13 +3,15 @@
     <div class="col-lg-5 col--search px-0">
       <div class="col__content">
         <h2>
-          Kdo v tvoji
-          občini <strong>obljublja</strong>
-          participativni proračun?
+          PREVERI, ALI JE
+          <nobr> TVOJ/-A </nobr><wbr>
+          <nobr> ŽUPAN/-JA </nobr><wbr>
+          <nobr> <strong> OBLJUBIL/-A </strong> </nobr><wbr>
+          PARTICIPATIVNI PRORAČUN!
         </h2>
         <p>
-          Vpiši ime svoje občine in poglej, katere kandidatke in kandidati so se zavezali, da
-          bodo izvajali participativni proračun!
+          Vpiši ime svoje občine in poglej, kdo se je zavezal k izvajanju participativnega
+          proračuna!
         </p>
         <form
           action="javascript:;"
@@ -57,6 +59,19 @@
         >
           <template v-for="(results, municipality) in resultsByMunicipality">
             <h5 :key="`heading-${municipality}`">{{ municipality }}</h5>
+            <h5
+              :key="`toptext-${municipality}`"
+              class="mt-3 border-0"
+            >
+              <small class="font-weight-bold">
+                <template v-if="results.length === 1">
+                  OSEBA, KI JE ZMAGALA NA VOLITVAH:
+                </template>
+                <template v-else-if="results.length > 1">
+                  KANDIDATA, KI STA V DRUGEM KROGU:
+                </template>
+              </small>
+            </h5>
             <table
               :key="`table-${municipality}`"
               class="w-100"
@@ -132,6 +147,27 @@
                 </tr>
               </tbody>
             </table>
+            <h5
+              :key="`subtext-${municipality}`"
+              class="mt-3 border-0"
+            >
+              <small class="font-weight-bold">
+                <template v-if="results.length === 1">
+                  <template v-if="results[0].ZMAGA == 1">
+                    Že izvaja!
+                  </template>
+                  <template v-else-if="results[0].ZMAGA == 0">
+                    Se je zaobljubila, a še ne izvaja participativnega proračuna!
+                  </template>
+                  <template v-else-if="results[0].ZMAGA == -1">
+                    Se ni zaobljubila!
+                  </template>
+                </template>
+                <template v-else-if="results.length > 1">
+                  Rezultata volitev še ni, čakamo drugi krog.
+                </template>
+              </small>
+            </h5>
           </template>
           <button
             :class="[
@@ -153,8 +189,8 @@
           :href="`mailto:maja@danesjenovdan.si?subject=${notifyUsMailSubject}`"
           target="_blank"
         >
-          Si kandidat/-ka in nas želiš obvestiti o svoji nameri ali nam javiti popravek morebitne
-          napake na spletni strani?
+          Si župan/-ja ali kandidat/-ka in nas želiš obvestiti o svoji nameri ali nam javiti
+          popravek morebitne napake na spletni strani?
         </a>
       </div>
       <modal
@@ -286,10 +322,12 @@ export default {
       // eslint-disable-next-line no-console
       console.error('CSV Parse Errors:', data.errors);
     }
-    const allData = data.data.map(row => ({
-      ...row,
-      SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
-    }));
+    const allData = data.data
+      .map(row => ({
+        ...row,
+        SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
+      }))
+      .filter(row => row.ZMAGA != null);
     const allMunicipalities = Object.keys(groupBy(allData, 'SIMPLE_OBCINA'));
 
     return {

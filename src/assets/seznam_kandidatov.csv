@@ -1,10 +1,10 @@
-OBČINA,KANDIDAT,SPOL,PREDLAGATELJ,OBLJUBA
+OBČINA,KANDIDAT,SPOL,PREDLAGATELJ,OBLJUBA,ZMAGA
 MESTNA OBČINA KOPER,Marko Brecelj,m,Akacije,1
 OBČINA APAČE,Zvonko Bevk,m,Aleksander Bevk in skupina volivcev,1
 OBČINA TRZIN,Romeo Podlogar,m,Alenka Marjetič Žnider in skupina volivcev,0
 OBČINA PODVELKA,Janez Otorepec,m,Alenka Medved in skupina volivcev,0
 OBČINA KOBILJE,Aleš Lutar,m,Aleš Lutar in skupina volivcev,0
-MESTNA OBČINA MARIBOR,Lidija Divjak Mirnik,ž,Aleš Mirnik in skupina volivcev,0
+MESTNA OBČINA MARIBOR,Lidija Divjak Mirnik,ž,Aleš Mirnik in skupina volivcev,0,-1
 OBČINA ILIRSKA BISTRICA,Aleš Zidar,m,Aleš Zidar in skupina volivcev,1
 OBČINA TABOR,Ludvik Miklavc,m,Ali Khodary Eisa in skupina volivcev,1
 OBČINA GORNJI GRAD,Anton Špeh,m,Aljaž Špeh in skupina volivcev,0
@@ -54,7 +54,7 @@ OBČINA TREBNJE,Alojzij Kastelic,m,Branko Meglič in skupina volivcev,0
 OBČINA SVETA TROJICA V SLOVENSKIH GORICAH,Darko Fras,m,Branko Novak in skupina volivcev,1
 OBČINA LENDAVA,Franc Laj,m,Brigita Laj in skupina volivcev,0
 OBČINA SREDIŠČE OB DRAVI,Renata Požgan Bubek,ž,Bubek Ciril in skupina volivcev,0
-MESTNA OBČINA CELJE,Bojan Šrot,m,Celjska županova lista Slovenije,0
+MESTNA OBČINA CELJE,Bojan Šrot,m,Celjska županova lista Slovenije,0,-2
 OBČINA GORNJI PETROVCI,Jože Balek,m,Cvetka Berke in skupina volivcev,1
 OBČINA LOGATEC,Berto Menard,m,Damjan Menard in skupina volivcev,1
 OBČINA CERKVENJAK,Marjan Žmavc,m,Damjan Žmavc in skupina volivcev,0
@@ -133,7 +133,7 @@ OBČINA SVETI JURIJ OB ŠČAVNICI,Anton Slana,m,Franc Čuš in skupina volivcev,
 OBČINA MOKRONOG-TREBELNO,Anton Maver,m,Franc Glušič in skupina volivcev,0
 OBČINA LENDAVA,Dr Mihael Kasaš,m,Franc Koren in skupina volivcev,1
 OBČINA HORJUL,Janko Jazbec,m,Franc Pišek in skupina volivcev,0
-MESTNA OBČINA CELJE,Sandi Sendelbah,m,"Franc Pusar in skupina volivcev za ""Odprto Celje""",1
+MESTNA OBČINA CELJE,Sandi Sendelbah,m,"Franc Pusar in skupina volivcev za ""Odprto Celje""",1,-2
 OBČINA ŽUŽEMBERK,Franc Škufca,m,Franc Škufca in skupina volivcev,0
 OBČINA KRIŽEVCI,Branko Belec,m,Franc Sreš in skupina volivcev,0
 OBČINA RIBNICA,Samo Pogorelc,m,Franc Trdan in skupina volivcev,0
@@ -646,7 +646,7 @@ OBČINA HRASTNIK,Jani Medvešek,m,"Vinko Žagar in skupina volivcev ""Lista za n
 OBČINA ČRNOMELJ,Andrej Kavšek,m,Vladimir Radovič in skupina volivcev,0
 OBČINA MORAVSKE TOPLICE,Alojz Glavač,m,Vlasta Glavač in skupina volivcev,0
 OBČINA DOL PRI LJUBLJANI,Janez Tekavc,m,Vojko Mekše in skupina volivcev,0
-MESTNA OBČINA LJUBLJANA,Marko Koprivc,m,SD,1
+MESTNA OBČINA LJUBLJANA,Marko Koprivc,m,SD,1,1
 OBČINA ZREČE,Milan Potočnik,m,SD,1
 OBČINA BRASLOVČE,Branimir Strojanšek,m,SD,1
 MESTNA OBČINA PTUJ,Nuška Gajšek,ž,SD,1
