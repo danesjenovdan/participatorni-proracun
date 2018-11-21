@@ -154,13 +154,13 @@
               <small class="font-weight-bold">
                 <template v-if="results.length === 1">
                   <template v-if="results[0].ZMAGA == 1">
-                    Že izvaja!
+                    <!-- Že izvaja! -->
                   </template>
                   <template v-else-if="results[0].ZMAGA == 0">
-                    Se je zaobljubila, a še ne izvaja participativnega proračuna!
+                    <!-- Se je zaobljubila, a še ne izvaja participativnega proračuna! -->
                   </template>
                   <template v-else-if="results[0].ZMAGA == -1">
-                    Se ni zaobljubila!
+                    <!-- Se ni zaobljubila! -->
                   </template>
                 </template>
                 <template v-else-if="results.length > 1">
@@ -327,7 +327,7 @@ export default {
         ...row,
         SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
       }))
-      .filter(row => row.ZMAGA != null);
+      .filter(row => row.ZMAGA !== '');
     const allMunicipalities = Object.keys(groupBy(allData, 'SIMPLE_OBCINA'));
 
     return {
