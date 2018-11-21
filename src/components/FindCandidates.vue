@@ -152,18 +152,7 @@
               class="mt-3 border-0"
             >
               <small class="font-weight-bold">
-                <template v-if="results.length === 1">
-                  <template v-if="results[0].ZMAGA == 1">
-                    <!-- Že izvaja! -->
-                  </template>
-                  <template v-else-if="results[0].ZMAGA == 0">
-                    <!-- Se je zaobljubila, a še ne izvaja participativnega proračuna! -->
-                  </template>
-                  <template v-else-if="results[0].ZMAGA == -1">
-                    <!-- Se ni zaobljubila! -->
-                  </template>
-                </template>
-                <template v-else-if="results.length > 1">
+                <template v-if="results.length > 1">
                   Rezultata volitev še ni, čakamo drugi krog.
                 </template>
               </small>
