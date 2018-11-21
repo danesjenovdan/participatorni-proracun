@@ -10,13 +10,13 @@
           >
         </div>
         <div class="col-md-10 mt-5">
-          <p class="lead text-center mt-5">
+          <p class="lead text-center mt-5 px-3">
             Dobili smo <strong>272</strong> zaobljub, od tega je <strong>34</strong> kandidatov in
             kandidatk, ki so obljubili uvedbo participativnega proračuna, zmagalo na volitvah. V 56
             občinah bodo zmagovalke in zmagovalci znani šele v drugem krogu volitev, ki bo 2.
             decembra letos.
           </p>
-          <p class="lead text-center mt-5">
+          <p class="lead text-center mt-5 px-3">
             Delo županj in županov bomo spremljali in od njih zahtevali uresničitev predvolilne
             obljube.
           </p>
@@ -86,13 +86,13 @@ export default {
         vmid: 'og:description',
         property: 'og:description',
         content:
-          'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.',
+          'Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo.',
       },
       {
         vmid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.',
+          'Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo.',
       },
       // image
       {
@@ -117,6 +117,14 @@ export default {
   bottom: 0;
   height: 6rem;
   transform: translateY(50%);
+}
+
+div > p.lead {
+  font-size: 1.3rem;
+
+  strong {
+    font-weight: 700;
+  }
 }
 
 .separator {

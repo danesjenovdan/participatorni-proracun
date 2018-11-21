@@ -97,7 +97,10 @@ export default {
   methods: {
     shortenShareLink() {
       axios
-        .post('https://djnd.si/yomamasofat/', `fatmama=${encodeURIComponent(this.shareLink)}`)
+        .post(
+          'https://djnd.si/yomamasofat/',
+          `fatmama=${encodeURIComponent(decodeURIComponent(this.shareLink))}`
+        )
         .then((response) => {
           this.shortenedShareLink = response.data;
         })
