@@ -1,13 +1,25 @@
 <template>
   <div class="home">
     <div class="container">
-      <div class="row py-5">
+      <div class="row justify-content-center py-5">
         <div class="col-md-12">
           <big-video />
           <img
             class="arrow-down"
             src="@/assets/arrow-down.svg"
           >
+        </div>
+        <div class="col-md-10 mt-5">
+          <p class="lead text-center mt-5">
+            Dobili smo <strong>272</strong> zaobljub, od tega je <strong>34</strong> kandidatov in
+            kandidatk, ki so obljubili uvedbo participativnega proračuna, zmagalo na volitvah. V 56
+            občinah bodo zmagovalke in zmagovalci znani šele v drugem krogu volitev, ki bo 2.
+            decembra letos.
+          </p>
+          <p class="lead text-center mt-5">
+            Delo županj in županov bomo spremljali in od njih zahtevali uresničitev predvolilne
+            obljube.
+          </p>
         </div>
       </div>
       <find-candidates class="py-5" />

@@ -3,7 +3,7 @@
     <div class="col-lg-7 px-0 d-flex align-items-center">
       <div class="cta w-100">
         <p class="lead">
-          ZMAGOVALCE VOLITEV BOMO NA OBLJUBO OPOMINJALI <strong>TUDI PO VOLITVAH</strong>.
+          OD ZMAGOVALCEV NA VOLITVAH BOMO ZAHTEVALI IZPOLNITEV <strong>PREDVOLILNE ZAVEZE</strong>.
         </p>
         <p>
           Pusti svoj e-naslov, da ti javimo, ko bo kaj novega!
