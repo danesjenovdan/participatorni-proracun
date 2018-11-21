@@ -218,13 +218,13 @@ const baseUrl = process.env.BASE_URL;
 
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
 const shareContent =
-  'Preveri, kdo od županskih kandidatk in kandidatov v občini {query} obljublja uvedbo participativnega proračuna!';
-// const sharePersonM =
-//   '{name} bo v primeru zmage na lokalnih volitvah uvedel participativni proračun.';
-// const sharePersonF =
-//   '{name} bo v primeru zmage na lokalnih volitvah uvedla participativni proračun.';
+  'Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini {query}.';
+
 const sharePersonM = '{name} obljublja participativni proračun';
 const sharePersonF = '{name} obljublja participativni proračun';
+
+const shareElectedPersonM = '{name} se je zaobljubil, da bo uvedel participativni proračun.';
+const shareElectedPersonF = '{name} se je zaobljubila, da bo uvedla participativni proračun.';
 
 export default {
   name: 'FindCandidates',
@@ -251,6 +251,12 @@ export default {
               : sharePersonF.replace('{name}', this.person);
           image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
           content = 'Čas je, da občinski denar postane tudi tvoja stvar!';
+        }
+        if (rows && rows.length && rows[0].ZMAGA > 0) {
+          title =
+            rows[0].SPOL === 'm'
+              ? shareElectedPersonM.replace('{name}', this.person)
+              : shareElectedPersonF.replace('{name}', this.person);
         }
 
         overrideTags.meta.push({

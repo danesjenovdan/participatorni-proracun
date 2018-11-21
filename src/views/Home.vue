@@ -86,13 +86,13 @@ export default {
         vmid: 'og:description',
         property: 'og:description',
         content:
-          'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.',
+          'Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo.',
       },
       {
         vmid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Preverili smo, kdo od županskih kandidatk in kandidatov bi v primeru zmage na lokalnih volitvah uvedel participativni proračun in občankam in občanom zagotovil soupravljanje z občinskim denarjem.',
+          'Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo.',
       },
       // image
       {
