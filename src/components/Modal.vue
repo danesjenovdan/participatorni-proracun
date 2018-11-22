@@ -53,7 +53,7 @@
                 </div>
                 <h4>Kopiraj povezavo:</h4>
                 <input
-                  :value="shortenedShareLink"
+                  :value="shareLink"
                   class="form-control"
                   spellcheck="false"
                   @focus="$event.target.select()"
