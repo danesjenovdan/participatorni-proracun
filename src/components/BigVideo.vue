@@ -4,7 +4,7 @@
       <iframe
         v-if="true || !showOverlay"
         class="embed-responsive-item"
-        src="https://www.youtube.com/embed/yilFJTdo8u0"
+        src="https://www.youtube.com/embed/7o9GylegDXc"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -58,9 +58,9 @@ export default {
 <style lang="scss" scoped>
 .big-video {
   .embed-responsive {
-    .blurred {
-      // filter: blur(4px);
-    }
+    // .blurred {
+    //   // filter: blur(4px);
+    // }
 
     video,
     iframe {
