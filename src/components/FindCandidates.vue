@@ -178,7 +178,7 @@
           :href="`mailto:maja@danesjenovdan.si?subject=${notifyUsMailSubject}`"
           target="_blank"
         >
-          Si župan/-ja ali kandidat/-ka in nas želiš obvestiti o svoji nameri ali nam javiti
+          Si župan/-ja in nas želiš obvestiti o svoji nameri ali nam javiti
           popravek morebitne napake na spletni strani?
         </a>
       </div>

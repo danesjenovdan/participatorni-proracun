@@ -12,9 +12,7 @@
         <div class="col-md-10 mt-5">
           <p class="lead text-center mt-5 px-3">
             Dobili smo <strong>274</strong> zaobljub, od tega je <strong>34</strong> kandidatov in
-            kandidatk, ki so obljubili uvedbo participativnega proračuna, zmagalo na volitvah. V 56
-            občinah bodo zmagovalke in zmagovalci znani šele v drugem krogu volitev, ki bo 2.
-            decembra letos.
+            kandidatk, ki so obljubili uvedbo participativnega proračuna, zmagalo na volitvah.
           </p>
           <p class="lead text-center mt-5 px-3">
             Delo županj in županov bomo spremljali in od njih zahtevali uresničitev predvolilne
