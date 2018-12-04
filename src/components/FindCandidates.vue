@@ -153,7 +153,7 @@
             >
               <small class="font-weight-bold">
                 <template v-if="results.length > 1">
-                  Rezultata volitev še ni, čakamo drugi krog.
+                  Rezultata volitev še ni.
                 </template>
               </small>
             </h5>
