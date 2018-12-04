@@ -11,7 +11,7 @@
         </div>
         <div class="col-md-10 mt-5">
           <p class="lead text-center mt-5 px-3">
-            Dobili smo <strong>274</strong> zaobljub, od tega je <strong>34</strong> kandidatov in
+            Dobili smo <strong>275</strong> zaobljub, od tega je <strong>57</strong> kandidatov in
             kandidatk, ki so obljubili uvedbo participativnega proračuna, zmagalo na volitvah.
           </p>
           <p class="lead text-center mt-5 px-3">
