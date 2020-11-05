@@ -1,195 +1,92 @@
 <template>
-  <div class="row find-candidates-row mx-0">
-    <div class="col-lg-5 col--search px-0">
-      <div class="col__content">
-        <h2>
-          PREVERI, ALI JE
-          <nobr> TVOJ/-A </nobr><wbr>
-          <nobr> ŽUPAN/-JA </nobr><wbr>
-          <nobr> <strong> OBLJUBIL/-A </strong> </nobr><wbr>
-          PARTICIPATIVNI PRORAČUN!
-        </h2>
-        <p>
-          Vpiši ime svoje občine in poglej, kdo se je zavezal k izvajanju participativnega
-          proračuna!
-        </p>
-        <form
-          action="javascript:;"
-          @submit="onSubmitLocation"
-        >
-          <suggestions
-            v-model="inputValue"
-            :options="{
-              placeholder: 'vpiši občino',
-              inputClass: 'form-control',
-            }"
-            :on-input-change="updateItems"
-            :on-item-selected="onSubmitLocation"
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            @click="onSubmitLocation"
+  <div class="row p-sm-5 px-3 pt-0" style="background-color: #fcf5de">
+    <div class="row find-candidates-row mx-0">
+      <div class="col-xl-5 col-lg-12 col--search px-0 mb-3 align-self-center">
+        <div class="col__content mb-3">
+          <h2>
+            <nobr>DRŽIMO ŽUPANE</nobr> <wbr>
+            <nobr> ZA <strong> BESEDO! </strong> </nobr>
+          </h2>
+          <p>
+            Pomagaj spomniti županje in župane, ki so se zaobljubili k izvajanju
+            participativnega proračuna, in jim pošlji sporočilo
+          </p>
+          <form
+            action="javascript:"
+            @submit="onSubmitLocation"
           >
-            <!-- eslint-disable-next-line max-len -->
-            <path d="M511.987 454.086L375.65 317.748c21.452-32.404 33.936-71.186 33.936-112.934C409.586 91.693 317.903.009 204.8.009 91.695.009.013 91.693.013 204.814c0 113.09 91.683 204.805 204.787 204.805 41.731 0 80.559-12.529 112.932-33.967L454.068 511.99l57.919-57.904zM58.042 204.845c0-81.06 65.715-146.745 146.758-146.745 81.059 0 146.773 65.685 146.773 146.745 0 81.061-65.715 146.776-146.773 146.776-81.043 0-146.758-65.715-146.758-146.776z" />
-          </svg>
-        </form>
-      </div>
-    </div>
-    <div class="col-lg-7 col--results px-0">
-      <div class="col__content">
-        <div
-          v-if="!results || !results.length"
-          class="empty-state"
-        >
-          <loader v-if="loading" />
-          <svg
-            v-else
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 60 60"
-          >
-            <!-- eslint-disable-next-line max-len -->
-            <path d="M43 14H17c-.379 0-.725-.214-.895-.553l-2-4A1 1 0 0 1 15 8h30a1 1 0 0 1 .895 1.447l-2 4c-.17.339-.516.553-.895.553zm-25.382-2h24.764l1-2H16.618l1 2zM59 60H1a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h58a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM2 58h56v-2H2v2z" /><path d="M43 56H17a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1h26a1 1 0 0 1 1 1v42a1 1 0 0 1-1 1zm-25-2h24V14H18v40z" /><path d="M17 56H3a1 1 0 0 1-1-1V27a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1zM4 54h12V28H4v26zM57 56H43a1 1 0 0 1-1-1V27a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1zm-13-2h12V28H44v26zM30 33c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-14c-3.308 0-6 2.691-6 6s2.692 6 6 6 6-2.691 6-6-2.692-6-6-6z" /><path d="M30 26a1 1 0 0 1-1-1v-3a1 1 0 0 1 2 0v3a1 1 0 0 1-1 1z" /><path d="M32 26h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM30 10a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1zM34 10a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zM26 10a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zM17 28H3c-.379 0-.725-.214-.895-.553l-2-4A1 1 0 0 1 1 22h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM3.618 26H16v-2H2.618l1 2zM57 28H43a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 .895 1.447l-2 4c-.17.339-.516.553-.895.553zm-13-2h12.382l1-2H44v2zM36 56H24a1 1 0 0 1-1-1V43a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1zm-11-2h10V44H25v10z" /><path d="M38 44H22a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm-15-2h14v-1H23v1z" /><path d="M35 41H25a1 1 0 0 1-1-1c0-2.757 2.692-5 6-5s6 2.243 6 5a1 1 0 0 1-1 1zm-8.771-2h7.543c-.55-1.164-2.033-2-3.771-2s-3.222.836-3.772 2zM32 50h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM13 52H7a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1zm-5-2h4V32H8v18z" /><path d="M13 37H7a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM13 47H7a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM13 42H7a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM53 52h-6a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1zm-5-2h4V32h-4v18z" /><path d="M53 37h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM53 47h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM53 42h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z" />
-          </svg>
+            <suggestions
+              v-model="inputValue"
+              :options="{
+                placeholder: 'vpiši občino',
+                inputClass: 'form-control',
+              }"
+              :on-input-change="updateItems"
+              :on-item-selected="onSubmitLocation"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              @click="onSubmitLocation"
+            >
+              <!-- eslint-disable-next-line max-len -->
+              <path d="M511.987 454.086L375.65 317.748c21.452-32.404 33.936-71.186 33.936-112.934C409.586 91.693 317.903.009 204.8.009 91.695.009.013 91.693.013 204.814c0 113.09 91.683 204.805 204.787 204.805 41.731 0 80.559-12.529 112.932-33.967L454.068 511.99l57.919-57.904zM58.042 204.845c0-81.06 65.715-146.745 146.758-146.745 81.059 0 146.773 65.685 146.773 146.745 0 81.061-65.715 146.776-146.773 146.776-81.043 0-146.758-65.715-146.758-146.776z" />
+            </svg>
+          </form>
         </div>
-        <div
-          v-else
-          class="results"
-        >
-          <template v-for="(results, municipality) in resultsByMunicipality">
-            <h5 :key="`heading-${municipality}`">{{ municipality }}</h5>
-            <h5
-              :key="`toptext-${municipality}`"
-              class="mt-3 border-0"
-            >
-              <small class="font-weight-bold">
-                <template v-if="results.length === 1">
-                  OSEBA, KI JE ZMAGALA NA VOLITVAH:
-                </template>
-                <template v-else-if="results.length > 1">
-                  KANDIDATA, KI STA V DRUGEM KROGU:
-                </template>
-              </small>
-            </h5>
-            <table
-              :key="`table-${municipality}`"
-              class="w-100"
-            >
-              <tbody>
-                <tr
-                  v-for="(row, i) in results"
-                  :key="row['KANDIDAT']"
-                >
-                  <td>
-                    <div class="name">{{ row['KANDIDAT'] }}</div>
-                    <div class="proposer">
-                      <small>({{ row['PREDLAGATELJ'] }})</small>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="response">
-                      <div class="promise-icon-wrapper">
-                        <span
-                          :class="[
-                            'promise-icon',
-                            {
-                              star: row['OBLJUBA'] == 2,
-                              check: row['OBLJUBA'] == 1,
-                              cross: row['OBLJUBA'] <= 0,
-                            }
-                          ]"
-                        />
-                      </div>
-                      <div class="promise-text">
-                        <span v-if="row['OBLJUBA'] == 2">
-                          {{ row['SPOL'] == 'm' ? 'Že izvaja' : 'Že izvaja' }}
-                        </span>
-                        <span v-else-if="row['OBLJUBA'] == 1">
-                          {{ row['SPOL'] == 'm' ? 'Se je zaobljubil' : 'Se je zaobljubila' }}
-                        </span>
-                        <span v-else-if="row['OBLJUBA'] <= 0">
-                          {{ row['SPOL'] == 'm' ? 'Se ni zaobljubil' : 'Se ni zaobljubila' }}
-                        </span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div>
-                      <div
-                        v-if="row['OBLJUBA'] > 0"
-                        :class="[
-                          'social',
-                          { 'social--hover': hoveredSocial === `${municipality}-${i}` },
-                        ]"
-                        @mouseenter="onMouseEnter(`${municipality}-${i}`)"
-                        @mouseleave="onMouseLeave"
-                        @click="onShareClick($event, null, municipality, i)"
-                      >
-                        <span>POVEJ NAPREJ!</span>
-                      </div>
-                      <div
-                        v-else
-                        class="sad-face-wrapper"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 100 100"
-                          fill="currentColor"
-                          class="sad-face"
-                        >
-                          <!-- eslint-disable-next-line max-len -->
-                          <path d="M35.95 33c-2.648 0-4.85 2.202-4.85 4.85 0 2.648 2.202 4.85 4.85 4.85 2.648 0 4.85-2.202 4.85-4.85 0-2.648-2.202-4.85-4.85-4.85zm28.1 0c-2.648 0-4.85 2.202-4.85 4.85 0 2.648 2.202 4.85 4.85 4.85 2.648 0 4.85-2.202 4.85-4.85 0-2.648-2.202-4.85-4.85-4.85z" /><path d="M50 5C25.177 5 5 25.177 5 50s20.177 45 45 45 45-20.177 45-45S74.823 5 50 5zm0 5.46c21.868 0 39.54 17.672 39.54 39.54S71.868 89.54 50 89.54 10.46 71.868 10.46 50 28.132 10.46 50 10.46z" /><path d="M50 56.716c-8.291.016-16.617 3.8-21.531 11.436-.961 1.493-.798 3.395.562 4.17 1.44.822 3.083.238 3.969-1.123 3.833-5.888 10.418-8.821 17-8.837 6.582-.017 13.167 2.917 17 8.805.886 1.361 2.528 1.977 3.969 1.155 1.36-.775 1.523-2.71.562-4.202C66.617 60.484 58.291 56.7 50 56.716z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <h5
-              :key="`subtext-${municipality}`"
-              class="mt-3 border-0"
-            >
-              <small class="font-weight-bold">
-                <template v-if="results.length > 1">
-                  Rezultata volitev še ni.
-                </template>
-              </small>
-            </h5>
-          </template>
-          <button
-            :class="[
-              'btn',
-              'btn-block',
-              'btn-municipality',
-              { 'btn-municipality--hover': hoveredSocialMunicipality },
-            ]"
-            @mouseenter="onMouseEnterMunicipality"
-            @mouseleave="onMouseLeaveMunicipality"
-            @click="onShareClickMunicipality($event, null)"
-          >
-            <span>DELI SVOJO OBČINO!</span>
-          </button>
+        <div class="text-center">
+          <span>
+            <img class="icon" src="../assets/point_down.svg" style="-webkit-transform: scaleX(-1);-moz-transform: scaleX(-1);-ms-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);">
+            Ne najdeš svoje občine? Premakni se nižje.
+            <img class="icon" src="../assets/point_down.svg">
+          </span>
         </div>
       </div>
-      <div class="notify-us">
-        <a
-          :href="`mailto:maja@danesjenovdan.si?subject=${notifyUsMailSubject}`"
-          target="_blank"
-        >
-          Si župan/-ja in nas želiš obvestiti o svoji nameri ali nam javiti
-          popravek morebitne napake na spletni strani?
-        </a>
+      <div v-if="query" class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
+        <div class="row">
+          <div class="col" style="border: 5px solid #e26e53; padding: 1.75rem;">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center">
+            <span class="py-auto">Kopiraj sporočilo in ga pošlji na: </span>
+          </div>
+          <div class="col p-2 text-center-xs" style="border: 5px solid #e26e53">
+            <span>bosko.srot@celje.si</span>
+          </div>
+        </div>
+        <hr class="separator">
+        <div class="row">
+          <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs">
+            <span>Lahko jih opozoriš tudi na družbenih omrežjih</span>
+          </div>
+          <div class="col pb-5">
+            <button
+                    :class="[
+                'btn',
+                'btn-block',
+                'btn-municipality',
+                { 'btn-municipality--hover': hoveredSocialMunicipality },
+              ]"
+                    @mouseenter="onMouseEnterMunicipality"
+                    @mouseleave="onMouseLeaveMunicipality"
+                    @click="onShareClickMunicipality($event, null)"
+            >
+              <span>DELI!</span>
+            </button>
+          </div>
+        </div>
+        <modal
+          v-if="showModal"
+          :share-link="shareLink"
+          @close="showModal = false"
+          @twShare="onShareClickMunicipality($event, 'tw', showModal[0], showModal[1])"
+          @fbShare="onShareClickMunicipality($event, 'fb', showModal[0], showModal[1])"
+          @emailShare="onShareClickMunicipality($event, 'mail', showModal[0], showModal[1])"
+        />
       </div>
-      <modal
-        v-if="showModal"
-        :share-link="shareLink"
-        @close="showModal = false"
-        @twShare="onShareClickMunicipality($event, 'tw', showModal[0], showModal[1])"
-        @fbShare="onShareClickMunicipality($event, 'fb', showModal[0], showModal[1])"
-        @emailShare="onShareClickMunicipality($event, 'mail', showModal[0], showModal[1])"
-      />
     </div>
   </div>
 </template>
@@ -429,9 +326,6 @@ export default {
 
   .col--search .col__content {
     background-color: #f2cc59;
-    margin-top: -2rem;
-    margin-right: -2rem;
-    margin-bottom: 4rem;
 
     @media (max-width: 991.98px) {
       margin-top: 0;
@@ -442,7 +336,7 @@ export default {
     h2 {
       text-transform: uppercase;
       font-weight: 500;
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       line-height: 1.1;
 
       @media (max-width: 1199.98px) {
@@ -450,7 +344,7 @@ export default {
       }
 
       strong {
-        color: #5f235b;
+        color: #262539;
         font-weight: 900;
       }
     }
@@ -466,16 +360,16 @@ export default {
 
       .v-suggestions /deep/ .form-control {
         border-radius: 0;
-        border: 6px solid #5f235b;
+        border: 6px solid #262539;
         background: transparent;
         font-size: 1.5rem;
         font-weight: 700;
         height: auto;
-        color: #5f235b;
+        color: #e26e53;
         padding-right: 2em;
 
         &::placeholder {
-          color: rgba(#5f235b, 0.75);
+          color: rgba(#e26e53, 0.75);
         }
 
         &:focus {
@@ -490,13 +384,13 @@ export default {
         background-color: #f2cc59;
 
         .items {
-          border-color: #5f235b;
+          border-color: #262539;
           border-width: 4px 4px 0 4px;
         }
 
         .item {
-          border-bottom: 4px solid #5f235b;
-          color: #5f235b;
+          border-bottom: 4px solid #262539;
+          color: #e26e53;
           font-weight: 500;
           padding: 0.35rem 0.8rem;
 
@@ -512,7 +406,7 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-        fill: #5f235b;
+        fill: #262539;
         cursor: pointer;
         padding: 0.75em;
       }
@@ -726,23 +620,12 @@ export default {
             }
           }
         }
+      }
+    }
 
-        .btn {
-          margin-top: 2rem;
-          background-color: #5f235b;
-          color: #f2cc59;
-          box-shadow: 6px 6px rgba(#5f235b, 0.75);
-
-          &.btn-municipality--hover {
-            transition: all 0.15s ease-in-out;
-            background-color: #864b82;
-          }
-
-          &:active {
-            transform: translate(0);
-            box-shadow: 6px 6px rgba(#5f235b, 0.75);
-          }
-        }
+    .text-center-xs {
+      @media (max-width: 575.98px) {
+        text-align: center;
       }
     }
 
@@ -752,6 +635,35 @@ export default {
       margin-top: 0.5rem;
       padding: 0 2rem;
     }
+
+    .separator {
+      border-color: #e26e53;
+      border-top-width: 2px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      /*margin-top: 2rem;*/
+      background-color: #262539;
+      color: #f2cc59;
+      box-shadow: 6px 6px rgba(#5f235b, 0.75);
+
+      &.btn-municipality--hover {
+        transition: all 0.15s ease-in-out;
+        background-color: #864b82;
+      }
+
+      &:active {
+        transform: translate(0);
+        box-shadow: 6px 6px rgba(#5f235b, 0.75);
+      }
+    }
   }
+}
+
+.icon {
+  height: 1.5em;
+  width: 1.5em;
 }
 </style>

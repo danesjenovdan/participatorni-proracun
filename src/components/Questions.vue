@@ -1,9 +1,9 @@
 <template>
   <div class="row faq-row mx-0">
-    <div class="col-md-12">
+    <div class="col-md-12 py-4">
       <h2>
         VSE, KAR STE ŽELELI VEDETI O
-        <span>PARTICIPATIVNEM PRORAČUNU</span>
+        <span><strong>PARTICIPATIVNEM PRORAČUNU</strong></span>
       </h2>
     </div>
     <div class="col-md-6 mt-5 px-0">
@@ -24,15 +24,18 @@
       </template>
     </div>
     <div class="col-md-6 mt-5 px-0">
-      <div
-        class="faq-a-content column-answer"
-        v-html="stuff[selected].a"
-      />
+      <vuescroll :ops="scrollOps">
+        <div class="faq-a-content column-answer"
+                v-html="stuff[selected].a"/>
+      </vuescroll>
     </div>
   </div>
 </template>
 
 <script>
+import vuescroll from 'vuescroll';
+
+
 const stuff = [
   {
     q: 'Kaj je participativni proračun?',
@@ -95,10 +98,30 @@ const stuff = [
 
 export default {
   name: 'Questions',
+  components: {
+    vuescroll,
+  },
   data() {
     return {
       stuff,
       selected: 0,
+      scrollOps: {
+        vuescroll: {
+          mode: 'native'
+        },
+        scrollPanel: {},
+        rail: {
+          specifyBorderRadius: '0',
+          size: '15px'
+        },
+        bar: {
+          keepShow: true,
+          background: '#5f235b',
+          specifyBorderRadius: '0',
+          size: '15px',
+          minSize: 0.1
+        }
+      }
     };
   },
   methods: {
@@ -122,7 +145,7 @@ export default {
     }
 
     span {
-      color: #f2cc59;
+      color: #e26e53;
     }
   }
 
@@ -180,11 +203,9 @@ export default {
   .column-answer {
     display: block;
     height: 465px;
-    overflow-y: auto;
 
     @media (max-width: 992px) {
       height: 420px;
-      overflow-y: auto;
     }
 
     @media (max-width: 767px) {

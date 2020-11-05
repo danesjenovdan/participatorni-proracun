@@ -1,29 +1,14 @@
 <template>
   <div class="home">
     <div class="container">
-      <div class="row justify-content-center py-5">
+      <top-title-section></top-title-section>
+      <candidate-scroll></candidate-scroll>
+      <find-candidates />
+      <no-p-p-candidates></no-p-p-candidates>
+      <find-candidates-no-p-p />
         <div class="col-md-12">
-          <big-video />
-          <img
-            class="arrow-down"
-            src="@/assets/arrow-down.svg"
-          >
+            <big-video />
         </div>
-        <div class="col-md-10 mt-5">
-          <p class="lead text-center mt-5 px-3">
-            Dobili smo <strong>275</strong> zaobljub, od tega je <strong>57</strong> kandidatov in
-            kandidatk, ki so obljubili uvedbo participativnega proračuna, zmagalo na volitvah.
-          </p>
-          <p class="lead text-center mt-5 px-3">
-            Delo županj in županov bomo spremljali in od njih zahtevali uresničitev predvolilne
-            obljube.
-          </p>
-        </div>
-      </div>
-      <find-candidates class="py-5" />
-      <hr class="separator">
-      <subscribe-for-updates class="py-5" />
-      <hr class="separator">
       <questions class="py-5" />
     </div>
     <div class="footer-container">
@@ -37,9 +22,13 @@
 <script>
 import BigVideo from '@/components/BigVideo.vue';
 import FindCandidates from '@/components/FindCandidates.vue';
+import FindCandidatesNoPP from '@/components/FindCandidatesNoPP.vue'; // noPP -> nimajo participativnega proracuna :)
+import NoPPCandidates from '@/components/NoPPCandidates.vue';
+import CandidateScroll from '@/components/CandidateScroll.vue';
 import SubscribeForUpdates from '@/components/SubscribeForUpdates.vue';
 import Questions from '@/components/Questions.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
+import TopTitleSection from '@/components/TopTitleSection.vue';
 
 const domain = 'https://danesjenovdan.si';
 const baseUrl = process.env.BASE_URL;
@@ -49,9 +38,13 @@ export default {
   components: {
     BigVideo,
     FindCandidates,
+    FindCandidatesNoPP,
+    NoPPCandidates,
+    CandidateScroll,
     SubscribeForUpdates,
     Questions,
     SiteFooter,
+    TopTitleSection,
   },
   metaInfo: {
     title: 'Participativni proračun',

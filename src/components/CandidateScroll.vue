@@ -1,0 +1,213 @@
+<template>
+  <div class="row">
+    <div class="col p-lg-5 p-3 pretext">
+      <div class="row">
+        <div class="col align-self-center pretext-xl">
+          <p>
+            <strong>57 <img class="icon" src="../assets/handshake.svg"></strong><br>
+            <nobr> ZAVEZANIH </nobr><br>
+            <nobr> KANDIDATOV JE </nobr><br>
+            <nobr> BILO IZVOLJENIH </nobr><br>
+            <nobr> ZA ŽUPANE </nobr>
+          </p>
+        </div>
+        <div class="col align-self-center text-center pretext-xs">
+          <p>
+            <strong>57 <img class="icon" src="../assets/handshake.svg"></strong><br>
+            <nobr> ZAVEZANIH </nobr><br>
+            <nobr> KANDIDATOV JE </nobr><br>
+            <nobr> BILO IZVOLJENIH </nobr><br>
+            <nobr> ZA ŽUPANE </nobr>
+          </p>
+        </div>
+        <div class="col pretext-xs text-center">
+          <p>
+            <strong><img class="icon" src="../assets/suggest.svg"></strong><br>
+            2 LETI PO DANIH<br>
+            <nobr> ZAVEZAH JIH </nobr><br>
+            <nobr> PARTICIPATIVNI </nobr><br>
+            <nobr> PRORAČUN </nobr><br>
+            <nobr> IZVAJA SAMO </nobr><br>
+            <nobr><strong>50</strong></nobr>
+          </p>
+        </div>
+      </div>
+      <div class="row pretext-xl">
+        <div class="col-lg-10 col-md-12 align-right">
+          <p>
+            <strong><img class="icon suggest_icon" src="../assets/suggest.svg"></strong><br>
+            2 LETI PO DANIH<br>
+            <nobr> ZAVEZAH JIH </nobr><br>
+            <nobr> PARTICIPATIVNI </nobr><br>
+            <nobr> PRORAČUN </nobr><br>
+            <nobr> IZVAJA SAMO </nobr><br>
+            <nobr><strong>50</strong></nobr>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-7 col-12 px-sm-0 scroll">
+      <div class="scroll">
+        <vuescroll :ops="ops">
+          <div v-for="c in candidates" :class="c.OBLJUBA === '1' ? 'active' : ''" style="line-height: 1; margin-bottom: 25px;">
+            <span class="obcina">{{ c.SIMPLE_OBCINA }}</span>
+            <span v-if="c.OBLJUBA === '1'" class="happy_face_text"><img class="icon" src="../assets/happy_face.svg">Izvaja</span>
+            <span v-else class="sad_face_text"><img class="icon" src="../assets/sad_face.svg">Ne izvaja</span>
+            <br>
+            <span class="candidate">{{ c.KANDIDAT }}</span>
+          </div>
+        </vuescroll>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import Papa from 'papaparse';
+  import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
+  import vuescroll from 'vuescroll';
+
+  export default {
+    name: 'NoPPCandidates',
+    components: {
+      vuescroll,
+    },
+
+    data() {
+      const data = Papa.parse(csvData, { header: true });
+      if (data.errors.length) {
+        // eslint-disable-next-line no-console
+        console.error('CSV Parse Errors:', data.errors);
+      }
+      const allData = data.data
+        .map(row => ({
+          ...row,
+          SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
+        }))
+        .filter(row => row.ZMAGA !== '');
+
+      return {
+        candidates: allData,
+        ops: {
+          vuescroll: {
+            mode: 'native'
+          },
+          scrollPanel: {},
+          rail: {
+            specifyBorderRadius: '0',
+            size: '15px',
+            background: '#e6e6e6',
+            opacity: 1
+          },
+          bar: {
+            keepShow: true,
+            background: '#e26e53',
+            specifyBorderRadius: '0',
+            size: '15px',
+            minSize: 0.2
+          }
+        }
+      }
+    }
+  };
+</script>
+
+<style lang="scss" scoped>
+  .pretext {
+    p {
+      font-size: 1.5rem;
+      line-height: 1;
+
+      strong {
+        color: #e5816a;
+        font-size: 3rem;
+      }
+    }
+
+    .align-right {
+      p {
+        text-align: right;
+      }
+    }
+
+    .pretext-xs {
+      display: none;
+      @media (max-width: 992px) {
+        display: unset;
+      }
+    }
+
+    .pretext-xl {
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+  .scroll {
+    display: block;
+    height: 563px;
+    overflow-y: auto;
+
+    .happy_face_text {
+      color: #5f235b;
+      margin-left: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .sad_face_text {
+      color: #e5816a;
+      margin-left: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .icon {
+      margin-right: 0.2rem;
+    }
+
+    .obcina {
+      font-size: 2rem;
+      font-style: italic;
+
+      @media (max-width: 575.98px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .candidate {
+      font-size: 1.5rem;
+
+      @media (max-width: 575.98px) {
+        font-size: 1rem;
+      }
+    }
+
+    .active {
+      color: #5f235b;
+
+      .obcina {
+        font-weight: bold;
+      }
+    }
+
+    @media (max-width: 992px) {
+      height: 501px;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 1rem;
+      padding-left: 15px;
+    }
+  }
+
+  .icon {
+    height: 1em;
+    width: 1em;
+  }
+
+  .suggest_icon {
+    margin-right: 3rem;
+  }
+
+</style>

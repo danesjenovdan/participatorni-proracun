@@ -1,0 +1,86 @@
+<template>
+  <div class="row title_section">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <h1>
+            <strong>PARTICIPATIVNI</strong><br>
+            PRORAČUN
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            Pred lokalnimi volitvami 2018 smo pripravili <b>javni poziv</b> vsem kandidatkam in kandidatom za župane, da se zavežejo vzpostavitvi participativnega proračuna v njihovi občini.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img id="ilustracija" src="../assets/pp-ilustracija.svg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'TopTitleSection',
+  };
+</script>
+
+<style lang="scss" scoped>
+.title_section {
+  background-color: #f2cc59;
+  padding: 2rem;
+  overflow: hidden;
+
+  h1 {
+    font-size: 5rem;
+
+    strong {
+      color: #e5816a;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    b {
+      text-decoration: underline;
+    }
+  }
+
+  #ilustracija {
+    margin-top: -7rem;
+    margin-right: -4rem;
+    /*margin-bottom: 3rem;*/
+    transform: rotate(-15deg);
+
+    @media (max-width: 1199.98px) {
+      margin-bottom: 0;
+      transform: rotate(-15deg) translateY(5rem);
+    }
+
+    @media (max-width: 992px) {
+      height: auto;
+      width: 656px;
+    }
+
+    @media (max-width: 575.98px) {
+      height: auto;
+      width: 575px;
+    }
+  }
+}
+</style>

@@ -21,7 +21,8 @@
     "vue": "^2.5.17",
     "vue-meta": "^1.5.5",
     "vue-router": "^3.0.1",
-    "vue-server-renderer": "^2.5.16"
+    "vue-server-renderer": "^2.5.16",
+    "vuescroll": "^4.16.1"
   },
   "devDependencies": {
     "@akryum/vue-cli-plugin-ssr": "^0.3.0",

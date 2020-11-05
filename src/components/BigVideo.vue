@@ -1,5 +1,12 @@
 <template>
   <div class="big-video">
+    <div class="col-md-12 py-4 my-5">
+      <h2>
+        KAJ JE
+        <span><b>PARTICIPATIVNI PRORAČUN</b></span>
+        ?
+      </h2>
+    </div>
     <div class="embed-responsive embed-responsive-16by9">
       <iframe
         v-if="true || !showOverlay"
@@ -9,27 +16,6 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
-      <!-- <img
-        v-else
-        src="@/assets/video-cover.jpg"
-        class="embed-responsive-item blurred"
-      >
-      <div
-        v-if="showOverlay"
-        class="overlay"
-        @click="onPlayClick"
-      >
-        <div class="overlay-content text-center">
-          <div class="mb-lg-5">
-            Čas je, da občinski denar postane tudi <strong>tvoja stvar</strong>!
-          </div>
-          <play-button
-            class="mt-3 mx-auto"
-            @click.native="onPlayClick"
-          />
-          <div class="play-instruction">Predvajaj</div>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -118,6 +104,21 @@ export default {
         }
       }
     }
+  }
+
+  h2 {
+    color: #27223a;
+    font-size: 3rem;
+    line-height: 1.1;
+    text-align: center;
+
+    @media (max-width: 1199.98px) {
+      font-size: 2.5rem;
+    }
+
+    /*span {*/
+    /*  color: #f2cc59;*/
+    /*}*/
   }
 }
 </style>
