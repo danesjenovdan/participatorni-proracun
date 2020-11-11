@@ -1,14 +1,19 @@
 <template>
   <div class="home">
+    <top-title-section></top-title-section>
+
     <div class="container">
-      <top-title-section></top-title-section>
       <candidate-scroll></candidate-scroll>
-      <find-candidates ref="PPInput" @new-input="clearNoPPInput()" />
+    </div>
+    <find-candidates ref="PPInput" @new-input="clearNoPPInput()" />
+    <div class="container">
       <no-p-p-candidates></no-p-p-candidates>
-      <find-candidates-no-p-p ref="NoPPInput" @new-input="clearPPInput()" />
-        <div class="col-md-12">
-            <big-video />
-        </div>
+    </div>
+    <find-candidates-no-p-p ref="NoPPInput" @new-input="clearPPInput()" />
+    <div class="container">
+      <div class="col-md-12">
+        <big-video />
+      </div>
       <questions class="py-5" />
     </div>
     <div class="footer-container">

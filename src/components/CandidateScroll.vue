@@ -40,7 +40,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>50</strong></nobr>
+            <nobr><strong>20</strong></nobr>
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>50</strong></nobr>
+            <nobr><strong>20</strong></nobr>
           </p>
         </div>
       </div>
