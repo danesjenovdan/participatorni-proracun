@@ -16,7 +16,7 @@
           </p>
         </div>
         <div class="col-lg-6 col-md-12">
-          <img id="ilustracija" src="../assets/pp-ilustracija.svg"/>
+          <img id="ilustracija" src="../assets/pp-ilustracija.svg" alt="illustration"/>
         </div>
       </div>
     </div>

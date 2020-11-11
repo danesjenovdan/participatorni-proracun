@@ -3,9 +3,9 @@
     <div class="container">
       <top-title-section></top-title-section>
       <candidate-scroll></candidate-scroll>
-      <find-candidates />
+      <find-candidates ref="PPInput" @new-input="clearNoPPInput()" />
       <no-p-p-candidates></no-p-p-candidates>
-      <find-candidates-no-p-p />
+      <find-candidates-no-p-p ref="NoPPInput" @new-input="clearPPInput()" />
         <div class="col-md-12">
             <big-video />
         </div>
@@ -98,6 +98,15 @@ export default {
       },
     ],
   },
+
+  methods: {
+    clearPPInput(){
+      this.$refs.PPInput.clearInput();
+    },
+    clearNoPPInput(){
+      this.$refs.NoPPInput.clearInput();
+    },
+  }
 };
 </script>
 

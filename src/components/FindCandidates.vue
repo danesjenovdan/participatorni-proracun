@@ -36,13 +36,13 @@
         </div>
         <div class="text-center">
           <span>
-            <img class="icon" src="../assets/point_down.svg" style="-webkit-transform: scaleX(-1);-moz-transform: scaleX(-1);-ms-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);">
+            <img class="icon" src="../assets/point_down.svg" alt="point_down" style="-webkit-transform: scaleX(-1);-moz-transform: scaleX(-1);-ms-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);">
             Ne najdeš svoje občine? Premakni se nižje.
-            <img class="icon" src="../assets/point_down.svg">
+            <img class="icon" src="../assets/point_down.svg" alt="point_down">
           </span>
         </div>
       </div>
-      <div v-if="query" class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
+      <div v-if="query && inputValue && query.toUpperCase() === inputValue.toUpperCase()" class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
         <div class="row">
           <div class="col" style="border: 5px solid #e26e53; padding: 1.75rem;">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -53,8 +53,13 @@
           <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center">
             <span class="py-auto">Kopiraj sporočilo in ga pošlji na: </span>
           </div>
-          <div class="col p-2 text-center-xs" style="border: 5px solid #e26e53">
-            <span>bosko.srot@celje.si</span>
+          <div class="col p-2 text-center-xs">
+            <input
+                    value="bosko.srot@celje.si"
+                    class="form-control"
+                    spellcheck="false"
+                    @focus="$event.target.select()"
+            >
           </div>
         </div>
         <hr class="separator">
@@ -81,6 +86,8 @@
         <modal
           v-if="showModal"
           :share-link="shareLink"
+          :pp="true"
+          :obcina-info="data.filter(x => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase())[0]"
           @close="showModal = false"
           @twShare="onShareClickMunicipality($event, 'tw', showModal[0], showModal[1])"
           @fbShare="onShareClickMunicipality($event, 'fb', showModal[0], showModal[1])"
@@ -209,7 +216,7 @@ export default {
     const { query } = this.$route.params;
     const { p } = this.$route.query;
 
-    const data = Papa.parse(csvData, { header: true });
+    const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
     if (data.errors.length) {
       // eslint-disable-next-line no-console
       console.error('CSV Parse Errors:', data.errors);
@@ -219,11 +226,12 @@ export default {
         ...row,
         SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
       }))
-      .filter(row => row.ZMAGA !== '');
+      .filter(row => row.ZMAGA !== '')
+      .filter(row => row['PRVI DROPDOWN'] === '1');
     const allMunicipalities = Object.keys(groupBy(allData, 'SIMPLE_OBCINA'));
 
     return {
-      inputValue: (query || '').toUpperCase(),
+      inputValue: query && allData.map(row => row.SIMPLE_OBCINA).includes(query.toUpperCase()) ? query.toUpperCase() : '',
       query: (query || '').toLowerCase(),
       person: p,
       loading: false,
@@ -273,6 +281,11 @@ export default {
       this.$router.push(`/${this.query}`);
       this.hoveredSocial = null;
       this.loading = false;
+      this.$emit('new-input')
+    },
+    clearInput(){
+      this.inputValue = '';
+      this.query = '';
     },
     onMouseEnter(i) {
       this.hoveredSocial = i;
@@ -626,6 +639,27 @@ export default {
     .text-center-xs {
       @media (max-width: 575.98px) {
         text-align: center;
+      }
+    }
+
+    .form-control {
+      border-radius: 0;
+      border: 6px solid #e26e53;
+      background: #fcf5de;
+      font-size: 1.25rem;
+      font-weight: 700;
+      height: auto;
+      color: #e26e53;
+      text-align: center;
+
+      &::placeholder {
+        color: rgba(#5f235b, 0.75);
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+        background-color: #fcf5de;
       }
     }
 

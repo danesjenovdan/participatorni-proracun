@@ -3,9 +3,14 @@
     <div class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
+          <button type="button" class="close" aria-label="Close" style="position: relative; top: -10px; right: -10px" @click="$emit('close')">
+            <span style="color: #5f235b; font-size: 2rem;">&times;</span>
+          </button>
           <div class="modal-body">
             <slot name="body">
               <div class="shares">
+                <card-p-p v-if="pp" :info="obcinaInfo"></card-p-p>
+                <card-no-p-p v-else :info="obcinaInfo"></card-no-p-p>
                 <div class="social-buttons">
                   <button
                     class="btn"
@@ -51,18 +56,18 @@
                     Pošlji na mejl
                   </button>
                 </div>
-                <h4>Kopiraj povezavo:</h4>
-                <input
-                  :value="shareLink"
-                  class="form-control"
-                  spellcheck="false"
-                  @focus="$event.target.select()"
-                >
-                <br>
-                <button
-                  class="btn"
-                  @click="$emit('close')"
-                >Zapri</button>
+<!--                <h4>Kopiraj povezavo:</h4>-->
+<!--                <input-->
+<!--                  :value="shareLink"-->
+<!--                  class="form-control"-->
+<!--                  spellcheck="false"-->
+<!--                  @focus="$event.target.select()"-->
+<!--                >-->
+<!--                <br>-->
+<!--                <button-->
+<!--                  class="btn"-->
+<!--                  @click="$emit('close')"-->
+<!--                >Zapri</button>-->
               </div>
             </slot>
           </div>
@@ -74,6 +79,8 @@
 
 <script>
 import axios from 'axios';
+import CardPP from '../components/CardPP';
+import CardNoPP from '../components/CardNoPP';
 
 export default {
   name: 'Modal',
@@ -82,6 +89,19 @@ export default {
       type: String,
       required: true,
     },
+    pp: {
+      type: Boolean,
+      required: true,
+    },
+    obcinaInfo: {
+      type: Object,
+      required: true,
+    }
+  },
+
+  components: {
+    CardPP,
+    CardNoPP
   },
 
   data() {
@@ -143,7 +163,7 @@ export default {
 }
 
 .modal-container {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #f2cc59;
@@ -165,12 +185,12 @@ export default {
 
   .social-buttons {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     .btn,
     .btn:focus {
       font-size: 1rem;
-      margin-bottom: 2rem;
+      /*margin-bottom: 2rem;*/
       margin-left: 1rem;
       margin-right: 1rem;
       background-color: #5f235b;

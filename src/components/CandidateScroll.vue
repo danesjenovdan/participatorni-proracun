@@ -4,7 +4,11 @@
       <div class="row">
         <div class="col align-self-center pretext-xl">
           <p>
-            <strong>57 <img class="icon" src="../assets/handshake.svg"></strong><br>
+            <strong>57
+              <img
+                    class="icon"
+                    src="../assets/handshake.svg" alt="handshake">
+            </strong><br>
             <nobr> ZAVEZANIH </nobr><br>
             <nobr> KANDIDATOV JE </nobr><br>
             <nobr> BILO IZVOLJENIH </nobr><br>
@@ -13,7 +17,11 @@
         </div>
         <div class="col align-self-center text-center pretext-xs">
           <p>
-            <strong>57 <img class="icon" src="../assets/handshake.svg"></strong><br>
+            <strong>57
+              <img
+                    class="icon"
+                    src="../assets/handshake.svg" alt="handshake">
+            </strong><br>
             <nobr> ZAVEZANIH </nobr><br>
             <nobr> KANDIDATOV JE </nobr><br>
             <nobr> BILO IZVOLJENIH </nobr><br>
@@ -22,7 +30,11 @@
         </div>
         <div class="col pretext-xs text-center">
           <p>
-            <strong><img class="icon" src="../assets/suggest.svg"></strong><br>
+            <strong>
+              <img
+                    class="icon"
+                    src="../assets/suggest.svg" alt="suggest">
+            </strong><br>
             2 LETI PO DANIH<br>
             <nobr> ZAVEZAH JIH </nobr><br>
             <nobr> PARTICIPATIVNI </nobr><br>
@@ -35,7 +47,11 @@
       <div class="row pretext-xl">
         <div class="col-lg-10 col-md-12 align-right">
           <p>
-            <strong><img class="icon suggest_icon" src="../assets/suggest.svg"></strong><br>
+            <strong>
+              <img
+                    class="icon suggest_icon"
+                    src="../assets/suggest.svg" alt="suggest">
+            </strong><br>
             2 LETI PO DANIH<br>
             <nobr> ZAVEZAH JIH </nobr><br>
             <nobr> PARTICIPATIVNI </nobr><br>
@@ -49,10 +65,20 @@
     <div class="col-xl-6 col-lg-7 col-12 px-sm-0 scroll">
       <div class="scroll">
         <vuescroll :ops="ops">
-          <div v-for="c in candidates" :class="c.OBLJUBA === '1' ? 'active' : ''" style="line-height: 1; margin-bottom: 25px;">
+          <div v-for="c in candidates" :class="c['IZVAJA PP'] === '1' ? 'active scroll-item' : 'scroll-item'">
             <span class="obcina">{{ c.SIMPLE_OBCINA }}</span>
-            <span v-if="c.OBLJUBA === '1'" class="happy_face_text"><img class="icon" src="../assets/happy_face.svg">Izvaja</span>
-            <span v-else class="sad_face_text"><img class="icon" src="../assets/sad_face.svg">Ne izvaja</span>
+            <span v-if="c['IZVAJA PP'] === '1'"
+                  class="happy_face_text">
+              <img class="icon"
+                   src="../assets/happy_face.svg" alt="happy_face">
+              Izvaja
+            </span>
+            <span v-else
+                  class="sad_face_text">
+              <img class="icon"
+                   src="../assets/sad_face.svg" alt="sad_face">
+              Ne izvaja
+            </span>
             <br>
             <span class="candidate">{{ c.KANDIDAT }}</span>
           </div>
@@ -147,6 +173,11 @@
     display: block;
     height: 563px;
     overflow-y: auto;
+
+    .scroll-item {
+      line-height: 1;
+      margin-bottom: 25px;
+    }
 
     .happy_face_text {
       color: #5f235b;
