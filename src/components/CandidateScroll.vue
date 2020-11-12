@@ -14,6 +14,14 @@
             <nobr> BILO IZVOLJENIH </nobr><br>
             <nobr> ZA ŽUPANE </nobr>
           </p>
+          <background-square color="#e5816a"
+                             :opacity="0.2"
+                             height="120px"
+                             width="120px"
+                             tilt-angle="-10deg"
+                             top="35px"
+                             left="35px"
+          ></background-square>
         </div>
         <div class="col align-self-center text-center pretext-xs">
           <p>
@@ -27,8 +35,44 @@
             <nobr> BILO IZVOLJENIH </nobr><br>
             <nobr> ZA ŽUPANE </nobr>
           </p>
+          <background-square class="bg-square-lg"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="120px"
+                             width="120px"
+                             tilt-angle="-10deg"
+                             top="40px"
+                             left="35%"
+          ></background-square>
+          <background-square class="bg-square-sm"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="120px"
+                             width="120px"
+                             tilt-angle="-10deg"
+                             top="40px"
+                             left="30%"
+          ></background-square>
+          <background-square class="bg-square"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="120px"
+                             width="120px"
+                             tilt-angle="-10deg"
+                             top="40px"
+                             left="40%"
+          ></background-square>
+          <background-square class="bg-square-xs"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="120px"
+                             width="120px"
+                             tilt-angle="-10deg"
+                             top="40px"
+                             left="35%"
+          ></background-square>
         </div>
-        <div class="col pretext-xs text-center">
+        <div class="col-12 col-sm-6 pretext-xs text-center">
           <p>
             <strong>
               <img
@@ -42,6 +86,42 @@
             <nobr> IZVAJA SAMO </nobr><br>
             <nobr><strong>20</strong></nobr>
           </p>
+          <background-square class="bg-square-lg"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="180px"
+                             width="180px"
+                             tilt-angle="10deg"
+                             top="40px"
+                             left="90px"
+          ></background-square>
+          <background-square class="bg-square-sm"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="170px"
+                             width="170px"
+                             tilt-angle="10deg"
+                             top="40px"
+                             left="20%"
+          ></background-square>
+          <background-square class="bg-square"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="170px"
+                             width="170px"
+                             tilt-angle="10deg"
+                             top="40px"
+                             left="35%"
+          ></background-square>
+          <background-square class="bg-square-xs"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="170px"
+                             width="170px"
+                             tilt-angle="10deg"
+                             top="40px"
+                             left="30%"
+          ></background-square>
         </div>
       </div>
       <div class="row pretext-xl">
@@ -59,6 +139,14 @@
             <nobr> IZVAJA SAMO </nobr><br>
             <nobr><strong>20</strong></nobr>
           </p>
+          <background-square color="#e5816a"
+                             :opacity="0.2"
+                             height="200px"
+                             width="200px"
+                             tilt-angle="10deg"
+                             top="20px"
+                             right="20px"
+          ></background-square>
         </div>
       </div>
     </div>
@@ -92,11 +180,13 @@
   import Papa from 'papaparse';
   import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
   import vuescroll from 'vuescroll';
+  import BackgroundSquare from './BackgroundSquare';
 
   export default {
     name: 'NoPPCandidates',
     components: {
       vuescroll,
+      BackgroundSquare,
     },
 
     data() {
@@ -239,6 +329,44 @@
 
   .suggest_icon {
     margin-right: 3rem;
+  }
+
+
+  .bg-square-lg {
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+  }
+  .bg-square-sm {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: unset;
+    }
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+  .bg-square {
+    display: none;
+
+    @media (max-width: 575px) {
+      display: unset;
+    }
+    @media (max-width: 390px) {
+      display: none;
+    }
+  }
+
+  .bg-square-xs {
+    display: none;
+
+    @media (max-width: 390px) {
+      display: unset;
+    }
   }
 
 </style>

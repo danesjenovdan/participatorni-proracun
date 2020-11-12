@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col align-self-center p-sm-5 p-2 first_column text-center-xs">
+    <div class="col-12 col-md-6 align-self-center p-5 first_column text-center-xs">
       <p>
         Za resnično demokratično in vključujočo lokalno upravo je
         nujno, da participativni proračun uvedejo vse slovenske občine.
@@ -14,13 +14,72 @@
         <nobr> PRORAČUN SPLOH </nobr><br>
         <nobr> NE ZANIMA </nobr>
       </p>
+      <background-square class="bg-square-xl"
+                         color="#e5816a"
+                         :opacity="0.2"
+                         height="45%"
+                         width="25%"
+                         tilt-angle="-10deg"
+                         top="25%"
+                         left="15%"
+      ></background-square>
+      <background-square class="bg-square-lg"
+                         color="#e5816a"
+                         :opacity="0.2"
+                         height="45%"
+                         width="30%"
+                         tilt-angle="-10deg"
+                         top="25%"
+                         left="15%"
+      ></background-square>
+      <background-square class="bg-square-md"
+                         color="#e5816a"
+                         :opacity="0.2"
+                         height="45%"
+                         width="35%"
+                         tilt-angle="-10deg"
+                         top="25%"
+                         left="15%"
+      ></background-square>
+      <background-square class="bg-square-sm"
+                         color="#e5816a"
+                         :opacity="0.2"
+                         height="45%"
+                         width="30%"
+                         tilt-angle="-10deg"
+                         top="30%"
+                         left="35%"
+      ></background-square>
+      <background-square class="bg-square"
+                         color="#e5816a"
+                         :opacity="0.2"
+                         height="55%"
+                         width="25%"
+                         tilt-angle="-10deg"
+                         top="30%"
+                         left="37%"
+      ></background-square>
+      <background-square class="bg-square-xs"
+                         color="#e5816a"
+                         :opacity="0.2"
+                         height="55%"
+                         width="30%"
+                         tilt-angle="-10deg"
+                         top="30%"
+                         left="35%"
+      ></background-square>
     </div>
   </div>
 </template>
 
 <script>
+  import BackgroundSquare from './BackgroundSquare'
+
   export default {
     name: 'NoPPCandidates',
+    components: {
+      BackgroundSquare,
+    }
   };
 </script>
 
@@ -43,8 +102,64 @@
     }
   }
   .text-center-xs {
-    @media (max-width: 575.98px) {
+    @media (max-width: 767px) {
       text-align: center;
+    }
+  }
+  .bg-square-xl {
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  .bg-square-lg {
+    display: none;
+
+    @media (max-width: 1199px) {
+      display: unset;
+    }
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .bg-square-md {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: unset;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .bg-square-sm {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: unset;
+    }
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+  .bg-square {
+    display: none;
+
+    @media (max-width: 575px) {
+      display: unset;
+    }
+    @media (max-width: 390px) {
+      display: none;
+    }
+  }
+  .bg-square-xs {
+    display: none;
+
+    @media (max-width: 390px) {
+      display: unset;
     }
   }
 
