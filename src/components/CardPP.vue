@@ -1,7 +1,7 @@
 <template>
   <div class="background">
     <div class="row">
-      <div id="col_one" class="col align-self-center">
+      <div id="col_one" class="col-lg-7 col-12 align-self-center">
         <div class="row">
           <div class="col align-self-center">
             <img class="float-right" :src="getGrbPath()" alt="grb">
