@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
-            <happy-email-section :info="selectedObcina" v-show="selectedObcina && selectedObcina['IZVAJA PP'] === '1'"></happy-email-section>
+            <happy-email-section :info="selectedObcina" v-if="selectedObcina && selectedObcina['IZVAJA PP'] === '1'"></happy-email-section>
             <div v-show="!selectedObcina || (selectedObcina && selectedObcina['IZVAJA PP'] !== '1')" class="row">
               <div class="col" >
                   <textarea readonly
