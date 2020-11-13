@@ -150,10 +150,16 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-6 col-lg-7 col-12 px-sm-0 scroll">
+    <div class="col-xl-6 col-lg-7 col-12 px-sm-0 scroll mb-5 mb-lg-0">
       <div class="scroll">
         <vuescroll :ops="ops">
-          <div v-for="c in candidates" :class="c['IZVAJA PP'] === '1' ? 'active scroll-item' : 'scroll-item'">
+          <div v-for="(c, i) in candidates"
+               class="scroll-item"
+               :class="{
+                      active: c['IZVAJA PP'] === '1',
+                      margin_top: i === 0,
+               }"
+          >
             <span class="obcina">{{ c.SIMPLE_OBCINA }}</span>
             <span v-if="c['IZVAJA PP'] === '1'"
                   class="happy_face_text">
@@ -200,7 +206,15 @@
           ...row,
           SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
         }))
-        .filter(row => row.ZMAGA !== '');
+        .filter(row => row.ZMAGA !== '').sort((a, b) => {
+          if(a.SIMPLE_OBCINA < b.SIMPLE_OBCINA){
+            return -1;
+          }
+          if(a.SIMPLE_OBCINA > b.SIMPLE_OBCINA){
+            return 1;
+          }
+          return 0;
+        });
 
       return {
         candidates: allData,
@@ -224,7 +238,7 @@
           }
         }
       }
-    }
+    },
   };
 </script>
 
@@ -233,6 +247,7 @@
     p {
       font-size: 1.5rem;
       line-height: 1;
+      font-weight: 500;
 
       strong {
         color: #e5816a;
@@ -266,7 +281,7 @@
 
     .scroll-item {
       line-height: 1;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
     }
 
     .happy_face_text {
@@ -367,6 +382,10 @@
     @media (max-width: 390px) {
       display: unset;
     }
+  }
+
+  .margin_top {
+    margin-top: 40px;
   }
 
 </style>

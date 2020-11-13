@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <div class="row p-sm-5 px-3 pt-0">
+      <div class="row p-sm-5 px-0 pt-0">
         <div class="row find-candidates-row mx-0">
           <div class="col-xl-5 col-lg-12 col--search px-0">
             <div class="col__content">
@@ -59,7 +59,7 @@
                           class="form-control"
                           spellcheck="false"
                           @focus="$event.target.select()"
-                          style="font-size: 1rem"
+                          style="font-size: 1rem; padding: inherit"
                   >
                 </div>
               </div>
@@ -706,8 +706,9 @@
           border-radius: 0;
           border: 6px solid #262539;
           background: #f9e2dd;
-          font-size: 0.7rem;
-          font-weight: 700;
+          font-size: 0.9rem;
+          font-weight: 500;
+          padding: 30px;
           height: auto;
           color: #262539;
           text-align: center;

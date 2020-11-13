@@ -1,16 +1,16 @@
 <template>
   <transition name="modal">
-    <div class="modal-mask">
+    <div class="modal-mask" @click="$emit('close')">
       <div class="modal-wrapper">
-        <div class="modal-container">
+        <div class="modal-container" @click="modalConatinerClick">
           <button type="button" class="close" aria-label="Close" style="position: relative; top: -10px; right: -10px" @click="$emit('close')">
             <span style="color: #5f235b; font-size: 2rem;">&times;</span>
           </button>
           <div class="modal-body">
             <slot name="body">
               <div class="shares">
-                <card-p-p v-if="pp" :info="obcinaInfo"></card-p-p>
-                <card-no-p-p v-else :info="obcinaInfo"></card-no-p-p>
+                <card-p-p class="hide-mobile" v-if="pp" :info="obcinaInfo"></card-p-p>
+                <card-no-p-p class="hide-mobile" v-else :info="obcinaInfo"></card-no-p-p>
                 <div class="social-buttons">
                   <button
                     class="btn"
@@ -130,6 +130,12 @@ export default {
           this.shortenedShareLink = this.shareLink;
         });
     },
+    modalConatinerClick(e){
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      return false;
+    }
   },
 };
 </script>
@@ -190,7 +196,7 @@ export default {
     .btn,
     .btn:focus {
       font-size: 1rem;
-      /*margin-bottom: 2rem;*/
+      margin-bottom: 2rem;
       margin-left: 1rem;
       margin-right: 1rem;
       background-color: #5f235b;
@@ -256,6 +262,12 @@ export default {
       transform: translate(4px, 4px);
       box-shadow: 2px 2px #5f235b;
     }
+  }
+}
+
+.hide-mobile {
+  @media (max-width: 575px) {
+    display: none;
   }
 }
 </style>

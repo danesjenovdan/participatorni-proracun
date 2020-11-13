@@ -6,7 +6,7 @@
         nujno, da participativni proračun uvedejo vse slovenske občine.
       </p>
     </div>
-    <div class="col align-self-center p-sm-5 p-2 second_column text-center-xs">
+    <div class="col align-self-center p-sm-5 pb-5 pt-0 second_column text-center-xs">
       <p>
         <strong>155</strong><br>
         <nobr> ŽUPANOV </nobr><br>
@@ -17,8 +17,8 @@
       <background-square class="bg-square-xl"
                          color="#e5816a"
                          :opacity="0.2"
-                         height="45%"
-                         width="25%"
+                         height="170px"
+                         width="170px"
                          tilt-angle="-10deg"
                          top="25%"
                          left="15%"
@@ -26,8 +26,8 @@
       <background-square class="bg-square-lg"
                          color="#e5816a"
                          :opacity="0.2"
-                         height="45%"
-                         width="30%"
+                         height="170px"
+                         width="170px"
                          tilt-angle="-10deg"
                          top="25%"
                          left="15%"
@@ -35,8 +35,8 @@
       <background-square class="bg-square-md"
                          color="#e5816a"
                          :opacity="0.2"
-                         height="45%"
-                         width="35%"
+                         height="170px"
+                         width="170px"
                          tilt-angle="-10deg"
                          top="25%"
                          left="15%"
@@ -44,29 +44,29 @@
       <background-square class="bg-square-sm"
                          color="#e5816a"
                          :opacity="0.2"
-                         height="45%"
-                         width="30%"
+                         height="170px"
+                         width="170px"
                          tilt-angle="-10deg"
-                         top="30%"
+                         top="25%"
                          left="35%"
       ></background-square>
       <background-square class="bg-square"
                          color="#e5816a"
                          :opacity="0.2"
-                         height="55%"
-                         width="25%"
+                         height="150px"
+                         width="150px"
                          tilt-angle="-10deg"
-                         top="30%"
+                         top="15%"
                          left="37%"
       ></background-square>
       <background-square class="bg-square-xs"
                          color="#e5816a"
                          :opacity="0.2"
-                         height="55%"
-                         width="30%"
+                         height="150px"
+                         width="150px"
                          tilt-angle="-10deg"
-                         top="30%"
-                         left="35%"
+                         top="15%"
+                         left="30%"
       ></background-square>
     </div>
   </div>
@@ -88,12 +88,14 @@
     p {
       font-size: 1.5rem;
       font-style: italic;
+      font-weight: 500;
     }
   }
   .second_column {
     p {
       font-size: 2rem;
       line-height: 1;
+      font-weight: 500;
 
       strong {
         color: #e5816a;

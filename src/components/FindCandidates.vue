@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <div class="row p-sm-5 px-3 pt-0">
+      <div class="row p-sm-5 px-0 pt-0">
         <div class="row find-candidates-row mx-0">
           <div class="col-xl-5 col-lg-12 col--search px-0 mb-3">
             <div class="col__content mb-3">
@@ -67,7 +67,7 @@
                           class="form-control"
                           spellcheck="false"
                           @focus="$event.target.select()"
-                          style="font-size: 1rem"
+                          style="font-size: 1rem; padding: inherit;"
                   >
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default {
         SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
       }))
       .filter(row => row.ZMAGA !== '')
-      .filter(row => row['PRVI DROPDOWN'] === '1');
+      .filter(row => row['PRVI DROPDOWN'] === '1')
     const allMunicipalities = Object.keys(groupBy(allData, 'SIMPLE_OBCINA'));
 
     return {
@@ -300,7 +300,7 @@ export default {
       }
       return 'Spoštovani,\n' + '\n' +
         'želim vas spomniti na vašo obljubo pred lokalnimi volitvami 2018, s katero ste se javno zavezali, da boste v primeru izvolitve tekom vašega mandata pričeli z izvajanjem participativnega proračuna.\n' + '\n' +
-        'Participativni proračun izvaja že 20 slovenskih občin in želim si, da se jim pridruži tudi ' + obcina + '\n' + '\n' +
+        'Participativni proračun izvaja že 20 slovenskih občin in želim si, da se jim pridruži tudi ' + obcina + '.\n' + '\n' +
         'Ustrezna izvedba participativnega proračuna občankam in občanom omogoča, da neposredno odločajo o porabi deleža občinskih sredstev. Uvedba participativnih mehanizmov prinaša pozitivne učinke za prebivalce, ki se počutijo opolnomočeni in bolj povezani s svojo lokalno skupnostjo. Hkrati pa si tudi vi okrepite zaupanje in legitimnost med občankami in občani, v širši skupnosti pa ste prepoznani kot vključujoči predstavniki ljudstva.\n' + '\n' +
         'Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n' + '\n' +
         'V upanju, da boste držali svojo zavezo vašim volivkam in volivcem, vas lepo pozdravljam.';
@@ -710,10 +710,10 @@ export default {
         border-radius: 0;
         border: 6px solid #e26e53;
         background: #fcf5de;
-        font-size: 0.7rem;
-        font-weight: 700;
+        font-size: 0.9rem;
+        font-weight: 500;
         height: auto;
-        /*color: #e26e53;*/
+        padding: 30px;
         text-align: center;
 
         &::placeholder {

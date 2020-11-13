@@ -112,7 +112,9 @@ export default {
         scrollPanel: {},
         rail: {
           specifyBorderRadius: '0',
-          size: '15px'
+          size: '15px',
+          background: '#e6e6e6',
+          opacity: 1,
         },
         bar: {
           keepShow: true,
@@ -210,7 +212,7 @@ export default {
 
     @media (max-width: 767px) {
       height: auto;
-      overflow-y: none;
+      overflow-y: unset;
     }
 
     @media (max-width: 575.98px) {

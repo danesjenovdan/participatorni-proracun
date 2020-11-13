@@ -164,6 +164,7 @@ export default {
     .disclaimer {
       margin-top: 1rem;
       font-size: 0.75rem;
+      padding: 0 2rem;
     }
   }
 }

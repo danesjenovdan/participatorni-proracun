@@ -4,7 +4,7 @@
       <div id="col_one" class="col align-self-center">
         <div class="row">
           <div class="col text-center text align-self-end">
-            <span>Občina<br>{{ info.SIMPLE_OBCINA }}<br>
+            <span>Občina<br>{{ info.SIMPLE_OBCINA }}<br>m
               <span class="izvaja">si želi</span>
             </span>
           </div>
@@ -56,7 +56,7 @@
 
 <style lang="scss" scoped>
   .background {
-    background-color: #f9e2dd;
+    background-color: #fcf5de;
     padding: 5rem 4rem 3rem;
 
     #col_one {

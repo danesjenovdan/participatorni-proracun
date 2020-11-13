@@ -70,7 +70,7 @@
 
 <style lang="scss" scoped>
   .background {
-    background-color: #f9e2dd;
+    background-color: #fcf5de;
     padding: 5rem 4rem 3rem;
 
     #col_one {
