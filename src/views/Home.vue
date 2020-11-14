@@ -70,36 +70,36 @@ export default {
       {
         vmid: 'og:title',
         property: 'og:title',
-        content: 'Čas je, da občinski denar postane tudi tvoja stvar!',
+        content: 'Kje je participativni proračun?',
       },
       {
         vmid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Čas je, da občinski denar postane tudi tvoja stvar!',
+        content: 'Kje je participativni proračun?',
       },
       // description
       {
         vmid: 'og:description',
         property: 'og:description',
         content:
-          'Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo.',
+          'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.',
       },
       {
         vmid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo.',
+          'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.',
       },
       // image
       {
         vmid: 'og:image',
         property: 'og:image',
-        content: `${domain}${baseUrl}og-image.png?v2`,
+        content: `${domain}${baseUrl}pp-og.png?v2`,
       },
       {
         vmid: 'twitter:image',
         name: 'twitter:image',
-        content: `${domain}${baseUrl}og-image.png?v2`,
+        content: `${domain}${baseUrl}pp-og.png?v2`,
       },
     ],
   },

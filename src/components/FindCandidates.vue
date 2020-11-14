@@ -10,8 +10,8 @@
                 <nobr> ZA <strong> BESEDO! </strong> </nobr>
               </h2>
               <p>
-                Pomagaj spomniti županje in župane, ki so se zaobljubili k izvajanju
-                participativnega proračuna, in jim pošlji sporočilo
+                Pomagaj jih spomniti, da so se zaobljubili k
+                izvajaju participativnega proračuna. Pošlji jim sporočilo!
               </p>
               <form
                       action="javascript:"
@@ -74,8 +74,8 @@
               <hr class="separator">
               <div class="row">
                 <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs">
-                  <span v-if="selectedObcina && selectedObcina['IZVAJA PP'] === '1'">Pohvali jih na družbenih omrežjih</span>
-                  <span v-else>Lahko jih opozoriš tudi na družbenih omrežjih</span>
+                  <span v-if="selectedObcina && selectedObcina['IZVAJA PP'] === '1'">Pohvali župana/-jo na družbenih omrežjih!</span>
+                  <span v-else>Opozori župana/-jo na participativni proračun tudi na družbenih omrežjih!</span>
                 </div>
                 <div class="col pb-5 pb-sm-0">
                   <button
@@ -97,7 +97,7 @@
             <span v-else>
               <div class="row">
                 <div class="col my-4 mb-sm-0 text-center" style="font-size: 1.2rem; ">
-                  <b>Izberi občino, da ti prikažemo e-naslov tvoje županje ali župana, na katerega lahko pošlješ zgornje sporočilo.</b>
+                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
                 </div>
               </div>
             </span>
@@ -142,8 +142,10 @@ const domain = 'https://danesjenovdan.si';
 const baseUrl = process.env.BASE_URL;
 
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
-const shareContent =
-  'Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini {query}.';
+
+const shareTitle = 'Kje je participativni proračun?';
+const shareContent = 'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še ' +
+                      'niso izpolnili svoje obljube.';
 
 const sharePersonM = '{name} obljublja participativni proračun';
 const sharePersonF = '{name} obljublja participativni proračun';
@@ -165,48 +167,16 @@ export default {
     };
 
     if (this.person || this.query) {
-      let title = shareContent.replace('{query}', this.query.toUpperCase());
-      let content = shareContent.replace('{query}', this.query.toUpperCase());
+      // let title = shareTitle;
+      let content = shareContent;
       let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
-      if (this.person) {
-        const rows = this.data.filter(r => r.KANDIDAT === this.person);
-        if (rows && rows.length && rows[0].OBLJUBA > 0) {
-          title =
-            rows[0].SPOL === 'm'
-              ? sharePersonM.replace('{name}', this.person)
-              : sharePersonF.replace('{name}', this.person);
-          image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
-          content = 'Čas je, da občinski denar postane tudi tvoja stvar!';
-        }
-        if (rows && rows.length && rows[0].ZMAGA > 0) {
-          title =
-            rows[0].SPOL === 'm'
-              ? shareElectedPersonM.replace('{name}', this.person)
-              : shareElectedPersonF.replace('{name}', this.person);
-        }
 
-        overrideTags.meta.push({
-          vmid: 'og:url',
-          property: 'og:url',
-          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}?p=${encodeURIComponent(this.person)}`,
-        });
-        overrideTags.meta.push({
-          vmid: 'og:title',
-          property: 'og:title',
-          content: title,
-        });
-        overrideTags.meta.push({
-          vmid: 'twitter:title',
-          property: 'twitter:title',
-          content: title,
-        });
-      } else {
-        overrideTags.meta.push({
-          vmid: 'og:url',
-          property: 'og:url',
-          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
-        });
-      }
+      // url
+      overrideTags.meta.push({
+        vmid: 'og:url',
+        property: 'og:url',
+        content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
+      });
 
       // description
       overrideTags.meta.push({
@@ -345,33 +315,33 @@ export default {
     onMouseLeaveMunicipality() {
       this.hoveredSocialMunicipality = false;
     },
-    onShareClick($event, type, municipality, i) {
-      if (!type) {
-        this.showModal = [municipality, i];
-        return;
-      }
-
-      const row = this.resultsByMunicipality[municipality][i];
-      const ime = row.KANDIDAT;
-
-      const shareText =
-        row.SPOL === 'm'
-          ? sharePersonM.replace('{name}', ime)
-          : sharePersonF.replace('{name}', ime);
-      const shareHashtag = '#TvojaStvar';
-
-      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
-    },
+    // onShareClick($event, type, municipality, i) {
+    //   if (!type) {
+    //     this.showModal = [municipality, i];
+    //     return;
+    //   }
+    //
+    //   const row = this.resultsByMunicipality[municipality][i];
+    //   const ime = row.KANDIDAT;
+    //
+    //   const shareText =
+    //     row.SPOL === 'm'
+    //       ? sharePersonM.replace('{name}', ime)
+    //       : sharePersonF.replace('{name}', ime);
+    //   const shareHashtag = '#TvojaStvar';
+    //
+    //   openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
+    // },
     onShareClickMunicipality($event, type) {
       if (!type) {
         this.showModal = true;
         return;
       }
 
-      const shareText = shareContent.replace('{query}', this.query.toUpperCase());
-      const shareHashtag = '#TvojaStvar';
+      // const shareText = shareContent.replace('{query}', this.query.toUpperCase());
+      const shareHashtag = '';
 
-      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
+      openSocialShareLink(type, shareTitle, shareContent, this.shareLink, shareHashtag);
     },
     resizeTextarea(){
       let timer = setInterval(() => {

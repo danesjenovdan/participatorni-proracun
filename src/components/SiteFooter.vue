@@ -61,12 +61,12 @@
           </a>
         </div>
         <p class="disclaimer small">
-          Opravičujemo se za morebitne napake. Za popravke, dodatne informacije in medijska
-          vprašanja smo dosegljivi na na
+          Opravičujemo se za morebitne napake. Za popravke,
+          dodatne informacije in medijska vprašanja smo dosegljivi na
           <a
-            href="mailto:maja@djnd.si"
+            href="mailto:tadej@djnd.si"
             target="_blank"
-          >maja@djnd.si</a>.
+          >tadej@djnd.si</a>.
         </p>
       </div>
     </div>
@@ -94,11 +94,13 @@ export default {
   },
   methods: {
     onShareClick(event, type) {
-      const shareLink = typeof document !== 'undefined' ? document.location.href : '';
-      const shareText = 'Čas je, da občinski denar postane tudi tvoja stvar!';
-      const shareHashtag = '#TvojaStvar';
+      const shareLink = '';
+      const shareTitle = 'Kje je participativni proračun?';
+      const shareText = 'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani ' +
+                        'še niso izpolnili svoje obljube. https://danesjenovdan.si/participativni-proracun/';
+      const shareHashtag = '';
 
-      openSocialShareLink(type, shareText, shareLink, shareHashtag);
+      openSocialShareLink(type, shareTitle, shareText, shareLink, shareHashtag);
     },
   },
 };

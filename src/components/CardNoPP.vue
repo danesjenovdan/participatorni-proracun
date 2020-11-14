@@ -4,7 +4,7 @@
       <div id="col_one" class="col align-self-center">
         <div class="row">
           <div class="col text-center text align-self-end">
-            <span>Občina<br>{{ info.SIMPLE_OBCINA }}<br>m
+            <span>Občina<br>{{ info.SIMPLE_OBCINA }}<br>
               <span class="izvaja">si želi</span>
             </span>
           </div>
@@ -23,7 +23,7 @@
             <span v-else>Županja</span><br>
             <span>{{ info.KANDIDAT }},</span><br>
             <b>ali nas slišiš?</b>
-          </span>
+          </span>i
         </div>
       </div>
     </div>

@@ -15,13 +15,13 @@
           <div class="row">
             <div class="col">
               <p>
-                Pred lokalnimi volitvami 2018 smo pripravili
+                Pred lokalnimi volitvami leta 2018 smo vse kandidate za župane
                 <a href="https://danesjenovdan.si/participativni-proracun/zaobljube/"
                    rel="noreferrer noopener"
                    target="_blank"
                    style="color: black;"
-                ><b>javni poziv</b></a>
-                vsem kandidatkam in kandidatom za župane, da se zavežejo vzpostavitvi participativnega proračuna v njihovi občini.
+                ><b>javno pozvali</b></a>
+                k zavezi, da bodo v svoji občini vzpostavili participativni proračun.
               </p>
             </div>
             <div class="col-lg-6 col-md-12">

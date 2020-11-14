@@ -65,8 +65,8 @@
               </div>
               <hr class="separator">
               <div class="row">
-                <div class="col-sm-4 col-12 pr-sm-0 mb-sm-0 mb-3 text-center-xs">
-                  <span>Lahko jih opozoriš tudi na družbenih omrežjih</span>
+                <div class="col-sm-6 col-12 pr-sm-0 mb-sm-0 mb-3 text-center-xs">
+                  <span>Opozori župana/-jo na participativni proračun tudi na družbenih omrežjih!</span>
                 </div>
                 <div class="col pb-5 pb-sm-0">
                   <button
@@ -80,7 +80,7 @@
                           @mouseleave="onMouseLeaveMunicipality"
                           @click="onShareClickMunicipality($event, null)"
                   >
-                    <span>DELI SVOJO OBČINO!</span>
+                    <span>DELI!</span>
                   </button>
                 </div>
               </div>
@@ -88,7 +88,7 @@
             <span v-else>
               <div class="row">
                 <div class="col my-4 mb-sm-0 text-center" style="font-size: 1.2rem">
-                  <b>Izberi občino, da ti prikažemo e-naslov tvoje županje ali župana, na katerega lahko pošlješ zgornje sporočilo.</b>
+                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
                 </div>
               </div>
             </span>
@@ -132,6 +132,8 @@
   const baseUrl = process.env.BASE_URL;
 
   const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
+
+  const shareTitle = 'Kje je participativni proračun?';
   const shareContent =
     'Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini {query}.';
 
@@ -154,48 +156,16 @@
       };
 
       if (this.person || this.query) {
-        let title = shareContent.replace('{query}', this.query.toUpperCase());
-        let content = shareContent.replace('{query}', this.query.toUpperCase());
+        // let title = shareContent;
+        let content = shareContent;
         let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
-        if (this.person) {
-          const rows = this.data.filter(r => r.KANDIDAT === this.person);
-          if (rows && rows.length && rows[0].OBLJUBA > 0) {
-            title =
-              rows[0].SPOL === 'm'
-                ? sharePersonM.replace('{name}', this.person)
-                : sharePersonF.replace('{name}', this.person);
-            image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
-            content = 'Čas je, da občinski denar postane tudi tvoja stvar!';
-          }
-          if (rows && rows.length && rows[0].ZMAGA > 0) {
-            title =
-              rows[0].SPOL === 'm'
-                ? shareElectedPersonM.replace('{name}', this.person)
-                : shareElectedPersonF.replace('{name}', this.person);
-          }
 
-          overrideTags.meta.push({
-            vmid: 'og:url',
-            property: 'og:url',
-            content: `${domain}${baseUrl}${encodeURIComponent(this.query)}?p=${encodeURIComponent(this.person)}`,
-          });
-          overrideTags.meta.push({
-            vmid: 'og:title',
-            property: 'og:title',
-            content: title,
-          });
-          overrideTags.meta.push({
-            vmid: 'twitter:title',
-            property: 'twitter:title',
-            content: title,
-          });
-        } else {
-          overrideTags.meta.push({
-            vmid: 'og:url',
-            property: 'og:url',
-            content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
-          });
-        }
+        // url
+        overrideTags.meta.push({
+          vmid: 'og:url',
+          property: 'og:url',
+          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
+        });
 
         // description
         overrideTags.meta.push({

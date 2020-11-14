@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-12 col-md-6 align-self-center p-5 first_column text-center-xs">
       <p>
-        Za resnično demokratično in vključujočo lokalno upravo je
-        nujno, da participativni proračun uvedejo vse slovenske občine.
+        Če želimo demokratično in vključujočo lokalno upravo,
+        je nujno, da vse slovenske občine uvedejo participativni proračun.
       </p>
     </div>
     <div class="col align-self-center p-sm-5 pb-5 pt-0 second_column text-center-xs">

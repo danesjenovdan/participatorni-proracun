@@ -9,15 +9,17 @@
                     class="icon"
                     src="../assets/handshake.svg" alt="handshake">
             </strong><br>
-            <nobr> ZAVEZANIH </nobr><br>
-            <nobr> KANDIDATOV JE </nobr><br>
-            <nobr> BILO IZVOLJENIH </nobr><br>
-            <nobr> ZA ŽUPANE </nobr>
+            <nobr> KANDIDATOV, KI </nobr><br>
+            <nobr> SO SE ZAVEZALI K </nobr><br>
+            <nobr> PARTICIPATIVNEMU </nobr><br>
+            <nobr> PRORAČUNU, JE </nobr><br>
+            <nobr> BILO IZVOLJENIH. </nobr>
+
           </p>
           <background-square color="#e5816a"
                              :opacity="0.2"
-                             height="120px"
-                             width="120px"
+                             height="150px"
+                             width="150px"
                              tilt-angle="-10deg"
                              top="35px"
                              left="35px"
@@ -27,49 +29,50 @@
           <p>
             <strong>57
               <img
-                    class="icon"
-                    src="../assets/handshake.svg" alt="handshake">
+                      class="icon"
+                      src="../assets/handshake.svg" alt="handshake">
             </strong><br>
-            <nobr> ZAVEZANIH </nobr><br>
-            <nobr> KANDIDATOV JE </nobr><br>
-            <nobr> BILO IZVOLJENIH </nobr><br>
-            <nobr> ZA ŽUPANE </nobr>
+            <nobr> KANDIDATOV, KI </nobr><br>
+            <nobr> SO SE ZAVEZALI K </nobr><br>
+            <nobr> PARTICIPATIVNEMU </nobr><br>
+            <nobr> PRORAČUNU, JE </nobr><br>
+            <nobr> BILO IZVOLJENIH. </nobr>
           </p>
           <background-square class="bg-square-lg"
                              color="#e5816a"
                              :opacity="0.2"
-                             height="120px"
-                             width="120px"
-                             tilt-angle="-10deg"
-                             top="40px"
-                             left="35%"
-          ></background-square>
-          <background-square class="bg-square-sm"
-                             color="#e5816a"
-                             :opacity="0.2"
-                             height="120px"
-                             width="120px"
+                             height="150px"
+                             width="150px"
                              tilt-angle="-10deg"
                              top="40px"
                              left="30%"
           ></background-square>
+          <background-square class="bg-square-sm"
+                             color="#e5816a"
+                             :opacity="0.2"
+                             height="140px"
+                             width="140px"
+                             tilt-angle="-10deg"
+                             top="40px"
+                             left="25%"
+          ></background-square>
           <background-square class="bg-square"
                              color="#e5816a"
                              :opacity="0.2"
-                             height="120px"
-                             width="120px"
+                             height="140px"
+                             width="140px"
                              tilt-angle="-10deg"
                              top="40px"
-                             left="40%"
+                             left="38%"
           ></background-square>
           <background-square class="bg-square-xs"
                              color="#e5816a"
                              :opacity="0.2"
-                             height="120px"
-                             width="120px"
+                             height="140px"
+                             width="140px"
                              tilt-angle="-10deg"
                              top="40px"
-                             left="35%"
+                             left="33%"
           ></background-square>
         </div>
         <div class="col-12 col-sm-6 pretext-xs text-center">
@@ -79,8 +82,8 @@
                     class="icon"
                     src="../assets/suggest.svg" alt="suggest">
             </strong><br>
-            2 LETI PO DANIH<br>
-            <nobr> ZAVEZAH JIH </nobr><br>
+            2 leti po danih<br>
+            <nobr> zavezah JIH </nobr><br>
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
@@ -129,11 +132,11 @@
           <p>
             <strong>
               <img
-                    class="icon suggest_icon"
-                    src="../assets/suggest.svg" alt="suggest">
+                      class="icon suggest_icon"
+                      src="../assets/suggest.svg" alt="suggest">
             </strong><br>
-            2 LETI PO DANIH<br>
-            <nobr> ZAVEZAH JIH </nobr><br>
+            2 leti po danih<br>
+            <nobr> zavezah JIH </nobr><br>
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
@@ -276,7 +279,7 @@
   }
   .scroll {
     display: block;
-    height: 563px;
+    height: 590.25px;
     overflow-y: auto;
 
     .scroll-item {
