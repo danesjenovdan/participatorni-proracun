@@ -320,30 +320,12 @@ export default {
     onMouseLeaveMunicipality() {
       this.hoveredSocialMunicipality = false;
     },
-    // onShareClick($event, type, municipality, i) {
-    //   if (!type) {
-    //     this.showModal = [municipality, i];
-    //     return;
-    //   }
-    //
-    //   const row = this.resultsByMunicipality[municipality][i];
-    //   const ime = row.KANDIDAT;
-    //
-    //   const shareText =
-    //     row.SPOL === 'm'
-    //       ? sharePersonM.replace('{name}', ime)
-    //       : sharePersonF.replace('{name}', ime);
-    //   const shareHashtag = '#TvojaStvar';
-    //
-    //   openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
-    // },
     onShareClickMunicipality($event, type) {
       if (!type) {
         this.showModal = true;
         return;
       }
 
-      // const shareText = shareContent.replace('{query}', this.query.toUpperCase());
       const shareHashtag = '';
 
       openSocialShareLink(type, shareTitle, shareContent, this.shareLink, shareHashtag);

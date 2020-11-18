@@ -6,18 +6,17 @@
           <img class="smile" src="../assets/happy_face_no_border.svg">
         </div>
         <div class="col-12 col-md py-5 px-5 text-col">
+          <a :href="info['LINK DO PP']" rel="noreferrer noopener" target="_blank">
           <span class="text">
-            <span>{{ info.OBČINA }}</span><br>
-            <b>ŽE IZVAJA</b><br>
-            <span>PARTICIPATIVNI</span><br>
-            <span>PRORAČUN</span>
-            <a :href="info['LINK DO PP']" rel="noreferrer noopener" target="_blank">
-              <img id="link-icon"
-                   src="../assets/link-icon.svg"
-                   alt="link_icon">
-            </a>
-
+              <span>{{ info.OBČINA }}</span><br>
+              <b>ŽE IZVAJA</b><br>
+              <span>PARTICIPATIVNI</span><br>
+              <span>PRORAČUN</span>
+                <img id="link-icon"
+                     src="../assets/link-icon.svg"
+                     alt="link_icon">
           </span>
+          </a>
         </div>
       </div>
     </div>
@@ -61,15 +60,26 @@
 }
 
 .text-col {
-  .text {
-    font-size: 2rem;
-    line-height: 1;
-    font-style: italic;
+  a {
+    color: black;
+    text-decoration: none;
 
-    b {
-      color: #5f235b;
-      font-weight: 800;
-      font-style: normal;
+    .text {
+      font-size: 2rem;
+      line-height: 1;
+      font-style: italic;
+
+      b {
+        color: #5f235b;
+        font-weight: 800;
+        font-style: normal;
+      }
+    }
+
+    &:hover {
+      b {
+        text-decoration: underline;
+      }
     }
   }
 
