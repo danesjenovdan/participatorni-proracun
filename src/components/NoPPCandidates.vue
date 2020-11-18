@@ -1,12 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-12 col-md-6 align-self-center p-5 first_column text-center-xs">
-      <p>
-        Če želimo demokratično in vključujočo lokalno upravo,
-        je nujno, da vse slovenske občine uvedejo participativni proračun.
-      </p>
-    </div>
-    <div class="col align-self-center p-sm-5 pb-5 pt-0 second_column text-center-xs">
+    <div class="col align-self-center p-5 pt-0 second_column text-center-xs">
       <p>
         <strong>155</strong><br>
         <nobr> ŽUPANOV </nobr><br>
@@ -56,8 +50,8 @@
                          height="150px"
                          width="150px"
                          tilt-angle="-10deg"
-                         top="15%"
-                         left="37%"
+                         top="30%"
+                         left="33%"
       ></background-square>
       <background-square class="bg-square-xs"
                          color="#e5816a"
@@ -65,9 +59,15 @@
                          height="150px"
                          width="150px"
                          tilt-angle="-10deg"
-                         top="15%"
+                         top="25%"
                          left="30%"
       ></background-square>
+    </div>
+    <div class="col-12 col-md-6 align-self-center p-sm-5 pb-5 px-5 first_column text-center-xs">
+      <p>
+        Če želimo demokratično in vključujočo lokalno upravo,
+        je nujno, da vse slovenske občine uvedejo participativni proračun.
+      </p>
     </div>
   </div>
 </template>

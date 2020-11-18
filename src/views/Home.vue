@@ -3,13 +3,13 @@
     <top-title-section></top-title-section>
 
     <div class="container">
-      <candidate-scroll></candidate-scroll>
+      <candidate-scroll @obcina-clicked="submitLocation($event)"></candidate-scroll>
     </div>
-    <find-candidates ref="PPInput" @new-input="clearNoPPInput()" />
+    <find-candidates id="PPInput" ref="PPInput" @new-input="clearNoPPInput()" />
     <div class="container">
       <no-p-p-candidates></no-p-p-candidates>
     </div>
-    <find-candidates-no-p-p ref="NoPPInput" @new-input="clearPPInput()" />
+    <find-candidates-no-p-p id="NoPPInput" ref="NoPPInput" @new-input="clearPPInput()" />
     <div class="container">
       <div class="col-md-12">
         <big-video />
@@ -111,6 +111,15 @@ export default {
     clearNoPPInput(){
       this.$refs.NoPPInput.clearInput();
     },
+    submitLocation(obcina){
+      let reference = obcina['PRVI DROPDOWN'] === '1' ? this.$refs.PPInput : this.$refs.NoPPInput;
+      let id = obcina['PRVI DROPDOWN'] === '1' ? 'PPInput' : 'NoPPInput';
+      let elem = document.getElementById(id);
+
+      reference.onSubmitLocation(obcina.SIMPLE_OBCINA);
+      elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+
+    }
   }
 };
 </script>

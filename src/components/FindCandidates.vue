@@ -46,6 +46,30 @@
           </div>
           <div class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
             <happy-email-section :info="selectedObcina" v-if="selectedObcina && selectedObcina['IZVAJA PP'] === '1'"></happy-email-section>
+            <span v-if="query && inputValue && query.toUpperCase() === inputValue.toUpperCase() &&
+                                        selectedObcina && selectedObcina['IZVAJA PP'] !== '1'">
+              <div class="row pb-3" >
+              <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center">
+                <span class="py-auto">Kopiraj sporočilo in ga pošlji na: </span>
+              </div>
+              <div class="col p-2 text-center-xs">
+                <input  readonly
+                        :value="selectedObcina['MAIL']"
+                        class="form-control"
+                        spellcheck="false"
+                        @focus="$event.target.select()"
+                        style="font-size: 1rem; padding: inherit;"
+                >
+              </div>
+            </div>
+            </span>
+            <span v-else-if="!(selectedObcina && selectedObcina['IZVAJA PP'] === '1')">
+              <div class="row">
+                <div class="col my-4 mt-xl-0 text-center" style="font-size: 1.2rem; ">
+                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
+                </div>
+              </div>
+            </span>
             <div v-show="!selectedObcina || (selectedObcina && selectedObcina['IZVAJA PP'] !== '1')" class="row">
               <div class="col" >
                   <textarea readonly
@@ -57,20 +81,6 @@
               </div>
             </div>
             <span v-if="query && inputValue && query.toUpperCase() === inputValue.toUpperCase()">
-              <div class="row pt-3" v-show="!selectedObcina || (selectedObcina && selectedObcina['IZVAJA PP'] !== '1')">
-                <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center">
-                  <span class="py-auto">Kopiraj sporočilo in ga pošlji na: </span>
-                </div>
-                <div class="col p-2 text-center-xs">
-                  <input  readonly
-                          value="bosko.srot@celje.si"
-                          class="form-control"
-                          spellcheck="false"
-                          @focus="$event.target.select()"
-                          style="font-size: 1rem; padding: inherit;"
-                  >
-                </div>
-              </div>
               <hr class="separator">
               <div class="row">
                 <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs">
@@ -91,13 +101,6 @@
                   >
                     <span>DELI!</span>
                   </button>
-                </div>
-              </div>
-            </span>
-            <span v-else>
-              <div class="row">
-                <div class="col my-4 mb-sm-0 text-center" style="font-size: 1.2rem; ">
-                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
                 </div>
               </div>
             </span>
@@ -302,6 +305,8 @@ export default {
     clearInput(){
       this.inputValue = '';
       this.query = '';
+      this.selectedObcina = null;
+      this.resizeTextarea()
     },
     onMouseEnter(i) {
       this.hoveredSocial = i;

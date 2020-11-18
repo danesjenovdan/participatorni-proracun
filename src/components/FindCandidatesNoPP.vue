@@ -39,8 +39,31 @@
             </div>
           </div>
           <div class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
+            <span v-if="query && inputValue && query.toUpperCase() === inputValue.toUpperCase()">
+              <div class="row pb-xl-3 pt-xl-0 py-3" v-if="selectedObcina">
+              <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center">
+                <span class="py-auto">Kopiraj sporočilo in ga pošlji na: </span>
+              </div>
+              <div class="col p-2 text-center-xs">
+                <input  readonly
+                        :value="selectedObcina['MAIL']"
+                        class="form-control"
+                        spellcheck="false"
+                        @focus="$event.target.select()"
+                        style="font-size: 1rem; padding: inherit"
+                >
+              </div>
+            </div>
+            </span>
+            <span v-else>
+              <div class="row">
+                <div class="col my-4 mt-xl-0 text-center" style="font-size: 1.2rem">
+                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
+                </div>
+              </div>
+            </span>
             <div class="row">
-              <div class="col mt-4 mt-xl-0" >
+              <div class="col" >
                 <textarea readonly
                           id="textareaNoPP"
                           class="form-control text-left"
@@ -49,20 +72,6 @@
               </div>
             </div>
             <span v-if="query && inputValue && query.toUpperCase() === inputValue.toUpperCase()">
-              <div class="row pt-3" >
-                <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center">
-                  <span class="py-auto">Kopiraj sporočilo in ga pošlji na: </span>
-                </div>
-                <div class="col p-2 text-center-xs">
-                  <input  readonly
-                          value="bosko.srot@celje.si"
-                          class="form-control"
-                          spellcheck="false"
-                          @focus="$event.target.select()"
-                          style="font-size: 1rem; padding: inherit"
-                  >
-                </div>
-              </div>
               <hr class="separator">
               <div class="row">
                 <div class="col-sm-6 col-12 pr-sm-0 mb-sm-0 mb-3 text-center-xs">
@@ -82,13 +91,6 @@
                   >
                     <span>DELI!</span>
                   </button>
-                </div>
-              </div>
-            </span>
-            <span v-else>
-              <div class="row">
-                <div class="col my-4 mb-sm-0 text-center" style="font-size: 1.2rem">
-                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
                 </div>
               </div>
             </span>
@@ -222,6 +224,8 @@
         hoveredSocialMunicipality: false,
         notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
         showModal: false,
+        selectedObcina: query && allData.filter(x => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase()).length ?
+            allData.filter(x => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase())[0] : null,
       };
     },
     computed: {
@@ -281,6 +285,7 @@
           this.$router.push(`/${this.query}`);
           this.hoveredSocial = null;
           this.loading = false;
+          this.selectedObcina = this.data.filter(x => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase())[0];
           this.$emit('new-input')
           this.resizeTextarea()
         }
@@ -288,6 +293,8 @@
       clearInput(){
         this.inputValue = '';
         this.query = '';
+        this.selectedObcina = null;
+        this.resizeTextarea()
       },
       onMouseEnter(i) {
         this.hoveredSocial = i;

@@ -163,7 +163,7 @@
                       margin_top: i === 0,
                }"
           >
-            <span class="obcina">{{ c.SIMPLE_OBCINA }}</span>
+            <span class="obcina" @click="$emit('obcina-clicked', c)">{{ c.SIMPLE_OBCINA }}</span>
             <span v-if="c['IZVAJA PP'] === '1'"
                   class="happy_face_text">
               <img class="icon"
@@ -308,6 +308,11 @@
     .obcina {
       font-size: 2rem;
       font-style: italic;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
 
       @media (max-width: 575.98px) {
         font-size: 1.5rem;
