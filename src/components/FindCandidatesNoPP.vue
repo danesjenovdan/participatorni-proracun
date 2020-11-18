@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row p-sm-5 px-0 pt-0">
         <div class="row find-candidates-row mx-0">
-          <div class="col-xl-5 col-lg-12 col--search px-0">
-            <div class="col__content">
+          <div class="col-xl-5 col-lg-12 col--search px-0 align-self-center">
+            <div id="second_box" class="col__content">
               <h2>
                 <strong>RAZŠIRIMO</strong>
                 <nobr> PARTICIPATIVNI </nobr><wbr>
@@ -57,8 +57,8 @@
             </span>
             <span v-else>
               <div class="row">
-                <div class="col my-4 mt-xl-0 text-center" style="font-size: 1.2rem">
-                  <b>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji zgornje sporočilo.</b>
+                <div class="col my-4 mt-xl-0" style="font-size: 25px; font-weight: 500">
+                  <span>Izberi občino, da ti prikažemo županov/-jin e-naslov, nato pa mu/ji pošlji spodnje sporočilo.</span>
                 </div>
               </div>
             </span>

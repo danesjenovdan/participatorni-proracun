@@ -1,6 +1,6 @@
 <template>
   <div class="title_section_wrapper">
-    <div class="container">
+<!--    <div class="container">-->
       <div class="row title_section">
         <div class="col">
           <div class="row">
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-    </div>
+<!--    </div>-->
   </div>
 </template>
 
@@ -85,24 +85,31 @@
     }
 
     #ilustracija {
-      margin-top: -7rem;
+      margin-top: -13rem;
       margin-right: -4rem;
       /*margin-bottom: 3rem;*/
       transform: rotate(-15deg);
 
+      @media (max-width: 1400px) {
+        margin-top: -10rem;
+        margin-right: -5rem;
+        transform: rotate(-15deg);
+      }
       @media (max-width: 1199.98px) {
         margin-bottom: 0;
-        transform: rotate(-15deg) translateY(5rem);
+        margin-top: -7rem;
+        transform: rotate(-15deg) translateX(3rem);
       }
-
       @media (max-width: 992px) {
         height: auto;
         width: 656px;
+        transform: rotate(-15deg) translateY(6rem);
       }
 
       @media (max-width: 575.98px) {
         height: auto;
         width: 575px;
+        transform: rotate(-15deg) translateY(6rem) translateX(-2rem);
       }
     }
   }

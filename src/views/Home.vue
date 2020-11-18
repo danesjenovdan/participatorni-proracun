@@ -117,7 +117,12 @@ export default {
       let elem = document.getElementById(id);
 
       reference.onSubmitLocation(obcina.SIMPLE_OBCINA);
-      elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+      setTimeout(
+          () => {
+            elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+          },
+          100
+      )
 
     }
   }
