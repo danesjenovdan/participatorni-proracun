@@ -136,8 +136,8 @@
   const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
 
   const shareTitle = 'Kje je participativni proračun?';
-  const shareContent =
-    'Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini {query}.';
+  const shareContent = 'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še ' +
+                       'niso izpolnili svoje obljube.';
 
   const sharePersonM = '{name} obljublja participativni proračun';
   const sharePersonF = '{name} obljublja participativni proračun';
@@ -331,10 +331,11 @@
           return;
         }
 
-        const shareText = shareContent.replace('{query}', this.query.toUpperCase());
-        const shareHashtag = '#TvojaStvar';
+        const shareHashtag = '';
 
-        openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
+        const link = 'https://danesjenovdan.si/participativni-proracun/'
+
+        openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
       },
       resizeTextarea() {
           let dom = document.getElementById('textareaNoPP');

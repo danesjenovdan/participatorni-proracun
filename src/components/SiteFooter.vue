@@ -50,32 +50,15 @@
         </button>
       </div>
     </div>
-    <div class="col-md-12">
-      <div class="credits">
-        <div class="credit">
-          <a
-            href="https://danesjenovdan.si/"
-            target="_blank"
-          >
-            DANES JE NOV DAN
-          </a>
-        </div>
-        <p class="disclaimer small">
-          Opravičujemo se za morebitne napake. Za popravke,
-          dodatne informacije in medijska vprašanja smo dosegljivi na
-          <a
-            href="mailto:tadej@djnd.si"
-            target="_blank"
-          >tadej@djnd.si</a>.
-        </p>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 import { openSocialShareLink } from '../helpers/social';
+
+const domain = 'https://danesjenovdan.si';
+const baseUrl = process.env.BASE_URL;
 
 export default {
   name: 'SiteFooter',
@@ -94,10 +77,10 @@ export default {
   },
   methods: {
     onShareClick(event, type) {
-      const shareLink = '';
+      const shareLink = 'https://danesjenovdan.si/participativni-proracun/';
       const shareTitle = 'Kje je participativni proračun?';
       const shareText = 'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani ' +
-                        'še niso izpolnili svoje obljube. https://danesjenovdan.si/participativni-proracun/';
+                        'še niso izpolnili svoje obljube.';
       const shareHashtag = '';
 
       openSocialShareLink(type, shareTitle, shareText, shareLink, shareHashtag);

@@ -16,10 +16,14 @@
       </div>
       <questions class="py-5" />
     </div>
-    <div class="footer-container">
-      <div class="container">
-        <site-footer />
-      </div>
+    <div class="container" style="background-color: #27223a; margin-top: 3rem;">
+      <site-footer />
+    </div>
+    <div class="container" style="background-color: #e26e53; margin-top: 2rem">
+      <donate></donate>
+    </div>
+    <div class="container">
+      <bottom-section></bottom-section>
     </div>
   </div>
 </template>
@@ -34,6 +38,8 @@ import SubscribeForUpdates from '@/components/SubscribeForUpdates.vue';
 import Questions from '@/components/Questions.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
 import TopTitleSection from '@/components/TopTitleSection.vue';
+import Donate from '@/components/Donate';
+import BottomSection from '@/components/BottomSection';
 
 const domain = 'https://danesjenovdan.si';
 const baseUrl = process.env.BASE_URL;
@@ -50,6 +56,8 @@ export default {
     Questions,
     SiteFooter,
     TopTitleSection,
+    Donate,
+    BottomSection,
   },
   metaInfo: {
     title: 'Participativni proračun',

@@ -87,7 +87,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>20</strong></nobr>
+            <nobr><strong>24</strong></nobr>
           </p>
           <background-square class="bg-square-lg"
                              color="#e5816a"
@@ -140,7 +140,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>20</strong></nobr>
+            <nobr><strong>24</strong></nobr>
           </p>
           <background-square color="#e5816a"
                              :opacity="0.2"
@@ -209,7 +209,9 @@
           ...row,
           SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
         }))
-        .filter(row => row.ZMAGA !== '').sort((a, b) => {
+        .filter(row => row.ZMAGA !== '')
+        .filter(row => row['PRVI DROPDOWN'] === '1')
+        .sort((a, b) => {
           if(a.SIMPLE_OBCINA < b.SIMPLE_OBCINA){
             return -1;
           }

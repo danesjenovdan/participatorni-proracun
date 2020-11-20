@@ -32,9 +32,6 @@
         required: true,
       }
     },
-    mounted() {
-      console.log(this.info)
-    }
   };
 </script>
 

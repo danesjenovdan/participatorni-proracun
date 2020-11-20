@@ -175,23 +175,24 @@ export default {
       let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
 
       // url
-      overrideTags.meta.push({
-        vmid: 'og:url',
-        property: 'og:url',
-        content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
-      });
+      // overrideTags.meta.push({
+      //   vmid: 'og:url',
+      //   property: 'og:url',
+      //   content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
+      // });
+      //
+      // // description
+      // overrideTags.meta.push({
+      //   vmid: 'og:description',
+      //   property: 'og:description',
+      //   content,
+      // });
+      // overrideTags.meta.push({
+      //   vmid: 'twitter:description',
+      //   name: 'twitter:description',
+      //   content,
+      // });
 
-      // description
-      overrideTags.meta.push({
-        vmid: 'og:description',
-        property: 'og:description',
-        content,
-      });
-      overrideTags.meta.push({
-        vmid: 'twitter:description',
-        name: 'twitter:description',
-        content,
-      });
       // image
       overrideTags.meta.push({
         vmid: 'og:image',
@@ -327,8 +328,9 @@ export default {
       }
 
       const shareHashtag = '';
+      const link = 'https://danesjenovdan.si/participativni-proracun/'
 
-      openSocialShareLink(type, shareTitle, shareContent, this.shareLink, shareHashtag);
+      openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
     },
     resizeTextarea(){
       let timer = setInterval(() => {
