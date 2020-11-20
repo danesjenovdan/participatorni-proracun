@@ -23,7 +23,7 @@
             <span v-else>Županja</span><br>
             <span>{{ info.KANDIDAT }},</span><br>
             <b>ali nas slišiš?</b>
-          </span>i
+          </span>
         </div>
       </div>
     </div>
