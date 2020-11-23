@@ -141,7 +141,7 @@
   }, {});
 }
 
-const domain = 'https://danesjenovdan.si';
+const domain = process.env.NODE_ENV === 'production' ? 'https://danesjenovdan.si' : 'http://localhost:8801';
 const baseUrl = process.env.BASE_URL;
 
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';

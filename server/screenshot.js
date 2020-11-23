@@ -3,16 +3,10 @@ const puppeteer = require('puppeteer');
 async function takeScreenshot(imagePath, { selector = 'body', url = 'about:blank' } = {}) {
   let browser = null;
   try {
-    browser = await puppeteer.launch({
-      headless: true,
-      ignoreHTTPSErrors: true,
-      timeout: 2000,
-    });
+    browser = await puppeteer.launch();
 
     const page = await browser.newPage();
-    await page.goto(url, {
-      waitUntil: 'networkidle0',
-    });
+    await page.goto(url);
 
     const elem = await page.$(selector);
     await elem.screenshot({
