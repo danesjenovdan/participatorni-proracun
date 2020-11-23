@@ -6,9 +6,8 @@ module.exports = {
   extends: ['plugin:vue/recommended', '@vue/airbnb'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    // windows linebreaks when not in production environment
-    "linebreak-style": ["error", process.env.NODE_ENV === 'production' ? "unix" : "windows"],
-    "indent": "off",
+    'linebreak-style': ['error', 'unix'],
+    indent: 'off',
     'import/prefer-default-export': 'off',
     'comma-dangle': [
       'error',

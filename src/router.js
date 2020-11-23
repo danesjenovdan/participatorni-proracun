@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Meta from 'vue-meta';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import OgImage from './views/OgImage.vue';
 
 Vue.use(Router);
 Vue.use(Meta);
@@ -20,6 +21,11 @@ export function createRouter() {
         path: '/:query',
         name: 'query',
         component: Home,
+      },
+      {
+        path: '/og-image/:query',
+        name: 'og-image-query',
+        component: OgImage,
       },
     ],
   });
