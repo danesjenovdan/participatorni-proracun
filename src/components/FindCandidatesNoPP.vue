@@ -160,7 +160,7 @@
       if (this.person || this.query) {
         // let title = shareContent;
         let content = shareContent;
-        let image = `og-image-new.png/gen?t=${encodeURIComponent(tr(this.query))}`;
+        let image = `og-image-new2.png/gen?t=${encodeURIComponent(tr(this.query))}`;
 
         // url
         overrideTags.meta.push({
@@ -180,6 +180,7 @@
           name: 'twitter:description',
           content,
         });
+
         // image
         overrideTags.meta.push({
           vmid: 'og:image',
@@ -335,7 +336,7 @@
 
         const shareHashtag = '';
 
-        const link = document.location.href;
+        const link = tr(document.location.href);
 
         openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
       },

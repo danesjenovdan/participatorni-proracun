@@ -172,26 +172,26 @@ export default {
     if (this.person || this.query) {
       // let title = shareTitle;
       let content = shareContent;
-      let image = `og-image-new.png/gen?t=${encodeURIComponent(tr(this.query))}`;
+      let image = `og-image-new2.png/gen?t=${encodeURIComponent(tr(this.query))}`;
 
       // url
-      // overrideTags.meta.push({
-      //   vmid: 'og:url',
-      //   property: 'og:url',
-      //   content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
-      // });
-      //
-      // // description
-      // overrideTags.meta.push({
-      //   vmid: 'og:description',
-      //   property: 'og:description',
-      //   content,
-      // });
-      // overrideTags.meta.push({
-      //   vmid: 'twitter:description',
-      //   name: 'twitter:description',
-      //   content,
-      // });
+      overrideTags.meta.push({
+        vmid: 'og:url',
+        property: 'og:url',
+        content: `${domain}${baseUrl}${encodeURIComponent(tr(this.query))}`,
+      });
+
+      // description
+      overrideTags.meta.push({
+        vmid: 'og:description',
+        property: 'og:description',
+        content,
+      });
+      overrideTags.meta.push({
+        vmid: 'twitter:description',
+        name: 'twitter:description',
+        content,
+      });
 
       // image
       overrideTags.meta.push({
@@ -330,7 +330,7 @@ export default {
       }
 
       const shareHashtag = '';
-      const link = document.location.href;
+      const link = tr(document.location.href);
 
       openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
     },
