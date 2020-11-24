@@ -160,13 +160,13 @@
       if (this.person || this.query) {
         // let title = shareContent;
         let content = shareContent;
-        let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
+        let image = `og-image-new.png/gen?t=${encodeURIComponent(tr(this.query))}`;
 
         // url
         overrideTags.meta.push({
           vmid: 'og:url',
           property: 'og:url',
-          content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
+          content: `${domain}${baseUrl}${encodeURIComponent(tr(this.query))}`,
         });
 
         // description
@@ -196,7 +196,7 @@
       return overrideTags;
     },
     data() {
-      const { query } = this.$route.params;
+      const { query: tmpQuery } = this.$route.params;
       const { p } = this.$route.query;
 
       const data = Papa.parse(csvData, { header: true });
@@ -212,6 +212,8 @@
         .filter(row => row.ZMAGA !== '')
         .filter(row => row['DRUGI DROPDOWN'] === '1');
       const allMunicipalities = Object.keys(groupBy(allData, 'SIMPLE_OBCINA'));
+
+      const query = allMunicipalities.filter(m => tr(m).toUpperCase() === tr(tmpQuery).toUpperCase())[0];
 
       return {
         inputValue: query && allData.map(row => row.SIMPLE_OBCINA).includes(query.toUpperCase()) ? query.toUpperCase() : '',

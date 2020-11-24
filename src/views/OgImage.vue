@@ -13,6 +13,7 @@
 
 <script>
 import Papa from 'papaparse';
+import { transliterate as tr } from 'transliteration';
 import CardPP from '@/components/CardPP.vue';
 import CardNoPP from '@/components/CardNoPP.vue';
 // eslint-disable-next-line
@@ -24,7 +25,7 @@ export default {
     CardNoPP,
   },
   data() {
-    const query = this.$route.params.query.toLowerCase();
+    const query = tr(this.$route.params.query.toLowerCase());
 
     const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
     if (data.errors.length) {
@@ -36,7 +37,7 @@ export default {
       SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
     }));
 
-    const obcinaInfo = allData.filter(x => x.SIMPLE_OBCINA.toLowerCase() === query)[0];
+    const obcinaInfo = allData.filter(x => tr(x.SIMPLE_OBCINA.toLowerCase()) === query)[0];
 
     return {
       obcinaInfo,

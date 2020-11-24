@@ -22,14 +22,14 @@ async function screenshot(url, key) {
 }
 
 module.exports = (app) => {
-  app.use('/og-image-obcina.png/gen', async (req, res, next) => {
+  app.use('/og-image-new.png/gen', async (req, res, next) => {
     try {
       const text = String((req.query && req.query.t) || '');
       const url =
         process.env.NODE_ENV === 'production'
           ? `https://danesjenovdan.si/participativni-proracun/og-image/${text}`
           : `http://localhost:8801/og-image/${text}`;
-      const imagePath = await screenshot(url, `og-image-obcina-${text}`);
+      const imagePath = await screenshot(url, `og-image-new-${text}`);
       res.sendFile(imagePath);
     } catch (e) {
       // eslint-disable-next-line no-console
