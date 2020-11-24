@@ -6,7 +6,7 @@
           <div class="col-xl-5 col-lg-12 col--search px-0 align-self-center">
             <div id="second_box" class="col__content">
               <h2>
-                <strong>RAZŠIRIMO</strong>
+                <strong>RAZŠIRIMO</strong><wbr>
                 <nobr> PARTICIPATIVNI </nobr><wbr>
                 <nobr> PRORAČUN TUDI V </nobr><wbr>
                 <nobr> DRUGE OBČINE! </nobr><wbr>
