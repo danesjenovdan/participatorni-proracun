@@ -333,7 +333,7 @@
 
         const shareHashtag = '';
 
-        const link = 'https://danesjenovdan.si/participativni-proracun/'
+        const link = document.location.href;
 
         openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
       },

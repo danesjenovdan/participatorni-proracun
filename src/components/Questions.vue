@@ -55,7 +55,7 @@ const stuff = [
   {
     q: 'Zakaj je dober za občane in občanke?',
     a: `
-      <p>V skoraj 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša:</p>
+      <p>V 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša:</p>
       <ul>
         <li>povečanje učinkovitosti porabe sredstev;</li>
         <li>hitrejšo gospodarsko rast;</li>
@@ -80,18 +80,15 @@ const stuff = [
       <p>Leta 1989 so participativni proračun kot prvi uvedli v brazilskem mestu Porto Alegre, z njegovo implementacijo pa se je predvsem izboljšala javna infrastruktura in njena dostopnost. Mehanizem se je skokovito razširil v druge države po letu 2001, ko je Porto Alegre gostil Svetovni socialni forum.</p>
       <p>Danes participativni proračun uporabljajo tako majhna kot večmilijonska mesta, med njimi Buenos Aires, La Paz, Montevideo, Boston, v Evropi pa ga je vsaj enkratno uvedlo že več kot <a href="https://ec.europa.eu/futurium/en/egovernment4eu/initiative-promote-participatory-budgeting-methods-and-tools" target="_blank">3000 mest</a>, celo velemesta, kot so Pariz, Milano, Madrid ali Lizbona.</p>
       <p>Model participativnega proračuna, ki izhaja iz Porto Alegra, v kar največji meri predaja odločanje o delu proračuna občankam in občanom. Proces se izvaja vsakoletno, ljudje sami predlagajo projekte in jih tudi izberejo, občine pa so zavezane k njihovi izvedbi.</p>
-      <p>V Sloveniji najdemo najboljše primere implementacije participativnega proračuna v Ajdovščini, Komnu in Novi Gorici, v manjši obliki pa tudi v Kranjski Gori.</p>
-      <p>Ajdovščina je participativni proračun uvedla v sklopu projekta Moja pobuda, v okviru katerega od maja 2016 poteka izbor projektov za dvoletne proračune.</p>
-      <p>V občini Komen so v okviru projekta Jaz predlagam septembra 2016 prav tako uvedli predlaganje in izbor projektov za dveleten proračun, obe občini pa trenutno zaključujeta z izvedbenim delom proračuna iz leta 2016. V občini Ajdovščina je bilo tako izvedenih 31 projektov v skupnem znesku 360000 &euro;, v občini Komen pa 22 projektov v vrednosti 120000 &euro;. Obenem je letos Ajdovščina že izvedla tudi nov krog participativnega proračuna za leti 2019 in 2020, v okviru katerega je bil uveden celo poseben mladinski del. Občina Nova Gorica je participativni proračun uvedla maja 2017, v lanskem letu pa so lahko sodelujoči predlagali in izbirali projekte za leto 2018. Izbranih je bilo 19 predlogov, ki so trenutno v fazi izvajanja.</p>
-      <p>Vse tri zgoraj omenjene občine so participativni proračun odprle tudi mladostnikom, saj je minimalna starost za sodelovanje 15 let, medtem ko so se v Kranjski Gori letošnje leto odločili za pilotno izvedbo mladinskega participativnega proračuna.</p>
+      <p>Od pričetka trenutnega mandata leta jeseni 2018 se je za izvedbo participativnega proračuna odločilo 24 slovenskih občin: Ajdovščina, Bohinj, Brežice, Dol Pri Ljubljani, Domžale, Dravograd, Hrastnik, Hrpelje-Kozina, Izola, Jesenice, Komen, Krško, Mestna občina Koper, Mestna občina Maribor, Mestna občina Nova Gorica, Postojna, Radovljica, Šentilj, Sevnica, Škofja Loka, Slovenske Konjice, Renče-Vogrsko, Semič, Sveta Trojica v Slovenskih goricah.</p>
     `,
   },
   {
     q: 'Kako smo zbirali odgovore kandidatk in kandidatov?',
     a: `
-      <p>Kontaktirali smo vseh 688 kandidatk in kandidatov na letošnjih lokalnih volitvah in jih prosili za odgovor na vprašanje: &ldquo;Ali boste v primeru, da boste izvoljeni, v svoji občini izvajali participativni proračun?&rdquo; Kandidatke in kandidati, ki nam niso odgovorili, so navedeni kot &ldquo;se ni zaobljubila&rdquo; oziroma &ldquo;se ni zaobljubil&rdquo;.</p>
-      <p>Vse kandidatke in kandidate večjih političnih strank (DD, DeSUS, Levica, LMŠ, NSi, Oljka, SAB, SD, SDS, SLS, SMC, SNS, SSN idr.) smo kontaktirali preko njihovih strank. Nekatere kandidatke in kandidate smo kontaktirali preko zasebnih sporočil na njihovih družbenih omrežjih. Vsem ostalim smo poslali pošto na njihov domač naslov, naveden na spletni strani volitve.gov.si.</p>
-      <p>Za kakršne koli napake se kandidatkam in kandidatom opravičujemo, spremembe odgovorov pa nam lahko sporočite na <a href="mailto:tadej@djnd.si" target="_blank">tadej@djnd.si</a>.</p>
+      <p>V prvi kampanji smo kontaktirali smo vseh 688 kandidatk in kandidatov na lokalnih volitvah in jih prosili za odgovor na vprašanje: “Ali boste v primeru, da boste izvoljeni, v svoji občini izvajali participativni proračun?” Kandidatke in kandidati, ki nam niso odgovorili, so bili navedeni kot “se ni zaobljubila” oziroma “se ni zaobljubil”.</p>
+      <p>Vse kandidatke in kandidate večjih političnih strank (DD, DeSUS, Levica, LMŠ, NSi, Oljka, SD, SDS, SLS, SMC, SNS, SSN idr.) smo kontaktirali preko njihovih strank. Nekatere kandidatke in kandidate smo kontaktirali preko zasebnih sporočil na njihovih družbenih omrežjih. Vsem ostalim smo poslali pošto na njihov domač naslov, naveden na spletni strani volitve.gov.si.</p>
+      <p>Za letošnjo kampanjo smo podatke zbrali tako, da smo vsem zaobljubljenim županom poslali poizvedbo o statusu izvajanja participativnega proračuna v njihovi občini. Prejete odgovore smo dodatno preverili s pregledom javno dostopnih informacij na spletnih mestih občin. Odločitev o stanju smo sprejeli glede na zgoraj omenjene strokovne kriterije definicije participativnega proračuna.</p>
     `,
   },
 ];

@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col align-self-center p-5 pt-0 second_column text-center-xs">
       <p>
-        <strong>155</strong><br>
+        <strong>150</strong><br>
         <nobr> ŽUPANOV </nobr><br>
         <nobr> PARTICIPATIVNI </nobr><br>
         <nobr> PRORAČUN SPLOH </nobr><br>
