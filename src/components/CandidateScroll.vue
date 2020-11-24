@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col align-self-center pretext-xl">
           <p>
-            <strong>57
+            <strong>56
               <img
                     class="icon"
                     src="../assets/handshake.svg" alt="handshake">
@@ -27,7 +27,7 @@
         </div>
         <div class="col align-self-center text-center pretext-xs">
           <p>
-            <strong>57
+            <strong>56
               <img
                       class="icon"
                       src="../assets/handshake.svg" alt="handshake">
