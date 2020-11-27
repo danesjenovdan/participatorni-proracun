@@ -87,7 +87,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>24</strong></nobr>
+            <nobr><strong>23</strong></nobr>
           </p>
           <background-square class="bg-square-lg"
                              color="#e5816a"
@@ -140,7 +140,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>24</strong></nobr>
+            <nobr><strong>23</strong></nobr>
           </p>
           <background-square color="#e5816a"
                              :opacity="0.2"
