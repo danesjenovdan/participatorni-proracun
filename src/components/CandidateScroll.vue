@@ -199,7 +199,7 @@
     },
 
     data() {
-      const data = Papa.parse(csvData, { header: true });
+      const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
       if (data.errors.length) {
         // eslint-disable-next-line no-console
         console.error('CSV Parse Errors:', data.errors);
