@@ -87,7 +87,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>23</strong></nobr>
+            <nobr><strong>{{ implemetedCount }}</strong></nobr>
           </p>
           <background-square class="bg-square-lg"
                              color="#e5816a"
@@ -140,7 +140,7 @@
             <nobr> PARTICIPATIVNI </nobr><br>
             <nobr> PRORAČUN </nobr><br>
             <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>23</strong></nobr>
+            <nobr><strong>{{ implemetedCount }}</strong></nobr>
           </p>
           <background-square color="#e5816a"
                              :opacity="0.2"
@@ -221,8 +221,11 @@
           return 0;
         });
 
+      const implemetedCount = allData.map(o => o['IZVAJA PP']).filter(o => o === '1').length;
+
       return {
         candidates: allData,
+        implemetedCount,
         ops: {
           vuescroll: {
             mode: 'native'
