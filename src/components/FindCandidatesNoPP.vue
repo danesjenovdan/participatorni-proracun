@@ -265,7 +265,7 @@
         return 'Spoštovani,\n' + '\n' +
           'pišem vam z namenom, da vas spomnim na participativni proračun.\n' + '\n' +
           'Participativni proračun je proces demokratičnega soodločanja, pri katerem o porabi dela proračunskih sredstev neposredno odločajo prebivalke in prebivalci. V skoraj 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša povečanje učinkovitosti porabe sredstev, hitrejšo gospodarsko rast, bolj enakomeren razvoj občin, zmanjšanje socialnih razlik, boljše ravnanje z infrastrukturo in večjo identifikacijo z njo, povečanje zaupanja v demokratične postopke in povečanje aktivacije prebivalcev in prebivalk.\n' + '\n' +
-          'Participativni proračun izvaja že 24 slovenskih občin in želim si, da se jim pridruži tudi ' + obcina + '. \n' + '\n' +
+          'Participativni proračun izvaja že 38 slovenskih občin in želim si, da se jim pridruži tudi ' + obcina + '. \n' + '\n' +
           'Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n' + '\n' +
           'V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas lepo pozdravljam.\n';
       }
