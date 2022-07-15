@@ -276,7 +276,7 @@ export default {
       }
       return 'Spoštovani,\n' + '\n' +
         'želim vas spomniti na vašo obljubo pred lokalnimi volitvami 2018, s katero ste se javno zavezali, da boste v primeru izvolitve tekom vašega mandata pričeli z izvajanjem participativnega proračuna.\n' + '\n' +
-        'Participativni proračun izvaja že 38 slovenskih občin in želim si, da se jim pridruži tudi ' + obcina + '.\n' + '\n' +
+        'Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim pridruži tudi ' + obcina + '.\n' + '\n' +
         'Ustrezna izvedba participativnega proračuna občankam in občanom omogoča, da neposredno odločajo o porabi deleža občinskih sredstev. Uvedba participativnih mehanizmov prinaša pozitivne učinke za prebivalce, ki se počutijo opolnomočeni in bolj povezani s svojo lokalno skupnostjo. Hkrati pa si tudi vi okrepite zaupanje in legitimnost med občankami in občani, v širši skupnosti pa ste prepoznani kot vključujoči predstavniki ljudstva.\n' + '\n' +
         'Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n' + '\n' +
         'V upanju, da boste držali svojo zavezo vašim volivkam in volivcem, vas lepo pozdravljam.';

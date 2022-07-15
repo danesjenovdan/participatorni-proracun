@@ -80,14 +80,14 @@
             <strong>
               <img
                     class="icon"
-                    src="../assets/suggest.svg" alt="suggest">
+                    src="../assets/slabo.svg" alt="suggest">
             </strong><br>
-            2 leti po danih<br>
-            <nobr> zavezah JIH </nobr><br>
-            <nobr> PARTICIPATIVNI </nobr><br>
-            <nobr> PRORAČUN </nobr><br>
-            <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>{{ implemetedCount }}</strong></nobr>
+            4 leta po danih<br>
+            <nobr> zavezah jih </nobr><br>
+            <nobr> PARTICIPATIVNEGA </nobr><br>
+            <nobr> PRORAČUNA </nobr><br>
+            <nobr> NE IZVAJA </nobr><br>
+            <nobr><strong>{{ unimplemetedCount }}</strong></nobr>
           </p>
           <background-square class="bg-square-lg"
                              color="#e5816a"
@@ -133,14 +133,14 @@
             <strong>
               <img
                       class="icon suggest_icon"
-                      src="../assets/suggest.svg" alt="suggest">
+                      src="../assets/slabo.svg" alt="suggest">
             </strong><br>
-            2 leti po danih<br>
-            <nobr> zavezah JIH </nobr><br>
-            <nobr> PARTICIPATIVNI </nobr><br>
-            <nobr> PRORAČUN </nobr><br>
-            <nobr> IZVAJA SAMO </nobr><br>
-            <nobr><strong>{{ implemetedCount }}</strong></nobr>
+            4 leta po danih<br>
+            <nobr> zavezah jih </nobr><br>
+            <nobr> PARTICIPATIVNEGA </nobr><br>
+            <nobr> PRORAČUNA </nobr><br>
+            <nobr> NE IZVAJA </nobr><br>
+            <nobr><strong>{{ unimplemetedCount }}</strong></nobr>
           </p>
           <background-square color="#e5816a"
                              :opacity="0.2"
@@ -222,10 +222,12 @@
         });
 
       const implemetedCount = allData.map(o => o['IZVAJA PP']).filter(o => o === '1').length;
+      const unimplemetedCount = allData.filter(o => o['IZVAJA PP'] === '0' && o['OBLJUBA'] === '1').length;
 
       return {
         candidates: allData,
         implemetedCount,
+        unimplemetedCount,
         ops: {
           vuescroll: {
             mode: 'native'

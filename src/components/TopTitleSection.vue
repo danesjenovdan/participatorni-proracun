@@ -23,6 +23,9 @@
                 ><b>javno pozvali</b></a>
                 k zavezi, da bodo v svoji občini vzpostavili participativni proračun.
               </p>
+              <p>
+                Štiri leta po volitvah participativni proračun izvaja <b>39</b> občin.
+              </p>
             </div>
             <div class="col-lg-6 col-md-12">
               <img id="ilustracija" src="../assets/pp-ilustracija.svg" alt="illustration"/>
@@ -79,7 +82,7 @@
       font-size: 1.6rem;
       line-height: 1.5;
 
-      b {
+      a {
         text-decoration: underline;
       }
     }
