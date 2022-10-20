@@ -1,12 +1,6 @@
 import fs from "fs";
 import path from "path";
-import _ from "lodash-es";
-
-function slugify(value) {
-  return _.kebabCase(
-    _.deburr(value.toLowerCase()).replace("mestna ", "").replace("obcina ", "")
-  );
-}
+import { slugify } from "./slugify.js";
 
 const IMAGE_DIRS = [
   "src/assets/img-obcine/grbi",

@@ -18,6 +18,8 @@ module.exports = {
     "import/prefer-default-export": ["off"],
     // allow mutating param object props
     "no-param-reassign": ["error", { props: false }],
+    // always require import file extensions
+    "import/extensions": ["error", "ignorePackages"],
 
     // TODO: remove
     "vue/multi-word-component-names": ["off"],
