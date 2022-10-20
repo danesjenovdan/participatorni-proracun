@@ -1,30 +1,13 @@
-import Vue from 'vue';
-import { createRouter } from './router';
-import App from './App.vue';
+import { createApp } from "vue";
+import { createRouter, createWebHistory } from "vue-router";
+import { routes } from "./routes";
+import App from "./App.vue";
 
-Vue.config.productionTip = false;
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
 
-export async function createApp({
-  beforeApp = () => {},
-  afterApp = () => {},
-} = {}) {
-  const router = createRouter();
-
-  await beforeApp({
-    router,
-  });
-
-  const app = new Vue({
-    router,
-    render: h => h(App),
-  });
-
-  const result = {
-    app,
-    router,
-  };
-
-  await afterApp(result);
-
-  return result;
-}
+const app = createApp(App);
+app.use(router);
+app.mount("#app");
