@@ -3,17 +3,19 @@
     <div class="container">
       <div class="row p-sm-5 px-0 pt-0">
         <div class="row find-candidates-row mx-0">
-          <div class="col-xl-5 col-lg-12 col--search px-0 align-self-center">
-            <div id="second_box" class="col__content">
-              <h2>
-                <strong>RAZŠIRIMO</strong><wbr /> <nobr> PARTICIPATIVNI </nobr
-                ><wbr /> <nobr> PRORAČUN TUDI V </nobr><wbr />
-                <nobr> DRUGE OBČINE! </nobr><wbr />
-              </h2>
-              <p>Izberi svojo občino:</p>
+          <div
+            class="col-xl-5 col-lg-12 col--search px-0 mb-3 align-self-center"
+          >
+            <div id="first_box" class="col__content mb-3">
+              <h2>DRŽIMO ŽUPANE <wbr />ZA <strong>BESEDO!</strong></h2>
+              <p>
+                Pomagaj jih spomniti, da so se zaobljubili k izvajaju
+                participativnega proračuna. Pošlji jim sporočilo!
+              </p>
               <form action="javascript:" @submit="onSubmitLocation">
-                <suggestions
-                  v-model="inputValue"
+                <div
+                  class="TODO-v-suggestions"
+                  TODO-v-model="inputValue"
                   :options="{
                     placeholder: 'vpiši občino',
                     inputClass: 'form-control',
@@ -26,23 +28,44 @@
                   viewBox="0 0 512 512"
                   @click="onSubmitLocation"
                 >
-                  <!-- eslint-disable-next-line max-len -->
                   <path
                     d="M511.987 454.086L375.65 317.748c21.452-32.404 33.936-71.186 33.936-112.934C409.586 91.693 317.903.009 204.8.009 91.695.009.013 91.693.013 204.814c0 113.09 91.683 204.805 204.787 204.805 41.731 0 80.559-12.529 112.932-33.967L454.068 511.99l57.919-57.904zM58.042 204.845c0-81.06 65.715-146.745 146.758-146.745 81.059 0 146.773 65.685 146.773 146.745 0 81.061-65.715 146.776-146.773 146.776-81.043 0-146.758-65.715-146.758-146.776z"
                   />
                 </svg>
               </form>
             </div>
+            <div class="text-center">
+              <span>
+                <img
+                  class="icon"
+                  src="../../assets/point_down.svg"
+                  alt="point_down"
+                  style="transform: scaleX(-1)"
+                />
+                Ne najdeš svoje občine? Premakni se nižje.
+                <img
+                  class="icon"
+                  src="../../assets/point_down.svg"
+                  alt="point_down"
+                />
+              </span>
+            </div>
           </div>
           <div class="col-xl-7 col-lg-12 col--results pr-xl-0 pl-xl-5">
+            <happy-email-section
+              v-if="selectedObcina && selectedObcina['IZVAJA PP'] === '1'"
+              :info="selectedObcina"
+            ></happy-email-section>
             <span
               v-if="
                 query &&
                 inputValue &&
-                query.toUpperCase() === inputValue.toUpperCase()
+                query.toUpperCase() === inputValue.toUpperCase() &&
+                selectedObcina &&
+                selectedObcina['IZVAJA PP'] !== '1'
               "
             >
-              <div v-if="selectedObcina" class="row pb-xl-3 pt-xl-0 py-3">
+              <div class="row pb-3">
                 <div
                   class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs align-self-center"
                 >
@@ -62,7 +85,11 @@
                 </div>
               </div>
             </span>
-            <span v-else>
+            <span
+              v-else-if="
+                !(selectedObcina && selectedObcina['IZVAJA PP'] === '1')
+              "
+            >
               <div class="row">
                 <div
                   class="col my-4 mt-xl-0"
@@ -75,14 +102,21 @@
                 </div>
               </div>
             </span>
-            <div class="row">
+            <div
+              v-show="
+                !selectedObcina ||
+                (selectedObcina && selectedObcina['IZVAJA PP'] !== '1')
+              "
+              class="row"
+            >
               <div class="col">
                 <textarea
-                  id="textareaNoPP"
+                  id="textarea"
                   v-model="textareaInput"
                   readonly
                   class="form-control text-left"
                   @focus="$event.target.select()"
+                  @change="resizeTextarea"
                 ></textarea>
               </div>
             </div>
@@ -95,10 +129,12 @@
             >
               <hr class="separator" />
               <div class="row">
-                <div
-                  class="col-sm-6 col-12 pr-sm-0 mb-sm-0 mb-3 text-center-xs"
-                >
+                <div class="col-sm-6 col-12 mb-sm-0 mb-3 text-center-xs">
                   <span
+                    v-if="selectedObcina && selectedObcina['IZVAJA PP'] === '1'"
+                    >Pohvali župana/-jo na družbenih omrežjih!</span
+                  >
+                  <span v-else
                     >Opozori župana/-jo na participativni proračun tudi na
                     družbenih omrežjih!</span
                   >
@@ -123,14 +159,14 @@
             <modal
               v-if="showModal"
               :share-link="shareLink"
-              :pp="false"
+              :pp="true"
               :obcina-info="
                 data.filter(
                   (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase()
                 )[0]
               "
               @close="showModal = false"
-              @twShare="
+              @tw-share="
                 onShareClickMunicipality(
                   $event,
                   'tw',
@@ -138,7 +174,7 @@
                   showModal[1]
                 )
               "
-              @fbShare="
+              @fb-share="
                 onShareClickMunicipality(
                   $event,
                   'fb',
@@ -146,7 +182,7 @@
                   showModal[1]
                 )
               "
-              @emailShare="
+              @email-share="
                 onShareClickMunicipality(
                   $event,
                   'mail',
@@ -165,11 +201,10 @@
 <script>
 import Papa from "papaparse";
 import { transliterate as tr } from "transliteration";
-// import Suggestions from "v-suggestions";
-// import "v-suggestions/dist/v-suggestions.css";
-import Modal from "./Modal.vue";
-import { openSocialShareLink } from "../helpers/social";
-// import csvData from "../assets/seznam_kandidatov.csv";
+import Modal from "../Modal.vue";
+import HappyEmailSection from "../HappyEmailSection.vue";
+import { openSocialShareLink } from "../../helpers/social";
+
 const csvData = "";
 
 function groupBy(arr, key) {
@@ -191,8 +226,8 @@ const shareContent =
   "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še " +
   "niso izpolnili svoje obljube.";
 
-const sharePersonM = "{name} obljublja participativni proračun";
-const sharePersonF = "{name} obljublja participativni proračun";
+// const sharePersonM = "{name} obljublja participativni proračun";
+// const sharePersonF = "{name} obljublja participativni proračun";
 
 // const shareElectedPersonM =
 //   "{name} se je zaobljubil, da bo uvedel participativni proračun.";
@@ -202,8 +237,8 @@ const sharePersonF = "{name} obljublja participativni proračun";
 export default {
   name: "FindCandidates",
   components: {
-    // Suggestions,
     Modal,
+    HappyEmailSection,
   },
   metaInfo() {
     const overrideTags = {
@@ -211,7 +246,7 @@ export default {
     };
 
     if (this.person || this.query) {
-      // let title = shareContent;
+      // let title = shareTitle;
       const content = shareContent;
       const image = `og-image-new2.png/gen?t=${encodeURIComponent(
         tr(this.query)
@@ -266,7 +301,7 @@ export default {
         SIMPLE_OBCINA: row["OBČINA"].replace(/(?:MESTNA )?OBČINA /gi, ""),
       }))
       .filter((row) => row.ZMAGA !== "")
-      .filter((row) => row["DRUGI DROPDOWN"] === "1");
+      .filter((row) => row["PRVI DROPDOWN"] === "1");
     const allMunicipalities = Object.keys(groupBy(allData, "SIMPLE_OBCINA"));
 
     const query = allMunicipalities.filter(
@@ -343,15 +378,15 @@ export default {
       return (
         `Spoštovani,\n` +
         `\n` +
-        `pišem vam z namenom, da vas spomnim na participativni proračun.\n` +
+        `želim vas spomniti na vašo obljubo pred lokalnimi volitvami 2018, s katero ste se javno zavezali, da boste v primeru izvolitve tekom vašega mandata pričeli z izvajanjem participativnega proračuna.\n` +
         `\n` +
-        `Participativni proračun je proces demokratičnega soodločanja, pri katerem o porabi dela proračunskih sredstev neposredno odločajo prebivalke in prebivalci. V skoraj 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša povečanje učinkovitosti porabe sredstev, hitrejšo gospodarsko rast, bolj enakomeren razvoj občin, zmanjšanje socialnih razlik, boljše ravnanje z infrastrukturo in večjo identifikacijo z njo, povečanje zaupanja v demokratične postopke in povečanje aktivacije prebivalcev in prebivalk.\n` +
+        `Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim pridruži tudi ${obcina}.\n` +
         `\n` +
-        `Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim pridruži tudi ${obcina}. \n` +
+        `Ustrezna izvedba participativnega proračuna občankam in občanom omogoča, da neposredno odločajo o porabi deleža občinskih sredstev. Uvedba participativnih mehanizmov prinaša pozitivne učinke za prebivalce, ki se počutijo opolnomočeni in bolj povezani s svojo lokalno skupnostjo. Hkrati pa si tudi vi okrepite zaupanje in legitimnost med občankami in občani, v širši skupnosti pa ste prepoznani kot vključujoči predstavniki ljudstva.\n` +
         `\n` +
         `Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n` +
         `\n` +
-        `V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas lepo pozdravljam.\n`
+        `V upanju, da boste držali svojo zavezo vašim volivkam in volivcem, vas lepo pozdravljam.`
       );
     },
   },
@@ -409,23 +444,6 @@ export default {
     onMouseLeaveMunicipality() {
       this.hoveredSocialMunicipality = false;
     },
-    onShareClick($event, type, municipality, i) {
-      if (!type) {
-        this.showModal = [municipality, i];
-        return;
-      }
-
-      const row = this.resultsByMunicipality[municipality][i];
-      const ime = row.KANDIDAT;
-
-      const shareText =
-        row.SPOL === "m"
-          ? sharePersonM.replace("{name}", ime)
-          : sharePersonF.replace("{name}", ime);
-      const shareHashtag = "#TvojaStvar";
-
-      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
-    },
     onShareClickMunicipality($event, type) {
       if (!type) {
         this.showModal = true;
@@ -433,15 +451,21 @@ export default {
       }
 
       const shareHashtag = "";
-
       const link = tr(document.location.href);
 
       openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
     },
     resizeTextarea() {
-      const dom = document.getElementById("textareaNoPP");
-      dom.style.height = "";
-      dom.style.height = `${dom.scrollHeight + 12}px`;
+      const timer = setInterval(() => {
+        const dom = document.getElementById("textarea");
+        if (dom) {
+          dom.style.height = "";
+          dom.style.height = `${dom.scrollHeight + 12}px`;
+          clearInterval(timer);
+        } else if (!this.inputValue) {
+          clearInterval(timer);
+        }
+      }, 100); // check every 100ms
     },
   },
 };
@@ -449,7 +473,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  background-color: #f9e2dd;
+  background-color: #fcf5de;
 
   .find-candidates-row {
     .col__content {
@@ -457,7 +481,7 @@ export default {
     }
 
     .col--search .col__content {
-      background-color: #e26e53;
+      background-color: #f2cc59;
 
       @media (max-width: 991.98px) {
         margin-top: 0;
@@ -468,7 +492,7 @@ export default {
       h2 {
         text-transform: uppercase;
         font-weight: 500;
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         line-height: 1.1;
 
         @media (max-width: 1199.98px) {
@@ -484,7 +508,7 @@ export default {
       p {
         font-weight: 300;
         margin-top: 1.5em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1.5em;
       }
 
       form {
@@ -497,11 +521,11 @@ export default {
           font-size: 1.5rem;
           font-weight: 700;
           height: auto;
-          color: #5f235b;
+          color: #e26e53;
           padding-right: 2em;
 
           &::placeholder {
-            color: rgba(#5f235b, 0.75);
+            color: rgba(#e26e53, 0.75);
           }
 
           &:focus {
@@ -513,7 +537,7 @@ export default {
 
         .v-suggestions :deep(.suggestions) {
           top: 3.5rem;
-          background-color: #e26e53;
+          background-color: #f2cc59;
 
           .items {
             border-color: #262539;
@@ -522,7 +546,7 @@ export default {
 
           .item {
             border-bottom: 4px solid #262539;
-            color: #5f235b;
+            color: #e26e53;
             font-weight: 500;
             padding: 0.35rem 0.8rem;
 
@@ -752,23 +776,6 @@ export default {
               }
             }
           }
-
-          .btn {
-            margin-top: 2rem;
-            background-color: #5f235b;
-            color: #f2cc59;
-            box-shadow: 6px 6px rgba(#5f235b, 0.75);
-
-            &.btn-municipality--hover {
-              transition: all 0.15s ease-in-out;
-              background-color: #864b82;
-            }
-
-            &:active {
-              transform: translate(0);
-              box-shadow: 6px 6px rgba(#5f235b, 0.75);
-            }
-          }
         }
       }
 
@@ -780,13 +787,12 @@ export default {
 
       .form-control {
         border-radius: 0;
-        border: 6px solid #262539;
-        background: #f9e2dd;
+        border: 6px solid #e26e53;
+        background: #fcf5de;
         font-size: 0.9rem;
         font-weight: 500;
-        padding: 30px;
         height: auto;
-        color: #262539;
+        padding: 30px;
         text-align: center;
 
         &::placeholder {
@@ -808,7 +814,7 @@ export default {
       }
 
       .separator {
-        border-color: #262539;
+        border-color: #e26e53;
         border-top-width: 2px;
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -832,5 +838,10 @@ export default {
       }
     }
   }
+}
+
+.icon {
+  height: 1.5em;
+  width: 1.5em;
 }
 </style>

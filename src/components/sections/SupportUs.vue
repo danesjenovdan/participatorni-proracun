@@ -1,20 +1,22 @@
 <template>
-  <div class="row footer-row">
-    <div class="col-md-12">
-      <h3>ŽELIŠ PODPRETI NAŠE DELO?</h3>
-    </div>
-    <div class="col-md-12">
-      <div class="social-buttons">
-        <a
-          href="https://danesjenovdan.si/doniraj"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          <button class="btn">
-            <img src="../assets/heart.svg" style="height: 1em" />
-            DONIRAJ!
-          </button>
-        </a>
+  <div class="container">
+    <div class="row footer-row">
+      <div class="col-md-12">
+        <h3>ŽELIŠ PODPRETI NAŠE DELO?</h3>
+      </div>
+      <div class="col-md-12">
+        <div class="social-buttons">
+          <a
+            href="https://danesjenovdan.si/doniraj"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <button class="btn">
+              <img src="../../assets/heart.svg" style="height: 1em" />
+              DONIRAJ!
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -22,11 +24,16 @@
 
 <script>
 export default {
-  name: "Donate",
+  name: "SupportUs",
 };
 </script>
 
 <style lang="scss" scoped>
+.container {
+  background-color: #e26e53;
+  margin-top: 2rem;
+}
+
 .footer-row {
   color: #262539;
   padding-top: 2rem;

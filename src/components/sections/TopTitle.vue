@@ -15,7 +15,7 @@
           <div class="row">
             <div class="col">
               <p>
-                Pred lokalnimi volitvami leta 2018 smo vse kandidate za župane
+                Pred lokalnimi volitvami leta XXXX smo vse kandidate za župane
                 <a
                   href="https://danesjenovdan.si/participativni-proracun/zaobljube/"
                   rel="noreferrer noopener"
@@ -28,13 +28,13 @@
               </p>
               <p>
                 Štiri leta po volitvah participativni proračun izvaja
-                <b>39</b> občin.
+                <b>XX</b> občin.
               </p>
             </div>
             <div class="col-lg-6 col-md-12">
               <img
                 id="ilustracija"
-                src="../assets/pp-ilustracija.svg"
+                src="../../assets/pp-ilustracija.svg"
                 alt="illustration"
               />
             </div>
@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: "TopTitleSection",
+  name: "TopTitle",
 };
 </script>
 
@@ -98,7 +98,6 @@ export default {
     #ilustracija {
       margin-top: -7rem;
       margin-right: -4rem;
-      /*margin-bottom: 3rem;*/
       transform: rotate(-15deg);
       width: 550px;
       height: auto;

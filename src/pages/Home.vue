@@ -1,50 +1,31 @@
 <template>
   <div class="home">
-    <top-title-section></top-title-section>
-
-    <div class="container">
-      <candidate-scroll
-        @obcina-clicked="submitLocation($event)"
-      ></candidate-scroll>
-    </div>
-    <find-candidates id="PPInput" ref="PPInput" @new-input="clearNoPPInput()" />
-    <div class="container">
-      <no-p-p-candidates></no-p-p-candidates>
-    </div>
-    <find-candidates-no-p-p
+    <TopTitle />
+    <CandidateScroll @obcina-clicked="submitLocation($event)" />
+    <FindCandidates id="PPInput" ref="PPInput" @new-input="clearNoPPInput()" />
+    <NoPPCandidates />
+    <FindCandidatesNoPP
       id="NoPPInput"
       ref="NoPPInput"
       @new-input="clearPPInput()"
     />
-    <div class="container">
-      <div class="col-md-12">
-        <big-video />
-      </div>
-      <questions class="py-5" />
-    </div>
-    <div class="container" style="background-color: #27223a; margin-top: 3rem">
-      <site-footer />
-    </div>
-    <div class="container" style="background-color: #e26e53; margin-top: 2rem">
-      <donate></donate>
-    </div>
-    <div class="container">
-      <bottom-section></bottom-section>
-    </div>
+    <WhatIsPP />
+    <SocialShare />
+    <SupportUs />
+    <PageFooter />
   </div>
 </template>
 
 <script>
-import BigVideo from "../components/BigVideo.vue";
-import FindCandidates from "../components/FindCandidates.vue";
-import FindCandidatesNoPP from "../components/FindCandidatesNoPP.vue"; // noPP -> nimajo participativnega proracuna :)
-import NoPPCandidates from "../components/NoPPCandidates.vue";
-import CandidateScroll from "../components/CandidateScroll.vue";
-import Questions from "../components/Questions.vue";
-import SiteFooter from "../components/SiteFooter.vue";
-import TopTitleSection from "../components/TopTitleSection.vue";
-import Donate from "../components/Donate.vue";
-import BottomSection from "../components/BottomSection.vue";
+import TopTitle from "../components/sections/TopTitle.vue";
+import CandidateScroll from "../components/sections/CandidateScroll.vue";
+import FindCandidates from "../components/sections/FindCandidates.vue";
+import NoPPCandidates from "../components/sections/NoPPCandidates.vue";
+import FindCandidatesNoPP from "../components/sections/FindCandidatesNoPP.vue";
+import WhatIsPP from "../components/sections/WhatIsPP.vue";
+import SocialShare from "../components/sections/SocialShare.vue";
+import SupportUs from "../components/sections/SupportUs.vue";
+import PageFooter from "../components/sections/PageFooter.vue";
 
 const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
 const baseUrl = "/"; // process.env.BASE_URL;
@@ -52,16 +33,15 @@ const baseUrl = "/"; // process.env.BASE_URL;
 export default {
   name: "App",
   components: {
-    BigVideo,
-    FindCandidates,
-    FindCandidatesNoPP,
-    NoPPCandidates,
+    TopTitle,
     CandidateScroll,
-    Questions,
-    SiteFooter,
-    TopTitleSection,
-    Donate,
-    BottomSection,
+    FindCandidates,
+    NoPPCandidates,
+    FindCandidatesNoPP,
+    WhatIsPP,
+    SocialShare,
+    SupportUs,
+    PageFooter,
   },
   metaInfo: {
     title: "Participativni proračun",
