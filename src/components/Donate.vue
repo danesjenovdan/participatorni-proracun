@@ -21,8 +21,6 @@
 </template>
 
 <script>
-import { openSocialShareLink } from "@/helpers/social";
-
 export default {
   name: "Donate",
 };

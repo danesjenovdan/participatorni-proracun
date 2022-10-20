@@ -32,14 +32,16 @@ function removeDiacritics(str) {
     },
   ];
 
-  for (let i = 0; i < defaultDiacriticsRemovalMap.length; i++) {
-    str = str.replace(
+  let newStr = str;
+
+  for (let i = 0; i < defaultDiacriticsRemovalMap.length; i += 1) {
+    newStr = newStr.replace(
       defaultDiacriticsRemovalMap[i].letters,
       defaultDiacriticsRemovalMap[i].base
     );
   }
 
-  return str;
+  return newStr;
 }
 
 export { removeDiacritics };

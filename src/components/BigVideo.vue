@@ -21,13 +21,9 @@
 </template>
 
 <script>
-import PlayButton from "./PlayButton.vue";
-
 export default {
   name: "BigVideo",
-  components: {
-    PlayButton,
-  },
+  components: {},
   data() {
     return {
       showOverlay: true,

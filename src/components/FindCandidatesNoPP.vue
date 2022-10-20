@@ -57,7 +57,7 @@
                     class="form-control"
                     spellcheck="false"
                     style="font-size: 1rem; padding: inherit"
-                        @focus="$event.target.select()"
+                    @focus="$event.target.select()"
                   />
                 </div>
               </div>
@@ -79,11 +79,11 @@
               <div class="col">
                 <textarea
                   id="textareaNoPP"
-                          readonly
+                  v-model="textareaInput"
+                  readonly
                   class="form-control text-left"
                   @focus="$event.target.select()"
-                  >{{ textareaInput }}</textarea
-                >
+                ></textarea>
               </div>
             </div>
             <span
@@ -165,13 +165,12 @@
 <script>
 import Papa from "papaparse";
 import { transliterate as tr } from "transliteration";
-import Suggestions from "v-suggestions";
-import "v-suggestions/dist/v-suggestions.css";
-import Loader from "./Loader.vue";
+// import Suggestions from "v-suggestions";
+// import "v-suggestions/dist/v-suggestions.css";
 import Modal from "./Modal.vue";
 import { openSocialShareLink } from "../helpers/social";
-// eslint-disable-next-line
-  import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
+// import csvData from "../assets/seznam_kandidatov.csv";
+const csvData = "";
 
 function groupBy(arr, key) {
   return arr.reduce((acc, cur) => {
@@ -181,11 +180,8 @@ function groupBy(arr, key) {
   }, {});
 }
 
-const domain =
-  process.env.NODE_ENV === "production"
-    ? "https://danesjenovdan.si"
-    : "http://localhost:8801";
-const baseUrl = process.env.BASE_URL;
+const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
+const baseUrl = "/"; // process.env.BASE_URL;
 
 const notifyUsMailSubject =
   "Namera o uvedbi participativnega proračuna v moji občini";
@@ -198,16 +194,15 @@ const shareContent =
 const sharePersonM = "{name} obljublja participativni proračun";
 const sharePersonF = "{name} obljublja participativni proračun";
 
-const shareElectedPersonM =
-  "{name} se je zaobljubil, da bo uvedel participativni proračun.";
-const shareElectedPersonF =
-  "{name} se je zaobljubila, da bo uvedla participativni proračun.";
+// const shareElectedPersonM =
+//   "{name} se je zaobljubil, da bo uvedel participativni proračun.";
+// const shareElectedPersonF =
+//   "{name} se je zaobljubila, da bo uvedla participativni proračun.";
 
 export default {
   name: "FindCandidates",
   components: {
-    Loader,
-    Suggestions,
+    // Suggestions,
     Modal,
   },
   metaInfo() {
@@ -218,7 +213,7 @@ export default {
     if (this.person || this.query) {
       // let title = shareContent;
       const content = shareContent;
-      let image = `og-image-new2.png/gen?t=${encodeURIComponent(
+      const image = `og-image-new2.png/gen?t=${encodeURIComponent(
         tr(this.query)
       )}`;
 
@@ -346,100 +341,109 @@ export default {
         obcina = "<ime obcine>";
       }
       return (
-        "Spoštovani,\n" +
-        "\n" +
-        "pišem vam z namenom, da vas spomnim na participativni proračun.\n" +
-        "\n" +
-        "Participativni proračun je proces demokratičnega soodločanja, pri katerem o porabi dela proračunskih sredstev neposredno odločajo prebivalke in prebivalci. V skoraj 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša povečanje učinkovitosti porabe sredstev, hitrejšo gospodarsko rast, bolj enakomeren razvoj občin, zmanjšanje socialnih razlik, boljše ravnanje z infrastrukturo in večjo identifikacijo z njo, povečanje zaupanja v demokratične postopke in povečanje aktivacije prebivalcev in prebivalk.\n" +
-        "\n" +
-        "Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim pridruži tudi " +
-        obcina +
-        ". \n" +
-        "\n" +
-        "Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n" +
-        "\n" +
-        "V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas lepo pozdravljam.\n"
+        `Spoštovani,\n` +
+        `\n` +
+        `pišem vam z namenom, da vas spomnim na participativni proračun.\n` +
+        `\n` +
+        `Participativni proračun je proces demokratičnega soodločanja, pri katerem o porabi dela proračunskih sredstev neposredno odločajo prebivalke in prebivalci. V skoraj 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša povečanje učinkovitosti porabe sredstev, hitrejšo gospodarsko rast, bolj enakomeren razvoj občin, zmanjšanje socialnih razlik, boljše ravnanje z infrastrukturo in večjo identifikacijo z njo, povečanje zaupanja v demokratične postopke in povečanje aktivacije prebivalcev in prebivalk.\n` +
+        `\n` +
+        `Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim pridruži tudi ${obcina}. \n` +
+        `\n` +
+        `Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n` +
+        `\n` +
+        `V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas lepo pozdravljam.\n`
       );
     },
-    mounted() {
-      this.resizeTextarea()
-    },
-    methods: {
-      updateItems(text) {
-        const upperInput = tr(text.toUpperCase());
-        const filteredItems = this.allMunicipalities.filter(m => tr(m).indexOf(upperInput) !== -1);
-        if (text.length > 2 || filteredItems.length < 5) {
-          return filteredItems;
-        }
-        return [];
-      },
-      onSubmitLocation(selected) {
-        if(this.data.filter(x => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase()).length){
-          const text = typeof selected === 'string' ? selected : this.inputValue || '';
-          this.loading = true;
-          this.query = text.trim().toLowerCase();
-          this.inputValue = this.query.toUpperCase();
-          this.$router.push(`/${this.query}`);
-          this.hoveredSocial = null;
-          this.loading = false;
-          this.selectedObcina = this.data.filter(x => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase())[0];
-          this.$emit('new-input')
-          this.resizeTextarea()
-        }
-      },
-      clearInput(){
-        this.inputValue = '';
-        this.query = '';
-        this.selectedObcina = null;
-        this.resizeTextarea()
-      },
-      onMouseEnter(i) {
-        this.hoveredSocial = i;
-      },
-      onMouseLeave() {
-        this.hoveredSocial = null;
-      },
-      onMouseEnterMunicipality() {
-        this.hoveredSocialMunicipality = true;
-      },
-      onMouseLeaveMunicipality() {
-        this.hoveredSocialMunicipality = false;
-      },
-      onShareClick($event, type, municipality, i) {
-        if (!type) {
-          this.showModal = [municipality, i];
-          return;
-        }
-
-        const row = this.resultsByMunicipality[municipality][i];
-        const ime = row.KANDIDAT;
-
-        const shareText =
-          row.SPOL === 'm'
-            ? sharePersonM.replace('{name}', ime)
-            : sharePersonF.replace('{name}', ime);
-        const shareHashtag = '#TvojaStvar';
-
-        openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
-      },
-      onShareClickMunicipality($event, type) {
-        if (!type) {
-          this.showModal = true;
-          return;
-        }
-
-        const shareHashtag = '';
-
-        const link = tr(document.location.href);
-
-        openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
-      },
-      resizeTextarea() {
-          let dom = document.getElementById('textareaNoPP');
-          dom.style.height = '';
-          dom.style.height = dom.scrollHeight + 12 + 'px';
+  },
+  mounted() {
+    this.resizeTextarea();
+  },
+  methods: {
+    updateItems(text) {
+      const upperInput = tr(text.toUpperCase());
+      const filteredItems = this.allMunicipalities.filter(
+        (m) => tr(m).indexOf(upperInput) !== -1
+      );
+      if (text.length > 2 || filteredItems.length < 5) {
+        return filteredItems;
       }
-    }
+      return [];
+    },
+    onSubmitLocation(selected) {
+      if (
+        this.data.filter(
+          (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase()
+        ).length
+      ) {
+        const text =
+          typeof selected === "string" ? selected : this.inputValue || "";
+        this.loading = true;
+        this.query = text.trim().toLowerCase();
+        this.inputValue = this.query.toUpperCase();
+        this.$router.push(`/${this.query}`);
+        this.hoveredSocial = null;
+        this.loading = false;
+        // eslint-disable-next-line prefer-destructuring
+        this.selectedObcina = this.data.filter(
+          (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase()
+        )[0];
+        this.$emit("new-input");
+        this.resizeTextarea();
+      }
+    },
+    clearInput() {
+      this.inputValue = "";
+      this.query = "";
+      this.selectedObcina = null;
+      this.resizeTextarea();
+    },
+    onMouseEnter(i) {
+      this.hoveredSocial = i;
+    },
+    onMouseLeave() {
+      this.hoveredSocial = null;
+    },
+    onMouseEnterMunicipality() {
+      this.hoveredSocialMunicipality = true;
+    },
+    onMouseLeaveMunicipality() {
+      this.hoveredSocialMunicipality = false;
+    },
+    onShareClick($event, type, municipality, i) {
+      if (!type) {
+        this.showModal = [municipality, i];
+        return;
+      }
+
+      const row = this.resultsByMunicipality[municipality][i];
+      const ime = row.KANDIDAT;
+
+      const shareText =
+        row.SPOL === "m"
+          ? sharePersonM.replace("{name}", ime)
+          : sharePersonF.replace("{name}", ime);
+      const shareHashtag = "#TvojaStvar";
+
+      openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
+    },
+    onShareClickMunicipality($event, type) {
+      if (!type) {
+        this.showModal = true;
+        return;
+      }
+
+      const shareHashtag = "";
+
+      const link = tr(document.location.href);
+
+      openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
+    },
+    resizeTextarea() {
+      const dom = document.getElementById("textareaNoPP");
+      dom.style.height = "";
+      dom.style.height = `${dom.scrollHeight + 12}px`;
+    },
+  },
 };
 </script>
 
@@ -486,7 +490,7 @@ export default {
       form {
         position: relative;
 
-        .v-suggestions /deep/ .form-control {
+        .v-suggestions :deep(.form-control) {
           border-radius: 0;
           border: 6px solid #262539;
           background: transparent;
@@ -507,7 +511,7 @@ export default {
           }
         }
 
-        .v-suggestions /deep/ .suggestions {
+        .v-suggestions :deep(.suggestions) {
           top: 3.5rem;
           background-color: #e26e53;
 

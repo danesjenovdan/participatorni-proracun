@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import BackgroundSquare from "./BackgroundSquare";
+import BackgroundSquare from "./BackgroundSquare.vue";
 
 export default {
   name: "NoPPCandidates",

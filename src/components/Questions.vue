@@ -7,9 +7,8 @@
       </h2>
     </div>
     <div class="col-md-6 mt-5 px-0">
-      <template v-for="(qa, i) in stuff">
+      <template v-for="(qa, i) in stuff" :key="qa.q">
         <div
-          :key="qa.q"
           :class="['faq-q-box', { active: i === selected }]"
           @click="selectAnswer(i)"
         >
@@ -17,7 +16,6 @@
         </div>
         <div
           v-if="i === selected"
-          :key="qa.a"
           class="faq-a-content accordion-answer"
           v-html="qa.a"
         />
@@ -32,7 +30,7 @@
 </template>
 
 <script>
-import vuescroll from "vuescroll";
+// import vuescroll from "vuescroll";
 
 const stuff = [
   {
@@ -94,7 +92,7 @@ const stuff = [
 export default {
   name: "Questions",
   components: {
-    vuescroll,
+    // vuescroll,
   },
   data() {
     return {

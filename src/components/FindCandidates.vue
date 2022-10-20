@@ -121,12 +121,12 @@
               <div class="col">
                 <textarea
                   id="textarea"
+                  v-model="textareaInput"
                   readonly
                   class="form-control text-left"
                   @focus="$event.target.select()"
                   @change="resizeTextarea"
-                  >{{ textareaInput }}</textarea
-                >
+                ></textarea>
               </div>
             </div>
             <span
@@ -210,14 +210,13 @@
 <script>
 import Papa from "papaparse";
 import { transliterate as tr } from "transliteration";
-import Suggestions from "v-suggestions";
-import "v-suggestions/dist/v-suggestions.css";
-import Loader from "./Loader.vue";
+// import Suggestions from "v-suggestions";
+// import "v-suggestions/dist/v-suggestions.css";
 import Modal from "./Modal.vue";
 import HappyEmailSection from "./HappyEmailSection.vue";
 import { openSocialShareLink } from "../helpers/social";
-// eslint-disable-next-line
-  import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
+// import csvData from "../assets/seznam_kandidatov.csv";
+const csvData = "";
 
 function groupBy(arr, key) {
   return arr.reduce((acc, cur) => {
@@ -227,11 +226,8 @@ function groupBy(arr, key) {
   }, {});
 }
 
-const domain =
-  process.env.NODE_ENV === "production"
-    ? "https://danesjenovdan.si"
-    : "http://localhost:8801";
-const baseUrl = process.env.BASE_URL;
+const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
+const baseUrl = "/"; // process.env.BASE_URL;
 
 const notifyUsMailSubject =
   "Namera o uvedbi participativnega proračuna v moji občini";
@@ -241,19 +237,18 @@ const shareContent =
   "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še " +
   "niso izpolnili svoje obljube.";
 
-const sharePersonM = "{name} obljublja participativni proračun";
-const sharePersonF = "{name} obljublja participativni proračun";
+// const sharePersonM = "{name} obljublja participativni proračun";
+// const sharePersonF = "{name} obljublja participativni proračun";
 
-const shareElectedPersonM =
-  "{name} se je zaobljubil, da bo uvedel participativni proračun.";
-const shareElectedPersonF =
-  "{name} se je zaobljubila, da bo uvedla participativni proračun.";
+// const shareElectedPersonM =
+//   "{name} se je zaobljubil, da bo uvedel participativni proračun.";
+// const shareElectedPersonF =
+//   "{name} se je zaobljubila, da bo uvedla participativni proračun.";
 
 export default {
   name: "FindCandidates",
   components: {
-    Loader,
-    Suggestions,
+    // Suggestions,
     Modal,
     HappyEmailSection,
   },
@@ -435,6 +430,7 @@ export default {
         this.$router.push(`/${this.query}`);
         this.hoveredSocial = null;
         this.loading = false;
+        // eslint-disable-next-line prefer-destructuring
         this.selectedObcina = this.data.filter(
           (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase()
         )[0];
@@ -530,7 +526,7 @@ export default {
       form {
         position: relative;
 
-        .v-suggestions /deep/ .form-control {
+        .v-suggestions :deep(.form-control) {
           border-radius: 0;
           border: 6px solid #262539;
           background: transparent;
@@ -551,7 +547,7 @@ export default {
           }
         }
 
-        .v-suggestions /deep/ .suggestions {
+        .v-suggestions :deep(.suggestions) {
           top: 3.5rem;
           background-color: #f2cc59;
 

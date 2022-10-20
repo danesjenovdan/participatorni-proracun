@@ -18,5 +18,9 @@ module.exports = {
     "import/prefer-default-export": ["off"],
     // allow mutating param object props
     "no-param-reassign": ["error", { props: false }],
+
+    // TODO: remove
+    "vue/multi-word-component-names": ["off"],
+    "vue/require-explicit-emits": ["off"],
   },
 };

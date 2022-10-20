@@ -90,8 +90,8 @@
 
 <script>
 import axios from "axios";
-import CardPP from "../components/CardPP";
-import CardNoPP from "../components/CardNoPP";
+import CardPP from "./CardPP.vue";
+import CardNoPP from "./CardNoPP.vue";
 
 export default {
   name: "Modal",

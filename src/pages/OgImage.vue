@@ -14,10 +14,10 @@
 <script>
 import Papa from "papaparse";
 import { transliterate as tr } from "transliteration";
-import CardPP from "@/components/CardPP.vue";
-import CardNoPP from "@/components/CardNoPP.vue";
-// eslint-disable-next-line
-import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
+import CardPP from "../components/CardPP.vue";
+import CardNoPP from "../components/CardNoPP.vue";
+// import csvData from '../assets/seznam_kandidatov.csv';
+const csvData = "";
 
 export default {
   components: {

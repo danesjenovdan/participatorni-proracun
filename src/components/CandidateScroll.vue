@@ -181,6 +181,7 @@
         <vuescroll :ops="ops">
           <div
             v-for="(c, i) in candidates"
+            :key="c.SIMPLE_OBCINA"
             class="scroll-item"
             :class="{
               active: c['IZVAJA PP'] === '1',
@@ -213,14 +214,15 @@
 
 <script>
 import Papa from "papaparse";
-import vuescroll from "vuescroll";
-import csvData from "!raw-loader!../assets/seznam_kandidatov.csv";
-import BackgroundSquare from "./BackgroundSquare";
+// import vuescroll from "vuescroll";
+import BackgroundSquare from "./BackgroundSquare.vue";
+// import csvData from "../assets/seznam_kandidatov.csv";
+const csvData = "";
 
 export default {
   name: "NoPPCandidates",
   components: {
-    vuescroll,
+    // vuescroll,
     BackgroundSquare,
   },
 

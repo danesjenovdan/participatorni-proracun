@@ -35,20 +35,19 @@
 </template>
 
 <script>
-import BigVideo from "@/components/BigVideo.vue";
-import FindCandidates from "@/components/FindCandidates.vue";
-import FindCandidatesNoPP from "@/components/FindCandidatesNoPP.vue"; // noPP -> nimajo participativnega proracuna :)
-import NoPPCandidates from "@/components/NoPPCandidates.vue";
-import CandidateScroll from "@/components/CandidateScroll.vue";
-import SubscribeForUpdates from "@/components/SubscribeForUpdates.vue";
-import Questions from "@/components/Questions.vue";
-import SiteFooter from "@/components/SiteFooter.vue";
-import TopTitleSection from "@/components/TopTitleSection.vue";
-import Donate from "@/components/Donate";
-import BottomSection from "@/components/BottomSection";
+import BigVideo from "../components/BigVideo.vue";
+import FindCandidates from "../components/FindCandidates.vue";
+import FindCandidatesNoPP from "../components/FindCandidatesNoPP.vue"; // noPP -> nimajo participativnega proracuna :)
+import NoPPCandidates from "../components/NoPPCandidates.vue";
+import CandidateScroll from "../components/CandidateScroll.vue";
+import Questions from "../components/Questions.vue";
+import SiteFooter from "../components/SiteFooter.vue";
+import TopTitleSection from "../components/TopTitleSection.vue";
+import Donate from "../components/Donate.vue";
+import BottomSection from "../components/BottomSection.vue";
 
-const domain = "https://danesjenovdan.si";
-const baseUrl = process.env.BASE_URL;
+const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
+const baseUrl = "/"; // process.env.BASE_URL;
 
 export default {
   name: "App",
@@ -58,7 +57,6 @@ export default {
     FindCandidatesNoPP,
     NoPPCandidates,
     CandidateScroll,
-    SubscribeForUpdates,
     Questions,
     SiteFooter,
     TopTitleSection,

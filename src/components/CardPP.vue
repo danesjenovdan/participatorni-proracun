@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import { removeDiacritics } from "../helpers/removeDiacritics";
+// import { removeDiacritics } from "../helpers/removeDiacritics";
 
 export default {
   name: "CardPP",
@@ -75,12 +75,12 @@ export default {
   },
   methods: {
     getProfilePicPath() {
-      const img_name = removeDiacritics(this.info.OBČINA);
-      return require(`../assets/img-obcine/profilke/${img_name}.png`);
+      // const imgName = removeDiacritics(this.info.OBČINA);
+      // return require(`../assets/img-obcine/profilke/${imgName}.png`);
     },
     getGrbPath() {
-      const img_name = removeDiacritics(this.info.OBČINA);
-      return require(`../assets/img-obcine/grbi/${img_name}.png`);
+      // const imgName = removeDiacritics(this.info.OBČINA);
+      // return require(`../assets/img-obcine/grbi/${imgName}.png`);
     },
   },
 };
