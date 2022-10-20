@@ -1,38 +1,33 @@
 {
-  "name": "participatorni-proracun",
-  "version": "0.1.0",
+  "name": "participativni-proracun",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "ssr:serve": "vue-cli-service ssr:serve",
-    "ssr:build": "vue-cli-service ssr:build",
-    "ssr:start": "cross-env NODE_ENV=production vue-cli-service ssr:serve --mode production"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,vue"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "fs-extra": "^7.0.0",
-    "papaparse": "^5.3.0",
-    "puppeteer": "^5.5.0",
-    "sweetalert2": "^7.29.0",
-    "transliteration": "^2.2.0",
-    "v-suggestions": "^1.0.6",
-    "vue": "^2.5.17",
-    "vue-meta": "^1.5.5",
-    "vue-router": "^3.0.1",
-    "vue-server-renderer": "^2.5.16",
-    "vuescroll": "^4.16.1"
+    "@vueuse/core": "^8.9.3",
+    "lodash-es": "^4.17.21",
+    "nanoid": "^4.0.0",
+    "pinia": "^2.0.14",
+    "sass": "^1.53.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
-    "@akryum/vue-cli-plugin-ssr": "^0.3.0",
-    "@vue/cli-plugin-babel": "^3.0.5",
-    "@vue/cli-plugin-eslint": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
-    "@vue/eslint-config-airbnb": "^3.0.5",
-    "node-sass": "^4.14.1",
-    "raw-loader": "^0.5.1",
-    "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.1.1",
+    "prettier": "^2.7.1",
+    "vite": "^2.9.9",
+    "vite-plugin-eslint": "^1.6.1"
   }
 }

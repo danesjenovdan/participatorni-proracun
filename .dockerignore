@@ -1,0 +1,21 @@
+# garbage
+.DS_Store
+*.log
+README.md
+
+# docker
+.dockerignore
+Dockerfile
+
+# git
+.git
+.gitignore
+.github
+kustomize/
+
+# dev only stuff
+.idea
+.vscode
+.env*
+node_modules/
+dist/
