@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import PlayButton from './PlayButton.vue';
+import PlayButton from "./PlayButton.vue";
 
 export default {
-  name: 'BigVideo',
+  name: "BigVideo",
   components: {
     PlayButton,
   },

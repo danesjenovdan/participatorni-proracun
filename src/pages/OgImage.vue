@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import Papa from 'papaparse';
-import { transliterate as tr } from 'transliteration';
-import CardPP from '@/components/CardPP.vue';
-import CardNoPP from '@/components/CardNoPP.vue';
+import Papa from "papaparse";
+import { transliterate as tr } from "transliteration";
+import CardPP from "@/components/CardPP.vue";
+import CardNoPP from "@/components/CardNoPP.vue";
 // eslint-disable-next-line
 import csvData from '!raw-loader!../assets/seznam_kandidatov.csv';
 
@@ -30,14 +30,16 @@ export default {
     const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
     if (data.errors.length) {
       // eslint-disable-next-line no-console
-      console.error('CSV Parse Errors:', data.errors);
+      console.error("CSV Parse Errors:", data.errors);
     }
-    const allData = data.data.map(row => ({
+    const allData = data.data.map((row) => ({
       ...row,
-      SIMPLE_OBCINA: row['OBČINA'].replace(/(?:MESTNA )?OBČINA /gi, ''),
+      SIMPLE_OBCINA: row["OBČINA"].replace(/(?:MESTNA )?OBČINA /gi, ""),
     }));
 
-    const obcinaInfo = allData.filter(x => tr(x.SIMPLE_OBCINA.toLowerCase()) === query)[0];
+    const obcinaInfo = allData.filter(
+      (x) => tr(x.SIMPLE_OBCINA.toLowerCase()) === query
+    )[0];
 
     return {
       obcinaInfo,

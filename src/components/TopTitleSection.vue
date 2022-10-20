@@ -6,8 +6,8 @@
           <div class="row">
             <div class="col">
               <h1>
-                <b>Kje je</b><br>
-                <strong>PARTICIPATIVNI</strong><br>
+                <b>Kje je</b><br />
+                <strong>PARTICIPATIVNI</strong><br />
                 PRORAČUN?
               </h1>
             </div>
@@ -16,19 +16,27 @@
             <div class="col">
               <p>
                 Pred lokalnimi volitvami leta 2018 smo vse kandidate za župane
-                <a href="https://danesjenovdan.si/participativni-proracun/zaobljube/"
-                   rel="noreferrer noopener"
-                   target="_blank"
-                   style="color: black;"
-                ><b>javno pozvali</b></a>
-                k zavezi, da bodo v svoji občini vzpostavili participativni proračun.
+                <a
+                  href="https://danesjenovdan.si/participativni-proracun/zaobljube/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  style="color: black"
+                  ><b>javno pozvali</b></a
+                >
+                k zavezi, da bodo v svoji občini vzpostavili participativni
+                proračun.
               </p>
               <p>
-                Štiri leta po volitvah participativni proračun izvaja <b>39</b> občin.
+                Štiri leta po volitvah participativni proračun izvaja
+                <b>39</b> občin.
               </p>
             </div>
             <div class="col-lg-6 col-md-12">
-              <img id="ilustracija" src="../assets/pp-ilustracija.svg" alt="illustration"/>
+              <img
+                id="ilustracija"
+                src="../assets/pp-ilustracija.svg"
+                alt="illustration"
+              />
             </div>
           </div>
         </div>
@@ -38,13 +46,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'TopTitleSection',
-  };
+export default {
+  name: "TopTitleSection",
+};
 </script>
 
 <style lang="scss" scoped>
-.title_section_wrapper{
+.title_section_wrapper {
   background-color: #f2cc59;
 
   .title_section {

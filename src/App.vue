@@ -5,12 +5,12 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,500,700,900&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,700,900&subset=latin-ext");
 
 html,
 body {
   font-size: 18px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #27223a;
   overflow-x: hidden;
 

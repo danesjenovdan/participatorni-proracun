@@ -1,15 +1,23 @@
 // import swal from 'sweetalert2';
 
-function openSocialShareLink(type, shareTitle, shareText, shareLink, shareHashtag) {
-  let url = '';
+function openSocialShareLink(
+  type,
+  shareTitle,
+  shareText,
+  shareLink,
+  shareHashtag
+) {
+  let url = "";
   const title = encodeURIComponent(shareTitle);
-  if (type === 'fb') {
+  if (type === "fb") {
     const link = encodeURIComponent(shareLink);
     url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
-  } else if (type === 'tw') {
-    const text = encodeURIComponent(`${shareTitle} ${shareText} ${shareHashtag} ${shareLink}`);
+  } else if (type === "tw") {
+    const text = encodeURIComponent(
+      `${shareTitle} ${shareText} ${shareHashtag} ${shareLink}`
+    );
     url = `https://twitter.com/intent/tweet?text=${text}`;
-  } else if (type === 'mail') {
+  } else if (type === "mail") {
     const text = `${shareText} ${shareLink}`;
     url = `mailto:?subject=${title}&body=${text}`;
     // swal({
@@ -23,7 +31,7 @@ function openSocialShareLink(type, shareTitle, shareText, shareLink, shareHashta
     // });
     // return;
   }
-  window.open(url, '_blank');
+  window.open(url, "_blank");
 }
 
 export { openSocialShareLink };

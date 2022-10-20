@@ -3,20 +3,26 @@
     <top-title-section></top-title-section>
 
     <div class="container">
-      <candidate-scroll @obcina-clicked="submitLocation($event)"></candidate-scroll>
+      <candidate-scroll
+        @obcina-clicked="submitLocation($event)"
+      ></candidate-scroll>
     </div>
     <find-candidates id="PPInput" ref="PPInput" @new-input="clearNoPPInput()" />
     <div class="container">
       <no-p-p-candidates></no-p-p-candidates>
     </div>
-    <find-candidates-no-p-p id="NoPPInput" ref="NoPPInput" @new-input="clearPPInput()" />
+    <find-candidates-no-p-p
+      id="NoPPInput"
+      ref="NoPPInput"
+      @new-input="clearPPInput()"
+    />
     <div class="container">
       <div class="col-md-12">
         <big-video />
       </div>
       <questions class="py-5" />
     </div>
-    <div class="container" style="background-color: #27223a; margin-top: 3rem;">
+    <div class="container" style="background-color: #27223a; margin-top: 3rem">
       <site-footer />
     </div>
     <div class="container" style="background-color: #e26e53; margin-top: 2rem">
@@ -29,23 +35,23 @@
 </template>
 
 <script>
-import BigVideo from '@/components/BigVideo.vue';
-import FindCandidates from '@/components/FindCandidates.vue';
-import FindCandidatesNoPP from '@/components/FindCandidatesNoPP.vue'; // noPP -> nimajo participativnega proracuna :)
-import NoPPCandidates from '@/components/NoPPCandidates.vue';
-import CandidateScroll from '@/components/CandidateScroll.vue';
-import SubscribeForUpdates from '@/components/SubscribeForUpdates.vue';
-import Questions from '@/components/Questions.vue';
-import SiteFooter from '@/components/SiteFooter.vue';
-import TopTitleSection from '@/components/TopTitleSection.vue';
-import Donate from '@/components/Donate';
-import BottomSection from '@/components/BottomSection';
+import BigVideo from "@/components/BigVideo.vue";
+import FindCandidates from "@/components/FindCandidates.vue";
+import FindCandidatesNoPP from "@/components/FindCandidatesNoPP.vue"; // noPP -> nimajo participativnega proracuna :)
+import NoPPCandidates from "@/components/NoPPCandidates.vue";
+import CandidateScroll from "@/components/CandidateScroll.vue";
+import SubscribeForUpdates from "@/components/SubscribeForUpdates.vue";
+import Questions from "@/components/Questions.vue";
+import SiteFooter from "@/components/SiteFooter.vue";
+import TopTitleSection from "@/components/TopTitleSection.vue";
+import Donate from "@/components/Donate";
+import BottomSection from "@/components/BottomSection";
 
-const domain = 'https://danesjenovdan.si';
+const domain = "https://danesjenovdan.si";
 const baseUrl = process.env.BASE_URL;
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     BigVideo,
     FindCandidates,
@@ -60,80 +66,79 @@ export default {
     BottomSection,
   },
   metaInfo: {
-    title: 'Participativni proračun',
+    title: "Participativni proračun",
     meta: [
       // owner
-      { property: 'fb:app_id', content: '301375193309601' },
-      { name: 'twitter:creator', content: '@danesjenovdan' },
+      { property: "fb:app_id", content: "301375193309601" },
+      { name: "twitter:creator", content: "@danesjenovdan" },
       // type
-      { property: 'og:type', content: 'article' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       // url
       {
-        vmid: 'og:url',
-        property: 'og:url',
+        vmid: "og:url",
+        property: "og:url",
         content: `${domain}${baseUrl}`,
       },
       // title
       {
-        vmid: 'og:title',
-        property: 'og:title',
-        content: 'Kje je participativni proračun?',
+        vmid: "og:title",
+        property: "og:title",
+        content: "Kje je participativni proračun?",
       },
       {
-        vmid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Kje je participativni proračun?',
+        vmid: "twitter:title",
+        name: "twitter:title",
+        content: "Kje je participativni proračun?",
       },
       // description
       {
-        vmid: 'og:description',
-        property: 'og:description',
+        vmid: "og:description",
+        property: "og:description",
         content:
-          'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.',
+          "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.",
       },
       {
-        vmid: 'twitter:description',
-        name: 'twitter:description',
+        vmid: "twitter:description",
+        name: "twitter:description",
         content:
-          'Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.',
+          "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.",
       },
       // image
       {
-        vmid: 'og:image',
-        property: 'og:image',
+        vmid: "og:image",
+        property: "og:image",
         content: `${domain}${baseUrl}pp-og.png?v2`,
       },
       {
-        vmid: 'twitter:image',
-        name: 'twitter:image',
+        vmid: "twitter:image",
+        name: "twitter:image",
         content: `${domain}${baseUrl}pp-og.png?v2`,
       },
     ],
   },
 
   methods: {
-    clearPPInput(){
+    clearPPInput() {
       this.$refs.PPInput.clearInput();
     },
-    clearNoPPInput(){
+    clearNoPPInput() {
       this.$refs.NoPPInput.clearInput();
     },
-    submitLocation(obcina){
-      let reference = obcina['PRVI DROPDOWN'] === '1' ? this.$refs.PPInput : this.$refs.NoPPInput;
-      let id = obcina['PRVI DROPDOWN'] === '1' ? 'PPInput' : 'NoPPInput';
-      let elem = document.getElementById(id);
+    submitLocation(obcina) {
+      const reference =
+        obcina["PRVI DROPDOWN"] === "1"
+          ? this.$refs.PPInput
+          : this.$refs.NoPPInput;
+      const id = obcina["PRVI DROPDOWN"] === "1" ? "PPInput" : "NoPPInput";
+      const elem = document.getElementById(id);
 
       reference.onSubmitLocation(obcina.SIMPLE_OBCINA);
-      setTimeout(
-          () => {
-            elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
-          },
-          100
-      )
-
-    }
-  }
+      setTimeout(() => {
+        elem.scrollIntoView({ block: "start", behavior: "smooth" });
+      }, 100);
+    },
+  },
 };
 </script>
 

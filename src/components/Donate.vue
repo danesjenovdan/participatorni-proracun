@@ -5,11 +5,13 @@
     </div>
     <div class="col-md-12">
       <div class="social-buttons">
-        <a href="https://danesjenovdan.si/doniraj"
-           rel="noreferrer noopener"
-           target="_blank">
+        <a
+          href="https://danesjenovdan.si/doniraj"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <button class="btn">
-            <img src="../assets/heart.svg" style="height: 1em;">
+            <img src="../assets/heart.svg" style="height: 1em" />
             DONIRAJ!
           </button>
         </a>
@@ -19,11 +21,11 @@
 </template>
 
 <script>
-import { openSocialShareLink } from '@/helpers/social';
+import { openSocialShareLink } from "@/helpers/social";
 
 export default {
   name: "Donate",
-}
+};
 </script>
 
 <style lang="scss" scoped>

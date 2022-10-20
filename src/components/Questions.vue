@@ -25,20 +25,18 @@
     </div>
     <div class="col-md-6 mt-5 px-0">
       <vuescroll :ops="scrollOps">
-        <div class="faq-a-content column-answer"
-                v-html="stuff[selected].a"/>
+        <div class="faq-a-content column-answer" v-html="stuff[selected].a" />
       </vuescroll>
     </div>
   </div>
 </template>
 
 <script>
-import vuescroll from 'vuescroll';
-
+import vuescroll from "vuescroll";
 
 const stuff = [
   {
-    q: 'Kaj je participativni proračun?',
+    q: "Kaj je participativni proračun?",
     a: `
       <p>Participativni proračun je proces demokratičnega soodločanja, pri katerem o porabi dela proračunskih sredstev neposredno odločajo prebivalke in prebivalci.</p>
       <p>Obstaja več načinov, kako se občine posvetujejo z občankami in občani; na primer preko vključevanje lokalnih svetov ali zbiranjem mnenj prebivalk in prebivalcev. Različni načini soodločanja se med seboj ne izključujejo, so pa nekateri bolj transparentni in demokratični, tako da je pomembno, da jih med seboj ne zamenjujemo. Participativni proračun, kakor ga razumemo mi in strokovna javnost, definira:</p>
@@ -53,7 +51,7 @@ const stuff = [
     `,
   },
   {
-    q: 'Zakaj je dober za občane in občanke?',
+    q: "Zakaj je dober za občane in občanke?",
     a: `
       <p>V 30 letih obstoja participativnega proračuna so velike organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi večje število univerz in posamičnih raziskovalcev dodobra preučile in identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da participativni proračun prinaša:</p>
       <ul>
@@ -69,13 +67,13 @@ const stuff = [
     `,
   },
   {
-    q: 'Zakaj je dober za vodstvo občine?',
+    q: "Zakaj je dober za vodstvo občine?",
     a: `
       <p>Vsaka občina, ki del proračuna prepusti v upravljanje občanom in občankam, si na ta na način pridobi zaupanje in poveča legitimost. Občinsko delovanje postane bolj transparetno in dostopno, občanke in občani pa se počutijo bolj povezani z občino in se v večji meri vključujejo v občinske procese. Uvedba participativnega proračuna je za občino dobra tudi zato, ker preko pobud občank in občanov omogoča detekcijo lokalnih potreb in problemov.</p>
     `,
   },
   {
-    q: 'Primeri dobre prakse iz tujine in Slovenije',
+    q: "Primeri dobre prakse iz tujine in Slovenije",
     a: `
       <p>Leta 1989 so participativni proračun kot prvi uvedli v brazilskem mestu Porto Alegre, z njegovo implementacijo pa se je predvsem izboljšala javna infrastruktura in njena dostopnost. Mehanizem se je skokovito razširil v druge države po letu 2001, ko je Porto Alegre gostil Svetovni socialni forum.</p>
       <p>Danes participativni proračun uporabljajo tako majhna kot večmilijonska mesta, med njimi Buenos Aires, La Paz, Montevideo, Boston, v Evropi pa ga je vsaj enkratno uvedlo že več kot <a href="https://ec.europa.eu/futurium/en/egovernment4eu/initiative-promote-participatory-budgeting-methods-and-tools" target="_blank">3000 mest</a>, celo velemesta, kot so Pariz, Milano, Madrid ali Lizbona.</p>
@@ -84,7 +82,7 @@ const stuff = [
     `,
   },
   {
-    q: 'Kako smo zbirali odgovore kandidatk in kandidatov?',
+    q: "Kako smo zbirali odgovore kandidatk in kandidatov?",
     a: `
       <p>V prvi kampanji smo kontaktirali smo vseh 688 kandidatk in kandidatov na lokalnih volitvah in jih prosili za odgovor na vprašanje: “Ali boste v primeru, da boste izvoljeni, v svoji občini izvajali participativni proračun?” Kandidatke in kandidati, ki nam niso odgovorili, so bili navedeni kot “se ni zaobljubila” oziroma “se ni zaobljubil”.</p>
       <p>Vse kandidatke in kandidate večjih političnih strank (DD, DeSUS, Levica, LMŠ, NSi, Oljka, SD, SDS, SLS, SMC, SNS, SSN idr.) smo kontaktirali preko njihovih strank. Nekatere kandidatke in kandidate smo kontaktirali preko zasebnih sporočil na njihovih družbenih omrežjih. Vsem ostalim smo poslali pošto na njihov domač naslov, naveden na spletni strani volitve.gov.si.</p>
@@ -94,7 +92,7 @@ const stuff = [
 ];
 
 export default {
-  name: 'Questions',
+  name: "Questions",
   components: {
     vuescroll,
   },
@@ -104,23 +102,23 @@ export default {
       selected: 0,
       scrollOps: {
         vuescroll: {
-          mode: 'native'
+          mode: "native",
         },
         scrollPanel: {},
         rail: {
-          specifyBorderRadius: '0',
-          size: '15px',
-          background: '#e6e6e6',
+          specifyBorderRadius: "0",
+          size: "15px",
+          background: "#e6e6e6",
           opacity: 1,
         },
         bar: {
           keepShow: true,
-          background: '#5f235b',
-          specifyBorderRadius: '0',
-          size: '15px',
-          minSize: 0.1
-        }
-      }
+          background: "#5f235b",
+          specifyBorderRadius: "0",
+          size: "15px",
+          minSize: 0.1,
+        },
+      },
     };
   },
   methods: {
@@ -166,9 +164,9 @@ export default {
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
-      background-image: url('../assets/arrow-right.svg');
+      background-image: url("../assets/arrow-right.svg");
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 4rem;
