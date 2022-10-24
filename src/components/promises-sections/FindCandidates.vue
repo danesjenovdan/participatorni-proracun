@@ -1,4 +1,56 @@
+<!--
+//   if (this.person) {
+//     const rows = this.data.filter((r) => r.KANDIDAT === this.person);
+//     if (rows && rows.length && rows[0].OBLJUBA > 0) {
+//       title =
+//         rows[0].SPOL === "m"
+//           ? sharePersonM.replace("{name}", this.person)
+//           : sharePersonF.replace("{name}", this.person);
+//       image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
+//       content = "Čas je, da občinski denar postane tudi tvoja stvar!";
+//     }
+//     if (rows && rows.length && rows[0].ZMAGA > 0) {
+//       title =
+//         rows[0].SPOL === "m"
+//           ? shareElectedPersonM.replace("{name}", this.person)
+//           : shareElectedPersonF.replace("{name}", this.person);
+//     }
+//     overrideTags.meta.push({
+//       vmid: "og:title",
+//       property: "og:title",
+//       content: title,
+//     });
+//     overrideTags.meta.push({
+//       vmid: "twitter:title",
+//       property: "twitter:title",
+//       content: title,
+//     });
+//   }
+-->
+
 <template>
+  <VueHead v-if="slug && selectedMunicipality">
+    <title>
+      Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini
+      {{ selectedMunicipality.name }}.
+    </title>
+    <meta
+      property="og:description"
+      :content="`Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini ${selectedMunicipality.name}.`"
+    />
+    <meta
+      name="twitter:description"
+      :content="`Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini ${selectedMunicipality.name}.`"
+    />
+    <meta
+      property="og:image"
+      :content="`${domain}${baseUrl}generated/og-image-${slug}.png`"
+    />
+    <meta
+      name="twitter:image"
+      :content="`${domain}${baseUrl}generated/og-image-${slug}.png`"
+    />
+  </VueHead>
   <div class="container">
     <div class="row find-candidates-row mx-0 py-5">
       <div class="col-lg-5 col--search px-0">
@@ -204,6 +256,7 @@
 </template>
 
 <script>
+import { Head as VueHead } from "@vueuse/head";
 import SimpleTypeahead from "vue3-simple-typeahead";
 import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
 import ppList from "../../assets/pp_list.json";
@@ -214,85 +267,9 @@ import PromisesModal from "../PromisesModal.vue";
 export default {
   name: "FindCandidates",
   components: {
+    VueHead,
     SimpleTypeahead,
     PromisesModal,
-  },
-  metaInfo() {
-    const overrideTags = {
-      meta: [],
-    };
-
-    // if (this.person || this.query) {
-    //   let title = shareContent.replace("{query}", this.query.toUpperCase());
-    //   let content = shareContent.replace("{query}", this.query.toUpperCase());
-    //   let image = `og-image-obcina.png/gen?t=${encodeURIComponent(this.query)}`;
-    //   if (this.person) {
-    //     const rows = this.data.filter((r) => r.KANDIDAT === this.person);
-    //     if (rows && rows.length && rows[0].OBLJUBA > 0) {
-    //       title =
-    //         rows[0].SPOL === "m"
-    //           ? sharePersonM.replace("{name}", this.person)
-    //           : sharePersonF.replace("{name}", this.person);
-    //       image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
-    //       content = "Čas je, da občinski denar postane tudi tvoja stvar!";
-    //     }
-    //     if (rows && rows.length && rows[0].ZMAGA > 0) {
-    //       title =
-    //         rows[0].SPOL === "m"
-    //           ? shareElectedPersonM.replace("{name}", this.person)
-    //           : shareElectedPersonF.replace("{name}", this.person);
-    //     }
-
-    //     overrideTags.meta.push({
-    //       vmid: "og:url",
-    //       property: "og:url",
-    //       content: `${domain}${baseUrl}${encodeURIComponent(
-    //         this.query
-    //       )}?p=${encodeURIComponent(this.person)}`,
-    //     });
-    //     overrideTags.meta.push({
-    //       vmid: "og:title",
-    //       property: "og:title",
-    //       content: title,
-    //     });
-    //     overrideTags.meta.push({
-    //       vmid: "twitter:title",
-    //       property: "twitter:title",
-    //       content: title,
-    //     });
-    //   } else {
-    //     overrideTags.meta.push({
-    //       vmid: "og:url",
-    //       property: "og:url",
-    //       content: `${domain}${baseUrl}${encodeURIComponent(this.query)}`,
-    //     });
-    //   }
-
-    //   // description
-    //   overrideTags.meta.push({
-    //     vmid: "og:description",
-    //     property: "og:description",
-    //     content,
-    //   });
-    //   overrideTags.meta.push({
-    //     vmid: "twitter:description",
-    //     name: "twitter:description",
-    //     content,
-    //   });
-    //   // image
-    //   overrideTags.meta.push({
-    //     vmid: "og:image",
-    //     property: "og:image",
-    //     content: `${domain}${baseUrl}${image}`,
-    //   });
-    //   overrideTags.meta.push({
-    //     vmid: "twitter:image",
-    //     name: "twitter:image",
-    //     content: `${domain}${baseUrl}${image}`,
-    //   });
-    // }
-
-    return overrideTags;
   },
   data() {
     const { slug } = this.$route.params;
@@ -309,6 +286,7 @@ export default {
     }
 
     return {
+      slug,
       municipalities: ppList.municipalities,
       municipalityNames: ppList.municipalities.map((m) => m.name),
       selectedMunicipality,

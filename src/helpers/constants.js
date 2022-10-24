@@ -3,8 +3,6 @@ export const baseUrl = "/"; // process.env.BASE_URL;
 
 // const notifyUsMailSubject =
 //   "Namera o uvedbi participativnega proračuna v moji občini";
-// const shareContent =
-//   "Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini {query}.";
 
 // const sharePersonM = "{name} obljublja participativni proračun";
 // const sharePersonF = "{name} obljublja participativni proračun";
