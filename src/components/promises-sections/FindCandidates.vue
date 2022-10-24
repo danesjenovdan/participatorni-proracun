@@ -229,14 +229,16 @@
         </div>
         <div class="notify-us">
           <a
-            :href="`mailto:maja@danesjenovdan.si?subject=${notifyUsMailSubject}`"
+            :href="`mailto:maja@danesjenovdan.si?subject=${encodeURIComponent(
+              'Namera o uvedbi participativnega proračuna v moji občini'
+            )}`"
             target="_blank"
           >
             Si župan/-ja in nas želiš obvestiti o svoji nameri ali nam javiti
             popravek morebitne napake na spletni strani?
           </a>
         </div>
-        <PromisesModal
+        <!-- <PromisesModal
           v-if="showModal"
           :share-link="shareLink"
           @close="showModal = false"
@@ -249,7 +251,7 @@
           @email-share="
             onShareClickMunicipality($event, 'mail', showModal[0], showModal[1])
           "
-        />
+        /> -->
       </div>
     </div>
   </div>
@@ -259,9 +261,10 @@
 import { Head as VueHead } from "@vueuse/head";
 import SimpleTypeahead from "vue3-simple-typeahead";
 import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
+import { domain, baseUrl } from "../../helpers/constants.js";
 import ppList from "../../assets/pp_list.json";
 
-import PromisesModal from "../PromisesModal.vue";
+// import PromisesModal from "../PromisesModal.vue";
 // import { openSocialShareLink } from "../../helpers/social.js";
 
 export default {
@@ -269,7 +272,7 @@ export default {
   components: {
     VueHead,
     SimpleTypeahead,
-    PromisesModal,
+    // PromisesModal,
   },
   data() {
     const { slug } = this.$route.params;
@@ -286,13 +289,14 @@ export default {
     }
 
     return {
+      domain,
+      baseUrl,
       slug,
       municipalities: ppList.municipalities,
       municipalityNames: ppList.municipalities.map((m) => m.name),
       selectedMunicipality,
       typeaheadDefaultItem,
       // person: p,
-      // notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
       // showModal: false,
     };
   },

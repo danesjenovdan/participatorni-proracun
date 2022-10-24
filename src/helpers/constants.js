@@ -1,9 +1,6 @@
 export const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
 export const baseUrl = "/"; // process.env.BASE_URL;
 
-// const notifyUsMailSubject =
-//   "Namera o uvedbi participativnega proračuna v moji občini";
-
 // const sharePersonM = "{name} obljublja participativni proračun";
 // const sharePersonF = "{name} obljublja participativni proračun";
 
