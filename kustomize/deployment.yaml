@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pp-volitve-2022
+  labels:
+    app: pp-volitve-2022
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pp-volitve-2022
+  template:
+    metadata:
+      labels:
+        app: pp-volitve-2022
+    spec:
+      containers:
+        - name: pp-volitve-2022
+          image: pp-volitve-2022
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 100m
+            limits:
+              memory: 100Mi
+              cpu: 100m
