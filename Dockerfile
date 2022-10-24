@@ -17,10 +17,21 @@ RUN yarn build
 # ---
 # actual image
 # ---
-FROM nginx:alpine
+FROM node:16-alpine
 
-# copy built files from the 'build' container into the nginx container
-COPY --from=build /app/dist /usr/share/nginx/html
+# set current directory
+WORKDIR /app
 
-# copy custom nginx config to support client-side routing
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+# install production dependencies only
+COPY package.json yarn.lock ./
+ENV NODE_ENV=production
+RUN yarn && yarn cache clean
+
+# copy all needed files from build stage image
+COPY --from=build /app/build ./build
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/server ./server
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]
