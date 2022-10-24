@@ -1,6 +1,6 @@
 import Promises from "./pages/Promises.vue";
 // import Home from "./pages/Home.vue";
-import OgImage from "./pages/OgImage.vue";
+// import OgImage from "./pages/OgImage.vue";
 
 export const routes = [
   {
@@ -18,9 +18,9 @@ export const routes = [
   //   path: "/:query",
   //   component: Home,
   // },
-  {
-    name: "og-image-query",
-    path: "/og-image/:query",
-    component: OgImage,
-  },
+  // {
+  //   name: "og-image-query",
+  //   path: "/og-image/:query",
+  //   component: OgImage,
+  // },
 ];
