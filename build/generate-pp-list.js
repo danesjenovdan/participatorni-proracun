@@ -15,7 +15,8 @@ const ppList = municipalities.municipalities.map((name) => {
     candidates: [
       {
         name: "Dummy 1",
-        proposer: "Lista za Dummy 1",
+        gender: "m",
+        proposer: "Lista volilcev za Dummy 1",
         has_pp: hasPP,
         promised_pp: promisedPP,
       },
@@ -25,7 +26,8 @@ const ppList = municipalities.municipalities.map((name) => {
   if (numCandidates > 1) {
     obj.candidates.push({
       name: "Dummy 2",
-      proposer: "Lista za Dummy 2",
+      gender: "f",
+      proposer: "Lista volilcev za Dummy 2",
       has_pp: !hasPP,
       promised_pp: !promisedPP,
     });
@@ -37,6 +39,6 @@ const ppList = municipalities.municipalities.map((name) => {
 fs.mkdirSync("dist", { recursive: true });
 
 fs.writeFileSync(
-  "dist/pp_list.json",
+  "src/assets/pp_list.json",
   JSON.stringify({ municipalities: ppList }, null, 2)
 );

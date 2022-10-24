@@ -206,7 +206,7 @@
 <script>
 import SimpleTypeahead from "vue3-simple-typeahead";
 import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
-import ppList from "../../../dist/pp_list.json";
+import ppList from "../../assets/pp_list.json";
 
 import PromisesModal from "../PromisesModal.vue";
 // import { openSocialShareLink } from "../../helpers/social.js";

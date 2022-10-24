@@ -1,0 +1,3523 @@
+{
+  "municipalities": [
+    {
+      "name": "Ajdovščina",
+      "slug": "ajdovscina",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Ankaran",
+      "slug": "ankaran",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Apače",
+      "slug": "apace",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Beltinci",
+      "slug": "beltinci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Benedikt",
+      "slug": "benedikt",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Bistrica ob Sotli",
+      "slug": "bistrica-ob-sotli",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Bled",
+      "slug": "bled",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Bloke",
+      "slug": "bloke",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Bohinj",
+      "slug": "bohinj",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Borovnica",
+      "slug": "borovnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Bovec",
+      "slug": "bovec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Braslovče",
+      "slug": "braslovce",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Brda",
+      "slug": "brda",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Brezovica",
+      "slug": "brezovica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Brežice",
+      "slug": "brezice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Cankova",
+      "slug": "cankova",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Celje",
+      "slug": "celje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Cerklje na Gorenjskem",
+      "slug": "cerklje-na-gorenjskem",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Cerknica",
+      "slug": "cerknica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Cerkno",
+      "slug": "cerkno",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Cerkvenjak",
+      "slug": "cerkvenjak",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Cirkulane",
+      "slug": "cirkulane",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Črenšovci",
+      "slug": "crensovci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Črna na Koroškem",
+      "slug": "crna-na-koroskem",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Črnomelj",
+      "slug": "crnomelj",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Destrnik",
+      "slug": "destrnik",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Divača",
+      "slug": "divaca",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Dobje",
+      "slug": "dobje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Dobrepolje",
+      "slug": "dobrepolje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Dobrna",
+      "slug": "dobrna",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Dobrova - Polhov Gradec",
+      "slug": "dobrova-polhov-gradec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Dobrovnik",
+      "slug": "dobrovnik",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Dol pri Ljubljani",
+      "slug": "dol-pri-ljubljani",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Dolenjske Toplice",
+      "slug": "dolenjske-toplice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Domžale",
+      "slug": "domzale",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Dornava",
+      "slug": "dornava",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Dravograd",
+      "slug": "dravograd",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Duplek",
+      "slug": "duplek",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Gorenja vas - Poljane",
+      "slug": "gorenja-vas-poljane",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Gorišnica",
+      "slug": "gorisnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Gorje",
+      "slug": "gorje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Gornja Radgona",
+      "slug": "gornja-radgona",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Gornji Grad",
+      "slug": "gornji-grad",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Gornji Petrovci",
+      "slug": "gornji-petrovci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Grad",
+      "slug": "grad",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Grosuplje",
+      "slug": "grosuplje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Hajdina",
+      "slug": "hajdina",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Hoče - Slivnica",
+      "slug": "hoce-slivnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Hodoš",
+      "slug": "hodos",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Horjul",
+      "slug": "horjul",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Hrastnik",
+      "slug": "hrastnik",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Hrpelje - Kozina",
+      "slug": "hrpelje-kozina",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Idrija",
+      "slug": "idrija",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ig",
+      "slug": "ig",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ilirska Bistrica",
+      "slug": "ilirska-bistrica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ivančna Gorica",
+      "slug": "ivancna-gorica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Izola",
+      "slug": "izola",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Jesenice",
+      "slug": "jesenice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Jezersko",
+      "slug": "jezersko",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Juršinci",
+      "slug": "jursinci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Kamnik",
+      "slug": "kamnik",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kanal ob Soči",
+      "slug": "kanal-ob-soci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kidričevo",
+      "slug": "kidricevo",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Kobarid",
+      "slug": "kobarid",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Kobilje",
+      "slug": "kobilje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kočevje",
+      "slug": "kocevje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Komen",
+      "slug": "komen",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Komenda",
+      "slug": "komenda",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Koper",
+      "slug": "koper",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Kostanjevica na Krki",
+      "slug": "kostanjevica-na-krki",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Kostel",
+      "slug": "kostel",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kozje",
+      "slug": "kozje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kranj",
+      "slug": "kranj",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kranjska Gora",
+      "slug": "kranjska-gora",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Križevci",
+      "slug": "krizevci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Krško",
+      "slug": "krsko",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kungota",
+      "slug": "kungota",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Kuzma",
+      "slug": "kuzma",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Laško",
+      "slug": "lasko",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Lenart",
+      "slug": "lenart",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Lendava",
+      "slug": "lendava",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Litija",
+      "slug": "litija",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Ljubljana",
+      "slug": "ljubljana",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ljubno",
+      "slug": "ljubno",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ljutomer",
+      "slug": "ljutomer",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Log - Dragomer",
+      "slug": "log-dragomer",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Logatec",
+      "slug": "logatec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Loška dolina",
+      "slug": "loska-dolina",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Loški Potok",
+      "slug": "loski-potok",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Lovrenc na Pohorju",
+      "slug": "lovrenc-na-pohorju",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Luče",
+      "slug": "luce",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Lukovica",
+      "slug": "lukovica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Majšperk",
+      "slug": "majsperk",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Makole",
+      "slug": "makole",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Maribor",
+      "slug": "maribor",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Markovci",
+      "slug": "markovci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Medvode",
+      "slug": "medvode",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Mengeš",
+      "slug": "menges",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Metlika",
+      "slug": "metlika",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Mežica",
+      "slug": "mezica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Miklavž na Dravskem polju",
+      "slug": "miklavz-na-dravskem-polju",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Miren - Kostanjevica",
+      "slug": "miren-kostanjevica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Mirna",
+      "slug": "mirna",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Mirna Peč",
+      "slug": "mirna-pec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Mislinja",
+      "slug": "mislinja",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Mokronog - Trebelno",
+      "slug": "mokronog-trebelno",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Moravče",
+      "slug": "moravce",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Moravske Toplice",
+      "slug": "moravske-toplice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Mozirje",
+      "slug": "mozirje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Murska Sobota",
+      "slug": "murska-sobota",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Muta",
+      "slug": "muta",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Naklo",
+      "slug": "naklo",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Nazarje",
+      "slug": "nazarje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Nova Gorica",
+      "slug": "nova-gorica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Novo mesto",
+      "slug": "novo-mesto",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Odranci",
+      "slug": "odranci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Oplotnica",
+      "slug": "oplotnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ormož",
+      "slug": "ormoz",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Osilnica",
+      "slug": "osilnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Pesnica",
+      "slug": "pesnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Piran",
+      "slug": "piran",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Pivka",
+      "slug": "pivka",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Podčetrtek",
+      "slug": "podcetrtek",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Podlehnik",
+      "slug": "podlehnik",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Podvelka",
+      "slug": "podvelka",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Poljčane",
+      "slug": "poljcane",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Polzela",
+      "slug": "polzela",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Postojna",
+      "slug": "postojna",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Prebold",
+      "slug": "prebold",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Preddvor",
+      "slug": "preddvor",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Prevalje",
+      "slug": "prevalje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ptuj",
+      "slug": "ptuj",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Puconci",
+      "slug": "puconci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Rače - Fram",
+      "slug": "race-fram",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Radeče",
+      "slug": "radece",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Radenci",
+      "slug": "radenci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Radlje ob Dravi",
+      "slug": "radlje-ob-dravi",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Radovljica",
+      "slug": "radovljica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ravne na Koroškem",
+      "slug": "ravne-na-koroskem",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Razkrižje",
+      "slug": "razkrizje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Rečica ob Savinji",
+      "slug": "recica-ob-savinji",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Renče - Vogrsko",
+      "slug": "rence-vogrsko",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ribnica",
+      "slug": "ribnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Ribnica na Pohorju",
+      "slug": "ribnica-na-pohorju",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Rogaška Slatina",
+      "slug": "rogaska-slatina",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Rogašovci",
+      "slug": "rogasovci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Rogatec",
+      "slug": "rogatec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Ruše",
+      "slug": "ruse",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Selnica ob Dravi",
+      "slug": "selnica-ob-dravi",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Semič",
+      "slug": "semic",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Sevnica",
+      "slug": "sevnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Sežana",
+      "slug": "sezana",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Slovenj Gradec",
+      "slug": "slovenj-gradec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Slovenska Bistrica",
+      "slug": "slovenska-bistrica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Slovenske Konjice",
+      "slug": "slovenske-konjice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Sodražica",
+      "slug": "sodrazica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Solčava",
+      "slug": "solcava",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Središče ob Dravi",
+      "slug": "sredisce-ob-dravi",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Starše",
+      "slug": "starse",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Straža",
+      "slug": "straza",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Sveta Ana",
+      "slug": "sveta-ana",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Sveta Trojica v Slovenskih goricah",
+      "slug": "sveta-trojica-v-slovenskih-goricah",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Sveti Andraž v Slovenskih goricah",
+      "slug": "sveti-andraz-v-slovenskih-goricah",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Sveti Jurij ob Ščavnici",
+      "slug": "sveti-jurij-ob-scavnici",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Sveti Jurij v Slovenskih goricah",
+      "slug": "sveti-jurij-v-slovenskih-goricah",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Sveti Tomaž",
+      "slug": "sveti-tomaz",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šalovci",
+      "slug": "salovci",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Šempeter - Vrtojba",
+      "slug": "sempeter-vrtojba",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šenčur",
+      "slug": "sencur",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Šentilj",
+      "slug": "sentilj",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šentjernej",
+      "slug": "sentjernej",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šentjur",
+      "slug": "sentjur",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šentrupert",
+      "slug": "sentrupert",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Škocjan",
+      "slug": "skocjan",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Škofja Loka",
+      "slug": "skofja-loka",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Škofljica",
+      "slug": "skofljica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šmarje pri Jelšah",
+      "slug": "smarje-pri-jelsah",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Šmarješke Toplice",
+      "slug": "smarjeske-toplice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šmartno pri Litiji",
+      "slug": "smartno-pri-litiji",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Šmartno ob Paki",
+      "slug": "smartno-ob-paki",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Šoštanj",
+      "slug": "sostanj",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Štore",
+      "slug": "store",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Tabor",
+      "slug": "tabor",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Tišina",
+      "slug": "tisina",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Tolmin",
+      "slug": "tolmin",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Trbovlje",
+      "slug": "trbovlje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Trebnje",
+      "slug": "trebnje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Trnovska vas",
+      "slug": "trnovska-vas",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Trzin",
+      "slug": "trzin",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Tržič",
+      "slug": "trzic",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Turnišče",
+      "slug": "turnisce",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Velenje",
+      "slug": "velenje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Velika Polana",
+      "slug": "velika-polana",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Velike Lašče",
+      "slug": "velike-lasce",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Veržej",
+      "slug": "verzej",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Videm",
+      "slug": "videm",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Vipava",
+      "slug": "vipava",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Vitanje",
+      "slug": "vitanje",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Vodice",
+      "slug": "vodice",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Vojnik",
+      "slug": "vojnik",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Vransko",
+      "slug": "vransko",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Vrhnika",
+      "slug": "vrhnika",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Vuzenica",
+      "slug": "vuzenica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Zagorje ob Savi",
+      "slug": "zagorje-ob-savi",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Zavrč",
+      "slug": "zavrc",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Zreče",
+      "slug": "zrece",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Žalec",
+      "slug": "zalec",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Železniki",
+      "slug": "zelezniki",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Žetale",
+      "slug": "zetale",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        }
+      ]
+    },
+    {
+      "name": "Žiri",
+      "slug": "ziri",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Žirovnica",
+      "slug": "zirovnica",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    },
+    {
+      "name": "Žužemberk",
+      "slug": "zuzemberk",
+      "candidates": [
+        {
+          "name": "Dummy 1",
+          "gender": "m",
+          "proposer": "Lista volilcev za Dummy 1",
+          "has_pp": false,
+          "promised_pp": false
+        },
+        {
+          "name": "Dummy 2",
+          "gender": "f",
+          "proposer": "Lista volilcev za Dummy 2",
+          "has_pp": true,
+          "promised_pp": true
+        }
+      ]
+    }
+  ]
+}

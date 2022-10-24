@@ -1,34 +1,25 @@
 <template>
-  <div class="home">
+  <div class="page page--promises">
     <HeroVideo />
     <LeadText />
     <FindCandidates />
-    <!-- <div class="container">
-      <hr class="separator" />
-      <subscribe-for-updates class="py-5" />
-      <hr class="separator" />
-      <questions class="py-5" />
-    </div>
-    <div class="footer-container">
-      <div class="container">
-        <PromisesFooter />
-      </div>
-    </div> -->
+    <Separator />
+    <SubscribeForUpdates />
+    <Separator />
+    <Questions />
+    <PageFooter />
   </div>
 </template>
 
 <script>
-import FindCandidates from "../components/promises-sections/FindCandidates.vue";
 import HeroVideo from "../components/promises-sections/HeroVideo.vue";
 import LeadText from "../components/promises-sections/LeadText.vue";
-
-// import FindCandidates from "../components/FindPromiseCandidates.vue";
-// import SubscribeForUpdates from "../components/SubscribeForUpdates.vue";
-// import Questions from "../components/Questions.vue";
-// import PromisesFooter from "../components/PromisesFooter.vue";
-
-const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
-const baseUrl = "/"; // process.env.BASE_URL;
+import FindCandidates from "../components/promises-sections/FindCandidates.vue";
+import Separator from "../components/promises-sections/Separator.vue";
+import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
+import Questions from "../components/promises-sections/Questions.vue";
+import PageFooter from "../components/promises-sections/PageFooter.vue";
+import { domain, baseUrl } from "../helpers/constants.js";
 
 export default {
   name: "App",
@@ -36,6 +27,10 @@ export default {
     HeroVideo,
     LeadText,
     FindCandidates,
+    Separator,
+    SubscribeForUpdates,
+    Questions,
+    PageFooter,
   },
   metaInfo: {
     title: "Participativni proračun",
@@ -80,34 +75,14 @@ export default {
       {
         vmid: "og:image",
         property: "og:image",
-        content: `${domain}${baseUrl}og-image.png?v2`,
+        content: `${domain}${baseUrl}og-image.png`,
       },
       {
         vmid: "twitter:image",
         name: "twitter:image",
-        content: `${domain}${baseUrl}og-image.png?v2`,
+        content: `${domain}${baseUrl}og-image.png`,
       },
     ],
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.separator {
-  border-color: #5f235b;
-  border-top-width: 4px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-container {
-  background-color: #27223a;
-}
-
-@media (max-width: 575.98px) {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-</style>

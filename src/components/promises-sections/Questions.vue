@@ -1,36 +1,44 @@
 <template>
-  <div class="row faq-row mx-0">
-    <div class="col-md-12 py-4">
-      <h2>
-        VSE, KAR STE ŽELELI VEDETI O
-        <span><strong>PARTICIPATIVNEM PRORAČUNU</strong></span>
-      </h2>
-    </div>
-    <div class="col-md-6 mt-5 px-0">
-      <template v-for="(qa, i) in stuff" :key="qa.q">
+  <div class="container py-5">
+    <div class="row faq-row mx-0">
+      <div class="col-md-12 py-4">
+        <h2>
+          VSE, KAR STE ŽELELI VEDETI O
+          <span><strong>PARTICIPATIVNEM PRORAČUNU</strong></span>
+        </h2>
+      </div>
+      <div class="col-md-6 mt-5 px-0">
+        <template v-for="(qa, i) in faqs" :key="qa.q">
+          <div
+            :class="['faq-q-box', { active: i === selected }]"
+            @click="selectAnswer(i)"
+          >
+            {{ qa.q }}
+          </div>
+          <!-- eslint-disable vue/no-v-html -->
+          <div
+            v-if="i === selected"
+            class="faq-a-content accordion-answer"
+            v-html="qa.a"
+          />
+          <!-- eslint-enable vue/no-v-html -->
+        </template>
+      </div>
+      <div class="col-md-6 mt-5 px-0">
+        <!-- eslint-disable vue/no-v-html -->
         <div
-          :class="['faq-q-box', { active: i === selected }]"
-          @click="selectAnswer(i)"
-        >
-          {{ qa.q }}
-        </div>
-        <div
-          v-if="i === selected"
-          class="faq-a-content accordion-answer"
-          v-html="qa.a"
+          ref="answerEl"
+          class="faq-a-content column-answer"
+          v-html="faqs[selected].a"
         />
-      </template>
-    </div>
-    <div class="col-md-6 mt-5 px-0">
-      <div class="TODO-vuescroll">
-        <div class="faq-a-content column-answer" v-html="stuff[selected].a" />
+        <!-- eslint-enable vue/no-v-html -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-const stuff = [
+const faqs = [
   {
     q: "Kaj je participativni proračun?",
     a: `
@@ -91,13 +99,14 @@ export default {
   name: "Questions",
   data() {
     return {
-      stuff,
+      faqs,
       selected: 0,
     };
   },
   methods: {
     selectAnswer(i) {
       this.selected = i;
+      this.$refs.answerEl.scrollTop = 0;
     },
   },
 };
@@ -131,6 +140,10 @@ export default {
     position: relative;
     cursor: pointer;
 
+    &:first-child {
+      margin-top: 0;
+    }
+
     &.active {
       background-color: #5f235b;
       color: #fff;
@@ -140,7 +153,7 @@ export default {
     &::after {
       content: "";
       display: block;
-      background-image: url("../assets/arrow-right.svg");
+      background-image: url("../../assets/arrow-right.svg");
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 4rem;
@@ -160,7 +173,7 @@ export default {
   }
 
   .faq-a-content {
-    padding: 1.75rem 2.5rem;
+    padding: 1.25rem 2.5rem;
   }
 
   .accordion-answer {
@@ -173,7 +186,24 @@ export default {
 
   .column-answer {
     display: block;
-    height: 465px;
+    height: 459px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #5f235b #e6e6e6;
+    scrollbar-gutter: stable;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #e6e6e6;
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #5f235b;
+    }
 
     @media (max-width: 992px) {
       height: 420px;

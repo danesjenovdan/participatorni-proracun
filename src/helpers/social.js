@@ -1,5 +1,3 @@
-// import swal from 'sweetalert2';
-
 function openSocialShareLink(
   type,
   shareTitle,
@@ -7,6 +5,7 @@ function openSocialShareLink(
   shareLink,
   shareHashtag
 ) {
+  // TODO: add native share option
   let url = "";
   const title = encodeURIComponent(shareTitle);
   if (type === "fb") {
@@ -20,16 +19,6 @@ function openSocialShareLink(
   } else if (type === "mail") {
     const text = `${shareText} ${shareLink}`;
     url = `mailto:?subject=${title}&body=${text}`;
-    // swal({
-    //   title: 'Kopiraj povezavo:',
-    //   confirmButtonText: 'ZAPRI',
-    //   confirmButtonClass: 'btn',
-    //   buttonsStyling: false,
-    //   html: `
-    //     <input value="${shareLink}" class="form-control" spellcheck="false"
-    //       onclick="this.select()" />`,
-    // });
-    // return;
   }
   window.open(url, "_blank");
 }
