@@ -1,15 +1,7 @@
 <template>
   <div class="big-video">
-    <div class="col-md-12 py-4 my-5">
-      <h2>
-        KAJ JE
-        <span><b>PARTICIPATIVNI PRORAČUN</b></span>
-        ?
-      </h2>
-    </div>
     <div class="embed-responsive embed-responsive-16by9">
       <iframe
-        v-if="true || !showOverlay"
         class="embed-responsive-item"
         src="https://www.youtube.com/embed/7o9GylegDXc"
         frameborder="0"
@@ -20,30 +12,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "BigVideo",
-  components: {},
-  data() {
-    return {
-      showOverlay: true,
-    };
-  },
-  methods: {
-    onPlayClick() {
-      this.showOverlay = false;
-    },
-  },
-};
-</script>
-
 <style lang="scss" scoped>
 .big-video {
   .embed-responsive {
-    // .blurred {
-    //   // filter: blur(4px);
-    // }
-
     video,
     iframe {
       background-color: #000;
@@ -56,7 +27,6 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      // background-color: rgba(#fff, 0.5);
       display: flex;
       align-items: center;
       padding: 4.5rem;
@@ -71,7 +41,6 @@ export default {
         font-size: 3.5rem;
         line-height: 1;
         text-transform: uppercase;
-        // max-width: 700px;
         font-weight: 500;
 
         @media (max-width: 575.98px) {
@@ -100,21 +69,6 @@ export default {
         }
       }
     }
-  }
-
-  h2 {
-    color: #27223a;
-    font-size: 3rem;
-    line-height: 1.1;
-    text-align: center;
-
-    @media (max-width: 1199.98px) {
-      font-size: 2.5rem;
-    }
-
-    /*span {*/
-    /*  color: #f2cc59;*/
-    /*}*/
   }
 }
 </style>

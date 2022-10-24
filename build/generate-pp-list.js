@@ -7,12 +7,31 @@ const ppList = municipalities.municipalities.map((name) => {
   const hasPP = Math.random() < 0.25;
   const promisedPP = hasPP || Math.random() < 0.25;
 
-  return {
+  const numCandidates = Math.random() < 0.5 ? 1 : 2;
+
+  const obj = {
     name,
     slug: slugify(name),
-    has_pp: hasPP,
-    promised_pp: promisedPP,
+    candidates: [
+      {
+        name: "Dummy 1",
+        proposer: "Lista za Dummy 1",
+        has_pp: hasPP,
+        promised_pp: promisedPP,
+      },
+    ],
   };
+
+  if (numCandidates > 1) {
+    obj.candidates.push({
+      name: "Dummy 2",
+      proposer: "Lista za Dummy 2",
+      has_pp: !hasPP,
+      promised_pp: !promisedPP,
+    });
+  }
+
+  return obj;
 });
 
 fs.mkdirSync("dist", { recursive: true });

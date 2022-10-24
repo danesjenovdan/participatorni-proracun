@@ -22,16 +22,14 @@
       </template>
     </div>
     <div class="col-md-6 mt-5 px-0">
-      <vuescroll :ops="scrollOps">
+      <div class="TODO-vuescroll">
         <div class="faq-a-content column-answer" v-html="stuff[selected].a" />
-      </vuescroll>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import vuescroll from "vuescroll";
-
 const stuff = [
   {
     q: "Kaj je participativni proračun?",
@@ -91,32 +89,10 @@ const stuff = [
 
 export default {
   name: "Questions",
-  components: {
-    // vuescroll,
-  },
   data() {
     return {
       stuff,
       selected: 0,
-      scrollOps: {
-        vuescroll: {
-          mode: "native",
-        },
-        scrollPanel: {},
-        rail: {
-          specifyBorderRadius: "0",
-          size: "15px",
-          background: "#e6e6e6",
-          opacity: 1,
-        },
-        bar: {
-          keepShow: true,
-          background: "#5f235b",
-          specifyBorderRadius: "0",
-          size: "15px",
-          minSize: 0.1,
-        },
-      },
     };
   },
   methods: {
