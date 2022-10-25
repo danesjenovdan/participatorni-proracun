@@ -6,5 +6,20 @@ import eslintPlugin from "vite-plugin-eslint";
 // https://vitejs.dev/config/
 export default defineConfig({
   clearScreen: false,
-  plugins: [viteSSR(), vue(), eslintPlugin()],
+  plugins: [
+    viteSSR({
+      build: {
+        clientOptions: {
+          build: {
+            emptyOutDir: true,
+          },
+        },
+        serverOptions: {
+          publicDir: "public",
+        },
+      },
+    }),
+    vue(),
+    eslintPlugin(),
+  ],
 });
