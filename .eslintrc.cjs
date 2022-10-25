@@ -11,7 +11,7 @@ module.exports = {
       "error",
       {
         optionalDependencies: false,
-        devDependencies: ["**/.eslintrc.js", "**/vite.config.js"],
+        devDependencies: ["build/**", "**/.eslintrc.js", "**/vite.config.js"],
       },
     ],
     // allow a single named export in file

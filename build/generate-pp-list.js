@@ -1,7 +1,7 @@
-import fs from "fs";
+import fs from "fs-extra";
 import { slugify } from "./slugify.js";
 
-const municipalities = JSON.parse(fs.readFileSync("build/municipalities.json"));
+const municipalities = fs.readJsonSync("build/municipalities.json");
 const ppList = municipalities.municipalities.map((name) => {
   // TODO: fetch data from api
   const hasPP = Math.random() < 0.25;

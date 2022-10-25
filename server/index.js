@@ -1,5 +1,5 @@
 import "make-promises-safe";
-import { statSync, createReadStream, readFileSync } from "fs";
+import fs from "fs-extra";
 import { resolve, join } from "path";
 import { fastify as createFastify } from "fastify";
 import fastifyStatic from "@fastify/static";
@@ -8,17 +8,13 @@ import serverMain from "../dist/server/main.js";
 const fastify = createFastify({ logger: true, ignoreTrailingSlash: true });
 
 const dist = resolve("./dist");
-const serverPackage = JSON.parse(
-  readFileSync(join(dist, "server/package.json"), "utf-8")
-);
-const ssrManifest = JSON.parse(
-  readFileSync(join(dist, "client/ssr-manifest.json"), "utf-8")
-);
+const serverPackage = fs.readJsonSync(join(dist, "server/package.json"));
+const ssrManifest = fs.readJsonSync(join(dist, "client/ssr-manifest.json"));
 
 // serve all assets
 const assets = serverPackage.ssr.assets || [];
 assets.forEach((asset) => {
-  const assetStat = statSync(join(dist, "client", asset));
+  const assetStat = fs.statSync(join(dist, "client", asset));
   if (assetStat.isDirectory()) {
     fastify.register(fastifyStatic, {
       prefix: `/${asset}/`,
@@ -27,7 +23,7 @@ assets.forEach((asset) => {
     });
   } else {
     fastify.get(`/${asset}`, (request, reply) => {
-      const stream = createReadStream(join(dist, "client", asset));
+      const stream = fs.createReadStream(join(dist, "client", asset));
       reply.send(stream);
     });
   }

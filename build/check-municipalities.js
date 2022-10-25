@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs-extra";
 import path from "path";
 import { slugify } from "./slugify.js";
 
@@ -7,7 +7,7 @@ const IMAGE_DIRS = [
   "src/assets/img-obcine/profilke",
 ];
 
-const municipalities = JSON.parse(fs.readFileSync("build/municipalities.json"));
+const municipalities = fs.readJsonSync("build/municipalities.json");
 const slugs = municipalities.municipalities.map((m) => slugify(m));
 
 // eslint-disable-next-line no-restricted-syntax
