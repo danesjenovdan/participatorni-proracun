@@ -1,44 +1,55 @@
+/* eslint-disable no-console */
+/* eslint-disable no-restricted-syntax */
 import fs from "fs-extra";
 import { slugify } from "./slugify.js";
 
-const municipalities = fs.readJsonSync("build/municipalities.json");
-const ppList = municipalities.municipalities.map((name) => {
-  // TODO: fetch data from api
-  const hasPP = Math.random() < 0.25;
-  const promisedPP = hasPP || Math.random() < 0.25;
+const municipalities = fs.readJsonSync("data/municipalities.json");
+const dataFiles = fs.readdirSync("data/");
+const candidatesFile = dataFiles
+  .filter((f) => f.endsWith("_candidates.json"))
+  .sort((a, b) => a.localeCompare(b) * -1)[0];
+const allCandidates = fs.readJsonSync(`data/${candidatesFile}`);
+// const date = candidatesFile.split("_candidates.json")[0];
 
-  const numCandidates = Math.random() < 0.5 ? 1 : 2;
+async function main() {
+  const all = [];
 
-  const obj = {
-    name,
-    slug: slugify(name),
-    candidates: [
-      {
-        name: "Dummy 1",
-        gender: "m",
-        proposer: "Lista volilcev za Dummy 1",
-        has_pp: hasPP,
-        promised_pp: promisedPP,
-      },
-    ],
-  };
+  for (const m of municipalities.dvk) {
+    const id = m[0];
+    const name = m[2];
+    const candidates = allCandidates.filter((o) => o["Občina"] === name);
 
-  if (numCandidates > 1) {
-    obj.candidates.push({
-      name: "Dummy 2",
-      gender: "f",
-      proposer: "Lista volilcev za Dummy 2",
-      has_pp: !hasPP,
-      promised_pp: !promisedPP,
+    all.push({
+      id,
+      name,
+      slug: slugify(name),
+      candidates: candidates.map((o) => {
+        // FIXME: fetch data from api
+        const hasPP = Math.random() < 0.25;
+        const promisedPP = hasPP || Math.random() < 0.25;
+
+        return {
+          name: o.Ime,
+          slug: slugify(o.Ime),
+          gender: "m", // FIXME: add data
+          proposer: o.Predlagatelj,
+          has_pp: hasPP,
+          promised_pp: promisedPP,
+        };
+      }),
     });
   }
 
-  return obj;
-});
+  fs.writeJsonSync("src/assets/pp_list.json", all, { spaces: 2 });
 
-fs.mkdirSync("dist", { recursive: true });
+  console.log("DONE");
+}
 
-fs.writeFileSync(
-  "src/assets/pp_list.json",
-  JSON.stringify({ municipalities: ppList }, null, 2)
-);
+main()
+  .then(() => {
+    process.exit();
+  })
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
