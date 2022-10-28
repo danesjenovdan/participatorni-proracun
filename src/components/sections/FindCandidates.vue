@@ -215,9 +215,6 @@ function groupBy(arr, key) {
   }, {});
 }
 
-const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
-const baseUrl = "/"; // process.env.BASE_URL;
-
 const notifyUsMailSubject =
   "Namera o uvedbi participativnega proračuna v moji občini";
 
@@ -256,7 +253,7 @@ export default {
       overrideTags.meta.push({
         vmid: "og:url",
         property: "og:url",
-        content: `${domain}${baseUrl}${encodeURIComponent(tr(this.query))}`,
+        content: `${baseUrl}${encodeURIComponent(tr(this.query))}`,
       });
 
       // description
@@ -275,12 +272,12 @@ export default {
       overrideTags.meta.push({
         vmid: "og:image",
         property: "og:image",
-        content: `${domain}${baseUrl}${image}`,
+        content: `${baseUrl}${image}`,
       });
       overrideTags.meta.push({
         vmid: "twitter:image",
         name: "twitter:image",
-        content: `${domain}${baseUrl}${image}`,
+        content: `${baseUrl}${image}`,
       });
     }
 

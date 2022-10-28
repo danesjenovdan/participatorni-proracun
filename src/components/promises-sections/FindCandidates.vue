@@ -44,11 +44,11 @@
     />
     <meta
       property="og:image"
-      :content="`${domain}${baseUrl}generated/og-image-${slug}.png`"
+      :content="`${baseUrl}generated/og-images/og-image-${slug}.png`"
     />
     <meta
       name="twitter:image"
-      :content="`${domain}${baseUrl}generated/og-image-${slug}.png`"
+      :content="`${baseUrl}generated/og-images/og-image-${slug}.png`"
     />
   </VueHead>
   <div class="container">
@@ -261,7 +261,7 @@
 import { Head as VueHead } from "@vueuse/head";
 import SimpleTypeahead from "vue3-simple-typeahead";
 import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
-import { domain, baseUrl } from "../../helpers/constants.js";
+import { baseUrl } from "../../helpers/constants.js";
 import ppList from "../../assets/pp_list.json";
 
 // import PromisesModal from "../PromisesModal.vue";
@@ -289,7 +289,6 @@ export default {
     }
 
     return {
-      domain,
       baseUrl,
       slug,
       municipalities: ppList,

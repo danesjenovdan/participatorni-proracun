@@ -1,5 +1,4 @@
-export const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
-export const baseUrl = "/"; // process.env.BASE_URL;
+export const baseUrl = import.meta.env.BASE_URL || "http://localhost:3000";
 
 // const sharePersonM = "{name} obljublja participativni proračun";
 // const sharePersonF = "{name} obljublja participativni proračun";

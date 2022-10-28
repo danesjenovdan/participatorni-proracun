@@ -53,9 +53,6 @@
 import axios from "axios";
 import { openSocialShareLink } from "../../helpers/social";
 
-// const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
-// const baseUrl = "/"; // process.env.BASE_URL;
-
 export default {
   name: "SocialShare",
   created() {

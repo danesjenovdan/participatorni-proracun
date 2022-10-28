@@ -27,9 +27,6 @@ import SocialShare from "../components/sections/SocialShare.vue";
 import SupportUs from "../components/sections/SupportUs.vue";
 import PageFooter from "../components/sections/PageFooter.vue";
 
-const domain = "http://localhost:3000"; // process.env.NODE_ENV === "production" ? "https://danesjenovdan.si" : "http://localhost:8801";
-const baseUrl = "/"; // process.env.BASE_URL;
-
 export default {
   name: "App",
   components: {
@@ -56,7 +53,7 @@ export default {
       {
         vmid: "og:url",
         property: "og:url",
-        content: `${domain}${baseUrl}`,
+        content: `${baseUrl}`,
       },
       // title
       {
@@ -86,12 +83,12 @@ export default {
       {
         vmid: "og:image",
         property: "og:image",
-        content: `${domain}${baseUrl}pp-og.png?v2`,
+        content: `${baseUrl}pp-og.png?v2`,
       },
       {
         vmid: "twitter:image",
         name: "twitter:image",
-        content: `${domain}${baseUrl}pp-og.png?v2`,
+        content: `${baseUrl}pp-og.png?v2`,
       },
     ],
   },

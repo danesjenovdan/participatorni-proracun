@@ -21,8 +21,8 @@
       name="twitter:description"
       content="Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo."
     />
-    <meta property="og:image" :content="`${domain}${baseUrl}og-image.png`" />
-    <meta name="twitter:image" :content="`${domain}${baseUrl}og-image.png`" />
+    <meta property="og:image" :content="`${baseUrl}og-image.png`" />
+    <meta name="twitter:image" :content="`${baseUrl}og-image.png`" />
   </VueHead>
   <div class="page page--promises">
     <HeroVideo />
@@ -45,5 +45,5 @@ import Separator from "../components/promises-sections/Separator.vue";
 import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
 import Questions from "../components/promises-sections/Questions.vue";
 import PageFooter from "../components/promises-sections/PageFooter.vue";
-import { domain, baseUrl } from "../helpers/constants.js";
+import { baseUrl } from "../helpers/constants.js";
 </script>
