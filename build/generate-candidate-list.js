@@ -42,6 +42,7 @@ async function main() {
         .filter((o) => o.tip === "501")
         .map((o) => ({
           ...o,
+          dat_roj: (o.dat_roj || "").split("T")[0],
           __municipality_id: id,
           __municipality_name: name,
         }));
