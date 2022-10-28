@@ -281,7 +281,7 @@ export default {
     let selectedMunicipality = null;
     let typeaheadDefaultItem = null;
     if (slug) {
-      const municipality = ppList.municipalities.find((m) => m.slug === slug);
+      const municipality = ppList.find((m) => m.slug === slug);
       if (municipality) {
         selectedMunicipality = municipality;
         typeaheadDefaultItem = municipality.name;
@@ -292,8 +292,8 @@ export default {
       domain,
       baseUrl,
       slug,
-      municipalities: ppList.municipalities,
-      municipalityNames: ppList.municipalities.map((m) => m.name),
+      municipalities: ppList,
+      municipalityNames: ppList.map((m) => m.name),
       selectedMunicipality,
       typeaheadDefaultItem,
       // person: p,
@@ -301,16 +301,6 @@ export default {
     };
   },
   computed: {
-    // results() {
-    //   if (!this.data || !this.data.length || !this.query) {
-    //     return [];
-    //   }
-    //   const upperQuery = this.query.toUpperCase();
-    //   return this.data.filter((row) => row.SIMPLE_OBCINA === upperQuery);
-    // },
-    // resultsByMunicipality() {
-    //   return groupBy(this.results, "OBČINA");
-    // },
     // shareLink() {
     //   if (this.showModal && this.showModal.length) {
     //     const row =
@@ -330,9 +320,7 @@ export default {
       return item.toUpperCase();
     },
     typeaheadSelectItem(selected) {
-      const municipality = ppList.municipalities.find(
-        (m) => m.name === selected
-      );
+      const municipality = ppList.find((m) => m.name === selected);
       if (municipality) {
         this.selectedMunicipality = municipality;
         this.$router.push(`/${municipality.slug}`);

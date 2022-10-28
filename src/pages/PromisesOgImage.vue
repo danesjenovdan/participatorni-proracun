@@ -22,7 +22,7 @@ export default {
 
     let selectedMunicipality = null;
     if (slug) {
-      const municipality = ppList.municipalities.find((m) => m.slug === slug);
+      const municipality = ppList.find((m) => m.slug === slug);
       if (municipality) {
         selectedMunicipality = municipality;
       }
