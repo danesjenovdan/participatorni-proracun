@@ -12,6 +12,7 @@ RUN yarn
 
 # copy all files and run build
 COPY . .
+ARG BASE_URL
 RUN yarn build
 
 # ---
