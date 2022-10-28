@@ -1,4 +1,4 @@
-export const baseUrl = import.meta.env.BASE_URL || "http://localhost:3000";
+export const baseUrl = import.meta.env.BASE_URL;
 
 // const sharePersonM = "{name} obljublja participativni proračun";
 // const sharePersonF = "{name} obljublja participativni proračun";

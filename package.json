@@ -7,9 +7,7 @@
     "dev": "vite",
     "build": "vite-ssr build",
     "start": "node server/index.js",
-    "lint": "eslint . --ext js,vue",
-    "generate:pplist": "node build/generate-pp-list.js",
-    "generate:ogimages": "node build/generate-og-images.js"
+    "lint": "eslint . --ext js,vue"
   },
   "dependencies": {
     "@fastify/static": "^6.5.0",
