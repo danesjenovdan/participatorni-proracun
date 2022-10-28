@@ -7,12 +7,12 @@ import { join, resolve } from "path";
 import { spawn } from "child_process";
 import { slugify } from "./slugify.js";
 
-const municipalities = fs.readJsonSync("build/municipalities.json");
-const slugs = municipalities.municipalities.map((name) => slugify(name));
-const generatedDir = resolve("public/generated");
+const municipalities = fs.readJsonSync("data/municipalities.json");
+const slugs = municipalities.dvk.map((m) => slugify(m[2]));
+const generatedDir = resolve("public/generated/og-images");
 fs.mkdirSync(generatedDir, { recursive: true });
 
-console.log("Deleting all generated images!");
+console.log("Deleting all generated og images!");
 fs.emptyDirSync(generatedDir);
 
 // spawn dev server
