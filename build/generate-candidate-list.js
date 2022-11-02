@@ -77,6 +77,12 @@ async function main() {
   const namedCsvData = stringify(namedAll, { header: true });
   fs.writeFileSync(`data/${date}_candidates.csv`, namedCsvData);
 
+  // To generate diff files:
+  // - copy new candidats.csv file to `latest_candidates.csv` to get a good diff on github
+  // - run commands to generate files for only added and removed lines:
+  //     diff -d --color=never data/2022-10-26T16-06-30_candidates.csv data/2022-11-02T13-55-14_candidates.csv | grep -E '^>' | sed 's/^>\s//' > data/latest_candidates_additions.csv
+  //     diff -d --color=never data/2022-10-26T16-06-30_candidates.csv data/2022-11-02T13-55-14_candidates.csv | grep -E '^<' | sed 's/^<\s//' > data/latest_candidates_removals.csv
+
   console.log("DONE");
 }
 
