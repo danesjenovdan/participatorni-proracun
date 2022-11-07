@@ -80,8 +80,8 @@ async function main() {
   // To generate diff files:
   // - copy new candidats.csv file to `latest_candidates.csv` to get a good diff on github
   // - run commands to generate files for only added and removed lines:
-  //     diff -d --color=never data/2022-10-26T16-06-30_candidates.csv data/2022-11-02T13-55-14_candidates.csv | grep -E '^>' | sed 's/^>\s//' > data/latest_candidates_additions.csv
-  //     diff -d --color=never data/2022-10-26T16-06-30_candidates.csv data/2022-11-02T13-55-14_candidates.csv | grep -E '^<' | sed 's/^<\s//' > data/latest_candidates_removals.csv
+  //     diff -d --color=never data/2022-11-04T16-27-29_candidates.csv data/2022-11-07T14-19-49_candidates.csv | grep -E '^>' | sed 's/^>\s//' > data/latest_candidates_additions.csv
+  //     diff -d --color=never data/2022-11-04T16-27-29_candidates.csv data/2022-11-07T14-19-49_candidates.csv | grep -E '^<' | sed 's/^<\s//' > data/latest_candidates_removals.csv
 
   console.log("DONE");
 }
