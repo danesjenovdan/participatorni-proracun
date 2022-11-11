@@ -33,6 +33,7 @@
       <FindCandidates />
     </section>
     <Separator />
+    <Boxes />
     <SubscribeForUpdates />
     <Separator />
     <Questions />
@@ -48,6 +49,7 @@ import HeroVideo from "../components/promises-sections/HeroVideo.vue";
 import LeadText from "../components/promises-sections/LeadText.vue";
 import FindCandidates from "../components/promises-sections/FindCandidates.vue";
 import Separator from "../components/promises-sections/Separator.vue";
+import Boxes from "../components/promises-sections/Boxes.vue";
 import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
 import Questions from "../components/promises-sections/Questions.vue";
 import PageFooter from "../components/promises-sections/PageFooter.vue";
