@@ -25,7 +25,7 @@
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
   font-family: "Barlow", sans-serif;
   font-weight: 900;
   color: #291749;
@@ -35,11 +35,11 @@ h1 {
 
 p {
   font-family: "BioRhyme";
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 44px;
   font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #000000;
 }
 </style>

@@ -33,6 +33,7 @@
   font-style: italic;
   position: absolute;
   min-width: 100%;
+  height: 100%;
   white-space: nowrap;
   /* Apply animation to this element */
   -moz-animation: demo-1 20s linear infinite;
@@ -50,7 +51,7 @@
   h2 {
     margin-bottom: 0;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 

@@ -1,11 +1,15 @@
 <template>
   <div class="container py-5">
     <div class="row faq-row mx-0">
-      <div class="col-md-12 py-4">
+      <div class="col-md-12 py-4 text-center">
         <h2>
-          VSE, KAR STE ŽELELI VEDETI O
-          <span><strong>PARTICIPATIVNEM PRORAČUNU</strong></span>
+          KAJ JE
+          <span><strong>PARTICIPATIVNI PRORAČUN</strong></span
+          >?
         </h2>
+      </div>
+      <div class="col-md-12">
+        <BigVideo />
       </div>
       <div class="col-md-6 mt-5 px-0">
         <template v-for="(qa, i) in faqs" :key="qa.q">
@@ -38,6 +42,8 @@
 </template>
 
 <script>
+import BigVideo from "../BigVideo.vue";
+
 const faqs = [
   {
     q: "Kaj je participativni proračun?",
@@ -114,19 +120,32 @@ export default {
 
 <style lang="scss" scoped>
 .faq-row {
+  // h2 {
+  //   color: #27223a;
+  //   font-size: 3rem;
+  //   line-height: 1.1;
+  //   text-align: center;
+
+  //   @media (max-width: 1199.98px) {
+  //     font-size: 2.5rem;
+  //   }
+
+  //   span {
+  //     color: #e26e53;
+  //   }
+  // }
+
   h2 {
-    color: #27223a;
-    font-size: 3rem;
-    line-height: 1.1;
-    text-align: center;
+    font-size: 50px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    color: #291749;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
 
-    @media (max-width: 1199.98px) {
-      font-size: 2.5rem;
-    }
-
-    span {
-      color: #e26e53;
-    }
+  h2 span {
+    color: #6037a9;
   }
 
   .faq-q-box {

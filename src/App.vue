@@ -21,7 +21,7 @@ body {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .container {
     max-width: 1350px;
   }
