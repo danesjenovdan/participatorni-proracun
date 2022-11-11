@@ -28,13 +28,15 @@
     <Header />
     <ScrollingBanner />
     <!-- <HeroVideo /> -->
-    <section style="background-color: #fff; outline: 1px solid gold">
+    <section style="background-color: #fff">
       <LeadText />
       <FindCandidates />
     </section>
     <Separator />
     <Boxes />
-    <SubscribeForUpdates />
+    <section style="background-color: #291749">
+      <SubscribeForUpdates />
+    </section>
     <Separator />
     <Questions />
     <PageFooter />

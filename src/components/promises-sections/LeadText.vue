@@ -1,25 +1,54 @@
 <template>
-  <div class="row justify-content-center pb-5">
-    <div class="col-md-10 mt-5">
-      <p class="lead text-center mt-5 px-3">
-        Dobili smo <strong>XXX</strong> zaobljub, od tega je
-        <strong>XX</strong> kandidatov in kandidatk, ki so obljubili uvedbo
-        participativnega proračuna, zmagalo na volitvah.
-      </p>
-      <p class="lead text-center mt-5 px-3">
-        Delo županj in županov bomo spremljali in od njih zahtevali uresničitev
-        predvolilne obljube.
-      </p>
+  <div class="container">
+    <div class="row lead-text-row justify-content-center">
+      <div class="col">
+        <h2>
+          Zbiramo zaveze županskih kandidatov, da bodo v primeru zmage na
+          lokalnih volitvah <em>uvedli participativni proračun</em>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+          lacus vel facilisis.
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.lead {
-  font-size: 1.3rem;
+.lead-text-row {
+  padding: 110px 0;
 
-  strong {
-    font-weight: 700;
+  .col {
+    max-width: 1100px;
+
+    h2 {
+      margin-bottom: 0;
+      font-size: 50px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #000000;
+      text-align: center;
+      text-transform: uppercase;
+
+      em {
+        font-weight: 900;
+        font-style: normal;
+        color: #6037a9;
+      }
+    }
+
+    p {
+      margin-top: 36px;
+      margin-bottom: 0;
+      font-family: "BioRhyme";
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: center;
+      color: #272239;
+    }
   }
 }
 </style>
