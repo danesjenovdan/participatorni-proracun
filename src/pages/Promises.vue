@@ -25,6 +25,8 @@
     <meta name="twitter:image" :content="`${baseUrl}og-image.png`" />
   </VueHead>
   <div class="page page--promises">
+    <Header />
+    <ScrollingBanner />
     <HeroVideo />
     <section style="background-color: #fff; outline: 1px solid gold">
       <LeadText />
@@ -40,6 +42,8 @@
 
 <script setup>
 import { Head as VueHead } from "@vueuse/head";
+import Header from "../components/promises-sections/Header.vue";
+import ScrollingBanner from "../components/promises-sections/ScrollingBanner.vue";
 import HeroVideo from "../components/promises-sections/HeroVideo.vue";
 import LeadText from "../components/promises-sections/LeadText.vue";
 import FindCandidates from "../components/promises-sections/FindCandidates.vue";
