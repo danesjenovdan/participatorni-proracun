@@ -26,8 +26,10 @@
   </VueHead>
   <div class="page page--promises">
     <HeroVideo />
-    <LeadText />
-    <FindCandidates />
+    <section style="background-color: #fff; outline: 1px solid gold">
+      <LeadText />
+      <FindCandidates />
+    </section>
     <Separator />
     <SubscribeForUpdates />
     <Separator />
