@@ -8,7 +8,7 @@
         "name": "Jožko Premrn",
         "slug": "jozko-premrn",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -16,15 +16,15 @@
         "name": "Marjan Poljšak",
         "slug": "marjan-poljsak",
         "gender": "m",
-        "proposer": "SOCIALISTIČNA PARTIJA SLOVENIJE ",
+        "proposer": "SOCIALISTIČNA PARTIJA SLOVENIJE",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
-        "name": "Nada Pirjevec",
+        "name": "mag. Nada Pirjevec",
         "slug": "nada-pirjevec",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -32,9 +32,9 @@
         "name": "Tadej Beočanin",
         "slug": "tadej-beocanin",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": false,
-        "promised_pp": false
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": true,
+        "promised_pp": true
       }
     ]
   },
@@ -47,9 +47,9 @@
         "name": "Marko Virag",
         "slug": "marko-virag",
         "gender": "m",
-        "proposer": "Ines Forjan in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Ines Forjan in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -62,7 +62,7 @@
         "name": "Anton Mežan",
         "slug": "anton-mezan",
         "gender": "m",
-        "proposer": "Iztok Pesrl in skupina volivcev ",
+        "proposer": "Iztok Pesrl in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -70,17 +70,17 @@
         "name": "Janez Fajfar",
         "slug": "janez-fajfar",
         "gender": "m",
-        "proposer": "Janez Klemenčič in skupina volivcev ",
+        "proposer": "Janez Klemenčič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Romana Purkart",
         "slug": "romana-purkart",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -93,24 +93,24 @@
         "name": "Bojan Traven",
         "slug": "bojan-traven",
         "gender": "m",
-        "proposer": "Doris Sodja in skupina volivcev ",
+        "proposer": "Doris Sodja in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Jože Sodja",
         "slug": "joze-sodja",
         "gender": "m",
-        "proposer": "Peter Klanšček in skupina volivcev ",
-        "has_pp": false,
-        "promised_pp": false
+        "proposer": "Peter Klanšček in skupina volivcev",
+        "has_pp": true,
+        "promised_pp": true
       },
       {
         "name": "Miroslav Sodja",
         "slug": "miroslav-sodja",
         "gender": "m",
-        "proposer": "LEVICA ",
-        "has_pp": true,
+        "proposer": "LEVICA",
+        "has_pp": false,
         "promised_pp": true
       }
     ]
@@ -124,7 +124,7 @@
         "name": "Boštjan Zakrajšek",
         "slug": "bostjan-zakrajsek",
         "gender": "m",
-        "proposer": "JANEZ NOVAK IN SKUPINA VOLIVCEV ",
+        "proposer": "JANEZ NOVAK IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -132,17 +132,17 @@
         "name": "Matjaž Ocepek",
         "slug": "matjaz-ocepek",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Peter Črnilogar",
         "slug": "peter-crnilogar",
         "gender": "m",
-        "proposer": "ANTON ŽERJAV IN SKUPINA VOLIVCEV ",
+        "proposer": "ANTON ŽERJAV IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -155,15 +155,15 @@
         "name": "Adis Hrovat",
         "slug": "adis-hrovat",
         "gender": "m",
-        "proposer": "Alen Hrovat in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Alen Hrovat in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Kristjan Omerović",
         "slug": "kristjan-omerovic",
         "gender": "m",
-        "proposer": "Matej Bradaškja in skupina volivcev ",
+        "proposer": "Matej Bradaškja in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -171,7 +171,7 @@
         "name": "Siniša Germovšek",
         "slug": "sinisa-germovsek",
         "gender": "m",
-        "proposer": "ZELENI SLOVENIJE ",
+        "proposer": "ZELENI SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       },
@@ -179,7 +179,7 @@
         "name": "Valter Mlekuž",
         "slug": "valter-mlekuz",
         "gender": "m",
-        "proposer": "Adem Omerović in skupina volivcev ",
+        "proposer": "Adem Omerović in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -194,23 +194,23 @@
         "name": "Franc Mužič",
         "slug": "franc-muzic",
         "gender": "m",
-        "proposer": "Klemen Bajt in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Klemen Bajt in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
-        "name": "Karol Peter Peršolja",
+        "name": "dr. Karol Peter Peršolja",
         "slug": "karol-peter-persolja",
         "gender": "m",
-        "proposer": "Tanja Kodermac in skupina volivcev ",
+        "proposer": "Tanja Kodermac in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Teja Jelina",
         "slug": "teja-jelina",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -225,7 +225,7 @@
         "name": "Metod Ropret",
         "slug": "metod-ropret",
         "gender": "m",
-        "proposer": "skupina volivcev  ",
+        "proposer": "skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -240,22 +240,22 @@
         "name": "Igor Zorčič",
         "slug": "igor-zorcic",
         "gender": "m",
-        "proposer": "RADE ILJAŽ IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "RADE ILJAŽ IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Ivan Molan",
         "slug": "ivan-molan",
         "gender": "m",
-        "proposer": "DRAŽEN LEVOJEVIĆ IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "DRAŽEN LEVOJEVIĆ IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Mojca Florjanič",
         "slug": "mojca-florjanic",
-        "gender": "m",
+        "gender": "f",
         "proposer": "ZBOR ČLANOV LIO BREŽICE GIBANJE SVOBODA, LEVICA LO SP. POSAVJE, VOLILNA KONVENCIJA SD BREŽICE, OO DESUS BREŽICE ",
         "has_pp": false,
         "promised_pp": false
@@ -271,7 +271,7 @@
         "name": "Franc Horvat",
         "slug": "franc-horvat",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": true
       },
@@ -279,7 +279,7 @@
         "name": "Miro Berke",
         "slug": "miro-berke",
         "gender": "m",
-        "proposer": "BORUT ANŽELJ IN SKUPINA VOLIVCEV ",
+        "proposer": "BORUT ANŽELJ IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -294,7 +294,7 @@
         "name": "Bojan Šrot",
         "slug": "bojan-srot",
         "gender": "m",
-        "proposer": "CELJSKA ŽUPANOVA LISTA SLOVENIJE ",
+        "proposer": "CELJSKA ŽUPANOVA LISTA SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       },
@@ -302,15 +302,15 @@
         "name": "Matija Kovač",
         "slug": "matija-kovac",
         "gender": "m",
-        "proposer": "GREGOR DELEJA IN SKUPINA VOLIVCEV ",
+        "proposer": "GREGOR DELEJA IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Primož Brvar",
         "slug": "primoz-brvar",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -318,7 +318,7 @@
         "name": "Sandi Sendelbah",
         "slug": "sandi-sendelbah",
         "gender": "m",
-        "proposer": "Lista Za Celje ",
+        "proposer": "Lista za Celje",
         "has_pp": false,
         "promised_pp": false
       },
@@ -326,8 +326,8 @@
         "name": "Uroš Lesjak",
         "slug": "uros-lesjak",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
         "promised_pp": true
       }
     ]
@@ -336,7 +336,24 @@
     "id": 12,
     "name": "Cerklje na Gorenjskem",
     "slug": "cerklje-na-gorenjskem",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Franc Čebulj",
+        "slug": "franc-cebulj",
+        "gender": "m",
+        "proposer": "Iztok Čebulj in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "Luka Štumberger",
+        "slug": "luka-stumberger",
+        "gender": "m",
+        "proposer": "Nataša Ropotar in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": true
+      }
+    ]
   },
   {
     "id": 13,
@@ -347,31 +364,31 @@
         "name": "Bogdan Zevnik",
         "slug": "bogdan-zevnik",
         "gender": "m",
-        "proposer": "Vincenc Steržaj in skupina volivcev  ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Vincenc Steržaj in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Damijana Škrlj",
         "slug": "damijana-skrlj",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Domen Petan",
         "slug": "domen-petan",
         "gender": "m",
-        "proposer": "NAŠA NOTRANJSKA ",
+        "proposer": "NAŠA NOTRANJSKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Marko Rupar",
         "slug": "marko-rupar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -379,7 +396,7 @@
         "name": "Rihard Braniselj",
         "slug": "rihard-braniselj",
         "gender": "m",
-        "proposer": "ANTON LAH IN SKUPINA VOLIVCEV ",
+        "proposer": "ANTON LAH IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -389,7 +406,40 @@
     "id": 14,
     "name": "Cerkno",
     "slug": "cerkno",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Gašper Uršič",
+        "slug": "gasper-ursic",
+        "gender": "m",
+        "proposer": "DANILO OBID IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "Ivan Mavri",
+        "slug": "ivan-mavri",
+        "gender": "m",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": true
+      },
+      {
+        "name": "Silvo Jeram",
+        "slug": "silvo-jeram",
+        "gender": "m",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "Urška Lahajnar Ubajiogu",
+        "slug": "urska-lahajnar-ubajiogu",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -399,9 +449,9 @@
       {
         "name": "Vera Markoja",
         "slug": "vera-markoja",
-        "gender": "m",
+        "gender": "f",
         "proposer": "Dušan Utroša in skupina volivcev \"Glas ljudstva - neodvisna lista\" ",
-        "has_pp": false,
+        "has_pp": true,
         "promised_pp": false
       }
     ]
@@ -413,17 +463,17 @@
     "candidates": [
       {
         "name": "ALEŠ PRAPROTNIK mag.",
-        "slug": "ales-praprotnik-mag",
+        "slug": "ales-praprotnik",
         "gender": "m",
-        "proposer": "Eva Praprotnik in skupina volilvcev ",
+        "proposer": "Eva Praprotnik in skupina volilvcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "mag. ROMANA LESJAK",
-        "slug": "mag-romana-lesjak",
-        "gender": "m",
-        "proposer": "Adrijana Kamnik in skupina volivcev ",
+        "slug": "romana-lesjak",
+        "gender": "f",
+        "proposer": "Adrijana Kamnik in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -431,7 +481,7 @@
         "name": "MARJAN KODRUN",
         "slug": "marjan-kodrun",
         "gender": "m",
-        "proposer": "Marija Kodrun in skupina volivcev ",
+        "proposer": "Marija Kodrun in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -446,17 +496,17 @@
         "name": "Andrej Kavšek",
         "slug": "andrej-kavsek",
         "gender": "m",
-        "proposer": "Vladimir Radovič in skupina volivcev ",
+        "proposer": "Vladimir Radovič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Mojca Čemas Stjepanovič",
         "slug": "mojca-cemas-stjepanovic",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA - zbor članov Lokalnega iniciativnega odbora Bela krajina ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -469,7 +519,7 @@
         "name": "Branko Horvat",
         "slug": "branko-horvat",
         "gender": "m",
-        "proposer": "LISTA ZA URBAN - Adriana Horvat in skupina volivcev ",
+        "proposer": "LISTA ZA URBAN - Adriana Horvat in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -477,15 +527,15 @@
         "name": "Robert Simonič",
         "slug": "robert-simonic",
         "gender": "m",
-        "proposer": "Janez Simonič in skupina volivcev - NAjPREJ DESTRNIK ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Janez Simonič in skupina volivcev - NAjPREJ DESTRNIK",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Vlasta Tetičkovič-Toplak",
         "slug": "vlasta-tetickovic-toplak",
-        "gender": "m",
-        "proposer": "SDS IN SLS - DRUGAČNI & POVEZANI ",
+        "gender": "f",
+        "proposer": "SDS IN SLS - DRUGAČNI & POVEZANI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -499,8 +549,8 @@
       {
         "name": "Alenka Štrucl Dovgan",
         "slug": "alenka-strucl-dovgan",
-        "gender": "m",
-        "proposer": "Jože Femc ",
+        "gender": "f",
+        "proposer": "Jože Femc",
         "has_pp": true,
         "promised_pp": true
       },
@@ -508,15 +558,15 @@
         "name": "Mario Benkoč",
         "slug": "mario-benkoc",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Robert De Lucia",
         "slug": "robert-de-lucia",
         "gender": "m",
-        "proposer": "Dragan Vujović ",
+        "proposer": "Dragan Vujović",
         "has_pp": false,
         "promised_pp": false
       }
@@ -531,9 +581,9 @@
         "name": "Janez Pavlin",
         "slug": "janez-pavlin",
         "gender": "m",
-        "proposer": "Janez Pavlin in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Janez Pavlin in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -546,7 +596,7 @@
         "name": "Franc Setnikar",
         "slug": "franc-setnikar",
         "gender": "m",
-        "proposer": "Janko Dolinar in skupina volivcev ",
+        "proposer": "Janko Dolinar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -554,9 +604,9 @@
         "name": "Jure Dolinar",
         "slug": "jure-dolinar",
         "gender": "m",
-        "proposer": "Matej Avbelj in skupina volivcev ",
+        "proposer": "Matej Avbelj in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -564,7 +614,16 @@
     "id": 22,
     "name": "Dol pri Ljubljani",
     "slug": "dol-pri-ljubljani",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Željko Savič",
+        "slug": "zeljko-savic",
+        "gender": "m",
+        "proposer": "Prof. dr. Janez Grad in skupina volivcev",
+        "has_pp": true,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -575,47 +634,47 @@
         "name": "Boštjan Deželak",
         "slug": "bostjan-dezelak",
         "gender": "m",
-        "proposer": "LTD - TONI DRAGAR - LISTA ZA VSE GENERACIJE ",
+        "proposer": "LTD - TONI DRAGAR - LISTA ZA VSE GENERACIJE",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Fani (Frančiška) Rožič Novak",
-        "slug": "fani-franciska-rozic-novak",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "slug": "fani-rozic-novak",
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "mag. Renata Kosec",
-        "slug": "mag-renata-kosec",
-        "gender": "m",
-        "proposer": "LISTA RENATE KOSEC - lista povezovanja in sodelovanja ",
+        "slug": "renata-kosec",
+        "gender": "f",
+        "proposer": "LISTA RENATE KOSEC - lista povezovanja in sodelovanja",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Matej Oražem",
         "slug": "matej-orazem",
         "gender": "m",
-        "proposer": "ANJA ORAŽEM IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "ANJA ORAŽEM IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Miroslav Šinkovec",
         "slug": "miroslav-sinkovec",
         "gender": "m",
-        "proposer": "NAPREJ SLOVENIJA ",
+        "proposer": "NAPREJ SLOVENIJA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Tadeja Savnik",
         "slug": "tadeja-savnik",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -630,23 +689,23 @@
         "name": "Drago Ciglar",
         "slug": "drago-ciglar",
         "gender": "m",
-        "proposer": "Karmen Ciglar in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Karmen Ciglar in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Janko Merc",
         "slug": "janko-merc",
         "gender": "m",
-        "proposer": "Marjan Hrga in skupina volivcev ",
+        "proposer": "Marjan Hrga in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Matej Zorko",
         "slug": "matej-zorko",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -654,15 +713,15 @@
         "name": "Miran Prigl",
         "slug": "miran-prigl",
         "gender": "m",
-        "proposer": "SLOVENSKA NACIONALNA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA NACIONALNA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Rajko Janžekovič",
         "slug": "rajko-janzekovic",
         "gender": "m",
-        "proposer": "Dominik Janžekovič in skupina volivcev ",
+        "proposer": "Dominik Janžekovič in skupina volivcev",
         "has_pp": false,
         "promised_pp": true
       },
@@ -670,15 +729,15 @@
         "name": "Sandi Žuran",
         "slug": "sandi-zuran",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Stanislav Ciglar",
         "slug": "stanislav-ciglar",
         "gender": "m",
-        "proposer": "ZELENI SLOVENIJE ",
+        "proposer": "ZELENI SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       },
@@ -686,9 +745,9 @@
         "name": "Viljem Mar",
         "slug": "viljem-mar",
         "gender": "m",
-        "proposer": "Špela Mar in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Špela Mar in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -701,39 +760,39 @@
         "name": "Anton Preksavec",
         "slug": "anton-preksavec",
         "gender": "m",
-        "proposer": "Robert PLIMON in skupina volivcev ",
+        "proposer": "Robert PLIMON in skupina volivcev",
         "has_pp": true,
         "promised_pp": true
       },
       {
         "name": "Marjeta Podgoršek Rek",
         "slug": "marjeta-podgorsek-rek",
-        "gender": "m",
-        "proposer": "Maksimiljan KOTNIK in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Maksimiljan KOTNIK in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Rok Kotnik",
         "slug": "rok-kotnik",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Simon Šeneker",
         "slug": "simon-seneker",
         "gender": "m",
-        "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Sonja Kemperl",
         "slug": "sonja-kemperl",
-        "gender": "m",
-        "proposer": "Lidija POŽGAN in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Lidija POŽGAN in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -748,7 +807,7 @@
         "name": "Mitja Horvat",
         "slug": "mitja-horvat",
         "gender": "m",
-        "proposer": "Majda Zajc in skupina volivcev ",
+        "proposer": "Majda Zajc in skupina volivcev",
         "has_pp": false,
         "promised_pp": true
       }
@@ -761,11 +820,11 @@
     "candidates": [
       {
         "name": "Milan (Milan Janez) Čadež",
-        "slug": "milan-milan-janez-cadez",
+        "slug": "milan-cadez",
         "gender": "m",
-        "proposer": "KONFERENCA MESTNEGA/OBČINSKEGA ODBORA SLOVENSKE DEMOKRATSKE STRANKE GORENJA VAS - POLJANE ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -778,15 +837,15 @@
         "name": "Borut Kolar",
         "slug": "borut-kolar",
         "gender": "m",
-        "proposer": "Bernardka Kolar in skupina volivcev ",
+        "proposer": "Bernardka Kolar in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Janko Erhatič",
         "slug": "janko-erhatic",
         "gender": "m",
-        "proposer": "Florijan Erhatič in skupina volivcev ",
+        "proposer": "Florijan Erhatič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -794,7 +853,7 @@
         "name": "Janko Ranfl",
         "slug": "janko-ranfl",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -802,7 +861,7 @@
         "name": "Jožef Petek",
         "slug": "jozef-petek",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA  ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -817,41 +876,41 @@
         "name": "Boris Jaušovec",
         "slug": "boris-jausovec",
         "gender": "m",
-        "proposer": "IGOR PIVEC IN SKUPINA VOLIVCEV ",
+        "proposer": "IGOR PIVEC IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "David Roškar",
         "slug": "david-roskar",
         "gender": "m",
-        "proposer": "STANISLAV ROJKO IN SKUPINA VOLIVCEV ",
+        "proposer": "STANISLAV ROJKO IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Franc Fartek",
         "slug": "franc-fartek",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Mag. Marjan Žula",
-        "slug": "mag-marjan-zula",
+        "slug": "marjan-zula",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Urška Mauko Tuš",
         "slug": "urska-mauko-tus",
-        "gender": "m",
-        "proposer": "ALEŠ DOKL IN SKUPINA VOLIVCEV ",
+        "gender": "f",
+        "proposer": "ALEŠ DOKL IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -864,7 +923,7 @@
         "name": "Anton Špeh",
         "slug": "anton-speh",
         "gender": "m",
-        "proposer": "Aljaž Špeh in skupina volivcev ",
+        "proposer": "Aljaž Špeh in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -879,7 +938,7 @@
         "name": "Bojan Potočnik",
         "slug": "bojan-potocnik",
         "gender": "m",
-        "proposer": "Branko Gomboc in skupina volivcev ",
+        "proposer": "Branko Gomboc in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -887,9 +946,9 @@
         "name": "Franc Šlihthuber",
         "slug": "franc-slihthuber",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -902,24 +961,24 @@
         "name": "Boštjan Boh",
         "slug": "bostjan-boh",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "dr.  Peter Verlič",
-        "slug": "dr-peter-verlic",
+        "slug": "peter-verlic",
         "gender": "m",
-        "proposer": "SDS - SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI N.Si ",
+        "proposer": "SDS - SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI N.Si",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Miha Legin",
         "slug": "miha-legin",
         "gender": "m",
-        "proposer": "Nataša Furlan Rusić in skupina volilcev ",
-        "has_pp": true,
+        "proposer": "Nataša Furlan Rusić in skupina volilcev",
+        "has_pp": false,
         "promised_pp": true
       }
     ]
@@ -933,7 +992,7 @@
         "name": "Albin Gubič",
         "slug": "albin-gubic",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA - konferenca občinskega odbora Šalovci ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA - konferenca občinskega odbora Šalovci",
         "has_pp": false,
         "promised_pp": false
       },
@@ -941,9 +1000,9 @@
         "name": "Iztok Fartek",
         "slug": "iztok-fartek",
         "gender": "m",
-        "proposer": "Mihaela KALAMAR in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Mihaela KALAMAR in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -956,7 +1015,7 @@
         "name": "Gregor Pajić",
         "slug": "gregor-pajic",
         "gender": "m",
-        "proposer": "Gregor Pajić in skupina volivcev - Lista Gregorja Pajića ",
+        "proposer": "Gregor Pajić in skupina volivcev - Lista Gregorja Pajića",
         "has_pp": false,
         "promised_pp": false
       },
@@ -964,7 +1023,7 @@
         "name": "Marko Funkl",
         "slug": "marko-funkl",
         "gender": "m",
-        "proposer": "Marko Funkl in skupina volivcev - Lista Naš Hrastnik ",
+        "proposer": "Marko Funkl in skupina volivcev - Lista Naš Hrastnik",
         "has_pp": true,
         "promised_pp": true
       },
@@ -972,9 +1031,9 @@
         "name": "Žiga Kovač",
         "slug": "ziga-kovac",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -986,18 +1045,18 @@
       {
         "name": "Saša Likavec Svetelšek",
         "slug": "sasa-likavec-svetelsek",
-        "gender": "m",
-        "proposer": "Janez Likavec in skupina volivcev ",
-        "has_pp": false,
+        "gender": "f",
+        "proposer": "Janez Likavec in skupina volivcev",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Vasja Ivančič",
         "slug": "vasja-ivancic",
         "gender": "m",
-        "proposer": "Danijel Petričević in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Danijel Petričević in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1010,25 +1069,25 @@
         "name": "Branko Lapajne",
         "slug": "branko-lapajne",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Tomaž Vencelj",
         "slug": "tomaz-vencelj",
         "gender": "m",
-        "proposer": "ERIK LOGAR IN SKUPINA VOLIVCEV ",
+        "proposer": "ERIK LOGAR IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Vesna Fašink",
         "slug": "vesna-fasink",
-        "gender": "m",
-        "proposer": "NATALIJA KOVAČ JEREB IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "NATALIJA KOVAČ JEREB IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1041,23 +1100,23 @@
         "name": "Anton Modic",
         "slug": "anton-modic",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Boris Pirc",
         "slug": "boris-pirc",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Mirko Merzel",
         "slug": "mirko-merzel",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1065,17 +1124,17 @@
         "name": "Mitja Glavnik",
         "slug": "mitja-glavnik",
         "gender": "m",
-        "proposer": "KONKRETNO ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "KONKRETNO",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Zlatko Usenik",
         "slug": "zlatko-usenik",
         "gender": "m",
-        "proposer": "LISTA ZLATKA USENIKA ZA NAPREDEK OBČINE IG ",
+        "proposer": "LISTA ZLATKA USENIKA ZA NAPREDEK OBČINE IG",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -1088,15 +1147,15 @@
         "name": "Andrej Černigoj",
         "slug": "andrej-cernigoj",
         "gender": "m",
-        "proposer": "OO N.Si ILIRSKA BISTRICA  ",
+        "proposer": "OO N.Si ILIRSKA BISTRICA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "dr. Gregor Kovačič",
-        "slug": "dr-gregor-kovacic",
+        "slug": "gregor-kovacic",
         "gender": "m",
-        "proposer": "dr. Gregor Kovačič in skupina volivcev ",
+        "proposer": "dr. Gregor Kovačič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1104,7 +1163,7 @@
         "name": "Dušan Grbec",
         "slug": "dusan-grbec",
         "gender": "m",
-        "proposer": "OO SDS ILIRSKA BISTRICA ",
+        "proposer": "OO SDS ILIRSKA BISTRICA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1112,7 +1171,7 @@
         "name": "Emil Rojc",
         "slug": "emil-rojc",
         "gender": "m",
-        "proposer": "Aleš Rojc ",
+        "proposer": "Aleš Rojc",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1124,18 +1183,18 @@
     "slug": "ivancna-gorica",
     "candidates": [
       {
-        "name": "Dušan Strnad",
-        "slug": "dusan-strnad",
+        "name": "dr. Nina Strah",
+        "slug": "nina-strah",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
       {
-        "name": "Nina Strah",
-        "slug": "nina-strah",
-        "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "name": "Dušan Strnad",
+        "slug": "dusan-strnad",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1143,7 +1202,7 @@
         "name": "Vojko Adamič",
         "slug": "vojko-adamic",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1151,7 +1210,7 @@
         "name": "Žiga Erčulj",
         "slug": "ziga-erculj",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1166,16 +1225,16 @@
         "name": "Danilo Markočič",
         "slug": "danilo-markocic",
         "gender": "m",
-        "proposer": "IŽL - Izolska županova lista ",
-        "has_pp": false,
+        "proposer": "IŽL - Izolska županova lista",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Milan Bogatič",
         "slug": "milan-bogatic",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA  ",
-        "has_pp": true,
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
         "promised_pp": true
       },
       {
@@ -1184,21 +1243,21 @@
         "gender": "m",
         "proposer": "Lista Kobal Mitja, Lista LKM ",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Mojca Mahajnc",
         "slug": "mojca-mahajnc",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Romina Kralj",
         "slug": "romina-kralj",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1206,8 +1265,8 @@
         "name": "Vasilij Žbogar",
         "slug": "vasilij-zbogar",
         "gender": "m",
-        "proposer": "Lista Vasilija Žbogarja ",
-        "has_pp": true,
+        "proposer": "Lista Vasilija Žbogarja",
+        "has_pp": false,
         "promised_pp": true
       }
     ]
@@ -1221,7 +1280,7 @@
         "name": "Andrej Vastl",
         "slug": "andrej-vastl",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1229,33 +1288,33 @@
         "name": "Blaž Račič",
         "slug": "blaz-racic",
         "gender": "m",
-        "proposer": "ŽUPANOVA LISTA ZA NAŠE JESENICE ",
-        "has_pp": false,
+        "proposer": "ZORAN RAČIČ IN SKUPINA VOLIVCEV \"ŽUPANOVA LISTA ZA NAŠE JESENICE\" ",
+        "has_pp": true,
         "promised_pp": true
       },
       {
         "name": "Eva Mlakar",
         "slug": "eva-mlakar",
-        "gender": "m",
-        "proposer": "NEODVISNA LISTA ZA BOLJŠE JESENICE  ",
+        "gender": "f",
+        "proposer": "NEODVISNA LISTA ZA BOLJŠE JESENICE",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Peter Bohinec",
-        "slug": "mag-peter-bohinec",
+        "slug": "peter-bohinec",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Sabina Mulalić",
         "slug": "sabina-mulalic",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1268,25 +1327,25 @@
         "name": "Alojz Herga",
         "slug": "alojz-herga",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Robert Horvat",
         "slug": "robert-horvat",
         "gender": "m",
-        "proposer": "PAVLIN DARKO IN SKUPINA VOLIVCEV - POVEZANI ZA JURŠINCE ",
+        "proposer": "PAVLIN DARKO IN SKUPINA VOLIVCEV - POVEZANI ZA JURŠINCE",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Vesna Krampelj",
         "slug": "vesna-krampelj",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -1298,8 +1357,8 @@
       {
         "name": "Maja Aleksovska-Lesjak",
         "slug": "maja-aleksovska-lesjak",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1307,17 +1366,17 @@
         "name": "Matej Slapar",
         "slug": "matej-slapar",
         "gender": "m",
-        "proposer": "LISTA MATEJA SLAPARJA IN NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI IN BRANKO HAFNER S SKUPINO VOLIVCEV ",
+        "proposer": "LISTA MATEJA SLAPARJA IN NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI IN BRANKO HAFNER S SKUPINO VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Sandi (Aleksander) Uršič",
-        "slug": "sandi-aleksander-ursic",
+        "slug": "sandi-ursic",
         "gender": "m",
-        "proposer": "MARJAN NOVAK ŠKATLA IN SKUPINA VOLIVCEV ",
+        "proposer": "MARJAN NOVAK ŠKATLA IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -1330,7 +1389,7 @@
         "name": "Ermin Hvalica",
         "slug": "ermin-hvalica",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1338,15 +1397,15 @@
         "name": "Miha Stegel",
         "slug": "miha-stegel",
         "gender": "m",
-        "proposer": "Miha Stegel in skupina volivcev ",
+        "proposer": "Miha Stegel in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Tina Gerbec",
         "slug": "tina-gerbec",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1361,7 +1420,7 @@
         "name": "Anton Leskovar",
         "slug": "anton-leskovar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1369,9 +1428,9 @@
         "name": "Jadranko Školnik",
         "slug": "jadranko-skolnik",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1384,15 +1443,15 @@
         "name": "Marko Matajurc",
         "slug": "marko-matajurc",
         "gender": "m",
-        "proposer": "Tina Sivec Matelič in skupina volivcev ",
+        "proposer": "Tina Sivec Matelič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Robert Kavčič",
         "slug": "robert-kavcic",
         "gender": "m",
-        "proposer": "Ivan Ručna in skupina volivcev ",
+        "proposer": "Ivan Ručna in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1405,19 +1464,19 @@
     "candidates": [
       {
         "name": "Darko Horvat mag.",
-        "slug": "darko-horvat-mag",
+        "slug": "darko-horvat",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Matej Bukovec",
         "slug": "matej-bukovec",
         "gender": "m",
-        "proposer": "VESNA - zelena stranka ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "VESNA - zelena stranka",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1430,15 +1489,15 @@
         "name": "Božidar Peteh",
         "slug": "bozidar-peteh",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "dr. Vladimir Prebilič",
-        "slug": "dr-vladimir-prebilic",
+        "slug": "vladimir-prebilic",
         "gender": "m",
-        "proposer": "Lilijana Štefanič in skupina volivcev ",
+        "proposer": "Lilijana Štefanič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1446,23 +1505,23 @@
         "name": "Grega Mavrin",
         "slug": "grega-mavrin",
         "gender": "m",
-        "proposer": "SLOVENSKA NACIONALNA STRANKA ",
+        "proposer": "SLOVENSKA NACIONALNA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Janko Veber",
         "slug": "janko-veber",
         "gender": "m",
-        "proposer": "SLOGA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOGA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "mag. Robert Tomazin",
-        "slug": "mag-robert-tomazin",
+        "slug": "robert-tomazin",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1470,17 +1529,17 @@
         "name": "Peter Ješelnik",
         "slug": "peter-jeselnik",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Renata Turk",
         "slug": "renata-turk",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -1493,16 +1552,16 @@
         "name": "Bojan Žlebnik",
         "slug": "bojan-zlebnik",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Erik Modic",
         "slug": "erik-modic",
         "gender": "m",
-        "proposer": "VALTER MAKOVEC IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "VALTER MAKOVEC IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       }
     ]
@@ -1516,23 +1575,23 @@
         "name": "Alan Medveš",
         "slug": "alan-medves",
         "gender": "m",
-        "proposer": "LEVICA ",
-        "has_pp": true,
+        "proposer": "LEVICA",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Aleš Bržan",
         "slug": "ales-brzan",
         "gender": "m",
-        "proposer": "LISTA ALEŠA BRŽANA IN GIBANJE SVOBODA ",
-        "has_pp": false,
+        "proposer": "LISTA ALEŠA BRŽANA IN GIBANJE SVOBODA",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Boris Popovič",
         "slug": "boris-popovic",
         "gender": "m",
-        "proposer": "KOPER JE NAŠ- KJN ",
+        "proposer": "KOPER JE NAŠ- KJN",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1540,23 +1599,15 @@
         "name": "Igor Colja",
         "slug": "igor-colja",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Jadranka Šturm Kocjan",
         "slug": "jadranka-sturm-kocjan",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI (SD) ",
-        "has_pp": true,
-        "promised_pp": true
-      },
-      {
-        "name": "Patrik Greblo",
-        "slug": "patrik-greblo",
-        "gender": "m",
-        "proposer": "LISTA ZAVEDNO KOPER ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI (SD)",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1564,7 +1615,7 @@
         "name": "Peter Bolčič",
         "slug": "peter-bolcic",
         "gender": "m",
-        "proposer": "ZAUPANJE ",
+        "proposer": "ZAUPANJE",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1578,10 +1629,10 @@
       {
         "name": "Milenca Krajnc",
         "slug": "milenca-krajnc",
-        "gender": "m",
-        "proposer": "JOŽEF KAJBA IN SKUPINA VOLIVCEV ",
+        "gender": "f",
+        "proposer": "JOŽEF KAJBA IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -1594,9 +1645,9 @@
         "name": "Aleksander Svetelj",
         "slug": "aleksander-svetelj",
         "gender": "m",
-        "proposer": "Več za Kranj ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Več za Kranj",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Ivo Bajec",
@@ -1604,13 +1655,13 @@
         "gender": "m",
         "proposer": "SLOVENSKA DEMOKRATSKA STRANKA,  NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI, SLOVENSKA LJUDSKA STRANKA IN ZELENI SLOVENIJE ",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "mag. Igor Velov",
-        "slug": "mag-igor-velov",
+        "slug": "igor-velov",
         "gender": "m",
-        "proposer": "Igor Velov in skupina volivcev ",
+        "proposer": "Igor Velov in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1618,15 +1669,15 @@
         "name": "Matjaž Rakovec",
         "slug": "matjaz-rakovec",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Srečko Barbič",
         "slug": "srecko-barbic",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1634,7 +1685,7 @@
         "name": "Zoran Stevanović",
         "slug": "zoran-stevanovic",
         "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
+        "proposer": "Državljansko gibanje Resni.ca",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1649,7 +1700,7 @@
         "name": "Blaž Knific",
         "slug": "blaz-knific",
         "gender": "m",
-        "proposer": "Miroslav Marjan Knific in skupina volivcev ",
+        "proposer": "Miroslav Marjan Knific in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1657,23 +1708,23 @@
         "name": "Blaž Veber",
         "slug": "blaz-veber",
         "gender": "m",
-        "proposer": "Alenka Nečemer in skupina volivcev ",
+        "proposer": "Alenka Nečemer in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Bogdan Janša",
         "slug": "bogdan-jansa",
         "gender": "m",
-        "proposer": "Nataša Janša in skupina volivcev ",
+        "proposer": "Nataša Janša in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Ena Girandon",
         "slug": "ena-girandon",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA - zbor članov lokalnega iniciativnega odbora Kranjska Gora ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA - zbor članov lokalnega iniciativnega odbora Kranjska Gora",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1682,32 +1733,32 @@
         "slug": "franci-korazija",
         "gender": "m",
         "proposer": "SOCIALNI DEMOKRATI - Volilna konvencija zbor članov, Občinska organizacija SD Kranjska Gora ",
-        "has_pp": true,
-        "promised_pp": true
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Henrika Zupan",
         "slug": "henrika-zupan",
-        "gender": "m",
-        "proposer": "Aleš Bedič in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "Aleš Bedič in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Klemen Robič",
         "slug": "klemen-robic",
         "gender": "m",
-        "proposer": "Sabina Robič in skupina volivcev ",
+        "proposer": "Sabina Robič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Tina Robič",
         "slug": "tina-robic",
-        "gender": "m",
-        "proposer": "Roman Robič in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Roman Robič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -1720,7 +1771,7 @@
         "name": "Aleš Zorko",
         "slug": "ales-zorko",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1728,31 +1779,31 @@
         "name": "Dušan Šiško",
         "slug": "dusan-sisko",
         "gender": "m",
-        "proposer": "Dejan Stanič in skupina volivcev LISTA DUŠANA ŠIŠKA - ENERGIČNO ZA KRŠKO ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Dejan Stanič in skupina volivcev LISTA DUŠANA ŠIŠKA - ENERGIČNO ZA KRŠKO",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Iztok Starc",
         "slug": "iztok-starc",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Janez Kerin",
         "slug": "janez-kerin",
         "gender": "m",
-        "proposer": "Marta Levičar Magiera in skupina volivcev LISTE MODRA SMER ",
-        "has_pp": true,
+        "proposer": "Marta Levičar Magiera in skupina volivcev LISTE MODRA SMER",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Janja Starc",
         "slug": "janja-starc",
-        "gender": "m",
-        "proposer": "Dušan Arh in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Dušan Arh in skupina volivcev",
         "has_pp": false,
         "promised_pp": true
       },
@@ -1760,7 +1811,7 @@
         "name": "Jože Olovec",
         "slug": "joze-olovec",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1774,10 +1825,10 @@
       {
         "name": "Tamara Šnofl",
         "slug": "tamara-snofl",
-        "gender": "m",
-        "proposer": "Andrej Plohl in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "Andrej Plohl in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1790,9 +1841,9 @@
         "name": "Jožef Škalič",
         "slug": "jozef-skalic",
         "gender": "m",
-        "proposer": "ALEKSANDRA ŠKALIČ IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "ALEKSANDRA ŠKALIČ IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1805,7 +1856,7 @@
         "name": "Davorin Cizej",
         "slug": "davorin-cizej",
         "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
+        "proposer": "Državljansko gibanje Resni.ca",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1813,31 +1864,31 @@
         "name": "Franc Zdolšek",
         "slug": "franc-zdolsek",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Marjan Mačkošek",
         "slug": "marjan-mackosek",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Marko Šantej mag. farm.",
-        "slug": "marko-santej-mag-farm",
+        "slug": "marko-santej",
         "gender": "m",
-        "proposer": "ENEJ KIRN IN SKUPINA VOLIVCEV - MLADA MOČ OBČINE LAŠKO ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "ENEJ KIRN IN SKUPINA VOLIVCEV - MLADA MOČ OBČINE LAŠKO",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Štefanija Pavčnik",
         "slug": "stefanija-pavcnik",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1850,11 +1901,11 @@
     "candidates": [
       {
         "name": "MAG. Janez Kramberger DR. VET. MED.",
-        "slug": "mag-janez-kramberger-dr-vet-med",
+        "slug": "janez-kramberger",
         "gender": "m",
-        "proposer": "STANKA FERŠ IN SKUPINA VOLILCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "STANKA FERŠ IN SKUPINA VOLILCEV",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -1867,7 +1918,7 @@
         "name": "Ivan Koncut",
         "slug": "ivan-koncut",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1875,7 +1926,7 @@
         "name": "Janez Magyar",
         "slug": "janez-magyar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1883,7 +1934,7 @@
         "name": "Peter Oletič",
         "slug": "peter-oletic",
         "gender": "m",
-        "proposer": "Atilla Pisnjak in skupina volivcev ",
+        "proposer": "Atilla Pisnjak in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -1898,7 +1949,7 @@
         "name": "Boris Bevc",
         "slug": "boris-bevc",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1906,33 +1957,33 @@
         "name": "Boris Doblekar",
         "slug": "boris-doblekar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Franc Rokavec",
         "slug": "franc-rokavec",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Iztok Izlakar",
         "slug": "iztok-izlakar",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Kaja Mlakar Agrež",
         "slug": "kaja-mlakar-agrez",
-        "gender": "m",
-        "proposer": "LEVICA ",
+        "gender": "f",
+        "proposer": "LEVICA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -1945,23 +1996,23 @@
         "name": "Aleš Primc",
         "slug": "ales-primc",
         "gender": "m",
-        "proposer": "GLAS ZA OTROKE IN DRUŽINE ",
+        "proposer": "GLAS ZA OTROKE IN DRUŽINE",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "dr. Jasminka Dedić",
-        "slug": "dr-jasminka-dedic",
-        "gender": "m",
+        "slug": "jasminka-dedic",
+        "gender": "f",
         "proposer": "VESNA - ZELENA STRANKA, ZBOR ČLANOV LJUBLJANA ",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "dr. Tina Bregant",
-        "slug": "dr-tina-bregant",
-        "gender": "m",
-        "proposer": "SLS - SLOVENSKA LJUDSKA STRANKA ",
+        "slug": "tina-bregant",
+        "gender": "f",
+        "proposer": "SLS - SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1969,7 +2020,7 @@
         "name": "Igor Horvat",
         "slug": "igor-horvat",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA - SDS ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA - SDS",
         "has_pp": false,
         "promised_pp": false
       },
@@ -1977,41 +2028,41 @@
         "name": "Jasmin Feratović",
         "slug": "jasmin-feratovic",
         "gender": "m",
-        "proposer": "PIRATI ",
+        "proposer": "PIRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Tomaž Ogrin",
-        "slug": "mag-tomaz-ogrin",
+        "slug": "tomaz-ogrin",
         "gender": "m",
-        "proposer": "ZELENI SLOVENIJE IN KONKRETNO ",
+        "proposer": "ZELENI SLOVENIJE IN KONKRETNO",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Mojca Sojar",
         "slug": "mojca-sojar",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Nataša Sukič",
         "slug": "natasa-sukic",
-        "gender": "m",
-        "proposer": "LEVICA ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "LEVICA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Zoran Janković",
         "slug": "zoran-jankovic",
         "gender": "m",
-        "proposer": "JOŽE MERMAL S SKUPINO VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "JOŽE MERMAL S SKUPINO VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -2024,9 +2075,9 @@
         "name": "Franjo Naraločnik",
         "slug": "franjo-naralocnik",
         "gender": "m",
-        "proposer": "Greta Naraločnik in skupina volivcev ",
+        "proposer": "Greta Naraločnik in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -2038,32 +2089,32 @@
       {
         "name": "Bojana Gošnjak",
         "slug": "bojana-gosnjak",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA  ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Ciril Magdič",
         "slug": "ciril-magdic",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI - SD  ",
+        "proposer": "SOCIALNI DEMOKRATI - SD",
         "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Jasminka Dukić",
         "slug": "jasminka-dukic",
-        "gender": "m",
-        "proposer": "DESUS - DEMOKRATIČNA STRANKA UPOKOJENCEV SLOVENIJE  ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "DESUS - DEMOKRATIČNA STRANKA UPOKOJENCEV SLOVENIJE",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "mag. Olga Karba",
-        "slug": "mag-olga-karba",
-        "gender": "m",
-        "proposer": "DR. MIRAN PUCONJA IN SKUPINA VOLIVCEV Z OLGO IN EKIPO SR(e)ČNO NAPREJ! ",
+        "slug": "olga-karba",
+        "gender": "f",
+        "proposer": "DR. MIRAN PUCONJA IN SKUPINA VOLIVCEV Z OLGO IN EKIPO SR(e)ČNO NAPREJ!",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2078,31 +2129,31 @@
         "name": "Aljoša Peček",
         "slug": "aljosa-pecek",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Berto Menard",
         "slug": "berto-menard",
         "gender": "m",
-        "proposer": "Domen Menard in skupina volivcev ",
+        "proposer": "Domen Menard in skupina volivcev",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Bogdan Lipovšek",
         "slug": "bogdan-lipovsek",
         "gender": "m",
-        "proposer": "Katja Stražiščar in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Katja Stražiščar in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Klemen Trpin",
         "slug": "klemen-trpin",
         "gender": "m",
-        "proposer": "NAŠA NOTRANJSKA ",
+        "proposer": "NAŠA NOTRANJSKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2110,7 +2161,7 @@
         "name": "Zoran Mojškerc",
         "slug": "zoran-mojskerc",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2122,10 +2173,18 @@
     "slug": "loska-dolina",
     "candidates": [
       {
+        "name": "Mag. Armida Bavec",
+        "slug": "armida-bavec",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": true
+      },
+      {
         "name": "mag. Miro Mlakar",
-        "slug": "mag-miro-mlakar",
+        "slug": "miro-mlakar",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2133,15 +2192,15 @@
         "name": "Matjaž Antončič",
         "slug": "matjaz-antoncic",
         "gender": "m",
-        "proposer": "NAŠA NOTRANJSKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "NAŠA NOTRANJSKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Vido Kočevar",
         "slug": "vido-kocevar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2156,17 +2215,17 @@
         "name": "Robert Volf",
         "slug": "robert-volf",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Simon Debeljak",
         "slug": "simon-debeljak",
         "gender": "m",
-        "proposer": "Barbara Levstik Šega ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Barbara Levstik Šega",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -2179,15 +2238,15 @@
         "name": "Jože Vavdi",
         "slug": "joze-vavdi",
         "gender": "m",
-        "proposer": "David Kosmač in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "David Kosmač in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Klavdij Strmčnik",
         "slug": "klavdij-strmcnik",
         "gender": "m",
-        "proposer": "Ciril Rosc in skupina volivcev ",
+        "proposer": "Ciril Rosc in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2195,9 +2254,9 @@
         "name": "Matjaž Breznik",
         "slug": "matjaz-breznik",
         "gender": "m",
-        "proposer": "Tomaž Marolt in skupina volivcev ",
+        "proposer": "Tomaž Marolt in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -2207,10 +2266,10 @@
     "slug": "lukovica",
     "candidates": [
       {
-        "name": "mag. Olga Vrankar",
-        "slug": "mag-olga-vrankar",
-        "gender": "m",
-        "proposer": "MARJAN KVEDER IN SKUPINA VOLIVCEV ",
+        "name": "Olga Vrankar",
+        "slug": "olga-vrankar",
+        "gender": "f",
+        "proposer": "MARJAN KVEDER IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2218,7 +2277,7 @@
         "name": "Matej Kotnik",
         "slug": "matej-kotnik",
         "gender": "m",
-        "proposer": "TOMAŽ PROHINAR IN SKUPINA VOLIVCEV ",
+        "proposer": "TOMAŽ PROHINAR IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2233,15 +2292,15 @@
         "name": "Dušan Mesarič",
         "slug": "dusan-mesaric",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Janja Dežmarić Zolar",
         "slug": "janja-dezmaric-zolar",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2249,7 +2308,7 @@
         "name": "Marjan Vesenjak",
         "slug": "marjan-vesenjak",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2257,7 +2316,7 @@
         "name": "Sašo Kodrič",
         "slug": "saso-kodric",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2272,7 +2331,7 @@
         "name": "Aleksander Kamenik",
         "slug": "aleksander-kamenik",
         "gender": "m",
-        "proposer": "Stranka Aleksandra Kamenika ",
+        "proposer": "Stranka Aleksandra Kamenika",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2280,15 +2339,15 @@
         "name": "Aleksander Saša Arsenovič",
         "slug": "aleksander-sasa-arsenovic",
         "gender": "m",
-        "proposer": "ANDREJ BRVAR IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "ANDREJ BRVAR IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Boštjan Klun",
         "slug": "bostjan-klun",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2296,7 +2355,7 @@
         "name": "Franc Jesenek",
         "slug": "franc-jesenek",
         "gender": "m",
-        "proposer": "STRANKA SLOVENSKEGA NARODA ",
+        "proposer": "STRANKA SLOVENSKEGA NARODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2304,47 +2363,47 @@
         "name": "Franc Kangler",
         "slug": "franc-kangler",
         "gender": "m",
-        "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije ",
+        "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Igor Jurišič",
         "slug": "igor-jurisic",
         "gender": "m",
-        "proposer": "STRANKA MLADIH - ZELENI EVROPE ",
+        "proposer": "STRANKA MLADIH - ZELENI EVROPE",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Josip Rotar",
         "slug": "josip-rotar",
         "gender": "m",
-        "proposer": "Lista kolesarjev in pešcev ",
+        "proposer": "Lista kolesarjev in pešcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Lidija Divjak Mirnik",
         "slug": "lidija-divjak-mirnik",
-        "gender": "m",
-        "proposer": "Lista za pravičen razvoj mestnih četrti in krajevnih skupnosti ",
+        "gender": "f",
+        "proposer": "Lista za pravičen razvoj mestnih četrti in krajevnih skupnosti",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "mag. Bernard Memon",
-        "slug": "mag-bernard-memon",
+        "slug": "bernard-memon",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Dejan Kaloh",
-        "slug": "mag-dejan-kaloh",
+        "slug": "dejan-kaloh",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2352,31 +2411,31 @@
         "name": "Matic Matjašič",
         "slug": "matic-matjasic",
         "gender": "m",
-        "proposer": "Lista mladih. Povezujemo ",
+        "proposer": "Lista mladih. Povezujemo",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Miha Recek",
         "slug": "miha-recek",
         "gender": "m",
-        "proposer": "GLAVNO TAJNIŠTVO SLS IN VOLILNA KONFERENCA MO NAŠA DEŽELA MARIBOR ",
+        "proposer": "GLAVNO TAJNIŠTVO SLS IN VOLILNA KONFERENCA MO NAŠA DEŽELA MARIBOR",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Nina Beyokol",
         "slug": "nina-beyokol",
-        "gender": "m",
-        "proposer": "PIRATSKA STRANKA SLOVENIJE ",
+        "gender": "f",
+        "proposer": "PIRATSKA STRANKA SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "prof. dr.  Vojko Flis dr. med.",
-        "slug": "prof-dr-vojko-flis-dr-med",
+        "slug": "vojko-flis",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": true
       },
@@ -2384,7 +2443,7 @@
         "name": "Vladimir Šega",
         "slug": "vladimir-sega",
         "gender": "m",
-        "proposer": "LEVICA ",
+        "proposer": "LEVICA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2399,9 +2458,9 @@
         "name": "Nejc Smole",
         "slug": "nejc-smole",
         "gender": "m",
-        "proposer": "Ladislav Vidmar in skupina volivcev ",
+        "proposer": "Ladislav Vidmar in skupina volivcev",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -2414,23 +2473,23 @@
         "name": "Aleš Janežič",
         "slug": "ales-janezic",
         "gender": "m",
-        "proposer": "SKUPAJ ZA MENGEŠKO OBČINO - SKUPAJ ZMOREMO VEČ ",
+        "proposer": "SKUPAJ ZA MENGEŠKO OBČINO - SKUPAJ ZMOREMO VEČ",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Bogo Ropotar",
         "slug": "bogo-ropotar",
         "gender": "m",
-        "proposer": "Jurij Jerič in skupina volilcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Jurij Jerič in skupina volilcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Franc Hribar",
         "slug": "franc-hribar",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2438,15 +2497,15 @@
         "name": "Sandi Jaklič",
         "slug": "sandi-jaklic",
         "gender": "m",
-        "proposer": "Lista Sandija Jakliča ",
+        "proposer": "Lista Sandija Jakliča",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Tomaž Štebe",
         "slug": "tomaz-stebe",
         "gender": "m",
-        "proposer": "ZELENI SLOVENIJE ",
+        "proposer": "ZELENI SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2461,23 +2520,23 @@
         "name": "Aleksandar Polšak",
         "slug": "aleksandar-polsak",
         "gender": "m",
-        "proposer": "NAPREJ SLOVENIJA ",
-        "has_pp": true,
+        "proposer": "NAPREJ SLOVENIJA",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Darko Zevnik",
         "slug": "darko-zevnik",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Martina Legan Janžekovič",
         "slug": "martina-legan-janzekovic",
-        "gender": "m",
-        "proposer": "ANTON NEMANIČ IN SKUPINA VOLIVCEV ",
+        "gender": "f",
+        "proposer": "ANTON NEMANIČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2485,7 +2544,7 @@
         "name": "Vanja Vlah",
         "slug": "vanja-vlah",
         "gender": "m",
-        "proposer": "DANILO ORLIČ IN SKUPINA VOLIVCEV ",
+        "proposer": "DANILO ORLIČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2500,7 +2559,7 @@
         "name": "Dušan Krebel",
         "slug": "dusan-krebel",
         "gender": "m",
-        "proposer": "Darja Maurič in skupina volivcev ",
+        "proposer": "Darja Maurič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2508,15 +2567,15 @@
         "name": "Franjo  Hercog",
         "slug": "franjo-hercog",
         "gender": "m",
-        "proposer": "Emilija Žiberna in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Emilija Žiberna in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
-        "name": "Irena  Mazej Pirtovšek",
-        "slug": "irena-mazej-pirtovsek",
-        "gender": "m",
-        "proposer": "Zlatko Pirtovšek in skupina volivcev  ",
+        "name": "Irena Pirtovšek Mazej",
+        "slug": "irena-pirtovsek-mazej",
+        "gender": "f",
+        "proposer": "Zlatko Pirtovšek in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2524,9 +2583,9 @@
         "name": "Mark Maze",
         "slug": "mark-maze",
         "gender": "m",
-        "proposer": "Miha Obreza in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Miha Obreza in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -2534,7 +2593,24 @@
     "id": 75,
     "name": "Miren – Kostanjevica",
     "slug": "miren-kostanjevica",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Mauricij Humar",
+        "slug": "mauricij-humar",
+        "gender": "m",
+        "proposer": "Skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "Primož Nemec",
+        "slug": "primoz-nemec",
+        "gender": "m",
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 76,
@@ -2545,15 +2621,15 @@
         "name": "Andrej Felle",
         "slug": "andrej-felle",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Bojan Borovnik",
         "slug": "bojan-borovnik",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": true
       }
@@ -2566,17 +2642,17 @@
     "candidates": [
       {
         "name": "dr. Milan Balažic",
-        "slug": "dr-milan-balazic",
+        "slug": "milan-balazic",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Janko Korošec",
         "slug": "janko-korosec",
         "gender": "m",
-        "proposer": "SEBASTIJAN KOVAČIČ IN SKUPINA VOLIVCEV ",
+        "proposer": "SEBASTIJAN KOVAČIČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2584,23 +2660,23 @@
         "name": "Martin Rebolj",
         "slug": "martin-rebolj",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI  ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Nuša Klopčič",
         "slug": "nusa-klopcic",
-        "gender": "m",
-        "proposer": "PETER KLOPČIČ IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "PETER KLOPČIČ IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Roman Capuder",
         "slug": "roman-capuder",
         "gender": "m",
-        "proposer": "ZDRUŽENA MORAVŠKA DOLINA ",
+        "proposer": "ZDRUŽENA MORAVŠKA DOLINA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2608,7 +2684,7 @@
         "name": "Vitomir Cerar",
         "slug": "vitomir-cerar",
         "gender": "m",
-        "proposer": "MATJAŽ KOČAR IN SKUPINA VOLIVCEV ",
+        "proposer": "MATJAŽ KOČAR IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2623,15 +2699,15 @@
         "name": "Alojz Glavač",
         "slug": "alojz-glavac",
         "gender": "m",
-        "proposer": "Vlasta Glavač ",
+        "proposer": "VLASTA GLAVAČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Franc Cipot",
         "slug": "franc-cipot",
         "gender": "m",
-        "proposer": "JOSIP ČARNI ",
+        "proposer": "JOSIP ČARNI IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2639,15 +2715,15 @@
         "name": "Tadej Henzel",
         "slug": "tadej-henzel",
         "gender": "m",
-        "proposer": "MAJA HENZEL  ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "MAJA HENZEL IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Tatjana Vokić Vojkovič",
         "slug": "tatjana-vokic-vojkovic",
-        "gender": "m",
-        "proposer": "VESNA - zelena stranka ",
+        "gender": "f",
+        "proposer": "VESNA - zelena stranka",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2655,9 +2731,9 @@
         "name": "Tomaž Gregorec",
         "slug": "tomaz-gregorec",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -2670,9 +2746,9 @@
         "name": "Ivan Suhoveršnik",
         "slug": "ivan-suhoversnik",
         "gender": "m",
-        "proposer": "Jožef Skornšek ",
+        "proposer": "Jožef Skornšek",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -2685,31 +2761,31 @@
         "name": "Andrej Mešič",
         "slug": "andrej-mesic",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Blanka Denko Čeh",
         "slug": "blanka-denko-ceh",
-        "gender": "m",
-        "proposer": "AKACIJE ",
+        "gender": "f",
+        "proposer": "AKACIJE",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Damjan Anželj",
         "slug": "damjan-anzelj",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Mitja Horvat",
         "slug": "mitja-horvat",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": true
       }
@@ -2722,19 +2798,19 @@
     "candidates": [
       {
         "name": "Angelca (Angela) Mrak",
-        "slug": "angelca-angela-mrak",
-        "gender": "m",
-        "proposer": "TOMAŽ FERK IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "slug": "angelca-mrak",
+        "gender": "f",
+        "proposer": "TOMAŽ FERK IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Miroslav Vošner",
         "slug": "miroslav-vosner",
         "gender": "m",
-        "proposer": "MILAN STRAMEC IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "MILAN STRAMEC IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -2762,7 +2838,7 @@
         "name": "Matej Pečovnik",
         "slug": "matej-pecovnik",
         "gender": "m",
-        "proposer": "Pečovnik Perme Nataša in skupina volivcev ",
+        "proposer": "Pečovnik Perme Nataša in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2777,7 +2853,7 @@
         "name": "Andrej Pelicon",
         "slug": "andrej-pelicon",
         "gender": "m",
-        "proposer": "Levica ",
+        "proposer": "Levica",
         "has_pp": false,
         "promised_pp": true
       },
@@ -2785,41 +2861,41 @@
         "name": "Anton Harej",
         "slug": "anton-harej",
         "gender": "m",
-        "proposer": "Nova Slovenija - krščanski demokrati ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Nova Slovenija - krščanski demokrati",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Damjana Pavlica",
         "slug": "damjana-pavlica",
-        "gender": "m",
-        "proposer": "Slovenska demokratska stranka ",
+        "gender": "f",
+        "proposer": "Slovenska demokratska stranka",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "dr. Klemen Miklavič",
-        "slug": "dr-klemen-miklavic",
+        "slug": "klemen-miklavic",
         "gender": "m",
-        "proposer": "Majda Smrekar in skupina volivcev ",
+        "proposer": "Majda Smrekar in skupina volivcev",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
-        "name": "mag. Tomaž Horvat",
-        "slug": "mag-tomaz-horvat",
+        "name": "Tomaž Horvat",
+        "slug": "tomaz-horvat",
         "gender": "m",
-        "proposer": "Sociali demokrati ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Samo Turel",
         "slug": "samo-turel",
         "gender": "m",
-        "proposer": "Gibanja Svoboda ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -2832,15 +2908,15 @@
         "name": "Gregor Macedoni",
         "slug": "gregor-macedoni",
         "gender": "m",
-        "proposer": "Boštjan Grobler in skupina volivcev ",
+        "proposer": "Boštjan Grobler in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Srečko Vovko",
         "slug": "srecko-vovko",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2854,8 +2930,8 @@
       {
         "name": "Barbara Ferenčak",
         "slug": "barbara-ferencak",
-        "gender": "m",
-        "proposer": "ANDREJA POREDOŠ IN SKUPINA VOLIVCEV ",
+        "gender": "f",
+        "proposer": "ANDREJA POREDOŠ IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2863,7 +2939,7 @@
         "name": "Mario Balažic",
         "slug": "mario-balazic",
         "gender": "m",
-        "proposer": "BENJAMIN BALAŽIC IN SKUPINA VOLIVCEV ",
+        "proposer": "BENJAMIN BALAŽIC IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2871,7 +2947,7 @@
         "name": "Sebastjan Brunec",
         "slug": "sebastjan-brunec",
         "gender": "m",
-        "proposer": "MOJCA BRUNEC IN SKUPINA VOLIVCEV ",
+        "proposer": "MOJCA BRUNEC IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2884,9 +2960,9 @@
     "candidates": [
       {
         "name": "Danijel Vrbnjak mag. posl. ved",
-        "slug": "danijel-vrbnjak-mag-posl-ved",
+        "slug": "danijel-vrbnjak",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2894,9 +2970,9 @@
         "name": "Ivan Škrlec",
         "slug": "ivan-skrlec",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -2908,16 +2984,16 @@
       {
         "name": "Alenka Kovač",
         "slug": "alenka-kovac",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Anamarija Štimec",
         "slug": "anamarija-stimec",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2930,9 +3006,9 @@
     "candidates": [
       {
         "name": "mag. Gregor Žmak",
-        "slug": "mag-gregor-zmak",
+        "slug": "gregor-zmak",
         "gender": "m",
-        "proposer": "Marjan Rodež in skupina volivcev ",
+        "proposer": "Marjan Rodež in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -2947,7 +3023,7 @@
         "name": "Andrej Korenika",
         "slug": "andrej-korenika",
         "gender": "m",
-        "proposer": "Andrej Korenika in skupina volivcev ",
+        "proposer": "Andrej Korenika in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2955,7 +3031,7 @@
         "name": "Danilo Milharčič",
         "slug": "danilo-milharcic",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2963,23 +3039,23 @@
         "name": "Đenio Zadković",
         "slug": "denio-zadkovic",
         "gender": "m",
-        "proposer": "ZVEZA ZA PRIMORSKO-ZZP ",
+        "proposer": "ZVEZA ZA PRIMORSKO-ZZP",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Dušan Olaj",
         "slug": "dusan-olaj",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI - SD ",
+        "proposer": "SOCIALNI DEMOKRATI - SD",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Gašpar Gašpar-Mišič",
         "slug": "gaspar-gaspar-misic",
         "gender": "m",
-        "proposer": "Egon Štibilj in skupina volivcev ",
+        "proposer": "Egon Štibilj in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -2987,65 +3063,65 @@
         "name": "Kristijan Cerovac",
         "slug": "kristijan-cerovac",
         "gender": "m",
-        "proposer": "Gibanje za občino Piran ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Gibanje za občino Piran",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Manuela Rojec",
         "slug": "manuela-rojec",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Martel Antoni Santinni",
         "slug": "martel-antoni-santinni",
         "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
-        "has_pp": true,
+        "proposer": "Državljansko gibanje Resni.ca",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Mihael Tomše",
         "slug": "mihael-tomse",
         "gender": "m",
-        "proposer": "Vlado Novoselec in skupina volivcev ",
-        "has_pp": true,
+        "proposer": "Vlado Novoselec in skupina volivcev",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Onelio Bernetič",
         "slug": "onelio-bernetic",
         "gender": "m",
-        "proposer": "OLJKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "OLJKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Robert Fakin",
         "slug": "robert-fakin",
         "gender": "m",
-        "proposer": "Samo Markežič in skupina volivcev ",
+        "proposer": "Samo Markežič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
-        "name": "Vojko Jevševar (Vojko) Jevševar",
-        "slug": "vojko-jevsevar-vojko-jevsevar",
+        "name": "Vojko Jevševar",
+        "slug": "vojko-jevsevar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Zlatka Olah",
         "slug": "zlatka-olah",
-        "gender": "m",
-        "proposer": "STRANKA SLOVENSKEGA NARODA ",
+        "gender": "f",
+        "proposer": "STRANKA SLOVENSKEGA NARODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -3058,7 +3134,7 @@
         "name": "Robert Smrdelj",
         "slug": "robert-smrdelj",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3073,7 +3149,7 @@
         "name": "Peter Misja",
         "slug": "peter-misja",
         "gender": "m",
-        "proposer": "Jana Stojnšek in skupina volivcev ",
+        "proposer": "Jana Stojnšek in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3088,7 +3164,7 @@
         "name": "Anton Fornezzi",
         "slug": "anton-fornezzi",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3096,7 +3172,7 @@
         "name": "Emerik Neumeister",
         "slug": "emerik-neumeister",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3104,7 +3180,7 @@
         "name": "Miran Pušnik",
         "slug": "miran-pusnik",
         "gender": "m",
-        "proposer": "Jani Pavlič in skupina volivcev ",
+        "proposer": "Jani Pavlič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3119,8 +3195,8 @@
         "name": "Igor Marentič",
         "slug": "igor-marentic",
         "gender": "m",
-        "proposer": "ANDREJ BERGINC IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "ANDREJ BERGINC IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       }
     ]
@@ -3134,7 +3210,7 @@
         "name": "Rok Roblek",
         "slug": "rok-roblek",
         "gender": "m",
-        "proposer": "Eva Grah Roblek ",
+        "proposer": "Eva Grah Roblek",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3149,7 +3225,7 @@
         "name": "Andrej Čuš",
         "slug": "andrej-cus",
         "gender": "m",
-        "proposer": "MILAN KLEMENC IN SKUPINA VOLIVCEV ",
+        "proposer": "MILAN KLEMENC IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3157,57 +3233,57 @@
         "name": "Andrej Lacko",
         "slug": "andrej-lacko",
         "gender": "m",
-        "proposer": "SLOVENSKA NACIONALNA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA NACIONALNA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Boštjan Koražija",
         "slug": "bostjan-korazija",
         "gender": "m",
-        "proposer": "LEVICA ",
+        "proposer": "LEVICA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Franjo Rozman",
         "slug": "franjo-rozman",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Nuška Gajšek",
         "slug": "nuska-gajsek",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": false,
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Robert Križanič",
         "slug": "robert-krizanic",
         "gender": "m",
-        "proposer": "DRŽAVLJANSKO GIBANJE RESNI.CA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "DRŽAVLJANSKO GIBANJE RESNI.CA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Štefan Petek",
         "slug": "stefan-petek",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Suzana Lara Krause",
         "slug": "suzana-lara-krause",
-        "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -3220,15 +3296,15 @@
         "name": "Branko Ritlop",
         "slug": "branko-ritlop",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Ivan Pintarič",
         "slug": "ivan-pintaric",
         "gender": "m",
-        "proposer": "Simona Šiftar in skupina volivcev ",
+        "proposer": "Simona Šiftar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3236,23 +3312,23 @@
         "name": "Jožef Ficko",
         "slug": "jozef-ficko",
         "gender": "m",
-        "proposer": "Janez Kuzma in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Janez Kuzma in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Sašo Šraj",
         "slug": "saso-sraj",
         "gender": "m",
-        "proposer": "Dušan Lazar in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Dušan Lazar in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Uroš Kamenšek",
         "slug": "uros-kamensek",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3267,7 +3343,7 @@
         "name": "Branko Ledinek",
         "slug": "branko-ledinek",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3282,7 +3358,7 @@
         "name": "Tomaž Režun",
         "slug": "tomaz-rezun",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3297,7 +3373,7 @@
         "name": "Roman Leljak",
         "slug": "roman-leljak",
         "gender": "m",
-        "proposer": "Maja Rožman in skupina volivcev  ",
+        "proposer": "Maja Rožman in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3305,9 +3381,9 @@
         "name": "Toni Žitek",
         "slug": "toni-zitek",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -3320,25 +3396,25 @@
         "name": "Boštjan Martini",
         "slug": "bostjan-martini",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Alan Bukovnik",
-        "slug": "mag-alan-bukovnik",
+        "slug": "alan-bukovnik",
         "gender": "m",
-        "proposer": "Alan Bukovnik in skupina volivcev ",
+        "proposer": "Alan Bukovnik in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Stanislav Pajtler",
         "slug": "stanislav-pajtler",
         "gender": "m",
-        "proposer": "Lista Stanislava Pajtlerja s podporo volivcev ",
+        "proposer": "Lista Stanislava Pajtlerja s podporo volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -3351,23 +3427,23 @@
         "name": "Ciril Globočnik",
         "slug": "ciril-globocnik",
         "gender": "m",
-        "proposer": "Matej Globočnik in skupina volivcev ",
-        "has_pp": false,
+        "proposer": "Matej Globočnik in skupina volivcev",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Janez Waland",
         "slug": "janez-waland",
         "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
+        "proposer": "Državljansko gibanje Resni.ca",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Renata Zadnikar",
         "slug": "renata-zadnikar",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3375,15 +3451,15 @@
         "name": "Tomaž Grohar",
         "slug": "tomaz-grohar",
         "gender": "m",
-        "proposer": "SLOVENSKA NACIONALNA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA NACIONALNA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Vojka Jesenko",
         "slug": "vojka-jesenko",
-        "gender": "m",
-        "proposer": "mag. Primož Jeglič in skupina volivcev ",
+        "gender": "f",
+        "proposer": "mag. Primož Jeglič in skupina volivcev",
         "has_pp": false,
         "promised_pp": true
       }
@@ -3396,9 +3472,9 @@
     "candidates": [
       {
         "name": "dr. Tomaž Rožen",
-        "slug": "dr-tomaz-rozen",
+        "slug": "tomaz-rozen",
         "gender": "m",
-        "proposer": "PETER STOČKO IN SKUPINA VOLIVCEV ",
+        "proposer": "PETER STOČKO IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3413,7 +3489,7 @@
         "name": "Samo Pogorelc",
         "slug": "samo-pogorelc",
         "gender": "m",
-        "proposer": "Matija Bartol ",
+        "proposer": "Matija Bartol",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3428,23 +3504,23 @@
         "name": "Anton Perša",
         "slug": "anton-persa",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "dr. Slavko Buček",
-        "slug": "dr-slavko-bucek",
+        "slug": "slavko-bucek",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Martin Ficko",
         "slug": "martin-ficko",
         "gender": "m",
-        "proposer": "ANTON BUČEK IN SKUPINA VOLIVCEV ",
+        "proposer": "ANTON BUČEK IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3452,7 +3528,7 @@
         "name": "Rihard Peurača",
         "slug": "rihard-peuraca",
         "gender": "m",
-        "proposer": "ŠTEFAN ROŽMAN IN SKUPINA VOLIVCEV ",
+        "proposer": "ŠTEFAN ROŽMAN IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3467,15 +3543,15 @@
         "name": "Albin Šrimpf",
         "slug": "albin-srimpf",
         "gender": "m",
-        "proposer": "Janez Čobec in skupina volivcev ",
+        "proposer": "Janez Čobec in skupina volivcev Nestrankarska lista Gibanje za Rogaško Slatino",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Branko Kidrič",
-        "slug": "mag-branko-kidric",
+        "slug": "branko-kidric",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3483,9 +3559,9 @@
         "name": "Robert Reich",
         "slug": "robert-reich",
         "gender": "m",
-        "proposer": "Marija But in skupina volivcev ",
+        "proposer": "Marija But in skupina volivcev Nestrankarska lista Srčno za Rogaško",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -3498,7 +3574,7 @@
         "name": "Fredi Ferčec",
         "slug": "fredi-fercec",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3506,7 +3582,7 @@
         "name": "Martin Mikolič",
         "slug": "martin-mikolic",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3521,25 +3597,25 @@
         "name": "Darko Knez",
         "slug": "darko-knez",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Martin Lesjak",
         "slug": "martin-lesjak",
         "gender": "m",
-        "proposer": "dr. Jasmina Mavrič in skupina volivcev ",
+        "proposer": "dr. Jasmina Mavrič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Urška Repolusk",
         "slug": "urska-repolusk",
-        "gender": "m",
-        "proposer": "Srečko Šarh in skupina volivcev ",
-        "has_pp": false,
-        "promised_pp": false
+        "gender": "f",
+        "proposer": "Srečko Šarh in skupina volivcev",
+        "has_pp": true,
+        "promised_pp": true
       }
     ]
   },
@@ -3550,11 +3626,11 @@
     "candidates": [
       {
         "name": "Polona Kambič mag.",
-        "slug": "polona-kambic-mag",
-        "gender": "m",
-        "proposer": "Polona Kambič in skupina volivcev Gibanja Zdrava družba ",
+        "slug": "polona-kambic",
+        "gender": "f",
+        "proposer": "Polona Kambič in skupina volivcev Gibanja Zdrava družba",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -3567,17 +3643,17 @@
         "name": "Aleš Žibert",
         "slug": "ales-zibert",
         "gender": "m",
-        "proposer": "Alojz Žibert in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Alojz Žibert in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Srečko Ocvirk",
         "slug": "srecko-ocvirk",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -3590,7 +3666,7 @@
         "name": "Andrej Sila",
         "slug": "andrej-sila",
         "gender": "m",
-        "proposer": "Tanja Sila in skupina volivcev ",
+        "proposer": "Tanja Sila in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3598,23 +3674,23 @@
         "name": "David Škabar",
         "slug": "david-skabar",
         "gender": "m",
-        "proposer": "Vlasta Sluban in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Vlasta Sluban in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "dr. Ljubica Jelušič",
-        "slug": "dr-ljubica-jelusic",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "slug": "ljubica-jelusic",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Jernej Bortolato",
         "slug": "jernej-bortolato",
         "gender": "m",
-        "proposer": "Tanja Svetina in skupina volivcev ",
+        "proposer": "Tanja Svetina in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3622,17 +3698,17 @@
         "name": "Milan Škapin",
         "slug": "milan-skapin",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Rudi (Rudolf) Pečar",
-        "slug": "rudi-rudolf-pecar",
+        "slug": "rudi-pecar",
         "gender": "m",
-        "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -3642,12 +3718,12 @@
     "slug": "slovenj-gradec",
     "candidates": [
       {
-        "name": "TILEN KLUGLER",
+        "name": "Tilen Klugler",
         "slug": "tilen-klugler",
         "gender": "m",
-        "proposer": "METKA ČERNJAK GOLEŽ IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
-        "promised_pp": true
+        "proposer": "METKA ČERNJAK GOLEŽ IN SKUPINA VOLIVCEV",
+        "has_pp": true,
+        "promised_pp": false
       }
     ]
   },
@@ -3658,7 +3734,7 @@
     "candidates": [
       {
         "name": "dr. Ivan Žagar",
-        "slug": "dr-ivan-zagar",
+        "slug": "ivan-zagar",
         "gender": "m",
         "proposer": "SLS, SDS, N.Si, DeSUS ",
         "has_pp": false,
@@ -3668,23 +3744,23 @@
         "name": "Ljubo Poles",
         "slug": "ljubo-poles",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Matej Španinger",
         "slug": "matej-spaninger",
         "gender": "m",
-        "proposer": "SLOVENSKA NACIONALNA STRANKA ",
+        "proposer": "SLOVENSKA NACIONALNA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Romana Brzin",
         "slug": "romana-brzin",
-        "gender": "m",
-        "proposer": "Za ljudstvo Slovenije ",
+        "gender": "f",
+        "proposer": "Za ljudstvo Slovenije",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3699,15 +3775,15 @@
         "name": "Darko Ratajc",
         "slug": "darko-ratajc",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": false,
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "mag. Jure Levart",
-        "slug": "mag-jure-levart",
+        "slug": "jure-levart",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3720,9 +3796,9 @@
     "candidates": [
       {
         "name": "Stanislav Greifoner univ.dipl.prav.",
-        "slug": "stanislav-greifoner-univ-dipl-prav",
+        "slug": "stanislav-greifoner",
         "gender": "m",
-        "proposer": "MAJDA MOHORIČ IN SKUPINA VOLIVCEV ",
+        "proposer": "MAJDA MOHORIČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3735,9 +3811,9 @@
     "candidates": [
       {
         "name": "Andrej (Andrej) Vrzel",
-        "slug": "andrej-andrej-vrzel",
+        "slug": "andrej-vrzel",
         "gender": "m",
-        "proposer": "Simon Černel in skupina volivcev ",
+        "proposer": "Simon Černel in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3745,17 +3821,17 @@
         "name": "Anton Slana",
         "slug": "anton-slana",
         "gender": "m",
-        "proposer": "Rok Korošak ",
+        "proposer": "Rok Korošak in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Jani (Janez) Kosi",
-        "slug": "jani-janez-kosi",
+        "slug": "jani-kosi",
         "gender": "m",
-        "proposer": "Janez Kosi in skupina volivcev  ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Janez Kosi in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -3767,34 +3843,34 @@
       {
         "name": "Anita Praprotnik",
         "slug": "anita-praprotnik",
-        "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
+        "gender": "f",
+        "proposer": "Državljansko gibanje Resni.ca",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Ciril Kozjek",
         "slug": "ciril-kozjek",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA IN SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA IN SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Matej Knific",
         "slug": "matej-knific",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Valerij Grašič",
         "slug": "valerij-grasic",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI  ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -3805,16 +3881,16 @@
     "candidates": [
       {
         "name": "mag. Zdenka Ploj",
-        "slug": "mag-zdenka-ploj",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "slug": "zdenka-ploj",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Marija Janžek",
         "slug": "marija-janzek",
-        "gender": "m",
+        "gender": "f",
         "proposer": "SUZANA ŠAUPERL IN SKUPINA VOLIVCEV, NESTRANKARSKA LISTA OBČANOV ",
         "has_pp": false,
         "promised_pp": false
@@ -3823,8 +3899,8 @@
         "name": "Štefan Žvab",
         "slug": "stefan-zvab",
         "gender": "m",
-        "proposer": "DAVID KOS IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "DAVID KOS IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       }
     ]
@@ -3838,15 +3914,15 @@
         "name": "Aleš Trbanc",
         "slug": "ales-trbanc",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Jože Simončič",
         "slug": "joze-simoncic",
         "gender": "m",
-        "proposer": "Peter Cvelbar in skupina volivcev ",
+        "proposer": "Peter Cvelbar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3860,16 +3936,16 @@
       {
         "name": "Jelka Godec",
         "slug": "jelka-godec",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Marko Diaci",
-        "slug": "mag-marko-diaci",
+        "slug": "marko-diaci",
         "gender": "m",
-        "proposer": "Matjaž Žmahar in skupina volivcev ",
+        "proposer": "Matjaž Žmahar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3879,7 +3955,24 @@
     "id": 121,
     "name": "Škocjan",
     "slug": "skocjan",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Franc Kocjan",
+        "slug": "franc-kocjan",
+        "gender": "m",
+        "proposer": "OO SLOVENSKE LJUDSKE STRANKE ŠKOCJAN",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "Jože Kapler",
+        "slug": "joze-kapler",
+        "gender": "m",
+        "proposer": "KONFERENCA OBČINSKEGA ODBORA SLOVENSKE DEMOKRATSKE STRANKE ŠKOCJAN",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 122,
@@ -3890,15 +3983,15 @@
         "name": "Gašper Hafner",
         "slug": "gasper-hafner",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Martin Trampuš",
         "slug": "martin-trampus",
         "gender": "m",
-        "proposer": "LEVICA ",
+        "proposer": "LEVICA",
         "has_pp": false,
         "promised_pp": true
       },
@@ -3906,16 +3999,16 @@
         "name": "Rolando Krajnik",
         "slug": "rolando-krajnik",
         "gender": "m",
-        "proposer": "KOMUNALNO EKOLOŠKA LISTA ",
+        "proposer": "KOMUNALNO EKOLOŠKA LISTA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Tine Radinja",
         "slug": "tine-radinja",
         "gender": "m",
-        "proposer": "MIHA JEŠE IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "MIHA JEŠE IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       }
     ]
@@ -3929,15 +4022,15 @@
         "name": "Bojan Božič",
         "slug": "bojan-bozic",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Igor Zupančič",
         "slug": "igor-zupancic",
         "gender": "m",
-        "proposer": "Lista Igorja Zupančiča ",
+        "proposer": "Lista Igorja Zupančiča",
         "has_pp": false,
         "promised_pp": false
       },
@@ -3945,23 +4038,23 @@
         "name": "Ivan Jordan",
         "slug": "ivan-jordan",
         "gender": "m",
-        "proposer": "Andreja Knez in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Andreja Knez in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Primož Cimerman",
         "slug": "primoz-cimerman",
         "gender": "m",
-        "proposer": "Bernarda Cimerman in skupina volivcev ",
+        "proposer": "Bernarda Cimerman in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Rok Treven",
         "slug": "rok-treven",
         "gender": "m",
-        "proposer": "Petra Šilc Miklič in skupina volivcev ",
+        "proposer": "Petra Šilc Miklič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3976,7 +4069,7 @@
         "name": "Matija Čakš",
         "slug": "matija-caks",
         "gender": "m",
-        "proposer": "Anton Guzej in skupina volivcev ",
+        "proposer": "Anton Guzej in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -3991,15 +4084,15 @@
         "name": "Janko Kopušar",
         "slug": "janko-kopusar",
         "gender": "m",
-        "proposer": "ZDRAVKO RAMŠAK IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
+        "proposer": "ZDRAVKO RAMŠAK IN SKUPINA VOLIVCEV",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Josip Lukenda",
         "slug": "josip-lukenda",
         "gender": "m",
-        "proposer": "LUKA ŽERJAV IN SKUPINA VOLIVCEV ",
+        "proposer": "LUKA ŽERJAV IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4007,15 +4100,15 @@
         "name": "Peter Rosenstein",
         "slug": "peter-rosenstein",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Robert Crnjac",
         "slug": "robert-crnjac",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4030,23 +4123,23 @@
         "name": "Andrej Goršek",
         "slug": "andrej-gorsek",
         "gender": "m",
-        "proposer": "Lista aktivni ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Lista aktivni",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Boris Goličnik",
         "slug": "boris-golicnik",
         "gender": "m",
-        "proposer": "Lista Borisa Goličnika ",
+        "proposer": "Lista Borisa Goličnika",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Drago Koren",
         "slug": "drago-koren",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4054,7 +4147,7 @@
         "name": "Franc Rosec",
         "slug": "franc-rosec",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4062,17 +4155,17 @@
         "name": "Iztok Kotnik",
         "slug": "iztok-kotnik",
         "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Državljansko gibanje Resni.ca",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Peter Vidmar",
         "slug": "peter-vidmar",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -4085,7 +4178,7 @@
         "name": "Emil Kačičnik",
         "slug": "emil-kacicnik",
         "gender": "m",
-        "proposer": "SLOVENSKA NACIONALNA STRANKA ",
+        "proposer": "SLOVENSKA NACIONALNA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4101,7 +4194,7 @@
         "name": "Simon Kroflič",
         "slug": "simon-kroflic",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4116,23 +4209,23 @@
         "name": "Alen Červ",
         "slug": "alen-cerv",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Maša Klavora",
         "slug": "masa-klavora",
-        "gender": "m",
-        "proposer": "Uroš Brežan in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "Uroš Brežan in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Oton Bratuž",
         "slug": "oton-bratuz",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4147,7 +4240,7 @@
         "name": "Dejan Debelić",
         "slug": "dejan-debelic",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4155,7 +4248,7 @@
         "name": "Drago Kočar",
         "slug": "drago-kocar",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": true
       },
@@ -4163,31 +4256,31 @@
         "name": "Jože Pustoslemšek",
         "slug": "joze-pustoslemsek",
         "gender": "m",
-        "proposer": "LISTA DNK TRBOVELJ ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "LISTA DNK TRBOVELJ",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Patricija Gorenc",
         "slug": "patricija-gorenc",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Primož Siter",
         "slug": "primoz-siter",
         "gender": "m",
-        "proposer": "LEVICA ",
-        "has_pp": true,
+        "proposer": "LEVICA",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Zoran Poznič",
         "slug": "zoran-poznic",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4202,15 +4295,15 @@
         "name": "Alojzij Kastelic",
         "slug": "alojzij-kastelic",
         "gender": "m",
-        "proposer": "Branko Meglič in skupina volivcev ",
-        "has_pp": true,
+        "proposer": "Branko Meglič in skupina volivcev",
+        "has_pp": false,
         "promised_pp": true
       },
       {
         "name": "Blaž Pavlin",
         "slug": "blaz-pavlin",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4218,23 +4311,23 @@
         "name": "Jože Avguštinčič",
         "slug": "joze-avgustincic",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "mag. Gregor Kaplan",
-        "slug": "mag-gregor-kaplan",
+        "slug": "gregor-kaplan",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Mateja Povhe",
         "slug": "mateja-povhe",
-        "gender": "m",
-        "proposer": "DROT - ZA RAZVOJ ",
+        "gender": "f",
+        "proposer": "DROT - ZA RAZVOJ",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4249,15 +4342,15 @@
         "name": "Drago Zadnikar",
         "slug": "drago-zadnikar",
         "gender": "m",
-        "proposer": "Socialni demokrati ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Socialni demokrati",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Peter Miklič",
         "slug": "peter-miklic",
         "gender": "m",
-        "proposer": "Drago Zalar in skupina volivcev ",
+        "proposer": "Drago Zalar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4265,7 +4358,7 @@
         "name": "Samo Dolhar",
         "slug": "samo-dolhar",
         "gender": "m",
-        "proposer": "Žan Dolhar in skupina volivcev ",
+        "proposer": "Žan Dolhar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4280,15 +4373,15 @@
         "name": "Borut Horvat",
         "slug": "borut-horvat",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Tina Hozjan Žižek",
         "slug": "tina-hozjan-zizek",
-        "gender": "m",
-        "proposer": "VESNA - zelena stranka ",
+        "gender": "f",
+        "proposer": "VESNA - zelena stranka",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4303,49 +4396,49 @@
         "name": "Benjamin Strozak",
         "slug": "benjamin-strozak",
         "gender": "m",
-        "proposer": "DOBRA DRŽAVA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "DOBRA DRŽAVA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "dr. Milan Medved",
-        "slug": "dr-milan-medved",
+        "slug": "milan-medved",
         "gender": "m",
-        "proposer": "Herman Arlič in skupina volivcev ",
+        "proposer": "Herman Arlič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Jože Hribar",
         "slug": "joze-hribar",
         "gender": "m",
-        "proposer": "NAŠE VELENJE ",
+        "proposer": "NAŠE VELENJE",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Lidija Črnko",
         "slug": "lidija-crnko",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Lidija Šolinc",
         "slug": "lidija-solinc",
-        "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "Državljansko gibanje Resni.ca",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Peter Dermol",
         "slug": "peter-dermol",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI - SD in Rok Plankelj in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI - SD in Rok Plankelj in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -4358,15 +4451,15 @@
         "name": "Dejan Zakrajšek",
         "slug": "dejan-zakrajsek",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Luka Ilc",
         "slug": "luka-ilc",
         "gender": "m",
-        "proposer": "Luka Ilc in skupina volivcev ",
+        "proposer": "Luka Ilc in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4374,7 +4467,7 @@
         "name": "Matjaž Gruden",
         "slug": "matjaz-gruden",
         "gender": "m",
-        "proposer": "Urša Gruden in skupina volivcev ",
+        "proposer": "Urša Gruden in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4382,15 +4475,15 @@
         "name": "Matjaž Hočevar",
         "slug": "matjaz-hocevar",
         "gender": "m",
-        "proposer": "Nina Hočevar in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Nina Hočevar in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Tadej Malovrh",
         "slug": "tadej-malovrh",
         "gender": "m",
-        "proposer": "Lidija Vilar in skupina volivcev ",
+        "proposer": "Lidija Vilar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4405,17 +4498,17 @@
         "name": "Brane Kolednik",
         "slug": "brane-kolednik",
         "gender": "m",
-        "proposer": "STRANKA MLADIH - ZELENI EVROPE ",
+        "proposer": "STRANKA MLADIH - ZELENI EVROPE",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Branko Marinič",
         "slug": "branko-marinic",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -4428,17 +4521,17 @@
         "name": "Anton Lavrenčič",
         "slug": "anton-lavrencic",
         "gender": "m",
-        "proposer": "Tomaž Vrčon in skupina volivcev ",
+        "proposer": "Tomaž Vrčon in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Goran Kodelja",
         "slug": "goran-kodelja",
         "gender": "m",
-        "proposer": "Sonja Lukin in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Sonja Lukin in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -4448,10 +4541,10 @@
     "slug": "vitanje",
     "candidates": [
       {
-        "name": "Andraž Pogorevc dipl.var.menedž",
-        "slug": "andraz-pogorevc-dipl-var-menedz",
+        "name": "Andraž Pogorevc",
+        "slug": "andraz-pogorevc",
         "gender": "m",
-        "proposer": "ANITA POGOREVC IN SKUPINA VOLIVCEV ",
+        "proposer": "ANITA POGOREVC IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4459,7 +4552,7 @@
         "name": "Slavko Vetrih",
         "slug": "slavko-vetrih",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4469,7 +4562,24 @@
     "id": 138,
     "name": "Vodice",
     "slug": "vodice",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Aco Franc Šuštar",
+        "slug": "aco-franc-sustar",
+        "gender": "m",
+        "proposer": "Marjan Podboršek",
+        "has_pp": false,
+        "promised_pp": true
+      },
+      {
+        "name": "Tilen Jeraj",
+        "slug": "tilen-jeraj",
+        "gender": "m",
+        "proposer": "Drago Šimon",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 139,
@@ -4479,16 +4589,16 @@
       {
         "name": "Barbara Leder",
         "slug": "barbara-leder",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA  ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Branko Petre",
         "slug": "branko-petre",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI in SLOVENSKA DEMOKRATSKA STRANKA  ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI in SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4502,16 +4612,16 @@
       {
         "name": "Alja Stanko",
         "slug": "alja-stanko",
-        "gender": "m",
-        "proposer": "Gibanje SVOBODA ",
-        "has_pp": true,
+        "gender": "f",
+        "proposer": "Gibanje SVOBODA",
+        "has_pp": false,
         "promised_pp": true
       },
       {
-        "name": "Benjamin Leskovec",
+        "name": "dr. Benjamin Leskovec",
         "slug": "benjamin-leskovec",
         "gender": "m",
-        "proposer": "1890 / Edvarda Šteblaj in skupina volivcev ",
+        "proposer": "1890 / Edvarda Šteblaj in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4519,9 +4629,9 @@
         "name": "Daniel Cukjati",
         "slug": "daniel-cukjati",
         "gender": "m",
-        "proposer": "Daniel Cukjati in skupina volivcev ",
+        "proposer": "Daniel Cukjati in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Marjan Geohelli",
@@ -4537,7 +4647,7 @@
         "gender": "m",
         "proposer": "LEVICA, LO Vrhnika ",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -4548,17 +4658,17 @@
     "candidates": [
       {
         "name": "Franjo (Franc) Golob",
-        "slug": "franjo-franc-golob",
+        "slug": "franjo-golob",
         "gender": "m",
-        "proposer": "DANICA GOLOB IN SKUPINA VOLIVCEV ",
+        "proposer": "DANICA GOLOB IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Simona Kremzer",
         "slug": "simona-kremzer",
-        "gender": "m",
-        "proposer": "VLADIMIR KREMZER IN SKUPINA VOLIVCEV ",
+        "gender": "f",
+        "proposer": "VLADIMIR KREMZER IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4573,23 +4683,23 @@
         "name": "Boštjan Ocepek",
         "slug": "bostjan-ocepek",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Matjaž Švagan",
         "slug": "matjaz-svagan",
         "gender": "m",
-        "proposer": "ZAGORJE GRE NAPREJ - ZDRUŽENJE ZA NAPREDEK ZASAVJA ",
+        "proposer": "ZAGORJE GRE NAPREJ - ZDRUŽENJE ZA NAPREDEK ZASAVJA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Til Šiles",
         "slug": "til-siles",
         "gender": "m",
-        "proposer": "LEVICA ",
+        "proposer": "LEVICA",
         "has_pp": false,
         "promised_pp": true
       },
@@ -4597,9 +4707,9 @@
         "name": "Željko Železnik",
         "slug": "zeljko-zeleznik",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -4612,7 +4722,7 @@
         "name": "Slavko Pravdič",
         "slug": "slavko-pravdic",
         "gender": "m",
-        "proposer": " NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4627,7 +4737,7 @@
         "name": "Boris Podvršnik",
         "slug": "boris-podvrsnik",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4635,9 +4745,9 @@
         "name": "Vladimir Kukavica",
         "slug": "vladimir-kukavica",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -4650,7 +4760,7 @@
         "name": "Anton Luznar",
         "slug": "anton-luznar",
         "gender": "m",
-        "proposer": "SLS - SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLS - SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4658,17 +4768,17 @@
         "name": "Marko Gasser",
         "slug": "marko-gasser",
         "gender": "m",
-        "proposer": "Janez Habjan in skupina volivcev ",
+        "proposer": "Janez Habjan in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Rok Bajželj",
         "slug": "rok-bajzelj",
         "gender": "m",
-        "proposer": "LEVICA ",
+        "proposer": "LEVICA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -4681,25 +4791,25 @@
         "name": "Branko Jesenovec",
         "slug": "branko-jesenovec",
         "gender": "m",
-        "proposer": "LEVICA ",
+        "proposer": "LEVICA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Franc Kranjc",
         "slug": "franc-kranjc",
         "gender": "m",
-        "proposer": "NEODVISNA LISTA ZA NAPREDEK ŽIROV ",
+        "proposer": "ALEŠ DOLENC IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Štefan Bogataj",
         "slug": "stefan-bogataj",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -4710,10 +4820,10 @@
     "candidates": [
       {
         "name": "mag. Milan Repič",
-        "slug": "mag-milan-repic",
+        "slug": "milan-repic",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": false,
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": true,
         "promised_pp": false
       }
     ]
@@ -4727,15 +4837,15 @@
         "name": "Franjo Debelak",
         "slug": "franjo-debelak",
         "gender": "m",
-        "proposer": "DUŠAN BERKOVIČ IN SKUPINA VOLIVCEV ",
+        "proposer": "DUŠAN BERKOVIČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Robert Žučko",
         "slug": "robert-zucko",
         "gender": "m",
-        "proposer": "MARJAN FENDRE IN SKUPINA VOLIVCEV ",
+        "proposer": "MARJAN FENDRE IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4750,7 +4860,7 @@
         "name": "Aleksander Lavrič Pregelj",
         "slug": "aleksander-lavric-pregelj",
         "gender": "m",
-        "proposer": "NAŠA NOTRANJSKA ",
+        "proposer": "NAŠA NOTRANJSKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4758,9 +4868,9 @@
         "name": "Jože Doles",
         "slug": "joze-doles",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -4773,7 +4883,7 @@
         "name": "Janko Pirnat",
         "slug": "janko-pirnat",
         "gender": "m",
-        "proposer": "Milan Košenina in skupina volivcev ",
+        "proposer": "Milan Košenina in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4781,7 +4891,7 @@
         "name": "Tomaž Žohar",
         "slug": "tomaz-zohar",
         "gender": "m",
-        "proposer": "Tomaž Žohar in skupina volivcev ",
+        "proposer": "Tomaž Žohar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4796,9 +4906,9 @@
         "name": "Danilo Kacijan",
         "slug": "danilo-kacijan",
         "gender": "m",
-        "proposer": "Darko Kerec in skupina volivcev ",
+        "proposer": "Darko Kerec in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -4811,7 +4921,7 @@
         "name": "Marjan Žmavc",
         "slug": "marjan-zmavc",
         "gender": "m",
-        "proposer": "DAMJAN ŽMAVC IN SKUPINA VOLIVCEV ",
+        "proposer": "DAMJAN ŽMAVC IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4821,7 +4931,16 @@
     "id": 154,
     "name": "Dobje",
     "slug": "dobje",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Franc Leskovšek",
+        "slug": "franc-leskovsek",
+        "gender": "m",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 155,
@@ -4832,15 +4951,15 @@
         "name": "Bojan Felicijan",
         "slug": "bojan-felicijan",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Martin Brecl",
         "slug": "martin-brecl",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4855,9 +4974,9 @@
         "name": "Marjan Kardinar",
         "slug": "marjan-kardinar",
         "gender": "m",
-        "proposer": "Marko Kardinar in skupina volivcev ",
+        "proposer": "Marko Kardinar in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -4870,7 +4989,7 @@
         "name": "Bojan Potočar",
         "slug": "bojan-potocar",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4878,7 +4997,7 @@
         "name": "Franc Vovk",
         "slug": "franc-vovk",
         "gender": "m",
-        "proposer": "Damjan Vovk in skupina volivcev ",
+        "proposer": "Damjan Vovk in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4886,17 +5005,17 @@
         "name": "Jure Filipović",
         "slug": "jure-filipovic",
         "gender": "m",
-        "proposer": "Branko Fabijan in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Branko Fabijan in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Mojca Šenica",
         "slug": "mojca-senica",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -4908,8 +5027,8 @@
       {
         "name": "Cvetka Ficko",
         "slug": "cvetka-ficko",
-        "gender": "m",
-        "proposer": "Marjan Ficko in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Marjan Ficko in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4917,7 +5036,7 @@
         "name": "Silvo Šarkanj",
         "slug": "silvo-sarkanj",
         "gender": "m",
-        "proposer": "Lidija Bernjak Sukič in skupina volivcev ",
+        "proposer": "Lidija Bernjak Sukič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -4932,13 +5051,13 @@
         "name": "Janko Merc",
         "slug": "janko-merc",
         "gender": "m",
-        "proposer": "Aleksander Vaupotič in skupina volivcev ",
+        "proposer": "Aleksander Vaupotič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "mag. Stanislav Glažar",
-        "slug": "mag-stanislav-glazar",
+        "slug": "stanislav-glazar",
         "gender": "m",
         "proposer": "SLOVENSKA DEMOKRATSKA STRANKA, SOCIALNI DEMOKRATI, SLOVENSKA LJUDSKA STRANKA ",
         "has_pp": false,
@@ -4953,19 +5072,19 @@
     "candidates": [
       {
         "name": "dr. Marko Soršak",
-        "slug": "dr-marko-sorsak",
+        "slug": "marko-sorsak",
         "gender": "m",
-        "proposer": "Znamo. Zmoremo! Marko Soršak. ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Znamo. Zmoremo! Marko Soršak.",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Vojko Golob",
         "slug": "vojko-golob",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -4978,7 +5097,7 @@
         "name": "Denis Tamaško",
         "slug": "denis-tamasko",
         "gender": "m",
-        "proposer": "Ernest Tamaško ",
+        "proposer": "Ernest Tamaško",
         "has_pp": false,
         "promised_pp": false
       },
@@ -4986,9 +5105,9 @@
         "name": "Ludvik Orban",
         "slug": "ludvik-orban",
         "gender": "m",
-        "proposer": "Rudolf Bunderla ml. ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Rudolf Bunderla ml.",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5001,7 +5120,7 @@
         "name": "Janko Prebil",
         "slug": "janko-prebil",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5016,7 +5135,7 @@
         "name": "Andrej Karničar",
         "slug": "andrej-karnicar",
         "gender": "m",
-        "proposer": "Irma Karničar Šenk in skupina volivcev - Jezersko za vse ",
+        "proposer": "Irma Karničar Šenk in skupina volivcev - Jezersko za vse",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5024,9 +5143,9 @@
         "name": "Peter Muri",
         "slug": "peter-muri",
         "gender": "m",
-        "proposer": "Borut Žagar in skupina volivcev ",
+        "proposer": "Borut Žagar in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -5039,7 +5158,7 @@
         "name": "Boštjan Veinhandl",
         "slug": "bostjan-veinhandl",
         "gender": "m",
-        "proposer": "Janez Skok in skupina volivcev ",
+        "proposer": "Janez Skok in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5047,23 +5166,23 @@
         "name": "Jurij Kern",
         "slug": "jurij-kern",
         "gender": "m",
-        "proposer": "Tea Tašker Kern in skupina volivcev ",
+        "proposer": "Tea Tašker Kern in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Mag. Majda Ravnikar",
-        "slug": "mag-majda-ravnikar",
-        "gender": "m",
-        "proposer": "Igor Štebe in skupina volivcev ",
-        "has_pp": false,
+        "slug": "majda-ravnikar",
+        "gender": "f",
+        "proposer": "Igor Štebe in skupina volivcev",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Tomaž Drolec",
         "slug": "tomaz-drolec",
         "gender": "m",
-        "proposer": "Viktorija Drolec in skupina volivcev ",
+        "proposer": "Viktorija Drolec in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5078,23 +5197,23 @@
         "name": "Marjan Lisac",
         "slug": "marjan-lisac",
         "gender": "m",
-        "proposer": "Gibanje Svoboda ",
+        "proposer": "Gibanje Svoboda",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Nataša Turk",
         "slug": "natasa-turk",
-        "gender": "m",
-        "proposer": "Miran Briški in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Miran Briški in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Valentin Južnič",
         "slug": "valentin-juznic",
         "gender": "m",
-        "proposer": "Nežika Zdravič in skupina volivcev ",
+        "proposer": "Nežika Zdravič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5109,9 +5228,9 @@
         "name": "Branko Slavinec",
         "slug": "branko-slavinec",
         "gender": "m",
-        "proposer": "mag. Branko Belec in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "mag. Branko Belec in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5121,12 +5240,12 @@
     "slug": "lovrenc-na-pohorju",
     "candidates": [
       {
-        "name": "Marko Rakovnik prof.",
-        "slug": "marko-rakovnik-prof",
+        "name": "Marko Rakovnik",
+        "slug": "marko-rakovnik",
         "gender": "m",
-        "proposer": "Blaž Kraner in skupina volivcev ",
+        "proposer": "Blaž Kraner in skupina volivcev",
         "has_pp": true,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -5137,9 +5256,9 @@
     "candidates": [
       {
         "name": "mag. Dragan Mikša",
-        "slug": "mag-dragan-miksa",
+        "slug": "dragan-miksa",
         "gender": "m",
-        "proposer": "Aleš Forštnarič in skupina volivcev ",
+        "proposer": "Aleš Forštnarič in skupina volivcev",
         "has_pp": false,
         "promised_pp": true
       },
@@ -5147,7 +5266,7 @@
         "name": "Milan Gabrovec",
         "slug": "milan-gabrovec",
         "gender": "m",
-        "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE ",
+        "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5160,25 +5279,25 @@
     "candidates": [
       {
         "name": "dr. Iztok Peterin",
-        "slug": "dr-iztok-peterin",
+        "slug": "iztok-peterin",
         "gender": "m",
-        "proposer": "Dialog za napredek ",
+        "proposer": "Dialog za napredek",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "mag. Egon Repnik",
-        "slug": "mag-egon-repnik",
+        "slug": "egon-repnik",
         "gender": "m",
-        "proposer": "LISTA ZA SKUPNO OBČINO MIKLAVŽ NA D.P.  ",
+        "proposer": "LISTA ZA SKUPNO OBČINO MIKLAVŽ NA D.P.",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Simona Marko",
         "slug": "simona-marko",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI  ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5193,7 +5312,7 @@
         "name": "Andrej Kastelic",
         "slug": "andrej-kastelic",
         "gender": "m",
-        "proposer": "DAMJAN ZUPANČIČ in skupina volilcev ",
+        "proposer": "DAMJAN ZUPANČIČ in skupina volilcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5201,7 +5320,7 @@
         "name": "Zvonko Lah",
         "slug": "zvonko-lah",
         "gender": "m",
-        "proposer": "ZELENI SLOVENIJE ",
+        "proposer": "ZELENI SLOVENIJE",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5213,28 +5332,28 @@
     "slug": "oplotnica",
     "candidates": [
       {
-        "name": "Andrej (Andrej) Kos",
-        "slug": "andrej-andrej-kos",
+        "name": "Andrej Kos",
+        "slug": "andrej-kos",
         "gender": "m",
-        "proposer": "MATIC JARNI IN SKUPINA VOLIVCEV ",
+        "proposer": "MATIC JARNI IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Džuro (Stanislav) Volčič",
-        "slug": "dzuro-stanislav-volcic",
+        "slug": "dzuro-volcic",
         "gender": "m",
-        "proposer": "NATAŠA SMOLE VOLČIČ IN SKUPINA VOLIVCEV ",
+        "proposer": "NATAŠA SMOLE VOLČIČ IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Matjaž Orter",
         "slug": "matjaz-orter",
         "gender": "m",
-        "proposer": "MARTIN LESJAK IN SKUPINA VOLIVCEV ",
+        "proposer": "MARTIN LESJAK IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -5245,11 +5364,11 @@
     "candidates": [
       {
         "name": "mag. Sebastian Toplak",
-        "slug": "mag-sebastian-toplak",
+        "slug": "sebastian-toplak",
         "gender": "m",
-        "proposer": "Janez Koren in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Janez Koren in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5262,31 +5381,31 @@
         "name": "Aleš Goršak",
         "slug": "ales-gorsak",
         "gender": "m",
-        "proposer": "DOBRA DRŽAVA ",
+        "proposer": "DOBRA DRŽAVA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Anton Kanduti",
         "slug": "anton-kanduti",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Bojana Kralj Kos",
         "slug": "bojana-kralj-kos",
-        "gender": "m",
-        "proposer": "Matjaž Dedič in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Matjaž Dedič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Dragica Sternad Pražnikar",
         "slug": "dragica-sternad-praznikar",
-        "gender": "m",
-        "proposer": "Mag. Boštjan Pražnikar in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Mag. Boštjan Pražnikar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5294,9 +5413,9 @@
         "name": "Jože Kužnik",
         "slug": "joze-kuznik",
         "gender": "m",
-        "proposer": "Dušan Pungartnik in skupina volivcev ",
+        "proposer": "Dušan Pungartnik in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -5307,9 +5426,9 @@
     "candidates": [
       {
         "name": "mag. Marko Repnik",
-        "slug": "mag-marko-repnik",
+        "slug": "marko-repnik",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5317,9 +5436,9 @@
         "name": "Marjan Golavšek",
         "slug": "marjan-golavsek",
         "gender": "m",
-        "proposer": "Jožef Kupec in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Jožef Kupec in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5333,16 +5452,16 @@
         "slug": "bostjan-gorensek",
         "gender": "m",
         "proposer": "Združeni, neodvisna lista za Prevalje ",
-        "has_pp": true,
-        "promised_pp": true
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "dr. Matija Tasič",
-        "slug": "dr-matija-tasic",
+        "slug": "matija-tasic",
         "gender": "m",
-        "proposer": "Marijana Petrič in skupina volivcev ",
+        "proposer": "Marijana Petrič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -5355,9 +5474,9 @@
         "name": "Stanko Ivanušič",
         "slug": "stanko-ivanusic",
         "gender": "m",
-        "proposer": "DEJAN ROB IN SKUPINA VOLIVCEV ",
-        "has_pp": false,
-        "promised_pp": true
+        "proposer": "DEJAN ROB IN SKUPINA VOLIVCEV",
+        "has_pp": true,
+        "promised_pp": false
       }
     ]
   },
@@ -5370,15 +5489,15 @@
         "name": "Srečko Geč",
         "slug": "srecko-gec",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SOCIALNI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Tatjana Marsel",
         "slug": "tatjana-marsel",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5391,9 +5510,9 @@
     "candidates": [
       {
         "name": "dr. Vlasta Krmelj",
-        "slug": "dr-vlasta-krmelj",
-        "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "slug": "vlasta-krmelj",
+        "gender": "f",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5406,9 +5525,9 @@
     "candidates": [
       {
         "name": "mag. Blaž Milavec",
-        "slug": "mag-blaz-milavec",
+        "slug": "blaz-milavec",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5422,10 +5541,10 @@
       {
         "name": "Katarina Prelesnik",
         "slug": "katarina-prelesnik",
-        "gender": "m",
-        "proposer": "BERNARDKA IPAVEC IN SKUPINA VOLIVCEV ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "BERNARDKA IPAVEC IN SKUPINA VOLIVCEV",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5438,7 +5557,7 @@
         "name": "Martin Breznik",
         "slug": "martin-breznik",
         "gender": "m",
-        "proposer": "Lista ZA Sveto Ano - Suzana Rejak Breznik in skupina volivcev  ",
+        "proposer": "Lista ZA Sveto Ano - Suzana Rejak Breznik in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5446,9 +5565,9 @@
         "name": "Urban Kolman",
         "slug": "urban-kolman",
         "gender": "m",
-        "proposer": "Vladimir Kolman in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Vladimir Kolman in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5460,8 +5579,8 @@
       {
         "name": "Darja Vudler Berlak",
         "slug": "darja-vudler-berlak",
-        "gender": "m",
-        "proposer": "Neodvisna lista skupaj za ljudi! Mitja Berlak in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Neodvisna lista skupaj za ljudi! Mitja Berlak in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5474,25 +5593,25 @@
     "candidates": [
       {
         "name": "mag. Milan Turk",
-        "slug": "mag-milan-turk",
+        "slug": "milan-turk",
         "gender": "m",
-        "proposer": "Pavel Černe in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Pavel Černe in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Rok Filipič",
         "slug": "rok-filipic",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Sara Krošelj",
         "slug": "sara-kroselj",
-        "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5502,7 +5621,16 @@
     "id": 184,
     "name": "Tabor",
     "slug": "tabor",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Marko Semprimožnik",
+        "slug": "marko-semprimoznik",
+        "gender": "m",
+        "proposer": "Urša Semprimožnik in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 185,
@@ -5513,24 +5641,24 @@
         "name": "Alojz Benko",
         "slug": "alojz-benko",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "mag. Jožef Potrč",
-        "slug": "mag-jozef-potrc",
+        "slug": "jozef-potrc",
         "gender": "m",
-        "proposer": "Lista volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Lista volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Slavko Moharič",
         "slug": "slavko-moharic",
         "gender": "m",
-        "proposer": "Državljansko gibanje Resni.ca ",
-        "has_pp": true,
+        "proposer": "Državljansko gibanje Resni.ca",
+        "has_pp": false,
         "promised_pp": true
       }
     ]
@@ -5544,7 +5672,7 @@
         "name": "Peter Ložar",
         "slug": "peter-lozar",
         "gender": "m",
-        "proposer": "NUŠA REPŠE IN SKUPINA VOLIVCEV ",
+        "proposer": "NUŠA REPŠE IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5552,9 +5680,9 @@
         "name": "Sebastian Grmek",
         "slug": "sebastian-grmek",
         "gender": "m",
-        "proposer": "ANTON ZUPAN IN SKUPINA VOLIVCEV ",
+        "proposer": "ANTON ZUPAN IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -5565,17 +5693,17 @@
     "candidates": [
       {
         "name": "mag. Damijan Jaklin",
-        "slug": "mag-damijan-jaklin",
+        "slug": "damijan-jaklin",
         "gender": "m",
-        "proposer": "Alojz Jerebic in skupina volivcev ",
+        "proposer": "Alojz Jerebic in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Zlatka Ternar",
         "slug": "zlatka-ternar",
-        "gender": "m",
-        "proposer": "Lidija Perša in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Lidija Perša in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5590,23 +5718,23 @@
         "name": "Borut Kapun",
         "slug": "borut-kapun",
         "gender": "m",
-        "proposer": "Mitja Fras  ",
+        "proposer": "Mitja Fras",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Drago Legen",
         "slug": "drago-legen",
         "gender": "m",
-        "proposer": "Slavko Petovar ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Slavko Petovar",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Rastko Škrjanec",
         "slug": "rastko-skrjanec",
         "gender": "m",
-        "proposer": "Janez Skuhala ",
+        "proposer": "Janez Skuhala",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5616,7 +5744,32 @@
     "id": 189,
     "name": "Vransko",
     "slug": "vransko",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "Arnold Marko",
+        "slug": "arnold-marko",
+        "gender": "m",
+        "proposer": "Vid Križnik in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": true
+      },
+      {
+        "name": "Florijan Rojnik",
+        "slug": "florijan-rojnik",
+        "gender": "m",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "Nataša Juhart",
+        "slug": "natasa-juhart",
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 190,
@@ -5635,23 +5788,23 @@
         "name": "Janko Kos",
         "slug": "janko-kos",
         "gender": "m",
-        "proposer": "Občinska organizacija Socialnih demokratov Žalec ",
+        "proposer": "Občinska organizacija Socialnih demokratov Žalec",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Matjaž Krk",
         "slug": "matjaz-krk",
         "gender": "m",
-        "proposer": "dr. Damjan Doler in skupina volivcev za Listo za mesto in podeželje ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "dr. Damjan Doler in skupina volivcev za Listo za mesto in podeželje",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Srečko Lednik",
         "slug": "srecko-lednik",
         "gender": "m",
-        "proposer": "Konferenca Občinskega odbora Slovenske demokratske stranke Žalec ",
+        "proposer": "Konferenca Občinskega odbora Slovenske demokratske stranke Žalec",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5666,7 +5819,7 @@
         "name": "Anton Butolen",
         "slug": "anton-butolen",
         "gender": "m",
-        "proposer": "Janez Vogrinc ",
+        "proposer": "Janez Vogrinc in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5683,7 +5836,7 @@
         "gender": "m",
         "proposer": "SOCIALNI DEMOKRATI ŽIROVNICA, OO Žirovnica, zbor članov ",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "Leopold Pogačar",
@@ -5704,7 +5857,7 @@
         "name": "Franc Škufca",
         "slug": "franc-skufca",
         "gender": "m",
-        "proposer": "FRANC ŠKUFCA IN SKUPINA VOLIVCEV ",
+        "proposer": "FRANC ŠKUFCA IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5712,15 +5865,15 @@
         "name": "Jože Papež",
         "slug": "joze-papez",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Vlado (Vladimir) Kostevc",
-        "slug": "vlado-vladimir-kostevc",
+        "slug": "vlado-kostevc",
         "gender": "m",
-        "proposer": "LISTA VOLIVCEV LESK ",
+        "proposer": "LISTA VOLIVCEV LESK",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5734,16 +5887,16 @@
       {
         "name": "Andreja Kastelic",
         "slug": "andreja-kastelic",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Blaž Izlakar",
         "slug": "blaz-izlakar",
         "gender": "m",
-        "proposer": "Jernej Kotar in skupina volivcev ",
+        "proposer": "Jernej Kotar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5751,7 +5904,7 @@
         "name": "Janez Tomažič",
         "slug": "janez-tomazic",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5759,7 +5912,7 @@
         "name": "Karmen Sadar",
         "slug": "karmen-sadar",
         "gender": "m",
-        "proposer": "Aljaž Sadar in skupina volivcev ",
+        "proposer": "Aljaž Sadar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5767,9 +5920,9 @@
         "name": "Rajko Meserko",
         "slug": "rajko-meserko",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5780,17 +5933,17 @@
     "candidates": [
       {
         "name": "DR. ANDREJ STEYER",
-        "slug": "dr-andrej-steyer",
+        "slug": "andrej-steyer",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "RENATO FLISAR",
         "slug": "renato-flisar",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5804,10 +5957,18 @@
       {
         "name": "Antonija Žumbar",
         "slug": "antonija-zumbar",
-        "gender": "m",
-        "proposer": "Mirko Lesjak in skupina volilcev ",
+        "gender": "f",
+        "proposer": "Mirko Lesjak in skupina volilcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
+      },
+      {
+        "name": "Janez Jurgec",
+        "slug": "janez-jurgec",
+        "gender": "m",
+        "proposer": "Ivan Vaupotič in skupina volilcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5820,15 +5981,15 @@
         "name": "Alen Lenič",
         "slug": "alen-lenic",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Melita Skušek",
         "slug": "melita-skusek",
-        "gender": "m",
-        "proposer": "Marjan Jelenič in skupina volivcev ",
+        "gender": "f",
+        "proposer": "Marjan Jelenič in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5836,7 +5997,7 @@
         "name": "Robert Zagorc",
         "slug": "robert-zagorc",
         "gender": "m",
-        "proposer": "Matej Kuhar in skupina volivcev ",
+        "proposer": "Matej Kuhar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5851,25 +6012,25 @@
         "name": "Franc Majcen",
         "slug": "franc-majcen",
         "gender": "m",
-        "proposer": "Petra Majcen ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Petra Majcen",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Jožef Trol",
         "slug": "jozef-trol",
         "gender": "m",
-        "proposer": "Jožef Trol ",
+        "proposer": "Jožef Trol",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "mag. Danilo Lončarič",
-        "slug": "mag-danilo-loncaric",
+        "slug": "danilo-loncaric",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5882,15 +6043,15 @@
         "name": "Anton Maver",
         "slug": "anton-maver",
         "gender": "m",
-        "proposer": "STANISLAV KOROŠEC IN SKUPINA VOLIVCEV ",
+        "proposer": "STANISLAV KOROŠEC IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "mag. Franc Glušič",
-        "slug": "mag-franc-glusic",
+        "slug": "franc-glusic",
         "gender": "m",
-        "proposer": "Janez Bregant in skupina volivcev ",
+        "proposer": "Janez Bregant in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5898,9 +6059,9 @@
         "name": "Uroš Pikl",
         "slug": "uros-pikl",
         "gender": "m",
-        "proposer": "VESNA - zelena stranka ",
+        "proposer": "VESNA - zelena stranka",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -5912,16 +6073,16 @@
       {
         "name": "Anita Jodl",
         "slug": "anita-jodl",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "dr. Petra Vrhovnik",
-        "slug": "dr-petra-vrhovnik",
-        "gender": "m",
-        "proposer": "JANEZ VODUŠEK IN LISTA VOLIVCEV ",
+        "slug": "petra-vrhovnik",
+        "gender": "f",
+        "proposer": "JANEZ VODUŠEK IN LISTA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5929,7 +6090,7 @@
         "name": "Jožef Kohne",
         "slug": "jozef-kohne",
         "gender": "m",
-        "proposer": "SLOVENSKA LJUDSKA STRANKA ",
+        "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5937,7 +6098,7 @@
         "name": "Zoran Berdnik",
         "slug": "zoran-berdnik",
         "gender": "m",
-        "proposer": "ZORAN BERDNIK IN SKUPINA VOLIVCEV ",
+        "proposer": "ZORAN BERDNIK IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -5952,7 +6113,7 @@
         "name": "Aleš Furlan",
         "slug": "ales-furlan",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -5960,17 +6121,17 @@
         "name": "Borut Zorn",
         "slug": "borut-zorn",
         "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Tarik Žigon",
         "slug": "tarik-zigon",
         "gender": "m",
-        "proposer": "LISTA ZA VAS ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "LISTA ZA VAS",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -5981,33 +6142,33 @@
     "candidates": [
       {
         "name": "Andrej Horvat ing.mehatronike",
-        "slug": "andrej-horvat-ing-mehatronike",
+        "slug": "andrej-horvat",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Jurij Borko",
         "slug": "jurij-borko",
         "gender": "m",
-        "proposer": "ROMAN MEDIK IN SKUPINA VOLIVCEV ",
+        "proposer": "ROMAN MEDIK IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       },
       {
         "name": "Renata Požgan Bubek",
         "slug": "renata-pozgan-bubek",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Toni Jelovica",
         "slug": "toni-jelovica",
         "gender": "m",
-        "proposer": "MIHAELA VESENJAK IN SKUPINA VOLIVCEV ",
+        "proposer": "MIHAELA VESENJAK IN SKUPINA VOLIVCEV",
         "has_pp": false,
         "promised_pp": false
       }
@@ -6022,7 +6183,7 @@
         "name": "Dušan Krštinc",
         "slug": "dusan-krstinc",
         "gender": "m",
-        "proposer": "Martin Krštinc in skupina volivcev RIOS ",
+        "proposer": "Martin Krštinc in skupina volivcev RIOS",
         "has_pp": false,
         "promised_pp": false
       },
@@ -6030,9 +6191,9 @@
         "name": "Samo Jakljič",
         "slug": "samo-jakljic",
         "gender": "m",
-        "proposer": "Robert Kren in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Robert Kren in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -6045,15 +6206,15 @@
         "name": "David Klobasa",
         "slug": "david-klobasa",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
-        "has_pp": false,
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": true,
         "promised_pp": false
       },
       {
         "name": "Drago Lipič",
         "slug": "drago-lipic",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       }
@@ -6066,11 +6227,11 @@
     "candidates": [
       {
         "name": "Mirko Cvetko mag.",
-        "slug": "mirko-cvetko-mag",
+        "slug": "mirko-cvetko",
         "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -6078,7 +6239,24 @@
     "id": 206,
     "name": "Šmarješke Toplice",
     "slug": "smarjeske-toplice",
-    "candidates": []
+    "candidates": [
+      {
+        "name": "mag. Bernardka Krnc",
+        "slug": "bernardka-krnc",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
+        "has_pp": false,
+        "promised_pp": false
+      },
+      {
+        "name": "mag. Marjan Hribar",
+        "slug": "marjan-hribar",
+        "gender": "m",
+        "proposer": "Gašper Gregorčič in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
+      }
+    ]
   },
   {
     "id": 207,
@@ -6087,9 +6265,9 @@
     "candidates": [
       {
         "name": "Janez Poklukar dr. med",
-        "slug": "janez-poklukar-dr-med",
+        "slug": "janez-poklukar",
         "gender": "m",
-        "proposer": "Bernarda Poklukar Novak in skupina volivcev ",
+        "proposer": "Bernarda Poklukar Novak in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -6097,7 +6275,7 @@
         "name": "Peter Torkar",
         "slug": "peter-torkar",
         "gender": "m",
-        "proposer": "Katjuša Torkar in skupina volivcev ",
+        "proposer": "Katjuša Torkar in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -6112,7 +6290,7 @@
         "name": "Miran Stanovnik",
         "slug": "miran-stanovnik",
         "gender": "m",
-        "proposer": "Matija Nik in skupina volivcev ",
+        "proposer": "Matija Nik in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -6127,23 +6305,23 @@
         "name": "Branko Hriberšek",
         "slug": "branko-hribersek",
         "gender": "m",
-        "proposer": "ALEŠ ZVIR in skupina volivcev  ",
+        "proposer": "ALEŠ ZVIR in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       },
       {
         "name": "dr. Majda Potočnik",
-        "slug": "dr-majda-potocnik",
-        "gender": "m",
-        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI ",
-        "has_pp": true,
-        "promised_pp": true
+        "slug": "majda-potocnik",
+        "gender": "f",
+        "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Jože Lenko",
         "slug": "joze-lenko",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
         "promised_pp": false
       }
@@ -6158,9 +6336,9 @@
         "name": "Peter Škrlec",
         "slug": "peter-skrlec",
         "gender": "m",
-        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   },
@@ -6173,7 +6351,7 @@
         "name": "Andrej Martin Kostelec",
         "slug": "andrej-martin-kostelec",
         "gender": "m",
-        "proposer": "Jakob Trček in skupina volivcev ",
+        "proposer": "Jakob Trček in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       },
@@ -6181,15 +6359,15 @@
         "name": "Tomaž Ramovš",
         "slug": "tomaz-ramovs",
         "gender": "m",
-        "proposer": "Anton Rugelj in skupina volivcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Anton Rugelj in skupina volivcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "Zoran Kos",
         "slug": "zoran-kos",
         "gender": "m",
-        "proposer": "SOCIALNI DEMOKRATI ",
+        "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
         "promised_pp": false
       },
@@ -6197,9 +6375,9 @@
         "name": "Zoran Saje",
         "slug": "zoran-saje",
         "gender": "m",
-        "proposer": "Dejan Prijatelj in skupina volivcev ",
+        "proposer": "Dejan Prijatelj in skupina volivcev",
         "has_pp": false,
-        "promised_pp": true
+        "promised_pp": false
       }
     ]
   },
@@ -6212,7 +6390,7 @@
         "name": "Dušan Skerbiš",
         "slug": "dusan-skerbis",
         "gender": "m",
-        "proposer": "Zoran Remic in skupina volivcev ",
+        "proposer": "Zoran Remic in skupina volivcev",
         "has_pp": false,
         "promised_pp": false
       }
@@ -6226,8 +6404,8 @@
       {
         "name": "Breda Krašna",
         "slug": "breda-krasna",
-        "gender": "m",
-        "proposer": "GIBANJE SVOBODA ",
+        "gender": "f",
+        "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
         "promised_pp": false
       },
@@ -6235,17 +6413,17 @@
         "name": "Gregor Strmčnik",
         "slug": "gregor-strmcnik",
         "gender": "m",
-        "proposer": "Darij Dujmovič in skupina volilcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "proposer": "Darij Dujmovič in skupina volilcev",
+        "has_pp": false,
+        "promised_pp": false
       },
       {
         "name": "mag. Maja Prodan Jurič",
-        "slug": "mag-maja-prodan-juric",
-        "gender": "m",
-        "proposer": "Silvan Benčič in skupina volilcev ",
-        "has_pp": true,
-        "promised_pp": true
+        "slug": "maja-prodan-juric",
+        "gender": "f",
+        "proposer": "Silvan Benčič in skupina volilcev",
+        "has_pp": false,
+        "promised_pp": false
       }
     ]
   }

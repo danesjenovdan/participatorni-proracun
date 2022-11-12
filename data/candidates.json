@@ -1,0 +1,4328 @@
+[
+  {
+    "name": "Jožko Premrn",
+    "municipality": "Ajdovščina",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Poljšak",
+    "municipality": "Ajdovščina",
+    "proposer": "SOCIALISTIČNA PARTIJA SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Nada Pirjevec",
+    "municipality": "Ajdovščina",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tadej Beočanin",
+    "municipality": "Ajdovščina",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Breda Krašna",
+    "municipality": "Ankaran",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Gregor Strmčnik",
+    "municipality": "Ankaran",
+    "proposer": "Darij Dujmovič in skupina volilcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Maja Prodan Jurič",
+    "municipality": "Ankaran",
+    "proposer": "Silvan Benčič in skupina volilcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "DR. ANDREJ STEYER",
+    "municipality": "Apače",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "RENATO FLISAR",
+    "municipality": "Apače",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Virag",
+    "municipality": "Beltinci",
+    "proposer": "Ines Forjan in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Milan Repič",
+    "municipality": "Benedikt",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Franjo Debelak",
+    "municipality": "Bistrica ob Sotli",
+    "proposer": "DUŠAN BERKOVIČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Žučko",
+    "municipality": "Bistrica ob Sotli",
+    "proposer": "MARJAN FENDRE IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Mežan",
+    "municipality": "Bled",
+    "proposer": "Iztok Pesrl in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Fajfar",
+    "municipality": "Bled",
+    "proposer": "Janez Klemenčič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Romana Purkart",
+    "municipality": "Bled",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleksander Lavrič Pregelj",
+    "municipality": "Bloke",
+    "proposer": "NAŠA NOTRANJSKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Doles",
+    "municipality": "Bloke",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojan Traven",
+    "municipality": "Bohinj",
+    "proposer": "Doris Sodja in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Sodja",
+    "municipality": "Bohinj",
+    "proposer": "Peter Klanšček in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Miroslav Sodja",
+    "municipality": "Bohinj",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Zakrajšek",
+    "municipality": "Borovnica",
+    "proposer": "JANEZ NOVAK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Ocepek",
+    "municipality": "Borovnica",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Črnilogar",
+    "municipality": "Borovnica",
+    "proposer": "ANTON ŽERJAV IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Adis Hrovat",
+    "municipality": "Bovec",
+    "proposer": "Alen Hrovat in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Kristjan Omerović",
+    "municipality": "Bovec",
+    "proposer": "Matej Bradaškja in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Siniša Germovšek",
+    "municipality": "Bovec",
+    "proposer": "ZELENI SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Valter Mlekuž",
+    "municipality": "Bovec",
+    "proposer": "Adem Omerović in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Pirnat",
+    "municipality": "Braslovče",
+    "proposer": "Milan Košenina in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Žohar",
+    "municipality": "Braslovče",
+    "proposer": "Tomaž Žohar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Mužič",
+    "municipality": "Brda",
+    "proposer": "Klemen Bajt in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Karol Peter Peršolja",
+    "municipality": "Brda",
+    "proposer": "Tanja Kodermac in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Teja Jelina",
+    "municipality": "Brda",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Igor Zorčič",
+    "municipality": "Brežice",
+    "proposer": "RADE ILJAŽ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Molan",
+    "municipality": "Brežice",
+    "proposer": "DRAŽEN LEVOJEVIĆ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Mojca Florjanič",
+    "municipality": "Brežice",
+    "proposer": "ZBOR ČLANOV LIO BREŽICE GIBANJE SVOBODA, LEVICA LO SP. POSAVJE, VOLILNA KONVENCIJA SD BREŽICE, OO DESUS BREŽICE ",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Metod Ropret",
+    "municipality": "Brezovica",
+    "proposer": "skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Danilo Kacijan",
+    "municipality": "Cankova",
+    "proposer": "Darko Kerec in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojan Šrot",
+    "municipality": "Celje",
+    "proposer": "CELJSKA ŽUPANOVA LISTA SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matija Kovač",
+    "municipality": "Celje",
+    "proposer": "GREGOR DELEJA IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Primož Brvar",
+    "municipality": "Celje",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sandi Sendelbah",
+    "municipality": "Celje",
+    "proposer": "Lista za Celje",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Uroš Lesjak",
+    "municipality": "Celje",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Čebulj",
+    "municipality": "Cerklje na Gorenjskem",
+    "proposer": "Iztok Čebulj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Luka Štumberger",
+    "municipality": "Cerklje na Gorenjskem",
+    "proposer": "Nataša Ropotar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bogdan Zevnik",
+    "municipality": "Cerknica",
+    "proposer": "Vincenc Steržaj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Damijana Škrlj",
+    "municipality": "Cerknica",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Domen Petan",
+    "municipality": "Cerknica",
+    "proposer": "NAŠA NOTRANJSKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Rupar",
+    "municipality": "Cerknica",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rihard Braniselj",
+    "municipality": "Cerknica",
+    "proposer": "ANTON LAH IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Gašper Uršič",
+    "municipality": "Cerkno",
+    "proposer": "DANILO OBID IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Mavri",
+    "municipality": "Cerkno",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Silvo Jeram",
+    "municipality": "Cerkno",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Urška Lahajnar Ubajiogu",
+    "municipality": "Cerkno",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Žmavc",
+    "municipality": "Cerkvenjak",
+    "proposer": "DAMJAN ŽMAVC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Antonija Žumbar",
+    "municipality": "Cirkulane",
+    "proposer": "Mirko Lesjak in skupina volilcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Jurgec",
+    "municipality": "Cirkulane",
+    "proposer": "Ivan Vaupotič in skupina volilcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vera Markoja",
+    "municipality": "Črenšovci",
+    "proposer": "Dušan Utroša in skupina volivcev \"Glas ljudstva - neodvisna lista\" ",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "ALEŠ PRAPROTNIK mag.",
+    "municipality": "Črna na Koroškem",
+    "proposer": "Eva Praprotnik in skupina volilvcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. ROMANA LESJAK",
+    "municipality": "Črna na Koroškem",
+    "proposer": "Adrijana Kamnik in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "MARJAN KODRUN",
+    "municipality": "Črna na Koroškem",
+    "proposer": "Marija Kodrun in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Kavšek",
+    "municipality": "Črnomelj",
+    "proposer": "Vladimir Radovič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mojca Čemas Stjepanovič",
+    "municipality": "Črnomelj",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Horvat",
+    "municipality": "Destrnik",
+    "proposer": "LISTA ZA URBAN - Adriana Horvat in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Simonič",
+    "municipality": "Destrnik",
+    "proposer": "Janez Simonič in skupina volivcev - NAjPREJ DESTRNIK",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vlasta Tetičkovič-Toplak",
+    "municipality": "Destrnik",
+    "proposer": "SDS IN SLS - DRUGAČNI & POVEZANI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alenka Štrucl Dovgan",
+    "municipality": "Divača",
+    "proposer": "Jože Femc",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "Mario Benkoč",
+    "municipality": "Divača",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert De Lucia",
+    "municipality": "Divača",
+    "proposer": "Dragan Vujović",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Leskovšek",
+    "municipality": "Dobje",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Pavlin",
+    "municipality": "Dobrepolje",
+    "proposer": "Janez Pavlin in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojan Felicijan",
+    "municipality": "Dobrna",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Brecl",
+    "municipality": "Dobrna",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Setnikar",
+    "municipality": "Dobrova – Polhov Gradec",
+    "proposer": "Janko Dolinar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jure Dolinar",
+    "municipality": "Dobrova – Polhov Gradec",
+    "proposer": "Matej Avbelj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Kardinar",
+    "municipality": "Dobrovnik",
+    "proposer": "Marko Kardinar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Željko Savič",
+    "municipality": "Dol pri Ljubljani",
+    "proposer": "Prof. dr. Janez Grad in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Bojan Potočar",
+    "municipality": "Dolenjske Toplice",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Vovk",
+    "municipality": "Dolenjske Toplice",
+    "proposer": "Damjan Vovk in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jure Filipović",
+    "municipality": "Dolenjske Toplice",
+    "proposer": "Branko Fabijan in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mojca Šenica",
+    "municipality": "Dolenjske Toplice",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Deželak",
+    "municipality": "Domžale",
+    "proposer": "LTD - TONI DRAGAR - LISTA ZA VSE GENERACIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Fani (Frančiška) Rožič Novak",
+    "municipality": "Domžale",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Renata Kosec",
+    "municipality": "Domžale",
+    "proposer": "LISTA RENATE KOSEC - lista povezovanja in sodelovanja",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Oražem",
+    "municipality": "Domžale",
+    "proposer": "ANJA ORAŽEM IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miroslav Šinkovec",
+    "municipality": "Domžale",
+    "proposer": "NAPREJ SLOVENIJA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tadeja Savnik",
+    "municipality": "Domžale",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Drago Ciglar",
+    "municipality": "Dornava",
+    "proposer": "Karmen Ciglar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Merc",
+    "municipality": "Dornava",
+    "proposer": "Marjan Hrga in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Zorko",
+    "municipality": "Dornava",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miran Prigl",
+    "municipality": "Dornava",
+    "proposer": "SLOVENSKA NACIONALNA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rajko Janžekovič",
+    "municipality": "Dornava",
+    "proposer": "Dominik Janžekovič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sandi Žuran",
+    "municipality": "Dornava",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Stanislav Ciglar",
+    "municipality": "Dornava",
+    "proposer": "ZELENI SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Viljem Mar",
+    "municipality": "Dornava",
+    "proposer": "Špela Mar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Preksavec",
+    "municipality": "Dravograd",
+    "proposer": "Robert PLIMON in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Marjeta Podgoršek Rek",
+    "municipality": "Dravograd",
+    "proposer": "Maksimiljan KOTNIK in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rok Kotnik",
+    "municipality": "Dravograd",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Simon Šeneker",
+    "municipality": "Dravograd",
+    "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sonja Kemperl",
+    "municipality": "Dravograd",
+    "proposer": "Lidija POŽGAN in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mitja Horvat",
+    "municipality": "Duplek",
+    "proposer": "Majda Zajc in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Milan (Milan Janez) Čadež",
+    "municipality": "Gorenja vas – Poljane",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Borut Kolar",
+    "municipality": "Gorišnica",
+    "proposer": "Bernardka Kolar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Erhatič",
+    "municipality": "Gorišnica",
+    "proposer": "Florijan Erhatič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Ranfl",
+    "municipality": "Gorišnica",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jožef Petek",
+    "municipality": "Gorišnica",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Poklukar dr. med",
+    "municipality": "Gorje",
+    "proposer": "Bernarda Poklukar Novak in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Torkar",
+    "municipality": "Gorje",
+    "proposer": "Katjuša Torkar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boris Jaušovec",
+    "municipality": "Gornja Radgona",
+    "proposer": "IGOR PIVEC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "David Roškar",
+    "municipality": "Gornja Radgona",
+    "proposer": "STANISLAV ROJKO IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Fartek",
+    "municipality": "Gornja Radgona",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mag. Marjan Žula",
+    "municipality": "Gornja Radgona",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Urška Mauko Tuš",
+    "municipality": "Gornja Radgona",
+    "proposer": "ALEŠ DOKL IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Špeh",
+    "municipality": "Gornji Grad",
+    "proposer": "Aljaž Špeh in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojan Potočnik",
+    "municipality": "Gornji Petrovci",
+    "proposer": "Branko Gomboc in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Šlihthuber",
+    "municipality": "Gornji Petrovci",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Cvetka Ficko",
+    "municipality": "Grad",
+    "proposer": "Marjan Ficko in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Silvo Šarkanj",
+    "municipality": "Grad",
+    "proposer": "Lidija Bernjak Sukič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Boh",
+    "municipality": "Grosuplje",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr.  Peter Verlič",
+    "municipality": "Grosuplje",
+    "proposer": "SDS - SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI N.Si",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miha Legin",
+    "municipality": "Grosuplje",
+    "proposer": "Nataša Furlan Rusić in skupina volilcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Merc",
+    "municipality": "Hajdina",
+    "proposer": "Aleksander Vaupotič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Stanislav Glažar",
+    "municipality": "Hajdina",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA, SOCIALNI DEMOKRATI, SLOVENSKA LJUDSKA STRANKA ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Marko Soršak",
+    "municipality": "Hoče – Slivnica",
+    "proposer": "Znamo. Zmoremo! Marko Soršak.",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vojko Golob",
+    "municipality": "Hoče – Slivnica",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Denis Tamaško",
+    "municipality": "Hodoš",
+    "proposer": "Ernest Tamaško",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ludvik Orban",
+    "municipality": "Hodoš",
+    "proposer": "Rudolf Bunderla ml.",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Prebil",
+    "municipality": "Horjul",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Gregor Pajić",
+    "municipality": "Hrastnik",
+    "proposer": "Gregor Pajić in skupina volivcev - Lista Gregorja Pajića",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Funkl",
+    "municipality": "Hrastnik",
+    "proposer": "Marko Funkl in skupina volivcev - Lista Naš Hrastnik",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Žiga Kovač",
+    "municipality": "Hrastnik",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Saša Likavec Svetelšek",
+    "municipality": "Hrpelje – Kozina",
+    "proposer": "Janez Likavec in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "Vasja Ivančič",
+    "municipality": "Hrpelje – Kozina",
+    "proposer": "Danijel Petričević in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Lapajne",
+    "municipality": "Idrija",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Vencelj",
+    "municipality": "Idrija",
+    "proposer": "ERIK LOGAR IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vesna Fašink",
+    "municipality": "Idrija",
+    "proposer": "NATALIJA KOVAČ JEREB IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Modic",
+    "municipality": "Ig",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boris Pirc",
+    "municipality": "Ig",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mirko Merzel",
+    "municipality": "Ig",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mitja Glavnik",
+    "municipality": "Ig",
+    "proposer": "KONKRETNO",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zlatko Usenik",
+    "municipality": "Ig",
+    "proposer": "LISTA ZLATKA USENIKA ZA NAPREDEK OBČINE IG",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Černigoj",
+    "municipality": "Ilirska Bistrica",
+    "proposer": "OO N.Si ILIRSKA BISTRICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Gregor Kovačič",
+    "municipality": "Ilirska Bistrica",
+    "proposer": "dr. Gregor Kovačič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Grbec",
+    "municipality": "Ilirska Bistrica",
+    "proposer": "OO SDS ILIRSKA BISTRICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Emil Rojc",
+    "municipality": "Ilirska Bistrica",
+    "proposer": "Aleš Rojc",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Nina Strah",
+    "municipality": "Ivančna Gorica",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Strnad",
+    "municipality": "Ivančna Gorica",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vojko Adamič",
+    "municipality": "Ivančna Gorica",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Žiga Erčulj",
+    "municipality": "Ivančna Gorica",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Danilo Markočič",
+    "municipality": "Izola",
+    "proposer": "IŽL - Izolska županova lista",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Milan Bogatič",
+    "municipality": "Izola",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mitja Kobal",
+    "municipality": "Izola",
+    "proposer": "Lista Kobal Mitja, Lista LKM ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mojca Mahajnc",
+    "municipality": "Izola",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Romina Kralj",
+    "municipality": "Izola",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vasilij Žbogar",
+    "municipality": "Izola",
+    "proposer": "Lista Vasilija Žbogarja",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Vastl",
+    "municipality": "Jesenice",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blaž Račič",
+    "municipality": "Jesenice",
+    "proposer": "ZORAN RAČIČ IN SKUPINA VOLIVCEV \"ŽUPANOVA LISTA ZA NAŠE JESENICE\" ",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Eva Mlakar",
+    "municipality": "Jesenice",
+    "proposer": "NEODVISNA LISTA ZA BOLJŠE JESENICE",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Peter Bohinec",
+    "municipality": "Jesenice",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sabina Mulalić",
+    "municipality": "Jesenice",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Karničar",
+    "municipality": "Jezersko",
+    "proposer": "Irma Karničar Šenk in skupina volivcev - Jezersko za vse",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Muri",
+    "municipality": "Jezersko",
+    "proposer": "Borut Žagar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alojz Herga",
+    "municipality": "Juršinci",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Horvat",
+    "municipality": "Juršinci",
+    "proposer": "PAVLIN DARKO IN SKUPINA VOLIVCEV - POVEZANI ZA JURŠINCE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vesna Krampelj",
+    "municipality": "Juršinci",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Maja Aleksovska-Lesjak",
+    "municipality": "Kamnik",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Slapar",
+    "municipality": "Kamnik",
+    "proposer": "LISTA MATEJA SLAPARJA IN NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI IN BRANKO HAFNER S SKUPINO VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sandi (Aleksander) Uršič",
+    "municipality": "Kamnik",
+    "proposer": "MARJAN NOVAK ŠKATLA IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ermin Hvalica",
+    "municipality": "Kanal",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miha Stegel",
+    "municipality": "Kanal",
+    "proposer": "Miha Stegel in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tina Gerbec",
+    "municipality": "Kanal",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Leskovar",
+    "municipality": "Kidričevo",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jadranko Školnik",
+    "municipality": "Kidričevo",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Matajurc",
+    "municipality": "Kobarid",
+    "proposer": "Tina Sivec Matelič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Kavčič",
+    "municipality": "Kobarid",
+    "proposer": "Ivan Ručna in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Darko Horvat mag.",
+    "municipality": "Kobilje",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Bukovec",
+    "municipality": "Kobilje",
+    "proposer": "VESNA - zelena stranka",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Božidar Peteh",
+    "municipality": "Kočevje",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Vladimir Prebilič",
+    "municipality": "Kočevje",
+    "proposer": "Lilijana Štefanič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Grega Mavrin",
+    "municipality": "Kočevje",
+    "proposer": "SLOVENSKA NACIONALNA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Veber",
+    "municipality": "Kočevje",
+    "proposer": "SLOGA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Robert Tomazin",
+    "municipality": "Kočevje",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Ješelnik",
+    "municipality": "Kočevje",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Renata Turk",
+    "municipality": "Kočevje",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojan Žlebnik",
+    "municipality": "Komen",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Erik Modic",
+    "municipality": "Komen",
+    "proposer": "VALTER MAKOVEC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Boštjan Veinhandl",
+    "municipality": "Komenda",
+    "proposer": "Janez Skok in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jurij Kern",
+    "municipality": "Komenda",
+    "proposer": "Tea Tašker Kern in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mag. Majda Ravnikar",
+    "municipality": "Komenda",
+    "proposer": "Igor Štebe in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "Tomaž Drolec",
+    "municipality": "Komenda",
+    "proposer": "Viktorija Drolec in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alan Medveš",
+    "municipality": "Koper",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleš Bržan",
+    "municipality": "Koper",
+    "proposer": "LISTA ALEŠA BRŽANA IN GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Boris Popovič",
+    "municipality": "Koper",
+    "proposer": "KOPER JE NAŠ- KJN",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Igor Colja",
+    "municipality": "Koper",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jadranka Šturm Kocjan",
+    "municipality": "Koper",
+    "proposer": "SOCIALNI DEMOKRATI (SD)",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Bolčič",
+    "municipality": "Koper",
+    "proposer": "ZAUPANJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alen Lenič",
+    "municipality": "Kostanjevica na Krki",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Melita Skušek",
+    "municipality": "Kostanjevica na Krki",
+    "proposer": "Marjan Jelenič in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Zagorc",
+    "municipality": "Kostanjevica na Krki",
+    "proposer": "Matej Kuhar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Lisac",
+    "municipality": "Kostel",
+    "proposer": "Gibanje Svoboda",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nataša Turk",
+    "municipality": "Kostel",
+    "proposer": "Miran Briški in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Valentin Južnič",
+    "municipality": "Kostel",
+    "proposer": "Nežika Zdravič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Milenca Krajnc",
+    "municipality": "Kozje",
+    "proposer": "JOŽEF KAJBA IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleksander Svetelj",
+    "municipality": "Kranj",
+    "proposer": "Več za Kranj",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivo Bajec",
+    "municipality": "Kranj",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA,  NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI, SLOVENSKA LJUDSKA STRANKA IN ZELENI SLOVENIJE ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Igor Velov",
+    "municipality": "Kranj",
+    "proposer": "Igor Velov in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Rakovec",
+    "municipality": "Kranj",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Srečko Barbič",
+    "municipality": "Kranj",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Stevanović",
+    "municipality": "Kranj",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blaž Knific",
+    "municipality": "Kranjska Gora",
+    "proposer": "Miroslav Marjan Knific in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blaž Veber",
+    "municipality": "Kranjska Gora",
+    "proposer": "Alenka Nečemer in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bogdan Janša",
+    "municipality": "Kranjska Gora",
+    "proposer": "Nataša Janša in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ena Girandon",
+    "municipality": "Kranjska Gora",
+    "proposer": "GIBANJE SVOBODA - zbor članov lokalnega iniciativnega odbora Kranjska Gora",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franci Koražija",
+    "municipality": "Kranjska Gora",
+    "proposer": "SOCIALNI DEMOKRATI - Volilna konvencija zbor članov, Občinska organizacija SD Kranjska Gora ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Henrika Zupan",
+    "municipality": "Kranjska Gora",
+    "proposer": "Aleš Bedič in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Klemen Robič",
+    "municipality": "Kranjska Gora",
+    "proposer": "Sabina Robič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tina Robič",
+    "municipality": "Kranjska Gora",
+    "proposer": "Roman Robič in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Slavinec",
+    "municipality": "Križevci",
+    "proposer": "mag. Branko Belec in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleš Zorko",
+    "municipality": "Krško",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Šiško",
+    "municipality": "Krško",
+    "proposer": "Dejan Stanič in skupina volivcev LISTA DUŠANA ŠIŠKA - ENERGIČNO ZA KRŠKO",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Iztok Starc",
+    "municipality": "Krško",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Kerin",
+    "municipality": "Krško",
+    "proposer": "Marta Levičar Magiera in skupina volivcev LISTE MODRA SMER",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janja Starc",
+    "municipality": "Krško",
+    "proposer": "Dušan Arh in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Olovec",
+    "municipality": "Krško",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tamara Šnofl",
+    "municipality": "Kungota",
+    "proposer": "Andrej Plohl in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jožef Škalič",
+    "municipality": "Kuzma",
+    "proposer": "ALEKSANDRA ŠKALIČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Davorin Cizej",
+    "municipality": "Laško",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Zdolšek",
+    "municipality": "Laško",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Marjan Mačkošek",
+    "municipality": "Laško",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Šantej mag. farm.",
+    "municipality": "Laško",
+    "proposer": "ENEJ KIRN IN SKUPINA VOLIVCEV - MLADA MOČ OBČINE LAŠKO",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Štefanija Pavčnik",
+    "municipality": "Laško",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "MAG. Janez Kramberger DR. VET. MED.",
+    "municipality": "Lenart",
+    "proposer": "STANKA FERŠ IN SKUPINA VOLILCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Koncut",
+    "municipality": "Lendava",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Magyar",
+    "municipality": "Lendava",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Oletič",
+    "municipality": "Lendava",
+    "proposer": "Atilla Pisnjak in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boris Bevc",
+    "municipality": "Litija",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boris Doblekar",
+    "municipality": "Litija",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Rokavec",
+    "municipality": "Litija",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Iztok Izlakar",
+    "municipality": "Litija",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Kaja Mlakar Agrež",
+    "municipality": "Litija",
+    "proposer": "LEVICA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleš Primc",
+    "municipality": "Ljubljana",
+    "proposer": "GLAS ZA OTROKE IN DRUŽINE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Jasminka Dedić",
+    "municipality": "Ljubljana",
+    "proposer": "VESNA - ZELENA STRANKA, ZBOR ČLANOV LJUBLJANA ",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Tina Bregant",
+    "municipality": "Ljubljana",
+    "proposer": "SLS - SLOVENSKA LJUDSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Igor Horvat",
+    "municipality": "Ljubljana",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA - SDS",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jasmin Feratović",
+    "municipality": "Ljubljana",
+    "proposer": "PIRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Tomaž Ogrin",
+    "municipality": "Ljubljana",
+    "proposer": "ZELENI SLOVENIJE IN KONKRETNO",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mojca Sojar",
+    "municipality": "Ljubljana",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nataša Sukič",
+    "municipality": "Ljubljana",
+    "proposer": "LEVICA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Janković",
+    "municipality": "Ljubljana",
+    "proposer": "JOŽE MERMAL S SKUPINO VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franjo Naraločnik",
+    "municipality": "Ljubno",
+    "proposer": "Greta Naraločnik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojana Gošnjak",
+    "municipality": "Ljutomer",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ciril Magdič",
+    "municipality": "Ljutomer",
+    "proposer": "SOCIALNI DEMOKRATI - SD",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jasminka Dukić",
+    "municipality": "Ljutomer",
+    "proposer": "DESUS - DEMOKRATIČNA STRANKA UPOKOJENCEV SLOVENIJE",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Olga Karba",
+    "municipality": "Ljutomer",
+    "proposer": "DR. MIRAN PUCONJA IN SKUPINA VOLIVCEV Z OLGO IN EKIPO SR(e)ČNO NAPREJ!",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miran Stanovnik",
+    "municipality": "Log – Dragomer",
+    "proposer": "Matija Nik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aljoša Peček",
+    "municipality": "Logatec",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Berto Menard",
+    "municipality": "Logatec",
+    "proposer": "Domen Menard in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Bogdan Lipovšek",
+    "municipality": "Logatec",
+    "proposer": "Katja Stražiščar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Klemen Trpin",
+    "municipality": "Logatec",
+    "proposer": "NAŠA NOTRANJSKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Mojškerc",
+    "municipality": "Logatec",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mag. Armida Bavec",
+    "municipality": "Loška dolina",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Miro Mlakar",
+    "municipality": "Loška dolina",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Antončič",
+    "municipality": "Loška dolina",
+    "proposer": "NAŠA NOTRANJSKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vido Kočevar",
+    "municipality": "Loška dolina",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Volf",
+    "municipality": "Loški Potok",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Simon Debeljak",
+    "municipality": "Loški Potok",
+    "proposer": "Barbara Levstik Šega",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Rakovnik",
+    "municipality": "Lovrenc na Pohorju",
+    "proposer": "Blaž Kraner in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Jože Vavdi",
+    "municipality": "Luče",
+    "proposer": "David Kosmač in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Klavdij Strmčnik",
+    "municipality": "Luče",
+    "proposer": "Ciril Rosc in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Breznik",
+    "municipality": "Luče",
+    "proposer": "Tomaž Marolt in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Olga Vrankar",
+    "municipality": "Lukovica",
+    "proposer": "MARJAN KVEDER IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Kotnik",
+    "municipality": "Lukovica",
+    "proposer": "TOMAŽ PROHINAR IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Mesarič",
+    "municipality": "Majšperk",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janja Dežmarić Zolar",
+    "municipality": "Majšperk",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Vesenjak",
+    "municipality": "Majšperk",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sašo Kodrič",
+    "municipality": "Majšperk",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Majcen",
+    "municipality": "Makole",
+    "proposer": "Petra Majcen",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jožef Trol",
+    "municipality": "Makole",
+    "proposer": "Jožef Trol",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Danilo Lončarič",
+    "municipality": "Makole",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleksander Kamenik",
+    "municipality": "Maribor",
+    "proposer": "Stranka Aleksandra Kamenika",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleksander Saša Arsenovič",
+    "municipality": "Maribor",
+    "proposer": "ANDREJ BRVAR IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Boštjan Klun",
+    "municipality": "Maribor",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Jesenek",
+    "municipality": "Maribor",
+    "proposer": "STRANKA SLOVENSKEGA NARODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Kangler",
+    "municipality": "Maribor",
+    "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Igor Jurišič",
+    "municipality": "Maribor",
+    "proposer": "STRANKA MLADIH - ZELENI EVROPE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Josip Rotar",
+    "municipality": "Maribor",
+    "proposer": "Lista kolesarjev in pešcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Lidija Divjak Mirnik",
+    "municipality": "Maribor",
+    "proposer": "Lista za pravičen razvoj mestnih četrti in krajevnih skupnosti",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Bernard Memon",
+    "municipality": "Maribor",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Dejan Kaloh",
+    "municipality": "Maribor",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matic Matjašič",
+    "municipality": "Maribor",
+    "proposer": "Lista mladih. Povezujemo",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miha Recek",
+    "municipality": "Maribor",
+    "proposer": "GLAVNO TAJNIŠTVO SLS IN VOLILNA KONFERENCA MO NAŠA DEŽELA MARIBOR",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nina Beyokol",
+    "municipality": "Maribor",
+    "proposer": "PIRATSKA STRANKA SLOVENIJE",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "prof. dr.  Vojko Flis dr. med.",
+    "municipality": "Maribor",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vladimir Šega",
+    "municipality": "Maribor",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Dragan Mikša",
+    "municipality": "Markovci",
+    "proposer": "Aleš Forštnarič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Milan Gabrovec",
+    "municipality": "Markovci",
+    "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nejc Smole",
+    "municipality": "Medvode",
+    "proposer": "Ladislav Vidmar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Aleš Janežič",
+    "municipality": "Mengeš",
+    "proposer": "SKUPAJ ZA MENGEŠKO OBČINO - SKUPAJ ZMOREMO VEČ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bogo Ropotar",
+    "municipality": "Mengeš",
+    "proposer": "Jurij Jerič in skupina volilcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Hribar",
+    "municipality": "Mengeš",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sandi Jaklič",
+    "municipality": "Mengeš",
+    "proposer": "Lista Sandija Jakliča",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Štebe",
+    "municipality": "Mengeš",
+    "proposer": "ZELENI SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleksandar Polšak",
+    "municipality": "Metlika",
+    "proposer": "NAPREJ SLOVENIJA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Darko Zevnik",
+    "municipality": "Metlika",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martina Legan Janžekovič",
+    "municipality": "Metlika",
+    "proposer": "ANTON NEMANIČ IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vanja Vlah",
+    "municipality": "Metlika",
+    "proposer": "DANILO ORLIČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Krebel",
+    "municipality": "Mežica",
+    "proposer": "Darja Maurič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franjo  Hercog",
+    "municipality": "Mežica",
+    "proposer": "Emilija Žiberna in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Irena Pirtovšek Mazej",
+    "municipality": "Mežica",
+    "proposer": "Zlatko Pirtovšek in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mark Maze",
+    "municipality": "Mežica",
+    "proposer": "Miha Obreza in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Iztok Peterin",
+    "municipality": "Miklavž na Dravskem polju",
+    "proposer": "Dialog za napredek",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Egon Repnik",
+    "municipality": "Miklavž na Dravskem polju",
+    "proposer": "LISTA ZA SKUPNO OBČINO MIKLAVŽ NA D.P.",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Simona Marko",
+    "municipality": "Miklavž na Dravskem polju",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mauricij Humar",
+    "municipality": "Miren – Kostanjevica",
+    "proposer": "Skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Primož Nemec",
+    "municipality": "Miren – Kostanjevica",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Skerbiš",
+    "municipality": "Mirna",
+    "proposer": "Zoran Remic in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Kastelic",
+    "municipality": "Mirna Peč",
+    "proposer": "DAMJAN ZUPANČIČ in skupina volilcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zvonko Lah",
+    "municipality": "Mirna Peč",
+    "proposer": "ZELENI SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Felle",
+    "municipality": "Mislinja",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojan Borovnik",
+    "municipality": "Mislinja",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Maver",
+    "municipality": "Mokronog – Trebelno",
+    "proposer": "STANISLAV KOROŠEC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Franc Glušič",
+    "municipality": "Mokronog – Trebelno",
+    "proposer": "Janez Bregant in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Uroš Pikl",
+    "municipality": "Mokronog – Trebelno",
+    "proposer": "VESNA - zelena stranka",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Milan Balažic",
+    "municipality": "Moravče",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Korošec",
+    "municipality": "Moravče",
+    "proposer": "SEBASTIJAN KOVAČIČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Rebolj",
+    "municipality": "Moravče",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nuša Klopčič",
+    "municipality": "Moravče",
+    "proposer": "PETER KLOPČIČ IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Roman Capuder",
+    "municipality": "Moravče",
+    "proposer": "ZDRUŽENA MORAVŠKA DOLINA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vitomir Cerar",
+    "municipality": "Moravče",
+    "proposer": "MATJAŽ KOČAR IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alojz Glavač",
+    "municipality": "Moravske Toplice",
+    "proposer": "VLASTA GLAVAČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Cipot",
+    "municipality": "Moravske Toplice",
+    "proposer": "JOSIP ČARNI IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tadej Henzel",
+    "municipality": "Moravske Toplice",
+    "proposer": "MAJA HENZEL IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tatjana Vokić Vojkovič",
+    "municipality": "Moravske Toplice",
+    "proposer": "VESNA - zelena stranka",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Gregorec",
+    "municipality": "Moravske Toplice",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Suhoveršnik",
+    "municipality": "Mozirje",
+    "proposer": "Jožef Skornšek",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Mešič",
+    "municipality": "Murska Sobota",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blanka Denko Čeh",
+    "municipality": "Murska Sobota",
+    "proposer": "AKACIJE",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Damjan Anželj",
+    "municipality": "Murska Sobota",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mitja Horvat",
+    "municipality": "Murska Sobota",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Angelca (Angela) Mrak",
+    "municipality": "Muta",
+    "proposer": "TOMAŽ FERK IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miroslav Vošner",
+    "municipality": "Muta",
+    "proposer": "MILAN STRAMEC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Meglič",
+    "municipality": "Naklo",
+    "proposer": "SLS, SLOVENSKA LJUDSKA STRANKA, OO NAKLO ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Pečovnik",
+    "municipality": "Nazarje",
+    "proposer": "Pečovnik Perme Nataša in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Pelicon",
+    "municipality": "Nova Gorica",
+    "proposer": "Levica",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Harej",
+    "municipality": "Nova Gorica",
+    "proposer": "Nova Slovenija - krščanski demokrati",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Damjana Pavlica",
+    "municipality": "Nova Gorica",
+    "proposer": "Slovenska demokratska stranka",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Klemen Miklavič",
+    "municipality": "Nova Gorica",
+    "proposer": "Majda Smrekar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Tomaž Horvat",
+    "municipality": "Nova Gorica",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Samo Turel",
+    "municipality": "Nova Gorica",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Gregor Macedoni",
+    "municipality": "Novo mesto",
+    "proposer": "Boštjan Grobler in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Srečko Vovko",
+    "municipality": "Novo mesto",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Barbara Ferenčak",
+    "municipality": "Odranci",
+    "proposer": "ANDREJA POREDOŠ IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mario Balažic",
+    "municipality": "Odranci",
+    "proposer": "BENJAMIN BALAŽIC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sebastjan Brunec",
+    "municipality": "Odranci",
+    "proposer": "MOJCA BRUNEC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Kos",
+    "municipality": "Oplotnica",
+    "proposer": "MATIC JARNI IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Džuro (Stanislav) Volčič",
+    "municipality": "Oplotnica",
+    "proposer": "NATAŠA SMOLE VOLČIČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Orter",
+    "municipality": "Oplotnica",
+    "proposer": "MARTIN LESJAK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Danijel Vrbnjak mag. posl. ved",
+    "municipality": "Ormož",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Škrlec",
+    "municipality": "Ormož",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alenka Kovač",
+    "municipality": "Osilnica",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anamarija Štimec",
+    "municipality": "Osilnica",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Gregor Žmak",
+    "municipality": "Pesnica",
+    "proposer": "Marjan Rodež in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Korenika",
+    "municipality": "Piran",
+    "proposer": "Andrej Korenika in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Danilo Milharčič",
+    "municipality": "Piran",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Đenio Zadković",
+    "municipality": "Piran",
+    "proposer": "ZVEZA ZA PRIMORSKO-ZZP",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Olaj",
+    "municipality": "Piran",
+    "proposer": "SOCIALNI DEMOKRATI - SD",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Gašpar Gašpar-Mišič",
+    "municipality": "Piran",
+    "proposer": "Egon Štibilj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Kristijan Cerovac",
+    "municipality": "Piran",
+    "proposer": "Gibanje za občino Piran",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Manuela Rojec",
+    "municipality": "Piran",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martel Antoni Santinni",
+    "municipality": "Piran",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mihael Tomše",
+    "municipality": "Piran",
+    "proposer": "Vlado Novoselec in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Onelio Bernetič",
+    "municipality": "Piran",
+    "proposer": "OLJKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Fakin",
+    "municipality": "Piran",
+    "proposer": "Samo Markežič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vojko Jevševar",
+    "municipality": "Piran",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zlatka Olah",
+    "municipality": "Piran",
+    "proposer": "STRANKA SLOVENSKEGA NARODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Smrdelj",
+    "municipality": "Pivka",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Misja",
+    "municipality": "Podčetrtek",
+    "proposer": "Jana Stojnšek in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Sebastian Toplak",
+    "municipality": "Podlehnik",
+    "proposer": "Janez Koren in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Fornezzi",
+    "municipality": "Podvelka",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Emerik Neumeister",
+    "municipality": "Podvelka",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miran Pušnik",
+    "municipality": "Podvelka",
+    "proposer": "Jani Pavlič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anita Jodl",
+    "municipality": "Poljčane",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Petra Vrhovnik",
+    "municipality": "Poljčane",
+    "proposer": "JANEZ VODUŠEK IN LISTA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jožef Kohne",
+    "municipality": "Poljčane",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Berdnik",
+    "municipality": "Poljčane",
+    "proposer": "ZORAN BERDNIK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleš Goršak",
+    "municipality": "Polzela",
+    "proposer": "DOBRA DRŽAVA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Kanduti",
+    "municipality": "Polzela",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Bojana Kralj Kos",
+    "municipality": "Polzela",
+    "proposer": "Matjaž Dedič in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dragica Sternad Pražnikar",
+    "municipality": "Polzela",
+    "proposer": "Mag. Boštjan Pražnikar in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Kužnik",
+    "municipality": "Polzela",
+    "proposer": "Dušan Pungartnik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Igor Marentič",
+    "municipality": "Postojna",
+    "proposer": "ANDREJ BERGINC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "mag. Marko Repnik",
+    "municipality": "Prebold",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Golavšek",
+    "municipality": "Prebold",
+    "proposer": "Jožef Kupec in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rok Roblek",
+    "municipality": "Preddvor",
+    "proposer": "Eva Grah Roblek",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Gorenšek",
+    "municipality": "Prevalje",
+    "proposer": "Združeni, neodvisna lista za Prevalje ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Matija Tasič",
+    "municipality": "Prevalje",
+    "proposer": "Marijana Petrič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Čuš",
+    "municipality": "Ptuj",
+    "proposer": "MILAN KLEMENC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Lacko",
+    "municipality": "Ptuj",
+    "proposer": "SLOVENSKA NACIONALNA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Koražija",
+    "municipality": "Ptuj",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franjo Rozman",
+    "municipality": "Ptuj",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nuška Gajšek",
+    "municipality": "Ptuj",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "Robert Križanič",
+    "municipality": "Ptuj",
+    "proposer": "DRŽAVLJANSKO GIBANJE RESNI.CA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Štefan Petek",
+    "municipality": "Ptuj",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Suzana Lara Krause",
+    "municipality": "Ptuj",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Ritlop",
+    "municipality": "Puconci",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Pintarič",
+    "municipality": "Puconci",
+    "proposer": "Simona Šiftar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jožef Ficko",
+    "municipality": "Puconci",
+    "proposer": "Janez Kuzma in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sašo Šraj",
+    "municipality": "Puconci",
+    "proposer": "Dušan Lazar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Uroš Kamenšek",
+    "municipality": "Puconci",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Ledinek",
+    "municipality": "Rače – Fram",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Režun",
+    "municipality": "Radeče",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Roman Leljak",
+    "municipality": "Radenci",
+    "proposer": "Maja Rožman in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Toni Žitek",
+    "municipality": "Radenci",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Martini",
+    "municipality": "Radlje ob Dravi",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Alan Bukovnik",
+    "municipality": "Radlje ob Dravi",
+    "proposer": "Alan Bukovnik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Stanislav Pajtler",
+    "municipality": "Radlje ob Dravi",
+    "proposer": "Lista Stanislava Pajtlerja s podporo volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ciril Globočnik",
+    "municipality": "Radovljica",
+    "proposer": "Matej Globočnik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Janez Waland",
+    "municipality": "Radovljica",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Renata Zadnikar",
+    "municipality": "Radovljica",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Grohar",
+    "municipality": "Radovljica",
+    "proposer": "SLOVENSKA NACIONALNA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vojka Jesenko",
+    "municipality": "Radovljica",
+    "proposer": "mag. Primož Jeglič in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Tomaž Rožen",
+    "municipality": "Ravne na Koroškem",
+    "proposer": "PETER STOČKO IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Stanko Ivanušič",
+    "municipality": "Razkrižje",
+    "proposer": "DEJAN ROB IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Branko Hriberšek",
+    "municipality": "Rečica ob Savinji",
+    "proposer": "ALEŠ ZVIR in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Majda Potočnik",
+    "municipality": "Rečica ob Savinji",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Lenko",
+    "municipality": "Rečica ob Savinji",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleš Furlan",
+    "municipality": "Renče – Vogrsko",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Borut Zorn",
+    "municipality": "Renče – Vogrsko",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tarik Žigon",
+    "municipality": "Renče – Vogrsko",
+    "proposer": "LISTA ZA VAS",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Samo Pogorelc",
+    "municipality": "Ribnica",
+    "proposer": "Matija Bartol",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Srečko Geč",
+    "municipality": "Ribnica na Pohorju",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tatjana Marsel",
+    "municipality": "Ribnica na Pohorju",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Albin Šrimpf",
+    "municipality": "Rogaška Slatina",
+    "proposer": "Janez Čobec in skupina volivcev Nestrankarska lista Gibanje za Rogaško Slatino",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Branko Kidrič",
+    "municipality": "Rogaška Slatina",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Reich",
+    "municipality": "Rogaška Slatina",
+    "proposer": "Marija But in skupina volivcev Nestrankarska lista Srčno za Rogaško",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Perša",
+    "municipality": "Rogašovci",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Slavko Buček",
+    "municipality": "Rogašovci",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Ficko",
+    "municipality": "Rogašovci",
+    "proposer": "ANTON BUČEK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rihard Peurača",
+    "municipality": "Rogašovci",
+    "proposer": "ŠTEFAN ROŽMAN IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Fredi Ferčec",
+    "municipality": "Rogatec",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Mikolič",
+    "municipality": "Rogatec",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Darko Knez",
+    "municipality": "Ruše",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Lesjak",
+    "municipality": "Ruše",
+    "proposer": "dr. Jasmina Mavrič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Urška Repolusk",
+    "municipality": "Ruše",
+    "proposer": "Srečko Šarh in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "Albin Gubič",
+    "municipality": "Šalovci",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA - konferenca občinskega odbora Šalovci",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Iztok Fartek",
+    "municipality": "Šalovci",
+    "proposer": "Mihaela KALAMAR in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Vlasta Krmelj",
+    "municipality": "Selnica ob Dravi",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Polona Kambič mag.",
+    "municipality": "Semič",
+    "proposer": "Polona Kambič in skupina volivcev Gibanja Zdrava družba",
+    "gender": "f",
+    "already_has_pp": true
+  },
+  {
+    "name": "mag. Milan Turk",
+    "municipality": "Šempeter – Vrtojba",
+    "proposer": "Pavel Černe in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rok Filipič",
+    "municipality": "Šempeter – Vrtojba",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sara Krošelj",
+    "municipality": "Šempeter – Vrtojba",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anita Praprotnik",
+    "municipality": "Šenčur",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ciril Kozjek",
+    "municipality": "Šenčur",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA IN SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Knific",
+    "municipality": "Šenčur",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Valerij Grašič",
+    "municipality": "Šenčur",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Zdenka Ploj",
+    "municipality": "Šentilj",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marija Janžek",
+    "municipality": "Šentilj",
+    "proposer": "SUZANA ŠAUPERL IN SKUPINA VOLIVCEV, NESTRANKARSKA LISTA OBČANOV ",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Štefan Žvab",
+    "municipality": "Šentilj",
+    "proposer": "DAVID KOS IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Aleš Trbanc",
+    "municipality": "Šentjernej",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Simončič",
+    "municipality": "Šentjernej",
+    "proposer": "Peter Cvelbar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jelka Godec",
+    "municipality": "Šentjur",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Marko Diaci",
+    "municipality": "Šentjur",
+    "proposer": "Matjaž Žmahar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Martin Kostelec",
+    "municipality": "Šentrupert",
+    "proposer": "Jakob Trček in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tomaž Ramovš",
+    "municipality": "Šentrupert",
+    "proposer": "Anton Rugelj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Kos",
+    "municipality": "Šentrupert",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Saje",
+    "municipality": "Šentrupert",
+    "proposer": "Dejan Prijatelj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aleš Žibert",
+    "municipality": "Sevnica",
+    "proposer": "Alojz Žibert in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Srečko Ocvirk",
+    "municipality": "Sevnica",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Andrej Sila",
+    "municipality": "Sežana",
+    "proposer": "Tanja Sila in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "David Škabar",
+    "municipality": "Sežana",
+    "proposer": "Vlasta Sluban in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Ljubica Jelušič",
+    "municipality": "Sežana",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jernej Bortolato",
+    "municipality": "Sežana",
+    "proposer": "Tanja Svetina in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Milan Škapin",
+    "municipality": "Sežana",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rudi (Rudolf) Pečar",
+    "municipality": "Sežana",
+    "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Kocjan",
+    "municipality": "Škocjan",
+    "proposer": "OO SLOVENSKE LJUDSKE STRANKE ŠKOCJAN",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Kapler",
+    "municipality": "Škocjan",
+    "proposer": "KONFERENCA OBČINSKEGA ODBORA SLOVENSKE DEMOKRATSKE STRANKE ŠKOCJAN",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Gašper Hafner",
+    "municipality": "Škofja Loka",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Trampuš",
+    "municipality": "Škofja Loka",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rolando Krajnik",
+    "municipality": "Škofja Loka",
+    "proposer": "KOMUNALNO EKOLOŠKA LISTA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tine Radinja",
+    "municipality": "Škofja Loka",
+    "proposer": "MIHA JEŠE IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Bojan Božič",
+    "municipality": "Škofljica",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Igor Zupančič",
+    "municipality": "Škofljica",
+    "proposer": "Lista Igorja Zupančiča",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ivan Jordan",
+    "municipality": "Škofljica",
+    "proposer": "Andreja Knez in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Primož Cimerman",
+    "municipality": "Škofljica",
+    "proposer": "Bernarda Cimerman in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rok Treven",
+    "municipality": "Škofljica",
+    "proposer": "Petra Šilc Miklič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tilen Klugler",
+    "municipality": "Slovenj Gradec",
+    "proposer": "METKA ČERNJAK GOLEŽ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "dr. Ivan Žagar",
+    "municipality": "Slovenska Bistrica",
+    "proposer": "SLS, SDS, N.Si, DeSUS ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Ljubo Poles",
+    "municipality": "Slovenska Bistrica",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matej Španinger",
+    "municipality": "Slovenska Bistrica",
+    "proposer": "SLOVENSKA NACIONALNA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Romana Brzin",
+    "municipality": "Slovenska Bistrica",
+    "proposer": "Za ljudstvo Slovenije",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Darko Ratajc",
+    "municipality": "Slovenske Konjice",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "mag. Jure Levart",
+    "municipality": "Slovenske Konjice",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matija Čakš",
+    "municipality": "Šmarje pri Jelšah",
+    "proposer": "Anton Guzej in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Bernardka Krnc",
+    "municipality": "Šmarješke Toplice",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Marjan Hribar",
+    "municipality": "Šmarješke Toplice",
+    "proposer": "Gašper Gregorčič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Kopušar",
+    "municipality": "Šmartno ob Paki",
+    "proposer": "ZDRAVKO RAMŠAK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Josip Lukenda",
+    "municipality": "Šmartno ob Paki",
+    "proposer": "LUKA ŽERJAV IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Rosenstein",
+    "municipality": "Šmartno ob Paki",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Robert Crnjac",
+    "municipality": "Šmartno ob Paki",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andreja Kastelic",
+    "municipality": "Šmartno pri Litiji",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blaž Izlakar",
+    "municipality": "Šmartno pri Litiji",
+    "proposer": "Jernej Kotar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janez Tomažič",
+    "municipality": "Šmartno pri Litiji",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Karmen Sadar",
+    "municipality": "Šmartno pri Litiji",
+    "proposer": "Aljaž Sadar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rajko Meserko",
+    "municipality": "Šmartno pri Litiji",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Blaž Milavec",
+    "municipality": "Sodražica",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Katarina Prelesnik",
+    "municipality": "Solčava",
+    "proposer": "BERNARDKA IPAVEC IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Goršek",
+    "municipality": "Šoštanj",
+    "proposer": "Lista aktivni",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boris Goličnik",
+    "municipality": "Šoštanj",
+    "proposer": "Lista Borisa Goličnika",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Drago Koren",
+    "municipality": "Šoštanj",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Rosec",
+    "municipality": "Šoštanj",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Iztok Kotnik",
+    "municipality": "Šoštanj",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Vidmar",
+    "municipality": "Šoštanj",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej Horvat ing.mehatronike",
+    "municipality": "Središče ob Dravi",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jurij Borko",
+    "municipality": "Središče ob Dravi",
+    "proposer": "ROMAN MEDIK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Renata Požgan Bubek",
+    "municipality": "Središče ob Dravi",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Toni Jelovica",
+    "municipality": "Središče ob Dravi",
+    "proposer": "MIHAELA VESENJAK IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Stanislav Greifoner univ.dipl.prav.",
+    "municipality": "Starše",
+    "proposer": "MAJDA MOHORIČ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Emil Kačičnik",
+    "municipality": "Štore",
+    "proposer": "SLOVENSKA NACIONALNA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miran Jurkošek",
+    "municipality": "Štore",
+    "proposer": "MIRAN JURKOŠEK IN SKUPINA VOLIVCEV \"ŽUPANOVA NEODVISNA LISTA ZA RAZVOJ\" ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Simon Kroflič",
+    "municipality": "Štore",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dušan Krštinc",
+    "municipality": "Straža",
+    "proposer": "Martin Krštinc in skupina volivcev RIOS",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Samo Jakljič",
+    "municipality": "Straža",
+    "proposer": "Robert Kren in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Martin Breznik",
+    "municipality": "Sveta Ana",
+    "proposer": "Lista ZA Sveto Ano - Suzana Rejak Breznik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Urban Kolman",
+    "municipality": "Sveta Ana",
+    "proposer": "Vladimir Kolman in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "David Klobasa",
+    "municipality": "Sveta Trojica v Slovenskih goricah",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": true
+  },
+  {
+    "name": "Drago Lipič",
+    "municipality": "Sveta Trojica v Slovenskih goricah",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Darja Vudler Berlak",
+    "municipality": "Sveti Andraž v Slovenskih goricah",
+    "proposer": "Neodvisna lista skupaj za ljudi! Mitja Berlak in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andrej (Andrej) Vrzel",
+    "municipality": "Sveti Jurij ob Ščavnici",
+    "proposer": "Simon Černel in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Slana",
+    "municipality": "Sveti Jurij ob Ščavnici",
+    "proposer": "Rok Korošak in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jani (Janez) Kosi",
+    "municipality": "Sveti Jurij ob Ščavnici",
+    "proposer": "Janez Kosi in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Škrlec",
+    "municipality": "Sveti Jurij v Slovenskih goricah",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mirko Cvetko mag.",
+    "municipality": "Sveti Tomaž",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Semprimožnik",
+    "municipality": "Tabor",
+    "proposer": "Urša Semprimožnik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Horvat",
+    "municipality": "Tišina",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Miro Berke",
+    "municipality": "Tišina",
+    "proposer": "BORUT ANŽELJ IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alen Červ",
+    "municipality": "Tolmin",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Maša Klavora",
+    "municipality": "Tolmin",
+    "proposer": "Uroš Brežan in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Oton Bratuž",
+    "municipality": "Tolmin",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dejan Debelić",
+    "municipality": "Trbovlje",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Drago Kočar",
+    "municipality": "Trbovlje",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Pustoslemšek",
+    "municipality": "Trbovlje",
+    "proposer": "LISTA DNK TRBOVELJ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Patricija Gorenc",
+    "municipality": "Trbovlje",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Primož Siter",
+    "municipality": "Trbovlje",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zoran Poznič",
+    "municipality": "Trbovlje",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alojzij Kastelic",
+    "municipality": "Trebnje",
+    "proposer": "Branko Meglič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blaž Pavlin",
+    "municipality": "Trebnje",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Avguštinčič",
+    "municipality": "Trebnje",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Gregor Kaplan",
+    "municipality": "Trebnje",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Mateja Povhe",
+    "municipality": "Trebnje",
+    "proposer": "DROT - ZA RAZVOJ",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alojz Benko",
+    "municipality": "Trnovska vas",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Jožef Potrč",
+    "municipality": "Trnovska vas",
+    "proposer": "Lista volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Slavko Moharič",
+    "municipality": "Trnovska vas",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Drago Zadnikar",
+    "municipality": "Tržič",
+    "proposer": "Socialni demokrati",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Miklič",
+    "municipality": "Tržič",
+    "proposer": "Drago Zalar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Samo Dolhar",
+    "municipality": "Tržič",
+    "proposer": "Žan Dolhar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Ložar",
+    "municipality": "Trzin",
+    "proposer": "NUŠA REPŠE IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Sebastian Grmek",
+    "municipality": "Trzin",
+    "proposer": "ANTON ZUPAN IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Borut Horvat",
+    "municipality": "Turnišče",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tina Hozjan Žižek",
+    "municipality": "Turnišče",
+    "proposer": "VESNA - zelena stranka",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Benjamin Strozak",
+    "municipality": "Velenje",
+    "proposer": "DOBRA DRŽAVA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Milan Medved",
+    "municipality": "Velenje",
+    "proposer": "Herman Arlič in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Hribar",
+    "municipality": "Velenje",
+    "proposer": "NAŠE VELENJE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Lidija Črnko",
+    "municipality": "Velenje",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Lidija Šolinc",
+    "municipality": "Velenje",
+    "proposer": "Državljansko gibanje Resni.ca",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Peter Dermol",
+    "municipality": "Velenje",
+    "proposer": "SOCIALNI DEMOKRATI - SD in Rok Plankelj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "mag. Damijan Jaklin",
+    "municipality": "Velika Polana",
+    "proposer": "Alojz Jerebic in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Zlatka Ternar",
+    "municipality": "Velika Polana",
+    "proposer": "Lidija Perša in skupina volivcev",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Dejan Zakrajšek",
+    "municipality": "Velike Lašče",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Luka Ilc",
+    "municipality": "Velike Lašče",
+    "proposer": "Luka Ilc in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Gruden",
+    "municipality": "Velike Lašče",
+    "proposer": "Urša Gruden in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Hočevar",
+    "municipality": "Velike Lašče",
+    "proposer": "Nina Hočevar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tadej Malovrh",
+    "municipality": "Velike Lašče",
+    "proposer": "Lidija Vilar in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Borut Kapun",
+    "municipality": "Veržej",
+    "proposer": "Mitja Fras",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Drago Legen",
+    "municipality": "Veržej",
+    "proposer": "Slavko Petovar",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rastko Škrjanec",
+    "municipality": "Veržej",
+    "proposer": "Janez Skuhala",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Brane Kolednik",
+    "municipality": "Videm",
+    "proposer": "STRANKA MLADIH - ZELENI EVROPE",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Marinič",
+    "municipality": "Videm",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Lavrenčič",
+    "municipality": "Vipava",
+    "proposer": "Tomaž Vrčon in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Goran Kodelja",
+    "municipality": "Vipava",
+    "proposer": "Sonja Lukin in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Andraž Pogorevc",
+    "municipality": "Vitanje",
+    "proposer": "ANITA POGOREVC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Slavko Vetrih",
+    "municipality": "Vitanje",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Aco Franc Šuštar",
+    "municipality": "Vodice",
+    "proposer": "Marjan Podboršek",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Tilen Jeraj",
+    "municipality": "Vodice",
+    "proposer": "Drago Šimon",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Barbara Leder",
+    "municipality": "Vojnik",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Petre",
+    "municipality": "Vojnik",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI in SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Arnold Marko",
+    "municipality": "Vransko",
+    "proposer": "Vid Križnik in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Florijan Rojnik",
+    "municipality": "Vransko",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Nataša Juhart",
+    "municipality": "Vransko",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Alja Stanko",
+    "municipality": "Vrhnika",
+    "proposer": "Gibanje SVOBODA",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "dr. Benjamin Leskovec",
+    "municipality": "Vrhnika",
+    "proposer": "1890 / Edvarda Šteblaj in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Daniel Cukjati",
+    "municipality": "Vrhnika",
+    "proposer": "Daniel Cukjati in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marjan Geohelli",
+    "municipality": "Vrhnika",
+    "proposer": "Zbor članov stranke, VESNA - zelena stranka ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Močnik",
+    "municipality": "Vrhnika",
+    "proposer": "LEVICA, LO Vrhnika ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franjo (Franc) Golob",
+    "municipality": "Vuzenica",
+    "proposer": "DANICA GOLOB IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Simona Kremzer",
+    "municipality": "Vuzenica",
+    "proposer": "VLADIMIR KREMZER IN SKUPINA VOLIVCEV",
+    "gender": "f",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boštjan Ocepek",
+    "municipality": "Zagorje ob Savi",
+    "proposer": "SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Švagan",
+    "municipality": "Zagorje ob Savi",
+    "proposer": "ZAGORJE GRE NAPREJ - ZDRUŽENJE ZA NAPREDEK ZASAVJA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Til Šiles",
+    "municipality": "Zagorje ob Savi",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Željko Železnik",
+    "municipality": "Zagorje ob Savi",
+    "proposer": "SOCIALNI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Blaž Kolar",
+    "municipality": "Žalec",
+    "proposer": "Gibanje SVOBODA, Zbor članov lokalnega iniciativnega odbora Žalec ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Janko Kos",
+    "municipality": "Žalec",
+    "proposer": "Občinska organizacija Socialnih demokratov Žalec",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Matjaž Krk",
+    "municipality": "Žalec",
+    "proposer": "dr. Damjan Doler in skupina volivcev za Listo za mesto in podeželje",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Srečko Lednik",
+    "municipality": "Žalec",
+    "proposer": "Konferenca Občinskega odbora Slovenske demokratske stranke Žalec",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Slavko Pravdič",
+    "municipality": "Zavrč",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Luznar",
+    "municipality": "Železniki",
+    "proposer": "SLS - SLOVENSKA LJUDSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Marko Gasser",
+    "municipality": "Železniki",
+    "proposer": "Janez Habjan in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Rok Bajželj",
+    "municipality": "Železniki",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Anton Butolen",
+    "municipality": "Žetale",
+    "proposer": "Janez Vogrinc in skupina volivcev",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Branko Jesenovec",
+    "municipality": "Žiri",
+    "proposer": "LEVICA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Kranjc",
+    "municipality": "Žiri",
+    "proposer": "ALEŠ DOLENC IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Štefan Bogataj",
+    "municipality": "Žiri",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Darko Ćorković",
+    "municipality": "Žirovnica",
+    "proposer": "SOCIALNI DEMOKRATI ŽIROVNICA, OO Žirovnica, zbor članov ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Leopold Pogačar",
+    "municipality": "Žirovnica",
+    "proposer": "Miran Dolar in skupina volivcev \"Neodvisna lista za Žirovnico\" ",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Boris Podvršnik",
+    "municipality": "Zreče",
+    "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vladimir Kukavica",
+    "municipality": "Zreče",
+    "proposer": "GIBANJE SVOBODA",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Franc Škufca",
+    "municipality": "Žužemberk",
+    "proposer": "FRANC ŠKUFCA IN SKUPINA VOLIVCEV",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Jože Papež",
+    "municipality": "Žužemberk",
+    "proposer": "NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI",
+    "gender": "m",
+    "already_has_pp": false
+  },
+  {
+    "name": "Vlado (Vladimir) Kostevc",
+    "municipality": "Žužemberk",
+    "proposer": "LISTA VOLIVCEV LESK",
+    "gender": "m",
+    "already_has_pp": false
+  }
+]
