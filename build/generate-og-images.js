@@ -5,10 +5,10 @@ import fs from "fs-extra";
 import puppeteer from "puppeteer";
 import { join, resolve } from "path";
 import { spawn } from "child_process";
-import { slugify } from "./slugify.js";
+import { prepareNameForSlug, slugify } from "./slugify.js";
 
 const municipalities = fs.readJsonSync("data/municipalities.json");
-const slugs = municipalities.dvk.map((m) => slugify(m[2]));
+const allCandidates = fs.readJsonSync("data/candidates.json");
 const generatedDir = resolve("public/generated/og-images");
 fs.mkdirSync(generatedDir, { recursive: true });
 
@@ -27,9 +27,12 @@ async function main() {
   const browser = await puppeteer.launch();
 
   let i = 0;
-  for (const slug of slugs) {
+  for (const m of municipalities.dvk) {
     i += 1;
-    console.log(slug, `${i}/${slugs.length}`);
+
+    const name = m[2];
+    const slug = slugify(m[2]);
+    console.log(slug, `${i}/${municipalities.dvk.length}`);
 
     const page = await browser.newPage();
     await page.goto(`http://localhost:3000/promises-og-image/${slug}`, {
@@ -38,6 +41,23 @@ async function main() {
 
     const elem = await page.$("#og-image-wrapper");
     await elem.screenshot({ path: join(generatedDir, `og-image-${slug}.png`) });
+
+    const candidates = allCandidates.filter((o) => o.municipality === name);
+
+    for (const c of candidates) {
+      const personSlug = slugify(prepareNameForSlug(c.name));
+      await page.goto(
+        `http://localhost:3000/promises-og-image/${slug}?p=${personSlug}`,
+        {
+          waitUntil: "networkidle0",
+        }
+      );
+
+      const personElem = await page.$("#og-image-wrapper");
+      await personElem.screenshot({
+        path: join(generatedDir, `og-image-${slug}-${personSlug}.png`),
+      });
+    }
   }
 
   await browser.close();

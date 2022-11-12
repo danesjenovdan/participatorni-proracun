@@ -1,25 +1,26 @@
 <template>
   <div id="og-image-wrapper">
     <div id="og-image">
-      <template v-if="selectedMunicipality">
-        <img src="/og-image-obcina.png" class="bg" />
-        <div class="text">{{ selectedMunicipality.name }}</div>
-      </template>
-      <template v-else>
-        <div>NO</div>
-      </template>
+      <ShareCardPerson
+        :municipality="selectedMunicipality"
+        :candidate="selectedCandidate"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import ShareCardPerson from "../components/ShareCardPerson.vue";
 import ppList from "../assets/pp_list.json";
 
 export default {
+  components: {
+    ShareCardPerson,
+  },
   data() {
     const { slug } = this.$route.params;
-    // const { p } = this.$route.query;
-
+    const { p } = this.$route.query;
+    let selectedCandidate = null;
     let selectedMunicipality = null;
     if (slug) {
       const municipality = ppList.find((m) => m.slug === slug);
@@ -27,9 +28,17 @@ export default {
         selectedMunicipality = municipality;
       }
     }
-
+    if (selectedMunicipality && p) {
+      const candidate = selectedMunicipality.candidates.find(
+        (c) => c.slug === p
+      );
+      if (candidate) {
+        selectedCandidate = candidate;
+      }
+    }
     return {
       selectedMunicipality,
+      selectedCandidate,
     };
   },
 };
@@ -39,12 +48,12 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Barlow:500&subset=latin-ext");
 
 #og-image-wrapper {
-  --width: 600px;
-  --height: 314px;
-  --scale: 1.5;
+  --width: 1200px;
+  --height: 628px;
+  --scale: 1;
   width: calc(var(--width) * var(--scale));
   height: calc(var(--height) * var(--scale));
-  outline: 1px solid red;
+  // outline: 1px solid red;
   outline-offset: 1px;
   margin: 5px;
 
@@ -52,36 +61,8 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-
-    .bg {
-      position: absolute;
-      inset: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      pointer-events: none;
-    }
-
-    .text {
-      position: absolute;
-      top: 10%;
-      left: 0;
-      width: 50%;
-      height: 30%;
-      text-align: center;
-      font-size: calc(32px * var(--scale));
-      color: #5f235b;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-      font-family: Barlow;
-      padding: 0 1em;
-      box-sizing: border-box;
-      font-weight: 500;
-    }
+    padding: 32px;
+    background-color: #f2cc59;
   }
 }
 </style>
