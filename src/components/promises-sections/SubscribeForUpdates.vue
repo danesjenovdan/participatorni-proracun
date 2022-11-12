@@ -49,6 +49,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "SubscribeForUpdates",
   data() {
@@ -57,30 +59,31 @@ export default {
     };
   },
   methods: {
-    onSubscribeClick() {
-      this.emailSent = true;
-      // TODO: send email on new infra
-      // const btn = this.$refs.subscribeButton;
-      // btn.disabled = true;
-      // axios
-      //   .get(
-      //     `https://spam.djnd.si/deliver-email-pp/?email=${this.$refs.emailInput.value}`
-      //   )
-      //   .then((res) => {
-      //     if (String(res.data) === "1") {
-      //       btn.textContent = "HVALA";
-      //       this.emailSent = true;
-      //     } else {
-      //       btn.textContent = "Napaka :(";
-      //       // eslint-disable-next-line no-console
-      //       console.error("Error: res.data:", res.data);
-      //     }
-      //   })
-      //   .catch((error) => {
-      //     btn.textContent = "Napaka :(";
-      //     // eslint-disable-next-line no-console
-      //     console.error("Error:", error);
-      //   });
+    async onSubscribeClick() {
+      const btn = this.$refs.subscribeButton;
+      const email = this.$refs.emailInput.value;
+      const oldBtnText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Nalaganje...";
+
+      try {
+        const response = await axios.post(
+          "https://podpri.djnd.si/api/subscribe/",
+          {
+            email,
+            segment: 11,
+          }
+        );
+        if (response.data?.msg === "mail sent") {
+          this.emailSent = true;
+          btn.textContent = oldBtnText;
+          btn.disabled = false;
+        } else {
+          btn.textContent = "Napaka :(";
+        }
+      } catch {
+        btn.textContent = "Napaka :(";
+      }
     },
   },
 };
