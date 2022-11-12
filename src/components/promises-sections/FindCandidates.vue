@@ -1,35 +1,5 @@
-<!--
-//   if (this.person) {
-//     const rows = this.data.filter((r) => r.KANDIDAT === this.person);
-//     if (rows && rows.length && rows[0].OBLJUBA > 0) {
-//       title =
-//         rows[0].SPOL === "m"
-//           ? sharePersonM.replace("{name}", this.person)
-//           : sharePersonF.replace("{name}", this.person);
-//       image = `og-image-oseba.png/gen?t=${encodeURIComponent(this.person)}`;
-//       content = "Čas je, da občinski denar postane tudi tvoja stvar!";
-//     }
-//     if (rows && rows.length && rows[0].ZMAGA > 0) {
-//       title =
-//         rows[0].SPOL === "m"
-//           ? shareElectedPersonM.replace("{name}", this.person)
-//           : shareElectedPersonF.replace("{name}", this.person);
-//     }
-//     overrideTags.meta.push({
-//       vmid: "og:title",
-//       property: "og:title",
-//       content: title,
-//     });
-//     overrideTags.meta.push({
-//       vmid: "twitter:title",
-//       property: "twitter:title",
-//       content: title,
-//     });
-//   }
--->
-
 <template>
-  <VueHead v-if="slug && selectedMunicipality">
+  <VueHead v-if="selectedMunicipality">
     <title>
       Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini
       {{ selectedMunicipality.name }}.
@@ -42,14 +12,26 @@
       name="twitter:description"
       :content="`Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini ${selectedMunicipality.name}.`"
     />
-    <meta
-      property="og:image"
-      :content="`${baseUrl}generated/og-images/og-image-${slug}.png`"
-    />
-    <meta
-      name="twitter:image"
-      :content="`${baseUrl}generated/og-images/og-image-${slug}.png`"
-    />
+    <template v-if="selectedCandidate">
+      <meta
+        property="og:image"
+        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+      />
+      <meta
+        name="twitter:image"
+        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+      />
+    </template>
+    <template v-else>
+      <meta
+        property="og:image"
+        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}.png`"
+      />
+      <meta
+        name="twitter:image"
+        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}.png`"
+      />
+    </template>
   </VueHead>
   <div class="container">
     <div class="row find-candidates-row mx-0">
@@ -92,7 +74,7 @@
             <table class="w-100">
               <tbody>
                 <tr
-                  v-for="(candidate, i) in selectedMunicipality.candidates"
+                  v-for="candidate in selectedMunicipality.candidates"
                   :key="candidate.name"
                 >
                   <td>
@@ -145,7 +127,7 @@
                         v-if="candidate.promised_pp || candidate.has_pp"
                         role="button"
                         class="social"
-                        @click="onShareClick($event, null, municipality, i)"
+                        @click="onShareClick(selectedMunicipality, candidate)"
                       >
                         <span>Povej naprej!</span>
                       </div>
@@ -175,27 +157,25 @@
             <div class="social-municipality">
               <button
                 class="btn btn-municipality"
-                @click="onShareClickMunicipality($event, null)"
+                @click="onShareClick(selectedMunicipality)"
               >
                 <span>Deli svojo občino!</span>
               </button>
             </div>
           </div>
         </div>
-        <!-- <PromisesModal
+        <ShareModal
           v-if="showModal"
           :share-link="shareLink"
           @close="showModal = false"
-          @tw-share="
-            onShareClickMunicipality($event, 'tw', showModal[0], showModal[1])
-          "
-          @fb-share="
-            onShareClickMunicipality($event, 'fb', showModal[0], showModal[1])
-          "
-          @email-share="
-            onShareClickMunicipality($event, 'mail', showModal[0], showModal[1])
-          "
-        /> -->
+        >
+          <template #card>
+            <ShareCardPerson
+              :municipality="selectedMunicipality"
+              :candidate="selectedCandidate"
+            />
+          </template>
+        </ShareModal>
       </div>
     </div>
     <div class="row">
@@ -220,25 +200,26 @@
 import { Head as VueHead } from "@vueuse/head";
 import SimpleTypeahead from "vue3-simple-typeahead";
 import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
+import ShareModal from "../ShareModal.vue";
+import ShareCardPerson from "../ShareCardPerson.vue";
 import { baseUrl } from "../../helpers/constants.js";
 import ppList from "../../assets/pp_list.json";
-
-// import PromisesModal from "../PromisesModal.vue";
-// import { openSocialShareLink } from "../../helpers/social.js";
 
 export default {
   name: "FindCandidates",
   components: {
     VueHead,
     SimpleTypeahead,
-    // PromisesModal,
+    ShareModal,
+    ShareCardPerson,
   },
   data() {
     const { slug } = this.$route.params;
-    // const { p } = this.$route.query;
+    const { p } = this.$route.query;
 
     let selectedMunicipality = null;
     let typeaheadDefaultItem = null;
+    let selectedCandidate = null;
     if (slug) {
       const municipality = ppList.find((m) => m.slug === slug);
       if (municipality) {
@@ -246,32 +227,25 @@ export default {
         typeaheadDefaultItem = municipality.name;
       }
     }
+    if (selectedMunicipality && p) {
+      const candidate = selectedMunicipality.candidates.find(
+        (c) => c.slug === p
+      );
+      if (candidate) {
+        selectedCandidate = candidate;
+      }
+    }
 
     return {
       baseUrl,
-      slug,
       municipalities: ppList,
       municipalityNames: ppList.map((m) => m.name),
       selectedMunicipality,
+      selectedCandidate,
       typeaheadDefaultItem,
-      // person: p,
-      // showModal: false,
+      showModal: false,
+      shareLink: null,
     };
-  },
-  computed: {
-    // shareLink() {
-    //   if (this.showModal && this.showModal.length) {
-    //     const row =
-    //       this.resultsByMunicipality[this.showModal[0]][this.showModal[1]];
-    //     const ime = row.KANDIDAT;
-    //     const docHref =
-    //       typeof document !== "undefined"
-    //         ? document.location.href.split("?")[0]
-    //         : "";
-    //     return `${docHref}?p=${encodeURIComponent(ime)}`;
-    //   }
-    //   return typeof document !== "undefined" ? document.location.href : "";
-    // },
   },
   methods: {
     typeaheadItemProjection(item) {
@@ -284,37 +258,15 @@ export default {
         this.$router.push(`/${municipality.slug}`);
       }
     },
-    // onShareClick($event, type, municipality, i) {
-    //   if (!type) {
-    //     this.showModal = [municipality, i];
-    //     return;
-    //   }
-
-    //   const row = this.resultsByMunicipality[municipality][i];
-    //   const ime = row.KANDIDAT;
-
-    //   const shareText =
-    //     row.SPOL === "m"
-    //       ? sharePersonM.replace("{name}", ime)
-    //       : sharePersonF.replace("{name}", ime);
-    //   const shareHashtag = "#TvojaStvar";
-
-    //   openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
-    // },
-    // onShareClickMunicipality($event, type) {
-    //   if (!type) {
-    //     this.showModal = true;
-    //     return;
-    //   }
-
-    //   const shareText = shareContent.replace(
-    //     "{query}",
-    //     this.query.toUpperCase()
-    //   );
-    //   const shareHashtag = "#TvojaStvar";
-
-    //   openSocialShareLink(type, shareText, this.shareLink, shareHashtag);
-    // },
+    onShareClick(selectedMunicipality, candidate) {
+      this.selectedCandidate = candidate;
+      let newLink = `${baseUrl}/${selectedMunicipality.slug}`;
+      if (candidate) {
+        newLink += `?p=${candidate.slug}`;
+      }
+      this.shareLink = newLink;
+      this.showModal = true;
+    },
   },
 };
 </script>

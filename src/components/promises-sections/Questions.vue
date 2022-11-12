@@ -103,6 +103,9 @@ const faqs = [
 
 export default {
   name: "Questions",
+  components: {
+    BigVideo,
+  },
   data() {
     return {
       faqs,
