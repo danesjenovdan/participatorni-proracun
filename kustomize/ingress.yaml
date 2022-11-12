@@ -8,10 +8,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - pp2022.lb.djnd.si
+        - participativni-proracun.djnd.si
       secretName: pp-volitve-2022-tls
   rules:
-    - host: pp2022.lb.djnd.si
+    - host: participativni-proracun.djnd.si
       http:
         paths:
           - path: /

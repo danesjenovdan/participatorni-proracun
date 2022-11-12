@@ -26,7 +26,7 @@ jobs:
         with:
           context: .
           build-args: |
-            BASE_URL=https://pp2022.lb.djnd.si/
+            BASE_URL=https://participativni-proracun.djnd.si/
           push: true
           tags: |
             rg.fr-par.scw.cloud/djnd/pp-volitve-2022:${{ github.sha }}

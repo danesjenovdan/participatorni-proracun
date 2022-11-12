@@ -28,4 +28,4 @@ spec:
               cpu: 100m
           env:
             - name: BASE_URL
-              value: https://pp2022.lb.djnd.si/
+              value: https://participativni-proracun.djnd.si/
