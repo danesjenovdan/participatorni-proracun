@@ -89,19 +89,6 @@
             </div>
           </div>
           <div v-else class="results">
-            <h5>{{ selectedMunicipality.name }}</h5>
-            <h5 class="mt-3 border-0">
-              <small class="font-weight-bold">
-                <template v-if="selectedMunicipality.candidates.length === 1">
-                  OSEBA, KI JE ZMAGALA NA VOLITVAH:
-                </template>
-                <template
-                  v-else-if="selectedMunicipality.candidates.length > 1"
-                >
-                  KANDIDATA, KI STA V DRUGEM KROGU:
-                </template>
-              </small>
-            </h5>
             <table class="w-100">
               <tbody>
                 <tr
@@ -117,7 +104,7 @@
                   <td>
                     <div class="response">
                       <div class="promise-icon-wrapper">
-                        <span
+                        <div
                           :class="[
                             'promise-icon',
                             {
@@ -132,21 +119,21 @@
                       <div class="promise-text">
                         <span v-if="candidate.has_pp">
                           {{
-                            candidate.gender === "m" ? "Že izvaja" : "Že izvaja"
+                            candidate.gender === "m" ? "že izvaja" : "že izvaja"
                           }}
                         </span>
                         <span v-else-if="candidate.promised_pp">
                           {{
                             candidate.gender === "m"
-                              ? "Se je zaobljubil"
-                              : "Se je zaobljubila"
+                              ? "se je zaobljubil"
+                              : "se je zaobljubila"
                           }}
                         </span>
                         <span v-else>
                           {{
                             candidate.gender === "m"
-                              ? "Se ni zaobljubil"
-                              : "Se ni zaobljubila"
+                              ? "se ni zaobljubil"
+                              : "se ni zaobljubila"
                           }}
                         </span>
                       </div>
@@ -156,10 +143,11 @@
                     <div>
                       <div
                         v-if="candidate.promised_pp || candidate.has_pp"
+                        role="button"
                         class="social"
                         @click="onShareClick($event, null, municipality, i)"
                       >
-                        <span>POVEJ NAPREJ!</span>
+                        <span>Povej naprej!</span>
                       </div>
                       <div v-else class="sad-face-wrapper">
                         <svg
@@ -184,19 +172,14 @@
                 </tr>
               </tbody>
             </table>
-            <h5 class="mt-3 border-0">
-              <small class="font-weight-bold">
-                <template v-if="selectedMunicipality.candidates.length > 1">
-                  Rezultata volitev še ni.
-                </template>
-              </small>
-            </h5>
-            <button
-              :class="['btn', 'btn-block', 'btn-municipality']"
-              @click="onShareClickMunicipality($event, null)"
-            >
-              <span>DELI SVOJO OBČINO!</span>
-            </button>
+            <div class="social-municipality">
+              <button
+                class="btn btn-municipality"
+                @click="onShareClickMunicipality($event, null)"
+              >
+                <span>Deli svojo občino!</span>
+              </button>
+            </div>
           </div>
         </div>
         <!-- <PromisesModal
@@ -345,6 +328,8 @@ export default {
   }
 
   .col--search .col__content {
+    position: relative;
+    z-index: 1;
     background-color: #f2cc59;
     margin-top: -2rem;
     margin-right: -2rem;
@@ -361,7 +346,7 @@ export default {
       font-weight: 700;
       font-size: 40px;
       line-height: 1.1;
-      color: #000000;
+      color: #000;
 
       @media (max-width: 1199.98px) {
         font-size: 2rem;
@@ -388,17 +373,13 @@ export default {
 
       .simple-typeahead :deep(.simple-typeahead-input) {
         border-radius: 0;
-        border: 6px solid #5f235b;
+        border: 6px solid #291749;
         background-color: #fcf5de;
         font-size: 1.5rem;
         font-weight: 700;
         height: auto;
-        color: #5f235b;
+        color: #000;
         padding-right: 2em;
-
-        &::placeholder {
-          color: rgba(#5f235b, 0.75);
-        }
 
         &:focus {
           outline: 0;
@@ -432,242 +413,218 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-        fill: #5f235b;
+        fill: #291749;
         padding: 0.75em;
       }
     }
   }
 
-  .col--results {
-    .col__content {
-      background-color: rgba(#f2cc59, 0.2);
-      padding-left: 4.75rem;
-      height: 100%;
+  .col--results .col__content {
+    background-color: #fefaee;
+    padding-left: 4.75rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 991.98px) {
+      padding-left: 2.75rem;
+    }
+
+    .empty-state {
+      padding: 2.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      @media (max-width: 991.98px) {
-        padding-left: 2.75rem;
+      .hand {
+        flex-shrink: 0;
+        width: 23px;
+        height: 31px;
+        background-image: url("../../assets/point_down.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        margin-right: 20px;
       }
 
-      .empty-state {
-        padding: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .text {
+        font-size: 20px;
+        line-height: 1.5;
+        font-style: italic;
+        color: #000000;
+        max-width: 320px;
+      }
+    }
 
-        .hand {
-          width: 23px;
-          height: 31px;
-          background-image: url("../../assets/point_down.svg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          transform: rotate(90deg);
-          margin-right: 20px;
-        }
+    .results {
+      width: 100%;
+      height: 100%;
 
-        .text {
-          font-size: 20px;
-          line-height: 1.5;
-          font-style: italic;
-          color: #000000;
-          max-width: 320px;
-        }
+      table,
+      tbody,
+      tr,
+      td {
+        margin: 0;
+        padding: 0;
+        border: 0;
       }
 
-      .results {
-        width: 100%;
-        height: 100%;
+      table {
+        table-layout: fixed;
 
-        h5 {
-          font-size: 1.25rem;
-          margin-top: 3rem;
-          margin-bottom: 0;
-          border-bottom: 1px solid #e26e53;
-          font-weight: 700;
+        tr {
+          border-bottom: 1px solid #000;
 
-          &:first-child {
-            margin-top: 0;
-          }
-        }
+          td {
+            height: 82px;
+            vertical-align: middle;
 
-        table {
-          table-layout: fixed;
+            &:nth-child(1) {
+              width: 50%;
+            }
+            &:nth-child(2) {
+              width: 25%;
+            }
+            &:nth-child(3) {
+              width: 25%;
+            }
 
-          tr {
-            border-bottom: 1px solid #e26e53;
-
-            td {
-              height: 3.5rem;
-              padding-top: 0;
-              padding-bottom: 0;
-              vertical-align: bottom;
-
+            @media (max-width: 1200px) {
               &:nth-child(1) {
-                width: 50%;
+                width: 42%;
               }
               &:nth-child(2) {
-                width: 25%;
+                width: 33%;
               }
               &:nth-child(3) {
                 width: 25%;
               }
+            }
 
-              @media (max-width: 1200px) {
-                &:nth-child(1) {
-                  width: 42%;
-                }
-                &:nth-child(2) {
-                  width: 33%;
-                }
-                &:nth-child(3) {
-                  width: 25%;
-                }
+            @media (max-width: 576px) {
+              &:nth-child(1) {
+                width: 31%;
               }
-
-              @media (max-width: 576px) {
-                &:nth-child(1) {
-                  width: 31%;
-                }
-                &:nth-child(2) {
-                  width: 38%;
-                }
-                &:nth-child(3) {
-                  width: 31%;
-                }
+              &:nth-child(2) {
+                width: 38%;
               }
-
-              .name {
-                font-size: 1.1rem;
-                line-height: 1.1;
+              &:nth-child(3) {
+                width: 31%;
               }
+            }
 
-              .proposer {
-                font-size: 0.7rem;
-                line-height: 1.2;
-                margin-left: 1px;
-              }
+            .name {
+              font-size: 24px;
+              line-height: 1.1;
+              font-weight: 500;
+              color: #27223a;
+            }
 
-              .response {
+            .proposer {
+              font-size: 16px;
+              line-height: 1.1;
+              font-style: italic;
+              color: #27223a;
+            }
+
+            .response {
+              display: flex;
+              align-items: center;
+
+              .promise-icon-wrapper {
+                flex-shrink: 0;
                 display: flex;
-                max-width: 100px;
-                align-items: flex-end;
-                height: 2.75rem;
-                font-size: 0.9rem;
-
-                .promise-icon-wrapper {
-                  flex: 0 0 2.75rem;
-                  display: flex;
-                  align-items: flex-end;
-                  justify-content: center;
-                  height: 100%;
-                  transform: translateY(8px);
-
-                  .promise-icon {
-                    display: inline-flex;
-                    box-shadow: 2px 2px rgba(#5f235b, 0.75);
-                    border-radius: 50%;
-                    width: 2rem;
-                    height: 2rem;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 2.5rem;
-                    background-size: 90%;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    flex-shrink: 0;
-
-                    &.cross {
-                      background-color: #e26e53;
-                      background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-434 236 90 90' fill='%235f235b'><path d='M-362.1 265.6l-11.6-11.6-15.4 15.4-15.3-15.4-11.6 11.6 15.4 15.3-15.4 15.4 11.6 11.6 15.4-15.3 15.3 15.3 11.6-11.6-15.3-15.3z'/></svg>");
-                    }
-
-                    &.star,
-                    &.check {
-                      width: 2.75rem;
-                      height: 2.75rem;
-                    }
-
-                    &.star {
-                      background-size: 75%;
-                      background-color: #f2cc59;
-                      background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%235f235b'><path d='M720 170l-29.62-15.003-29.152 15.895 5.116-32.806-24.126-22.813L675 110l14.24-29.994 15.146 29.548 32.927 4.275-23.422 23.535z' transform='matrix(.8623 0 0 .90222 -544.784 -63.183)' stroke='%235f235b' stroke-width='4.535' stroke-linecap='round' stroke-linejoin='round' overflow='visible'/></svg>");
-                    }
-
-                    &.check {
-                      background-size: 69%;
-                      background-color: #5f235b;
-                      background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23f2cc59'><path d='M38.3 87.4L2.5 51.6 18.1 36l20.2 20.2 43.6-43.6 15.6 15.6z'/></svg>");
-                    }
-                  }
-                }
-
-                .promise-text {
-                  margin-left: 1rem;
-                  line-height: 1.1;
-
-                  @media (max-width: 576px) {
-                    font-size: 0.7rem;
-                  }
-                }
-              }
-
-              .social {
-                height: 2.75rem;
-                background-color: #5f235b;
-                box-shadow: 2px 2px rgba(#5f235b, 0.75);
-                transform: translateY(8px);
-                margin-left: 1rem;
-                font-weight: 900;
-                color: #f2cc59;
-                line-height: 1.1;
-                display: flex;
-                align-items: center;
                 justify-content: center;
-                text-align: center;
-                cursor: pointer;
-                transition: all 0.15s ease-in-out;
+                align-items: center;
+                width: 55px;
+                height: 55px;
+                margin-right: 8px;
 
-                @media (max-width: 576px) {
-                  font-size: 0.8rem;
-                }
+                .promise-icon {
+                  flex-shrink: 0;
+                  width: 38px;
+                  height: 38px;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 50%;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  box-shadow: 2px 2px #291749;
 
-                &:hover {
-                  background-color: #864b82;
+                  &.cross {
+                    background-color: #f2cc59;
+                    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-416 254 53.9 53.9"><path d="m-362.1 265.6-11.6-11.6-15.4 15.4-15.3-15.4-11.6 11.6 15.4 15.3-15.4 15.4 11.6 11.6 15.4-15.3 15.3 15.3 11.6-11.6-15.3-15.3z"/></svg>');
+                    background-size: 19px 19px;
+                  }
+
+                  &.star,
+                  &.check {
+                    width: 55px;
+                    height: 55px;
+                  }
+
+                  &.star {
+                    background-color: #6037a9;
+                    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.9 86.08" fill="%23f2cc59"><path d="M42.47 0a1.96 2.05 0 0 0-1.73 1.17L28.9 27.26 1.65 31.84a1.96 2.05 0 0 0-1.04 3.5L20.67 55.2l-4.25 28.53a1.96 2.05 0 0 0 2.86 2.1l24.23-13.81 24.63 13.04a1.96 2.05 0 0 0 2.81-2.2l-5.08-28.38L85.34 34a1.96 2.05 0 0 0-1.13-3.47l-27.38-3.72-12.59-25.7A1.96 2.05 0 0 0 42.48 0Z"/></svg>');
+                    background-size: 35px 35px;
+                  }
+
+                  &.check {
+                    box-shadow: 2px 2px #376274;
+                    background-color: #4e8ca6;
+                    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.5 12.6 95 74.8" fill="%23fefaee"><path d="M38.3 87.4 2.5 51.6 18.1 36l20.2 20.2 43.6-43.6 15.6 15.6z"/></svg>');
+                    background-size: 34px 34px;
+                  }
                 }
               }
 
-              .sad-face-wrapper {
-                margin-left: 1rem;
-                text-align: center;
+              .promise-text {
+                font-size: 20px;
+                line-height: 1.1;
+                font-weight: 900;
+                color: #27223a;
+              }
+            }
 
-                .sad-face {
-                  width: 2.5rem;
-                  height: 2.5rem;
-                  color: #e26e53;
-                }
+            .social {
+              padding: 12px;
+              background-color: #6037a9;
+              box-shadow: 3px 3px #291749;
+              font-size: 20px;
+              font-weight: 700;
+              color: #fff;
+              text-align: center;
+              cursor: pointer;
+              user-select: none;
+            }
+
+            .sad-face-wrapper {
+              text-align: center;
+
+              .sad-face {
+                width: 44px;
+                height: 44px;
+                color: #000;
               }
             }
           }
         }
+      }
 
-        .btn {
+      .social-municipality {
+        text-align: center;
+
+        .btn-municipality {
           margin-top: 2rem;
-          background-color: #5f235b;
-          color: #f2cc59;
-          box-shadow: 6px 6px rgba(#5f235b, 0.75);
-
-          &.btn-municipality:hover {
-            transition: all 0.15s ease-in-out;
-            background-color: #864b82;
-          }
-
-          &:active {
-            transform: translate(0);
-            box-shadow: 6px 6px rgba(#5f235b, 0.75);
-          }
+          padding: 12px 38px;
+          background-color: #6037a9;
+          box-shadow: 5px 5px #291749;
+          font-size: 30px;
+          font-weight: 700;
+          color: #fff;
         }
       }
     }
