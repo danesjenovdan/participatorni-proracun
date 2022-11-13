@@ -8,19 +8,33 @@
             <span>POMEMBNA ZA DEMOKRACIJO</span>?
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
+            Participativni proračun gradi skupnost. Po eni strani krepi odnose
+            med občani, saj se morajo ti za uspeh projektnih predlogov obrniti
+            na lokalno skupnost. Najbolj uspešni projekti participativnega
+            proračuna so vedno tisti, ki naslavljajo skupne probleme in
+            mobilizirajo večje skupine ljudi. Po drugi strani pa participativni
+            proračun gradi tudi zaupanje med občani in občino. Občani dobijo
+            priložnost biti slišani, občina pa ima boljši vpogled v stanje
+            skupnosti in lahko sprevidi, da pogosto prav prebivalke in
+            prebivalci najbolje vedo, kako izboljšati stanje v svojem okolju. Z
+            medsebojnim zaupanjem se krepi odnos med občani in občino, tako pa
+            se postavljajo temelji za nadaljnjo, bolj kompleksno vključevanje
+            občank in občanov v delovanje občine.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 d-flex justify-content-between my-4">
-          <div class="box">Grajenje skupnosti</div>
-          <div class="box">Povečano aktivno sodelovanje javnosti</div>
           <div class="box">
-            Okrepljeno prepoznavanje javnega dobrega in skupne lastnine med
+            Grajenje skupnosti – tako med občani samimi kot tudi med občani in
+            občino
+          </div>
+          <div class="box">
+            Povečanje aktivnega sodelovanja javnosti v občinskih odločevalskih
+            procesih
+          </div>
+          <div class="box">
+            Okrepitev prepoznavanja javnega dobrega in skupne lastnine med
             občani
           </div>
         </div>

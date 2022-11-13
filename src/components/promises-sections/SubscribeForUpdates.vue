@@ -4,10 +4,13 @@
       <div class="col-lg-6">
         <div class="cta">
           <h2>
-            Od zmagovalcev na volitvah bomo zahtevali izpolnitev predvolilne
-            zaveze!
+            Od zmagovalk in zmagovalcev na volitvah bomo zahtevali izpolnitev
+            predvolilne zaveze!
           </h2>
-          <p>Pusti svoj e-naslov, da ti javimo, ko bo kaj novega!</p>
+          <p>
+            Pusti svoj e-naslov, mi pa se ti bomo oglasili s pomembnimi
+            novicami!
+          </p>
         </div>
       </div>
       <div class="col-lg-6">

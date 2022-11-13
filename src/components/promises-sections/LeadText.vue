@@ -3,14 +3,18 @@
     <div class="row lead-text-row justify-content-center">
       <div class="col">
         <h2>
-          Zbiramo zaveze županskih kandidatov, da bodo v primeru zmage na
-          lokalnih volitvah <em>uvedli participativni proračun</em>
+          Zbiramo zaveze županskih kandidatk in kandidatov, da bodo v primeru
+          zmage na lokalnih volitvah v svojih občinah
+          <em>uvedli participativni proračun</em>
         </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-          lacus vel facilisis.
+          <a
+            href="https://danesjenovdan.si/participativni-proracun/"
+            target="_blank"
+            >Tako kot smo to počeli v trenutnem</a
+          >, bomo župane in županje tudi v prihajajočem mandatu držali za besedo
+          in preverjali, ali so občankam in občanom zares omogočili soodločanje
+          o porabi proračunskih sredstev.
         </p>
       </div>
     </div>

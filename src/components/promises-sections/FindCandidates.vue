@@ -37,10 +37,13 @@
     <div class="row find-candidates-row mx-0">
       <div class="col-lg-5 col--search px-0">
         <div class="col__content">
-          <h2>KDO V TVOJI OBČINI OBLJUBLJA PARTICIPATIVNI PRORAČUN?</h2>
+          <h2>
+            Kateri kandidati in kandidatke v tvoji občini obljubljajo
+            participativni proračun?
+          </h2>
           <p>
-            Vpiši ime svoje občine in poglej, kateri kandidati_ke so se
-            zavezali_e, da uvedejo participativni proračun!
+            Vpiši ime svoje občine in preveri, kdo se je zavezal, da bo v
+            primeru zmage na volitvah uvedel participativni proračun!
           </p>
           <form action="javascript:;" @submit="onSubmitLocation">
             <SimpleTypeahead
@@ -182,13 +185,14 @@
       <div class="col">
         <div class="notify-us">
           <a
-            :href="`mailto:maja@danesjenovdan.si?subject=${encodeURIComponent(
+            :href="`mailto:jasmina@danesjenovdan.si?subject=${encodeURIComponent(
               'Namera o uvedbi participativnega proračuna v moji občini'
             )}`"
             target="_blank"
           >
-            Si kandidat/-ka in nas želiš obvestiti o svoji nameri ali nam javiti
-            popravek morebitne napake na spletnem mestu? Piši nam!
+            Kandidiraš na lokalnih volitvah in nas želiš obvestiti o svoji
+            nameri ali pa nam javiti popravek morebitne napake na spletnem
+            mestu? Piši nam!
           </a>
         </div>
       </div>
@@ -313,7 +317,7 @@ export default {
     p {
       font-family: "BioRhyme";
       font-size: 20px;
-      line-height: 1.2;
+      line-height: 28px;
       font-weight: 400;
       margin-top: 1.5em;
       margin-bottom: 1.5em;

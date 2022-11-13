@@ -4,8 +4,14 @@
       <div class="row justify-content-center py-5">
         <div class="col-md-8">
           <div class="above-heading">
-            <p>Čas je, da občine postavijo občane v ospredje.</p>
-            <p>Čas je, da postanemo sogovorniki in soustvarjalci.</p>
+            <p>Želiš soustvarjati svoje lokalno okolje?</p>
+            <p>
+              Poznaš rešitve, ki bi pomagale tvojim sokrajankam in sokrajanom?
+            </p>
+            <p>
+              Veš, kateri županski kandidati oziroma kandidatke bi ti omogočili
+              njihovo uresničitev?
+            </p>
           </div>
           <h1>ČAS JE, DA OBČINSKI DENAR POSTANE TUDI TVOJA STVAR!</h1>
         </div>
