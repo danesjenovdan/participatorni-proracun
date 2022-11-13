@@ -5,21 +5,15 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>Participativni proračun</title>
-    <meta
-      property="og:title"
-      content="Čas je, da občinski denar postane tudi tvoja stvar!"
-    />
-    <meta
-      name="twitter:title"
-      content="Čas je, da občinski denar postane tudi tvoja stvar!"
-    />
+    <meta property="og:title" content="Kje je participativni proračun?" />
+    <meta name="twitter:title" content="Kje je participativni proračun?" />
     <meta
       property="og:description"
-      content="Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo."
+      content="Preverili smo, kateri županski kandidati in kandidatke bi v primeru zmage na lokalnih volitvah uvedli participativni proračun in javnosti zagotovili soupravljanje z občinskim denarjem."
     />
     <meta
       name="twitter:description"
-      content="Spremljaj, katere županje in župani so se zavezali, da bodo izvajali participativni proračun in preveri, ali držijo svojo obljubo."
+      content="Preverili smo, kateri županski kandidati in kandidatke bi v primeru zmage na lokalnih volitvah uvedli participativni proračun in javnosti zagotovili soupravljanje z občinskim denarjem."
     />
     <meta property="og:image" :content="`${baseUrl}og-image.png`" />
     <meta name="twitter:image" :content="`${baseUrl}og-image.png`" />
