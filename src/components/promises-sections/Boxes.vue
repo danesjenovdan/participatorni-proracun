@@ -1,6 +1,6 @@
 <template>
   <section class="bg-light-blue py-5">
-    <div class="container">
+    <div class="container pt-4 pb-5">
       <div class="row justify-content-center my-4">
         <div class="col-md-10 text-center">
           <h2>

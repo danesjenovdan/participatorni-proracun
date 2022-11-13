@@ -27,17 +27,14 @@
   <div class="page page--promises">
     <Header />
     <ScrollingBanner />
-    <!-- <HeroVideo /> -->
     <section style="background-color: #fff">
       <LeadText />
       <FindCandidates />
     </section>
-    <Separator />
     <Boxes />
     <section style="background-color: #291749">
       <SubscribeForUpdates />
     </section>
-    <Separator />
     <Questions />
     <PageFooter />
   </div>
@@ -47,10 +44,8 @@
 import { Head as VueHead } from "@vueuse/head";
 import Header from "../components/promises-sections/Header.vue";
 import ScrollingBanner from "../components/promises-sections/ScrollingBanner.vue";
-// import HeroVideo from "../components/promises-sections/HeroVideo.vue";
 import LeadText from "../components/promises-sections/LeadText.vue";
 import FindCandidates from "../components/promises-sections/FindCandidates.vue";
-import Separator from "../components/promises-sections/Separator.vue";
 import Boxes from "../components/promises-sections/Boxes.vue";
 import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
 import Questions from "../components/promises-sections/Questions.vue";

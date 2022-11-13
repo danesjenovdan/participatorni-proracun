@@ -8,9 +8,13 @@
           >?
         </h2>
       </div>
-      <div class="col-md-12">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
         <BigVideo />
       </div>
+    </div>
+    <div class="row faq-row">
       <div class="col-md-6 mt-5 px-0">
         <template v-for="(qa, i) in faqs" :key="qa.q">
           <div
@@ -123,21 +127,6 @@ export default {
 
 <style lang="scss" scoped>
 .faq-row {
-  // h2 {
-  //   color: #27223a;
-  //   font-size: 3rem;
-  //   line-height: 1.1;
-  //   text-align: center;
-
-  //   @media (max-width: 1199.98px) {
-  //     font-size: 2.5rem;
-  //   }
-
-  //   span {
-  //     color: #e26e53;
-  //   }
-  // }
-
   h2 {
     font-size: 50px;
     font-family: "Barlow", sans-serif;
@@ -152,9 +141,9 @@ export default {
   }
 
   .faq-q-box {
-    background-color: #f2cc59;
+    background-color: #a7c6d3;
     padding: 0.75rem 7rem 0.75rem 2.5rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 0.75rem;
     min-height: 4.5rem;
     display: flex;
@@ -167,7 +156,7 @@ export default {
     }
 
     &.active {
-      background-color: #5f235b;
+      background-color: #291749;
       color: #fff;
       cursor: auto;
     }
@@ -175,7 +164,7 @@ export default {
     &::after {
       content: "";
       display: block;
-      background-image: url("../../assets/arrow-right.svg");
+      background-image: url("../../assets/arrow-right-purple.svg");
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 4rem;
@@ -188,6 +177,10 @@ export default {
       transition: transform 0.15s ease-in-out;
     }
 
+    &.active::after {
+      background-image: url("../../assets/arrow-right-blue.svg");
+    }
+
     &.active::after,
     &:hover::after {
       transform: translateX(1.5rem);
@@ -195,7 +188,11 @@ export default {
   }
 
   .faq-a-content {
-    padding: 1.25rem 2.5rem;
+    padding: 0 3.5rem;
+    font-family: "BioRhyme";
+    font-size: 20px;
+    color: #000000;
+    line-height: 28px;
   }
 
   .accordion-answer {
