@@ -24,7 +24,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 d-flex justify-content-between my-4">
+        <div
+          class="col-md-12 d-flex flex-column flex-md-row justify-content-md-between my-4"
+        >
           <div class="box">
             Grajenje skupnosti – tako med občani samimi kot tudi med občani in
             občino
@@ -74,8 +76,10 @@ h2 span {
   line-height: 28px;
   text-align: center;
 
-  &:not(:first-child):not(:last-child) {
-    margin: 0 40px;
+  @media (min-width: 576px) {
+    &:not(:first-child):not(:last-child) {
+      margin: 0 40px;
+    }
   }
 }
 
@@ -87,5 +91,29 @@ p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: #272239;
+}
+
+@media (max-width: 991.98px) {
+  .box {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .box {
+    margin: 10px 0;
+  }
 }
 </style>

@@ -28,7 +28,7 @@
 }
 
 .scrolling-banner > div {
-  padding: 20px 3px;
+  padding: 0 3px;
   font-family: "Barlow", sans-serif;
   font-style: italic;
   position: absolute;
@@ -82,6 +82,25 @@
     -moz-transform: translateX(-100%); /* Firefox bug fix */
     -webkit-transform: translateX(-100%); /* Firefox bug fix */
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .scrolling-banner {
+    height: 4rem;
+  }
+  .scrolling-banner > div {
+    h2 {
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .scrolling-banner > div {
+    h2 {
+      font-size: 25px;
+    }
   }
 }
 </style>

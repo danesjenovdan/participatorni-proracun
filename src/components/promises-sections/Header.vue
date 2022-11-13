@@ -1,8 +1,8 @@
 <template>
   <section class="bg-light-blue">
     <div class="container">
-      <div class="row justify-content-center py-5">
-        <div class="col-md-8">
+      <div class="row justify-content-center py-3 py-md-5">
+        <div class="col-lg-8">
           <div class="above-heading">
             <p>Želiš soustvarjati svoje lokalno okolje?</p>
             <p>
@@ -15,7 +15,7 @@
           </div>
           <h1>ČAS JE, DA OBČINSKI DENAR POSTANE TUDI TVOJA STVAR!</h1>
         </div>
-        <div class="col-md-4">
+        <div class="col-10 col-md-6 col-lg-4 my-4 my-lg-0">
           <img class="" src="../../assets/glasuj.svg" />
         </div>
       </div>
@@ -47,5 +47,28 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   color: #000000;
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 </style>

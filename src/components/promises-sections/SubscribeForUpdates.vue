@@ -103,6 +103,10 @@ export default {
       font-size: 50px;
       font-weight: 700;
       line-height: 1.1;
+
+      @media (max-width: 991.98px) {
+        font-size: 38px;
+      }
     }
 
     p {
@@ -110,6 +114,10 @@ export default {
       color: #fff;
       font-family: "BioRhyme";
       font-size: 24px;
+
+      @media (max-width: 991.98px) {
+        font-size: 20px;
+      }
     }
   }
 

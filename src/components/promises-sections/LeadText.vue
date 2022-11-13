@@ -55,4 +55,19 @@
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  .lead-text-row {
+    padding: 60px 0;
+
+    .col {
+      h2 {
+        font-size: 38px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
 </style>

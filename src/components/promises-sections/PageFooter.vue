@@ -1,9 +1,9 @@
 <template>
-  <div class="footer-container my-5">
+  <div class="footer-container my-1 my-md-5">
     <div class="container">
       <div class="row footer-row">
         <div class="col-md-12 text-center">
-          <p class="mb-5">
+          <p class="mb-3 mb-md-5">
             Kampanjo “Kje je participativni proračun?” izvaja <br /><b
               >Danes je nov dan, Inštitut za druga vprašanja</b
             >.
@@ -33,6 +33,11 @@ export default {
 
     p {
       font-family: "BioRhyme";
+      font-size: 24px;
+
+      @media (max-width: 991.98px) {
+        font-size: 16px;
+      }
     }
 
     h3 {
@@ -40,6 +45,11 @@ export default {
       font-weight: 700;
       line-height: 55px;
       text-align: center;
+
+      @media (max-width: 991.98px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
     }
 
     .btn {
@@ -54,6 +64,10 @@ export default {
         color: #fefefe;
         box-shadow: 6px 6px #291749;
         text-decoration: none;
+
+        @media (max-width: 575.98px) {
+          font-size: 20px;
+        }
       }
 
       &:active {

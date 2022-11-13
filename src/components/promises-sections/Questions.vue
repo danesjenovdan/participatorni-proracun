@@ -161,6 +161,11 @@ export default {
     color: #291749;
     line-height: 55px;
     margin-bottom: 30px;
+
+    @media (max-width: 991.98px) {
+      font-size: 38px;
+      line-height: 42px;
+    }
   }
 
   h2 span {
@@ -220,6 +225,15 @@ export default {
     font-size: 20px;
     color: #000000;
     line-height: 28px;
+
+    @media (max-width: 991.98px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 575.98px) {
+      padding: 2rem;
+    }
   }
 
   .accordion-answer {
@@ -232,11 +246,11 @@ export default {
 
   .column-answer {
     display: block;
-    height: 459px;
+    height: 650px;
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: thin;
-    scrollbar-color: #5f235b #e6e6e6;
+    scrollbar-color: #6037a9 #e6e6e6;
     scrollbar-gutter: stable;
 
     &::-webkit-scrollbar {
@@ -248,14 +262,14 @@ export default {
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: #5f235b;
+      background-color: #6037a9;
     }
 
-    @media (max-width: 992px) {
-      height: 420px;
+    @media (max-width: 991.98px) {
+      height: 600px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 767.98px) {
       height: auto;
       overflow-y: unset;
     }
