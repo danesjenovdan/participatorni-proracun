@@ -7,7 +7,7 @@
             ZAKAJ JE UVEDBA PARTICIPATIVNEGA PRORAČUNA
             <span>POMEMBNA ZA DEMOKRACIJO</span>?
           </h2>
-          <p>
+          <p class="mb-4">
             Participativni proračun gradi skupnost. Po eni strani krepi odnose
             med občani, saj se morajo ti za uspeh projektnih predlogov obrniti
             na lokalno skupnost. Najbolj uspešni projekti participativnega

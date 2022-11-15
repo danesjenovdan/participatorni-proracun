@@ -247,8 +247,8 @@ export default {
   .column-answer {
     display: block;
     // height: 650px;
-    overflow: hidden;
-    overflow-y: scroll;
+    // overflow: hidden;
+    // overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #6037a9 #e6e6e6;
     scrollbar-gutter: stable;

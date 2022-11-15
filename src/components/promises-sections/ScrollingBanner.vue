@@ -4,13 +4,13 @@
       <div class="d-flex align-items-center">
         <h2>
           Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze
-          kandidatov! Zbiramo zaveze kandidatov!
+          kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov!
         </h2>
       </div>
       <div class="d-flex align-items-center">
         <h2>
           Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze
-          kandidatov! Zbiramo zaveze kandidatov!
+          kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov!
         </h2>
       </div>
     </div>
