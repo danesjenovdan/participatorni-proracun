@@ -264,7 +264,7 @@ export default {
     },
     onShareClick(selectedMunicipality, candidate) {
       this.selectedCandidate = candidate;
-      let newLink = `${baseUrl}/${selectedMunicipality.slug}`;
+      let newLink = `${baseUrl}${selectedMunicipality.slug}`;
       if (candidate) {
         newLink += `?p=${candidate.slug}`;
       }
