@@ -1,18 +1,45 @@
 <template>
   <VueHead v-if="selectedMunicipality">
-    <title>
-      Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini
-      {{ selectedMunicipality.name }}.
-    </title>
-    <meta
-      property="og:description"
-      :content="`Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini ${selectedMunicipality.name}.`"
-    />
-    <meta
-      name="twitter:description"
-      :content="`Preveri, ali lahko pričakuješ uvedbo participativnega proračuna v občini ${selectedMunicipality.name}.`"
-    />
     <template v-if="selectedCandidate">
+      <title>Kje je participativni proračun</title>
+      <meta property="og:title" content="Kje je participativni proračun" />
+      <meta name="twitter:title" content="Kje je participativni proračun" />
+      <meta
+        v-if="selectedCandidate.promised_pp"
+        property="og:description"
+        :content="`${
+          selectedCandidate.name
+        } bo v primeru zmage na lokalnih volitvah ${
+          selectedCandidate.gender === 'm' ? 'uvedel' : 'uvedla'
+        } participativni proračun.`"
+      />
+      <meta
+        v-if="selectedCandidate.promised_pp"
+        name="twitter:description"
+        :content="`${
+          selectedCandidate.name
+        } bo v primeru zmage na lokalnih volitvah ${
+          selectedCandidate.gender === 'm' ? 'uvedel' : 'uvedla'
+        } participativni proračun.`"
+      />
+      <meta
+        v-if="selectedCandidate.has_pp"
+        property="og:description"
+        :content="`${
+          selectedCandidate.name
+        } bo v primeru zmage na lokalnih volitvah še naprej ${
+          selectedCandidate.gender === 'm' ? 'izvajal' : 'izvajala'
+        } participativni proračun.`"
+      />
+      <meta
+        v-if="selectedCandidate.has_pp"
+        name="twitter:description"
+        :content="`${
+          selectedCandidate.name
+        } bo v primeru zmage na lokalnih volitvah še naprej ${
+          selectedCandidate.gender === 'm' ? 'izvajal' : 'izvajala'
+        } participativni proračun.`"
+      />
       <meta
         property="og:image"
         :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
@@ -23,6 +50,25 @@
       />
     </template>
     <template v-else>
+      <title>
+        Kje je participativni proračun v občini {{ selectedMunicipality.name }}
+      </title>
+      <meta
+        property="og:title"
+        :content="`Kje je participativni proračun v občini ${selectedMunicipality.name}`"
+      />
+      <meta
+        name="twitter:title"
+        :content="`Kje je participativni proračun v občini ${selectedMunicipality.name}`"
+      />
+      <meta
+        property="og:description"
+        :content="`Preveri, kdo od županskih kandidatov_k v občini ${selectedMunicipality.name} obljublja uvedbo participativnega proračuna!`"
+      />
+      <meta
+        name="twitter:description"
+        :content="`Preveri, kdo od županskih kandidatov_k v občini ${selectedMunicipality.name} obljublja uvedbo participativnega proračuna!`"
+      />
       <meta
         property="og:image"
         :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}.png`"
@@ -34,6 +80,7 @@
     </template>
   </VueHead>
   <div class="container">
+    {{ selectedCandidate.promised_pp }}
     <div class="row find-candidates-row mx-0">
       <div class="col-lg-5 col--search px-0">
         <div class="col__content">
