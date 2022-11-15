@@ -80,7 +80,6 @@
     </template>
   </VueHead>
   <div class="container">
-    {{ selectedCandidate.promised_pp }}
     <div class="row find-candidates-row mx-0">
       <div class="col-lg-5 col--search px-0">
         <div class="col__content">
