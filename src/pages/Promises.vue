@@ -17,6 +17,8 @@
     />
     <meta property="og:image" :content="`${baseUrl}og-image.png`" />
     <meta name="twitter:image" :content="`${baseUrl}og-image.png`" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png" />
   </VueHead>
   <div class="page page--promises">
     <Header />

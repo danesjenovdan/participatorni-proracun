@@ -1,22 +1,18 @@
 <template>
   <section class="bg-light-blue">
-    <div class="container">
-      <div class="row justify-content-center py-3 py-md-5">
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center py-3 py-md-5">
         <div class="col-lg-8">
           <div class="above-heading">
-            <p>Želiš soustvarjati svoje lokalno okolje?</p>
             <p>
-              Poznaš rešitve, ki bi pomagale tvojim sokrajankam in sokrajanom?
-            </p>
-            <p>
-              Veš, kateri županski kandidati oziroma kandidatke bi ti omogočili
-              njihovo uresničitev?
+              Veš, kateri županski kandidati in kandidatke bi ti omogočili
+              sodelovanje v občinskih odločitvah?
             </p>
           </div>
           <h1>ČAS JE, DA OBČINSKI DENAR POSTANE TUDI TVOJA STVAR!</h1>
         </div>
         <div class="col-10 col-md-6 col-lg-4 my-4 my-lg-0">
-          <img class="" src="../../assets/glasuj.svg" />
+          <img class="" src="../../assets/pp-ilustracija.svg" />
         </div>
       </div>
     </div>
