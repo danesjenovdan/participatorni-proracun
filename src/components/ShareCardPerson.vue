@@ -42,7 +42,10 @@
               participativni proračun.
             </template>
             <template v-else>
-              TODO: tekst za celo občino brez specifičnega kandidata
+              <strong
+                >Preveri, kdo se je zavezal k uvedbi participativnega
+                proračuna.</strong
+              >
             </template>
           </div>
         </div>
@@ -100,6 +103,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-right: 50px;
 
         .title {
           margin-bottom: 1rem;
@@ -156,7 +160,7 @@ export default {
             strong {
               display: block;
               font-family: "BioRhyme";
-              font-size: 48px;
+              font-size: 42px;
               font-weight: 900;
               line-height: 1.1;
             }
@@ -177,7 +181,7 @@ export default {
   .footer {
     flex: 0 0 30px;
     display: flex;
-    gap: 20px;
+    gap: 100px;
     height: 30px;
 
     img {
@@ -189,6 +193,7 @@ export default {
       font-size: 16px;
       font-weight: 500;
       font-style: italic;
+      line-height: 30px;
     }
   }
 }

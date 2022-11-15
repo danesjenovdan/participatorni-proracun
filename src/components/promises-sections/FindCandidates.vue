@@ -184,15 +184,15 @@
     <div class="row">
       <div class="col">
         <div class="notify-us">
+          Kandidiraš na lokalnih volitvah in nas želiš obvestiti o svoji nameri
+          ali pa nam javiti popravek morebitne napake na spletnem mestu?
           <a
             :href="`mailto:jasmina@danesjenovdan.si?subject=${encodeURIComponent(
               'Namera o uvedbi participativnega proračuna v moji občini'
             )}`"
             target="_blank"
           >
-            Kandidiraš na lokalnih volitvah in nas želiš obvestiti o svoji
-            nameri ali pa nam javiti popravek morebitne napake na spletnem
-            mestu? Piši nam!
+            Piši nam!
           </a>
         </div>
       </div>
@@ -281,6 +281,10 @@ export default {
 
   .col__content {
     padding: 2.75rem;
+
+    @media (max-width: 991.98px) {
+      padding: 1.5rem;
+    }
   }
 
   .col--search .col__content {
@@ -384,7 +388,7 @@ export default {
     justify-content: center;
 
     @media (max-width: 991.98px) {
-      padding-left: 2.75rem;
+      padding: 1rem;
     }
 
     .empty-state {
@@ -489,6 +493,15 @@ export default {
               display: flex;
               align-items: center;
 
+              @media (max-width: 991.98px) {
+                flex-direction: column;
+
+                span {
+                  text-align: center;
+                  display: block;
+                }
+              }
+
               .promise-icon-wrapper {
                 flex-shrink: 0;
                 display: flex;
@@ -516,23 +529,28 @@ export default {
                     background-size: 19px 19px;
                   }
 
-                  &.star,
-                  &.check {
-                    width: 55px;
-                    height: 55px;
-                  }
+                  // &.star,
+                  // &.check {
+                  //   width: 55px;
+                  //   height: 55px;
+
+                  //   @media (max-width: 991.98px) {
+                  //     width: 40px;
+                  //     height: 40px;
+                  //   }
+                  // }
 
                   &.star {
                     background-color: #6037a9;
                     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.9 86.08" fill="%23f2cc59"><path d="M42.47 0a1.96 2.05 0 0 0-1.73 1.17L28.9 27.26 1.65 31.84a1.96 2.05 0 0 0-1.04 3.5L20.67 55.2l-4.25 28.53a1.96 2.05 0 0 0 2.86 2.1l24.23-13.81 24.63 13.04a1.96 2.05 0 0 0 2.81-2.2l-5.08-28.38L85.34 34a1.96 2.05 0 0 0-1.13-3.47l-27.38-3.72-12.59-25.7A1.96 2.05 0 0 0 42.48 0Z"/></svg>');
-                    background-size: 35px 35px;
+                    background-size: 24px 24px;
                   }
 
                   &.check {
                     box-shadow: 2px 2px #376274;
                     background-color: #4e8ca6;
                     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.5 12.6 95 74.8" fill="%23fefaee"><path d="M38.3 87.4 2.5 51.6 18.1 36l20.2 20.2 43.6-43.6 15.6 15.6z"/></svg>');
-                    background-size: 34px 34px;
+                    background-size: 24px 24px;
                   }
                 }
               }
@@ -581,6 +599,10 @@ export default {
           font-size: 30px;
           font-weight: 700;
           color: #fff;
+
+          @media (max-width: 991.98px) {
+            font-size: 24px;
+          }
         }
       }
     }
@@ -593,12 +615,21 @@ export default {
   border-width: 3px 0;
   padding: 35px 0;
   margin: 110px 0;
+  font-family: "BioRhyme";
+  font-size: 18px;
+  color: #272239;
 
   a,
   a:visited {
-    font-family: "BioRhyme";
-    font-size: 18px;
     color: #272239;
+  }
+
+  @media (min-width: 768px) {
+    padding: 35px 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 35px 160px;
   }
 }
 </style>

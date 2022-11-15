@@ -4,8 +4,10 @@
       <div class="row footer-row">
         <div class="col-md-12 text-center">
           <p class="mb-3 mb-md-5">
-            Kampanjo “Kje je participativni proračun?” izvaja <br /><b
-              >Danes je nov dan, Inštitut za druga vprašanja</b
+            Kampanjo “Kje je participativni proračun?” izvaja <br /><a
+              href="https://danesjenovdan.si/"
+              target="_blank"
+              >Danes je nov dan, Inštitut za druga vprašanja</a
             >.
           </p>
         </div>
@@ -72,6 +74,16 @@ export default {
 
       &:active {
         box-shadow: 2px 2px #291749;
+      }
+    }
+
+    a {
+      font-weight: bold;
+      color: #000000;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

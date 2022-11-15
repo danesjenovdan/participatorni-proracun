@@ -106,7 +106,7 @@ export default {
     vertical-align: middle;
 
     .modal-container {
-      max-width: 1296px;
+      max-width: 1100px;
       margin: 0px auto;
       padding: 20px 30px;
       background-color: #f2cc59;
@@ -124,6 +124,7 @@ export default {
         margin: 20px 0;
 
         .share-card-container {
+          display: block;
           position: relative;
           width: 100%;
           padding-top: 52.33334%;
@@ -132,12 +133,18 @@ export default {
             position: absolute;
             inset: 0;
           }
+
+          @media (max-width: 991.98px) {
+            display: none;
+          }
         }
 
         .copy {
-          margin-top: 36px;
-          padding-top: 36px;
-          border-top: 3px solid #000;
+          @media (min-width: 992px) {
+            margin-top: 36px;
+            padding-top: 36px;
+            border-top: 3px solid #000;
+          }
 
           .copy-text {
             margin-bottom: 12px;

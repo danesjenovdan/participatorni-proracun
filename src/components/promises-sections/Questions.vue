@@ -246,7 +246,7 @@ export default {
 
   .column-answer {
     display: block;
-    height: 650px;
+    // height: 650px;
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -265,9 +265,9 @@ export default {
       background-color: #6037a9;
     }
 
-    @media (max-width: 991.98px) {
-      height: 600px;
-    }
+    // @media (max-width: 991.98px) {
+    //   height: 600px;
+    // }
 
     @media (max-width: 767.98px) {
       height: auto;

@@ -213,7 +213,7 @@ export default {
       display: none;
       align-items: center;
       justify-content: center;
-      background-color: #f2cc59dd;
+      background-color: #f2cc59;
       text-align: center;
       font-family: "BioRhyme";
       font-size: 27px;
