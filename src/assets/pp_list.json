@@ -1102,7 +1102,7 @@
         "gender": "m",
         "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Boris Pirc",
@@ -1251,7 +1251,7 @@
         "gender": "f",
         "proposer": "SLOVENSKA DEMOKRATSKA STRANKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Romina Kralj",
@@ -1655,7 +1655,7 @@
         "gender": "m",
         "proposer": "SLOVENSKA DEMOKRATSKA STRANKA,  NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI, SLOVENSKA LJUDSKA STRANKA IN ZELENI SLOVENIJE ",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "mag. Igor Velov",
@@ -2717,7 +2717,7 @@
         "gender": "m",
         "proposer": "MAJA HENZEL IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Tatjana Vokić Vojkovič",
@@ -3885,7 +3885,7 @@
         "gender": "f",
         "proposer": "GIBANJE SVOBODA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Marija Janžek",
@@ -5299,7 +5299,7 @@
         "gender": "f",
         "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -6415,7 +6415,7 @@
         "gender": "m",
         "proposer": "Darij Dujmovič in skupina volilcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "mag. Maja Prodan Jurič",
