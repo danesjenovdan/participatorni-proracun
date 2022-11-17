@@ -660,7 +660,7 @@
         "gender": "m",
         "proposer": "ANJA ORAŽEM IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Miroslav Šinkovec",
@@ -1157,7 +1157,7 @@
         "gender": "m",
         "proposer": "dr. Gregor Kovačič in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Dušan Grbec",
@@ -2507,7 +2507,7 @@
         "gender": "m",
         "proposer": "ZELENI SLOVENIJE",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -2918,7 +2918,7 @@
         "gender": "m",
         "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -3445,7 +3445,7 @@
         "gender": "f",
         "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Tomaž Grohar",
@@ -3708,7 +3708,7 @@
         "gender": "m",
         "proposer": "LIBERALNA DEMOKRACIJA SLOVENIJE",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -4639,7 +4639,7 @@
         "gender": "m",
         "proposer": "Zbor članov stranke, VESNA - zelena stranka ",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Marko Močnik",
@@ -5453,7 +5453,7 @@
         "gender": "m",
         "proposer": "Združeni, neodvisna lista za Prevalje ",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "dr. Matija Tasič",
