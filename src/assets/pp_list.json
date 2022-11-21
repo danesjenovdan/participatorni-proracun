@@ -1134,7 +1134,7 @@
         "gender": "m",
         "proposer": "LISTA ZLATKA USENIKA ZA NAPREDEK OBČINE IG",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -2662,7 +2662,7 @@
         "gender": "m",
         "proposer": "SOCIALNI DEMOKRATI",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Nuša Klopčič",
@@ -4360,7 +4360,7 @@
         "gender": "m",
         "proposer": "Žan Dolhar in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
