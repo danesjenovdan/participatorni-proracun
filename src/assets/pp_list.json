@@ -250,7 +250,7 @@
         "gender": "m",
         "proposer": "DRAŽEN LEVOJEVIĆ IN SKUPINA VOLIVCEV",
         "has_pp": true,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Mojca Florjanič",
@@ -910,7 +910,7 @@
         "gender": "f",
         "proposer": "ALEŠ DOKL IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -1002,7 +1002,7 @@
         "gender": "m",
         "proposer": "Mihaela KALAMAR in skupina volivcev",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -1173,7 +1173,7 @@
         "gender": "m",
         "proposer": "Aleš Rojc",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
@@ -2341,7 +2341,7 @@
         "gender": "m",
         "proposer": "ANDREJ BRVAR IN SKUPINA VOLIVCEV",
         "has_pp": true,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Boštjan Klun",
@@ -3522,7 +3522,7 @@
         "gender": "m",
         "proposer": "ANTON BUČEK IN SKUPINA VOLIVCEV",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Rihard Peurača",
