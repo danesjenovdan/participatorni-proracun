@@ -2365,7 +2365,7 @@
         "gender": "m",
         "proposer": "Lista Franca Kanglerja - Nova ljudska stranka Slovenije",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       },
       {
         "name": "Igor Jurišič",
@@ -3330,7 +3330,7 @@
         "gender": "m",
         "proposer": "SLOVENSKA LJUDSKA STRANKA",
         "has_pp": false,
-        "promised_pp": false
+        "promised_pp": true
       }
     ]
   },
