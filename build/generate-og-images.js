@@ -8,7 +8,8 @@ import { spawn } from "child_process";
 import { prepareNameForSlug, slugify } from "./slugify.js";
 
 const municipalities = fs.readJsonSync("data/municipalities.json");
-const allCandidates = fs.readJsonSync("data/candidates.json");
+// const allCandidates = fs.readJsonSync("data/candidates.json");
+const allWinners = fs.readJsonSync("data/2022-12-08T13-35-28_winners.json");
 const generatedDir = resolve("public/generated/og-images");
 fs.mkdirSync(generatedDir, { recursive: true });
 
@@ -42,10 +43,10 @@ async function main() {
     const elem = await page.$("#og-image-wrapper");
     await elem.screenshot({ path: join(generatedDir, `og-image-${slug}.png`) });
 
-    const candidates = allCandidates.filter((o) => o.municipality === name);
+    const candidates = allWinners.filter((o) => o["Občina"] === name);
 
     for (const c of candidates) {
-      const personSlug = slugify(prepareNameForSlug(c.name));
+      const personSlug = slugify(prepareNameForSlug(c.Ime));
       await page.goto(
         `http://localhost:3000/promises-og-image/${slug}?p=${personSlug}`,
         {

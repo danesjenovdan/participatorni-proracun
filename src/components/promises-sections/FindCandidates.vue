@@ -55,11 +55,11 @@
     </template>
     <meta
       property="og:image"
-      :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+      :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png?v=2`"
     />
     <meta
       name="twitter:image"
-      :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+      :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png?v=2`"
     />
   </VueHead>
   <div class="container">
