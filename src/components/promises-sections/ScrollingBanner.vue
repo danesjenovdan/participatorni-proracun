@@ -3,14 +3,16 @@
     <div class="scrolling-banner">
       <div class="d-flex align-items-center">
         <h2>
-          Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze
-          kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov!
+          Preverjamo zaveze izvoljenih županj_ov! Preverjamo zaveze izvoljenih
+          županj_ov! Preverjamo zaveze izvoljenih županj_ov! Preverjamo zaveze
+          izvoljenih županj_ov!
         </h2>
       </div>
       <div class="d-flex align-items-center">
         <h2>
-          Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze
-          kandidatov! Zbiramo zaveze kandidatov! Zbiramo zaveze kandidatov!
+          Preverjamo zaveze izvoljenih županj_ov! Preverjamo zaveze izvoljenih
+          županj_ov! Preverjamo zaveze izvoljenih županj_ov! Preverjamo zaveze
+          izvoljenih županj_ov!
         </h2>
       </div>
     </div>

@@ -3,18 +3,19 @@
     <div class="row lead-text-row justify-content-center">
       <div class="col">
         <h2>
-          Zbiramo zaveze županskih kandidatk in kandidatov, da bodo v primeru
-          zmage na lokalnih volitvah v svojih občinah
-          <em>uvedli participativni proračun</em>
+          Dobili smo <em>240 zaobljub</em>, od tega je <em>46</em> kandidatk_ov,
+          ki so obljubili uvedbo participativnega proračuna, in <em>30</em>, ki
+          jih participativni proračun že izvaja, zmagalo na volitvah.
         </h2>
         <p>
+          Tako kot smo to počeli
           <a
             href="https://danesjenovdan.si/participativni-proracun/"
             target="_blank"
-            >Tako kot smo to počeli v trenutnem</a
-          >, bomo župane in županje tudi v prihajajočem mandatu držali za besedo
-          in preverjali, ali so občankam in občanom zares omogočili soodločanje
-          o porabi proračunskih sredstev.
+            >v prejšnjem</a
+          >, bomo župane_je tudi v prihajajočem mandatu držali za besedo in
+          preverjali, ali so občankam_om zares omogočili soodločanje o porabi
+          proračunskih sredstev.
         </p>
       </div>
     </div>

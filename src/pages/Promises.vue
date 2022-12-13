@@ -9,14 +9,14 @@
     <meta name="twitter:title" content="Kje je participativni proračun?" />
     <meta
       property="og:description"
-      content="Preverili smo, kateri županski kandidati in kandidatke bi v primeru zmage na lokalnih volitvah uvedli participativni proračun in javnosti zagotovili soupravljanje z občinskim denarjem."
+      content="Tako kot smo to počeli v prejšnjem, bomo župane_je tudi v trenutnem mandatu držali za besedo in preverjali, ali so občankam_om zares omogočili soodločanje o porabi proračunskih sredstev."
     />
     <meta
       name="twitter:description"
-      content="Preverili smo, kateri županski kandidati in kandidatke bi v primeru zmage na lokalnih volitvah uvedli participativni proračun in javnosti zagotovili soupravljanje z občinskim denarjem."
+      content="Tako kot smo to počeli v prejšnjem, bomo župane_je tudi v trenutnem mandatu držali za besedo in preverjali, ali so občankam_om zares omogočili soodločanje o porabi proračunskih sredstev."
     />
-    <meta property="og:image" :content="`${baseUrl}og-image.png`" />
-    <meta name="twitter:image" :content="`${baseUrl}og-image.png`" />
+    <meta property="og:image" :content="`${baseUrl}og-image-winners.png`" />
+    <meta name="twitter:image" :content="`${baseUrl}og-image-winners.png`" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png" />
   </VueHead>

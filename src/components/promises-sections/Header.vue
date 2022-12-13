@@ -5,8 +5,8 @@
         <div class="col-lg-8">
           <div class="above-heading">
             <p>
-              Veš, kateri županski kandidati in kandidatke bi ti omogočili
-              sodelovanje v občinskih odločitvah?
+              Veš, kateri_e župani_je obljubljajo, da ti bodo omogočili
+              sodelovanje pri občinskih odločitvah?
             </p>
           </div>
           <h1>ČAS JE, DA OBČINSKI DENAR POSTANE TUDI TVOJA STVAR!</h1>

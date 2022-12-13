@@ -2,10 +2,12 @@
 /* eslint-disable no-restricted-syntax */
 import axios from "axios";
 import fs from "fs-extra";
+import assert from "node:assert/strict";
 import { prepareNameForSlug, slugify } from "./slugify.js";
 
 const municipalities = fs.readJsonSync("data/municipalities.json");
 const allCandidates = fs.readJsonSync("data/candidates.json");
+const allWinners = fs.readJsonSync("data/2022-12-08T13-35-28_winners.json");
 
 async function main() {
   const all = [];
@@ -19,7 +21,15 @@ async function main() {
   for (const m of municipalities.dvk) {
     const id = m[0];
     const name = m[2];
-    const candidates = allCandidates.filter((o) => o.municipality === name);
+    const winners = allWinners
+      .filter((o) => o["Občina"] === name)
+      .map((o) => slugify(prepareNameForSlug(o.Ime)));
+    const candidates = allCandidates.filter(
+      (o) =>
+        o.municipality === name &&
+        winners.includes(slugify(prepareNameForSlug(o.name)))
+    );
+    assert(candidates.length === 1);
 
     all.push({
       id,

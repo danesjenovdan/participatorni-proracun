@@ -16,7 +16,7 @@
                 alt=""
               />
             </div>
-            <div class="name">{{ municipality.name }}</div>
+            <div class="name">Občina {{ municipality.name }}</div>
           </div>
           <div class="promise">
             <template v-if="candidate">

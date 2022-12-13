@@ -1,91 +1,73 @@
 <template>
-  <VueHead v-if="selectedMunicipality">
-    <template v-if="selectedCandidate">
-      <title>Kje je participativni proračun</title>
-      <meta property="og:title" content="Kje je participativni proračun" />
-      <meta name="twitter:title" content="Kje je participativni proračun" />
+  <VueHead v-if="selectedMunicipality && selectedCandidate">
+    <title>Kje je participativni proračun?</title>
+    <meta property="og:title" content="Kje je participativni proračun?" />
+    <meta name="twitter:title" content="Kje je participativni proračun?" />
+    <template v-if="selectedCandidate.has_pp">
       <meta
-        v-if="selectedCandidate.promised_pp"
         property="og:description"
-        :content="`${
-          selectedCandidate.name
-        } bo v primeru zmage na lokalnih volitvah ${
-          selectedCandidate.gender === 'm' ? 'uvedel' : 'uvedla'
-        } participativni proračun.`"
-      />
-      <meta
-        v-if="selectedCandidate.promised_pp"
-        name="twitter:description"
-        :content="`${
-          selectedCandidate.name
-        } bo v primeru zmage na lokalnih volitvah ${
-          selectedCandidate.gender === 'm' ? 'uvedel' : 'uvedla'
-        } participativni proračun.`"
-      />
-      <meta
-        v-if="selectedCandidate.has_pp"
-        property="og:description"
-        :content="`${
-          selectedCandidate.name
-        } bo v primeru zmage na lokalnih volitvah še naprej ${
+        :content="`${selectedCandidate.name} je ${
+          selectedCandidate.gender === 'm' ? 'obljubil' : 'obljubila'
+        }, da bo še naprej ${
           selectedCandidate.gender === 'm' ? 'izvajal' : 'izvajala'
         } participativni proračun.`"
       />
       <meta
-        v-if="selectedCandidate.has_pp"
         name="twitter:description"
-        :content="`${
-          selectedCandidate.name
-        } bo v primeru zmage na lokalnih volitvah še naprej ${
+        :content="`${selectedCandidate.name} je ${
+          selectedCandidate.gender === 'm' ? 'obljubil' : 'obljubila'
+        }, da bo še naprej ${
           selectedCandidate.gender === 'm' ? 'izvajal' : 'izvajala'
         } participativni proračun.`"
       />
+    </template>
+    <template v-else-if="selectedCandidate.promised_pp">
       <meta
-        property="og:image"
-        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+        property="og:description"
+        :content="`${selectedCandidate.name} je ${
+          selectedCandidate.gender === 'm' ? 'obljubil' : 'obljubila'
+        }, da bo v tem mandatu ${
+          selectedCandidate.gender === 'm' ? 'uvedel' : 'uvedla'
+        } participativni proračun.`"
       />
       <meta
-        name="twitter:image"
-        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+        name="twitter:description"
+        :content="`${selectedCandidate.name} je ${
+          selectedCandidate.gender === 'm' ? 'obljubil' : 'obljubila'
+        }, da bo v tem mandatu ${
+          selectedCandidate.gender === 'm' ? 'uvedel' : 'uvedla'
+        } participativni proračun.`"
       />
     </template>
     <template v-else>
-      <title>
-        Kje je participativni proračun v občini {{ selectedMunicipality.name }}
-      </title>
-      <meta
-        property="og:title"
-        :content="`Kje je participativni proračun v občini ${selectedMunicipality.name}`"
-      />
-      <meta
-        name="twitter:title"
-        :content="`Kje je participativni proračun v občini ${selectedMunicipality.name}`"
-      />
       <meta
         property="og:description"
-        :content="`Preveri, kdo od županskih kandidatov_k v občini ${selectedMunicipality.name} obljublja uvedbo participativnega proračuna!`"
+        :content="`${selectedCandidate.name} se ni ${
+          selectedCandidate.gender === 'm' ? 'zavezal' : 'zavezala'
+        } k uvedbi participativnega proračuna.`"
       />
       <meta
         name="twitter:description"
-        :content="`Preveri, kdo od županskih kandidatov_k v občini ${selectedMunicipality.name} obljublja uvedbo participativnega proračuna!`"
-      />
-      <meta
-        property="og:image"
-        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}.png`"
-      />
-      <meta
-        name="twitter:image"
-        :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}.png`"
+        :content="`${selectedCandidate.name} se ni ${
+          selectedCandidate.gender === 'm' ? 'zavezal' : 'zavezala'
+        } k uvedbi participativnega proračuna.`"
       />
     </template>
+    <meta
+      property="og:image"
+      :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+    />
+    <meta
+      name="twitter:image"
+      :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png`"
+    />
   </VueHead>
   <div class="container">
     <div class="row find-candidates-row mx-0">
       <div class="col-lg-5 col--search px-0">
         <div class="col__content">
           <h2>
-            Kateri kandidati in kandidatke v tvoji občini obljubljajo
-            participativni proračun?
+            PREVERI, ALI JE TVOJ_A ŽUPAN_JA OBLJUBIL_A PARTICIPATIVNI PRORAČUN!
           </h2>
           <p>
             Vpiši ime svoje občine in preveri, kdo se je zavezal, da bo v
@@ -120,6 +102,15 @@
             </div>
           </div>
           <div v-else class="results">
+            <div class="municipality">
+              <div class="coat">
+                <img
+                  :src="`/generated/coats/coat-${selectedMunicipality.slug}.png`"
+                  alt=""
+                />
+              </div>
+              <div class="name">Občina {{ selectedMunicipality.name }}</div>
+            </div>
             <table class="w-100">
               <tbody>
                 <tr
@@ -172,29 +163,47 @@
                   </td>
                   <td>
                     <div>
-                      <div
+                      <!-- <div
                         v-if="candidate.promised_pp || candidate.has_pp"
                         role="button"
                         class="social"
                         @click="onShareClick(selectedMunicipality, candidate)"
                       >
                         <span>Povej naprej!</span>
+                      </div> -->
+                      <div
+                        v-if="candidate.promised_pp || candidate.has_pp"
+                        class="happy-face-wrapper"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 79.38 79.38"
+                          fill="currentColor"
+                          class="happy-face"
+                        >
+                          <path
+                            d="M39.69 79.38A39.69 39.69 0 1 0 0 39.69a39.74 39.74 0 0 0 39.69 39.69Zm0-73.13A33.44 33.44 0 1 1 6.25 39.69 33.48 33.48 0 0 1 39.69 6.25Z"
+                          />
+                          <path
+                            d="M20 37.19a3.13 3.13 0 0 0 3.12-3.13 2.51 2.51 0 0 1 5 0 3.13 3.13 0 1 0 6.25 0 8.76 8.76 0 0 0-17.51 0A3.13 3.13 0 0 0 20 37.19Zm28.13 0a3.13 3.13 0 0 0 3.12-3.13 2.5 2.5 0 0 1 5 0 3.13 3.13 0 1 0 6.25 0 8.75 8.75 0 0 0-17.5 0 3.12 3.12 0 0 0 3.13 3.13ZM23 47.34a3.13 3.13 0 0 0-6 1.54c.15.56 3.63 13.62 22.73 13.62s22.54-13.06 22.68-13.62a3.12 3.12 0 0 0-6-1.55c-.11.36-2.63 8.92-16.67 8.92S23.14 47.76 23 47.34Z"
+                          />
+                        </svg>
                       </div>
                       <div v-else class="sad-face-wrapper">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 100 100"
+                          viewBox="5 5 90 90"
                           fill="currentColor"
                           class="sad-face"
                         >
                           <path
-                            d="M35.95 33c-2.648 0-4.85 2.202-4.85 4.85 0 2.648 2.202 4.85 4.85 4.85 2.648 0 4.85-2.202 4.85-4.85 0-2.648-2.202-4.85-4.85-4.85zm28.1 0c-2.648 0-4.85 2.202-4.85 4.85 0 2.648 2.202 4.85 4.85 4.85 2.648 0 4.85-2.202 4.85-4.85 0-2.648-2.202-4.85-4.85-4.85z"
+                            d="M35.95 33a4.89 4.89 0 0 0-4.85 4.85c0 2.65 2.2 4.85 4.85 4.85 2.65 0 4.85-2.2 4.85-4.85 0-2.65-2.2-4.85-4.85-4.85zm28.1 0a4.89 4.89 0 0 0-4.85 4.85c0 2.65 2.2 4.85 4.85 4.85 2.65 0 4.85-2.2 4.85-4.85 0-2.65-2.2-4.85-4.85-4.85z"
                           />
                           <path
-                            d="M50 5C25.177 5 5 25.177 5 50s20.177 45 45 45 45-20.177 45-45S74.823 5 50 5zm0 5.46c21.868 0 39.54 17.672 39.54 39.54S71.868 89.54 50 89.54 10.46 71.868 10.46 50 28.132 10.46 50 10.46z"
+                            d="M50 5C25.18 5 5 25.18 5 50s20.18 45 45 45 45-20.18 45-45S74.82 5 50 5zm0 5.46c21.87 0 39.54 17.67 39.54 39.54S71.87 89.54 50 89.54 10.46 71.87 10.46 50 28.13 10.46 50 10.46z"
                           />
                           <path
-                            d="M50 56.716c-8.291.016-16.617 3.8-21.531 11.436-.961 1.493-.798 3.395.562 4.17 1.44.822 3.083.238 3.969-1.123 3.833-5.888 10.418-8.821 17-8.837 6.582-.017 13.167 2.917 17 8.805.886 1.361 2.528 1.977 3.969 1.155 1.36-.775 1.523-2.71.562-4.202C66.617 60.484 58.291 56.7 50 56.716z"
+                            d="M50 56.72c-8.3.01-16.62 3.8-21.53 11.43-.96 1.5-.8 3.4.56 4.17 1.44.82 3.08.24 3.97-1.12 3.83-5.89 10.42-8.82 17-8.84 6.58-.02 13.17 2.92 17 8.8.89 1.37 2.53 1.98 3.97 1.16 1.36-.77 1.52-2.7.56-4.2C66.62 60.48 58.3 56.7 50 56.72z"
                           />
                         </svg>
                       </div>
@@ -206,9 +215,9 @@
             <div class="social-municipality">
               <button
                 class="btn btn-municipality"
-                @click="onShareClick(selectedMunicipality)"
+                @click="onShareClick(selectedMunicipality, selectedCandidate)"
               >
-                <span>Deli svojo občino!</span>
+                <span>Deli občino!</span>
               </button>
             </div>
           </div>
@@ -230,11 +239,11 @@
     <div class="row">
       <div class="col">
         <div class="notify-us">
-          Kandidiraš na lokalnih volitvah in nas želiš obvestiti o svoji nameri
-          ali pa nam javiti popravek morebitne napake na spletnem mestu?
+          Si župan_ja in nas želiš obvestiti o svoji nameri ali nam javiti
+          popravek morebitne napake na spletnem mestu?
           <a
             :href="`mailto:jasmina@danesjenovdan.si?subject=${encodeURIComponent(
-              'Namera o uvedbi participativnega proračuna v moji občini'
+              'Zaobljuba o uvedbi participativnega proračuna v moji občini'
             )}`"
             target="_blank"
           >
@@ -284,6 +293,9 @@ export default {
       if (candidate) {
         selectedCandidate = candidate;
       }
+    } else if (selectedMunicipality?.candidates?.length === 1) {
+      // eslint-disable-next-line prefer-destructuring
+      selectedCandidate = selectedMunicipality.candidates[0];
     }
 
     return {
@@ -305,15 +317,19 @@ export default {
       const municipality = ppList.find((m) => m.name === selected);
       if (municipality) {
         this.selectedMunicipality = municipality;
+        if (municipality.candidates?.length === 1) {
+          // eslint-disable-next-line prefer-destructuring
+          this.selectedCandidate = municipality.candidates[0];
+        }
         this.$router.push(`/${municipality.slug}`);
       }
     },
     onShareClick(selectedMunicipality, candidate) {
       this.selectedCandidate = candidate;
-      let newLink = `${baseUrl}${selectedMunicipality.slug}`;
-      if (candidate) {
-        newLink += `?p=${candidate.slug}`;
-      }
+      const newLink = `${baseUrl}${selectedMunicipality.slug}`;
+      // if (candidate) {
+      //   newLink += `?p=${candidate.slug}`;
+      // }
       this.shareLink = newLink;
       this.showModal = true;
     },
@@ -468,6 +484,25 @@ export default {
       width: 100%;
       height: 100%;
 
+      .municipality {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+
+        .coat img {
+          height: 70px;
+        }
+
+        .name {
+          font-size: 20px;
+          font-weight: 500;
+          font-style: italic;
+          color: #27223a;
+          margin-bottom: 10px;
+        }
+      }
+
       table,
       tbody,
       tr,
@@ -621,9 +656,11 @@ export default {
               user-select: none;
             }
 
+            .happy-face-wrapper,
             .sad-face-wrapper {
               text-align: center;
 
+              .happy-face,
               .sad-face {
                 width: 44px;
                 height: 44px;
