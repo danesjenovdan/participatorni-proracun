@@ -489,7 +489,7 @@
         "slug": "iztok-fartek",
         "gender": "m",
         "proposer": "Mihaela KALAMAR in skupina volivcev",
-        "has_pp": false,
+        "has_pp": true,
         "promised_pp": true
       }
     ]

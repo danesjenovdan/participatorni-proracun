@@ -38,8 +38,10 @@ async function main() {
       candidates: candidates.map((o) => {
         const cData = candidatesData.find((c) => c.party_name === o.name);
         let promisedPP = false;
+        let hasPP = o.already_has_pp;
         if (cData) {
           promisedPP = answers[cData.id];
+          hasPP = cData.already_has_pp;
         }
 
         return {
@@ -47,7 +49,7 @@ async function main() {
           slug: slugify(prepareNameForSlug(o.name)),
           gender: o.gender,
           proposer: o.proposer,
-          has_pp: o.already_has_pp,
+          has_pp: hasPP,
           promised_pp: promisedPP,
         };
       }),
