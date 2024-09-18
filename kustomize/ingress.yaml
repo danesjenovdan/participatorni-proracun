@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pp-volitve-2018-zmagovalci
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite ^(/2018)$ $1/ redirect; # add trailing slash
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - participativni-proracun.djnd.si
+        - participativni-proracun.danesjenovdan.si
+      secretName: pp-volitve-2018-zmagovalci-tls
+  rules:
+    - host: participativni-proracun.djnd.si
+      http:
+        paths:
+          - path: /2018(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: pp-volitve-2018-zmagovalci
+                port:
+                  number: 8801
+    - host: participativni-proracun.danesjenovdan.si
+      http:
+        paths:
+          - path: /2018(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: pp-volitve-2018-zmagovalci
+                port:
+                  number: 8801

@@ -16,7 +16,7 @@
             <div class="col">
               <p>
                 Pred lokalnimi volitvami leta 2018 smo vse kandidate za župane
-                <a href="https://danesjenovdan.si/participativni-proracun/zaobljube/"
+                <a href="https://participativni-proracun.djnd.si/2018/zaobljube/"
                    rel="noreferrer noopener"
                    target="_blank"
                    style="color: black;"

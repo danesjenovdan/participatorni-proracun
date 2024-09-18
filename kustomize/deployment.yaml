@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pp-volitve-2018-zmagovalci
+  labels:
+    app: pp-volitve-2018-zmagovalci
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pp-volitve-2018-zmagovalci
+  template:
+    metadata:
+      labels:
+        app: pp-volitve-2018-zmagovalci
+    spec:
+      containers:
+        - name: pp-volitve-2018-zmagovalci
+          image: pp-volitve-2018-zmagovalci
+          ports:
+            - containerPort: 8801
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 100m
+            limits:
+              memory: 100Mi
+              cpu: 100m
