@@ -5,7 +5,7 @@ module.exports = {
   pluginOptions: {
     ssr: {
       port: 8801,
-      extendServer: server,
+      // extendServer: server,
     },
   },
 };
