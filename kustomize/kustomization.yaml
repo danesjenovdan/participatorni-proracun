@@ -8,4 +8,4 @@ resources:
 images:
   - name: pp-volitve-2018-zmagovalci
     newName: rg.fr-par.scw.cloud/djnd/pp-volitve-2018-zmagovalci
-    newTag: 'latest'
+    newTag: '31ace99556c62ec99a94ed7753adfa11d7baaef5'
