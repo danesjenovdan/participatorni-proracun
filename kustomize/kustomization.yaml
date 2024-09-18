@@ -8,4 +8,4 @@ resources:
 images:
   - name: pp-volitve-2018-zaobljube
     newName: rg.fr-par.scw.cloud/djnd/pp-volitve-2018-zaobljube
-    newTag: 'latest'
+    newTag: '85841476d22d14ef1f297e12f6928103dbe4a703'
