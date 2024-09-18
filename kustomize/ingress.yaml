@@ -9,9 +9,20 @@ spec:
   tls:
     - hosts:
         - participativni-proracun.djnd.si
+        - participativni-proracun.danesjenovdan.si
       secretName: pp-volitve-2022-tls
   rules:
     - host: participativni-proracun.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pp-volitve-2022
+                port:
+                  number: 3000
+    - host: participativni-proracun.danesjenovdan.si
       http:
         paths:
           - path: /
