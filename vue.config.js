@@ -6,7 +6,7 @@ module.exports = {
     ssr: {
       host: true,
       port: 8801,
-      extendServer: server,
+      // extendServer: server,
     },
   },
 };
