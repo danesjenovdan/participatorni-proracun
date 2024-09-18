@@ -23,9 +23,3 @@ npm run ssr:build
 ```
 npm run ssr:start
 ```
-
-### Lints and fixes files
-
-```
-npm run lint
-```

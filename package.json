@@ -5,7 +5,6 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "ssr:serve": "vue-cli-service ssr:serve",
     "ssr:build": "vue-cli-service ssr:build",
     "ssr:start": "cross-env NODE_ENV=production vue-cli-service ssr:serve --mode production"
@@ -26,9 +25,7 @@
   "devDependencies": {
     "@akryum/vue-cli-plugin-ssr": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.0.5",
-    "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
-    "@vue/eslint-config-airbnb": "^3.0.5",
     "node-sass": "^4.14.1",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.0.1",
