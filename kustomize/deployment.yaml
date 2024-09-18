@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pp-volitve-2018-zaobljube
+  labels:
+    app: pp-volitve-2018-zaobljube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pp-volitve-2018-zaobljube
+  template:
+    metadata:
+      labels:
+        app: pp-volitve-2018-zaobljube
+    spec:
+      containers:
+        - name: pp-volitve-2018-zaobljube
+          image: pp-volitve-2018-zaobljube
+          ports:
+            - containerPort: 8801
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 100m
+            limits:
+              memory: 100Mi
+              cpu: 100m
