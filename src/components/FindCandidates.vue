@@ -213,7 +213,7 @@ function groupBy(arr, key) {
   }, {});
 }
 
-const domain = 'https://danesjenovdan.si';
+const domain = 'https://participativni-proracun.danesjenovdan.si';
 const baseUrl = process.env.BASE_URL;
 
 const notifyUsMailSubject = 'Namera o uvedbi participativnega proračuna v moji občini';
