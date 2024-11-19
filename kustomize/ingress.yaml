@@ -4,6 +4,8 @@ metadata:
   name: pp-volitve-2022
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://participativni-proracun.djnd.si, https://participativni-proracun.danesjenovdan.si"
 spec:
   ingressClassName: nginx
   tls:
