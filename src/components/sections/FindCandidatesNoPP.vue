@@ -342,7 +342,7 @@ export default {
         `\n` +
         `Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim pridruži tudi ${obcina}. \n` +
         `\n` +
-        `Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n` +
+        `Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://participativni-proracun.danesjenovdan.si/2018/.\n` +
         `\n` +
         `V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas lepo pozdravljam.\n`
       );

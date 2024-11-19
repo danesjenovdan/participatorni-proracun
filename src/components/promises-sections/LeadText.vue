@@ -10,7 +10,7 @@
         <p>
           Tako kot smo to počeli
           <a
-            href="https://danesjenovdan.si/participativni-proracun/"
+            href="https://participativni-proracun.danesjenovdan.si/2018/"
             target="_blank"
             >v prejšnjem</a
           >, bomo župane_je tudi v prihajajočem mandatu držali za besedo in

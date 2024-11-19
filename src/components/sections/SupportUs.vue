@@ -7,7 +7,7 @@
       <div class="col-md-12">
         <div class="social-buttons">
           <a
-            href="https://danesjenovdan.si/doniraj"
+            href="https://danesjenovdan.si/podpri-nas/"
             rel="noreferrer noopener"
             target="_blank"
           >

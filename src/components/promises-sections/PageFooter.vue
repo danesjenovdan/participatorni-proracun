@@ -13,7 +13,9 @@
         </div>
         <div class="col-md-12 text-center">
           <h3>PODPRI NAŠE DELO!</h3>
-          <a class="btn" href="https://danesjenovdan.si/doniraj">Doniraj!</a>
+          <a class="btn" href="https://danesjenovdan.si/podpri-nas/"
+            >Doniraj!</a
+          >
         </div>
       </div>
     </div>

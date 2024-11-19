@@ -381,7 +381,7 @@ export default {
         `\n` +
         `Ustrezna izvedba participativnega proračuna občankam in občanom omogoča, da neposredno odločajo o porabi deleža občinskih sredstev. Uvedba participativnih mehanizmov prinaša pozitivne učinke za prebivalce, ki se počutijo opolnomočeni in bolj povezani s svojo lokalno skupnostjo. Hkrati pa si tudi vi okrepite zaupanje in legitimnost med občankami in občani, v širši skupnosti pa ste prepoznani kot vključujoči predstavniki ljudstva.\n` +
         `\n` +
-        `Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://danesjenovdan.si/participativni-proracun/.\n` +
+        `Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://participativni-proracun.danesjenovdan.si/2018/.\n` +
         `\n` +
         `V upanju, da boste držali svojo zavezo vašim volivkam in volivcem, vas lepo pozdravljam.`
       );

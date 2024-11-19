@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     onShareClick(event, type) {
-      const shareLink = "https://danesjenovdan.si/participativni-proracun/";
+      const shareLink = "https://participativni-proracun.danesjenovdan.si/2018/";
       const shareTitle = "Kje je participativni proračun?";
       const shareText =
         "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani " +

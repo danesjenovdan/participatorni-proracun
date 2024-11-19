@@ -17,7 +17,7 @@
               <p>
                 Pred lokalnimi volitvami leta XXXX smo vse kandidate za župane
                 <a
-                  href="https://danesjenovdan.si/participativni-proracun/zaobljube/"
+                  href="https://participativni-proracun.danesjenovdan.si/2018/zaobljube/"
                   rel="noreferrer noopener"
                   target="_blank"
                   style="color: black"
