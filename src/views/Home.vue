@@ -41,7 +41,7 @@ import TopTitleSection from '@/components/TopTitleSection.vue';
 import Donate from '@/components/Donate';
 import BottomSection from '@/components/BottomSection';
 
-const domain = 'https://danesjenovdan.si';
+const domain = 'https://participativni-proracun.danesjenovdan.si';
 const baseUrl = process.env.BASE_URL;
 
 export default {
