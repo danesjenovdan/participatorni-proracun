@@ -7,6 +7,14 @@ import eslintPlugin from "vite-plugin-eslint";
 export default defineConfig({
   clearScreen: false,
   base: process.env.BASE_URL || "/",
+  server: {
+    cors: {
+      origin: [
+        "https://participativni-proracun.danesjenovdan.si",
+        "https://participativni-proracun.djnd.si",
+      ],
+    },
+  },
   plugins: [
     viteSSR({
       build: {
