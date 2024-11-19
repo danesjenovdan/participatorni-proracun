@@ -63,7 +63,7 @@
       <div class="logo">
         <img src="../assets/djnd-logo.svg" alt="Danes je nov dan" />
       </div>
-      <div class="text">participativni-proracun.djnd.si</div>
+      <div class="text">participativni-proracun.danesjenovdan.si</div>
     </div>
   </div>
 </template>
