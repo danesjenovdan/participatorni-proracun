@@ -27,7 +27,7 @@ module.exports = (app) => {
       const text = String((req.query && req.query.t) || '');
       const url =
         process.env.NODE_ENV === 'production'
-          ? `https://participativni-proracun.djnd.si/2018/og-image/${text}`
+          ? `https://participativni-proracun.danesjenovdan.si/2018/og-image/${text}`
           : `http://localhost:8801/og-image/${text}`;
       const imagePath = await screenshot(url, `og-image-new2-${text}`);
       res.sendFile(imagePath);
