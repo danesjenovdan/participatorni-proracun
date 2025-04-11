@@ -1,9 +1,9 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-console */
 /* eslint-disable no-await-in-loop */
-import fs from "fs-extra";
 import axios from "axios";
-// eslint-disable-next-line import/no-unresolved
+import fs from "fs-extra";
+// eslint-disable-next-line import/no-unresolved, import/extensions
 import { stringify } from "csv-stringify/sync";
 
 const municipalities = fs.readJsonSync("data/municipalities.json");

@@ -17,15 +17,15 @@
 </template>
 
 <script>
-import TopTitle from "../components/sections/TopTitle.vue";
 import CandidateScroll from "../components/sections/CandidateScroll.vue";
 import FindCandidates from "../components/sections/FindCandidates.vue";
-import NoPPCandidates from "../components/sections/NoPPCandidates.vue";
 import FindCandidatesNoPP from "../components/sections/FindCandidatesNoPP.vue";
-import WhatIsPP from "../components/sections/WhatIsPP.vue";
+import NoPPCandidates from "../components/sections/NoPPCandidates.vue";
+import PageFooter from "../components/sections/PageFooter.vue";
 import SocialShare from "../components/sections/SocialShare.vue";
 import SupportUs from "../components/sections/SupportUs.vue";
-import PageFooter from "../components/sections/PageFooter.vue";
+import TopTitle from "../components/sections/TopTitle.vue";
+import WhatIsPP from "../components/sections/WhatIsPP.vue";
 
 export default {
   name: "App",
@@ -50,11 +50,11 @@ export default {
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
       // url
-      {
-        vmid: "og:url",
-        property: "og:url",
-        content: `${baseUrl}`,
-      },
+      // {
+      //   vmid: "og:url",
+      //   property: "og:url",
+      //   content: `${baseUrl}`,
+      // },
       // title
       {
         vmid: "og:title",
@@ -80,16 +80,16 @@ export default {
           "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še niso izpolnili svoje obljube.",
       },
       // image
-      {
-        vmid: "og:image",
-        property: "og:image",
-        content: `${baseUrl}pp-og.png?v2`,
-      },
-      {
-        vmid: "twitter:image",
-        name: "twitter:image",
-        content: `${baseUrl}pp-og.png?v2`,
-      },
+      // {
+      //   vmid: "og:image",
+      //   property: "og:image",
+      //   content: `${baseUrl}pp-og.png?v2`,
+      // },
+      // {
+      //   vmid: "twitter:image",
+      //   name: "twitter:image",
+      //   content: `${baseUrl}pp-og.png?v2`,
+      // },
     ],
   },
 

@@ -125,7 +125,7 @@
               :pp="false"
               :obcina-info="
                 data.filter(
-                  (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase()
+                  (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase(),
                 )[0]
               "
               @close="showModal = false"
@@ -134,7 +134,7 @@
                   $event,
                   'tw',
                   showModal[0],
-                  showModal[1]
+                  showModal[1],
                 )
               "
               @fb-share="
@@ -142,7 +142,7 @@
                   $event,
                   'fb',
                   showModal[0],
-                  showModal[1]
+                  showModal[1],
                 )
               "
               @email-share="
@@ -150,7 +150,7 @@
                   $event,
                   'mail',
                   showModal[0],
-                  showModal[1]
+                  showModal[1],
                 )
               "
             />
@@ -162,12 +162,12 @@
 </template>
 
 <script>
-import Papa from "papaparse";
-import { transliterate as tr } from "transliteration";
-import Modal from "../Modal.vue";
-import { openSocialShareLink } from "../../helpers/social";
+// import Papa from "papaparse";
+// import { transliterate as tr } from "transliteration";
+// import Modal from "../Modal.vue";
+import { openSocialShareLink } from "../../helpers/social.js";
 
-const csvData = "";
+// const csvData = "";
 
 function groupBy(arr, key) {
   return arr.reduce((acc, cur) => {
@@ -180,7 +180,7 @@ function groupBy(arr, key) {
 const notifyUsMailSubject =
   "Namera o uvedbi participativnega proračuna v moji občini";
 
-const shareTitle = "Kje je participativni proračun?";
+// const shareTitle = "Kje je participativni proračun?";
 const shareContent =
   "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani še " +
   "niso izpolnili svoje obljube.";
@@ -196,7 +196,7 @@ const sharePersonF = "{name} obljublja participativni proračun";
 export default {
   name: "FindCandidatesNoPP",
   components: {
-    Modal,
+    // Modal,
   },
   metaInfo() {
     const overrideTags = {
@@ -206,16 +206,16 @@ export default {
     if (this.person || this.query) {
       // let title = shareContent;
       const content = shareContent;
-      const image = `og-image-new2.png/gen?t=${encodeURIComponent(
-        tr(this.query)
-      )}`;
+      // const image = `og-image-new2.png/gen?t=${encodeURIComponent(
+      //   tr(this.query),
+      // )}`;
 
       // url
-      overrideTags.meta.push({
-        vmid: "og:url",
-        property: "og:url",
-        content: `${baseUrl}${encodeURIComponent(tr(this.query))}`,
-      });
+      // overrideTags.meta.push({
+      //   vmid: "og:url",
+      //   property: "og:url",
+      //   content: `${baseUrl}${encodeURIComponent(tr(this.query))}`,
+      // });
 
       // description
       overrideTags.meta.push({
@@ -230,66 +230,66 @@ export default {
       });
 
       // image
-      overrideTags.meta.push({
-        vmid: "og:image",
-        property: "og:image",
-        content: `${baseUrl}${image}`,
-      });
-      overrideTags.meta.push({
-        vmid: "twitter:image",
-        name: "twitter:image",
-        content: `${baseUrl}${image}`,
-      });
+      // overrideTags.meta.push({
+      //   vmid: "og:image",
+      //   property: "og:image",
+      //   content: `${baseUrl}${image}`,
+      // });
+      // overrideTags.meta.push({
+      //   vmid: "twitter:image",
+      //   name: "twitter:image",
+      //   content: `${baseUrl}${image}`,
+      // });
     }
 
     return overrideTags;
   },
   data() {
-    const { query: tmpQuery } = this.$route.params;
+    // const { query: tmpQuery } = this.$route.params;
     const { p } = this.$route.query;
 
-    const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
-    if (data.errors.length) {
-      // eslint-disable-next-line no-console
-      console.error("CSV Parse Errors:", data.errors);
-    }
-    const allData = data.data
-      .map((row) => ({
-        ...row,
-        SIMPLE_OBCINA: row["OBČINA"].replace(/(?:MESTNA )?OBČINA /gi, ""),
-      }))
-      .filter((row) => row.ZMAGA !== "")
-      .filter((row) => row["DRUGI DROPDOWN"] === "1");
-    const allMunicipalities = Object.keys(groupBy(allData, "SIMPLE_OBCINA"));
+    // const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
+    // if (data.errors.length) {
+    //   // eslint-disable-next-line no-console
+    //   console.error("CSV Parse Errors:", data.errors);
+    // }
+    // const allData = data.data
+    //   .map((row) => ({
+    //     ...row,
+    //     SIMPLE_OBCINA: row["OBČINA"].replace(/(?:MESTNA )?OBČINA /gi, ""),
+    //   }))
+    //   .filter((row) => row.ZMAGA !== "")
+    //   .filter((row) => row["DRUGI DROPDOWN"] === "1");
+    // const allMunicipalities = Object.keys(groupBy(allData, "SIMPLE_OBCINA"));
 
-    const query = allMunicipalities.filter(
-      (m) => tr(m).toUpperCase() === tr(tmpQuery).toUpperCase()
-    )[0];
+    // const query = allMunicipalities.filter(
+    //   (m) => tr(m).toUpperCase() === tr(tmpQuery).toUpperCase(),
+    // )[0];
 
     return {
-      inputValue:
-        query &&
-        allData.map((row) => row.SIMPLE_OBCINA).includes(query.toUpperCase())
-          ? query.toUpperCase()
-          : "",
-      query: (query || "").toLowerCase(),
+      // inputValue:
+      //   query &&
+      //   allData.map((row) => row.SIMPLE_OBCINA).includes(query.toUpperCase())
+      //     ? query.toUpperCase()
+      //     : "",
+      // query: (query || "").toLowerCase(),
       person: p,
       loading: false,
-      data: allData,
-      allMunicipalities,
+      // data: allData,
+      // allMunicipalities,
       hoveredSocial: null,
       hoveredSocialMunicipality: false,
       notifyUsMailSubject: encodeURIComponent(notifyUsMailSubject),
       showModal: false,
-      selectedObcina:
-        query &&
-        allData.filter(
-          (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase()
-        ).length
-          ? allData.filter(
-              (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase()
-            )[0]
-          : null,
+      // selectedObcina:
+      //   query &&
+      //   allData.filter(
+      //     (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase(),
+      //   ).length
+      //     ? allData.filter(
+      //         (x) => x.SIMPLE_OBCINA.toLowerCase() === query.toLowerCase(),
+      //       )[0]
+      //     : null,
     };
   },
   computed: {
@@ -321,11 +321,11 @@ export default {
       if (this.query) {
         if (
           this.data.filter(
-            (x) => x.SIMPLE_OBCINA.toLowerCase() === this.query.toLowerCase()
+            (x) => x.SIMPLE_OBCINA.toLowerCase() === this.query.toLowerCase(),
           ).length
         ) {
           obcina = this.data.filter(
-            (x) => x.SIMPLE_OBCINA.toLowerCase() === this.query.toLowerCase()
+            (x) => x.SIMPLE_OBCINA.toLowerCase() === this.query.toLowerCase(),
           )[0].OBČINA;
         } else {
           obcina = "<ime obcine>";
@@ -352,20 +352,20 @@ export default {
     this.resizeTextarea();
   },
   methods: {
-    updateItems(text) {
-      const upperInput = tr(text.toUpperCase());
-      const filteredItems = this.allMunicipalities.filter(
-        (m) => tr(m).indexOf(upperInput) !== -1
-      );
-      if (text.length > 2 || filteredItems.length < 5) {
-        return filteredItems;
-      }
+    updateItems(/* text */) {
+      // const upperInput = tr(text.toUpperCase());
+      // const filteredItems = this.allMunicipalities.filter(
+      //   (m) => tr(m).indexOf(upperInput) !== -1,
+      // );
+      // if (text.length > 2 || filteredItems.length < 5) {
+      //   return filteredItems;
+      // }
       return [];
     },
     onSubmitLocation(selected) {
       if (
         this.data.filter(
-          (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase()
+          (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase(),
         ).length
       ) {
         const text =
@@ -378,9 +378,9 @@ export default {
         this.loading = false;
         // eslint-disable-next-line prefer-destructuring
         this.selectedObcina = this.data.filter(
-          (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase()
+          (x) => x.SIMPLE_OBCINA.toLowerCase() === selected.toLowerCase(),
         )[0];
-        this.$emit("new-input");
+        // this.$emit("new-input");
         this.resizeTextarea();
       }
     },
@@ -422,14 +422,14 @@ export default {
     onShareClickMunicipality($event, type) {
       if (!type) {
         this.showModal = true;
-        return;
+        // return;
       }
 
-      const shareHashtag = "";
+      // const shareHashtag = "";
 
-      const link = tr(document.location.href);
+      // const link = tr(document.location.href);
 
-      openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
+      // openSocialShareLink(type, shareTitle, shareContent, link, shareHashtag);
     },
     resizeTextarea() {
       const dom = document.getElementById("textareaNoPP");

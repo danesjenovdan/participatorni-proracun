@@ -1,26 +1,15 @@
-import Promises from "./pages/Promises.vue";
 import PromisesOgImage from "./pages/PromisesOgImage.vue";
-// import Home from "./pages/Home.vue";
+import PromisesPage from "./pages/PromisesPage.vue";
 
-export const routes = [
+export default [
   {
     name: "promises",
     path: "/:slug?",
-    component: Promises,
+    component: PromisesPage,
   },
   {
     name: "promises-og-image",
     path: "/promises-og-image/:slug?",
     component: PromisesOgImage,
   },
-  // {
-  //   name: "home",
-  //   path: "/",
-  //   component: Home,
-  // },
-  // {
-  //   name: "query",
-  //   path: "/:query",
-  //   component: Home,
-  // },
 ];

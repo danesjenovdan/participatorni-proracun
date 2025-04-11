@@ -3,7 +3,7 @@
 /* eslint-disable no-console */
 /* eslint-disable no-await-in-loop */
 import fs from "fs-extra";
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved, import/extensions
 import { stringify } from "csv-stringify/sync";
 import assert from "node:assert/strict";
 import { prepareNameForSlug, slugify } from "./slugify.js";
@@ -17,7 +17,7 @@ async function main() {
     const p = m.candidates.filter(
       (cand) =>
         slugify(prepareNameForSlug(cand.name)) ===
-        slugify(prepareNameForSlug(o.Ime))
+        slugify(prepareNameForSlug(o.Ime)),
     );
     assert(p.length === 1);
     return { ...o, has_pp: p[0].has_pp, promised_pp: p[0].promised_pp };

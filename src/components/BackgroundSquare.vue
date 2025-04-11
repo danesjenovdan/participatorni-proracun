@@ -29,18 +29,22 @@ export default {
     top: {
       type: String,
       required: false,
+      default: undefined,
     },
     bottom: {
       type: String,
       required: false,
+      default: undefined,
     },
     left: {
       type: String,
       required: false,
+      default: undefined,
     },
     right: {
       type: String,
       required: false,
+      default: undefined,
     },
   },
   computed: {

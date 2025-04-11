@@ -3,13 +3,13 @@
 /* eslint-disable no-await-in-loop */
 import fs from "fs-extra";
 import { capitalize, sample } from "lodash-es";
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved, import/extensions
 import { parse } from "csv-parse/sync";
 import { prepareNameForSlug, slugify } from "./slugify.js";
 
 const candidates = parse(
   fs.readFileSync("data/latest_candidates_edited_with_contacts.csv", "utf-8"),
-  { columns: true, skip_empty_lines: true }
+  { columns: true, skip_empty_lines: true },
 );
 const words = fs.readJsonSync("data/words.json");
 const PASS_WORD_COUNT = 3;

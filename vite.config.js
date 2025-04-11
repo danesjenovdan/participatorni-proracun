@@ -1,5 +1,6 @@
 import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vite";
+import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,19 +10,5 @@ export default defineConfig({
     port: process.env.PORT || 3000,
     strictPort: true,
   },
-  plugins: [
-    // viteSSR({
-    //   build: {
-    //     clientOptions: {
-    //       build: {
-    //         emptyOutDir: true,
-    //       },
-    //     },
-    //     serverOptions: {
-    //       publicDir: "public",
-    //     },
-    //   },
-    // }),
-    vue(),
-  ],
+  plugins: [vue(), eslint()],
 });

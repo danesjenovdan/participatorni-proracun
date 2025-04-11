@@ -30,6 +30,6 @@ export function prepareNameForSlug(value) {
 
 export function slugify(value) {
   return _.kebabCase(
-    _.deburr(value.toLowerCase()).replace("mestna ", "").replace("obcina ", "")
+    _.deburr(value.toLowerCase()).replace("mestna ", "").replace("obcina ", ""),
   );
 }

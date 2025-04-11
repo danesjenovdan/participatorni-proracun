@@ -2,15 +2,15 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-console */
 /* eslint-disable no-await-in-loop */
-import fs from "fs-extra";
 import axios from "axios";
-// eslint-disable-next-line import/no-unresolved
+import fs from "fs-extra";
+// eslint-disable-next-line import/no-unresolved, import/extensions
 import { stringify } from "csv-stringify/sync";
 import assert from "node:assert/strict";
 
 const municipalities = fs.readJsonSync("data/municipalities.json");
 const candidates = fs.readJsonSync(
-  "data/2022-11-07T14-19-49_candidates_raw.json"
+  "data/2022-11-07T14-19-49_candidates_raw.json",
 );
 
 const fieldNameMap = {
@@ -69,7 +69,7 @@ async function main() {
     .map((obj) => {
       const cand = candidates.filter(
         (o) =>
-          o.__municipality_id === obj.__municipality_id && o.naziv === obj.naz
+          o.__municipality_id === obj.__municipality_id && o.naziv === obj.naz,
       );
       console.log(obj.naz);
       console.log(`'${obj.pred}'`);

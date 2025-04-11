@@ -1,8 +1,8 @@
-import "make-promises-safe";
-import fs from "fs-extra";
-import { resolve, join } from "path";
-import { fastify as createFastify } from "fastify";
 import fastifyStatic from "@fastify/static";
+import { fastify as createFastify } from "fastify";
+import fs from "fs-extra";
+import { join, resolve } from "path";
+// eslint-disable-next-line import/no-unresolved
 import serverMain from "../dist/server/main.js";
 
 const fastify = createFastify({ logger: true, ignoreTrailingSlash: true });

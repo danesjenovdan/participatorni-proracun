@@ -75,7 +75,7 @@ export default {
           {
             email,
             segment: 11,
-          }
+          },
         );
         if (response.data?.msg === "mail sent") {
           this.emailSent = true;

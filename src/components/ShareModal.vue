@@ -1,6 +1,6 @@
 <template>
   <transition name="modal">
-    <div class="modal-mask">
+    <div v-if="true" class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
           <button
@@ -45,6 +45,7 @@ export default {
       default: null,
     },
   },
+  emits: ["close"],
   data() {
     return {
       shortenedShareLink: null,
@@ -62,7 +63,7 @@ export default {
       axios
         .post(
           "https://djnd.si/yomamasofat/",
-          `fatmama=${encodeURIComponent(decodeURIComponent(this.shareLink))}`
+          `fatmama=${encodeURIComponent(decodeURIComponent(this.shareLink))}`,
         )
         .then((response) => {
           this.shortenedShareLink = response.data;

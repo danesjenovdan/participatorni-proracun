@@ -9,12 +9,12 @@
 
 <script>
 import BigVideo from "../BigVideo.vue";
-import Questions from "../Questions.vue";
+// import Questions from "../Questions.vue";
 
 export default {
   components: {
     BigVideo,
-    Questions,
+    // Questions,
   },
 };
 </script>

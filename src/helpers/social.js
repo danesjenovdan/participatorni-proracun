@@ -3,7 +3,7 @@ function openSocialShareLink(
   shareTitle,
   shareText,
   shareLink,
-  shareHashtag
+  shareHashtag,
 ) {
   // TODO: add native share option
   let url = "";
@@ -13,7 +13,7 @@ function openSocialShareLink(
     url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${link}&link=${link}&ref=responsive&name=${title}`;
   } else if (type === "tw") {
     const text = encodeURIComponent(
-      `${shareTitle} ${shareText} ${shareHashtag} ${shareLink}`
+      `${shareTitle} ${shareText} ${shareHashtag} ${shareLink}`,
     );
     url = `https://twitter.com/intent/tweet?text=${text}`;
   } else if (type === "mail") {
@@ -23,4 +23,5 @@ function openSocialShareLink(
   window.open(url, "_blank");
 }
 
+// eslint-disable-next-line import/prefer-default-export
 export { openSocialShareLink };

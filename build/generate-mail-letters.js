@@ -3,12 +3,12 @@
 /* eslint-disable no-await-in-loop */
 import fs from "fs-extra";
 import assert from "node:assert/strict";
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved, import/extensions
 import { parse } from "csv-parse/sync";
 
 const candidates = parse(
   fs.readFileSync("data/latest_candidates_with_no_email.csv", "utf-8"),
-  { columns: true, skip_empty_lines: true }
+  { columns: true, skip_empty_lines: true },
 );
 const passwords = fs.readJsonSync("data/passwords.json");
 

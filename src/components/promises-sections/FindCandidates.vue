@@ -243,7 +243,7 @@
           popravek morebitne napake na spletnem mestu?
           <a
             :href="`mailto:jasmina@danesjenovdan.si?subject=${encodeURIComponent(
-              'Zaobljuba o uvedbi participativnega proračuna v moji občini'
+              'Zaobljuba o uvedbi participativnega proračuna v moji občini',
             )}`"
             target="_blank"
           >
@@ -288,7 +288,7 @@ export default {
     }
     if (selectedMunicipality && p) {
       const candidate = selectedMunicipality.candidates.find(
-        (c) => c.slug === p
+        (c) => c.slug === p,
       );
       if (candidate) {
         selectedCandidate = candidate;

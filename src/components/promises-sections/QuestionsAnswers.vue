@@ -130,7 +130,7 @@ const faqs = [
 ];
 
 export default {
-  name: "Questions",
+  name: "QuestionsAnswers",
   components: {
     BigVideo,
   },

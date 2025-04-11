@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-await-in-loop */
-import fs from "fs-extra";
-import puppeteer from "puppeteer";
-import { join, resolve } from "path";
 import { spawn } from "child_process";
+import fs from "fs-extra";
+import { join, resolve } from "path";
+import puppeteer from "puppeteer";
 import { prepareNameForSlug, slugify } from "./slugify.js";
 
 const municipalities = fs.readJsonSync("data/municipalities.json");
@@ -51,7 +51,7 @@ async function main() {
         `http://localhost:3000/promises-og-image/${slug}?p=${personSlug}`,
         {
           waitUntil: "networkidle0",
-        }
+        },
       );
 
       const personElem = await page.$("#og-image-wrapper");

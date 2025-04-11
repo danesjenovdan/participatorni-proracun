@@ -185,7 +185,7 @@
                 margin_top: i === 0,
               }"
             >
-              <span class="obcina" @click="$emit('obcina-clicked', c)">{{
+              <span class="obcina" @click="/* $emit('obcina-clicked', c) */">{{
                 c.SIMPLE_OBCINA
               }}</span>
               <span v-if="c['IZVAJA PP'] === '1'" class="happy_face_text">
@@ -215,10 +215,10 @@
 </template>
 
 <script>
-import Papa from "papaparse";
+// import Papa from "papaparse";
 import BackgroundSquare from "../BackgroundSquare.vue";
 
-const csvData = "";
+// const csvData = "";
 
 export default {
   name: "CandidateScroll",
@@ -227,39 +227,39 @@ export default {
   },
 
   data() {
-    const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
-    if (data.errors.length) {
-      // eslint-disable-next-line no-console
-      console.error("CSV Parse Errors:", data.errors);
-    }
-    const allData = data.data
-      .map((row) => ({
-        ...row,
-        SIMPLE_OBCINA: row["OBČINA"].replace(/(?:MESTNA )?OBČINA /gi, ""),
-      }))
-      .filter((row) => row.ZMAGA !== "")
-      .filter((row) => row["PRVI DROPDOWN"] === "1")
-      .sort((a, b) => {
-        if (a.SIMPLE_OBCINA < b.SIMPLE_OBCINA) {
-          return -1;
-        }
-        if (a.SIMPLE_OBCINA > b.SIMPLE_OBCINA) {
-          return 1;
-        }
-        return 0;
-      });
+    // const data = Papa.parse(csvData, { header: true, skipEmptyLines: true });
+    // if (data.errors.length) {
+    //   // eslint-disable-next-line no-console
+    //   console.error("CSV Parse Errors:", data.errors);
+    // }
+    // const allData = data.data
+    //   .map((row) => ({
+    //     ...row,
+    //     SIMPLE_OBCINA: row["OBČINA"].replace(/(?:MESTNA )?OBČINA /gi, ""),
+    //   }))
+    //   .filter((row) => row.ZMAGA !== "")
+    //   .filter((row) => row["PRVI DROPDOWN"] === "1")
+    //   .sort((a, b) => {
+    //     if (a.SIMPLE_OBCINA < b.SIMPLE_OBCINA) {
+    //       return -1;
+    //     }
+    //     if (a.SIMPLE_OBCINA > b.SIMPLE_OBCINA) {
+    //       return 1;
+    //     }
+    //     return 0;
+    //   });
 
-    const implemetedCount = allData
-      .map((o) => o["IZVAJA PP"])
-      .filter((o) => o === "1").length;
-    const unimplemetedCount = allData.filter(
-      (o) => o["IZVAJA PP"] === "0" && o.OBLJUBA === "1"
-    ).length;
+    // const implemetedCount = allData
+    //   .map((o) => o["IZVAJA PP"])
+    //   .filter((o) => o === "1").length;
+    // const unimplemetedCount = allData.filter(
+    //   (o) => o["IZVAJA PP"] === "0" && o.OBLJUBA === "1",
+    // ).length;
 
     return {
-      candidates: allData,
-      implemetedCount,
-      unimplemetedCount,
+      // candidates: allData,
+      // implemetedCount,
+      // unimplemetedCount,
     };
   },
 };

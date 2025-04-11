@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import ShareCardPerson from "../components/ShareCardPerson.vue";
 import ppList from "../assets/pp_list.json";
+import ShareCardPerson from "../components/ShareCardPerson.vue";
 
 export default {
   components: {
@@ -30,7 +30,7 @@ export default {
     }
     if (selectedMunicipality && p) {
       const candidate = selectedMunicipality.candidates.find(
-        (c) => c.slug === p
+        (c) => c.slug === p,
       );
       if (candidate) {
         selectedCandidate = candidate;

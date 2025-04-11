@@ -21,29 +21,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png" />
   </VueHead> -->
   <div class="page page--promises">
-    <Header />
+    <MainHeader />
     <ScrollingBanner />
     <section style="background-color: #fff">
       <LeadText />
       <FindCandidates />
     </section>
-    <Boxes />
+    <BoxesSection />
     <section style="background-color: #291749">
       <SubscribeForUpdates />
     </section>
-    <Questions />
+    <QuestionsAnswers />
     <PageFooter />
   </div>
 </template>
 
 <script setup>
 // import { Head as VueHead } from "@vueuse/head";
-import Boxes from "../components/promises-sections/Boxes.vue";
+import BoxesSection from "../components/promises-sections/BoxesSection.vue";
 import FindCandidates from "../components/promises-sections/FindCandidates.vue";
-import Header from "../components/promises-sections/Header.vue";
 import LeadText from "../components/promises-sections/LeadText.vue";
+import MainHeader from "../components/promises-sections/MainHeader.vue";
 import PageFooter from "../components/promises-sections/PageFooter.vue";
-import Questions from "../components/promises-sections/Questions.vue";
+import QuestionsAnswers from "../components/promises-sections/QuestionsAnswers.vue";
 import ScrollingBanner from "../components/promises-sections/ScrollingBanner.vue";
 import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
 </script>

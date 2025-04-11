@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const baseUrl = import.meta.env.BASE_URL;
 
 // const sharePersonM = "{name} obljublja participativni proračun";

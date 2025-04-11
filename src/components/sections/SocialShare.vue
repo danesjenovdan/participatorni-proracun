@@ -51,7 +51,7 @@
 
 <script>
 import axios from "axios";
-import { openSocialShareLink } from "../../helpers/social";
+import { openSocialShareLink } from "../../helpers/social.js";
 
 export default {
   name: "SocialShare",
@@ -60,7 +60,7 @@ export default {
       axios
         .post(
           "https://djnd.si/yomamasofat/",
-          `fatmama=${encodeURIComponent(this.shareLink)}`
+          `fatmama=${encodeURIComponent(this.shareLink)}`,
         )
         .then((res) => {
           this.shareLink = res.data;
@@ -73,7 +73,8 @@ export default {
   },
   methods: {
     onShareClick(event, type) {
-      const shareLink = "https://participativni-proracun.danesjenovdan.si/2018/";
+      const shareLink =
+        "https://participativni-proracun.danesjenovdan.si/2018/";
       const shareTitle = "Kje je participativni proračun?";
       const shareText =
         "Preveri, katere občine ga že izvajajo, predvsem pa, kateri župani " +

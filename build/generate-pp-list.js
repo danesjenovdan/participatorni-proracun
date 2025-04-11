@@ -13,7 +13,7 @@ async function main() {
   const all = [];
 
   const response = await axios.get(
-    "https://glas-ljudstva.si/api/municipalities/?election_id=3&question_ids=288"
+    "https://glas-ljudstva.si/api/municipalities/?election_id=3&question_ids=288",
   );
   const candidatesData = response.data.parties;
   const answers = response.data.questions["288"].party_answers;
@@ -27,7 +27,7 @@ async function main() {
     const candidates = allCandidates.filter(
       (o) =>
         o.municipality === name &&
-        winners.includes(slugify(prepareNameForSlug(o.name)))
+        winners.includes(slugify(prepareNameForSlug(o.name))),
     );
     assert(candidates.length === 1);
 
