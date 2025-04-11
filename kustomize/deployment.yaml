@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pp-volitve-2022
+  name: pp-preverjamo-2025
   labels:
-    app: pp-volitve-2022
+    app: pp-preverjamo-2025
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pp-volitve-2022
+      app: pp-preverjamo-2025
   template:
     metadata:
       labels:
-        app: pp-volitve-2022
+        app: pp-preverjamo-2025
     spec:
       containers:
-        - name: pp-volitve-2022
-          image: pp-volitve-2022
+        - name: pp-preverjamo-2025
+          image: pp-preverjamo-2025
           ports:
             - containerPort: 3000
           resources:
@@ -28,4 +28,4 @@ spec:
               cpu: 100m
           env:
             - name: BASE_URL
-              value: https://participativni-proracun.danesjenovdan.si/
+              value: https://pp2025.lb.djnd.si/

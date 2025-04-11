@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pp-volitve-2022
+  name: pp-preverjamo-2025
 spec:
   selector:
-    app: pp-volitve-2022
+    app: pp-preverjamo-2025
   ports:
     - protocol: TCP
       port: 3000

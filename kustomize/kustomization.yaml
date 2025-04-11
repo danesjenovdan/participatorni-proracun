@@ -6,6 +6,6 @@ resources:
   - ingress.yaml
   - service.yaml
 images:
-  - name: pp-volitve-2022
-    newName: rg.fr-par.scw.cloud/djnd/pp-volitve-2022
-    newTag: '3071e7dd2c536bbffc8d934c2271a999fcc331aa'
+  - name: pp-preverjamo-2025
+    newName: rg.fr-par.scw.cloud/djnd/pp-preverjamo-2025
+    newTag: 'latest'

@@ -45,8 +45,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css?family=Barlow:500&subset=latin-ext");
-
 #og-image-wrapper {
   --width: 1200px;
   --height: 628px;

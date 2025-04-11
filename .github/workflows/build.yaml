@@ -2,7 +2,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - 'volitve-2022-zmagovalci'
+      - 'TODO-preverjamo-2025'
 jobs:
   push_to_registry:
     name: Build and push Docker image to registry
@@ -26,11 +26,11 @@ jobs:
         with:
           context: .
           build-args: |
-            BASE_URL=https://participativni-proracun.danesjenovdan.si/
+            BASE_URL=https://pp2025.lb.djnd.si/
           push: true
           tags: |
-            rg.fr-par.scw.cloud/djnd/pp-volitve-2022:${{ github.sha }}
-            rg.fr-par.scw.cloud/djnd/pp-volitve-2022:latest
+            rg.fr-par.scw.cloud/djnd/pp-preverjamo-2025:${{ github.sha }}
+            rg.fr-par.scw.cloud/djnd/pp-preverjamo-2025:latest
 
       - name: Update image versions in kustomize/kustomization.yaml
         run: |
