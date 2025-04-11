@@ -1,10 +1,13 @@
-import viteSSR from "vite-ssr/vue";
-import { createHead } from "@vueuse/head";
-import { routes } from "./routes.js";
+import { createApp } from "vue";
+import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
+import { routes } from "./routes.js";
 
-export default viteSSR(App, { routes }, ({ app }) => {
-  const head = createHead();
-  app.use(head);
-  return { head };
+const app = createApp(App);
+// const head = createHead();
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
 });
+app.use(router);
+app.mount("#app");

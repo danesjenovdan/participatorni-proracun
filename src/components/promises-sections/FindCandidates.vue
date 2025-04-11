@@ -1,5 +1,5 @@
 <template>
-  <VueHead v-if="selectedMunicipality && selectedCandidate">
+  <!-- <VueHead v-if="selectedMunicipality && selectedCandidate">
     <title>Kje je participativni proračun?</title>
     <meta property="og:title" content="Kje je participativni proračun?" />
     <meta name="twitter:title" content="Kje je participativni proračun?" />
@@ -61,7 +61,7 @@
       name="twitter:image"
       :content="`${baseUrl}generated/og-images/og-image-${selectedMunicipality.slug}-${selectedCandidate.slug}.png?v=2`"
     />
-  </VueHead>
+  </VueHead> -->
   <div class="container">
     <div class="row find-candidates-row mx-0">
       <div class="col-lg-5 col--search px-0">
@@ -256,18 +256,18 @@
 </template>
 
 <script>
-import { Head as VueHead } from "@vueuse/head";
+// import { Head as VueHead } from "@vueuse/head";
 import SimpleTypeahead from "vue3-simple-typeahead";
 import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
-import ShareModal from "../ShareModal.vue";
-import ShareCardPerson from "../ShareCardPerson.vue";
-import { baseUrl } from "../../helpers/constants.js";
 import ppList from "../../assets/pp_list.json";
+import { baseUrl } from "../../helpers/constants.js";
+import ShareCardPerson from "../ShareCardPerson.vue";
+import ShareModal from "../ShareModal.vue";
 
 export default {
   name: "FindCandidates",
   components: {
-    VueHead,
+    // VueHead,
     SimpleTypeahead,
     ShareModal,
     ShareCardPerson,

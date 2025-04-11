@@ -1,5 +1,5 @@
 <template>
-  <VueHead>
+  <!-- <VueHead>
     <meta property="fb:app_id" content="301375193309601" />
     <meta name="twitter:creator" content="@danesjenovdan" />
     <meta property="og:type" content="website" />
@@ -19,7 +19,7 @@
     <meta name="twitter:image" :content="`${baseUrl}og-image-winners.png`" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png" />
-  </VueHead>
+  </VueHead> -->
   <div class="page page--promises">
     <Header />
     <ScrollingBanner />
@@ -37,14 +37,13 @@
 </template>
 
 <script setup>
-import { Head as VueHead } from "@vueuse/head";
-import Header from "../components/promises-sections/Header.vue";
-import ScrollingBanner from "../components/promises-sections/ScrollingBanner.vue";
-import LeadText from "../components/promises-sections/LeadText.vue";
-import FindCandidates from "../components/promises-sections/FindCandidates.vue";
+// import { Head as VueHead } from "@vueuse/head";
 import Boxes from "../components/promises-sections/Boxes.vue";
-import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
-import Questions from "../components/promises-sections/Questions.vue";
+import FindCandidates from "../components/promises-sections/FindCandidates.vue";
+import Header from "../components/promises-sections/Header.vue";
+import LeadText from "../components/promises-sections/LeadText.vue";
 import PageFooter from "../components/promises-sections/PageFooter.vue";
-import { baseUrl } from "../helpers/constants.js";
+import Questions from "../components/promises-sections/Questions.vue";
+import ScrollingBanner from "../components/promises-sections/ScrollingBanner.vue";
+import SubscribeForUpdates from "../components/promises-sections/SubscribeForUpdates.vue";
 </script>
