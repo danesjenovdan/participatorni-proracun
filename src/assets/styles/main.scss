@@ -1,0 +1,43 @@
+@use "reset";
+@use "fonts";
+
+:root {
+  --clr-light-blue: #edf4f6;
+  --clr-light-gray: #fafafa;
+  --fnt-main: "wf-barlow", sans-serif;
+  --fnt-alt: "wf-bricolage-grotesque", sans-serif;
+}
+
+body {
+  font-family: var(--fnt-main);
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.bg-light-blue {
+  background: var(--clr-light-blue);
+}
+
+.bg-light-gray {
+  background: var(--clr-light-gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  outline: 1px solid red;
+
+  @for $i from 1 through 24 {
+    .span-#{$i} {
+      grid-column: span #{$i};
+      outline: 1px solid blue;
+    }
+  }
+}
+
+a {
+  color: inherit;
+}

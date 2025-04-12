@@ -1,5 +1,9 @@
 <template>
-  <div>
-    <h1>RootPage</h1>
+  <div class="page-container">
+    <MainHeader />
   </div>
 </template>
+
+<script setup>
+import MainHeader from "../components/MainHeader.vue";
+</script>

@@ -1,12 +1,14 @@
 {
-  "[javascript][vue]": {
+  "[css][scss][json][javascript][vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    },
     "editor.rulers": [80],
     "editor.tabSize": 2,
     "editor.insertSpaces": true
+  },
+  "[javascript][vue]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   }
 }

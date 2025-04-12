@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
 import RootPage from "./pages/RootPage.vue";
 
-import "./assets/main.scss";
+import "./assets/styles/main.scss";
 
 const routes = [
   {
