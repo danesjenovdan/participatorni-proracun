@@ -29,7 +29,7 @@ section.main-header {
   padding-block: 4rem;
 
   h1 {
-    color: #291749;
+    color: var(--clr-dark-purple);
     font-size: 5rem;
     font-weight: 900;
     line-height: 0.95;

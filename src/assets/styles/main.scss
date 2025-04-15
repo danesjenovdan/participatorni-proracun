@@ -4,6 +4,12 @@
 :root {
   --clr-light-blue: #edf4f6;
   --clr-light-gray: #fafafa;
+  --clr-dark-purple: #291749;
+  --clr-accent-1: #a7c6d3;
+  --clr-accent-2: #83ba7b;
+  --clr-accent-3: #f2cc59;
+  --clr-accent-4: #ffd0ca;
+
   --fnt-main: "wf-barlow", sans-serif;
   --fnt-alt: "wf-bricolage-grotesque", sans-serif;
 }
@@ -28,12 +34,12 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   @for $i from 1 through 24 {
     .span-#{$i} {
       grid-column: span #{$i};
-      outline: 1px solid blue;
+      // outline: 1px solid blue;
     }
   }
 }

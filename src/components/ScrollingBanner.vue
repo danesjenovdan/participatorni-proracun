@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
 .scrolling-banner {
-  background-color: #291749;
+  background-color: var(--clr-dark-purple);
   overflow: hidden;
   position: relative;
   height: 6rem;
