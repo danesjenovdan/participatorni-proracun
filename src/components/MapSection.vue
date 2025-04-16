@@ -70,7 +70,7 @@ section.map-section {
 
     :deep(.map) {
       svg {
-        g[attrib\:ob_uime]:hover {
+        *[attrib\:ob_uime]:hover {
           fill: blue;
         }
       }
