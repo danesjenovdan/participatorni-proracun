@@ -6,10 +6,12 @@
     <MapSection />
     <WhySection />
     <QuestionsSection />
+    <AboutSection />
   </div>
 </template>
 
 <script setup>
+import AboutSection from "../components/AboutSection.vue";
 import MainHeader from "../components/MainHeader.vue";
 import MapSection from "../components/MapSection.vue";
 import QuestionsSection from "../components/QuestionsSection.vue";
