@@ -40,6 +40,13 @@ select {
   font: inherit;
 }
 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
 p,
 h1,
 h2,

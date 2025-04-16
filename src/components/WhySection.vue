@@ -107,6 +107,7 @@ section.why-section {
       height: auto;
       aspect-ratio: 1;
       padding: 1.5rem 2.5rem;
+      background-color: #fff;
       border: 4px solid var(--clr-dark-purple);
 
       .content {
