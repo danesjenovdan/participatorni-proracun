@@ -1,5 +1,5 @@
 <template>
-  <section class="boxes-section bg-light-gray">
+  <section class="stats-section bg-light-gray">
     <div class="container">
       <div class="boxes">
         <div class="box">
@@ -134,7 +134,7 @@
 </template>
 
 <style lang="scss" scoped>
-section.boxes-section {
+section.stats-section {
   padding-block: 8rem;
 
   .boxes {

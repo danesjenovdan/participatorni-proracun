@@ -2,12 +2,16 @@
   <div class="page-container">
     <MainHeader />
     <ScrollingBanner />
-    <BoxesSection />
+    <StatsSection />
+    <MapSection />
+    <WhySection />
   </div>
 </template>
 
 <script setup>
-import BoxesSection from "../components/BoxesSection.vue";
 import MainHeader from "../components/MainHeader.vue";
+import MapSection from "../components/MapSection.vue";
 import ScrollingBanner from "../components/ScrollingBanner.vue";
+import StatsSection from "../components/StatsSection.vue";
+import WhySection from "../components/WhySection.vue";
 </script>
