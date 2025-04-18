@@ -14,7 +14,80 @@
 </template>
 
 <script setup>
+import { onBeforeUnmount, onMounted, ref } from "vue";
+import municipalitiesJson from "../assets/municipalities.json";
+import slugify from "../utils/slugify.js";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
+
+const municipalitiesData = municipalitiesJson.municipalities;
+const mapElements = ref([]);
+
+function disableHoverElement() {
+  const map = document.querySelector(".map svg");
+  const hoverElement = map.querySelector("#hover-element");
+  if (hoverElement) {
+    hoverElement.setAttribute("href", "#");
+  }
+}
+
+function setHoverElement(event) {
+  const map = document.querySelector(".map svg");
+  const hoverElement = map.querySelector("#hover-element");
+  if (hoverElement && event.target?.id) {
+    hoverElement.setAttribute("href", `#${event.target.id}`);
+  }
+}
+
+onMounted(() => {
+  const map = document.querySelector(".map svg");
+  if (map) {
+    const mapSections = map.querySelectorAll("[attrib\\:ob_uime]");
+    const allPaths = map.querySelector("#all-paths");
+    const hoverElement = map.querySelector("#hover-element");
+
+    if (mapSections && allPaths && hoverElement) {
+      allPaths.addEventListener("mouseleave", disableHoverElement);
+
+      // eslint-disable-next-line no-restricted-syntax
+      for (const section of mapSections) {
+        const name = section.getAttribute("attrib:ob_uime");
+        const slug = slugify(name);
+        const data = municipalitiesData.find((m) => m.name === name);
+
+        mapElements.value.push({ name, slug, data, element: section });
+
+        if (data) {
+          section.setAttribute("id", slug);
+
+          if (data.status === "yes") {
+            section.setAttribute("fill", "var(--clr-accent-2)");
+            section.classList.add("status-yes");
+          } else if (data.status === "wait") {
+            section.setAttribute("fill", "var(--clr-accent-3)");
+            section.classList.add("status-wait");
+          } else if (data.status === "no") {
+            section.setAttribute("fill", "var(--clr-accent-4)");
+            section.classList.add("status-no");
+          }
+        }
+
+        section.addEventListener("mouseenter", setHoverElement);
+      }
+    }
+  }
+});
+
+onBeforeUnmount(() => {
+  const map = document.querySelector(".map svg");
+  if (map) {
+    const allPaths = map.querySelector("#all-paths");
+    allPaths.removeEventListener("mouseleave", disableHoverElement);
+
+    mapElements.value.forEach(({ element }) => {
+      element.removeEventListener("mouseenter", setHoverElement);
+    });
+  }
+});
 </script>
 
 <style lang="scss" scoped>
@@ -70,8 +143,13 @@ section.map-section {
 
     :deep(.map) {
       svg {
-        *[attrib\:ob_uime]:hover {
-          fill: blue;
+        #all-paths {
+          cursor: pointer;
+
+          #hover-element {
+            stroke: var(--clr-dark-purple);
+            stroke-width: 1000;
+          }
         }
       }
     }

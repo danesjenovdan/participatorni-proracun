@@ -1,0 +1,36 @@
+{
+  "municipalities": [
+    {
+      "name": "Ajdovščina",
+      "status": "yes"
+    },
+    {
+      "name": "Beltinci",
+      "status": "yes"
+    },
+    {
+      "name": "Bled",
+      "status": "yes"
+    },
+    {
+      "name": "Bohinj",
+      "status": "no"
+    },
+    {
+      "name": "Borovnica",
+      "status": "no"
+    },
+    {
+      "name": "Bovec",
+      "status": "no"
+    },
+    {
+      "name": "Brda",
+      "status": "wait"
+    },
+    {
+      "name": "Brežice",
+      "status": "wait"
+    }
+  ]
+}
