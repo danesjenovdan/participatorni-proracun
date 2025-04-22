@@ -18,11 +18,17 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 .scrolling-banner {
   background-color: var(--clr-dark-purple);
   overflow: hidden;
   position: relative;
   height: 6rem;
+
+  @include media.down(md) {
+    height: 4.5rem;
+  }
 
   @keyframes scrollAnim {
     0% {
@@ -55,6 +61,10 @@
       line-height: 1;
       color: #fff;
       white-space: nowrap;
+
+      @include media.down(md) {
+        font-size: 2rem;
+      }
     }
   }
 }

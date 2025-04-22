@@ -1,0 +1,49 @@
+@use "sass:map";
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin up($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $value: map.get($breakpoints, $breakpoint);
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found in `$breakpoints`.";
+  }
+}
+
+@mixin down($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $value: map.get($breakpoints, $breakpoint);
+    @media (max-width: #{$value - 0.02px}) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found in `$breakpoints`.";
+  }
+}
+
+@mixin between($breakpoint1, $breakpoint2) {
+  @if map.has-key($breakpoints, $breakpoint1) and
+    map.has-key($breakpoints, $breakpoint2)
+  {
+    $value1: map.get($breakpoints, $breakpoint1);
+    $value2: map.get($breakpoints, $breakpoint2);
+    @if $value1 > $value2 {
+      @warn "Breakpoint `#{$breakpoint1}` is greater than `#{$breakpoint2}`.";
+    }
+    @media (min-width: #{$value1}) and (max-width: #{$value2 - 0.02px}) {
+      @content;
+    }
+  } @else {
+    @warn "One or both breakpoints `#{$breakpoint1}` and `#{$breakpoint2}` not found in `$breakpoints`.";
+  }
+}

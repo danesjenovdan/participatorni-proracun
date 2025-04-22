@@ -1,4 +1,5 @@
 @use "reset";
+@use "media";
 @use "fonts";
 
 :root {
@@ -22,6 +23,7 @@ body {
 .container {
   max-width: 1350px;
   margin: 0 auto;
+  padding-inline: 1.5rem;
 }
 
 .bg-light-blue {

@@ -70,8 +70,39 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 section.about-section {
   padding-block: 8rem;
+
+  @include media.down(lg) {
+    padding-block: 6rem;
+  }
+
+  @include media.down(md) {
+    padding-block: 4rem;
+  }
+
+  .grid {
+    @include media.down(lg) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .span-1 {
+        display: none;
+      }
+
+      .span-8 {
+        flex: 0 0 100%;
+      }
+
+      .span-7 {
+        flex: 1 0 40%;
+        min-width: 300px;
+      }
+    }
+  }
 
   .about {
     p {

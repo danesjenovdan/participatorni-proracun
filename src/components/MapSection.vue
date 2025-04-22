@@ -112,6 +112,8 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 section.map-section {
   padding-block: 2rem;
   border-top: 2px solid #000;
@@ -124,8 +126,17 @@ section.map-section {
     .legend {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
       margin-bottom: -2rem;
+
+      @include media.down(lg) {
+        margin-bottom: 0;
+      }
+
+      @include media.down(md) {
+        gap: 0.5rem;
+      }
 
       .item {
         position: relative;
@@ -135,6 +146,10 @@ section.map-section {
         border: 2px solid #000;
         font-size: 1.125rem;
         font-weight: 500;
+
+        @include media.down(md) {
+          font-size: 0.875rem;
+        }
 
         &::before {
           content: "";

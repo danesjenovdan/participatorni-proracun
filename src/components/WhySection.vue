@@ -66,8 +66,18 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 section.why-section {
   padding-block: 8rem;
+
+  @include media.down(lg) {
+    padding-block: 6rem;
+  }
+
+  @include media.down(md) {
+    padding-block: 4rem;
+  }
 
   .subtitle {
     max-width: 80rem;
@@ -83,6 +93,14 @@ section.why-section {
         font-style: normal;
         color: var(--clr-light-purple);
       }
+
+      @include media.down(lg) {
+        font-size: 2.75rem;
+      }
+
+      @include media.down(sm) {
+        font-size: 2.25rem;
+      }
     }
 
     p {
@@ -92,18 +110,28 @@ section.why-section {
       text-align: center;
       font-family: var(--fnt-alt);
       font-size: 1.5rem;
+
+      @include media.down(sm) {
+        font-size: 1.25rem;
+      }
     }
   }
 
   .boxes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2.5rem;
     margin-top: 7rem;
 
+    @include media.down(lg) {
+      margin-top: 5rem;
+    }
+
     .box {
       flex: 1;
       max-width: 25rem;
+      min-width: 20rem;
       height: auto;
       aspect-ratio: 1;
       padding: 1.5rem 2.5rem;

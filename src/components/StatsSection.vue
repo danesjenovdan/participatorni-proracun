@@ -134,16 +134,45 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 section.stats-section {
   padding-block: 8rem;
 
+  @include media.down(lg) {
+    padding-block: 6rem;
+  }
+
+  @include media.down(md) {
+    padding-block: 4rem;
+  }
+
   .boxes {
-    display: flex;
+    --box-cols: 4;
+    --box-size: 20rem;
+    display: grid;
+    grid-template-columns: repeat(var(--box-cols), var(--box-size));
     justify-content: center;
+
+    @include media.down(xxl) {
+      --box-size: 17rem;
+    }
+
+    @include media.down(xl) {
+      --box-cols: 3;
+    }
+
+    @include media.down(lg) {
+      --box-cols: 2;
+    }
+
+    @include media.down(md) {
+      --box-cols: 1;
+    }
 
     .box {
       flex: 1;
-      max-width: 20rem;
+      width: var(--box-size);
       height: auto;
       aspect-ratio: 1;
       padding: 1.25rem 1.75rem;
@@ -152,27 +181,52 @@ section.stats-section {
       font-size: 2.25rem;
       font-weight: 500;
       line-height: 1.1;
+      --_rotation: 0deg;
+      --_translation-y: 0px;
+      transform: rotate(var(--_rotation)) translateY(var(--_translation-y));
+
+      @include media.down(xxl) {
+        font-size: 1.75rem;
+      }
 
       &:nth-child(1) {
-        transform: rotate(3.576deg);
+        --_rotation: 3.576deg;
         background: var(--clr-accent-1);
       }
 
       &:nth-child(2) {
-        transform: rotate(-2.277deg) translateY(2.5rem);
+        --_rotation: -2.277deg;
+        --_translation-y: 2.5rem;
         background: var(--clr-accent-2);
         z-index: 1;
+
+        @include media.down(lg) {
+          --_translation-y: 0px;
+        }
       }
 
       &:nth-child(3) {
-        transform: rotate(3.017deg);
+        --_rotation: 3.017deg;
         background: var(--clr-accent-3);
+
+        @include media.between(md, lg) {
+          --_rotation: -2.277deg;
+        }
       }
 
       &:nth-child(4) {
-        transform: rotate(-2.237deg) translateY(2.5rem);
+        --_rotation: -2.237deg;
+        --_translation-y: 2.5rem;
         background: var(--clr-accent-4);
         z-index: 1;
+
+        @include media.down(lg) {
+          --_translation-y: 0px;
+        }
+
+        @include media.between(md, lg) {
+          --_rotation: 3.017deg;
+        }
       }
 
       .content {
@@ -182,6 +236,10 @@ section.stats-section {
           font-weight: 700;
           font-style: normal;
           line-height: 1;
+
+          @include media.down(xxl) {
+            font-size: 5rem;
+          }
         }
       }
 
@@ -194,6 +252,11 @@ section.stats-section {
         align-items: flex-end;
         width: 5.75rem;
         height: 7rem;
+
+        @include media.down(xxl) {
+          width: 4.5rem;
+          height: 5rem;
+        }
 
         svg {
           width: auto;
@@ -210,6 +273,10 @@ section.stats-section {
     height: 0;
     border: 0;
     border-top: 4px solid var(--clr-dark-purple);
+
+    @include media.down(lg) {
+      margin-block: 7rem 5rem;
+    }
   }
 
   .subtitle {
@@ -220,6 +287,14 @@ section.stats-section {
       font-size: 3.75rem;
       font-weight: 800;
       text-align: center;
+
+      @include media.down(lg) {
+        font-size: 3rem;
+      }
+
+      @include media.down(sm) {
+        font-size: 2.5rem;
+      }
     }
 
     p {
@@ -230,6 +305,11 @@ section.stats-section {
       font-family: var(--fnt-alt);
       font-size: 2rem;
       line-height: 1.2;
+
+      @include media.down(md) {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
     }
   }
 }
