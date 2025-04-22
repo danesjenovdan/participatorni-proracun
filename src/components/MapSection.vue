@@ -8,6 +8,13 @@
           <div class="item no">se niso zavezali</div>
         </div>
         <MunicipalitiesMap />
+        <InfoModal
+          v-if="selectedMunicipality"
+          ref="info-modal"
+          :key="selectedMunicipality?.slug"
+          :data="selectedMunicipality?.data"
+          @close="selectedMunicipality = null"
+        />
       </div>
     </div>
   </section>
@@ -17,10 +24,12 @@
 import { onBeforeUnmount, onMounted, ref } from "vue";
 import municipalitiesJson from "../assets/municipalities.json";
 import slugify from "../utils/slugify.js";
+import InfoModal from "./InfoModal.vue";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
 
 const municipalitiesData = municipalitiesJson.municipalities;
 const mapElements = ref([]);
+const selectedMunicipality = ref(null);
 
 function disableHoverElement() {
   const map = document.querySelector(".map svg");
@@ -35,6 +44,16 @@ function setHoverElement(event) {
   const hoverElement = map.querySelector("#hover-element");
   if (hoverElement && event.target?.id) {
     hoverElement.setAttribute("href", `#${event.target.id}`);
+  }
+}
+
+function clickElement(event) {
+  const map = document.querySelector(".map svg");
+  const hoverElement = map.querySelector("#hover-element");
+  if (hoverElement && event.target?.id) {
+    const slug = event.target.id;
+    const data = mapElements.value.find((m) => m.slug === slug);
+    selectedMunicipality.value = data;
   }
 }
 
@@ -72,6 +91,7 @@ onMounted(() => {
         }
 
         section.addEventListener("mouseenter", setHoverElement);
+        section.addEventListener("click", clickElement);
       }
     }
   }
@@ -85,6 +105,7 @@ onBeforeUnmount(() => {
 
     mapElements.value.forEach(({ element }) => {
       element.removeEventListener("mouseenter", setHoverElement);
+      element.removeEventListener("click", clickElement);
     });
   }
 });
@@ -149,6 +170,7 @@ section.map-section {
           #hover-element {
             stroke: var(--clr-dark-purple);
             stroke-width: 1000;
+            pointer-events: none;
           }
         }
       }

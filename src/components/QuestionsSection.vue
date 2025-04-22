@@ -43,23 +43,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row faq-row">
-        <div class="col-md-6 mt-5 px-0">
-          <template v-for="(qa, i) in questions" :key="qa.q">
-            <div
-              :class="['faq-q-box', { active: i === selected }]"
-              @click="selectAnswer(i)"
-            >
-              {{ qa.q }}
-            </div>
-            <div
-              v-if="i === selected"
-              class="faq-a-content accordion-answer"
-              v-html="qa.a"
-            />
-          </template>
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
