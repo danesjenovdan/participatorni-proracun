@@ -7,7 +7,9 @@
           <div class="item waiting">obljuba še ni izpolnjena</div>
           <div class="item no">se niso zavezali</div>
         </div>
-        <MunicipalitiesMap />
+        <ZoomPan @init="onZoomPanInit">
+          <MunicipalitiesMap />
+        </ZoomPan>
         <InfoModal
           v-if="selectedMunicipality"
           ref="info-modal"
@@ -21,34 +23,33 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { onBeforeUnmount, ref } from "vue";
 import { getMunicipalitiesData } from "../utils/municipalities-data.js";
 import InfoModal from "./InfoModal.vue";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
+import ZoomPan from "./ZoomPan.vue";
 
 const municipalitiesData = getMunicipalitiesData();
+const mapEl = ref(null);
 const mapElements = ref([]);
 const selectedMunicipality = ref(null);
 
 function disableHoverElement() {
-  const map = document.querySelector(".municipalities-map svg");
-  const hoverElement = map.querySelector("#hover-element");
+  const hoverElement = mapEl.value.querySelector("#hover-element");
   if (hoverElement) {
     hoverElement.setAttribute("href", "#");
   }
 }
 
 function setHoverElement(event) {
-  const map = document.querySelector(".municipalities-map svg");
-  const hoverElement = map.querySelector("#hover-element");
+  const hoverElement = mapEl.value.querySelector("#hover-element");
   if (hoverElement && event.target?.id) {
     hoverElement.setAttribute("href", `#${event.target.id}`);
   }
 }
 
 function clickElement(event) {
-  const map = document.querySelector(".municipalities-map svg");
-  const hoverElement = map.querySelector("#hover-element");
+  const hoverElement = mapEl.value.querySelector("#hover-element");
   if (hoverElement && event.target?.id) {
     const slug = event.target.id;
     const data = mapElements.value.find((m) => m.slug === slug);
@@ -60,10 +61,12 @@ function clickElement(event) {
   }
 }
 
-onMounted(() => {
-  const map = document.querySelector(".municipalities-map svg");
-  if (map) {
-    const allPaths = map.querySelector("#all-paths");
+function onZoomPanInit() {
+  mapEl.value = document.querySelector(
+    ".pinch-scroll-zoom .municipalities-map svg",
+  );
+  if (mapEl.value) {
+    const allPaths = mapEl.value.querySelector("#all-paths");
 
     if (allPaths) {
       const mapSections = allPaths.querySelectorAll("[data-name]");
@@ -105,12 +108,11 @@ onMounted(() => {
       }
     }
   }
-});
+}
 
 onBeforeUnmount(() => {
-  const map = document.querySelector(".municipalities-map svg");
-  if (map) {
-    const allPaths = map.querySelector("#all-paths");
+  if (mapEl.value) {
+    const allPaths = mapEl.value.querySelector("#all-paths");
     allPaths.removeEventListener("mouseleave", disableHoverElement);
 
     mapElements.value.forEach(({ element }) => {
@@ -128,12 +130,15 @@ section.map-section {
   padding-block: 2rem;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  overflow: hidden;
 
   .map-wrapper {
     max-width: 75rem;
     margin-inline: auto;
 
     .legend {
+      position: relative;
+      z-index: 1001;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -187,15 +192,20 @@ section.map-section {
       }
     }
 
-    :deep(.municipalities-map) {
-      svg {
-        #all-paths {
-          cursor: pointer;
+    .zoom-pan {
+      pointer-events: none;
 
-          #hover-element {
-            stroke: var(--clr-dark-purple);
-            stroke-width: 4;
-            pointer-events: none;
+      :deep(.municipalities-map) {
+        svg {
+          #all-paths {
+            cursor: pointer;
+            pointer-events: all;
+
+            #hover-element {
+              stroke: var(--clr-dark-purple);
+              stroke-width: 4;
+              pointer-events: none;
+            }
           }
         }
       }

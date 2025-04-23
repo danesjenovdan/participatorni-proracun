@@ -36,6 +36,16 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@coddicat/vue-pinch-scroll-zoom@^4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@coddicat/vue-pinch-scroll-zoom/-/vue-pinch-scroll-zoom-4.7.1.tgz#db892c1550ff881fd3de10a557cb03d6469a37e2"
+  integrity sha512-i2367AlVEm0zT5MyvEA1i30fgcM/B90R5ecevdGdTDMqreqcWXh2j6KVzJEoz9BfYGCG4IodJuKxN8MbNvcDhQ==
+  dependencies:
+    "@types/lodash" "^4.17.0"
+    lodash "^4.17.21"
+    sass "^1.74.1"
+    vue "^3.4.21"
+
 "@esbuild/aix-ppc64@0.25.2":
   version "0.25.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.25.2.tgz#b87036f644f572efb2b3c75746c97d1d2d87ace8"
@@ -605,6 +615,11 @@
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+
+"@types/lodash@^4.17.0":
+  version "4.17.16"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.16.tgz#94ae78fab4a38d73086e962d0b65c30d816bfb0a"
+  integrity sha512-HX7Em5NYQAXKW+1T+FiuG27NGwzJfCX3s1GjOa7ujxZa52kjJLOr4FUxT+giF6Tgxv1e+/czV/iTtBw27WTU9g==
 
 "@types/node@*":
   version "22.14.0"
@@ -3076,6 +3091,17 @@ safe-stable-stringify@^2.3.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
+sass@^1.74.1:
+  version "1.87.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.87.0.tgz#8cceb36fa63fb48a8d5d7f2f4c13b49c524b723e"
+  integrity sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==
+  dependencies:
+    chokidar "^4.0.0"
+    immutable "^5.0.2"
+    source-map-js ">=0.6.2 <2.0.0"
+  optionalDependencies:
+    "@parcel/watcher" "^2.4.1"
+
 sass@^1.86.3:
   version "1.86.3"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.86.3.tgz#0a0d9ea97cb6665e73f409639f8533ce057464c9"
@@ -3601,7 +3627,7 @@ vue3-simple-typeahead@^1.0.11:
   resolved "https://registry.yarnpkg.com/vue3-simple-typeahead/-/vue3-simple-typeahead-1.0.11.tgz#dc1c4eb03f3494ae9f5d6034a933b425ce1c493e"
   integrity sha512-JKgVfWz7uENBoB4ginYw28ZVlv3LNTkFbZzbDdK2W0y+Pj2xIryfwKlkW5bYUN+w4CiPS6CmXhPma9uwUnk0Lg==
 
-vue@^3.5.13:
+vue@^3.4.21, vue@^3.5.13:
   version "3.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.5.13.tgz#9f760a1a982b09c0c04a867903fc339c9f29ec0a"
   integrity sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==
