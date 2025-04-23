@@ -4,7 +4,7 @@
       <div class="map-wrapper">
         <div class="legend">
           <div class="item yes">izvaja</div>
-          <div class="item wait">obljuba še ni izpolnjena</div>
+          <div class="item waiting">obljuba še ni izpolnjena</div>
           <div class="item no">se niso zavezali</div>
         </div>
         <MunicipalitiesMap />
@@ -22,11 +22,11 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from "vue";
-import municipalitiesJson from "../assets/municipalities.json";
+import { getMunicipalitiesData } from "../utils/municipalities-data.js";
 import InfoModal from "./InfoModal.vue";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
 
-const municipalitiesData = municipalitiesJson.municipalities;
+const municipalitiesData = getMunicipalitiesData();
 const mapElements = ref([]);
 const selectedMunicipality = ref(null);
 
@@ -72,20 +72,24 @@ onMounted(() => {
         for (const section of mapSections) {
           const name = section.getAttribute("data-name");
           const slug = section.getAttribute("data-slug");
-          const data = municipalitiesData.find((m) => m.name === name);
+          const data = municipalitiesData.find((m) => m.slug === slug);
+          if (!data) {
+            // eslint-disable-next-line no-console
+            console.warn(`Missing data with slug "${slug}"`);
+          }
 
           mapElements.value.push({ name, slug, data, element: section });
 
           if (data) {
             section.setAttribute("id", slug);
 
-            if (data.status === "yes") {
+            if (data.pp_status === "yes") {
               section.setAttribute("fill", "var(--clr-accent-2)");
               section.classList.add("status-yes");
-            } else if (data.status === "wait") {
+            } else if (data.pp_status === "waiting") {
               section.setAttribute("fill", "var(--clr-accent-3)");
-              section.classList.add("status-wait");
-            } else if (data.status === "no") {
+              section.classList.add("status-waiting");
+            } else if (data.pp_status === "no") {
               section.setAttribute("fill", "var(--clr-accent-4)");
               section.classList.add("status-no");
             }
@@ -169,7 +173,7 @@ section.map-section {
           background-color: var(--clr-accent-2);
         }
 
-        &.wait::before {
+        &.waiting::before {
           background-color: var(--clr-accent-3);
         }
 

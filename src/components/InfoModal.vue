@@ -10,11 +10,13 @@
         <div class="value">{{ data.name }}</div>
       </div>
       <div class="mayor">
-        <div class="key">Župan_ja</div>
-        <div class="value">{{ data.mayor }}</div>
+        <div class="key">
+          {{ data.mayor_gender === "f" ? "Županja" : "Župan" }}
+        </div>
+        <div class="value">{{ data.mayor_name }}</div>
       </div>
-      <div :class="['promise', `promise-${data.status}`]">
-        <template v-if="data.status === 'yes'">
+      <div :class="['promise', `promise-${data.pp_status}`]">
+        <template v-if="data.pp_status === 'yes'">
           <span>ŽE IZVAJA</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +41,11 @@
             />
           </svg>
         </template>
-        <template v-if="data.status === 'wait'">
-          <span>ŠE NI IZPOLNIL_A<br />SVOJE ZAVEZE</span>
+        <template v-if="data.pp_status === 'waiting'">
+          <span
+            >ŠE NI {{ data.mayor_gender === "f" ? "IZPOLNILA" : "IZPOLNIL"
+            }}<br />SVOJE ZAVEZE</span
+          >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -64,8 +69,11 @@
             />
           </svg>
         </template>
-        <template v-if="data.status === 'no'">
-          <span>SE NI ZAVEZAL_A</span>
+        <template v-if="data.pp_status === 'no'">
+          <span
+            >SE NI
+            {{ data.mayor_gender === "f" ? "ZAVEZALA" : "ZAVEZAL" }}</span
+          >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -91,7 +99,7 @@
         </template>
       </div>
       <div class="buttons">
-        <button v-if="data.status !== 'yes'" type="button">
+        <button v-if="data.pp_status !== 'yes'" type="button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="4.361 4.044 36.722 34.595"
@@ -281,7 +289,7 @@ dialog.info-modal {
         }
       }
 
-      &.promise-wait {
+      &.promise-waiting {
         background-color: var(--clr-accent-3);
 
         svg {

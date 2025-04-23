@@ -1,3 +1,4 @@
+import dsv from "@rollup/plugin-dsv";
 import yaml from "@rollup/plugin-yaml";
 import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vite";
@@ -12,5 +13,5 @@ export default defineConfig({
     port: process.env.PORT || 3000,
     strictPort: true,
   },
-  plugins: [yaml(), vue(), eslint()],
+  plugins: [yaml(), dsv(), vue(), eslint()],
 });

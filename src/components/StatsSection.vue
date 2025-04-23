@@ -3,7 +3,9 @@
     <div class="container">
       <div class="boxes">
         <div class="box">
-          <div class="content"><em>XX</em> županj_ov je obljubilo uvedbo</div>
+          <div class="content">
+            <em>{{ numPromises }}</em> županj_ov je obljubilo uvedbo
+          </div>
           <div class="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +34,7 @@
         </div>
         <div class="box">
           <div class="content">
-            <em>XX</em> občin izvaja participativni proračun
+            <em>{{ numExecuting }}</em> občin izvaja participativni proračun
           </div>
           <div class="icon">
             <svg
@@ -62,7 +64,7 @@
         </div>
         <div class="box">
           <div class="content">
-            <em>XX</em> županj_ov obljube še ni izpolnilo
+            <em>{{ numWaiting }}</em> županj_ov obljube še ni izpolnilo
           </div>
           <div class="icon">
             <svg
@@ -92,7 +94,7 @@
         </div>
         <div class="box">
           <div class="content">
-            <em>XX</em> občin še vedno ne razmišlja o uvedbi
+            <em>{{ numNegative }}</em> občin še vedno ne razmišlja o uvedbi
           </div>
           <div class="icon">
             <svg
@@ -132,6 +134,16 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { getMunicipalitiesData } from "../utils/municipalities-data.js";
+
+const data = getMunicipalitiesData();
+const numPromises = data.filter((item) => item.pp_promise).length;
+const numExecuting = data.filter((item) => item.pp_status === "yes").length;
+const numWaiting = data.filter((item) => item.pp_status === "waiting").length;
+const numNegative = data.filter((item) => item.pp_status === "no").length;
+</script>
 
 <style lang="scss" scoped>
 @use "../assets/styles/media";
