@@ -2,6 +2,19 @@
 
 ## Development
 
+### Using docker compose
+
+- Just run:
+
+```sh
+docker compose up
+```
+
+### Locally
+
+- Make sure you have Node.js v22 and yarn installed
+- Install dependencies and start the dev server with:
+
 ```sh
 yarn
 yarn dev
@@ -9,18 +22,16 @@ yarn dev
 
 ## Deployment
 
-### Manual
+### Using Docker
 
-Build static files: `yarn build`
+- Build the image:
 
-To preview built app locally run `yarn preview`
+```sh
+docker build . -t pp-kampanja
+```
 
-To deploy to production just run `yarn start`
+- Run the container (server will listen on port `3000`):
 
-### Using Docker:
-
-Build image: `docker build . -t pp-kampanja`
-
-Run the container, for example: `docker run pp-kampanja`
-
-When running the image the server will listen on port `3000`
+```sh
+docker run -p 3000:3000 pp-kampanja
+```

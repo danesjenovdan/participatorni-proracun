@@ -1,0 +1,14 @@
+services:
+  pp:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./public:/app/public:delegated,rw
+      - ./src:/app/src:delegated,rw
+      - ./.eslintrc.cjs:/app/.eslintrc.cjs:delegated,rw
+      - ./.prettierrc.json:/app/.prettierrc.json:delegated,rw
+      - ./index.html:/app/index.html:delegated,rw
+      - ./vite.config.js:/app/vite.config.js:delegated,rw
