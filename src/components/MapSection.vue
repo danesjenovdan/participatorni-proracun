@@ -23,7 +23,6 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from "vue";
 import municipalitiesJson from "../assets/municipalities.json";
-import slugify from "../utils/slugify.js";
 import InfoModal from "./InfoModal.vue";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
 
@@ -32,7 +31,7 @@ const mapElements = ref([]);
 const selectedMunicipality = ref(null);
 
 function disableHoverElement() {
-  const map = document.querySelector(".map svg");
+  const map = document.querySelector(".municipalities-map svg");
   const hoverElement = map.querySelector("#hover-element");
   if (hoverElement) {
     hoverElement.setAttribute("href", "#");
@@ -40,7 +39,7 @@ function disableHoverElement() {
 }
 
 function setHoverElement(event) {
-  const map = document.querySelector(".map svg");
+  const map = document.querySelector(".municipalities-map svg");
   const hoverElement = map.querySelector("#hover-element");
   if (hoverElement && event.target?.id) {
     hoverElement.setAttribute("href", `#${event.target.id}`);
@@ -48,7 +47,7 @@ function setHoverElement(event) {
 }
 
 function clickElement(event) {
-  const map = document.querySelector(".map svg");
+  const map = document.querySelector(".municipalities-map svg");
   const hoverElement = map.querySelector("#hover-element");
   if (hoverElement && event.target?.id) {
     const slug = event.target.id;
@@ -58,47 +57,50 @@ function clickElement(event) {
 }
 
 onMounted(() => {
-  const map = document.querySelector(".map svg");
+  const map = document.querySelector(".municipalities-map svg");
   if (map) {
-    const mapSections = map.querySelectorAll("[attrib\\:ob_uime]");
     const allPaths = map.querySelector("#all-paths");
-    const hoverElement = map.querySelector("#hover-element");
 
-    if (mapSections && allPaths && hoverElement) {
-      allPaths.addEventListener("mouseleave", disableHoverElement);
+    if (allPaths) {
+      const mapSections = allPaths.querySelectorAll("[data-name]");
+      const hoverElement = allPaths.querySelector("#hover-element");
 
-      // eslint-disable-next-line no-restricted-syntax
-      for (const section of mapSections) {
-        const name = section.getAttribute("attrib:ob_uime");
-        const slug = slugify(name);
-        const data = municipalitiesData.find((m) => m.name === name);
+      if (mapSections && hoverElement) {
+        allPaths.addEventListener("mouseleave", disableHoverElement);
 
-        mapElements.value.push({ name, slug, data, element: section });
+        // eslint-disable-next-line no-restricted-syntax
+        for (const section of mapSections) {
+          const name = section.getAttribute("data-name");
+          const slug = section.getAttribute("data-slug");
+          const data = municipalitiesData.find((m) => m.name === name);
 
-        if (data) {
-          section.setAttribute("id", slug);
+          mapElements.value.push({ name, slug, data, element: section });
 
-          if (data.status === "yes") {
-            section.setAttribute("fill", "var(--clr-accent-2)");
-            section.classList.add("status-yes");
-          } else if (data.status === "wait") {
-            section.setAttribute("fill", "var(--clr-accent-3)");
-            section.classList.add("status-wait");
-          } else if (data.status === "no") {
-            section.setAttribute("fill", "var(--clr-accent-4)");
-            section.classList.add("status-no");
+          if (data) {
+            section.setAttribute("id", slug);
+
+            if (data.status === "yes") {
+              section.setAttribute("fill", "var(--clr-accent-2)");
+              section.classList.add("status-yes");
+            } else if (data.status === "wait") {
+              section.setAttribute("fill", "var(--clr-accent-3)");
+              section.classList.add("status-wait");
+            } else if (data.status === "no") {
+              section.setAttribute("fill", "var(--clr-accent-4)");
+              section.classList.add("status-no");
+            }
           }
-        }
 
-        section.addEventListener("mouseenter", setHoverElement);
-        section.addEventListener("click", clickElement);
+          section.addEventListener("mouseenter", setHoverElement);
+          section.addEventListener("click", clickElement);
+        }
       }
     }
   }
 });
 
 onBeforeUnmount(() => {
-  const map = document.querySelector(".map svg");
+  const map = document.querySelector(".municipalities-map svg");
   if (map) {
     const allPaths = map.querySelector("#all-paths");
     allPaths.removeEventListener("mouseleave", disableHoverElement);
@@ -177,14 +179,14 @@ section.map-section {
       }
     }
 
-    :deep(.map) {
+    :deep(.municipalities-map) {
       svg {
         #all-paths {
           cursor: pointer;
 
           #hover-element {
             stroke: var(--clr-dark-purple);
-            stroke-width: 1000;
+            stroke-width: 4;
             pointer-events: none;
           }
         }

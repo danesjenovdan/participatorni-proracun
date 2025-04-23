@@ -8,6 +8,7 @@ export default defineConfig({
   clearScreen: false,
   base: process.env.BASE_URL || "/",
   server: {
+    host: true,
     port: process.env.PORT || 3000,
     strictPort: true,
   },
