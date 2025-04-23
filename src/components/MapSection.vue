@@ -52,7 +52,11 @@ function clickElement(event) {
   if (hoverElement && event.target?.id) {
     const slug = event.target.id;
     const data = mapElements.value.find((m) => m.slug === slug);
-    selectedMunicipality.value = data;
+    if (selectedMunicipality.value === data) {
+      selectedMunicipality.value = null;
+    } else {
+      selectedMunicipality.value = data;
+    }
   }
 }
 

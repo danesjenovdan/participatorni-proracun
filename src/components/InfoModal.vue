@@ -6,7 +6,7 @@
         <img src="/generated/coats/coat-ajdovscina.png?url" alt="" />
       </div>
       <div class="name">
-        <div class="key">Občina</div>
+        <div class="key">{{ data.type }}</div>
         <div class="value">{{ data.name }}</div>
       </div>
       <div class="mayor">
@@ -99,7 +99,11 @@
         </template>
       </div>
       <div class="buttons">
-        <button v-if="data.pp_status !== 'yes'" type="button">
+        <button
+          v-if="data.pp_status !== 'yes'"
+          type="button"
+          @click="onCtaClick"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="4.361 4.044 36.722 34.595"
@@ -173,8 +177,9 @@
 
 <script setup>
 import { onMounted, useTemplateRef } from "vue";
+import { useRouter } from "vue-router";
 
-defineProps({
+const props = defineProps({
   data: {
     type: Object,
     required: true,
@@ -183,6 +188,7 @@ defineProps({
 
 const emit = defineEmits(["close"]);
 
+const router = useRouter();
 const infoModal = useTemplateRef("info-modal");
 
 function close() {
@@ -190,8 +196,18 @@ function close() {
   emit("close");
 }
 
+function onCtaClick() {
+  router.push({
+    name: "municipality-cta",
+    params: {
+      slug: props.data.slug,
+    },
+  });
+}
+
 onMounted(() => {
   infoModal.value.showModal();
+  infoModal.value.addEventListener("close", close);
 });
 </script>
 
