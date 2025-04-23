@@ -14,8 +14,8 @@ const routes = [
   },
   {
     name: "municipality-cta",
-    path: "/:slug",
-    component: () => MunicipalityCtaPage,
+    path: "/pobuda/:slug",
+    component: MunicipalityCtaPage,
   },
 ];
 

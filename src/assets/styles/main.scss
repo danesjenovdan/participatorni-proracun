@@ -24,6 +24,10 @@ body {
   max-width: 1350px;
   margin: 0 auto;
   padding-inline: 1.5rem;
+
+  &.container--wide {
+    max-width: 1920px;
+  }
 }
 
 .bg-light-blue {
