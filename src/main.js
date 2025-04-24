@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-unresolved
+import { CanonicalPlugin } from "unhead/plugins";
 import { createSSRApp } from "vue";
 import App from "./App.vue";
 import MunicipalityCtaPage from "./pages/MunicipalityCtaPage.vue";
@@ -18,13 +20,18 @@ export const routes = [
   },
 ];
 
-export const headInit = [
-  {
-    htmlAttrs: { lang: "sl" },
-    title: "Participativni proračun",
-    // titleTemplate: "%s | My Site",
-  },
-];
+export const headOptions = {
+  plugins: [
+    import.meta.env.VITE_CANONICAL_URL.startsWith("http")
+      ? CanonicalPlugin({ canonicalHost: import.meta.env.VITE_CANONICAL_URL })
+      : undefined,
+  ].filter(Boolean),
+  init: [
+    {
+      htmlAttrs: { lang: "sl" },
+    },
+  ],
+};
 
 export function createApp() {
   return createSSRApp(App);

@@ -2,12 +2,15 @@
 import { createHead } from "@unhead/vue/server";
 import { createMemoryHistory, createRouter } from "vue-router";
 import { renderToString } from "vue/server-renderer";
-import { createApp, headInit, routes } from "./main.js";
+import { createApp, headOptions, routes } from "./main.js";
 
 export default async function render(url) {
   const app = createApp();
-  const router = createRouter({ history: createMemoryHistory(), routes });
-  const head = createHead({ init: headInit });
+  const router = createRouter({
+    history: createMemoryHistory(import.meta.env.BASE_URL),
+    routes,
+  });
+  const head = createHead(headOptions);
 
   app.use(router);
   app.use(head);

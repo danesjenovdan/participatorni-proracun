@@ -57,6 +57,7 @@ import textsYaml from "../assets/texts.yaml";
 import MunicipalityInfo from "../components/MunicipalityInfo.vue";
 import MunicipalityPromise from "../components/MunicipalityPromise.vue";
 import { getMunicipalityBySlug } from "../utils/municipalities-data.js";
+import useCanonicalUrl from "../utils/use-canonical-url.js";
 
 const route = useRoute();
 
@@ -91,13 +92,17 @@ function onCopyClick() {
   });
 }
 
+useCanonicalUrl();
+
 useSeoMeta({
-  title: `Poziv županu ${data?.mayor_name} (${data?.type} ${data?.name})`,
-  description: "My about page",
-  ogDescription: "Still about my about page",
-  ogTitle: `Poziv županu ${data?.mayor_name} (${data?.type} ${data?.name})`,
-  ogImage: "https://example.com/image.png",
-  twitterCard: "summary_large_image",
+  title: "TODO: poziv title",
+  ogTitle: "TODO: poziv title",
+  twitterTitle: "TODO: poziv title",
+  description: "TODO: poziv description",
+  ogDescription: "TODO: poziv description",
+  twitterDescription: "TODO: poziv description",
+  ogImage: "TODO-poziv-image.png",
+  twitterImage: "TODO-poziv-image.png",
 });
 </script>
 

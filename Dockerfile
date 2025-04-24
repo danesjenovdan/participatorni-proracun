@@ -13,6 +13,7 @@ RUN yarn
 # copy all files and run build
 COPY . .
 ARG BASE_URL
+ARG VITE_CANONICAL_URL
 RUN yarn build
 
 # ---

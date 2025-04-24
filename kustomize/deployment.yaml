@@ -28,4 +28,6 @@ spec:
               cpu: 100m
           env:
             - name: BASE_URL
-              value: https://pp2025.lb.djnd.si/
+              value: /
+            - name: VITE_CANONICAL_URL
+              value: https://pp2025.lb.djnd.si

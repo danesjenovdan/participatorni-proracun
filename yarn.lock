@@ -3298,7 +3298,7 @@ unbox-primitive@^1.1.0:
     has-symbols "^1.1.0"
     which-boxed-primitive "^1.1.1"
 
-unhead@2.0.8:
+unhead@2.0.8, unhead@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/unhead/-/unhead-2.0.8.tgz#84ab71657cc299c2866d77cb2ca9834caca9e6df"
   integrity sha512-63WR+y08RZE7ChiFdgNY64haAkhCtUS5/HM7xo4Q83NA63txWbEh2WGmrKbArdQmSct+XlqbFN8ZL1yWpQEHEA==

@@ -3,7 +3,7 @@
     :class="{ 'municipality-info': true, 'municipality-info--large': large }"
   >
     <div class="coat">
-      <img :src="`/generated/coats/coat-${data.slug}.png`" alt="" />
+      <img :src="`${baseUrl}generated/coats/coat-${data.slug}.png`" alt="" />
     </div>
     <div class="name">
       <div class="key">{{ data.type }}</div>
@@ -29,6 +29,8 @@ defineProps({
     default: false,
   },
 });
+
+const baseUrl = import.meta.env.BASE_URL;
 </script>
 
 <style lang="scss" scoped>

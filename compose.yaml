@@ -5,10 +5,14 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - 3000:3000
+    environment:
+      BASE_URL: /
+      VITE_CANONICAL_URL: http://localhost:3000
     volumes:
       - ./public:/app/public:delegated,rw
       - ./src:/app/src:delegated,rw
       - ./.eslintrc.cjs:/app/.eslintrc.cjs:delegated,rw
       - ./.prettierrc.json:/app/.prettierrc.json:delegated,rw
       - ./index.html:/app/index.html:delegated,rw
+      - ./server.js:/app/server.js:delegated,rw
       - ./vite.config.js:/app/vite.config.js:delegated,rw

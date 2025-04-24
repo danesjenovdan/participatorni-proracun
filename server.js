@@ -8,7 +8,11 @@ import path from "node:path";
 
 const isProduction = process.env.NODE_ENV === "production";
 const port = process.env.PORT || 3000;
-const base = process.env.BASE || "/";
+const base = process.env.BASE_URL || "/";
+
+if (!base.endsWith("/")) {
+  throw new Error("BASE_URL must end with a trailing slash");
+}
 
 // Cached production assets
 const templateHtml = isProduction
@@ -42,6 +46,7 @@ const templateHtml = isProduction
       root: path.resolve("./dist/client"),
       prefix: base,
       wildcard: false,
+      index: false,
     });
   }
 
@@ -49,6 +54,7 @@ const templateHtml = isProduction
     let { url } = request;
     if (url.startsWith(base)) {
       url = url.replace(base, "");
+      url = !url.startsWith("/") ? `/${url}` : url;
     }
 
     try {

@@ -26,7 +26,8 @@ jobs:
         with:
           context: .
           build-args: |
-            BASE_URL=https://pp2025.lb.djnd.si/
+            BASE_URL=/
+            VITE_CANONICAL_URL=https://pp2025.lb.djnd.si
           push: true
           tags: |
             rg.fr-par.scw.cloud/djnd/pp-preverjamo-2025:${{ github.sha }}
