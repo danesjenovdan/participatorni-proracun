@@ -1,8 +1,7 @@
-// eslint-disable-next-line import/extensions
-import { renderToString } from "vue/server-renderer";
-// eslint-disable-next-line import/extensions, import/no-unresolved
+// eslint-disable-next-line import/no-unresolved
 import { createHead } from "@unhead/vue/server";
 import { createMemoryHistory, createRouter } from "vue-router";
+import { renderToString } from "vue/server-renderer";
 import { createApp, headInit, routes } from "./main.js";
 
 export default async function render(url) {

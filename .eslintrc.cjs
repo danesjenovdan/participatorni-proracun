@@ -10,7 +10,7 @@ module.exports = {
   ],
   plugins: ["vue", "prettier"],
   rules: {
-    "import/extensions": ["error", "always"],
+    "import/extensions": ["error", "ignorePackages"],
     "import/no-extraneous-dependencies": [
       "error",
       {

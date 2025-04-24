@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/extensions, import/no-unresolved
+// eslint-disable-next-line import/no-unresolved
 import { createHead } from "@unhead/vue/client";
 import { createRouter, createWebHistory } from "vue-router";
 import { createApp, headInit, routes } from "./main.js";

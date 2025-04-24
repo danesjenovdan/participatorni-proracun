@@ -1,9 +1,8 @@
 import fastifyCompress from "@fastify/compress";
-import fastifyMiddie from "@fastify/middie";
 import fastifyStatic from "@fastify/static";
-import { fastify as createFastify } from "fastify";
-// eslint-disable-next-line import/extensions, import/no-unresolved
+// eslint-disable-next-line import/no-unresolved
 import { transformHtmlTemplate } from "@unhead/vue/server";
+import { fastify as createFastify } from "fastify";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -26,13 +25,16 @@ const templateHtml = isProduction
 
   let vite;
   if (!isProduction) {
+    // eslint-disable-next-line import/no-extraneous-dependencies
+    const fastifyMiddie = await import("@fastify/middie");
+    await fastify.register(fastifyMiddie);
+    // eslint-disable-next-line import/no-extraneous-dependencies
     const { createServer } = await import("vite");
     vite = await createServer({
       server: { middlewareMode: true },
       appType: "custom",
       base,
     });
-    await fastify.register(fastifyMiddie);
     fastify.use(vite.middlewares);
   } else {
     await fastify.register(fastifyCompress);
