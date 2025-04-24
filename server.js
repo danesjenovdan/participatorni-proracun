@@ -1,8 +1,11 @@
+import fastifyCompress from "@fastify/compress";
 import fastifyMiddie from "@fastify/middie";
+import fastifyStatic from "@fastify/static";
 import { fastify as createFastify } from "fastify";
 // eslint-disable-next-line import/extensions, import/no-unresolved
 import { transformHtmlTemplate } from "@unhead/vue/server";
 import fs from "node:fs";
+import path from "node:path";
 
 const isProduction = process.env.NODE_ENV === "production";
 const port = process.env.PORT || 3000;
@@ -20,7 +23,6 @@ const templateHtml = isProduction
       : { transport: { target: "@fastify/one-line-logger" } },
     ignoreTrailingSlash: true,
   });
-  await fastify.register(fastifyMiddie);
 
   let vite;
   if (!isProduction) {
@@ -30,12 +32,15 @@ const templateHtml = isProduction
       appType: "custom",
       base,
     });
+    await fastify.register(fastifyMiddie);
     fastify.use(vite.middlewares);
   } else {
-    const compression = (await import("compression")).default;
-    const sirv = (await import("sirv")).default;
-    fastify.use(compression());
-    fastify.use(base, sirv("./dist/client", { extensions: [] }));
+    await fastify.register(fastifyCompress);
+    await fastify.register(fastifyStatic, {
+      root: path.resolve("./dist/client"),
+      prefix: base,
+      wildcard: false,
+    });
   }
 
   fastify.get("/*", async (request, reply) => {
@@ -63,8 +68,7 @@ const templateHtml = isProduction
         template.replace(`<!--app-html-->`, rendered.html ?? ""),
       );
 
-      reply.type("text/html").status(200);
-      return reply.send(html);
+      return reply.type("text/html").status(200).send(html);
     } catch (error) {
       vite?.ssrFixStacktrace(error);
       if (error.message === "404") {
