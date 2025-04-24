@@ -60,6 +60,7 @@ const templateHtml = isProduction
         render = (await vite.ssrLoadModule("/src/entry-server.js")).default;
       } else {
         template = templateHtml;
+        // eslint-disable-next-line import/no-unresolved
         render = (await import("./dist/server/entry-server.js")).default;
       }
 
