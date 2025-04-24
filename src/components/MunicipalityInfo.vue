@@ -3,7 +3,7 @@
     :class="{ 'municipality-info': true, 'municipality-info--large': large }"
   >
     <div class="coat">
-      <img src="/generated/coats/coat-ajdovscina.png?url" alt="" />
+      <img src="/generated/coats/coat-ajdovscina.png?url" alt="TODO" />
     </div>
     <div class="name">
       <div class="key">{{ data.type }}</div>

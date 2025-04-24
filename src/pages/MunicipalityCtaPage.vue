@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div v-if="data" class="page-container">
     <div class="container container--wide">
       <div class="grid">
         <div class="span-8 info-col">
@@ -41,7 +41,7 @@
           <hr />
           <div class="send-to">
             Pošlji poziv na:
-            <input type="text" :value="data.email" onfocus="this.select();" />
+            <input type="text" :value="data?.email" onfocus="this.select();" />
           </div>
         </div>
       </div>
@@ -50,7 +50,8 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { useSeoMeta } from "@unhead/vue";
+import { computed, useSSRContext } from "vue";
 import { useRoute } from "vue-router";
 import textsYaml from "../assets/texts.yaml";
 import MunicipalityInfo from "../components/MunicipalityInfo.vue";
@@ -62,17 +63,23 @@ const route = useRoute();
 const data = getMunicipalityBySlug(route.params.slug);
 const { texts } = textsYaml;
 
+if (import.meta.env.SSR && !data) {
+  const ctx = useSSRContext();
+  ctx.statusCode = 404;
+}
+
 const infoText = computed(() => {
-  let t = texts["promise-info"]?.[data.pp_status]?.[data.mayor_gender] ?? "n/a";
-  t = t.replace("{{ mayor_name }}", data.mayor_name);
-  t = t.replace("{{ municipality_name }}", `${data.type} ${data.name}`);
+  let t =
+    texts["promise-info"]?.[data?.pp_status]?.[data?.mayor_gender] ?? "n/a";
+  t = t.replace("{{ mayor_name }}", data?.mayor_name);
+  t = t.replace("{{ municipality_name }}", `${data?.type} ${data?.name}`);
   return t;
 });
 
 const ctaText = computed(() => {
   let t = texts.cta || "n/a";
-  t = t.replace("{{ mayor_name }}", data.mayor_name);
-  t = t.replace("{{ municipality_name }}", `${data.type} ${data.name}`);
+  t = t.replace("{{ mayor_name }}", data?.mayor_name);
+  t = t.replace("{{ municipality_name }}", `${data?.type} ${data?.name}`);
   return t;
 });
 
@@ -83,6 +90,15 @@ function onCopyClick() {
     alert("Poziv je bil kopiran v odložišče!");
   });
 }
+
+useSeoMeta({
+  title: `Poziv županu ${data?.mayor_name} (${data?.type} ${data?.name})`,
+  description: "My about page",
+  ogDescription: "Still about my about page",
+  ogTitle: `Poziv županu ${data?.mayor_name} (${data?.type} ${data?.name})`,
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <style lang="scss" scoped>

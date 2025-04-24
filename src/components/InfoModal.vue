@@ -100,7 +100,7 @@ const router = useRouter();
 const infoModal = useTemplateRef("info-modal");
 
 function close() {
-  infoModal.value.close();
+  infoModal.value?.close();
   emit("close");
 }
 

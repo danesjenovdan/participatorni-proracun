@@ -1,12 +1,11 @@
-import { createApp } from "vue";
-import { createRouter, createWebHistory } from "vue-router";
+import { createSSRApp } from "vue";
 import App from "./App.vue";
 import MunicipalityCtaPage from "./pages/MunicipalityCtaPage.vue";
 import RootPage from "./pages/RootPage.vue";
 
 import "./assets/styles/main.scss";
 
-const routes = [
+export const routes = [
   {
     name: "root",
     path: "/",
@@ -19,14 +18,14 @@ const routes = [
   },
 ];
 
-const app = createApp(App);
+export const headInit = [
+  {
+    htmlAttrs: { lang: "sl" },
+    title: "Participativni proračun",
+    // titleTemplate: "%s | My Site",
+  },
+];
 
-// TODO: const head = createHead();
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
-app.use(router);
-
-app.mount("#app");
+export function createApp() {
+  return createSSRApp(App);
+}
