@@ -1,0 +1,26 @@
+name: Lint JavaScript
+on:
+  push:
+    branches:
+      - "preverjamo-2025"
+jobs:
+  check_python_formatting:
+    name: Check JavaScript formatting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: |
+          yarn
+
+      - name: Run lint script
+        run: |
+          yarn lint
