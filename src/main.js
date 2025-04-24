@@ -22,7 +22,7 @@ export const routes = [
 
 export const headOptions = {
   plugins: [
-    import.meta.env.VITE_CANONICAL_URL.startsWith("http")
+    import.meta.env.VITE_CANONICAL_URL?.startsWith("http")
       ? CanonicalPlugin({ canonicalHost: import.meta.env.VITE_CANONICAL_URL })
       : undefined,
   ].filter(Boolean),

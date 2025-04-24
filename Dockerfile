@@ -31,7 +31,7 @@ RUN yarn && yarn cache clean
 
 # copy all needed files from build stage image
 COPY --from=build /app/dist ./dist
-COPY --from=build /app/server ./server
+COPY --from=build /app/server.js ./server.js
 
 EXPOSE 3000
 
