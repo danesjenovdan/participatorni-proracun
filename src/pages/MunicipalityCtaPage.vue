@@ -50,7 +50,6 @@
 </template>
 
 <script setup>
-import { useSeoMeta } from "@unhead/vue";
 import { computed, useSSRContext } from "vue";
 import { useRoute } from "vue-router";
 import textsYaml from "../assets/texts.yaml";
@@ -77,7 +76,7 @@ const infoText = computed(() => {
 });
 
 const ctaText = computed(() => {
-  let t = texts.cta || "n/a";
+  let t = texts.cta?.[data?.pp_status] || "n/a";
   t = t.replace("{{ municipality_name }}", `${data?.type} ${data?.name}`);
   return t;
 });
@@ -98,17 +97,6 @@ function onCopyClick() {
 }
 
 useCanonicalUrl();
-
-useSeoMeta({
-  title: "TODO: poziv title",
-  ogTitle: "TODO: poziv title",
-  twitterTitle: "TODO: poziv title",
-  description: "TODO: poziv description",
-  ogDescription: "TODO: poziv description",
-  twitterDescription: "TODO: poziv description",
-  ogImage: "TODO-poziv-image.png",
-  twitterImage: "TODO-poziv-image.png",
-});
 </script>
 
 <style lang="scss" scoped>

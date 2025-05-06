@@ -18,33 +18,38 @@ texts:
         Županja <strong>{{ mayor_name }}</strong> za zdaj ne kaže
         pripravljenosti, da bi občanom omogočila soodločanje o porabi dela
         občinskih sredstev in jih vključila v soustvarjanje lokalnega okolja.
-  cta: >
-    Spoštovani,
+  cta:
+    waiting: >
+      Spoštovani,
 
 
-    pišem vam z namenom, da vas spomnim na participativni proračun.
+      želim vas opomniti na vašo obljubo pred lokalnimi volitvami 2022, s katero ste se javno zavezali, da boste v primeru izvolitve v svojem mandatu uvedli participativni proračun.
 
 
-    Participativni proračun je proces demokratičnega soodločanja, pri katerem o
-    porabi dela proračunskih sredstev neposredno odločajo prebivalke in
-    prebivalci. V skoraj 30 letih obstoja participativnega proračuna so velike
-    organizacije, kot so Svetovna banka, Organizacija združenih narodov, pa tudi
-    večje število univerz in posamičnih raziskovalcev dodobra preučile in
-    identificirale učinke izvajanja participativnega proračuna. Ugotavljajo, da
-    participativni proračun prinaša povečanje učinkovitosti porabe sredstev,
-    hitrejšo gospodarsko rast, bolj enakomeren razvoj občin, zmanjšanje
-    socialnih razlik, boljše ravnanje z infrastrukturo in večjo identifikacijo z
-    njo, povečanje zaupanja v demokratične postopke in povečanje aktivacije
-    prebivalcev in prebivalk.
+      Ta proces demokratičnega soodločanja, v katerem občanke in občani neposredno odločajo o porabi dela proračunskih sredstev, že izvaja 66 slovenskih občin in želim si, da bi se jim pridružila tudi {{ municipality_name }}.
 
 
-    Participativni proračun izvaja že 39 slovenskih občin in želim si, da se jim
-    pridruži tudi {{ municipality_name }}.
+      Participativni proračun prinaša številne koristi, saj povečuje učinkovitost porabe sredstev, spodbuja hitrejšo gospodarsko rast, zmanjšuje socialne razlike, omogoča boljše upravljanje z infrastrukturo in krepi občutek pripadnosti lokalni skupnosti. Poleg tega povečuje zaupanje v demokratične procese in spodbuja aktivno sodelovanje občank in občanov.
 
 
-    Pregled trenutnega stanja razširjenosti participativnega proračuna v
-    Sloveniji lahko najdete na: https://participativni-proracun.danesjenovdan.si/2018/.
+      Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://participativni-proracun.danesjenovdan.si/.
 
 
-    V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas
-    lepo pozdravljam.
+      V upanju, da boste izpolnili svojo zavezo volivkam in volivcem, vas lepo pozdravljam.
+    no: >
+      Spoštovani,
+
+
+      pišem vam z namenom, da vas opomnim na participativni proračun.
+
+
+      Ta proces demokratičnega soodločanja, v katerem občanke in občani neposredno odločajo o porabi dela proračunskih sredstev, že izvaja 66 slovenskih občin in želim si, da bi se jim pridružila tudi {{ municipality_name }}.
+
+
+      Participativni proračun prinaša številne koristi, saj povečuje učinkovitost porabe sredstev, spodbuja hitrejšo gospodarsko rast, zmanjšuje socialne razlike, omogoča boljše upravljanje z infrastrukturo in krepi občutek pripadnosti lokalni skupnosti. Poleg tega povečuje zaupanje v demokratične procese in spodbuja aktivno sodelovanje občank in občanov.
+
+
+      Pregled trenutnega stanja razširjenosti participativnega proračuna v Sloveniji lahko najdete na: https://participativni-proracun.danesjenovdan.si/.
+
+
+      V upanju, da boste kmalu začeli z izvajanjem participativnega proračuna, vas lepo pozdravljam.
