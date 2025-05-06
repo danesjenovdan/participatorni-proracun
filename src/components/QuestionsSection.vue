@@ -11,7 +11,13 @@
         <div class="grid">
           <div class="span-11 questions">
             <template v-for="(question, i) in questions" :key="question.q">
-              <div :class="{ question: true, selected: i === selectedIndex }">
+              <div
+                :class="{
+                  question: true,
+                  selected: i === selectedIndex,
+                  selectedMobile: i === selectedIndexMobile,
+                }"
+              >
                 <button @click="selectAnswer(i)">
                   {{ question.q }}
                 </button>
@@ -30,7 +36,7 @@
               <div
                 :class="{
                   'inline-answer': true,
-                  selected: i === selectedIndex,
+                  selected: i === selectedIndexMobile,
                 }"
               >
                 <!-- eslint-disable vue/no-v-html -->
@@ -62,9 +68,15 @@ import BigVideo from "./BigVideo.vue";
 
 const { questions } = questionsYaml;
 const selectedIndex = ref(0);
+const selectedIndexMobile = ref(-1);
 
 function selectAnswer(i) {
+  if (selectedIndexMobile.value === i) {
+    selectedIndexMobile.value = -1;
+    return;
+  }
   selectedIndex.value = i;
+  selectedIndexMobile.value = i;
 }
 </script>
 
@@ -195,18 +207,32 @@ section.questions-section {
         }
 
         &.selected {
-          color: #000;
+          @include media.up(md) {
+            color: #000;
 
-          button {
-            background: var(--clr-accent-3);
-            border-color: #000;
-            text-decoration: underline;
+            button {
+              background: var(--clr-accent-3);
+              border-color: #000;
+              text-decoration: underline;
+            }
+
+            .arrow {
+              transform: translateX(65%);
+            }
           }
+        }
 
-          .arrow {
-            transform: translateX(65%);
+        &.selectedMobile {
+          @include media.down(md) {
+            color: #000;
 
-            @include media.down(md) {
+            button {
+              background: var(--clr-accent-3);
+              border-color: #000;
+              text-decoration: underline;
+            }
+
+            .arrow {
               transform: rotate(90deg) scale(0.8);
             }
           }

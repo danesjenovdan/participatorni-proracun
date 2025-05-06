@@ -73,7 +73,7 @@ section.main-header {
     img {
       @include media.down(lg) {
         margin-top: 3rem;
-        max-width: 480px;
+        max-width: 300px;
         margin-inline: auto;
       }
     }
