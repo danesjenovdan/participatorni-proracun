@@ -8,4 +8,4 @@ resources:
 images:
   - name: pp-volitve-2022
     newName: rg.fr-par.scw.cloud/djnd/pp-volitve-2022
-    newTag: '842fcbb01da691018e24211509c80db3b1da9a0b'
+    newTag: '654d188bb5a52243317047ee8a25dc2ace4b2a9d'
