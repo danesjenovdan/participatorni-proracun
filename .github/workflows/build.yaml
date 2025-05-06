@@ -26,7 +26,7 @@ jobs:
         with:
           context: .
           build-args: |
-            BASE_URL=https://participativni-proracun.danesjenovdan.si/
+            BASE_URL=https://participativni-proracun.danesjenovdan.si/2022/zaobljube/
           push: true
           tags: |
             rg.fr-par.scw.cloud/djnd/pp-volitve-2022:${{ github.sha }}

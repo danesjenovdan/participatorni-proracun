@@ -28,4 +28,4 @@ spec:
               cpu: 100m
           env:
             - name: BASE_URL
-              value: https://participativni-proracun.danesjenovdan.si/
+              value: https://participativni-proracun.danesjenovdan.si/2022/zaobljube/
