@@ -7,6 +7,67 @@
           <div class="item waiting">obljuba še ni izpolnjena</div>
           <div class="item no">se niso zavezali</div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="pattern-defs">
+          <defs>
+            <pattern
+              id="diagonalHatchYes"
+              patternUnits="userSpaceOnUse"
+              width="4"
+              height="4"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="4"
+                height="4"
+                fill="var(--clr-accent-2)"
+              />
+              <path
+                d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2"
+                stroke="#000"
+                stroke-width="1.125"
+              />
+            </pattern>
+            <pattern
+              id="diagonalHatchWaiting"
+              patternUnits="userSpaceOnUse"
+              width="4"
+              height="4"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="4"
+                height="4"
+                fill="var(--clr-accent-3)"
+              />
+              <path
+                d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2"
+                stroke="#000"
+                stroke-width="1.125"
+              />
+            </pattern>
+            <pattern
+              id="diagonalHatchNo"
+              patternUnits="userSpaceOnUse"
+              width="4"
+              height="4"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="4"
+                height="4"
+                fill="var(--clr-accent-4)"
+              />
+              <path
+                d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2"
+                stroke="#000"
+                stroke-width="1.125"
+              />
+            </pattern>
+          </defs>
+        </svg>
         <ZoomPan @init="onZoomPanInit">
           <MunicipalitiesMap />
         </ZoomPan>
@@ -36,14 +97,23 @@ const selectedMunicipality = ref(null);
 
 function disableHoverElement() {
   const hoverElement = mapEl.value.querySelector("#hover-element");
-  if (hoverElement) {
+  const allPaths = mapEl.value.querySelector("#all-paths");
+  if (hoverElement && allPaths) {
+    allPaths.querySelectorAll(".hover").forEach((el) => {
+      el.classList.remove("hover");
+    });
     hoverElement.setAttribute("href", "#");
   }
 }
 
 function setHoverElement(event) {
   const hoverElement = mapEl.value.querySelector("#hover-element");
-  if (hoverElement && event.target?.id) {
+  const allPaths = mapEl.value.querySelector("#all-paths");
+  if (hoverElement && allPaths && event.target?.id) {
+    allPaths.querySelectorAll(".hover").forEach((el) => {
+      el.classList.remove("hover");
+    });
+    event.target.classList.add("hover");
     hoverElement.setAttribute("href", `#${event.target.id}`);
   }
 }
@@ -91,13 +161,10 @@ function onZoomPanInit() {
             section.setAttribute("id", slug);
 
             if (data.pp_status === "yes") {
-              section.setAttribute("fill", "var(--clr-accent-2)");
               section.classList.add("status-yes");
             } else if (data.pp_status === "waiting") {
-              section.setAttribute("fill", "var(--clr-accent-3)");
               section.classList.add("status-waiting");
             } else if (data.pp_status === "no") {
-              section.setAttribute("fill", "var(--clr-accent-4)");
               section.classList.add("status-no");
             }
           }
@@ -192,6 +259,12 @@ section.map-section {
       }
     }
 
+    .pattern-defs {
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
     .zoom-pan {
       pointer-events: none;
 
@@ -201,8 +274,32 @@ section.map-section {
             cursor: pointer;
             pointer-events: all;
 
+            .status-yes {
+              fill: var(--clr-accent-2);
+
+              &.hover {
+                fill: url(#diagonalHatchYes);
+              }
+            }
+
+            .status-waiting {
+              fill: var(--clr-accent-3);
+
+              &.hover {
+                fill: url(#diagonalHatchWaiting);
+              }
+            }
+
+            .status-no {
+              fill: var(--clr-accent-4);
+
+              &.hover {
+                fill: url(#diagonalHatchNo);
+              }
+            }
+
             #hover-element {
-              stroke: var(--clr-dark-purple);
+              stroke: #000;
               stroke-width: 4;
               pointer-events: none;
             }

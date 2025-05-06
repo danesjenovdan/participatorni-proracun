@@ -3,7 +3,6 @@
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1200 787">
       <g
         id="all-paths"
-        fill="#fff"
         stroke="#000"
         stroke-width="2"
         stroke-linecap="round"
