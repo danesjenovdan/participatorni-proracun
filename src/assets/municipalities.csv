@@ -1,7 +1,7 @@
 ID,Občina/Mestna občina,Občina,Izvaja PP,Zaveza PP,Župan,Spol,Email,Predlagatelj,Dokazilo
 1,Občina,Ajdovščina,TRUE,TRUE,Tadej Beočanin,m,obcina@ajdovscina.si,SOCIALNI DEMOKRATI,https://ajdovscina.si/mojapobuda/moja_pobuda/
 213,Občina,Ankaran,TRUE,TRUE,Gregor Strmčnik,m,info@obcina-ankaran.si,Darij Dujmovič in skupina volilcev,https://sodelujem.obcina-ankaran.si/
-195,Občina,Apače,FALSE,FALSE,DR. ANDREJ STEYER,m,info@obcina-apace.si,SLOVENSKA DEMOKRATSKA STRANKA,
+195,Občina,Apače,FALSE,FALSE,dr. Andrej Steyer,m,info@obcina-apace.si,SLOVENSKA DEMOKRATSKA STRANKA,
 2,Občina,Beltinci,FALSE,FALSE,Marko Virag,m,obcina@beltinci.si,Ines Forjan in skupina volivcev,
 148,Občina,Benedikt,TRUE,FALSE,mag. Milan Repič,m,obcina@benedikt.si,SLOVENSKA LJUDSKA STRANKA,https://www.benedikt.si/objava/804049
 149,Občina,Bistrica ob Sotli,FALSE,FALSE,Franjo Debelak,m,obcina@bistricaobsotli.si,DUŠAN BERKOVIČ IN SKUPINA VOLIVCEV,
@@ -38,14 +38,14 @@ https://www.divaca.si/objava/817103"
 24,Občina,Dornava,FALSE,FALSE,Matej Zorko,m,obcina.dornava@dornava.si,SLOVENSKA DEMOKRATSKA STRANKA,
 25,Občina,Dravograd,TRUE,TRUE,Anton Preksavec,m,obcina@dravograd.si,Robert PLIMON in skupina volivcev,https://www.dravograd.si/objava/842947
 26,Občina,Duplek,FALSE,TRUE,Mitja Horvat,m,obcina.duplek@duplek.si,Majda Zajc in skupina volivcev,
-27,Občina,Gorenja vas – Poljane,FALSE,FALSE,Milan (Milan Janez) Čadež,m,info@obcina-gvp.si,SLOVENSKA DEMOKRATSKA STRANKA,
+27,Občina,Gorenja vas – Poljane,FALSE,FALSE,Milan Čadež,m,info@obcina-gvp.si,SLOVENSKA DEMOKRATSKA STRANKA,
 28,Občina,Gorišnica,FALSE,TRUE,Borut Kolar,m,obcina@gorisnica.eu,Bernardka Kolar in skupina volivcev,
 207,Občina,Gorje,TRUE,FALSE,Peter Torkar,m,obcina.gorje@gorje.si,Katjuša Torkar in skupina volivcev,https://www.gorje.si/objava/825992
 29,Občina,Gornja Radgona,FALSE,TRUE,Urška Mauko Tuš,f,obcina@gor-radgona.si,ALEŠ DOKL IN SKUPINA VOLIVCEV,
 30,Občina,Gornji Grad,FALSE,FALSE,Anton Špeh,m,obcina@gornji-grad.si,Aljaž Špeh in skupina volivcev,
 31,Občina,Gornji Petrovci,FALSE,FALSE,Franc Šlihthuber,m,obcinagp@gornji-petrovci.si,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,
 158,Občina,Grad,FALSE,FALSE,Cvetka Ficko,f,tajnistvo@obcina-grad.si,Marjan Ficko in skupina volivcev,
-32,Občina,Grosuplje,FALSE,FALSE,dr.  Peter Verlič,m,info@grosuplje.si,SDS - SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI N.Si,
+32,Občina,Grosuplje,FALSE,FALSE,dr. Peter Verlič,m,info@grosuplje.si,SDS - SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI N.Si,
 159,Občina,Hajdina,TRUE,FALSE,mag. Stanislav Glažar,m,uprava@hajdina.si,"SLOVENSKA DEMOKRATSKA STRANKA, SOCIALNI DEMOKRATI, SLOVENSKA LJUDSKA STRANKA ",https://www.hajdina.si/objava/951441
 160,Občina,Hoče – Slivnica,FALSE,FALSE,dr. Marko Soršak,m,obcina@hoce-slivnica.si,Znamo. Zmoremo! Marko Soršak.,
 161,Občina,Hodoš,FALSE,FALSE,Denis Tamaško,m,obcina-hodos-kozseg@siol.net,Ernest Tamaško,
@@ -64,7 +64,7 @@ https://www.divaca.si/objava/817103"
 44,Občina,Kanal,FALSE,FALSE,Miha Stegel,m,obcina.kanal@obcina-kanal.si,Miha Stegel in skupina volivcev,
 45,Občina,Kidričevo,FALSE,FALSE,Anton Leskovar,m,obcina@kidricevo.si,SLOVENSKA DEMOKRATSKA STRANKA,
 46,Občina,Kobarid,FALSE,FALSE,Marko Matajurc,m,obcina@kobarid.si,Tina Sivec Matelič in skupina volivcev,
-47,Občina,Kobilje,FALSE,FALSE,Darko Horvat mag.,m,obcina@kobilje.si,SLOVENSKA LJUDSKA STRANKA,
+47,Občina,Kobilje,FALSE,FALSE,mg. Darko Horvat,m,obcina@kobilje.si,SLOVENSKA LJUDSKA STRANKA,
 48,Občina,Kočevje,FALSE,FALSE,Gregor Košir,m,obcina@kocevje.si,Lilijana Štefanič in skupina volivcev,
 49,Občina,Komen,TRUE,TRUE,Erik Modic,m,obcina@komen.si,VALTER MAKOVEC IN SKUPINA VOLIVCEV,https://www.komen.si/za-obcane/participativni-proracun-2024-2025/
 164,Občina,Komenda,FALSE,FALSE,Jurij Kern,m,obcina@komenda.si,Tea Tašker Kern in skupina volivcev,
@@ -78,8 +78,8 @@ https://www.divaca.si/objava/817103"
 54,Mestna občina,Krško,TRUE,TRUE,Janez Kerin,m,obcina.krsko@krsko.si,Marta Levičar Magiera in skupina volivcev LISTE MODRA SMER,https://www.krsko.si/objava/902551
 55,Občina,Kungota,FALSE,FALSE,Tamara Šnofl,f,obcina@kungota.si,Andrej Plohl in skupina volivcev,
 56,Občina,Kuzma,FALSE,FALSE,Jožef Škalič,m,info@obcina-kuzma.si,ALEKSANDRA ŠKALIČ IN SKUPINA VOLIVCEV,
-57,Občina,Laško,TRUE,TRUE,Marko Šantej mag. farm.,m,obcina@lasko.si,ENEJ KIRN IN SKUPINA VOLIVCEV - MLADA MOČ OBČINE LAŠKO,https://www.lasko.si/objava/872198
-58,Občina,Lenart,FALSE,FALSE,MAG. Janez Kramberger DR. VET. MED.,m,obcina@lenart.si,STANKA FERŠ IN SKUPINA VOLILCEV,
+57,Občina,Laško,TRUE,TRUE,Marko Šantej,m,obcina@lasko.si,ENEJ KIRN IN SKUPINA VOLIVCEV - MLADA MOČ OBČINE LAŠKO,https://www.lasko.si/objava/872198
+58,Občina,Lenart,FALSE,FALSE,mag. Janez Kramberger,m,obcina@lenart.si,STANKA FERŠ IN SKUPINA VOLILCEV,
 59,Občina,Lendava,TRUE,FALSE,Janez Magyar,m,obcina@lendava.si,SLOVENSKA DEMOKRATSKA STRANKA in NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,https://www.lendava.si/vsebina/javni-poziv-za-participativni-proracun-obcine-lendava--za-leti-2024-in-2025
 60,Občina,Litija,FALSE,TRUE,Franc Rokavec,m,obcina.litija@litija.si,SLOVENSKA LJUDSKA STRANKA,
 61,Mestna občina,Ljubljana,FALSE,FALSE,Zoran Janković,m,glavna.pisarna@ljubljana.si,JOŽE MERMAL S SKUPINO VOLIVCEV,
@@ -110,14 +110,14 @@ https://www.divaca.si/objava/817103"
 78,Občina,Moravske Toplice,FALSE,FALSE,Alojz Glavač,m,obcina@moravske-toplice.si,VLASTA GLAVAČ IN SKUPINA VOLIVCEV,
 79,Občina,Mozirje,FALSE,FALSE,Ivan Suhoveršnik,m,obcina@mozirje.si,Jožef Skornšek,
 80,Mestna občina,Murska Sobota,TRUE,TRUE,Damjan Anželj,m,mestna.obcina@murska-sobota.si,SOCIALNI DEMOKRATI,https://murska-sobota.si/participativni-proracun
-81,Občina,Muta,FALSE,TRUE,Angelca (Angela) Mrak,f,obcina.muta@muta.si,TOMAŽ FERK IN SKUPINA VOLIVCEV,
+81,Občina,Muta,FALSE,TRUE,Angelca Mrak,f,obcina.muta@muta.si,TOMAŽ FERK IN SKUPINA VOLIVCEV,
 82,Občina,Naklo,FALSE,FALSE,Ivan Meglič,m,glavna.pisarna@obcina-naklo.si,"SLS, SLOVENSKA LJUDSKA STRANKA, OO NAKLO ",
 83,Občina,Nazarje,FALSE,FALSE,Matej Pečovnik,m,obcina@nazarje.si,Pečovnik Perme Nataša in skupina volivcev,
 84,Mestna občina,Nova Gorica,TRUE,FALSE,Samo Turel,m,mestna.obcina@nova-gorica.si,GIBANJE SVOBODA,https://participativni-proracun.nova-gorica.si/
 85,Mestna občina,Novo mesto,TRUE,FALSE,Gregor Macedoni,m,mestna.obcina@novomesto.si,Boštjan Grobler in skupina volivcev,https://idejezanovomesto.si/
 86,Občina,Odranci,FALSE,FALSE,Barbara Ferenčak,f,obcina.odranci@siol.net,ANDREJA POREDOŠ IN SKUPINA VOLIVCEV,
 171,Občina,Oplotnica,FALSE,TRUE,Matjaž Orter,m,obcina@oplotnica.si,MARTIN LESJAK IN SKUPINA VOLIVCEV,
-87,Občina,Ormož,FALSE,FALSE,Danijel Vrbnjak mag. posl. ved,m,obcina.ormoz@ormoz.si,SLOVENSKA DEMOKRATSKA STRANKA,
+87,Občina,Ormož,FALSE,FALSE,mag. Danijel Vrbnjak,m,obcina.ormoz@ormoz.si,SLOVENSKA DEMOKRATSKA STRANKA,
 88,Občina,Osilnica,FALSE,FALSE,Alenka Kovač,f,obcina@osilnica.si,GIBANJE SVOBODA,
 89,Občina,Pesnica,FALSE,FALSE,mag. Gregor Žmak,m,obcina.pesnica@pesnica.si,Marjan Rodež in skupina volivcev,
 90,Občina,Piran,TRUE,TRUE,Andrej Korenika,m,obcina.piran@piran.si,Andrej Korenika in skupina volivcev,https://www.piran.si/objava/918070
@@ -150,7 +150,7 @@ https://www.divaca.si/objava/817103"
 108,Občina,Ruše,TRUE,TRUE,Urška Repolusk,f,obcina@ruse.si,Srečko Šarh in skupina volivcev,https://www.ruse.si/objava/868929
 33,Občina,Šalovci,TRUE,TRUE,Iztok Fartek,m,info@salovci.si,Mihaela KALAMAR in skupina volivcev,https://salovci.si/participativni-proracun-obcine-salovci-za-leto-2024/
 178,Občina,Selnica ob Dravi,FALSE,FALSE,dr. Vlasta Krmelj,f,info@selnica.si,SLOVENSKA DEMOKRATSKA STRANKA,
-109,Občina,Semič,TRUE,TRUE,Polona Kambič mag.,f,obcina@semic.si,Polona Kambič in skupina volivcev Gibanja Zdrava družba,https://www.semic.si/objava/821916
+109,Občina,Semič,TRUE,TRUE,mag. Polona Kambič,f,obcina@semic.si,Polona Kambič in skupina volivcev Gibanja Zdrava družba,https://www.semic.si/objava/821916
 183,Občina,Šempeter – Vrtojba,FALSE,FALSE,mag. Milan Turk,m,info@sempeter-vrtojba.si,Pavel Černe in skupina volivcev,
 117,Občina,Šenčur,FALSE,FALSE,Ciril Kozjek,m,obcina@sencur.si,SLOVENSKA LJUDSKA STRANKA IN SLOVENSKA DEMOKRATSKA STRANKA,
 118,Občina,Šentilj,TRUE,TRUE,Štefan Žvab,m,obcina@sentilj.si,DAVID KOS IN SKUPINA VOLIVCEV,https://www.sentilj.si/objava/729026
@@ -173,15 +173,15 @@ https://www.divaca.si/objava/817103"
 180,Občina,Solčava,FALSE,FALSE,Katarina Prelesnik,f,obcina@solcava.si,BERNARDKA IPAVEC IN SKUPINA VOLIVCEV,
 126,Občina,Šoštanj,TRUE,TRUE,Boris Goličnik,m,obcina@sostanj.si,Lista Borisa Goličnika,https://www.sostanj.si/objava/973970
 202,Občina,Središče ob Dravi,FALSE,FALSE,Toni Jelovica,m,obcina.sredisce.ob.dravi@siol.net,MIHAELA VESENJAK IN SKUPINA VOLIVCEV,
-115,Občina,Starše,FALSE,FALSE,Stanislav Greifoner univ.dipl.prav.,m,obcina@starse.si,MAJDA MOHORIČ IN SKUPINA VOLIVCEV,
+115,Občina,Starše,FALSE,FALSE,Stanislav Greifoner,m,obcina@starse.si,MAJDA MOHORIČ IN SKUPINA VOLIVCEV,
 127,Občina,Štore,FALSE,FALSE,Miran Jurkošek,m,obcina@store.si,"MIRAN JURKOŠEK IN SKUPINA VOLIVCEV ""ŽUPANOVA NEODVISNA LISTA ZA RAZVOJ"" ",
 203,Občina,Straža,TRUE,FALSE,Dušan Krštinc,m,info@obcina-straza.si,Martin Krštinc in skupina volivcev RIOS,https://www.obcina-straza.si/objava/900063
 181,Občina,Sveta Ana,FALSE,FALSE,Martin Breznik,m,obcina@sv-ana.si,Lista ZA Sveto Ano - Suzana Rejak Breznik in skupina volivcev,
 204,Občina,Sveta Trojica v Slovenskih goricah,TRUE,FALSE,David Klobasa,m,obcina@svetatrojica.si,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,https://www.svetatrojica.si/objava/914964
 182,Občina,Sveti Andraž v Slovenskih goricah,FALSE,FALSE,Darja Vudler Berlak,f,info@svandraz.si,Neodvisna lista skupaj za ljudi! Mitja Berlak in skupina volivcev,
-116,Občina,Sveti Jurij ob Ščavnici,TRUE,TRUE,Andrej (Andrej) Vrzel,m,obcina@sveti-jurij.si,Simon Černel in skupina volivcev,https://www.sveti-jurij.si/objava/931039
+116,Občina,Sveti Jurij ob Ščavnici,TRUE,TRUE,Andrej Vrzel,m,obcina@sveti-jurij.si,Simon Černel in skupina volivcev,https://www.sveti-jurij.si/objava/931039
 210,Občina,Sveti Jurij v Slovenskih goricah,FALSE,TRUE,Peter Škrlec,m,obcina@obcinajurij.si,SLOVENSKA DEMOKRATSKA STRANKA,
-205,Občina,Sveti Tomaž,FALSE,FALSE,Mirko Cvetko mag.,m,obcina@sv-tomaz.si,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,
+205,Občina,Sveti Tomaž,FALSE,FALSE,Mirko Cvetko,m,obcina@sv-tomaz.si,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,
 184,Občina,Tabor,FALSE,FALSE,Marko Semprimožnik,m,info@obcina-tabor.si,Urša Semprimožnik in skupina volivcev,
 10,Občina,Tišina,FALSE,TRUE,Franc Horvat,m,obcina@tisina.si,SLOVENSKA LJUDSKA STRANKA,
 128,Občina,Tolmin,FALSE,FALSE,Alen Červ,m,obcina.tolmin@obcina.tolmin.si,SOCIALNI DEMOKRATI,
@@ -202,7 +202,7 @@ https://www.divaca.si/objava/817103"
 139,Občina,Vojnik,FALSE,FALSE,Branko Petre,m,obcina@vojnik.si,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI in SLOVENSKA DEMOKRATSKA STRANKA,
 189,Občina,Vransko,FALSE,FALSE,Nataša Juhart,f,obcina.vransko@vransko.si,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,
 140,Občina,Vrhnika,FALSE,FALSE,Daniel Cukjati,m,obcina.vrhnika@vrhnika.si,Daniel Cukjati in skupina volivcev,
-141,Občina,Vuzenica,FALSE,FALSE,Franjo (Franc) Golob,m,obcina.vuzenica@siol.net,DANICA GOLOB IN SKUPINA VOLIVCEV,
+141,Občina,Vuzenica,FALSE,FALSE,Franc - Franjo Golob,m,obcina.vuzenica@siol.net,DANICA GOLOB IN SKUPINA VOLIVCEV,
 142,Občina,Zagorje ob Savi,FALSE,FALSE,Matjaž Švagan,m,obcina.zagorje@zagorje.si,ZAGORJE GRE NAPREJ - ZDRUŽENJE ZA NAPREDEK ZASAVJA,
 190,Občina,Žalec,FALSE,TRUE,Janko Kos,m,glavna.pisarna@zalec.si,Občinska organizacija Socialnih demokratov Žalec,
 143,Občina,Zavrč,FALSE,FALSE,Slavko Pravdič,m,obcina.zavrc@siol.net,NOVA SLOVENIJA - KRŠČANSKI DEMOKRATI,
