@@ -12,7 +12,7 @@
           <div class="municipality">
             <div class="coat">
               <img
-                :src="`/generated/coats/coat-${municipality.slug}.png`"
+                :src="`${baseUrl}generated/coats/coat-${municipality.slug}.png`"
                 alt=""
               />
             </div>
@@ -69,6 +69,8 @@
 </template>
 
 <script>
+import { baseUrl } from "../helpers/constants.js";
+
 export default {
   name: "ShareCardPerson",
   props: {
@@ -80,6 +82,11 @@ export default {
       type: Object,
       default: null,
     },
+  },
+  data() {
+    return {
+      baseUrl,
+    };
   },
 };
 </script>

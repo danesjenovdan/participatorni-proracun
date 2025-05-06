@@ -105,7 +105,7 @@
             <div class="municipality">
               <div class="coat">
                 <img
-                  :src="`/generated/coats/coat-${selectedMunicipality.slug}.png`"
+                  :src="`${baseUrl}generated/coats/coat-${selectedMunicipality.slug}.png`"
                   alt=""
                 />
               </div>

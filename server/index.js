@@ -11,18 +11,21 @@ const dist = resolve("./dist");
 const serverPackage = fs.readJsonSync(join(dist, "server/package.json"));
 const ssrManifest = fs.readJsonSync(join(dist, "client/ssr-manifest.json"));
 
+const baseUrl = process.env.BASE_URL || "http://localhost:3000/";
+const basePath = baseUrl.slice(baseUrl.indexOf("/", 8));
+
 // serve all assets
 const assets = serverPackage.ssr.assets || [];
 assets.forEach((asset) => {
   const assetStat = fs.statSync(join(dist, "client", asset));
   if (assetStat.isDirectory()) {
     fastify.register(fastifyStatic, {
-      prefix: `/${asset}/`,
+      prefix: `${basePath}${asset}/`,
       root: join(dist, "client", asset),
       decorateReply: false,
     });
   } else {
-    fastify.get(`/${asset}`, (request, reply) => {
+    fastify.get(`${basePath}${asset}`, (request, reply) => {
       const stream = fs.createReadStream(join(dist, "client", asset));
       reply.send(stream);
     });
