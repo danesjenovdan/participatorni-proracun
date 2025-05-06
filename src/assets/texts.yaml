@@ -2,26 +2,22 @@ texts:
   promise-info:
     waiting:
       m: |
-        Žal župan <strong>{{ mayor_name }}</strong> ne kaže
-        interesa, da bi v občini ljudem dal možnost neposrednega
-        odločanja z deležem proračunskih sredstev in tako omogočil večjo
-        demokracijo neki neki.
+        Župan <strong>{{ mayor_name }}</strong> se je zavezal, da bo občanom
+        omogočil soodločanje o porabi dela občinskih sredstev in jih vključil v
+        soustvarjanje lokalnega okolja, a tega za zdaj še ni uresničil.
       f: |
-        Žal županja <strong>{{ mayor_name }}</strong> ne kaže
-        interesa, da bi v občini ljudem dala možnost neposrednega
-        odločanja z deležem proračunskih sredstev in tako omogočila večjo
-        demokracijo neki neki.
+        Županja <strong>{{ mayor_name }}</strong> se je zavezala, da bo občanom
+        omogočila soodločanje o porabi dela občinskih sredstev in jih vključila
+        v soustvarjanje lokalnega okolja, a tega za zdaj še ni uresničila.
     no:
       m: |
-        Žal župan <strong>{{ mayor_name }}</strong> ne kaže
-        interesa, da bi v občini ljudem dal možnost neposrednega
-        odločanja z deležem proračunskih sredstev in tako omogočil večjo
-        demokracijo neki neki.
+        Župan <strong>{{ mayor_name }}</strong> za zdaj ne kaže pripravljenosti,
+        da bi občanom omogočil soodločanje o porabi dela občinskih sredstev in
+        jih vključil v soustvarjanje lokalnega okolja.
       f: |
-        Žal županja <strong>{{ mayor_name }}</strong> ne kaže
-        interesa, da bi v občini ljudem dala možnost neposrednega
-        odločanja z deležem proračunskih sredstev in tako omogočila večjo
-        demokracijo neki neki.
+        Županja <strong>{{ mayor_name }}</strong> za zdaj ne kaže
+        pripravljenosti, da bi občanom omogočila soodločanje o porabi dela
+        občinskih sredstev in jih vključila v soustvarjanje lokalnega okolja.
   cta: >
     Spoštovani,
 

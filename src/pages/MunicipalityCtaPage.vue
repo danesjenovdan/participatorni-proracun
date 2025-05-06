@@ -12,11 +12,11 @@
         </div>
         <div class="span-16 cta-col">
           <h1>
-            Pošlji spodnji poziv ter spodbudi uvedbo participativnega proračuna!
+            Pošlji spodnji poziv in spodbudi uvedbo participativnega proračuna!
           </h1>
           <hr />
           <!-- eslint-disable-next-line vue/no-v-html -->
-          <pre v-html="ctaText"></pre>
+          <div class="cta-text" v-html="ctaParagraphs"></div>
           <button type="button" class="copy-button" @click="onCopyClick">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,15 +73,20 @@ const infoText = computed(() => {
   let t =
     texts["promise-info"]?.[data?.pp_status]?.[data?.mayor_gender] ?? "n/a";
   t = t.replace("{{ mayor_name }}", data?.mayor_name);
-  t = t.replace("{{ municipality_name }}", `${data?.type} ${data?.name}`);
   return t;
 });
 
 const ctaText = computed(() => {
   let t = texts.cta || "n/a";
-  t = t.replace("{{ mayor_name }}", data?.mayor_name);
   t = t.replace("{{ municipality_name }}", `${data?.type} ${data?.name}`);
   return t;
+});
+
+const ctaParagraphs = computed(() => {
+  const paragraphs = ctaText.value.split("\n\n").map((p) => {
+    return `<p>${p}</p>`;
+  });
+  return paragraphs.join("\n");
 });
 
 function onCopyClick() {
@@ -154,11 +159,14 @@ useSeoMeta({
         }
       }
 
-      pre {
+      .cta-text {
         max-width: 55rem;
-        white-space: pre-wrap;
         font-family: var(--fnt-alt);
         font-size: 1.125rem;
+
+        :deep(> p) {
+          margin-bottom: 1rem;
+        }
       }
 
       .copy-button {
