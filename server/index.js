@@ -11,8 +11,9 @@ const dist = resolve("./dist");
 const serverPackage = fs.readJsonSync(join(dist, "server/package.json"));
 const ssrManifest = fs.readJsonSync(join(dist, "client/ssr-manifest.json"));
 
-const baseUrl = process.env.BASE_URL || "http://localhost:3000/";
-const basePath = baseUrl.slice(baseUrl.indexOf("/", 8));
+// const baseUrl = process.env.BASE_URL || "http://localhost:3000/";
+// const basePath = baseUrl.slice(baseUrl.indexOf("/", 8));
+const basePath = "/"; // k8s ingress will handle the base path prefix
 
 // serve all assets
 const assets = serverPackage.ssr.assets || [];
