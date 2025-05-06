@@ -177,6 +177,10 @@ useCanonicalUrl();
           font-size: 1.125rem;
           font-weight: 700;
         }
+
+        &:hover {
+          background-color: var(--clr-accent-2-light);
+        }
       }
 
       .send-to {
