@@ -125,6 +125,7 @@ defineProps({
     }
 
     small {
+      font-family: var(--fnt-main);
       display: none;
     }
 
@@ -162,7 +163,7 @@ defineProps({
     .promise {
       display: grid;
       gap: 0;
-      margin-inline: -5rem;
+      margin-inline: -2.5rem;
       margin-block: 4.5rem 3rem;
       padding-bottom: 1rem;
 

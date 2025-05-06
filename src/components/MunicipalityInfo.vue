@@ -68,8 +68,8 @@ const baseUrl = import.meta.env.BASE_URL;
       margin-bottom: 2.5rem;
 
       img {
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
       }
     }
 

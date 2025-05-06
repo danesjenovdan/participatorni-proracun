@@ -106,98 +106,105 @@ useCanonicalUrl();
   .container--wide {
     padding: 0;
 
-    .info-col {
-      border-right: 4px solid #000;
+    .grid {
+      min-height: 100vh;
+      min-height: 100dvh;
 
-      .info-content {
-        padding: 7rem 5rem 3rem;
-        font-family: var(--fnt-alt);
-        text-align: center;
+      .info-col {
+        max-width: 520px;
+        border-right: 4px solid #000;
 
-        .info-text {
-          font-size: 2rem;
-          line-height: 1.2;
-          text-align: left;
+        .info-content {
+          padding: 3.25rem 2.5rem 3rem;
+          font-family: var(--fnt-alt);
+          text-align: center;
 
-          strong {
-            font-weight: 700;
+          .info-text {
+            font-size: 1.625rem;
+            line-height: 1.2;
+            text-align: left;
+            text-wrap: balance;
+
+            strong {
+              font-weight: 700;
+            }
           }
         }
       }
-    }
 
-    .cta-col {
-      padding: 2.85rem 5rem 5.5rem;
+      .cta-col {
+        padding: 2.85rem 5rem 5.5rem;
 
-      h1 {
-        font-family: var(--fnt-alt);
-        font-size: 3rem;
-        font-weight: 700;
-      }
-
-      hr {
-        max-width: 10rem;
-        margin-block: 2.75rem 2.5rem;
-        height: 0;
-        border: 0;
-        border-top: 2px solid #000;
-
-        @include media.down(lg) {
-          margin-block: 7rem 5rem;
-        }
-      }
-
-      .cta-text {
-        max-width: 55rem;
-        font-family: var(--fnt-alt);
-        font-size: 1.125rem;
-
-        :deep(> p) {
-          margin-bottom: 1rem;
-        }
-      }
-
-      .copy-button {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 2.75rem;
-        padding: 0.325rem 1.25rem 0.325rem 0.5rem;
-        background: #fff;
-        border: 2px solid #000;
-        border-radius: 9999rem;
-        font-family: var(--fnt-alt);
-
-        svg {
-          width: 2.25rem;
-          height: 2.25rem;
-        }
-
-        span {
-          font-size: 1.125rem;
+        h1 {
+          font-family: var(--fnt-alt);
+          font-size: 3rem;
           font-weight: 700;
         }
 
-        &:hover {
-          background-color: var(--clr-accent-2-light);
+        hr {
+          max-width: 10rem;
+          margin-block: 2.75rem 2.5rem;
+          height: 0;
+          border: 0;
+          border-top: 2px solid #000;
+
+          @include media.down(lg) {
+            margin-block: 7rem 5rem;
+          }
         }
-      }
 
-      .send-to {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-family: var(--fnt-alt);
-        font-size: 1.3125rem;
+        .cta-text {
+          max-width: 55rem;
+          font-family: var(--fnt-alt);
+          font-size: 1.125rem;
 
-        input {
-          width: 300px;
-          padding: 0.25rem 0.5rem;
+          :deep(> p) {
+            margin-bottom: 1rem;
+          }
+        }
+
+        .copy-button {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 2.75rem;
+          padding: 0.325rem 1.25rem 0.325rem 0.5rem;
           background: #fff;
           border: 2px solid #000;
-          font-size: 1.125rem;
-          font-weight: 700;
-          text-align: center;
+          border-radius: 9999rem;
+          font-family: var(--fnt-alt);
+
+          svg {
+            width: 2.25rem;
+            height: 2.25rem;
+          }
+
+          span {
+            font-size: 1.125rem;
+            font-weight: 700;
+          }
+
+          &:hover {
+            background-color: var(--clr-accent-2-light);
+          }
+        }
+
+        .send-to {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-family: var(--fnt-alt);
+          font-size: 1.3125rem;
+
+          input {
+            width: 300px;
+            padding: 0.25rem 0.5rem;
+            background: #fff;
+            border: 2px solid #000;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-align: center;
+          }
         }
       }
     }
