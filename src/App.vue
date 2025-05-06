@@ -27,16 +27,17 @@ useHead({
   ],
 });
 
-// title: "TODO: Participativni proračun",
-// titleTemplate: "%s | My Site",
+const pageOgTitle = "Kje je participativni proračun?";
+const pageOgDescription =
+  "Ali so župani izpolnili svoje zaveze in občanom omogočili sooblikovanje lokalnega okolja?";
 
 useSeoMeta({
-  title: "TODO: title",
-  ogTitle: "TODO: title",
-  twitterTitle: "TODO: title",
-  description: "TODO: description",
-  ogDescription: "TODO: description",
-  twitterDescription: "TODO: description",
+  title: pageOgTitle,
+  ogTitle: pageOgTitle,
+  twitterTitle: pageOgTitle,
+  description: pageOgDescription,
+  ogDescription: pageOgDescription,
+  twitterDescription: pageOgDescription,
   ogImage: "/pp-kampanja-og.jpg",
   twitterImage: "/pp-kampanja-og.jpg",
   twitterCard: "summary_large_image",

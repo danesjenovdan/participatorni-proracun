@@ -4,23 +4,22 @@
       <div class="subtitle">
         <h2>
           ZAKAJ JE UVEDBA PARTICIPATIVNEGA PRORAČUNA
-          <em>POMEMBNA ZA DEMOKRACIJO</em>?
+          <em>POMEMBNA ZATE</em>?
         </h2>
         <p class="mb-4">
-          Participativni proračun gradi skupnost. Po eni strani krepi odnose med
-          občani, saj se morajo ti za uspeh projektnih predlogov obrniti na
-          lokalno skupnost. Najbolj uspešni projekti participativnega proračuna
-          so vedno tisti, ki naslavljajo skupne probleme in mobilizirajo večje
-          skupine ljudi.
+          Participativni proračun pomaga graditi skupnost. Po eni strani krepi
+          odnose med občani, saj se morajo ti za uspeh projektnih predlogov
+          obrniti na ljudi okoli sebe. Najbolj uspešni projekti participativnega
+          proračuna so vedno tisti, ki obravnavajo skupne probleme in
+          vključujejo večje skupine.
         </p>
         <p>
           Po drugi strani pa participativni proračun gradi tudi zaupanje med
-          občani in občino. Občani dobijo priložnost biti slišani, občina pa ima
-          boljši vpogled v stanje skupnosti in lahko sprevidi, da pogosto prav
-          prebivalke in prebivalci najbolje vedo, kako izboljšati stanje v
-          svojem okolju. Z medsebojnim zaupanjem se krepi odnos med občani in
-          občino, tako pa se postavljajo temelji za nadaljnjo, bolj kompleksno
-          vključevanje občank in občanov v delovanje občine.
+          občani in občino. Občani dobijo priložnost biti slišani, občina pa
+          boljši vpogled v stanje skupnosti. Tako lahko sprevidi, da pogosto
+          prav prebivalci najbolje vedo, kako izboljšati svoje okolje.
+          Medsebojno zaupanje krepi odnos, pri čemer se postavljajo temelji za
+          nadaljnje, bolj poglobljeno vključevanje občanov v delovanje občine.
         </p>
       </div>
       <div class="boxes">
@@ -43,7 +42,7 @@
           </div>
           <div class="content">
             <p>
-              Povečanje aktivnega sodelovanja javnosti v občinskih odločevalskih
+              Povečanje aktivnega sodelovanja občanov v občinskih odločevalskih
               procesih
             </p>
           </div>

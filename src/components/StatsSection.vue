@@ -4,7 +4,7 @@
       <div class="boxes">
         <div class="box">
           <div class="content">
-            <em>{{ numPromises }}</em> županj_ov je obljubilo uvedbo
+            <em>{{ numPromises }}</em> županov je obljubilo izvedbo
           </div>
           <div class="icon">
             <svg
@@ -34,7 +34,7 @@
         </div>
         <div class="box">
           <div class="content">
-            <em>{{ numWaiting }}</em> županj_ov obljube še ni izpolnilo
+            <em>{{ numWaiting }}</em> županov obljube ni izpolnilo
           </div>
           <div class="icon">
             <svg
@@ -94,7 +94,7 @@
         </div>
         <div class="box">
           <div class="content">
-            <em>{{ numNegative }}</em> občin še vedno ne razmišlja o uvedbi
+            <em>{{ numNegative }}</em> občin še vedno ne razmišlja o izvedbi
           </div>
           <div class="icon">
             <svg
@@ -125,10 +125,11 @@
       </div>
       <hr />
       <div class="subtitle">
-        <h2>DRŽIMO ŽUPANE ZA BESEDO!</h2>
+        <h2>ŽUPANE DRŽIMO ZA BESEDO!</h2>
         <p>
-          Izberi svojo občino in jim pošlji opomnik s spodbudo k uvedbi
-          participativnega proračuna!
+          Na spodnjem zemljevidu izberi svojo občino in preveri, ali že izvaja
+          participativni proračun. Ga še ne? Potem odločevalcem pošlji opomnik
+          in jih spodbudi, da ga uvedejo!
         </p>
       </div>
     </div>

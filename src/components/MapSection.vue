@@ -3,9 +3,9 @@
     <div class="container">
       <div class="map-wrapper">
         <div class="legend">
-          <div class="item yes">izvaja</div>
-          <div class="item waiting">obljuba še ni izpolnjena</div>
-          <div class="item no">se niso zavezali</div>
+          <div class="item yes">Se izvaja</div>
+          <div class="item waiting">Zaveza ni izpolnjena</div>
+          <div class="item no">Ni zaveze</div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" class="pattern-defs">
           <defs>

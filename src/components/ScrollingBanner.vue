@@ -3,14 +3,16 @@
     <div class="scrolling-banner">
       <div>
         <div class="scrolling-text">
-          Preverjamo zaveze! Preverjamo zaveze! Preverjamo zaveze! Preverjamo
-          zaveze! Preverjamo zaveze! Preverjamo zaveze! Preverjamo zaveze!&nbsp;
+          Preverjamo izpolnjevanje zavez! Preverjamo izpolnjevanje zavez!
+          Preverjamo izpolnjevanje zavez! Preverjamo izpolnjevanje zavez!
+          Preverjamo izpolnjevanje zavez!&nbsp;
         </div>
       </div>
       <div>
         <div class="scrolling-text">
-          Preverjamo zaveze! Preverjamo zaveze! Preverjamo zaveze! Preverjamo
-          zaveze! Preverjamo zaveze! Preverjamo zaveze! Preverjamo zaveze!&nbsp;
+          Preverjamo izpolnjevanje zavez! Preverjamo izpolnjevanje zavez!
+          Preverjamo izpolnjevanje zavez! Preverjamo izpolnjevanje zavez!
+          Preverjamo izpolnjevanje zavez!&nbsp;
         </div>
       </div>
     </div>

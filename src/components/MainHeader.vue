@@ -7,13 +7,15 @@
           <p class="intro-text">
             Pred lokalnimi volitvami leta 2022 smo vse kandidate za župane
             <a
-              href="https://participativni-proracun.danesjenovdan.si/2018/zaobljube/"
+              href="https://participativni-proracun.danesjenovdan.si/2022/zaobljube/"
               >javno pozvali</a
             >
-            k zavezi, da v svoji občini vzpostavijo
+            k zavezi, da v svoji občini izvedejo
             <strong>participativni proračun</strong>.
           </p>
-          <p class="intro-text larger">Letos preverjamo, kako jim gre.</p>
+          <p class="intro-text larger">
+            Letos preverjamo, ali so držali obljubo!
+          </p>
         </div>
         <div class="span-3"></div>
         <div class="span-8">
