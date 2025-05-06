@@ -12,6 +12,9 @@ export default defineConfig({
     host: true,
     port: process.env.PORT || 3000,
     strictPort: true,
+    hmr: {
+      port: process.env.HMR_PORT || 3001,
+    },
   },
   plugins: [yaml(), dsv(), vue(), eslint()],
 });
