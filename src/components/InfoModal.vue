@@ -5,10 +5,11 @@
       <MunicipalityInfo :data="data" />
       <MunicipalityPromise :data="data" />
       <div class="buttons">
-        <button
+        <a
           v-if="data.pp_status !== 'yes'"
-          type="button"
-          @click="onCtaClick"
+          :href="ctaResolvedRoute.href"
+          target="_blank"
+          class="button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +40,7 @@
               d="M53.979 13.499H0v3h53.984l-9.224 8.572 2.046 2.197L60 15.001 46.806 2.732 44.76 4.929l9.219 8.57z"
             />
           </svg>
-        </button>
+        </a>
         <button type="button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -98,19 +99,16 @@ const emit = defineEmits(["close"]);
 
 const router = useRouter();
 const infoModal = useTemplateRef("info-modal");
+const ctaResolvedRoute = router.resolve({
+  name: "municipality-cta",
+  params: {
+    slug: props.data.slug,
+  },
+});
 
 function close() {
   infoModal.value?.close();
   emit("close");
-}
-
-function onCtaClick() {
-  router.push({
-    name: "municipality-cta",
-    params: {
-      slug: props.data.slug,
-    },
-  });
 }
 
 onMounted(() => {
@@ -161,7 +159,8 @@ dialog.info-modal {
       flex-direction: column;
       gap: 0.85rem;
 
-      button {
+      button,
+      .button {
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -170,6 +169,7 @@ dialog.info-modal {
         background: #fff;
         border: 2px solid #000;
         border-radius: 9999rem;
+        text-decoration: none;
 
         svg {
           width: 2.25rem;

@@ -158,7 +158,7 @@ useSeoMeta({
         max-width: 55rem;
         white-space: pre-wrap;
         font-family: var(--fnt-alt);
-        font-size: 1.3125rem;
+        font-size: 1.125rem;
       }
 
       .copy-button {
