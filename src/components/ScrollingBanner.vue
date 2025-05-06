@@ -45,7 +45,7 @@
     bottom: 0;
     display: flex;
     align-items: center;
-    animation: scrollAnim 20s linear infinite;
+    animation: scrollAnim 30s linear infinite;
 
     &:last-child {
       transform: translateX(100%);

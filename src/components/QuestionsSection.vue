@@ -181,6 +181,10 @@ section.questions-section {
         }
 
         &:hover {
+          button {
+            text-decoration: underline;
+          }
+
           .arrow {
             transform: translateX(65%);
 
@@ -196,6 +200,7 @@ section.questions-section {
           button {
             background: var(--clr-accent-3);
             border-color: #000;
+            text-decoration: underline;
           }
 
           .arrow {
