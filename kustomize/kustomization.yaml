@@ -8,4 +8,4 @@ resources:
 images:
   - name: pp-preverjamo-2025
     newName: rg.fr-par.scw.cloud/djnd/pp-preverjamo-2025
-    newTag: 'f2b680bde4d5b1fd54fa7814067a1dd9be080e63'
+    newTag: '482f63d6b89a6019272d5eaab45c7985f1146235'
