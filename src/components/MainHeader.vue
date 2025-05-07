@@ -8,6 +8,7 @@
             Pred lokalnimi volitvami leta 2022 smo vse kandidate za župane
             <a
               href="https://participativni-proracun.danesjenovdan.si/2022/zaobljube/"
+              target="_blank"
               >javno pozvali</a
             >
             k zavezi, da v svoji občini izvedejo
