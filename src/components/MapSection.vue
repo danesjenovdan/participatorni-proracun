@@ -71,6 +71,7 @@
         <ZoomPan @init="onZoomPanInit">
           <MunicipalitiesMap />
         </ZoomPan>
+        <div id="map-tooltip" style="display: none"></div>
         <InfoModal
           v-if="selectedMunicipality"
           ref="info-modal"
@@ -98,23 +99,45 @@ const selectedMunicipality = ref(null);
 function disableHoverElement() {
   const hoverElement = mapEl.value.querySelector("#hover-element");
   const allPaths = mapEl.value.querySelector("#all-paths");
-  if (hoverElement && allPaths) {
+  const tooltip = document.querySelector("#map-tooltip");
+  if (hoverElement && allPaths && tooltip) {
     allPaths.querySelectorAll(".hover").forEach((el) => {
       el.classList.remove("hover");
     });
     hoverElement.setAttribute("href", "#");
+    tooltip.innerText = "";
+    tooltip.style.display = "none";
   }
 }
 
 function setHoverElement(event) {
   const hoverElement = mapEl.value.querySelector("#hover-element");
   const allPaths = mapEl.value.querySelector("#all-paths");
-  if (hoverElement && allPaths && event.target?.id) {
+  const tooltip = document.querySelector("#map-tooltip");
+  if (hoverElement && allPaths && tooltip && event.target?.id) {
     allPaths.querySelectorAll(".hover").forEach((el) => {
       el.classList.remove("hover");
     });
     event.target.classList.add("hover");
     hoverElement.setAttribute("href", `#${event.target.id}`);
+    tooltip.innerText = event.target.getAttribute("data-name");
+    tooltip.style.display = "block";
+  }
+}
+
+function updateTooltipPosition(event) {
+  const tooltip = document.querySelector("#map-tooltip");
+  if (tooltip) {
+    const x = event.clientX + 15;
+    const y = event.clientY + 20;
+    tooltip.style.left = `${x}px`;
+    tooltip.style.top = `${y}px`;
+    if (tooltip.offsetWidth + x > window.innerWidth) {
+      tooltip.style.left = `${x - tooltip.offsetWidth - 20}px`;
+    }
+    if (tooltip.offsetHeight + y > window.innerHeight) {
+      tooltip.style.top = `${y - tooltip.offsetHeight - 20}px`;
+    }
   }
 }
 
@@ -144,6 +167,7 @@ function onZoomPanInit() {
 
       if (mapSections && hoverElement) {
         allPaths.addEventListener("mouseleave", disableHoverElement);
+        allPaths.addEventListener("mousemove", updateTooltipPosition);
 
         // eslint-disable-next-line no-restricted-syntax
         for (const section of mapSections) {
@@ -181,6 +205,7 @@ onBeforeUnmount(() => {
   if (mapEl.value) {
     const allPaths = mapEl.value.querySelector("#all-paths");
     allPaths.removeEventListener("mouseleave", disableHoverElement);
+    allPaths.removeEventListener("mousemove", updateTooltipPosition);
 
     mapElements.value.forEach(({ element }) => {
       element.removeEventListener("mouseenter", setHoverElement);
@@ -306,6 +331,21 @@ section.map-section {
           }
         }
       }
+    }
+
+    #map-tooltip {
+      position: fixed;
+      top: 0;
+      left: 0;
+      border: 2px solid #000;
+      background-color: #fff;
+      padding: 0.125em 0.5em;
+      border-radius: 3px;
+      font-family: var(--fnt-main);
+      font-size: 0.875rem;
+      font-weight: 500;
+      white-space: nowrap;
+      z-index: 1002;
     }
   }
 }
