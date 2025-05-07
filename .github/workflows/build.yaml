@@ -30,7 +30,7 @@ jobs:
           context: .
           build-args: |
             BASE_URL=/
-            VITE_CANONICAL_URL=https://pp2025.lb.djnd.si
+            VITE_CANONICAL_URL=https://participativni-proracun.danesjenovdan.si
           push: true
           tags: |
             rg.fr-par.scw.cloud/djnd/pp-preverjamo-2025:${{ github.sha }}

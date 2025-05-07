@@ -5,15 +5,26 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "https://pp2025.lb.djnd.si, https://pp2025.lb.djnd.si"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://participativni-proracun.danesjenovdan.si, https://participativni-proracun.djnd.si"
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - pp2025.lb.djnd.si
+        - participativni-proracun.danesjenovdan.si
+        - participativni-proracun.djnd.si
       secretName: pp-preverjamo-2025-tls
   rules:
-    - host: pp2025.lb.djnd.si
+    - host: participativni-proracun.danesjenovdan.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pp-preverjamo-2025
+                port:
+                  number: 3000
+    - host: participativni-proracun.djnd.si
       http:
         paths:
           - path: /

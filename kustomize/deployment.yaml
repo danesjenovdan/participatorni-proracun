@@ -30,4 +30,4 @@ spec:
             - name: BASE_URL
               value: /
             - name: VITE_CANONICAL_URL
-              value: https://pp2025.lb.djnd.si
+              value: https://participativni-proracun.danesjenovdan.si
