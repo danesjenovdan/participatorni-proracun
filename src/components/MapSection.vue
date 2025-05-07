@@ -142,8 +142,9 @@ function updateTooltipPosition(event) {
 
 function clickElement(event) {
   const hoverElement = mapEl.value.querySelector("#hover-element");
-  if (hoverElement && event.target?.id) {
-    const slug = event.target.id;
+  const targetEl = event.target.closest("[data-name]");
+  if (hoverElement && targetEl?.id) {
+    const slug = targetEl.id;
     const data = mapElements.value.find((m) => m.slug === slug);
     if (selectedMunicipality.value === data) {
       selectedMunicipality.value = null;
