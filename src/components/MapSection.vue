@@ -236,7 +236,7 @@ function showManipulationOverlay(type) {
   }
   instructionsTimeout.value = setTimeout(() => {
     instructionsActive.value = false;
-  }, 1000);
+  }, 150);
 }
 
 onBeforeUnmount(() => {
@@ -401,7 +401,7 @@ section.map-section {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(0, 0, 0, 0.66);
       z-index: 1001;
       opacity: 0;
       pointer-events: none;
