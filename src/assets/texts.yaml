@@ -1,5 +1,14 @@
 texts:
   promise-info:
+    yes:
+      m: |
+        Župan <strong>{{ mayor_name }}</strong> že omogoča občanom soodločanje o
+        porabi dela občinskih sredstev in jih vključuje v soustvarjanje
+        lokalnega okolja.
+      f: |
+        Županja <strong>{{ mayor_name }}</strong> že omogoča občanom soodločanje
+        o porabi dela občinskih sredstev in jih vključuje v soustvarjanje
+        lokalnega okolja.
     waiting:
       m: |
         Župan <strong>{{ mayor_name }}</strong> se je zavezal, da bo občanom
@@ -19,6 +28,14 @@ texts:
         pripravljenosti, da bi občanom omogočila soodločanje o porabi dela
         občinskih sredstev in jih vključila v soustvarjanje lokalnega okolja.
   cta:
+    yes: >
+      Veseli nas, da {{ municipality_name }} že izvaja participativni proračun in s tem občankam in občanom omogoča soodločanje o porabi dela občinskih sredstev ter jih vključuje v soustvarjanje lokalnega okolja.
+
+
+      Participativni proračun prinaša številne koristi, saj povečuje učinkovitost porabe sredstev, spodbuja hitrejšo gospodarsko rast, zmanjšuje socialne razlike, omogoča boljše upravljanje z infrastrukturo in krepi občutek pripadnosti lokalni skupnosti. Poleg tega povečuje zaupanje v demokratične procese in spodbuja aktivno sodelovanje občank in občanov.
+
+
+      Več o procesu participativnega proračuna v občini: {{ evidence_links }}.
     waiting: >
       Spoštovani,
 

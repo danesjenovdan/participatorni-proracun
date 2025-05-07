@@ -8,6 +8,7 @@
     <div :class="['promise', `promise-${data.pp_status}`]">
       <template v-if="data.pp_status === 'yes'">
         <span>ŽE IZVAJA</span>
+        <small>participativni proračun</small>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
