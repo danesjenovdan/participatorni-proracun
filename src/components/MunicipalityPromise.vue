@@ -124,6 +124,10 @@ defineProps({
       font-weight: 800;
       line-height: 1;
       text-align: left;
+
+      @include media.down(md) {
+        font-size: 1.5rem;
+      }
     }
 
     small {

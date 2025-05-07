@@ -45,6 +45,11 @@ const baseUrl = import.meta.env.BASE_URL;
       width: 5rem;
       height: 5rem;
       margin-inline: auto;
+
+      @include media.down(md) {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
 
@@ -56,12 +61,20 @@ const baseUrl = import.meta.env.BASE_URL;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.1;
+
+      @include media.down(md) {
+        font-size: 0.875rem;
+      }
     }
 
     .value {
       font-size: 1.5rem;
       font-weight: 700;
       line-height: 1.2;
+
+      @include media.down(md) {
+        font-size: 1.25rem;
+      }
     }
   }
 

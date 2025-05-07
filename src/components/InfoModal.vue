@@ -119,9 +119,12 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 dialog.info-modal {
   width: 100%;
   max-width: 25rem;
+  max-width: min(25rem, 95vw);
   margin: auto;
   padding: 0;
   background-color: var(--clr-light-gray);
@@ -202,14 +205,27 @@ dialog.info-modal {
         border-radius: 9999rem;
         text-decoration: none;
 
+        @include media.down(md) {
+          padding: 0.5rem 0.75rem;
+        }
+
         svg {
           width: 2.25rem;
           height: 2.25rem;
+
+          @include media.down(md) {
+            width: 1.75rem;
+            height: 1.75rem;
+          }
         }
 
         span {
           font-size: 1.125rem;
           font-weight: 700;
+
+          @include media.down(md) {
+            font-size: 1rem;
+          }
         }
 
         svg.arrow {
