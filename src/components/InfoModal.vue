@@ -42,7 +42,7 @@
             />
           </svg>
         </a>
-        <button type="button" class="btn-share">
+        <button type="button" class="btn-share" @click="openShareModal">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 37 32"
@@ -81,6 +81,24 @@
       </div>
     </div>
   </dialog>
+  <dialog ref="share-modal" class="share-modal">
+    <button class="close" @click.prevent="closeShareModal">
+      <span>&times;</span>
+    </button>
+    <div class="share-content">
+      <OgImage :data="data" />
+      <div class="share-link">
+        <label>
+          <span>Kopiraj povezavo in jo deli naprej!</span>
+          <input
+            type="text"
+            :value="ctaShareFullLink"
+            onclick="this.select();"
+          />
+        </label>
+      </div>
+    </div>
+  </dialog>
 </template>
 
 <script setup>
@@ -88,6 +106,7 @@ import { onMounted, useTemplateRef } from "vue";
 import { useRouter } from "vue-router";
 import MunicipalityInfo from "./MunicipalityInfo.vue";
 import MunicipalityPromise from "./MunicipalityPromise.vue";
+import OgImage from "./OgImage.vue";
 
 const props = defineProps({
   data: {
@@ -98,14 +117,27 @@ const props = defineProps({
 
 const emit = defineEmits(["close"]);
 
+const canonicalUrl = import.meta.env.VITE_CANONICAL_URL;
+
 const router = useRouter();
 const infoModal = useTemplateRef("info-modal");
+const shareModal = useTemplateRef("share-modal");
+
 const ctaResolvedRoute = router.resolve({
   name: "municipality-cta",
   params: {
     slug: props.data.slug,
   },
 });
+const ctaShareFullLink = `${canonicalUrl}${ctaResolvedRoute.href}`;
+
+function openShareModal() {
+  shareModal.value?.showModal();
+}
+
+function closeShareModal() {
+  shareModal.value?.close();
+}
 
 function close() {
   infoModal.value?.close();
@@ -121,14 +153,16 @@ onMounted(() => {
 <style lang="scss" scoped>
 @use "../assets/styles/media";
 
-dialog.info-modal {
+dialog {
   width: 100%;
-  max-width: 25rem;
-  max-width: min(25rem, 95vw);
   margin: auto;
   padding: 0;
   background-color: var(--clr-light-gray);
   border: 4px solid #000;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.66);
+  }
 
   button.close {
     position: absolute;
@@ -143,15 +177,17 @@ dialog.info-modal {
     overflow: hidden;
     font-size: 3rem;
     line-height: 1;
+    z-index: 2;
 
     span {
       margin-top: -0.75rem;
     }
   }
+}
 
-  &::backdrop {
-    background-color: rgba(0, 0, 0, 0.66);
-  }
+dialog.info-modal {
+  max-width: 25rem;
+  max-width: min(25rem, 95vw);
 
   .info-content {
     padding: 2rem 1.5rem;
@@ -244,6 +280,53 @@ dialog.info-modal {
           svg.arrow {
             animation: bounceAnim 0.5s forwards;
           }
+        }
+      }
+    }
+  }
+}
+
+dialog.share-modal {
+  max-width: 1200px;
+  max-width: min(1200px, 95vw);
+
+  .share-content {
+    .og-image {
+      @include media.down(lg) {
+        display: none;
+      }
+    }
+
+    .share-link {
+      padding: 2rem 1.5rem;
+      text-align: center;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--fnt-alt);
+
+        span {
+          margin-bottom: 1rem;
+          font-size: 1.75rem;
+          font-weight: 700;
+
+          @include media.down(md) {
+            font-size: 1.5rem;
+          }
+        }
+
+        input {
+          display: block;
+          width: 100%;
+          max-width: 50rem;
+          padding: 0.5rem 1rem;
+          border: 3px solid var(--clr-dark-purple);
+          font: inherit;
+          font-size: 1.25rem;
+          font-weight: 500;
+          text-align: center;
         }
       }
     }
