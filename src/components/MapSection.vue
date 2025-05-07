@@ -268,7 +268,7 @@ section.map-section {
   overflow: hidden;
 
   > .container {
-    margin-inline: -1.5rem;
+    padding-inline: 0;
   }
 
   .map-wrapper {
