@@ -110,20 +110,39 @@ useCanonicalUrl();
       min-height: 100vh;
       min-height: 100dvh;
 
+      @include media.down(lg) {
+        display: flex;
+        flex-direction: column;
+      }
+
       .info-col {
         max-width: 520px;
         border-right: 4px solid #000;
+
+        @include media.down(lg) {
+          max-width: initial;
+          border-right: 0;
+          border-bottom: 4px solid #000;
+        }
 
         .info-content {
           padding: 3.25rem 2.5rem 3rem;
           font-family: var(--fnt-alt);
           text-align: center;
 
+          @include media.down(lg) {
+            padding-inline: 1.5rem;
+          }
+
           .info-text {
             font-size: 1.625rem;
             line-height: 1.2;
             text-align: left;
             text-wrap: balance;
+
+            @include media.down(md) {
+              font-size: 1.3125rem;
+            }
 
             strong {
               font-weight: 700;
@@ -135,10 +154,22 @@ useCanonicalUrl();
       .cta-col {
         padding: 2.85rem 5rem 5.5rem;
 
+        @include media.down(lg) {
+          padding-inline: 1.5rem;
+        }
+
         h1 {
           font-family: var(--fnt-alt);
           font-size: 3rem;
           font-weight: 700;
+
+          @include media.down(lg) {
+            font-size: 2.5rem;
+          }
+
+          @include media.down(md) {
+            font-size: 2rem;
+          }
         }
 
         hr {
@@ -147,16 +178,16 @@ useCanonicalUrl();
           height: 0;
           border: 0;
           border-top: 2px solid #000;
-
-          @include media.down(lg) {
-            margin-block: 7rem 5rem;
-          }
         }
 
         .cta-text {
           max-width: 55rem;
           font-family: var(--fnt-alt);
           font-size: 1.125rem;
+
+          @include media.down(md) {
+            font-size: 1rem;
+          }
 
           :deep(> p) {
             margin-bottom: 1rem;
@@ -195,6 +226,12 @@ useCanonicalUrl();
           gap: 0.5rem;
           font-family: var(--fnt-alt);
           font-size: 1.3125rem;
+
+          @include media.down(md) {
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 1.125rem;
+          }
 
           input {
             width: 300px;

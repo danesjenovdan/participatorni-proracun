@@ -107,6 +107,8 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 .municipality-promise {
   .promise {
     display: flex;
@@ -167,10 +169,19 @@ defineProps({
       margin-block: 4.5rem 3rem;
       padding-bottom: 1rem;
 
+      @include media.down(lg) {
+        margin-inline: -1.5rem;
+        margin-block: 3.5rem 2.5rem;
+      }
+
       span {
         order: 1;
         font-size: 2.25rem;
         text-align: center;
+
+        @include media.down(md) {
+          font-size: 2rem;
+        }
       }
 
       small {
@@ -179,6 +190,10 @@ defineProps({
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.2;
+
+        @include media.down(md) {
+          font-size: 1.25rem;
+        }
       }
 
       svg {

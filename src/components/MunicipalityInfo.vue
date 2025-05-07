@@ -34,6 +34,8 @@ const baseUrl = import.meta.env.BASE_URL;
 </script>
 
 <style lang="scss" scoped>
+@use "../assets/styles/media";
+
 .municipality-info {
   .coat {
     margin-bottom: 1.5rem;
@@ -70,6 +72,11 @@ const baseUrl = import.meta.env.BASE_URL;
       img {
         width: 7rem;
         height: 7rem;
+
+        @include media.down(md) {
+          width: 5rem;
+          height: 5rem;
+        }
       }
     }
 
@@ -79,10 +86,18 @@ const baseUrl = import.meta.env.BASE_URL;
 
       .key {
         font-size: 1.3125rem;
+
+        @include media.down(md) {
+          font-size: 1.125rem;
+        }
       }
 
       .value {
         font-size: 2rem;
+
+        @include media.down(md) {
+          font-size: 1.75rem;
+        }
       }
     }
   }
