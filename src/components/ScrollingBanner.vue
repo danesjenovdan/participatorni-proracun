@@ -49,9 +49,8 @@
     align-items: center;
     animation: scrollAnim 30s linear infinite;
 
-    &:last-child {
-      transform: translateX(100%);
-      animation-delay: -10s;
+    &:nth-child(2) {
+      animation-delay: -15s;
     }
 
     .scrolling-text {
