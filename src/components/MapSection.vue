@@ -188,6 +188,12 @@ function onMapInit() {
             // eslint-disable-next-line no-console
             console.warn(`Missing data with slug "${slug}"`);
           }
+          if (name !== data.name) {
+            // eslint-disable-next-line no-console
+            console.warn(
+              `Data name "${data.name}" does not match the section name "${name}"`,
+            );
+          }
 
           mapElements.value.push({ name, slug, data, element: section });
 

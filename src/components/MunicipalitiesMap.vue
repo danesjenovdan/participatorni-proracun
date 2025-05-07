@@ -110,7 +110,7 @@
         />
         <path
           d="M378 461h-1v2-1h-1v1h-3v1h-4v1-1h1-1 1v-1h-1v-2h1l-1-1h2v-2h-1v-4h-1v-3h-1 1-1v-1h-1v-1 1l-1-1h-1v-1h-1v1h-1v1l-1-1-1 1h-3v-1h-2v-1l-1-1v1h-2v-1h-1v1-1h-1v-1h-1v1-1h-3l-1 1h-1v1h-2v1h-3v-1h-1v1h-1v2l-1 1v1h-3v2h-1 1v1h1l1 1v1h-1v1h-4v1h-1v-1h-6v-1h-3l1-1h-5v1h-1v-2h1v-3h1v-1h-1v-1h-1v-1h2v-1h1l1-1v-1h1v-5h2v-1h1v-5h-1v-3h1-1v-3h1v-3h1v-1h1v-2h3v-3h1v-1h7v1h1v-2h1-1 1l-1-1h1v-2h3v-1h2v1h4v1h3v1h4l1 1 1-1h4v2h1l1 1v-1h1v1h2v1h1v2h1v1h-1 1v3-1h5l1-1v1h-1v1h1v1l1-1v2h1v1h6l1-2h-2l-1-1h-2v-2h-1 1v-1h2v-1h4v-1 1h1v-1 1h1v1h-1 1v2h1v-1 1h2v1h1v1h1v1h2l1-1h4v1h1v-1h1v1h1-1v1h1-1v4h1v1h1l-1 1h2v1h-2l1 1v1-1h1v-1h1v2h1v2h1v4h1l-1 1v-1h-1l-1 1v2h-1 1v1h1v1h1v1h1v2-1 1h-2v1l-1 1h-1v1h-1v-2 1h-1v-2h-3v-1h-1v-1h-4v1h-1l-1 1h-1l-1 1v-1 1h-5l-1 1v-1h-3v1h-1l-1 1v1h-2v1h1v2h1Z"
-          data-name="Dobrova-Polhov Gradec"
+          data-name="Dobrova – Polhov Gradec"
           data-slug="dobrova-polhov-gradec"
         />
         <path
@@ -140,7 +140,7 @@
         />
         <path
           d="M282 433v-1 1-2h-1v1h-1v-2h-1v-1 1l-1-1h-1v1h-2v-1h-1v-1h-2v-1h-2v1-1h-1v1l-1-1h-1v-1h-3v1h-1v1h-1v-1h-1v1h-1v2h-1v1h1-1v1h1v1-1h2v-1 1h3v-1h1v1h1v1h2v1h1-1v4h-1l-1-1h-1v-1h-2v-1h-1v-1h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h1v-1h-1v-1h-1v-5h1v-3h1v-1h1v-1h-1 2v-3h1l1-1h1v-1h2v-5h1v-1h1v-2h1v-1h1v-1h1v-1h-1v-1l1-1v-2h2v-2h1v-1h1v-2h1v-2h1v-1 1h1-1l1 1h-1 2v-1h2v-2h1v-3h1l-1-1h-1v-1h-1 2v-1 1h4v-1h2v2h1v1h3l-3-2v-1h1l1-1h1v1h1v-1l1 1h1l1-1v-1 1h2v-1h1v-1h2v1h1l1-1 1 1h3v-1h1v1h2v-1h1v1-1h1v1h1v-1h2l1-1v1h3v1h1v-1h1v-1h2v-1 1h4-1v1h1v1h1-1 1v2h1v-1 1-1h1v1h1l1 1h-1v1h-1v1h1-1v1h-1v1h-1v1h-1v3h-1v-1h-3v1h1v-1 1h-1v1h1v1h1v1h-1l-1 1h-1 1-1v2l-1 1h-1v1h2v1h2v1h-1v1h1v1h1v1h-1 1-1v1h-1v1h-1v2h-1v-1 3h1v2h3v1h1v1h3v-1 4h1v3h1v1h-1v3h-3v2h-1v1h-1v3h-1v3h1-1v3h1v5h-1l-1 1h-1v5h-1v1l-1 1h-1v1h-2v1h1-2v-1h-1 1v1h-1v-1h-1v1h-1v-2h-2v-1h-1v-1h-1v-1h-1l1-1-1-1v-1h-2v-1h-1v-2h-2v-3h-1v-2h-1v-1h-2v-1h-1 1-1v-1 1h-1l-1-1h-1v-1 1h-1v-1 1h-1v-2 1h-1v1-1l-1 1h-1v1h-2v-1h-1v-1h-2v1h-1l-1 1Z"
-          data-name="Gorenja vas-Poljane"
+          data-name="Gorenja vas – Poljane"
           data-slug="gorenja-vas-poljane"
         />
         <path
@@ -180,7 +180,7 @@
         />
         <path
           d="M212 661h1l1-1 1-1h1v-1h1v-2h-1l-1-1h-1v-1h-1v-1h-1v-1h-2v-1h1v1h6v-1h1v1h2l1 1h1v-1h2v1l1-1h2v1h1v2h-1 11v1l1-1v1-1 1-1h1v1h1v1h1v1h1v1h2v1h-1v1h1v1h3v1l1 1v1h1v1h2v1-1h1v1h1l1 1v-1h2l1-1h1v1h7v-1h5v1h-1v1l-1 1h-1v2h-1v3h3v1l1-1h2v-1h2v-4h1l1-1v1-1h3v-1h1v1h1v1h2v1h1v1h1l1-1v1h1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1l-1-1v1h-1 1-1v1h-1v1h1v3h-1v1l1 1v4h-1 2v2h1v-1h1v-1h1v-1h2v1h2v2h-1v2h-1v5h-1v1h-1v1h-1v1h-1v3h1v2l-1 1v1h1v1h-1v2h-1v1h-1l-1 1v1h-1v3l1-1h4v1l1 1v1h1v2h1l1 1v-1h1v-2h1l1-1v6h1v3l1 1v2h1-2v-1 4l-1 1h-1l-1 1h-1v-1h-12v-1h-4v-1h-1v-1l-1-1-1-1h-1v-1h-2v-1h-1v-1h-3v-1l-2-1v-1h-1l-1-1v-1h-1v-1h-1v-1h-1l-1-1-1-1-2-2-1-1h-4v1-1h-1l-1-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-2h-1v-2h-1v-1h-1v-2h-1v-1l-1-1v-1l-1-2h-3l-1 1h-3l-1 1h-5v1h-1v-1l-1-1v-1l-1-1v-1l-1-1v-1h-1v-1l-1-1h-2v1h-1v-1h-1v-1h-1v-1h-1v-3h-1v-3h-1v-2h-1v-2h1v-2h-1v-1l-1-1v-2h-1v-1h-2v-1h-1v-3h2v-1h2v-1h1v-1h2l1-1v-1h1v-1h3v-1h1v-1Z"
-          data-name="Hrpelje-Kozina"
+          data-name="Hrpelje – Kozina"
           data-slug="hrpelje-kozina"
         />
         <path
@@ -380,7 +380,7 @@
         />
         <path
           d="M108 519v-1h1v-1h4-1v1h-1 1-1 1v1-1 1h1-1v1h5v1-1h3v-1 1h1v-1h1v1h1v1h1v1h-1v1l-1 1h1-1l-1-1v2h-1v-1h-7v2h1v1h4v4h-1v2h1v1h4v1h2v1h2v1h3v1h3v1h4v-3h1v-1 1h1v1h6v1h2v1l1 1v3h-1v5h-1v1h-1l-1 1h-1v1h-1v1h-5v3h-1v4h-1v3h-4v-1 1h-7v-1h-2l-1-1h-17l-1-1v-1h-1v-4l-1-1v-1l-1-1v-1h-1l-1-1-1-1h-1v-1h1v-1h-1 1v-4h-1 1v-1h1v-1l1-1v-2h1v-3h1v-1h1v-1h1v-2h-1v-1h-1v-3h1v-1l1-1v-1h1v-2h2v-1h2v-1h1Z"
-          data-name="Miren-Kostanjevica"
+          data-name="Miren – Kostanjevica"
           data-slug="miren-kostanjevica"
         />
         <path
@@ -495,7 +495,7 @@
         />
         <path
           d="m849 260-1 1h-1l-1-1h-1v-1h-1v-1h-2v-3h-1v-1h-1v-2h-4v-1 1h-2v-1h-1v-1h-5 1v-1h1v-1h1v-1h-1v-1h-4v-1 1-1h-2v-1h-3l-1-1h-2v1h-1v-2h-1l-1-1h-1v-1h-1v-1h-1 1-1v-1h-1l-1-1v-2h-2v-1h-2v-1h-1v1-1h-4v-1h-1v-3h-1v-2h2v-1h1v-1h-1v-1h-2v-1h-1 1v-1h5v1l1-1v1h2v1h1v1h3v2h2v1h1v1h1v-2l1-1h1v-1h3v-1h1v1h2v3h-1l1 1h2v1-1 1-1h1v1-1 1-1h1v1-1h1v1h3v2h1v1l1 1h1-1 1-1 1v1h1v1l1-1h1v-1h7v1h1v-1h1v-1h1v-1 1-1h2l1 1h1v-1 1h3v-1h1v1h1v1h1v1h1v2h1v1h1v2h1v1h-2v1h-1 1v2h1v2l1 1v1h1v1l1-1h1v3h-1v1l-1 1v-1 1l-2 1v-1l-1 1v1h-1l-1 1h-1v1h-2v1h-2v1h-2v1h-1Z"
-          data-name="Rače-Fram"
+          data-name="Rače – Fram"
           data-slug="race-fram"
         />
         <path
@@ -803,7 +803,7 @@
         />
         <path
           d="M850 211h1v2h1v2h1v2h-5v1h-1v1h1v2h1v1l1 1 1 1h1v1h1v2h1v2h1v2h1v1l1 1v1l1 1h-1v-1h-1v-1h-1v-1h-1v1h-3v-1 1h-1l-1-1h-2v1-1 1h-1v1h-1v1h-1v-1h-7v1h-1l-1 1v-1h-1v-1h-1 1-1 1-1l-1-1v-1h-1v-2h-3v-1h-1v1-1h-1v1-1 1-1h-1v1-1 1-1h-2l-1-1h1v-3h-2v-1h-1v1h-3v1h-1l-1 1v2h-1v-1h-1v-1h-2v-2h-3v-1h-1v-1h-2v-1l-1 1v-1h-5v1h-2v-4h-1v-1l1-1h-1v-1h1v-2h1v-2h2v-1h4v-1h1v-1h1v-1h2l1-1h4v-1l1 1v-1h3v-1h3v-1h2v-1h1v3h-1v1h1v1l1-1v1l1-1v1h2v1h4v1l1-1h1v1h1v-1h3v-3 1l1-1v1l1-1h2v1h-1l1 1h1v-1h2v-1h3v-1h1v1h1v1h-1v1h-1 1v1h1v2h1Z"
-          data-name="Hoče-Slivnica"
+          data-name="Hoče – Slivnica"
           data-slug="hoce-slivnica"
         />
         <path
@@ -918,7 +918,7 @@
         />
         <path
           d="M115 507v-2h1v-2h1v-1h1v-1h1v-2h-1 1v-1 1h1v1-1h1v1h1v1h1v1h-1 1v1h1v1h1v1h2v-1h3v-1 1h1-1v1h1-1 1-1 1-1 1v1h1v1h1v-1h1v-1 1h1v-1h1v1h-1 1v1l-1 1v1h1-1v2-1 3h-1v1h1-2v-1h-1v-1h-1v-1 1h-1v1-1h-1v1h-1v1-1h-1v1h1v1-1 2-1 1h-4v1h2v1h-1 1v1h-1v1h-1 1-1v1h-1v-1h-1v-1h-1v1h-1v-1 1h-3v1-1h-5v-1h1-1v-1 1-1h-1 1-1 1v-1h1-4v-2h1l1-1v-3l1-1v-1h1v-1h1l1-1Z"
-          data-name="Šempeter-Vrtojba"
+          data-name="Šempeter – Vrtojba"
           data-slug="sempeter-vrtojba"
         />
         <path
@@ -998,7 +998,7 @@
         />
         <path
           d="M655 488h1v1-1h1v-2h1v-1h-1v-1h1v-2h1v2h1v3h1v1h1v1h2v1h-1v1h1v3h2v2h2v1h1v1h1v1h1v1h1v2h3v2h2v1h1v1h4v1h1v1h5v1h-1v1h-1v1h-1l-1 1h-1v1h-1v3h1v2h-1v2h2v2h1v1h1l-1 1h-1v1h-1v1h-1v2h-1 1l-1 1h1-1v1h-2 2l1 1h-1v1h-1v1h-1v1h-1v1h-3v1h-1 1-1v2h-2v1-1h-1v1h-1v1h-1v-1h-2v-1h-4v-1h-1v-1h-1v1h-2v-1h-1v-1h-1v1h-2v-1h-1v-1h-4v-1h-2v-1h-1v-1h-1v-1 1-1h-1l-1-1v-1h-1l-1-1h-1v-1h-1v-2h2l1-1v-2h-1v-1h1v-2l1-1h1-1v-1h-1v-2h4v-3h-1v-1h2v-1h-1v-1h-1v1-1h-3v-2 1-3h-2v-2h1v-4h6v-3h-1v-2h2-1l1-1v1-1h1v1-1h1v-1h1v-2h1v3h2v-2h1v-1l-1-1Z"
-          data-name="Mokronog-Trebelno"
+          data-name="Mokronog – Trebelno"
           data-slug="mokronog-trebelno"
         />
         <path
@@ -1008,7 +1008,7 @@
         />
         <path
           d="M147 509v2h-1v1h1v2h-1 1l-1 1h1-1 1-1 1-1v2h2-3v2h-2v1h-2v1h-1 1v2h-1v1h-1v-1h-1v2h1v2h1-1 1v1h1v1h1l1 1h1v1h1v1h1v4h-1v-1 1h-1 1v1h1v1h-2v-1h-6v-1h-1v-1 1h-1v3h-4v-1h-3v-1h-3v-1h-2v-1h-2v-1h-4v-1h-1v-2h1v-4h-4v-1h-1v-2h7v1h1v-2l1 1h1-1l1-1v-1h1v-2h1l-1-1h1v1-1h1v-1h-1 1v-1h-2v-1h4v-1 1-2 1-1h-1v-1h1v1-1h1v-1h1v1-1 1-1h1v-1 1h1v1h1v1h2-1v-1h1v-3 1-2h1-1v-1l1-1v-1h1v-1 1-1l1 1h2v1h1v-2h2v-1h1v1h1v-1 1h3v1h-1v3Z"
-          data-name="Renče-Vogrsko"
+          data-name="Renče – Vogrsko"
           data-slug="rence-vogrsko"
         />
         <path
@@ -1043,7 +1043,7 @@
         />
         <path
           d="M385 467v1-1h-1v1h-1v1h-1v1h-1v1h-1 1v2-1h-1v-2h-1v1h-2v1h-1l-1-1-1-1h-1v-1h-2v-1h1-1 1-1v-1h-1v-1h-1v-2h4v-1h3v-1h1v1-2h1-1v-2h-1v-1h2v-1l1-1h1v-1h3v1l1-1h3v1h1v1h1v1h3v6h1v1l1 1h1-1l1 1h-10Z"
-          data-name="Log-Dragomer"
+          data-name="Log – Dragomer"
           data-slug="log-dragomer"
         />
         <path

@@ -2,6 +2,7 @@
 import { CanonicalPlugin } from "unhead/plugins";
 import { createSSRApp } from "vue";
 import App from "./App.vue";
+import GeneratedOgImage from "./pages/GeneratedOgImage.vue";
 import MunicipalityCtaPage from "./pages/MunicipalityCtaPage.vue";
 import RootPage from "./pages/RootPage.vue";
 
@@ -17,6 +18,11 @@ export const routes = [
     name: "municipality-cta",
     path: "/pobuda/:slug",
     component: MunicipalityCtaPage,
+  },
+  {
+    name: "generated-og-image",
+    path: "/generated/og-image/:slug",
+    component: GeneratedOgImage,
   },
 ];
 
