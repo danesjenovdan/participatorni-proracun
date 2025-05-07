@@ -68,9 +68,9 @@
             </pattern>
           </defs>
         </svg>
-        <ZoomPan @init="onZoomPanInit">
+        <div class="pan-zoom">
           <MunicipalitiesMap />
-        </ZoomPan>
+        </div>
         <div id="map-tooltip" style="display: none"></div>
         <InfoModal
           v-if="selectedMunicipality"
@@ -85,11 +85,10 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, ref } from "vue";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 import { getMunicipalitiesData } from "../utils/municipalities-data.js";
 import InfoModal from "./InfoModal.vue";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
-import ZoomPan from "./ZoomPan.vue";
 
 const municipalitiesData = getMunicipalitiesData();
 const mapEl = ref(null);
@@ -154,10 +153,8 @@ function clickElement(event) {
   }
 }
 
-function onZoomPanInit() {
-  mapEl.value = document.querySelector(
-    ".pinch-scroll-zoom .municipalities-map svg",
-  );
+function onMapInit() {
+  mapEl.value = document.querySelector(".municipalities-map svg");
   if (mapEl.value) {
     const allPaths = mapEl.value.querySelector("#all-paths");
 
@@ -200,6 +197,10 @@ function onZoomPanInit() {
     }
   }
 }
+
+onMounted(() => {
+  onMapInit();
+});
 
 onBeforeUnmount(() => {
   if (mapEl.value) {
@@ -290,7 +291,7 @@ section.map-section {
       height: 0;
     }
 
-    .zoom-pan {
+    .pan-zoom {
       pointer-events: none;
 
       :deep(.municipalities-map) {
