@@ -16,7 +16,7 @@ export const routes = [
   },
   {
     name: "municipality-cta",
-    path: "/pobuda/:slug",
+    path: "/zaveza/:slug",
     component: MunicipalityCtaPage,
   },
   {
