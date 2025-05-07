@@ -50,6 +50,7 @@
 </template>
 
 <script setup>
+import { useSeoMeta } from "@unhead/vue";
 import { computed, useSSRContext } from "vue";
 import { useRoute } from "vue-router";
 import textsYaml from "../assets/texts.yaml";
@@ -97,6 +98,13 @@ function onCopyClick() {
 }
 
 useCanonicalUrl();
+
+const pageOgImage = `/generated/og-images/og-image-${data.slug}.png`;
+
+useSeoMeta({
+  ogImage: pageOgImage,
+  twitterImage: pageOgImage,
+});
 </script>
 
 <style lang="scss" scoped>
