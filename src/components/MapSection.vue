@@ -68,16 +68,22 @@
             </pattern>
           </defs>
         </svg>
-        <PanZoom @ready="onPanZoomReady">
+        <PanZoom
+          @ready="onPanZoomReady"
+          @show-manipulation-overlay="showManipulationOverlay"
+        >
           <MunicipalitiesMap />
         </PanZoom>
         <div id="map-tooltip" style="display: none"></div>
+        <div :class="{ 'map-overlay': true, active: instructionsActive }">
+          <div class="text">{{ instructionsText }}</div>
+        </div>
         <InfoModal
           v-if="selectedMunicipality"
           ref="info-modal"
           :key="selectedMunicipality?.slug"
           :data="selectedMunicipality?.data"
-          @close="selectedMunicipality = null"
+          @close="onCloseModal"
         />
       </div>
     </div>
@@ -96,6 +102,9 @@ const mapEl = ref(null);
 const mapElements = ref([]);
 const selectedMunicipality = ref(null);
 const panZoom = ref(null);
+const instructionsActive = ref(false);
+const instructionsText = ref("");
+const instructionsTimeout = ref(null);
 
 function disableHoverElement() {
   const hoverElement = mapEl.value.querySelector("#hover-element");
@@ -108,21 +117,6 @@ function disableHoverElement() {
     hoverElement.setAttribute("href", "#");
     tooltip.innerText = "";
     tooltip.style.display = "none";
-  }
-}
-
-function setHoverElement(event) {
-  const hoverElement = mapEl.value.querySelector("#hover-element");
-  const allPaths = mapEl.value.querySelector("#all-paths");
-  const tooltip = document.querySelector("#map-tooltip");
-  if (hoverElement && allPaths && tooltip && event.target?.id) {
-    allPaths.querySelectorAll(".hover").forEach((el) => {
-      el.classList.remove("hover");
-    });
-    event.target.classList.add("hover");
-    hoverElement.setAttribute("href", `#${event.target.id}`);
-    tooltip.innerText = event.target.getAttribute("data-name");
-    tooltip.style.display = "block";
   }
 }
 
@@ -139,6 +133,22 @@ function updateTooltipPosition(event) {
     if (tooltip.offsetHeight + y > window.innerHeight) {
       tooltip.style.top = `${y - tooltip.offsetHeight - 20}px`;
     }
+  }
+}
+
+function setHoverElement(event) {
+  const hoverElement = mapEl.value.querySelector("#hover-element");
+  const allPaths = mapEl.value.querySelector("#all-paths");
+  const tooltip = document.querySelector("#map-tooltip");
+  if (hoverElement && allPaths && tooltip && event.target?.id) {
+    allPaths.querySelectorAll(".hover").forEach((el) => {
+      el.classList.remove("hover");
+    });
+    event.target.classList.add("hover");
+    hoverElement.setAttribute("href", `#${event.target.id}`);
+    tooltip.innerText = event.target.getAttribute("data-name");
+    tooltip.style.display = "block";
+    updateTooltipPosition(event);
   }
 }
 
@@ -201,9 +211,32 @@ function onMapInit() {
   }
 }
 
+function onCloseModal() {
+  selectedMunicipality.value = null;
+}
+
 function onPanZoomReady(panZoomObj) {
   panZoom.value = panZoomObj;
   onMapInit();
+}
+
+function showManipulationOverlay(type) {
+  if (type === "wheel") {
+    instructionsText.value = "Uporabite Ctrl + kolesce na miški za povečavo.";
+    instructionsActive.value = true;
+  }
+  if (type === "touch") {
+    instructionsText.value = "Uporabite dva prsta za premikanje in povečavo.";
+    instructionsActive.value = true;
+  }
+
+  if (instructionsTimeout.value) {
+    clearTimeout(instructionsTimeout.value);
+    instructionsTimeout.value = null;
+  }
+  instructionsTimeout.value = setTimeout(() => {
+    instructionsActive.value = false;
+  }, 1000);
 }
 
 onBeforeUnmount(() => {
@@ -217,6 +250,11 @@ onBeforeUnmount(() => {
       element.removeEventListener("click", clickElement);
     });
   }
+
+  if (instructionsTimeout.value) {
+    clearTimeout(instructionsTimeout.value);
+    instructionsTimeout.value = null;
+  }
 });
 </script>
 
@@ -229,7 +267,12 @@ section.map-section {
   border-bottom: 2px solid #000;
   overflow: hidden;
 
+  > .container {
+    margin-inline: -1.5rem;
+  }
+
   .map-wrapper {
+    position: relative;
     // max-width: 75rem;
     // margin-inline: auto;
 
@@ -350,6 +393,40 @@ section.map-section {
       font-weight: 500;
       white-space: nowrap;
       z-index: 1002;
+    }
+
+    .map-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: 1001;
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+      transition: opacity 0.15s ease-in-out;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: 0 0 5px #000;
+
+        @include media.down(md) {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

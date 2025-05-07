@@ -10,7 +10,7 @@
 import { onMounted, useTemplateRef } from "vue";
 import panZoom from "../utils/pan-zoom.js";
 
-const emit = defineEmits(["ready", "change"]);
+const emit = defineEmits(["ready", "change", "show-manipulation-overlay"]);
 
 const containerRef = useTemplateRef("container");
 const contentRef = useTemplateRef("content");
@@ -24,6 +24,9 @@ onMounted(() => {
     },
     onTransformChange: (point, scale) => {
       emit("change", { point, scale });
+    },
+    onShowManipulationOverlay: (type) => {
+      emit("show-manipulation-overlay", type);
     },
   });
 });

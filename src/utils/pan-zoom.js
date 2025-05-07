@@ -30,8 +30,12 @@ class Point {
   }
 }
 
-const touchPoint = (e, finger) =>
-  new Point(e.touches[finger].clientX, e.touches[finger].clientY);
+const touchPoint = (e, finger) => {
+  if (finger >= e.touches.length) {
+    return null;
+  }
+  return new Point(e.touches[finger].clientX, e.touches[finger].clientY);
+};
 const mousePoint = (e) => new Point(e.clientX, e.clientY);
 
 export default function panZoom({
@@ -42,13 +46,13 @@ export default function panZoom({
   zoomStep = 0.2,
   onReady = () => {},
   onTransformChange = () => {},
+  onShowManipulationOverlay = () => {},
 }) {
   const containerEl = container;
   const contentEl = content;
 
   containerEl.style.cursor = "grab";
   containerEl.style.userSelect = "none";
-  containerEl.style.touchAction = "none";
 
   let panning = false;
   let zooming = false;
@@ -81,13 +85,16 @@ export default function panZoom({
     } else if (zooming) {
       const finger0 = touchPoint(e, 0);
       const finger1 = touchPoint(e, 1);
-      end0 = finger0.centerTo(finger1).subtract(start0);
-      endDist = finger0.distanceTo(finger1) * lastZoom - startDist;
-      const hd = endDist + scaledSize;
-      setZoom(lastZoom * (hd / scaledSize) ** 4);
-      setTransform(end0, zoom);
+      if (finger0 && finger1) {
+        end0 = finger0.centerTo(finger1).subtract(start0);
+        endDist = finger0.distanceTo(finger1) * lastZoom - startDist;
+        const hd = endDist + scaledSize;
+        setZoom(lastZoom * (hd / scaledSize) ** 4);
+        setTransform(end0, zoom);
+      }
+    } else {
+      onShowManipulationOverlay("touch");
     }
-    e.preventDefault();
   }
 
   function touchEnd(e) {
@@ -100,14 +107,12 @@ export default function panZoom({
       window.removeEventListener("touchmove", touchMove);
       window.removeEventListener("touchend", touchEnd);
     }
-    e.preventDefault();
   }
 
   function touchStart(e) {
     if (e.touches.length === 1) {
-      panning = true;
-      zooming = false;
-      start0 = touchPoint(e, 0).subtract(end0);
+      window.addEventListener("touchmove", touchMove);
+      window.addEventListener("touchend", touchEnd);
     } else if (e.touches.length === 2) {
       zooming = true;
       panning = false;
@@ -118,10 +123,10 @@ export default function panZoom({
       scaledSize =
         Math.hypot(contentEl.offsetWidth, contentEl.offsetHeight) * lastZoom;
       startDist = finger0.distanceTo(finger1) * lastZoom;
+      window.addEventListener("touchmove", touchMove);
+      window.addEventListener("touchend", touchEnd);
+      e.preventDefault();
     }
-    window.addEventListener("touchmove", touchMove);
-    window.addEventListener("touchend", touchEnd);
-    e.preventDefault();
   }
 
   function mouseMove(e) {
@@ -154,13 +159,17 @@ export default function panZoom({
   }
 
   function mouseWheel(e) {
-    if (e.deltaY > 0) {
-      setZoom(zoom * 2 ** -zoomStep);
-    } else if (e.deltaY < 0) {
-      setZoom(zoom * 2 ** zoomStep);
+    if (e.ctrlKey || e.metaKey) {
+      if (e.deltaY > 0) {
+        setZoom(zoom * 2 ** -zoomStep);
+      } else if (e.deltaY < 0) {
+        setZoom(zoom * 2 ** zoomStep);
+      }
+      setTransform(end0, zoom);
+      e.preventDefault();
+    } else {
+      onShowManipulationOverlay("wheel");
     }
-    setTransform(end0, zoom);
-    e.preventDefault();
   }
 
   function mouseClick(e) {
@@ -186,7 +195,6 @@ export default function panZoom({
       containerEl.removeEventListener("click", mouseClick, true);
       containerEl.style.cursor = "";
       containerEl.style.userSelect = "";
-      containerEl.style.touchAction = "";
     },
   });
 }
