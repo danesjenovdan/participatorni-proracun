@@ -18,6 +18,7 @@ module.exports = {
         devDependencies: [
           "**/vite.config.{js,cjs,mjs}",
           "**/.eslintrc.{js,cjs,mjs}",
+          "scripts/**/*.js",
         ],
       },
     ],
