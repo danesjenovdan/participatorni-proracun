@@ -1,6 +1,6 @@
 <template>
   <section class="map-section">
-    <div class="container">
+    <div class="container container--wide">
       <div class="map-wrapper">
         <div class="legend">
           <div class="item yes">Se izvaja</div>
@@ -68,9 +68,9 @@
             </pattern>
           </defs>
         </svg>
-        <div class="pan-zoom">
+        <PanZoom @ready="onPanZoomReady">
           <MunicipalitiesMap />
-        </div>
+        </PanZoom>
         <div id="map-tooltip" style="display: none"></div>
         <InfoModal
           v-if="selectedMunicipality"
@@ -85,15 +85,17 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { onBeforeUnmount, ref } from "vue";
 import { getMunicipalitiesData } from "../utils/municipalities-data.js";
 import InfoModal from "./InfoModal.vue";
 import MunicipalitiesMap from "./MunicipalitiesMap.vue";
+import PanZoom from "./PanZoom.vue";
 
 const municipalitiesData = getMunicipalitiesData();
 const mapEl = ref(null);
 const mapElements = ref([]);
 const selectedMunicipality = ref(null);
+const panZoom = ref(null);
 
 function disableHoverElement() {
   const hoverElement = mapEl.value.querySelector("#hover-element");
@@ -199,9 +201,10 @@ function onMapInit() {
   }
 }
 
-onMounted(() => {
+function onPanZoomReady(panZoomObj) {
+  panZoom.value = panZoomObj;
   onMapInit();
-});
+}
 
 onBeforeUnmount(() => {
   if (mapEl.value) {
@@ -227,8 +230,8 @@ section.map-section {
   overflow: hidden;
 
   .map-wrapper {
-    max-width: 75rem;
-    margin-inline: auto;
+    // max-width: 75rem;
+    // margin-inline: auto;
 
     .legend {
       position: relative;
@@ -292,14 +295,13 @@ section.map-section {
       height: 0;
     }
 
-    .pan-zoom {
-      pointer-events: none;
+    .pan-zoom-container {
+      // pointer-events: none;
 
       :deep(.municipalities-map) {
         svg {
           #all-paths {
-            cursor: pointer;
-            pointer-events: all;
+            // pointer-events: all;
 
             .status-yes {
               fill: var(--clr-accent-2);
