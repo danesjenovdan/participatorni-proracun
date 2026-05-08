@@ -1,31 +1,38 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: pp-preverjamo-2025-enable-cors
+spec:
+  headers:
+    accessControlAllowOriginList:
+      - "https://participativni-proracun.djnd.si"
+      - "https://participativni-proracun.danesjenovdan.si"
+    accessControlAllowMethods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - OPTIONS
+    accessControlAllowHeaders:
+      - "*"
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: pp-preverjamo-2025
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
-    nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "https://participativni-proracun.danesjenovdan.si, https://participativni-proracun.djnd.si"
+    traefik.ingress.kubernetes.io/router.middlewares: pp-kampanja-pp-preverjamo-2025-enable-cors@kubernetescrd
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
-        - participativni-proracun.danesjenovdan.si
         - participativni-proracun.djnd.si
+        - participativni-proracun.danesjenovdan.si
       secretName: pp-preverjamo-2025-tls
   rules:
-    - host: participativni-proracun.danesjenovdan.si
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: pp-preverjamo-2025
-                port:
-                  number: 3000
     - host: participativni-proracun.djnd.si
-      http:
+      http: &http_paths
         paths:
           - path: /
             pathType: Prefix
@@ -34,3 +41,5 @@ spec:
                 name: pp-preverjamo-2025
                 port:
                   number: 3000
+    - host: participativni-proracun.danesjenovdan.si
+      http: *http_paths
