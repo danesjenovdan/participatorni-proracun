@@ -157,7 +157,7 @@ function onCopyClick() {
 
 useCanonicalUrl();
 
-const pageOgImage = `/generated/og-images/og-image-${data.slug}.png?v=2`;
+const pageOgImage = `/generated/og-images/og-image-${data.slug}.png?v=3`;
 
 useSeoMeta({
   ogImage: pageOgImage,
