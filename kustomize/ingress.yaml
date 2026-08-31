@@ -1,6 +1,16 @@
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:
+  name: pp-preverjamo-2025-redirect-domain
+spec:
+  redirectRegex:
+    regex: ^https?://participativni-proracun.djnd.si/(.*)
+    replacement: https://participativni-proracun.danesjenovdan.si/${1}
+    permanent: true
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
   name: pp-preverjamo-2025-enable-cors
 spec:
   headers:
@@ -22,7 +32,10 @@ metadata:
   name: pp-preverjamo-2025
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
-    traefik.ingress.kubernetes.io/router.middlewares: pp-kampanja-pp-preverjamo-2025-enable-cors@kubernetescrd
+    traefik.ingress.kubernetes.io/router.middlewares: |
+      traefik-redirect-to-https@kubernetescrd,
+      pp-kampanja-pp-preverjamo-2025-redirect-domain@kubernetescrd,
+      pp-kampanja-pp-preverjamo-2025-enable-cors@kubernetescrd
 spec:
   ingressClassName: traefik
   tls:
