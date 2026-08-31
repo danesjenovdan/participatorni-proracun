@@ -225,8 +225,8 @@
         />
         <path
           d="M122 397h1v-1h1v-2h1v-2h1v-2h1v-3l-1-1v-1l1-1v-1h1l1-1v-1h1v-1h4v2h1v1h1-1v2h1v2l1 1 1 1v4h1v1h-1v3h2v2h1v2h1-1 1v-1h1v1-1l1 1v-1h1v1h1v-1 1h-2v1h-1v2h1v-1h3v2h1v1l1 1 1-1h2v1h1v1h2-2 1v1l1 1v1h2v1h1l1-1h1v1h1v1h3-1v2h1v1h-1l1 1h3l1 1h-1v3l1 1v4h-1v3h-1v1h-1v2h-1v1h-1v2h-1v-1h-1v2h1v1l-1 1h-1v1h-1v1h-1l-1 1-1 1h-1v-1l-1-1h-1v-1h-1v-1h-2v-1h-1v-1h-1v-1h-1v-2h-1v-1h-1v-3h-1v1l-1 1h-2v-1h1-1v-1 1-1h-1v2h-1v-1 1h-1v-2h-1v1h-1v1l-1 1-1 1v1h-1v3h-3v1h-1v1h-1v1h-1v1l-1 1v1h-1v1h-1v1h-1v2l-1 1v1h-1v3l-1 1v3h-4v-1h-2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1l1 1v1h1v1h-4v1h-2l-1-1h-1v-2h-1l-1-1v-1h-1v-1h-1l-1-1h-2v-1 1l-1 1v-1h-1v-2h-1v-1h-1v-3h-2v1h-2v-1h-1 1v-2h-1v1h-1v-1h-1v-1h1l-1-1v-2h-1v1-1h-2v-1h-2v-4h-1v-2h2v-1h-1 1v-1h-1v-2h-1v-2h-3v-1h-2v-1h-3v-1h-2v-1h-1v-1h-1v-1h2v-2h1v-1h1v-1h1v-3h2v1h1v-2 1h2v-1h1l1-1h2v-1h1v1h1v-2h1v-2h1v-1h1v-1h2v-1h1v-1h2v-1h1-1v-1h2v-3h2v-1h2v-2h2v-1h1v-1h1l1-1v-2h1l1-1v-1h1v-1h2v1-1h1v-1Z"
-          data-name="Kanal"
-          data-slug="kanal"
+          data-name="Kanal ob Soči"
+          data-slug="kanal-ob-soci"
         />
         <path
           d="M887 287h1v-2h-1v-1h-2v1h-1v-1h-4v-2h-8v1h-9v-1h-3l-1 1h-3v-1h-11v-1h-1v-1h-1l-1-1 1-2 1-1-1-1 1-1v1h1v1l1 1v-1h1-1 1v-2h1v-1h-1l1-1 1-2h-2v-1h-3v-2h2v-1h1v1h1v1h1v-3h-7v-1h1v-1h2v-1h2v-1h1l1-1h1v-1h2v-1h2v-1h2v-1h1l1-1h1v-1l1-1v1l2-1v-1 1l1-1v-1h1v-1h1l1-1v-1h4v1h2v2h1v-2l1 1h3v1h1v-1h1v-2h1v-1h1v-1h1v-1l1 1h1l1 1h1v1h1v3h2v2h1v1h-1v1h3v6-1h1v1l1-1v1h1v1h1v1h-1 1v3-1 1h2v1h-1v2h-1v1h-1v11h-1l1 1h-1v5h-7Z"
